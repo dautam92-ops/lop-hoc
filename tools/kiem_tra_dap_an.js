@@ -32,7 +32,7 @@ for (const [kid, K] of Object.entries(LESSON.kids)) K.acts.forEach((a, ai) => {
     const w = `${where} câu ${ri + 1}`;
     const ans = Array.isArray(R.a) ? R.a : [R.a];
     if (!ans.every(x => Number.isInteger(x) && x >= 0 && x < R.opts.length)) errors.push(`${w}: chỉ số đáp án ngoài danh sách lựa chọn`);
-    const texts = R.opts.map(o => typeof o === 'string' ? o : (o.h || ''));
+    const texts = R.opts.map(o => typeof o === 'string' ? o : (o.say || o.e || o.h || ''));
     if (new Set(texts).size !== texts.length && !/không giống|khác/.test(R.q)) errors.push(`${w}: có lựa chọn trùng nhau`);
     // Toán có biểu thức kiểm tra
     if (R.check) {
@@ -69,12 +69,13 @@ for (const [kid, K] of Object.entries(LESSON.kids)) K.acts.forEach((a, ai) => {
   if (a.type === 'trace') a.rounds.forEach(R => { if (!glyphSrc.includes(`'${R.t}':`)) errors.push(`${where}: chưa có nét mẫu GLYPHS cho "${R.t}"`); });
   if (a.type === 'maze' && !(a.n >= 4)) errors.push(`${where}: mê cung quá nhỏ`);
 });
-// Câu tiếng Việt chưa có giọng Hoài My
+// Câu tiếng Việt chưa có giọng Hoài My (cả lời đọc từng đáp án opts[].say)
+for (const K of Object.values(LESSON.kids)) for (const a of K.acts) (a.rounds || []).forEach(R => { if (/thấy thế nào/.test(R.q) && !(R.opts || []).every(o => o && o.say)) errors.push(`${a.title}: câu cảm xúc phải có lời đọc cho từng đáp án (opts:[{e,say}]) vì bé chưa đọc được`); });
 const clipsStart = h.indexOf('const CLIPS=');
 if (clipsStart > 0) {
   const isVi = t => /[ăâđêôơưàáạảãèéẹẻẽìíịỉĩòóọỏõùúụủũỳýỵỷỹ]/i.test(t);
   const need = new Set();
-  for (const K of Object.values(LESSON.kids)) for (const a of K.acts) { if (a.q && isVi(a.q)) need.add(a.q); (a.rounds || []).forEach(R => { for (const t of [R.q, R.ok, R.no, R.hint, R.say]) if (t && isVi(t)) need.add(t); }); }
+  for (const K of Object.values(LESSON.kids)) for (const a of K.acts) { if (a.q && isVi(a.q)) need.add(a.q); (a.rounds || []).forEach(R => { for (const t of [R.q, R.ok, R.no, R.hint, R.say, ...(R.opts || []).map(o => o && o.say)]) if (t && isVi(t)) need.add(t); }); if (a.seq && (a.rounds || []).some(R => !R.show)) need.add('Số nào điền vào ô trống?'); }
   const missing = [...need].filter(t => !h.includes(JSON.stringify(t).slice(0, -1) + '":'));
   if (missing.length) notes.push(`${missing.length} câu tiếng Việt chưa có giọng Hoài My: ` + missing.join(' | '));
 }
