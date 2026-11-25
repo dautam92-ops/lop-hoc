@@ -43,6 +43,7 @@ button:focus-visible{outline:4px solid var(--sea);outline-offset:3px}
 .kid span{font-weight:800;opacity:.95}
 .kid .prog{margin-top:auto;background:rgba(255,255,255,.28);border-radius:999px;height:14px;overflow:hidden}
 .kid .prog i{display:block;height:100%;background:#fff;border-radius:999px}
+.libs{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}.libs a{text-decoration:none;display:inline-block}
 .note{margin-top:22px;background:var(--card);border-radius:22px;padding:16px 18px;color:var(--muted);font-size:18px;line-height:1.5}
 /* map */
 .acts{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
@@ -306,11 +307,15 @@ function markDone(kid,i){const d=store.get(doneKey(kid),[]);if(!d.includes(i)){d
 function topbar(title,backFn){return `<div class="top"><button class="back" id="bk" aria-label="Quay lại">⬅️</button><h2>${title}</h2><div class="starbox"><span class="emo">⭐</span> ${stars()}</div></div>`}
 function bindBack(fn){$('#bk').onclick=fn}
 
+/* Thư viện bài đã học: mỗi bài ở /lop-hoc/bai/<ngày>/, danh sách ở /lop-hoc/bai/. Không bao giờ ghi đè hay xóa bài cũ. */
+function libLinks(){if(!/github\.io$/.test(location.hostname))return'';const inArc=/\/bai\/\d{4}-\d{2}-\d{2}\/?/.test(location.pathname);
+  return `<div class="libs"><a class="next alt" href="${inArc?'../':'bai/'}"><span class="emo">📚</span> Bài đã học</a>${inArc?'<a class="next" href="../../"><span class="emo">🏠</span> Bài hôm nay</a>':''}</div>`}
 function home(){
   const card=k=>{const K=LESSON.kids[k];const d=store.get(doneKey(k),[]).length;return `<button class="kid" style="background:${K.grad}" data-k="${k}"><div class="big emo">${K.icon}</div><h3>${K.title}</h3><span>${K.name} · ${d}/${K.acts.length} bài</span><div class="prog"><i style="width:${d/K.acts.length*100}%"></i></div></button>`};
   app.innerHTML=`<div class="hello"><h1>Lớp học của hai chị em <span class="emo">🌈</span></h1><p>${LESSON.date} · Chủ đề: ${LESSON.theme}</p></div>
   <div class="kids">${card('k5')}${card('k8')}</div>
   <div class="starbox" style="margin:18px auto 0;width:max-content"><span class="emo">⭐</span> Tổng sao: ${stars()}</div>
+  ${libLinks()}
   <div class="note"><b>Dành cho bố mẹ:</b> phần tiếng Việt đọc bằng giọng Hoài My: đúng thì khen “Con giỏi quá!”, sai thì “Ôi, mình làm lại nhé!”. Riêng phần tiếng Anh dùng giọng Mỹ với “Excellent!” và “Oops!”. Nên dùng iPad khoảng 15–20 phút mỗi bé, phần còn lại học trên phiếu in. Không nghe tiếng? Gạt nút im lặng bên hông iPad (hoặc tắt chế độ Im lặng trong Trung tâm điều khiển), tăng âm lượng, rồi chạm nút <span class="emo">🔊</span>. Mẹo: trong Safari chọn Chia sẻ → “Thêm vào MH chính” để mở như một ứng dụng.<br><button class="next alt" id="test" style="margin-top:10px;font-size:20px;padding:10px 22px">🔊 Thử âm thanh</button></div>`;
   $('#test').onclick=()=>{cheerVi(true,'Xin chào các con! Hôm nay mình cùng học nhé!');setTimeout(()=>speak("Hello! Let's learn English!",'en-US'),4200);};
   app.querySelectorAll('.kid').forEach(b=>b.onclick=()=>{speak(LESSON.kids[b.dataset.k].title,'vi-VN');map(b.dataset.k)});
