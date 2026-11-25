@@ -229,9 +229,9 @@ const LESSON = {
         {type:'sudoku', icon:'🔢', title:'Sudoku 6×6', tag:'Trí tuệ',
           puz:'2654__|___2_5|__4___|_1265_|54_12_|12_543', sol:'265431|431265|654312|312654|543126|126543'},
         {type:'choice', icon:'📈', title:'Quy luật dãy số', tag:'Trí tuệ', cols:4, seq:true, rounds:[
-          {q:'2, 4, 6, 8, ?', opts:['9','10','12','16'], a:1},
-          {q:'3, 6, 9, ?, 15', opts:['10','11','12','13'], a:2},
-          {q:'1, 2, 4, 8, ?', opts:['10','12','14','16'], a:3},
+          {q:'2, 4, 6, 8, ?', opts:['9','10','12','16'], a:1, ok:'Đúng! Mỗi số hơn số đứng trước 2 đơn vị.'},
+          {q:'3, 6, 9, ?, 15', opts:['10','11','12','13'], a:2, ok:'Đúng! Mỗi số hơn số đứng trước 3 đơn vị.'},
+          {q:'1, 2, 4, 8, ?', opts:['10','12','14','16'], a:3, ok:'Đúng! Mỗi số gấp 2 lần số đứng trước. 8 nhân 2 bằng 16.'},
           {q:'1, 1, 2, 3, 5, ?', opts:['6','7','8','9'], a:2, ok:'Siêu! Mỗi số bằng tổng hai số đứng trước nó.'}]},
         {type:'choice', icon:'🐾', title:'Ai nuôi con gì?', tag:'Trí tuệ', cols:3, clue:'An, Bình, Chi mỗi bạn nuôi một con: chó, mèo hoặc cá.<br>• Bình nuôi mèo. • An không nuôi chó.', rounds:[
           {q:'Bình nuôi con gì?', opts:['🐶','🐱','🐠'], a:1},
@@ -429,7 +429,7 @@ function pChoice(k,i,a){
       ${a.key?`<div class="key">${a.key.map(x=>`<span><span class="emo">${x[0]}</span>= ${x[1]}</span>`).join('')}</div>`:''}
       <div class="qrow"><button class="say" id="say" aria-label="Nghe">🔊</button><div class="q">${a.seq?(R.show?R.q:'Số nào điền vào ô trống?'):R.q}</div></div>
       ${a.seq?seqTiles(R):R.show?`<div class="show emo">${R.show}</div>`:''}
-      ${a.seq?'<div class="pickbox"><div class="picklbl">${R.show?"Chọn hình đúng":"Chọn số đúng"} <span class="emo">👇</span></div>':''}<div class="opts c${Math.min(cols,n)}${a.seq?' pick':''}">${R.opts.map((o,j)=>`<button class="opt ${a.txt?'txt':''}" data-j="${j}">${typeof o==='object'?(o.e?`<span class="emo">${o.e}</span>`:o.h):(/\p{Extended_Pictographic}/u.test(o)&&o.length<=4?`<span class="emo">${o}</span>`:esc(o))}</button>`).join('')}</div>${a.seq?'</div>':''}
+      ${a.seq?'<div class="pickbox"><div class="picklbl">'+(R.show?'Chọn hình đúng':'Chọn số đúng')+' <span class="emo">👇</span></div>':''}<div class="opts c${Math.min(cols,n)}${a.seq?' pick':''}">${R.opts.map((o,j)=>`<button class="opt ${a.txt?'txt':''}" data-j="${j}">${typeof o==='object'?(o.e?`<span class="emo">${o.e}</span>`:o.h):(/\p{Extended_Pictographic}/u.test(o)&&o.length<=4?`<span class="emo">${o}</span>`:esc(o))}</button>`).join('')}</div>${a.seq?'</div>':''}
       <div class="fb" id="fb"></div></div>`;
     bindBack(()=>map(k));
     const qSpoken=a.seq&&!R.show?'Số nào điền vào ô trống?':R.q;const optSays=R.opts.map(o=>o&&o.say).filter(Boolean);
