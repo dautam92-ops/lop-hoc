@@ -205,8 +205,8 @@ const LESSON = {
           {q:'An nuôi con gì?', opts:['🐶','🐱','🐠'], a:2, ok:'Đúng! An không nuôi chó, mèo đã là của Bình, vậy An nuôi cá.'},
           {q:'Vậy Chi nuôi con gì?', opts:['🐶','🐱','🐠'], a:0}]},
         {type:'choice', icon:'🍬', title:'Toán đố chia kẹo', tag:'Trí tuệ', cols:2, txt:true, rounds:[
-          {q:'Thám tử có 24 viên kẹo, chia đều cho mình và 4 bạn (5 người). Mỗi người được mấy viên?', opts:['4 viên','5 viên','6 viên','3 viên'], a:0},
-          {q:'Còn dư mấy viên kẹo?', opts:['0 viên','2 viên','4 viên','1 viên'], a:2, ok:'Đúng! 24 : 5 = 4 dư 4. Con sẽ làm gì với 4 viên dư? Kể cho bố mẹ nghe nhé!'}]},
+          {q:'Thám tử có 24 viên kẹo, chia đều cho mình và 3 bạn (4 người). Mỗi người được mấy viên?', opts:['4 viên','5 viên','6 viên','8 viên'], a:2, check:'24/4', ok:'Đúng! 24 chia 4 được 6. Mỗi người được 6 viên.'},
+          {q:'Có thêm 2 bạn nữa đến chơi (6 người). Vẫn 24 viên kẹo chia đều, mỗi người được mấy viên?', opts:['3 viên','4 viên','5 viên','6 viên'], a:1, check:'24/6', ok:'Đúng! 24 chia 6 được 4. Càng đông bạn thì mỗi người được ít kẹo hơn.'}]},
         {type:'choice', icon:'🔐', title:'Giải mật thư', tag:'Cảm xúc', cols:4, txt:true,
           key:[['🌙','Hôm nay'],['🍉','ngủ'],['❤️','ôm'],['🦋','chị'],['🎵','nói'],['🚗','chạy'],['🎈','em'],['🌈','hãy'],['⭐','“em giỏi lắm!”'],['🍀','và']],
           final:'Hôm nay chị hãy ôm em và nói: “Em giỏi lắm!” 💞 Đi làm ngay nào!',
