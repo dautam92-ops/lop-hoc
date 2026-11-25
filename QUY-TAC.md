@@ -44,3 +44,4 @@ Mục tiêu: bố mẹ học cùng con để con tiến bộ mỗi ngày. Hai b�
 29. Mỗi ngày có ít nhất 1 dạng EQ, 1 dạng tiếng Anh, và 1 hoạt động 5 phút "Bố mẹ cùng con" (LESSON.parent, xoay vòng dạng 66–69). Web có "Báo cáo cho bố mẹ": bài xong, câu con hay sai, từ tiếng Anh mới, gợi ý ôn tối nay, tổng kết tuần.
 
 Kho dạng bài (70 dạng, đã duyệt): kho-dang-bai.md.
+30. Nhóm đồ vật để đếm xếp gọn như mặt xúc xắc, vừa khít khung (3 cái thành tam giác, 4 cái thành hình vuông 2×2, 5 cái thành 3 trên 2 dưới…), không bao giờ thành hàng dọc hay tràn khỏi ô. Mỗi nhóm một loại vật, tối đa 10 cái. (tam góp ý 26/11)

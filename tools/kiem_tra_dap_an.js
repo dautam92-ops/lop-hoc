@@ -67,6 +67,13 @@ for (const [kid, K] of Object.entries(LESSON.kids)) K.acts.forEach((a, ai) => {
   }
   if (a.type === 'scramble') a.rounds.forEach(R => { if (!/^[a-z]+$/.test(R.w)) errors.push(`${where}: từ "${R.w}" có ký tự lạ`); });
   if (a.type === 'trace') a.rounds.forEach(R => { if (!glyphSrc.includes(`'${R.t}':`)) errors.push(`${where}: chưa có nét mẫu GLYPHS cho "${R.t}"`); });
+  if (a.type === 'code') a.rounds.forEach((R, ri) => { // lập trình nhí: phải đi được tới đích
+    const rock = (y, x) => (R.rocks || []).some(p => p[0] === y && p[1] === x); const seen = new Set([R.s.join()]); let q = [[...R.s, 0]], best = -1;
+    if (rock(...R.g) || rock(...R.s)) errors.push(`${where} câu ${ri + 1}: đích hoặc điểm xuất phát nằm trên đá`);
+    while (q.length) { const [y, x, d] = q.shift(); if (y === R.g[0] && x === R.g[1]) { best = d; break; }
+      for (const [dy, dx] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) { const ny = y + dy, nx = x + dx; if (ny < 0 || nx < 0 || ny >= R.n || nx >= R.n || rock(ny, nx) || seen.has(ny + ',' + nx)) continue; seen.add(ny + ',' + nx); q.push([ny, nx, d + 1]); } }
+    if (best < 0) errors.push(`${where} câu ${ri + 1}: không có đường tới đích`); else if (best > 12) errors.push(`${where} câu ${ri + 1}: cần ${best} bước, quá 12 nút`);
+    else notes.push(`${where} câu ${ri + 1}: ngắn nhất ${best} bước`); });
   if (a.type === 'maze' && !(a.n >= 4)) errors.push(`${where}: mê cung quá nhỏ`);
 });
 // Câu tiếng Việt chưa có giọng Hoài My (cả lời đọc từng đáp án opts[].say)

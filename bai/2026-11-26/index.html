@@ -170,6 +170,9 @@ textarea{width:100%;max-width:700px;min-height:180px;border-radius:20px;border:3
 .rep{background:var(--card);border-radius:24px;padding:18px;margin-bottom:14px;font-size:19px;line-height:1.5}
 .rep h3{font-size:26px;margin-bottom:6px}.rep ul{margin:6px 0 6px 22px}.rep table{border-collapse:collapse;width:100%;font-size:17px}.rep td,.rep th{border-bottom:1px solid rgba(0,0,0,.08);padding:6px 4px;text-align:left}
 .bed{background:#fff7e0;border-radius:22px;padding:16px 18px;font-size:20px;line-height:1.5;margin-top:14px}
+/* quy tắc 30: nhóm đồ vật để đếm xếp gọn như mặt xúc xắc, vừa khung, không thành hàng dọc */
+.grp{display:inline-flex;flex-direction:column;align-items:center;gap:2px;background:#fff;border-radius:24px;padding:10px 16px;letter-spacing:0;line-height:1}
+.grp div{display:flex;gap:4px;justify-content:center;white-space:nowrap}
 </style>
 <style>body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 </head>
@@ -497,6 +500,11 @@ function play(k,i){const a=LESSON.kids[k].acts[i];({choice:pChoice,maze:pMaze,su
 function seqTiles(R){const toks=R.show?[...new Intl.Segmenter('vi',{granularity:'grapheme'}).segment(R.show)].map(x=>x.segment).filter(g=>g.trim()):R.q.split(',').map(x=>x.trim());
   return `<div class="seq" style="--n:${toks.length}">${toks.map(t=>t==='❓'||t==='?'?'<span class="tile hole" id="hole">?</span>':`<span class="tile ${R.show?'emo':''}">${esc(t)}</span>`).join('')}</div>`}
 function stopRead(){}
+/* Quy tắc 30: nhóm vật để đếm xếp gọn (3 = tam giác, 4 = vuông 2x2, 5 = 3+2…), luôn vừa khung, không bao giờ thành hàng dọc */
+const GROUP_ROWS={1:[1],2:[2],3:[1,2],4:[2,2],5:[3,2],6:[3,3],7:[4,3],8:[4,4],9:[3,3,3],10:[5,5]};
+function groupShow(s){const g=[...new Intl.Segmenter('vi',{granularity:'grapheme'}).segment(s)].map(x=>x.segment).filter(x=>x.trim());
+  const rows=GROUP_ROWS[g.length];if(!rows||new Set(g).size!==1)return null;let k=0;
+  return '<div class="grp">'+rows.map(n=>'<div>'+g.slice(k,k+=n).join('')+'</div>').join('')+'</div>'}
 function pChoice(k,i,a){
   let r=0;
   const draw=()=>{
@@ -507,7 +515,7 @@ function pChoice(k,i,a){
       ${a.clue?`<div class="key" style="display:block;font-size:18px">${a.clue}</div>`:''}
       ${a.key?`<div class="key">${a.key.map(x=>`<span><span class="emo">${x[0]}</span>= ${x[1]}</span>`).join('')}</div>`:''}
       <div class="qrow"><button class="say" id="say" aria-label="Nghe">🔊</button><div class="q">${a.seq?(R.show?R.q:'Số nào điền vào ô trống?'):R.q}</div></div>
-      ${a.seq?seqTiles(R):R.show?`<div class="show emo">${R.show}</div>`:''}
+      ${a.seq?seqTiles(R):R.show?`<div class="show emo">${(/^(Có mấy|How many)/i.test(R.q)&&groupShow(R.show))||R.show}</div>`:''}
       ${a.seq?'<div class="pickbox"><div class="picklbl">'+(R.show?'Chọn hình đúng':'Chọn số đúng')+' <span class="emo">👇</span></div>':''}<div class="opts c${Math.min(cols,n)}${a.seq?' pick':''}">${R.opts.map((o,j)=>`<button class="opt ${a.txt?'txt':''}" data-j="${j}">${typeof o==='object'?(o.e?`<span class="emo">${o.e}</span>`:o.h):(/\p{Extended_Pictographic}/u.test(o)&&o.length<=4?`<span class="emo">${o}</span>`:esc(o))}</button>`).join('')}</div>${a.seq?'</div>':''}
       <div class="fb" id="fb"></div></div>`;
     bindBack(()=>map(k));
