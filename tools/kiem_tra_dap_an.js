@@ -44,6 +44,7 @@ for (const [kid, K] of Object.entries(LESSON.kids)) K.acts.forEach((a, ai) => {
     // Đếm hình
     if (/^(Có mấy|How many)/i.test(R.q) && R.show) {
       const n = graphemes(R.show).length;
+      if (n > 10 || new Set(graphemes(R.show)).size !== 1) errors.push(`${w}: nhóm đếm phải là 1 loại vật, tối đa 10 cái để xếp gọn (quy tắc 30)`);
       if (num(R.opts[R.a]) !== n) errors.push(`${w}: hình có ${n} cái nhưng đáp án là "${R.opts[R.a]}"`);
     }
     // Dãy số có dấu ?
@@ -82,7 +83,8 @@ const clipsStart = h.indexOf('const CLIPS=');
 if (clipsStart > 0) {
   const isVi = t => /[ăâđêôơưàáạảãèéẹẻẽìíịỉĩòóọỏõùúụủũỳýỵỷỹ]/i.test(t);
   const need = new Set();
-  for (const K of Object.values(LESSON.kids)) for (const a of K.acts) { if (a.q && isVi(a.q)) need.add(a.q); (a.rounds || []).forEach(R => { for (const t of [R.q, R.ok, R.no, R.hint, R.say, ...(R.opts || []).map(o => o && o.say)]) if (t && isVi(t)) need.add(t); }); if (a.seq && (a.rounds || []).some(R => !R.show)) need.add('Số nào điền vào ô trống?'); }
+  for (const K of Object.values(LESSON.kids)) for (const a of K.acts) { if (a.q && isVi(a.q)) need.add(a.q); (a.rounds || []).forEach(R => { for (const t of [R.q, R.ok, R.no, R.hint, R.say, ...(R.opts || []).map(o => o && o.say)]) if (t && isVi(t)) need.add(t); }); if (a.seq && (a.rounds || []).some(R => !R.show)) need.add('Số nào điền vào ô trống?');
+    if (a.type === 'choice' && a.txt) (a.rounds || []).forEach(R => { if (R.opts.some(o => typeof o === 'string' && /\p{L}/u.test(o))) { R.opts.forEach((o, j) => { need.add('Đáp án ' + 'ABCDE'[j]); if (!a.en && typeof o === 'string' && /\p{L}/u.test(o)) need.add(o); }); } }); }
   const missing = [...need].filter(t => !h.includes(JSON.stringify(t).slice(0, -1) + '":'));
   if (missing.length) notes.push(`${missing.length} câu tiếng Việt chưa có giọng Hoài My: ` + missing.join(' | '));
 }

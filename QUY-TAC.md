@@ -45,3 +45,5 @@ Mục tiêu: bố mẹ học cùng con để con tiến bộ mỗi ngày. Hai b�
 
 Kho dạng bài (70 dạng, đã duyệt): kho-dang-bai.md.
 30. Nhóm đồ vật để đếm xếp gọn như mặt xúc xắc, vừa khít khung (3 cái thành tam giác, 4 cái thành hình vuông 2×2, 5 cái thành 3 trên 2 dưới…), không bao giờ thành hàng dọc hay tràn khỏi ô. Mỗi nhóm một loại vật, tối đa 10 cái. (tam góp ý 26/11)
+31. Câu hỏi chọn đáp án mà đáp án là chữ cần đọc hiểu: mỗi đáp án có nhãn A, B, C… và giọng đọc đọc câu hỏi rồi lần lượt "Đáp án A" + nội dung (tiếng Việt giọng Hoài My, đáp án tiếng Anh giọng Mỹ). Không tô sáng ô nào khi đọc (quy tắc 25). Áp dụng cho mọi bài, cả bài cũ. (tam 26/11)
+32. Chữ hiện trên màn hình và giọng đọc luôn cùng một ngôn ngữ, cùng nội dung. Phần tiếng Anh: đúng thì hiện "Excellent! …" đúng như giọng đọc, sai thì "Oops! Try again."; phần tiếng Việt: hiện và đọc "Con giỏi quá!", "Ôi, mình làm lại nhé!". Không trộn câu Anh với câu Việt trong một lời khen. (tam 26/11)

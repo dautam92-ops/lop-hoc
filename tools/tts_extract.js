@@ -6,6 +6,7 @@ for(const k of Object.values(LESSON.kids))for(const a of k.acts){
  if(a.type==='scramble')a.rounds.forEach(r=>set.add(r.w));
  if(a.type==='choice'&&a.en)a.rounds.forEach(r=>{
    if(r.say)set.add(r.say);if(r.okSay)set.add(r.okSay);
+   if(a.txt)r.opts.forEach(o=>typeof o==='string'&&/\p{L}/u.test(o)&&set.add(o));
    if(a.sayOpts)r.opts.forEach(o=>typeof o==='string'&&set.add(o));
    const vi=/[ăâđêôơưàáạảãèéẹẻẽìíịỉĩòóọỏõùúụủũỳýỵỷỹ]/i.test(r.q)||r.q.startsWith('Nghe')||r.q.startsWith('Chạm');
    if(!vi)set.add(r.q);
