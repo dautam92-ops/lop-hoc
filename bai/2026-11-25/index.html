@@ -152,6 +152,17 @@ textarea{width:100%;max-width:700px;min-height:180px;border-radius:20px;border:3
 .win{font-size:96px;animation:pop .6s}
 @keyframes pop{0%{transform:scale(.2)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* bố mẹ cùng con + báo cáo */
+.pbtns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+.pbtns .next{font-size:22px;padding:12px 24px}
+.pguide{background:var(--card);border-radius:22px;padding:16px 18px;font-size:20px;line-height:1.5;margin-bottom:14px}
+.pcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.pcard{background:var(--card);border-radius:24px;padding:18px;text-align:left;box-shadow:0 5px 0 rgba(0,0,0,.08);font-size:22px;line-height:1.4;display:flex;flex-direction:column;gap:8px;min-height:150px}
+.pcard .emo{font-size:46px}.pcard b{font-size:24px}.pcard .back2{color:var(--leaf);font-weight:800;display:none}.pcard.open .back2{display:block}
+.pcard .tap{color:var(--muted);font-size:16px}.pcard.open .tap{display:none}
+.rep{background:var(--card);border-radius:24px;padding:18px;margin-bottom:14px;font-size:19px;line-height:1.5}
+.rep h3{font-size:26px;margin-bottom:6px}.rep ul{margin:6px 0 6px 22px}.rep table{border-collapse:collapse;width:100%;font-size:17px}.rep td,.rep th{border-bottom:1px solid rgba(0,0,0,.08);padding:6px 4px;text-align:left}
+.bed{background:#fff7e0;border-radius:22px;padding:16px 18px;font-size:20px;line-height:1.5;margin-top:14px}
 </style>
 <style>body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 </head>
@@ -307,7 +318,7 @@ function speak(text,lang){if(lang&&lang.startsWith('vi')&&!CLIPS[text])return; /
 function confetti(n=24){const c=$('#cf');const set=['⭐','🎉','💖','🌟','🎈','✨'];for(let i=0;i<n;i++){const s=document.createElement('span');s.className='emo';s.textContent=set[i%set.length];s.style.left=Math.random()*100+'vw';s.style.animationDelay=Math.random()*.5+'s';c.appendChild(s);setTimeout(()=>s.remove(),2300)}}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function stars(){return store.get(totalKey,0)}
-function markDone(kid,i){const d=store.get(doneKey(kid),[]);if(!d.includes(i)){d.push(i);store.set(doneKey(kid),d);store.set(totalKey,stars()+1)}}
+function markDone(kid,i){const d=store.get(doneKey(kid),[]);if(!d.includes(i)){d.push(i);store.set(doneKey(kid),d);store.set(totalKey,stars()+1)}logDay(kid)}
 function topbar(title,backFn){return `<div class="top"><button class="back" id="bk" aria-label="Quay lại">⬅️</button><h2>${title}</h2><div class="starbox"><span class="emo">⭐</span> ${stars()}</div></div>`}
 function bindBack(fn){$('#bk').onclick=fn}
 
@@ -319,9 +330,11 @@ function home(){
   app.innerHTML=`<div class="hello"><h1>Lớp học của hai chị em <span class="emo">🌈</span></h1><p>${LESSON.date} · Chủ đề: ${LESSON.theme}</p></div>
   <div class="kids">${card('k5')}${card('k8')}</div>
   <div class="starbox" style="margin:18px auto 0;width:max-content"><span class="emo">⭐</span> Tổng sao: ${stars()}</div>
+  ${parentBtns()}
   ${libLinks()}
   <div class="note"><b>Dành cho bố mẹ:</b> phần tiếng Việt đọc bằng giọng Hoài My: đúng thì khen “Con giỏi quá!”, sai thì “Ôi, mình làm lại nhé!”. Riêng phần tiếng Anh dùng giọng Mỹ với “Excellent!” và “Oops!”. Nên dùng iPad khoảng 15–20 phút mỗi bé, phần còn lại học trên phiếu in. Không nghe tiếng? Gạt nút im lặng bên hông iPad (hoặc tắt chế độ Im lặng trong Trung tâm điều khiển), tăng âm lượng, rồi chạm nút <span class="emo">🔊</span>. Mẹo: trong Safari chọn Chia sẻ → “Thêm vào MH chính” để mở như một ứng dụng.<br><button class="next alt" id="test" style="margin-top:10px;font-size:20px;padding:10px 22px">🔊 Thử âm thanh</button></div>`;
   $('#test').onclick=()=>{cheerVi(true,'Xin chào các con! Hôm nay mình cùng học nhé!');setTimeout(()=>speak("Hello! Let's learn English!",'en-US'),4200);};
+  bindParent();
   app.querySelectorAll('.kid').forEach(b=>b.onclick=()=>{speak(LESSON.kids[b.dataset.k].title,'vi-VN');map(b.dataset.k)});
 }
 function map(k){
@@ -340,6 +353,41 @@ function finish(k,i,extra=''){
   if($('#nx'))$('#nx').onclick=()=>play(k,i+1);if($('#gf'))$('#gf').onclick=()=>openGift(k);$('#mp').onclick=()=>map(k);
 }
 
+
+/* ================= BỐ MẸ CÙNG CON & BÁO CÁO TIẾN BỘ =================
+   LESSON.parent: hoạt động 5 phút bố mẹ làm cùng con (thẻ chạm để lật, câu hỏi trước giờ ngủ).
+   Báo cáo: sao, câu con hay sai, từ tiếng Anh mới, gợi ý ôn tối nay, tổng kết tuần (lưu trên máy này). */
+const missKey=k=>'miss-'+LESSON.id+'-'+k;
+function logDay(k){try{const h=store.get('hist-'+k,{});h[LESSON.id]={date:LESSON.date,theme:LESSON.theme,done:store.get(doneKey(k),[]).length,n:LESSON.kids[k].acts.length,miss:Object.values(store.get(missKey(k),{})).reduce((a,b)=>a+b,0)};store.set('hist-'+k,h)}catch(e){}}
+function noteMiss(k,i,q){const m=store.get(missKey(k),{});const key=i+'|'+q;m[key]=(m[key]||0)+1;store.set(missKey(k),m);logDay(k)}
+function enWords(k){const w=new Set();LESSON.kids[k].acts.forEach(a=>{if(a.type==='explore')a.rounds.forEach(R=>R.en&&w.add(R.en));if(a.type==='scramble')a.rounds.forEach(R=>w.add(R.w));if(a.en)a.rounds.forEach(R=>{if(R.say&&!/\s/.test(R.say))w.add(R.say)})});return [...w]}
+function parentBtns(){return `<div class="pbtns">${LESSON.parent?`<button class="next" id="pgo"><span class="emo">👨‍👩‍👧</span> Bố mẹ cùng con · ${LESSON.parent.mins||5} phút</button>`:''}<button class="next alt" id="rgo"><span class="emo">📋</span> Báo cáo cho bố mẹ</button></div>`}
+function bindParent(){if($('#pgo'))$('#pgo').onclick=parentAct;if($('#rgo'))$('#rgo').onclick=report}
+function parentAct(){const P=LESSON.parent;
+  app.innerHTML=topbar(`<span class="emo">${P.icon||'👨‍👩‍👧'}</span> ${esc(P.title)}`)+`<div class="pguide"><b>Bố mẹ làm cùng con (${P.mins||5} phút):</b> ${P.guide}</div>
+  <div class="pcards">${P.cards.map((c,j)=>`<button class="pcard" data-j="${j}"><span class="emo">${c.e||''}</span><b>${esc(c.front)}</b><span class="back2">${esc(c.back)}</span><span class="tap">Chạm để xem câu trả lời mẫu${c.en?' và nghe':''}</span></button>`).join('')}</div>
+  ${P.bedtime?`<div class="bed"><b><span class="emo">🌙</span> Câu hỏi trước giờ ngủ</b><ol style="margin:6px 0 0 24px">${P.bedtime.map(q=>`<li>${esc(q)}</li>`).join('')}</ol></div>`:''}
+  <div style="text-align:center;margin-top:18px"><button class="next" id="pdone">Cả nhà làm xong rồi <span class="emo">💖</span></button></div>`;
+  bindBack(home);
+  app.querySelectorAll('.pcard').forEach(b=>b.onclick=()=>{const c=P.cards[+b.dataset.j];const was=b.classList.contains('open');b.classList.add('open');if(c.en)speak(was?c.front:c.back,'en-US')});
+  $('#pdone').onclick=()=>{store.set('parent-'+LESSON.id,true);confetti(40);home()};
+}
+function report(){
+  const one=k=>{const K=LESSON.kids[k];const d=store.get(doneKey(k),[]);const m=store.get(missKey(k),{});logDay(k);
+    const top=Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([key,c])=>{const p=key.indexOf('|');const ai=+key.slice(0,p),q=key.slice(p+1);return `<li><b>${esc((K.acts[ai]||{}).title||'')}</b>: ${esc(q)} <i>(sai ${c} lần)</i></li>`});
+    const words=enWords(k);
+    const tip=K.tonight||(top.length?'Tối nay bố mẹ hỏi lại bằng lời những câu con hay sai ở trên, rồi khen con khi con làm được.':d.length?'Con làm rất tốt. Tối nay bố mẹ hỏi lại 3 từ tiếng Anh mới bên trên.':'Con chưa bắt đầu bài hôm nay.');
+    const H=store.get('hist-'+k,{});const days=Object.keys(H).sort().slice(-7);
+    return `<div class="rep"><h3><span class="emo">${K.icon}</span> ${esc(K.name)}</h3>
+      <div>Bài hôm nay: <b>${d.length}/${K.acts.length}</b> bài xong${store.get('parent-'+LESSON.id,false)?' · đã làm hoạt động cùng bố mẹ <span class="emo">💖</span>':''}</div>
+      <div style="margin-top:6px"><b>Câu con hay sai:</b>${top.length?`<ul>${top.join('')}</ul>`:' chưa có câu nào sai.'}</div>
+      ${words.length?`<div><b>Từ tiếng Anh mới:</b> ${words.map(esc).join(', ')}</div>`:''}
+      <div style="margin-top:6px"><b>Gợi ý ôn tối nay:</b> ${esc(tip)}</div>
+      ${days.length?`<div style="margin-top:10px"><b>Tổng kết tuần (trên máy này):</b><table><tr><th>Ngày</th><th>Chủ đề</th><th>Bài xong</th><th>Lần sai</th></tr>${days.map(x=>`<tr><td>${esc(H[x].date)}</td><td>${esc(H[x].theme)}</td><td>${H[x].done}/${H[x].n}</td><td>${H[x].miss}</td></tr>`).join('')}</table></div>`:''}
+    </div>`};
+  app.innerHTML=topbar('<span class="emo">📋</span> Báo cáo cho bố mẹ')+`<div class="pguide">Tổng sao: <b>${stars()}</b> <span class="emo">⭐</span>. Báo cáo lấy từ bài con làm trên máy này.</div>${one('k5')}${one('k8')}`;
+  bindBack(home);
+}
 /* ================= TRÒ CHƠI THƯỞNG CUỐI NGÀY =================
    Xong hết bài (đủ sao) thì hộp quà mở. Mỗi ngày một trò (LESSON.reward.game), mỗi bé chơi tối đa 5 phút/ngày. */
 const GAME_MS=5*60*1000;
@@ -447,7 +495,7 @@ function pChoice(k,i,a){
         const last=r===a.rounds.length-1;const seq=a.en?['__ok',R.okSay]:os?['__jingle','Con giỏi quá!',os]:['__jingle',msg];
         if(a.final&&last)seq.push(a.final);
         playSeq(seq.filter(Boolean),()=>setTimeout(()=>{r++;if(r<a.rounds.length)draw();else finish(k,i,a.final?`<div class="key" style="display:block;font-size:22px;text-align:center">${a.final}</div>`:'')},600));
-      }else{b.classList.remove('no');void b.offsetWidth;b.classList.add('no');
+      }else{noteMiss(k,i,R.q);b.classList.remove('no');void b.offsetWidth;b.classList.add('no');
         const m=R.no||a.no||(a.en?'Oops! Con thử lại nhé!':'Ôi, mình làm lại nhé!');$('#fb').className='fb bad';$('#fb').textContent=m;if(a.en)cheer(false);else cheerVi(false,R.no||a.no||'Ôi, mình làm lại nhé!')}
     });
   };draw();

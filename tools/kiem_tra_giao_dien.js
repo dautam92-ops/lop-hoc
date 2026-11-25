@@ -8,4 +8,6 @@ const check=async where=>{const t=await p.evaluate(()=>document.body.innerText);
 await p.goto(f);await check('Trang chủ');const L=await p.evaluate(()=>LESSON);
 for(const k of Object.keys(L.kids)){await p.goto(f);await p.click(`.kid[data-k="${k}"]`);await check(k+' bản đồ');
   for(let i=0;i<L.kids[k].acts.length;i++){await p.goto(f);await p.click(`.kid[data-k="${k}"]`);await p.$eval(`.act[data-i="${i}"]`,e=>e.click());await p.waitForTimeout(150);await check(`${k} bài ${i+1} "${L.kids[k].acts[i].title}"`)}}
+if(L.parent){await p.goto(f);await p.click('#pgo');await p.$$eval('.pcard',es=>es.forEach(e=>e.click()));await check('Bố mẹ cùng con')}
+await p.goto(f);if(await p.$('#rgo')){await p.click('#rgo');await check('Báo cáo cho bố mẹ')}
 await b.close();if(bad.length){console.log('LỖI GIAO DIỆN:\n- '+bad.join('\n- '));process.exit(1)}console.log('OK: giao diện không có mã thô, không tràn ngang.')})();
