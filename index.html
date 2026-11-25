@@ -79,6 +79,18 @@ button:focus-visible{outline:4px solid var(--sea);outline-offset:3px}
 .seq .tile.hole{border:4px dashed var(--grape);background:#f3efff;color:var(--grape);animation:pulse 1.4s ease-in-out infinite}
 .seq .tile.hole.filled{border-style:solid;border-color:var(--good);background:#e6f8f0;color:var(--ink);animation:none}
 @keyframes pulse{50%{transform:scale(1.07)}}
+.gift{margin-top:18px;width:100%;display:flex;align-items:center;gap:16px;text-align:left;border-radius:26px;padding:16px 20px;background:#f1eee8;border:4px dashed #cfc6b6;color:var(--muted)}
+.gift>.emo{font-size:54px;line-height:1}.gift b{display:block;font-family:var(--display);font-size:26px;color:var(--ink)}.gift small{font-size:19px;font-weight:800}
+.gift.open{background:linear-gradient(135deg,#ffe07a,#ff9fb2);border:4px solid #ffb020;color:var(--ink);box-shadow:0 6px 0 #e5a52a;animation:pulse 1.6s ease-in-out infinite}
+.next.gift-go{background:var(--berry);box-shadow:0 5px 0 #d43c55}
+.gstage{padding:12px}.ghud{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center}
+.gtarget{display:inline-flex;min-width:64px;height:64px;align-items:center;justify-content:center;border-radius:50%;background:var(--grape);color:#fff;font-size:40px;padding:0 10px}
+.gscore{font-weight:800;font-size:22px}
+.sky{position:relative;width:100%;height:min(68vh,760px);overflow:hidden;border-radius:24px;background:linear-gradient(#bfe6ff,#e8f6ff 70%,#d9f5df);touch-action:none}
+.balloon{position:absolute;top:0;left:0;width:96px;height:116px;border-radius:50% 50% 46% 46%;color:#fff;font-family:var(--display);font-size:50px;font-weight:800;text-shadow:0 2px 0 rgba(0,0,0,.18);box-shadow:inset -10px -12px 0 rgba(0,0,0,.12)}
+.balloon::after{content:"";position:absolute;left:50%;top:100%;width:2px;height:40px;background:#8a8299}
+.balloon.pop{animation:popb .3s forwards}.balloon.no{animation:shake .4s}
+@keyframes popb{to{opacity:0;scale:1.6}}
 .opt:active{transform:translateY(3px)}
 .opt.ok{border-color:var(--good);background:#e6f8f0}
 .opt.no{border-color:var(--bad);animation:shake .4s}
@@ -141,6 +153,7 @@ const LESSON = {
   id: '2026-11-25',
   date: 'Thứ Tư, 25/11',
   theme: 'Khu rừng cảm xúc',
+  reward: {game:'bongbay', icon:'🎈', title:'Bóng bay chữ số'}, /* trò thưởng hôm nay, mỗi ngày một trò mới theo vòng GAMES */
   kids: {
     k5: {
       name: 'Em · 5 tuổi', title: 'Khu Rừng của Thỏ Bông', icon: '🐰', color: '#ff7a45', grad: 'linear-gradient(135deg,#ffa24c,#ff5d73)',
@@ -290,17 +303,69 @@ function home(){
 function map(k){
   const K=LESSON.kids[k];const d=store.get(doneKey(k),[]);
   const tagc={'Trí tuệ':'var(--sea)','Cảm xúc':'var(--berry)','English':'var(--leaf)','Luyện viết':'var(--grape)'};
-  app.innerHTML=topbar(`<span class="emo">${K.icon}</span> ${K.title}`)+`<div class="acts">${K.acts.map((a,i)=>`<button class="act ${d.includes(i)?'done':''}" data-i="${i}"><span class="ico emo">${a.icon}</span><b>${a.title}</b><span class="tag" style="background:${tagc[a.tag]}">${a.tag}</span></button>`).join('')}</div>`;
+  app.innerHTML=topbar(`<span class="emo">${K.icon}</span> ${K.title}`)+`<div class="acts">${K.acts.map((a,i)=>`<button class="act ${d.includes(i)?'done':''}" data-i="${i}"><span class="ico emo">${a.icon}</span><b>${a.title}</b><span class="tag" style="background:${tagc[a.tag]}">${a.tag}</span></button>`).join('')}</div>
+  ${giftBtn(k)}`;
   bindBack(home);
-  app.querySelectorAll('.act').forEach(b=>b.onclick=()=>play(k,+b.dataset.i));
+  app.querySelectorAll('.act').forEach(b=>b.onclick=()=>play(k,+b.dataset.i));bindGift(k);
 }
 function finish(k,i,extra=''){
   markDone(k,i);confetti(40);
   const K=LESSON.kids[k];const nx=i+1<K.acts.length;
-  app.innerHTML=topbar(K.acts[i].title)+`<div class="stage"><div class="win emo">🏆</div><h2 style="font-size:40px">Giỏi quá!</h2><p class="sent">Con được thêm 1 ngôi sao <span class="emo">⭐</span></p>${extra}<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">${nx?`<button class="next" id="nx">Bài tiếp theo ➜</button>`:''}<button class="next alt" id="mp">Về bản đồ</button></div></div>`;
+  app.innerHTML=topbar(K.acts[i].title)+`<div class="stage"><div class="win emo">🏆</div><h2 style="font-size:40px">Giỏi quá!</h2><p class="sent">Con được thêm 1 ngôi sao <span class="emo">⭐</span></p>${extra}<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">${allDone(k)&&LESSON.reward?`<button class="next gift-go" id="gf">Mở quà <span class="emo">🎁</span></button>`:nx?`<button class="next" id="nx">Bài tiếp theo ➜</button>`:''}<button class="next alt" id="mp">Về bản đồ</button></div></div>`;
   bindBack(()=>map(k));const A=LESSON.kids[k].acts[i];if(A.tag==='English')cheer(true);else cheerVi(true,'Giỏi quá! Con được thêm một ngôi sao.');
-  if(nx)$('#nx').onclick=()=>play(k,i+1);$('#mp').onclick=()=>map(k);
+  if($('#nx'))$('#nx').onclick=()=>play(k,i+1);if($('#gf'))$('#gf').onclick=()=>openGift(k);$('#mp').onclick=()=>map(k);
 }
+
+/* ================= TRÒ CHƠI THƯỞNG CUỐI NGÀY =================
+   Xong hết bài (đủ sao) thì hộp quà mở. Mỗi ngày một trò (LESSON.reward.game), mỗi bé chơi tối đa 5 phút/ngày. */
+const GAME_MS=5*60*1000;
+const gameKey=k=>'game-'+LESSON.id+'-'+k;
+function allDone(k){return store.get(doneKey(k),[]).length>=LESSON.kids[k].acts.length}
+function giftBtn(k){const R=LESSON.reward;if(!R)return'';const d=store.get(doneKey(k),[]).length,n=LESSON.kids[k].acts.length;
+  return allDone(k)?`<button class="gift open" id="gift"><span class="emo">🎁</span><span><b>Trò chơi thưởng hôm nay</b><small><span class="emo">${R.icon}</span> ${R.title}</small></span></button>`
+   :`<button class="gift" id="gift"><span class="emo">🔒</span><span><b>Hộp quà cuối ngày</b><small>Xong hết bài để mở quà · ${d}/${n} <span class="emo">⭐</span></small></span></button>`}
+function bindGift(k){const g=$('#gift');if(!g)return;g.onclick=()=>allDone(k)?openGift(k):playSeq(['__boing','Con làm xong hết bài để mở hộp quà nhé!'])}
+function openGift(k){const used=store.get(gameKey(k),0);
+  if(used>=GAME_MS){app.innerHTML=topbar('Trò chơi thưởng')+`<div class="stage"><div class="win emo">🌙</div><p class="sent">Hết giờ chơi rồi! Hẹn con ngày mai nhé!</p><button class="next alt" id="mp">Về bản đồ</button></div>`;bindBack(()=>map(k));$('#mp').onclick=()=>map(k);playSeq(['Hết giờ chơi rồi! Hẹn con ngày mai nhé!']);return}
+  confetti(30);(GAMES[LESSON.reward.game]||GAMES.bongbay)(k)}
+/* Đồng hồ chơi: cộng dồn thời gian, hết 5 phút thì dừng nhẹ nhàng */
+function gameClock(k,onEnd){let last=Date.now(),alive=true;const tick=()=>{if(!alive)return;const now=Date.now();const u=store.get(gameKey(k),0)+(now-last);last=now;store.set(gameKey(k),u);
+  const left=Math.max(0,GAME_MS-u);const el=$('#gclock');if(el)el.textContent=Math.ceil(left/60000)+' phút';if(left<=0){alive=false;onEnd();return}setTimeout(tick,1000)};setTimeout(tick,1000);
+  return()=>{alive=false}}
+const GAMES={
+  /* 1. Bóng bay chữ số: nghe cô đọc rồi chạm đúng quả bóng */
+  bongbay(k){
+    const NAMES={'1':'số một','2':'số hai','3':'số ba','4':'số bốn','5':'số năm','6':'số sáu','7':'số bảy','8':'số tám','9':'số chín','a':'chữ a','ă':'chữ á','â':'chữ ớ','b':'chữ bê','c':'chữ xê','d':'chữ dê','đ':'chữ đê','e':'chữ e'};
+    const pool=k==='k5'?['1','2','3','4','5','a','ă','â','b']:Object.keys(NAMES);
+    const rise=k==='k5'?9000:6500,every=k==='k5'?1300:950,goal=10;
+    const cols=['#ff5d73','#ffb020','#22b07d','#2f80ed','#7b61ff','#ff7a45'];
+    let target=null,score=0,spawnT=null,raf=null,stopClock=null,balloons=[];
+    app.innerHTML=topbar('<span class="emo">🎈</span> Bóng bay chữ số')+`<div class="stage gstage"><div class="ghud"><button class="say" id="say" aria-label="Nghe">🔊</button><div class="q">Chạm bóng: <span class="gtarget" id="gt"></span></div><div class="gscore"><span class="emo">🎈</span> <b id="gs">0</b>/${goal} · <span class="emo">⏰</span> <b id="gclock">5 phút</b></div></div><div class="sky" id="sky"></div></div>`;
+    const sky=$('#sky');
+    const stopAll=()=>{clearInterval(spawnT);cancelAnimationFrame(raf);if(stopClock)stopClock();balloons.forEach(b=>b.el.remove());balloons=[]};
+    bindBack(()=>{stopAll();map(k)});
+    const say=()=>playSeq(['Chạm vào bóng '+NAMES[target]+'!']);
+    $('#say').onclick=say;
+    const newTarget=()=>{let t;do t=pool[Math.random()*pool.length|0];while(t===target&&pool.length>1);target=t;$('#gt').textContent=t;say()};
+    const spawn=()=>{const W=sky.clientWidth;const want=!balloons.some(b=>b.t===target)||Math.random()<.35;
+      const t=want?target:pool[Math.random()*pool.length|0];const el=document.createElement('button');el.className='balloon';el.textContent=t;
+      el.style.background=cols[Math.random()*cols.length|0];const x=8+Math.random()*(W-104);el.style.left=x+'px';sky.appendChild(el);
+      const b={el,t,y:sky.clientHeight+10,v:(sky.clientHeight+140)/rise,sway:Math.random()*6.28,x};balloons.push(b);
+      el.onpointerdown=e=>{e.preventDefault();if(b.popped)return;
+        if(t===target){b.popped=true;el.classList.add('pop');score++;$('#gs').textContent=score;confetti(6);setTimeout(()=>el.remove(),300);balloons=balloons.filter(z=>z!==b);
+          if(score>=goal){stopAll();winScreen();}else{playSeq(['__jingle']);setTimeout(newTarget,700)}}
+        else{el.classList.remove('no');void el.offsetWidth;el.classList.add('no');playSeq(['__boing'])}}};
+    let lastT=performance.now();
+    const loop=now=>{const dt=now-lastT;lastT=now;for(const b of balloons){b.y-=b.v*dt;b.sway+=dt/700;b.el.style.transform=`translate(${Math.sin(b.sway)*10}px,${b.y}px)`;if(b.y<-140){b.el.remove();b.gone=true}}
+      balloons=balloons.filter(b=>!b.gone);raf=requestAnimationFrame(loop)};
+    const winScreen=()=>{confetti(40);cheerVi(true,'Giỏi quá! Con bắt được mười quả bóng!');
+      app.innerHTML=topbar('<span class="emo">🎈</span> Bóng bay chữ số')+`<div class="stage"><div class="win emo">🎈</div><p class="sent">Giỏi quá! Con bắt được ${goal} quả bóng!</p><div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center"><button class="next" id="again">Chơi lại</button><button class="next alt" id="mp">Về bản đồ</button></div></div>`;
+      bindBack(()=>map(k));$('#mp').onclick=()=>map(k);$('#again').onclick=()=>openGift(k)};
+    stopClock=gameClock(k,()=>{stopAll();openGift(k)});
+    playSeq(['Bóng bay chữ số. Nghe cô đọc rồi chạm đúng quả bóng nhé!']);
+    setTimeout(()=>{if(!document.body.contains(sky))return;newTarget();spawn();spawnT=setInterval(spawn,every);raf=requestAnimationFrame(t=>{lastT=t;loop(t)})},3800);
+  }
+};
 function play(k,i){const a=LESSON.kids[k].acts[i];({choice:pChoice,maze:pMaze,sudoku:pSud,breath:pBreath,scramble:pScr,write:pWrite,trace:pTrace})[a.type](k,i,a)}
 
 
