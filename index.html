@@ -71,11 +71,14 @@ button:focus-visible{outline:4px solid var(--sea);outline-offset:3px}
 .opt{min-height:96px;border-radius:24px;background:#fff;border:4px solid var(--line);font-family:var(--display);font-size:clamp(30px,5vw,44px);font-weight:700;padding:8px 10px;box-shadow:0 5px 0 var(--line);transition:transform .1s}
 .opt.txt{font-family:var(--body);font-size:clamp(21px,3.1vw,27px);font-weight:800;line-height:1.25}
 .opt .emo{font-size:clamp(42px,7vw,60px)}
-.opt .cap{display:block;font-family:var(--body);font-size:clamp(17px,2.5vw,22px);font-weight:800;line-height:1.2;margin-top:4px}
-.opt.reading{border-color:var(--sun);box-shadow:0 0 0 6px #ffe3a3,0 5px 0 var(--line);transform:scale(1.04)}
-.seq{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:820px}
-.seq .tile{min-width:72px;height:84px;padding:0 10px;border-radius:18px;background:#fff;border:4px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:clamp(34px,5.5vw,48px);font-weight:800}
-.seq .tile.emo{font-size:clamp(36px,6vw,52px)}
+.seq{display:flex;flex-wrap:nowrap;justify-content:center;gap:6px;max-width:100%} /* dãy quy luật luôn 1 hàng */
+.seq .tile{flex:none;width:min(84px,calc((100vw - 120px) / var(--n) - 6px));height:min(84px,calc((100vw - 120px) / var(--n) + 6px));padding:0;border-radius:18px;background:#fff;border:4px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:clamp(34px,5.5vw,48px);font-weight:800}
+.seq .tile.emo{font-size:min(50px,calc((100vw - 120px) / var(--n) * .6))}
+.seq .tile:not(.emo){font-size:min(46px,calc((100vw - 120px) / var(--n) * .5))}
+.pickbox{width:100%;max-width:760px;margin-top:18px;padding:14px 14px 16px;border-radius:26px;background:#eaf4ff;border:3px dashed #8cbcf2}
+.picklbl{font-family:var(--display);font-weight:800;font-size:22px;color:var(--sea);margin-bottom:10px}
+.opts.pick .opt{border-color:var(--sea);box-shadow:0 5px 0 #1d5fbf}
+.opts.pick .opt.ok{border-color:var(--good)}
 .seq .tile.hole{border:4px dashed var(--grape);background:#f3efff;color:var(--grape);animation:pulse 1.4s ease-in-out infinite}
 .seq .tile.hole.filled{border-style:solid;border-color:var(--good);background:#e6f8f0;color:var(--ink);animation:none}
 @keyframes pulse{50%{transform:scale(1.07)}}
@@ -98,6 +101,8 @@ button:focus-visible{outline:4px solid var(--sea);outline-offset:3px}
 .card .cf{background:#fff;border:4px solid var(--line);transform:rotateY(180deg)}
 .card.up .cb{transform:rotateY(180deg)}.card.up .cf{transform:rotateY(0)}
 .card.got .cf{border-color:var(--good);background:#e6f8f0}
+.opt:focus,.opt:focus-visible{outline:none} /* không ô nào nổi bật trước khi bé chạm */
+@media (hover:hover){.opt:hover{border-color:#d9cdb8}}
 .opt:active{transform:translateY(3px)}
 .opt.ok{border-color:var(--good);background:#e6f8f0}
 .opt.no{border-color:var(--bad);animation:shake .4s}
@@ -127,7 +132,7 @@ button:focus-visible{outline:4px solid var(--sea);outline-offset:3px}
 .nums button{width:66px;height:66px;border-radius:20px;background:var(--sea);color:#fff;font-family:var(--display);font-size:32px;box-shadow:0 5px 0 #1d5fbf}
 /* scramble */
 .slots{display:flex;gap:6px;flex-wrap:nowrap;justify-content:center;max-width:100%} /* từ ghép luôn nằm trên 1 dòng */
-.slots i{flex:none;width:min(56px,calc((100vw - 90px) / var(--n) - 6px));height:60px;border-bottom:5px solid var(--grape);font-family:var(--display);font-size:min(38px,calc((100vw - 90px) / var(--n) * .7));text-align:center;font-style:normal;color:var(--grape)}
+.slots i{flex:none;width:min(56px,calc((100vw - 120px) / var(--n) - 6px));height:60px;border-bottom:5px solid var(--grape);font-family:var(--display);font-size:min(38px,calc((100vw - 120px) / var(--n) * .7));text-align:center;font-style:normal;color:var(--grape)}
 .letters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .letters button{width:64px;height:64px;border-radius:18px;background:#fff1d6;border:3px solid var(--sun);font-family:var(--display);font-size:34px;box-shadow:0 4px 0 #e5a52a}
 .letters button:disabled{opacity:.25}
@@ -402,15 +407,8 @@ function play(k,i){const a=LESSON.kids[k].acts[i];({choice:pChoice,maze:pMaze,su
 
 /* Dãy quy luật: mỗi hình/số một ô, chỗ cần điền là ô trống có viền gạch */
 function seqTiles(R){const toks=R.show?[...new Intl.Segmenter('vi',{granularity:'grapheme'}).segment(R.show)].map(x=>x.segment).filter(g=>g.trim()):R.q.split(',').map(x=>x.trim());
-  return `<div class="seq">${toks.map(t=>t==='❓'||t==='?'?'<span class="tile hole" id="hole">?</span>':`<span class="tile ${R.show?'emo':''}">${esc(t)}</span>`).join('')}</div>`}
-/* Câu có đáp án bằng hình (bé chưa biết đọc): đọc câu hỏi rồi đọc lần lượt từng đáp án, ô đang đọc sáng lên */
-let readTok=0;function stopRead(){readTok++;document.querySelectorAll('.opt.reading').forEach(x=>x.classList.remove('reading'))}
-function readOpts(q,R){stopRead();const tok=readTok;const btns=[...document.querySelectorAll('.opt')];
-  const items=[[q,null],...R.opts.map((o,j)=>[o.say,btns[j]])].filter(x=>CLIPS[x[0]]);
-  const next=k=>{if(tok!==readTok||k>=items.length){btns.forEach(b=>b.classList.remove('reading'));return}
-    btns.forEach(b=>b.classList.remove('reading'));if(items[k][1])items[k][1].classList.add('reading');
-    try{if(curAudio)curAudio.pause();const au=new Audio(CLIPS[items[k][0]]);curAudio=au;au.onended=()=>setTimeout(()=>next(k+1),350);au.play().catch(()=>{})}catch(e){}};
-  next(0)}
+  return `<div class="seq" style="--n:${toks.length}">${toks.map(t=>t==='❓'||t==='?'?'<span class="tile hole" id="hole">?</span>':`<span class="tile ${R.show?'emo':''}">${esc(t)}</span>`).join('')}</div>`}
+function stopRead(){}
 function pChoice(k,i,a){
   let r=0;
   const draw=()=>{
@@ -422,7 +420,7 @@ function pChoice(k,i,a){
       ${a.key?`<div class="key">${a.key.map(x=>`<span><span class="emo">${x[0]}</span>= ${x[1]}</span>`).join('')}</div>`:''}
       <div class="qrow"><button class="say" id="say" aria-label="Nghe">🔊</button><div class="q">${a.seq?(R.show?R.q:'Số nào điền vào ô trống?'):R.q}</div></div>
       ${a.seq?seqTiles(R):R.show?`<div class="show emo">${R.show}</div>`:''}
-      <div class="opts c${Math.min(cols,n)}">${R.opts.map((o,j)=>`<button class="opt ${a.txt?'txt':''}" data-j="${j}">${typeof o==='object'?(o.e?`<span class="emo">${o.e}</span>`:o.h):(/\p{Extended_Pictographic}/u.test(o)&&o.length<=4?`<span class="emo">${o}</span>`:esc(o))}</button>`).join('')}</div>
+      ${a.seq?'<div class="pickbox"><div class="picklbl">${R.show?"Chọn hình đúng":"Chọn số đúng"} <span class="emo">👇</span></div>':''}<div class="opts c${Math.min(cols,n)}${a.seq?' pick':''}">${R.opts.map((o,j)=>`<button class="opt ${a.txt?'txt':''}" data-j="${j}">${typeof o==='object'?(o.e?`<span class="emo">${o.e}</span>`:o.h):(/\p{Extended_Pictographic}/u.test(o)&&o.length<=4?`<span class="emo">${o}</span>`:esc(o))}</button>`).join('')}</div>${a.seq?'</div>':''}
       <div class="fb" id="fb"></div></div>`;
     bindBack(()=>map(k));
     const qSpoken=a.seq&&!R.show?'Số nào điền vào ô trống?':R.q;const optSays=R.opts.map(o=>o&&o.say).filter(Boolean);
