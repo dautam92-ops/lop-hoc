@@ -1,5 +1,6 @@
 // Chạy trọn một buổi học nháp nhiều chặng (D42) trên trình duyệt thật, chụp mỗi chặng, đo hình minh họa.
 // Chạy: node tools/play-draft.mjs L001   → reports/draft-L001/*.png, reports/draft-L001.json
+import { doToGiua } from './do-to-giua.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -38,6 +39,8 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
         return { illusPct: Math.round(100 * Math.max(0, bdArea - ui) / A), backdrop: !!bd, realBackdrop: !!real, minTap: taps.length ? Math.round(Math.min(...taps.map(r => Math.min(r.width, r.height)))) : 0,
           emoji: ((document.body.innerText || '').match(/\p{Extended_Pictographic}/gu) || []).length };
       });
+      m.toGiua = await page.evaluate(doToGiua);
+      m.toGiua = await page.evaluate(doToGiua);
       const file = `${String(k++).padStart(2, '0')}-${vp}.png`; await page.screenshot({ path: path.join(OUT, file) });
       shots.push({ step: st.step, title: st.t, file, ...m });
     }
