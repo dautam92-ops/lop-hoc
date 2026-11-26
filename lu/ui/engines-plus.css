@@ -425,3 +425,11 @@
   .lu-lesson .bin-in { gap: 4px; margin-top: 4px; }
   .lu-lesson .bin-in > span { border-radius: 10px; }
 }
+
+/* ---- Đếm ngược ghi nhớ (tam 26/11 19:41): số 3, 2, 1 thật to giữa màn, đếm xong mới úp tranh. Phép thử ở test-lab.mjs */
+.lu-lesson.dem .answers { visibility: hidden; }
+.lu-cdn { position: fixed; left: 50%; bottom: max(3vh, 12px); translate: -50% 0; z-index: 40; pointer-events: none; display: grid; place-items: center;
+  width: 150px; height: 150px; border-radius: 50%; background: #fffaf0; border: 6px solid #f6c85f; box-shadow: 0 8px 0 rgba(107,82,50,.12); }
+.lu-cdn b { font: 800 104px/1 var(--lu-font-display, 'Baloo 2', system-ui, sans-serif); color: #e07a3c; animation: lu-cdn-pop .3s ease-out both; }
+@keyframes lu-cdn-pop { from { transform: scale(.7); } to { transform: none; } }
+@media (max-width: 600px) { .lu-cdn { width: 112px; height: 112px; border-width: 5px; } .lu-cdn b { font-size: 76px; } }

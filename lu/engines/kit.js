@@ -6,6 +6,13 @@ export { esc, fill, vis };
 
 export const sleep = (ctx, ms) => new Promise(r => setTimeout(r, ctx.fast ? 0 : ms));
 // Hook cho Phòng mẫu: "Thử đúng" / "Thử sai" gọi hàm do engine đăng ký (với thao tác không phải chạm một nút)
+// Đếm ngược 3, 2, 1 thật to giữa màn trong lúc bé nhìn để ghi nhớ; đếm xong mới úp tranh (tam 26/11 19:41). Tổng thời gian ≥ 3 giây.
+export async function countdown(ctx, ms = 3000) {
+  const host = ctx.ui.stage.closest('.lu-lesson') || document.body; host.classList.add('dem');
+  const el = document.createElement('div'); el.className = 'lu-cdn'; el.setAttribute('aria-hidden', 'true'); host.appendChild(el);
+  const step = Math.max(ms, 3000) / 3;
+  try { for (const n of [3, 2, 1]) { el.innerHTML = `<b>${n}</b>`; await sleep(ctx, step); } } finally { el.remove(); host.classList.remove('dem'); }
+}
 export const setAuto = (ctx, right, wrong) => { if (ctx.test?.setAuto) ctx.test.setAuto(right, wrong); };
 
 // Khung tranh kể chuyện: nền (ảnh đã duyệt "asset:BC-0002" hoặc hình vẽ mã) + nhân vật, đồ vật đặt theo % (x, y là tâm đáy)

@@ -4,7 +4,7 @@
 //   copy  : TÁI TẠO MÔ HÌNH (xếp lại theo mẫu). Bên trái là mẫu của Lu, bên phải lưới trống; bé chạm ô để tô cho giống mẫu.
 //           Tự sửa lỗi kiểu Montessori: chạm ô không có trong mẫu thì ô không tô (rung nhẹ), bé tự nhìn lại mẫu.
 // Không gọi mạng, không AI trong phiên học. Đáp án đúng theo cách dựng: verify kiểm tra vị trí không trùng, mẫu hợp lệ.
-import { vis, esc, fill, sleep, setAuto, req } from './kit.js';
+import { vis, esc, fill, sleep, setAuto, req, countdown } from './kit.js';
 
 export const MODES = new Set(['where', 'copy']);
 
@@ -66,7 +66,7 @@ function where(ctx, act, R, first) {
     const target = () => R.pos[R.asks[k]];
     const ask = () => fill(act.q, { name: act.objs[target().o].name });
     let looking = false;
-    const look = async () => { looking = true; G.classList.remove('cov'); await sleep(ctx, act.look_ms || 3000); G.classList.add('cov'); G.querySelectorAll('.wh-c.got').forEach(x => x.classList.add('open')); looking = false; };
+    const look = async () => { looking = true; G.classList.remove('cov'); await countdown(ctx, act.look_ms || 3000); G.classList.add('cov'); G.querySelectorAll('.wh-c.got').forEach(x => x.classList.add('open')); looking = false; };
     const box = ui.answers(act.label || 'Bé chạm vào ô đúng', `<button class="big-btn alt wh-again">Xem lại</button>`);
     box.querySelector('.wh-again').onclick = async () => { if (voice.busy || looking) return; await look(); };
     const mark = () => ctx.test.mark(cell(target().c));
