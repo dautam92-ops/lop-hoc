@@ -35,7 +35,7 @@ function round(ctx, act, R, first) {
   const { ui, voice } = ctx; const C = act.cols, Rr = act.rows, n = C * Rr; let left = n, wrong = 0, sel = null;
   return new Promise(done => {
     const ghost = act.ghost ? `<div class="pz-ghost">${vis(R.pic)}</div>` : '';
-    const board = `<div class="pz-board" style="grid-template-columns:repeat(${C},1fr);aspect-ratio:${act.aspect || '16/10'}">${ghost}${Array.from({ length: n }, (_, i) =>
+    const board = `<div class="pz-board" style="grid-template-columns:repeat(${C},1fr);grid-template-rows:repeat(${Rr},1fr);aspect-ratio:${act.aspect || '16/10'};--ar:${arOf(act)}">${ghost}${Array.from({ length: n }, (_, i) =>
       act.mode === 'rotate' ? `<button class="pz-slot rot" data-i="${i}" data-r="${R.rot[i]}" style="--rot:${R.rot[i] * 90}deg">${pieceInner(R.pic, i, C, Rr)}</button>` : `<div class="pz-slot" data-i="${i}"></div>`).join('')}</div>`;
     ui.scene(act.title, board);
     const B = ui.stage.querySelector('.pz-board');
@@ -68,4 +68,5 @@ function round(ctx, act, R, first) {
     voice.say(first ? act.intro : [act.again || act.intro[0]]);
   });
 }
+const arOf = act => { const [w, h] = String(act.aspect || '16/10').split('/').map(Number); return w / h; };
 const aspectPiece = act => { const [w, h] = String(act.aspect || '16/10').split('/').map(Number); return `${w / act.cols}/${h / act.rows}`; };

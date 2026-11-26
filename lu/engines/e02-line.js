@@ -3,7 +3,8 @@
 import { vis, sleep, setAuto, req } from './kit.js';
 export const MORE = new Set(['line']);
 export function validate(act) { const e = req(act, ['skill_id', 'title', 'sets', 'done']); (act.sets || []).forEach((s, i) => { if (s.length < 2 || s.length > 5) e.push(`${act.activity_id} bộ ${i + 1}: cần 2–5 cặp`); if (new Set(s.map(p => p.target)).size !== s.length) e.push(`${act.activity_id} bộ ${i + 1}: hai đích trùng nhau`); }); return e; }
-export const generate = (act, rng) => ({ rounds: rng.sample(act.sets.map((s, i) => i), act.rounds || act.sets.length).map(i => ({ i, L: rng.shuffle(act.sets[i].map((p, j) => j)), R: rng.shuffle(act.sets[i].map((p, j) => j)) })) });
+// Hai cột luôn lệch nhau (không để cặp nào nằm thẳng hàng hết cả bảng)
+export const generate = (act, rng) => ({ rounds: rng.sample(act.sets.map((s, i) => i), act.rounds || act.sets.length).map(i => { const ix = act.sets[i].map((p, j) => j); const L = rng.shuffle(ix); let R, g = 0; do { R = rng.shuffle(ix); } while (R.every((x, j) => x === L[j]) && g++ < 50); return { i, L, R }; }) });
 export const verify = (act, v) => v.rounds.flatMap((r, k) => r.L.every((x, j) => x === r.R[j]) ? [`${act.activity_id} vòng ${k + 1}: hai cột đang thẳng hàng, chưa xáo`] : []);
 export const lines = act => [...(act.intro || []), act.again, act.done, ...act.sets.flat().map(p => p.ok)].filter(Boolean);
 export async function mount(ctx, act, v) { for (let r = 0; r < v.rounds.length; r++) { await round(ctx, act, v.rounds[r], r === 0); ctx.tick?.(); } }

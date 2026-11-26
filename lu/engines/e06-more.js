@@ -168,7 +168,7 @@ function multi(ctx, act, R, first) {
   return new Promise(done => {
     const q = multiQ(act, R.rule, R.want.kind, R.want.color, R.want.big);
     ui.scene(act.title, '');
-    const box = ui.answers(act.label || 'Chạm tất cả hình đúng', `<div class="grid mg" style="grid-template-columns:repeat(${act.cols || 4},minmax(0,1fr));width:min(100%,560px)">${R.items.map((it, i) => `<button class="opt cell-f mt${it.big ? ' big' : ' small'}" data-i="${i}">${vis(`art:${it.kind}:${encodeURIComponent(LAB_COLORS[it.color] || it.color)}`)}</button>`).join('')}</div>`);
+    const box = ui.answers(act.label || 'Chạm tất cả hình đúng', `<div class="grid mg" style="grid-template-columns:repeat(${act.cols || 4},minmax(0,1fr));--ar:${(act.cols || 4) / Math.ceil(R.items.length / (act.cols || 4))}">${R.items.map((it, i) => `<button class="opt cell-f mt${it.big ? ' big' : ' small'}" data-i="${i}">${vis(`art:${it.kind}:${encodeURIComponent(LAB_COLORS[it.color] || it.color)}`)}</button>`).join('')}</div>`);
     const btns = [...box.querySelectorAll('.mt')]; const good = btns.filter(b => multiMatch(R, R.items[+b.dataset.i]));
     let left = good.length;
     const markNext = () => ctx.test.mark(good.find(b => !b.classList.contains('right')));

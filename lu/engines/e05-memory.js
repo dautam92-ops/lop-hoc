@@ -47,6 +47,10 @@ export function mount(ctx, act, v) {
         setTimeout(() => { x.classList.remove('up'); y.classList.remove('up'); open = []; lock = false; }, ctx.fast ? 0 : 1100);
       }
     });
+    // Phòng mẫu: "Thử đúng" lật một đôi đúng, "Thử sai" lật hai thẻ khác nhau
+    const tap = el => el && el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    ctx.test.setAuto?.(async () => { const rest = [...box.querySelectorAll('.card:not(.right)')]; const a = rest[0]; const b = rest.find(x => x !== a && keyOf(v, +x.dataset.i) === keyOf(v, +a.dataset.i)); tap(a); tap(b); },
+      async () => { const rest = [...box.querySelectorAll('.card:not(.right)')]; const a = rest[0]; const b = rest.find(x => x !== a && keyOf(v, +x.dataset.i) !== keyOf(v, +a.dataset.i)); if (b) { tap(a); tap(b); } });
     voice.say(act.intro);
   });
 }

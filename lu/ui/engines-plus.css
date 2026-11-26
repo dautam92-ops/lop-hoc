@@ -1,3 +1,5 @@
+:root { --vis-h: max(170px, calc(100dvh - 490px)); } /* chiều cao còn lại cho hình chính khi có khu đáp án bên dưới */
+.lu-lesson .glyph { font: 800 clamp(56px, 9vw, 96px)/1 var(--lu-font-display); color: var(--lu-ink); }
 /* Giao diện cho engine E07, E08, E10–E14 và các chế độ mở rộng E00, E01, E04, E06 (Phòng mẫu phương thức).
    Dùng token Lu Design System; hình chính to (65–85% bề ngang cảnh), vùng chạm ≥ 64px (S04, VISUAL V1). */
 .lu-lesson .lu-ic { width: 28px; height: 28px; }
@@ -7,7 +9,7 @@
 .lu-lesson .answers .big-btn { font-size: 22px; padding: 12px 28px; }
 
 /* Khung tranh kể chuyện */
-.lu-lesson .frame { position: relative; width: min(100%, 760px); aspect-ratio: 16/9; border-radius: var(--r-lg); overflow: hidden; background: #f3ead2; border: 1.5px solid var(--lu-line); }
+.lu-lesson .frame { position: relative; width: min(100%, 760px, calc(var(--vis-h) * 16 / 9)); aspect-ratio: 16/9; border-radius: var(--r-lg); overflow: hidden; background: #f3ead2; border: 1.5px solid var(--lu-line); }
 .lu-lesson .frame .fr-bg, .lu-lesson .frame .fr-bg img, .lu-lesson .frame .fr-bg svg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .lu-lesson .frame .fr-it { position: absolute; transform: translateX(-50%); aspect-ratio: 1; display: grid; place-items: end center; }
 .lu-lesson .frame .fr-it > *, .lu-lesson .frame .fr-it img, .lu-lesson .frame .fr-it .lu-art { width: 100% !important; height: 100% !important; object-fit: contain; }
@@ -26,7 +28,7 @@
 .lu-lesson .mz-it.got { animation: lu-pop .4s both; opacity: 0; transition: opacity .4s .3s; }
 
 /* E08 xếp hình */
-.lu-lesson .pz-board { position: relative; display: grid; gap: 4px; width: min(100%, 640px); background: #efe4c8; border-radius: var(--r-lg); padding: 4px; }
+.lu-lesson .pz-board { position: relative; display: grid; gap: 4px; width: min(100%, 640px, calc(var(--vis-h) * var(--ar, 1.6))); background: #efe4c8; border-radius: var(--r-lg); padding: 4px; }
 .lu-lesson .pz-ghost { position: absolute; inset: 4px; opacity: .22; pointer-events: none; border-radius: 12px; overflow: hidden; }
 .lu-lesson .pz-ghost > *, .lu-lesson .pz-ghost img { width: 100%; height: 100%; object-fit: cover; }
 .lu-lesson .pz-slot { position: relative; border: 2.5px dashed #cdb98c; border-radius: 10px; min-height: 60px; background: transparent; padding: 0; overflow: hidden; }
@@ -69,7 +71,7 @@
 .lu-lesson .st-list li.done { opacity: 1; }
 .lu-lesson .st-list li.done span { background: var(--lu-leaf); color: #fff; }
 .lu-lesson .opt.st-opt .lu-art { width: 84px; height: 84px; }
-.lu-lesson .place-sc { position: relative; width: min(100%, 560px); aspect-ratio: 4/3; background: linear-gradient(#f7efdc 70%, #e9d7b0 70%); border-radius: var(--r-lg); border: 1.5px solid var(--lu-line); }
+.lu-lesson .place-sc { position: relative; width: min(100%, 560px, calc(var(--vis-h) * 4 / 3)); aspect-ratio: 4/3; background: linear-gradient(#f7efdc 70%, #e9d7b0 70%); border-radius: var(--r-lg); border: 1.5px solid var(--lu-line); }
 .lu-lesson .pl-anchor { position: absolute; left: 33%; top: 34%; width: 34%; }
 .lu-lesson .pl-anchor .lu-art { width: 100%; height: auto; }
 .lu-lesson .pl-zone { position: absolute; border-radius: 16px; display: grid; place-items: center; }
@@ -131,7 +133,7 @@
 .lu-lesson .tr-arrow { fill: none; stroke: #e0705a; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .lu-lesson .tr-pen { fill: var(--lu-sun-deep); stroke: #fff; stroke-width: 1.2; }
 .lu-lesson .tr-name { font: 700 18px var(--lu-font-body); color: var(--lu-ink-soft); }
-.lu-lesson .color-pic { width: min(100%, 460px, calc(100dvh - 330px)); }
+.lu-lesson .color-pic { width: min(100%, 460px, var(--vis-h)); }
 .lu-lesson .cl-svg { width: 100%; height: auto; background: #fffdf6; border-radius: 18px; border: 1.5px solid var(--lu-line); }
 .lu-lesson .cl-r { fill: #fffdf6; stroke: #6b5232; stroke-width: 3; stroke-linejoin: round; cursor: pointer; transition: fill .25s; }
 .lu-lesson .cl-n { font: 800 22px var(--lu-font-display); fill: #8a7a5c; text-anchor: middle; pointer-events: none; }
@@ -141,13 +143,13 @@
 .lu-lesson .opt.crayon b { position: absolute; top: 2px; left: 6px; font-size: 18px; }
 
 /* E14 sáng tạo */
-.lu-lesson .draw-pad { width: min(100%, 680px); }
+.lu-lesson .draw-pad { width: min(100%, 680px, calc(var(--vis-h) * 4 / 3)); }
 .lu-lesson .dw-svg { width: 100%; height: auto; border-radius: 18px; border: 1.5px solid var(--lu-line); touch-action: none; cursor: crosshair; }
 .lu-lesson .dw-line { fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: .9; }
 .lu-lesson .dw-base { opacity: .8; stroke-dasharray: 2 0; }
 .lu-lesson .opt.dw-undo { min-width: 64px; }
 .lu-lesson .answers.ideas .opt .lu-art { width: 72px; height: 72px; }
-.lu-lesson .stk-scene { position: relative; width: min(100%, 760px); }
+.lu-lesson .stk-scene { position: relative; width: min(100%, 760px, calc(var(--vis-h) * 16 / 9)); }
 .lu-lesson .stk-drop { position: absolute; inset: 0; }
 .lu-lesson .stk-on { position: absolute; width: 16%; transform: translate(-50%, -50%); animation: lu-pop .3s both; pointer-events: none; }
 .lu-lesson .stk-on .lu-art { width: 100%; height: auto; }
@@ -176,7 +178,8 @@
 .lu-lesson .vn-cloth { position: absolute; inset: 0; border-radius: 24px; background: repeating-linear-gradient(45deg, #e98b9a 0 22px, #f19aa8 22px 44px); transform: translateY(-110%); transition: transform .6s var(--ease); }
 .lu-lesson .vn-tray.covered .vn-cloth { transform: none; }
 .lu-lesson .vn-tray { overflow: hidden; }
-.lu-lesson .mg .opt.mt { aspect-ratio: 1; }
+.lu-lesson .grid.mg { width: min(100%, 560px, calc((100dvh - 300px) * var(--ar, 1))) !important; }
+.lu-lesson .mg .opt.mt { aspect-ratio: 1; min-width: 0; min-height: 0; padding: 4px; }
 .lu-lesson .mg .opt.mt .lu-art { width: 82%; height: 82%; }
 .lu-lesson .mg .opt.mt.small .lu-art { width: 48%; height: 48%; }
 
@@ -234,3 +237,5 @@
 .lu-lesson .ln-a .dot, .lu-lesson .ln-b .dot { position: absolute; top: 50%; width: 16px; height: 16px; border-radius: 50%; background: var(--lu-sun-deep); transform: translateY(-50%); }
 .lu-lesson .ln-a .dot { right: -10px; } .lu-lesson .ln-b .dot { left: -10px; }
 .lu-lesson .opt.ln-a.sel { border-color: var(--lu-sun-deep); }
+.lu-lesson .pz-full img.lu { object-fit: contain !important; }
+.lu-lesson .stage:has(.answers.tray) { --vis-h: max(150px, calc(100dvh - 580px)); }

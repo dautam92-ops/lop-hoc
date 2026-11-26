@@ -10,7 +10,7 @@ except ImportError:
     sys.exit('Chưa có edge-tts. Chạy: pip install edge-tts')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUD = os.path.join(ROOT, 'content', 'audio')
-todo = json.load(open(os.path.join(AUD, 'can-tao.json'), encoding='utf8'))['lines']
+todo = json.load(open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(AUD, 'can-tao.json'), encoding='utf8'))['lines']  # tùy chọn: đường dẫn danh sách khác (vd content/lab/can-tao-giong.json)
 reg_path = os.path.join(AUD, 'registry.json')
 reg = json.load(open(reg_path, encoding='utf8'))
 VOICE = {'vi': ('vi-VN-HoaiMyNeural', '-5%'), 'en': ('en-US-AnaNeural', '-10%')}

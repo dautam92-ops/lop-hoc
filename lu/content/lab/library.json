@@ -1,0 +1,2973 @@
+{
+ "format": "lu-method-library",
+ "version": "1.0.0",
+ "refs_total": 100,
+ "methods": [
+  {
+   "id": "PT-01",
+   "name_vi": "Lu giảng bằng hình và câu hỏi",
+   "name_en": "Illustrated mini-lecture with checks",
+   "group": "Giảng bài",
+   "refs": [
+    "M001",
+    "M002",
+    "M003",
+    "M005",
+    "M084"
+   ],
+   "ref_names": [
+    "Giới thiệu kiến thức bằng hình ảnh và lời thoại",
+    "Giải thích từng bước",
+    "Giải thích cấu tạo và các bộ phận",
+    "Giảng bài kết hợp câu hỏi tương tác",
+    "Khám phá cấu tạo"
+   ],
+   "mech_in_use": [],
+   "goal": "Nghe Lu giảng về các bộ phận của con gà, tự chạm khám phá, rồi trả lời câu hỏi.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.QH.02"
+   ],
+   "knowledge": [
+    "Kiến thức thế giới"
+   ],
+   "mechanics": [
+    "CC-01",
+    "CC-09"
+   ],
+   "engines": [
+    "E00 teach"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 4 bộ phận, hỏi 2 câu. 5–6: 6 bộ phận kèm từ tiếng Anh, hỏi 4 câu."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm phần câu hỏi cuối; phần nghe giảng và khám phá chỉ ghi tham gia.",
+   "demo": [
+    "MX-01"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-02",
+   "name_vi": "So sánh và đo trực quan",
+   "name_en": "Visual comparison and measuring",
+   "group": "Giảng bài",
+   "refs": [
+    "M004",
+    "M051"
+   ],
+   "ref_names": [
+    "So sánh sự vật và hiện tượng",
+    "So sánh và đo lường trực quan"
+   ],
+   "mech_in_use": [
+    "M04",
+    "M05",
+    "M08",
+    "M09"
+   ],
+   "goal": "Theo các mã tham chiếu: so sánh sự vật và hiện tượng, so sánh và đo lường trực quan.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-01",
+    "CC-07"
+   ],
+   "engines": [
+    "E01 items",
+    "E04 order"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được khi có một đáp án rõ (nhiều hơn, cao hơn).",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-03",
+   "name_vi": "Kể chuyện tương tác, chọn diễn biến",
+   "name_en": "Interactive branching story",
+   "group": "Kể chuyện",
+   "refs": [
+    "M006",
+    "M007",
+    "M008",
+    "M010",
+    "M044"
+   ],
+   "ref_names": [
+    "Kể chuyện minh họa",
+    "Kể chuyện tương tác từng cảnh",
+    "Lựa chọn diễn biến câu chuyện",
+    "Khám phá kiến thức thông qua nhiệm vụ phiêu lưu",
+    "Tưởng tượng kết thúc câu chuyện"
+   ],
+   "mech_in_use": [
+    "M48"
+   ],
+   "goal": "Nghe chuyện từng cảnh, chọn diễn biến và đoán chuyện tiếp theo.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.NQ.02"
+   ],
+   "knowledge": [
+    "Phát triển ngôn ngữ tiếng Việt"
+   ],
+   "mechanics": [
+    "CC-23",
+    "CC-25"
+   ],
+   "engines": [
+    "E10",
+    "E00"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: một lựa chọn, hai kết thúc. 5–6: thêm câu đoán và câu hỏi hiểu chuyện."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Lựa chọn diễn biến không chấm đúng sai; chỉ chấm câu hỏi hiểu chuyện.",
+   "demo": [
+    "CC-23"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-04",
+   "name_vi": "Dự đoán rồi quan sát",
+   "name_en": "Predict, then observe",
+   "group": "Kể chuyện",
+   "refs": [
+    "M009",
+    "M082"
+   ],
+   "ref_names": [
+    "Dự đoán diễn biến tiếp theo",
+    "Dự đoán và quan sát kết quả"
+   ],
+   "mech_in_use": [
+    "M53"
+   ],
+   "goal": "Nghe chuyện từng cảnh, chọn diễn biến và đoán chuyện tiếp theo.; Đoán trước, thả vật vào nước, quan sát kết quả thật và nghe giải thích.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.KH.03",
+    "TD.NQ.02"
+   ],
+   "knowledge": [
+    "Khoa học",
+    "Phát triển ngôn ngữ tiếng Việt"
+   ],
+   "mechanics": [
+    "CC-23",
+    "CC-19"
+   ],
+   "engines": [
+    "E10 du-doan",
+    "E11 sinkfloat"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: một lựa chọn, hai kết thúc. 5–6: thêm câu đoán và câu hỏi hiểu chuyện.",
+    "4–5: 3 vật quen thuộc. 5–6: 5 vật, có vật dễ đoán nhầm (khúc gỗ to vẫn nổi)."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Dự đoán không chấm; ghi lại dự đoán khớp hay không để bố mẹ trò chuyện.",
+   "demo": [
+    "CC-23",
+    "CC-19"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-05",
+   "name_vi": "Tìm điểm khác biệt",
+   "name_en": "Spot the difference",
+   "group": "Quan sát",
+   "refs": [
+    "M011",
+    "M015"
+   ],
+   "ref_names": [
+    "Tìm điểm khác biệt",
+    "Tìm chi tiết còn thiếu"
+   ],
+   "mech_in_use": [
+    "M25"
+   ],
+   "goal": "So sánh hai tranh và chạm vào chỗ khác nhau (mất vật, đổi màu).",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.QS.03"
+   ],
+   "knowledge": [
+    "Quan sát"
+   ],
+   "mechanics": [
+    "CC-09"
+   ],
+   "engines": [
+    "E06 diff"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 2 điểm khác. 5–6: 4 điểm khác."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm theo số điểm khác tìm được và số lần chạm nhầm.",
+   "demo": [
+    "MX-02"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-06",
+   "name_vi": "Tìm đồ vật ẩn trong tranh",
+   "name_en": "Hidden objects",
+   "group": "Quan sát",
+   "refs": [
+    "M012"
+   ],
+   "ref_names": [
+    "Tìm đồ vật ẩn"
+   ],
+   "mech_in_use": [
+    "M11",
+    "M26",
+    "M41"
+   ],
+   "goal": "Tìm con vật nhỏ ẩn trong tranh vườn, bị bụi cỏ che một phần.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.QS.07"
+   ],
+   "knowledge": [
+    "Quan sát"
+   ],
+   "mechanics": [
+    "CC-09"
+   ],
+   "engines": [
+    "E06 scene"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: tìm 2 con, hình to. 5–6: tìm 4 con, hình nhỏ hơn, nhiều vật gây nhiễu."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; vật ẩn phải nhìn thấy được, không che quá một nửa.",
+   "demo": [
+    "CC-09"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-07",
+   "name_vi": "Tìm hình giống, ghép hình với bóng",
+   "name_en": "Matching shapes and shadows",
+   "group": "Quan sát",
+   "refs": [
+    "M013",
+    "M014"
+   ],
+   "ref_names": [
+    "Tìm hình giống nhau",
+    "Ghép hình với bóng"
+   ],
+   "mech_in_use": [
+    "M10"
+   ],
+   "goal": "Theo các mã tham chiếu: tìm hình giống nhau, ghép hình với bóng.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-03"
+   ],
+   "engines": [
+    "E02 shadow"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-08",
+   "name_vi": "Tìm theo nhiều điều kiện giữa yếu tố nhiễu",
+   "name_en": "Multi-condition search",
+   "group": "Chú ý",
+   "refs": [
+    "M016",
+    "M018"
+   ],
+   "ref_names": [
+    "Tìm đối tượng theo nhiều điều kiện",
+    "Tìm mục tiêu giữa yếu tố gây nhiễu"
+   ],
+   "mech_in_use": [
+    "M28"
+   ],
+   "goal": "Tìm tất cả đối tượng thỏa hai hoặc ba điều kiện cùng lúc.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.LG.09"
+   ],
+   "knowledge": [
+    "Chú ý"
+   ],
+   "mechanics": [
+    "CC-02"
+   ],
+   "engines": [
+    "E06 multi",
+    "E06"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: loại + màu, 9 ô. 5–6: thêm kích thước hoặc điều kiện phủ định \"không phải màu…\", 12 ô."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; vật nhiễu chỉ sai một điều kiện để bé phải xét đủ.",
+   "demo": [
+    "CC-02"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-09",
+   "name_vi": "Nghe và làm theo chỉ dẫn vị trí",
+   "name_en": "Follow spoken directions",
+   "group": "Chú ý",
+   "refs": [
+    "M017",
+    "M034",
+    "M072"
+   ],
+   "ref_names": [
+    "Nghe và thực hiện chỉ dẫn",
+    "Nhận biết vị trí và phương hướng",
+    "Nghe câu và thực hiện hành động"
+   ],
+   "mech_in_use": [
+    "M30",
+    "M32"
+   ],
+   "goal": "Nghe chỉ dẫn vị trí (trong, trên, dưới, bên trái, bên phải) và đặt vật đúng chỗ.; Nghe câu tiếng Anh và làm đúng hành động (đặt vật vào, lên, dưới).",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "EN.EN.50",
+    "TD.KG.01",
+    "TD.TT.05"
+   ],
+   "knowledge": [
+    "Chú ý",
+    "Tiếng Anh"
+   ],
+   "mechanics": [
+    "CC-10"
+   ],
+   "engines": [
+    "E11 place"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: một chỉ dẫn mỗi lần, trong, trên, dưới. 5–6: nghe hai chỉ dẫn liền nhau rồi mới làm, thêm trái và phải.",
+    "4–5: in và on. 5–6: in, on, under, nghe hai câu liền nhau."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; trái phải tính theo phía bé nhìn.",
+   "demo": [
+    "CC-10",
+    "MX-10"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-10",
+   "name_vi": "Làm việc theo trình tự",
+   "name_en": "Step-by-step routines",
+   "group": "Chú ý",
+   "refs": [
+    "M019",
+    "M086",
+    "M087"
+   ],
+   "ref_names": [
+    "Thực hiện nhiệm vụ theo trình tự",
+    "Mô phỏng công việc hằng ngày",
+    "Sắp xếp trình tự công việc"
+   ],
+   "mech_in_use": [
+    "M13"
+   ],
+   "goal": "Chọn đúng đồ vật cho từng bước rửa tay; đôi tay đổi trạng thái theo từng bước.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KS.VS.01"
+   ],
+   "knowledge": [
+    "Kỹ năng sống"
+   ],
+   "mechanics": [
+    "CC-18",
+    "CC-07"
+   ],
+   "engines": [
+    "E11 steps",
+    "E04"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 4 bước. 5–6: 5 bước, thêm bước xắn tay áo."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm thứ tự bước; kỹ năng thật cần bố mẹ quan sát ngoài đời.",
+   "demo": [
+    "CC-18"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-11",
+   "name_vi": "Đổi quy tắc giữa chừng",
+   "name_en": "Rule switching",
+   "group": "Chú ý",
+   "refs": [
+    "M020"
+   ],
+   "ref_names": [
+    "Thay đổi quy tắc trong quá trình chơi"
+   ],
+   "mech_in_use": [],
+   "goal": "Theo các mã tham chiếu: thay đổi quy tắc trong quá trình chơi.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-06"
+   ],
+   "engines": [
+    "E03 (cần thêm chế độ đổi luật)"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được khi engine hỗ trợ đổi luật giữa lượt.",
+   "demo": [],
+   "support": "Cần mở rộng",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-12",
+   "name_vi": "Lật thẻ tìm cặp, nhớ vị trí",
+   "name_en": "Memory cards",
+   "group": "Ghi nhớ",
+   "refs": [
+    "M021",
+    "M022"
+   ],
+   "ref_names": [
+    "Lật thẻ tìm cặp",
+    "Ghi nhớ vị trí"
+   ],
+   "mech_in_use": [
+    "M21"
+   ],
+   "goal": "Nhớ vị trí thẻ để tìm các đôi giống nhau; 5–6 tuổi ghép đôi có liên quan (gà và trứng, ong và tổ).",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.TN.02"
+   ],
+   "knowledge": [
+    "Ghi nhớ"
+   ],
+   "mechanics": [
+    "CC-08"
+   ],
+   "engines": [
+    "E05"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 3 đôi giống hệt nhau. 5–6: 4 đôi có liên quan, hai thẻ khác hình."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm theo số lần lật nhầm; lật sai không báo sai (quy tắc tam).",
+   "demo": [
+    "CC-08"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-13",
+   "name_vi": "Tìm đồ vật biến mất",
+   "name_en": "What is missing?",
+   "group": "Ghi nhớ",
+   "refs": [
+    "M023"
+   ],
+   "ref_names": [
+    "Tìm đồ vật biến mất"
+   ],
+   "mech_in_use": [
+    "M22"
+   ],
+   "goal": "Nhìn và nhớ các vật, sau khi khăn che lại thì tìm vật đã biến mất.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.TN.05"
+   ],
+   "knowledge": [
+    "Ghi nhớ"
+   ],
+   "mechanics": [
+    "CC-01"
+   ],
+   "engines": [
+    "E06 vanish"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 3 vật, mất 1. 5–6: 5 vật, mất 2."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; luôn có nút Xem lại để không gây áp lực.",
+   "demo": [
+    "MX-03"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-14",
+   "name_vi": "Nhớ và tái tạo chuỗi hình, âm, tiết tấu",
+   "name_en": "Sequence memory",
+   "group": "Ghi nhớ",
+   "refs": [
+    "M024",
+    "M025",
+    "M094"
+   ],
+   "ref_names": [
+    "Ghi nhớ và tái tạo trình tự",
+    "Ghi nhớ chuỗi âm thanh",
+    "Ghi nhớ tiết tấu"
+   ],
+   "mech_in_use": [
+    "M23"
+   ],
+   "goal": "Xem và nghe chuỗi hoa sáng lên kèm nốt nhạc, rồi chạm lại đúng thứ tự.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.TN.08"
+   ],
+   "knowledge": [
+    "Ghi nhớ"
+   ],
+   "mechanics": [
+    "CC-20"
+   ],
+   "engines": [
+    "E12 seq"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: chuỗi 2–3, 3 bông hoa. 5–6: chuỗi 3–5, 4 bông hoa."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm theo độ dài chuỗi nhớ đúng.",
+   "demo": [
+    "MX-04"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-15",
+   "name_vi": "Hoàn thiện quy luật",
+   "name_en": "Complete the pattern",
+   "group": "Tư duy logic",
+   "refs": [
+    "M026"
+   ],
+   "ref_names": [
+    "Hoàn thiện quy luật"
+   ],
+   "mech_in_use": [
+    "M17"
+   ],
+   "goal": "Nhìn quy luật lặp lại và chọn hình tiếp theo.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.LG.03"
+   ],
+   "knowledge": [
+    "Tư duy logic"
+   ],
+   "mechanics": [
+    "CC-01"
+   ],
+   "engines": [
+    "E04 pattern"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: quy luật AB, AAB. 5–6: ABC, ABB, AABB, hình khác nhau cả màu và dạng."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được.",
+   "demo": [
+    "MX-05"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-16",
+   "name_vi": "Khác nhóm và phân loại nhiều đặc điểm",
+   "name_en": "Odd one out and sorting",
+   "group": "Tư duy logic",
+   "refs": [
+    "M027",
+    "M028"
+   ],
+   "ref_names": [
+    "Tìm đối tượng khác nhóm",
+    "Phân loại theo nhiều đặc điểm"
+   ],
+   "mech_in_use": [
+    "M18",
+    "M19"
+   ],
+   "goal": "Phân loại đồ vật, con vật vào nhóm theo một đặc điểm chung.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.LG.04",
+    "TD.LG.05"
+   ],
+   "knowledge": [
+    "Tư duy logic"
+   ],
+   "mechanics": [
+    "CC-06"
+   ],
+   "engines": [
+    "E03",
+    "E01 items"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 2 nhóm (đồ vệ sinh và đồ ăn). 5–6: 3 nhóm (dưới nước, trên trời, trên cạn), 6 vật mỗi lượt."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được khi tiêu chí phân loại rõ ràng.",
+   "demo": [
+    "CC-06"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-17",
+   "name_vi": "Suy luận từ manh mối",
+   "name_en": "Reasoning from clues",
+   "group": "Tư duy logic",
+   "refs": [
+    "M029"
+   ],
+   "ref_names": [
+    "Suy luận từ manh mối"
+   ],
+   "mech_in_use": [
+    "M20"
+   ],
+   "goal": "Nghe từng manh mối, loại dần hình không khớp để tìm ra đáp án duy nhất.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.LG.13"
+   ],
+   "knowledge": [
+    "Tư duy logic"
+   ],
+   "mechanics": [
+    "CC-01"
+   ],
+   "engines": [
+    "E01 clue"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 2 manh mối, 3 hình. 5–6: 3 manh mối, 5 hình."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; engine kiểm tra mỗi manh mối loại ít nhất một hình và còn đúng một đáp án.",
+   "demo": [
+    "MX-06"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-18",
+   "name_vi": "Nguyên nhân và kết quả",
+   "name_en": "Cause and effect",
+   "group": "Tư duy logic",
+   "refs": [
+    "M030",
+    "M077"
+   ],
+   "ref_names": [
+    "Nhận biết nguyên nhân và kết quả",
+    "Hiểu nguyên nhân cảm xúc"
+   ],
+   "mech_in_use": [],
+   "goal": "Nhận ra cảm xúc của bạn và chọn cách phản hồi; nhiều cách đều được đón nhận.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "EQ.CX.13",
+    "EQ.XH.04"
+   ],
+   "knowledge": [
+    "EQ và cảm xúc xã hội"
+   ],
+   "mechanics": [
+    "CC-22"
+   ],
+   "engines": [
+    "E10 hieu"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: nhận ra cảm xúc (có đáp án) rồi chọn cách làm. 5–6: thêm câu hỏi vì sao bạn buồn và một lượt thứ hai."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm câu hỏi có một đáp án rõ.",
+   "demo": [
+    "CC-22"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-19",
+   "name_vi": "Giải mê cung",
+   "name_en": "Maze",
+   "group": "Tư duy không gian",
+   "refs": [
+    "M031"
+   ],
+   "ref_names": [
+    "Giải mê cung"
+   ],
+   "mech_in_use": [
+    "M24",
+    "M31"
+   ],
+   "goal": "Tìm đường đi trong mê cung; 5–6 tuổi nhặt đủ vật trên đường.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.KG.02"
+   ],
+   "knowledge": [
+    "Vận động và phối hợp tay mắt"
+   ],
+   "mechanics": [
+    "CC-13"
+   ],
+   "engines": [
+    "E07"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: mê cung 4×3. 5–6: 6×5 và nhặt 3 hạt đậu trước khi về nhà."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm hoàn thành và số lần đụng tường; không tính giờ.",
+   "demo": [
+    "CC-13"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-20",
+   "name_vi": "Xoay hình",
+   "name_en": "Mental rotation",
+   "group": "Tư duy không gian",
+   "refs": [
+    "M032"
+   ],
+   "ref_names": [
+    "Xoay hình"
+   ],
+   "mech_in_use": [
+    "M33"
+   ],
+   "goal": "Xoay từng mảnh tranh bị nghiêng cho đến khi tranh thẳng lại.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.TTg.01"
+   ],
+   "knowledge": [
+    "Tư duy logic"
+   ],
+   "mechanics": [
+    "CC-11"
+   ],
+   "engines": [
+    "E08 rotate"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 4 mảnh vuông. 5–6: 9 mảnh vuông."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm hoàn thành và số lần xoay.",
+   "demo": [
+    "CC-11"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-21",
+   "name_vi": "Ghép mảnh, tái tạo mô hình",
+   "name_en": "Jigsaw and rebuild",
+   "group": "Tư duy không gian",
+   "refs": [
+    "M033",
+    "M035"
+   ],
+   "ref_names": [
+    "Ghép mảnh thành hình",
+    "Tái tạo mô hình"
+   ],
+   "mech_in_use": [
+    "M12",
+    "M27"
+   ],
+   "goal": "Ghép các mảnh tranh vào đúng chỗ.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.KG.10"
+   ],
+   "knowledge": [
+    "Tư duy logic"
+   ],
+   "mechanics": [
+    "CC-12"
+   ],
+   "engines": [
+    "E08 jigsaw"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 4 mảnh, có tranh mờ làm mẫu. 5–6: 9 mảnh, không có tranh mẫu."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được.",
+   "demo": [
+    "CC-12"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-22",
+   "name_vi": "Ghép theo quan hệ (nơi sống, công dụng, nghề, bộ phận)",
+   "name_en": "Relational matching",
+   "group": "Nhận thức",
+   "refs": [
+    "M036",
+    "M037",
+    "M038",
+    "M039"
+   ],
+   "ref_names": [
+    "Ghép động vật với môi trường sống",
+    "Ghép đồ vật với công dụng",
+    "Ghép nghề nghiệp với dụng cụ",
+    "Ghép bộ phận với sự vật"
+   ],
+   "mech_in_use": [
+    "M03"
+   ],
+   "goal": "Ghép đồ vật với việc nó dùng để làm.; Nối con vật với nơi sống; 5–6 tuổi nối nghề với dụng cụ.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.TG.02",
+    "KP.TG.03",
+    "KP.TG.07"
+   ],
+   "knowledge": [
+    "Kiến thức thế giới",
+    "Nhận thức"
+   ],
+   "mechanics": [
+    "CC-04",
+    "CC-05"
+   ],
+   "engines": [
+    "E02 pair",
+    "E02 line"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 3 cặp quen thuộc. 5–6: 4 cặp, có đồ vật ít gặp hơn.",
+    "4–5: nối 3 con vật với nơi sống. 5–6: nối 3 nghề với dụng cụ, rồi 4 con vật với nơi sống."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; quan hệ phải là kiến thức phổ biến, có chuyên môn xác nhận.",
+   "demo": [
+    "CC-04",
+    "CC-05"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-23",
+   "name_vi": "Sắp xếp giai đoạn, tranh kể lại",
+   "name_en": "Sequencing pictures and retelling",
+   "group": "Nhận thức",
+   "refs": [
+    "M040",
+    "M068",
+    "M083"
+   ],
+   "ref_names": [
+    "Sắp xếp các giai đoạn phát triển",
+    "Sắp xếp tranh và kể chuyện",
+    "Khám phá vòng đời"
+   ],
+   "mech_in_use": [
+    "M09",
+    "M37"
+   ],
+   "goal": "Nghe chuyện, xếp tranh đúng thứ tự rồi nghe kể lại.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TV.NG.01"
+   ],
+   "knowledge": [
+    "Phát triển ngôn ngữ tiếng Việt"
+   ],
+   "mechanics": [
+    "CC-07"
+   ],
+   "engines": [
+    "E04 cards"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 3 tranh. 5–6: 4 tranh, thêm một truyện vòng đời gà."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm thứ tự tranh; phần kể lại bằng lời không chấm.",
+   "demo": [
+    "CC-07"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-24",
+   "name_vi": "Hoàn thiện hình vẽ, tạo nhân vật, nhiều giải pháp",
+   "name_en": "Open-ended drawing completion",
+   "group": "Tưởng tượng",
+   "refs": [
+    "M041",
+    "M042",
+    "M045"
+   ],
+   "ref_names": [
+    "Hoàn thiện hình vẽ",
+    "Tạo nhân vật",
+    "Tìm nhiều giải pháp"
+   ],
+   "mech_in_use": [
+    "M54"
+   ],
+   "goal": "Vẽ thêm vào hình có sẵn để biến nó thành vật bé tưởng tượng; không có đáp án duy nhất.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.TTg.02"
+   ],
+   "knowledge": [
+    "Tưởng tượng"
+   ],
+   "mechanics": [
+    "CC-25",
+    "CC-15"
+   ],
+   "engines": [
+    "E14 draw"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: một vòng tròn. 5–6: hình tam giác và hai nét, cần nhiều nét hơn."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Không chấm đúng sai; ghi tham gia và ý tưởng bé chọn.",
+   "demo": [
+    "CC-25"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-25",
+   "name_vi": "Trang trí không gian, cắt ghép tạo hình",
+   "name_en": "Sticker scenes and decoration",
+   "group": "Tưởng tượng",
+   "refs": [
+    "M043",
+    "M098"
+   ],
+   "ref_names": [
+    "Trang trí không gian",
+    "Cắt ghép mô phỏng và tạo hình"
+   ],
+   "mech_in_use": [
+    "M55"
+   ],
+   "goal": "Kéo hình dán để tự trang trí khu vườn theo ý mình.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.ST.D01"
+   ],
+   "knowledge": [
+    "Sáng tạo"
+   ],
+   "mechanics": [
+    "CC-24"
+   ],
+   "engines": [
+    "E14 sticker"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: dán ít nhất 3 hình. 5–6: dán ít nhất 5 hình, nhiều lựa chọn hơn."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Không chấm; lưu sản phẩm vào tủ tranh.",
+   "demo": [
+    "CC-24"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-26",
+   "name_vi": "Nghe số, đếm chạm, nhìn nhanh nhớ số",
+   "name_en": "Counting and subitizing",
+   "group": "Chữ số",
+   "refs": [
+    "M046",
+    "M047"
+   ],
+   "ref_names": [
+    "Nghe và nhận diện số",
+    "Đếm bằng thao tác chạm"
+   ],
+   "mech_in_use": [
+    "M01",
+    "M02"
+   ],
+   "goal": "Chạm từng vật để đếm rồi chọn số.; Nhìn nhóm vật trong chốc lát rồi chọn số lượng theo trí nhớ (cách 45, có nút Xem lại).",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TO.DEM.01",
+    "TO.SO.02",
+    "TO.SO.05"
+   ],
+   "knowledge": [
+    "Chữ số"
+   ],
+   "mechanics": [
+    "CC-17"
+   ],
+   "engines": [
+    "E01 count",
+    "E01 flash"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: đếm 1–5. 5–6: đếm 6–10.",
+    "4–5: 2–5 vật, xem 2,5 giây. 5–6: 11–20 trên khung mười, xem 3,5 giây."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được.",
+   "demo": [
+    "CC-17",
+    "MX-11"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-27",
+   "name_vi": "Ghép số với số lượng, lấy đúng số lượng",
+   "name_en": "Number–quantity matching",
+   "group": "Chữ số",
+   "refs": [
+    "M048",
+    "M049"
+   ],
+   "ref_names": [
+    "Ghép số với số lượng",
+    "Lấy đúng số lượng"
+   ],
+   "mech_in_use": [
+    "M03"
+   ],
+   "goal": "Kéo nhóm vật về cọc có chữ số bằng số lượng.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TO.SO.01",
+    "TO.SO.02"
+   ],
+   "knowledge": [
+    "Chữ số"
+   ],
+   "mechanics": [
+    "CC-03"
+   ],
+   "engines": [
+    "E02 pair"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: số 1–3. 5–6: số 4–8, bốn cọc mỗi lượt."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được.",
+   "demo": [
+    "CC-03"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-28",
+   "name_vi": "Sắp xếp số, tìm số còn thiếu",
+   "name_en": "Ordering numbers",
+   "group": "Chữ số",
+   "refs": [
+    "M050"
+   ],
+   "ref_names": [
+    "Sắp xếp và tìm số còn thiếu"
+   ],
+   "mech_in_use": [
+    "M09"
+   ],
+   "goal": "Theo các mã tham chiếu: sắp xếp và tìm số còn thiếu.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-07"
+   ],
+   "engines": [
+    "E04 order"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-29",
+   "name_vi": "Thêm bớt, tách gộp, chia, toán tình huống",
+   "name_en": "Hands-on add, take away, split",
+   "group": "Toán tư duy",
+   "refs": [
+    "M052",
+    "M053",
+    "M054",
+    "M055"
+   ],
+   "ref_names": [
+    "Tách gộp",
+    "Thêm bớt",
+    "Chia đồ vật",
+    "Toán tình huống"
+   ],
+   "mech_in_use": [
+    "M06",
+    "M07"
+   ],
+   "goal": "Tự tay thêm, bớt, gộp, tách đồ vật trên đĩa rồi chọn kết quả.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TO.TG.04",
+    "TO.TG.05"
+   ],
+   "knowledge": [
+    "Toán tư duy"
+   ],
+   "mechanics": [
+    "CC-17",
+    "CC-10"
+   ],
+   "engines": [
+    "E11 tray"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: thêm và bớt trong phạm vi 5. 5–6: gộp và tách trong phạm vi 10."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm kết quả số; thao tác thêm bớt chỉ ghi tham gia.",
+   "demo": [
+    "MX-07"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-30",
+   "name_vi": "Nhận diện chữ, phân biệt chữ dễ nhầm",
+   "name_en": "Letter recognition",
+   "group": "Chữ cái tiếng Việt",
+   "refs": [
+    "M056",
+    "M057",
+    "M059"
+   ],
+   "ref_names": [
+    "Nghe và nhận diện chữ",
+    "Tìm chữ trong nhóm chữ",
+    "Phân biệt chữ dễ nhầm"
+   ],
+   "mech_in_use": [
+    "M41"
+   ],
+   "goal": "Nghe tên chữ và chạm đúng chữ; 5–6 tuổi phân biệt nhóm chữ dễ nhầm o, ô, ơ.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TV.CC.02"
+   ],
+   "knowledge": [
+    "Chữ cái tiếng Việt"
+   ],
+   "mechanics": [
+    "CC-01"
+   ],
+   "engines": [
+    "E01 items"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: làm quen o, a, e với 3 thẻ. 5–6: phân biệt o, ô, ơ và c với 4 thẻ."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; không chấm phát âm của bé.",
+   "demo": [
+    "CC-01"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-31",
+   "name_vi": "Chữ thường với chữ hoa, chữ trong từ",
+   "name_en": "Upper/lower case, letters in words",
+   "group": "Chữ cái tiếng Việt",
+   "refs": [
+    "M058",
+    "M060"
+   ],
+   "ref_names": [
+    "Ghép chữ thường với chữ hoa",
+    "Nhận diện chữ trong từ"
+   ],
+   "mech_in_use": [
+    "M43"
+   ],
+   "goal": "Theo các mã tham chiếu: ghép chữ thường với chữ hoa, nhận diện chữ trong từ.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-04"
+   ],
+   "engines": [
+    "E02 pair"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được; cần nội dung chữ hoa.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-32",
+   "name_vi": "Tô nét, chữ, số; nối điểm; vẽ theo mẫu",
+   "name_en": "Tracing strokes, letters, digits",
+   "group": "Tập tô",
+   "refs": [
+    "M061",
+    "M062",
+    "M063",
+    "M064",
+    "M065"
+   ],
+   "ref_names": [
+    "Tô đường nét cơ bản",
+    "Tô chữ cái",
+    "Tô chữ số",
+    "Nối điểm",
+    "Vẽ theo mẫu"
+   ],
+   "mech_in_use": [
+    "M42"
+   ],
+   "goal": "Tô theo nét chấm đúng điểm bắt đầu và chiều nét: xem mẫu, tô có hỗ trợ, tự tô.; Tô chữ số theo nét chấm đúng điểm bắt đầu và chiều nét.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TO.SO.01",
+    "TO.SO.02",
+    "TV.VT.01",
+    "TV.VT.02"
+   ],
+   "knowledge": [
+    "Tập tô chữ cái",
+    "Tập tô chữ số và đường nét"
+   ],
+   "mechanics": [
+    "CC-14"
+   ],
+   "engines": [
+    "E13 trace"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: nét cơ bản (thẳng, ngang, cong), có mẫu và hỗ trợ. 5–6: chữ o, ô, ơ, thêm bước tự tô với độ chính xác cao hơn.",
+    "4–5: số 1, 2, 3 có mẫu và hỗ trợ. 5–6: số 5, 8, 9 thêm bước tự tô."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chỉ ghi tham gia và số lần tô lại; nối điểm và vẽ theo mẫu cần thêm chế độ.",
+   "demo": [
+    "CC-14",
+    "MX-08"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-33",
+   "name_vi": "Nghe chuyện trả lời, mô tả tranh, hoàn thiện câu",
+   "name_en": "Listening comprehension",
+   "group": "Tiếng Việt",
+   "refs": [
+    "M066",
+    "M067",
+    "M070"
+   ],
+   "ref_names": [
+    "Nghe chuyện và trả lời",
+    "Mô tả tranh",
+    "Hoàn thiện câu và diễn đạt ý tưởng"
+   ],
+   "mech_in_use": [
+    "M36",
+    "M38"
+   ],
+   "goal": "Nghe chuyện từng cảnh, chọn diễn biến và đoán chuyện tiếp theo.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "TD.NQ.02"
+   ],
+   "knowledge": [
+    "Phát triển ngôn ngữ tiếng Việt"
+   ],
+   "mechanics": [
+    "CC-22",
+    "CC-01"
+   ],
+   "engines": [
+    "E10 hieu",
+    "E01 items"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: một lựa chọn, hai kết thúc. 5–6: thêm câu đoán và câu hỏi hiểu chuyện."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm câu hỏi hiểu; nói và mô tả không chấm.",
+   "demo": [
+    "CC-23"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-34",
+   "name_vi": "Âm, tiếng và vần",
+   "name_en": "Phonological awareness",
+   "group": "Tiếng Việt",
+   "refs": [
+    "M069"
+   ],
+   "ref_names": [
+    "Nhận biết âm thanh ngôn ngữ, tiếng và vần"
+   ],
+   "mech_in_use": [
+    "M39",
+    "M40"
+   ],
+   "goal": "Theo các mã tham chiếu: nhận biết âm thanh ngôn ngữ, tiếng và vần.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-21",
+    "CC-04"
+   ],
+   "engines": [
+    "E12 rhythm",
+    "E02"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Vỗ tay đếm tiếng chấm theo số tiếng; không chấm phát âm.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-35",
+   "name_vi": "Tiếng Anh: nghe từ chọn hình, nhìn hình nói từ",
+   "name_en": "English listen-and-touch",
+   "group": "Tiếng Anh",
+   "refs": [
+    "M071",
+    "M073"
+   ],
+   "ref_names": [
+    "Nghe từ và chọn hình",
+    "Nhìn hình và nói từ"
+   ],
+   "mech_in_use": [
+    "M44",
+    "M46"
+   ],
+   "goal": "Nghe từ tiếng Anh và chạm đúng hình.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "EN.EN.07",
+    "EN.EN.37"
+   ],
+   "knowledge": [
+    "Tiếng Anh"
+   ],
+   "mechanics": [
+    "CC-01"
+   ],
+   "engines": [
+    "E01 listen",
+    "E15 say"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 3 con vật quen thuộc. 5–6: 5 con vật, có từ dài hơn."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm phần nghe; nói theo không chấm.",
+   "demo": [
+    "MX-09"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-36",
+   "name_vi": "Tiếng Anh: hội thoại nhập vai, bài hát, câu chuyện",
+   "name_en": "English role-play and songs",
+   "group": "Tiếng Anh",
+   "refs": [
+    "M074",
+    "M075"
+   ],
+   "ref_names": [
+    "Hội thoại nhập vai",
+    "Học qua bài hát và câu chuyện"
+   ],
+   "mech_in_use": [
+    "M45",
+    "M47"
+   ],
+   "goal": "Theo các mã tham chiếu: hội thoại nhập vai, học qua bài hát và câu chuyện.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-22",
+    "CC-26"
+   ],
+   "engines": [
+    "E10",
+    "E15"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm câu chọn trả lời; hát và vận động chỉ ghi tham gia.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-37",
+   "name_vi": "Cảm xúc: nhận diện, chọn cách phản ứng, thấu cảm",
+   "name_en": "Emotions and responses",
+   "group": "EQ",
+   "refs": [
+    "M076",
+    "M078",
+    "M079"
+   ],
+   "ref_names": [
+    "Nhận diện cảm xúc",
+    "Lựa chọn cách phản ứng",
+    "Nhập vai và thấu cảm"
+   ],
+   "mech_in_use": [
+    "M48",
+    "M49",
+    "M50"
+   ],
+   "goal": "Nhận ra cảm xúc của bạn và chọn cách phản hồi; nhiều cách đều được đón nhận.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "EQ.CX.13",
+    "EQ.XH.04"
+   ],
+   "knowledge": [
+    "EQ và cảm xúc xã hội"
+   ],
+   "mechanics": [
+    "CC-22"
+   ],
+   "engines": [
+    "E10"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: nhận ra cảm xúc (có đáp án) rồi chọn cách làm. 5–6: thêm câu hỏi vì sao bạn buồn và một lượt thứ hai."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Nhận diện cảm xúc chấm được; cách phản ứng là lựa chọn mở, Lu giải thích từng lựa chọn.",
+   "demo": [
+    "CC-22"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-38",
+   "name_vi": "Điều hòa cảm xúc",
+   "name_en": "Calming practice",
+   "group": "EQ",
+   "refs": [
+    "M080"
+   ],
+   "ref_names": [
+    "Thực hành điều hòa cảm xúc"
+   ],
+   "mech_in_use": [
+    "M51"
+   ],
+   "goal": "Theo các mã tham chiếu: thực hành điều hòa cảm xúc.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-26"
+   ],
+   "engines": [
+    "E15 breath"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Không chấm.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-39",
+   "name_vi": "Mô phỏng thí nghiệm",
+   "name_en": "Simulated experiments",
+   "group": "Khoa học",
+   "refs": [
+    "M081"
+   ],
+   "ref_names": [
+    "Mô phỏng thí nghiệm"
+   ],
+   "mech_in_use": [
+    "M52"
+   ],
+   "goal": "Đoán trước, thả vật vào nước, quan sát kết quả thật và nghe giải thích.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.KH.03"
+   ],
+   "knowledge": [
+    "Khoa học"
+   ],
+   "mechanics": [
+    "CC-19"
+   ],
+   "engines": [
+    "E11 sinkfloat"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 3 vật quen thuộc. 5–6: 5 vật, có vật dễ đoán nhầm (khúc gỗ to vẫn nổi)."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Dự đoán không chấm; lời giải thích khoa học cần chuyên môn duyệt.",
+   "demo": [
+    "CC-19"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-40",
+   "name_vi": "Môi trường sống và hệ sinh thái",
+   "name_en": "Habitats",
+   "group": "Khoa học",
+   "refs": [
+    "M085"
+   ],
+   "ref_names": [
+    "Khám phá môi trường và hệ sinh thái"
+   ],
+   "mech_in_use": [],
+   "goal": "Phân loại đồ vật, con vật vào nhóm theo một đặc điểm chung.; Nối con vật với nơi sống; 5–6 tuổi nối nghề với dụng cụ.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.TG.03",
+    "KP.TG.07",
+    "TD.LG.04",
+    "TD.LG.05"
+   ],
+   "knowledge": [
+    "Nhận thức",
+    "Tư duy logic"
+   ],
+   "mechanics": [
+    "CC-06",
+    "CC-05"
+   ],
+   "engines": [
+    "E03",
+    "E02 line"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 2 nhóm (đồ vệ sinh và đồ ăn). 5–6: 3 nhóm (dưới nước, trên trời, trên cạn), 6 vật mỗi lượt.",
+    "4–5: nối 3 con vật với nơi sống. 5–6: nối 3 nghề với dụng cụ, rồi 4 con vật với nơi sống."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được với các trường hợp rõ ràng.",
+   "demo": [
+    "CC-06",
+    "CC-05"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-41",
+   "name_vi": "An toàn, nguy hiểm và xử lý tình huống",
+   "name_en": "Safety situations",
+   "group": "Kỹ năng sống",
+   "refs": [
+    "M088",
+    "M089"
+   ],
+   "ref_names": [
+    "Nhận diện tình huống an toàn và nguy hiểm",
+    "Nhập vai xử lý tình huống"
+   ],
+   "mech_in_use": [
+    "M50"
+   ],
+   "goal": "Theo các mã tham chiếu: nhận diện tình huống an toàn và nguy hiểm, nhập vai xử lý tình huống.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-22",
+    "CC-06"
+   ],
+   "engines": [
+    "E10",
+    "E03"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm nhận diện an toàn/nguy hiểm; nhập vai không chấm.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-42",
+   "name_vi": "Thực hành ngoài màn hình cùng bố mẹ",
+   "name_en": "Off-screen practice with parents",
+   "group": "Kỹ năng sống",
+   "refs": [
+    "M090",
+    "M100"
+   ],
+   "ref_names": [
+    "Thực hành ngoài màn hình",
+    "Sáng tạo thực tế cùng bố mẹ"
+   ],
+   "mech_in_use": [
+    "M56",
+    "M58"
+   ],
+   "goal": "Rời màn hình, tìm đồ vật thật trong nhà cùng bố mẹ rồi quay lại báo Lu.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.VD.01"
+   ],
+   "knowledge": [
+    "Vận động và phối hợp tay mắt"
+   ],
+   "mechanics": [
+    "CC-26"
+   ],
+   "engines": [
+    "E15 do"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: tìm 3 đồ vật màu đỏ. 5–6: tìm 3 đồ vật hình tròn và xếp từ nhỏ đến lớn."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chỉ ghi tham gia, bố mẹ xác nhận.",
+   "demo": [
+    "CC-26"
+   ],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-43",
+   "name_vi": "Nhận diện âm thanh, ghép âm với vật",
+   "name_en": "Sound identification",
+   "group": "Âm nhạc",
+   "refs": [
+    "M091",
+    "M092"
+   ],
+   "ref_names": [
+    "Nhận diện âm thanh",
+    "Ghép âm thanh với sự vật"
+   ],
+   "mech_in_use": [],
+   "goal": "Nghe âm thanh và chọn đúng nhạc cụ.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.AN.D01"
+   ],
+   "knowledge": [
+    "Âm nhạc"
+   ],
+   "mechanics": [
+    "CC-20"
+   ],
+   "engines": [
+    "E12 identify"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: làm quen từng nhạc cụ trước, chọn 1 trong 2. 5–6: chọn 1 trong 4, không làm quen trước."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Chấm được.",
+   "demo": [
+    "CC-20"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-44",
+   "name_vi": "Gõ theo nhịp",
+   "name_en": "Rhythm tapping",
+   "group": "Âm nhạc",
+   "refs": [
+    "M093"
+   ],
+   "ref_names": [
+    "Gõ theo nhịp"
+   ],
+   "mech_in_use": [
+    "M57"
+   ],
+   "goal": "Nghe tiết tấu rồi gõ lại đúng số tiếng; 5–6 tuổi đúng cả nhịp ngắn dài.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.AN.D05"
+   ],
+   "knowledge": [
+    "Âm nhạc"
+   ],
+   "mechanics": [
+    "CC-21"
+   ],
+   "engines": [
+    "E12 rhythm"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: 2–3 tiếng, chỉ cần đúng số tiếng, có chấm nhìn. 5–6: có nghỉ, phải đúng nhịp ngắn dài, ẩn chấm."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "4–5 tuổi chỉ chấm số tiếng; 5–6 tuổi chấm thêm ngắn dài, cho phép lệch nhiều.",
+   "demo": [
+    "CC-21"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  },
+  {
+   "id": "PT-45",
+   "name_vi": "Hát, vận động, bắt chước tư thế",
+   "name_en": "Sing, move, imitate",
+   "group": "Nghệ thuật và vận động",
+   "refs": [
+    "M095",
+    "M099"
+   ],
+   "ref_names": [
+    "Hát và vận động theo nhạc",
+    "Bắt chước tư thế và vận động"
+   ],
+   "mech_in_use": [
+    "M45",
+    "M56"
+   ],
+   "goal": "Theo các mã tham chiếu: hát và vận động theo nhạc, bắt chước tư thế và vận động.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [],
+   "knowledge": [],
+   "mechanics": [
+    "CC-26"
+   ],
+   "engines": [
+    "E15"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5 tuổi: ít lựa chọn, hình to, có gợi ý sớm. 5–6 tuổi: nhiều lựa chọn, thêm điều kiện, ít gợi ý."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Không chấm.",
+   "demo": [],
+   "support": "Đã có sẵn",
+   "version": "1.0.0",
+   "status": "draft"
+  },
+  {
+   "id": "PT-46",
+   "name_vi": "Tô màu và vẽ tranh",
+   "name_en": "Colouring and drawing",
+   "group": "Nghệ thuật và vận động",
+   "refs": [
+    "M096",
+    "M097"
+   ],
+   "ref_names": [
+    "Tô màu tự do",
+    "Vẽ tranh"
+   ],
+   "mech_in_use": [
+    "M54"
+   ],
+   "goal": "Chọn màu và tô vào tranh; 5–6 tuổi tô theo số (số nào màu nấy).; Vẽ tự do bằng bút sáp; Lu hỏi bé vẽ gì và đáp lại.",
+   "ages": "4–6 tuổi (hai mức 4–5 và 5–6)",
+   "skills": [
+    "KP.ST.D01"
+   ],
+   "knowledge": [
+    "Nghệ thuật"
+   ],
+   "mechanics": [
+    "CC-16",
+    "CC-15"
+   ],
+   "engines": [
+    "E13 color",
+    "E14 draw"
+   ],
+   "art": "Hình vẽ tay đã duyệt hoặc hình vẽ mã nét bút chì màu nước; vật chính và ô đáp án to, rõ; không dùng hình tạm trong bản duyệt chính thức.",
+   "audio": "Mọi lời thoại có giọng đọc (giọng Hoài My tạo trên máy 24H); âm báo đúng, âm nhẹ khi chưa đúng; không phát chồng âm.",
+   "process": [
+    "Khơi gợi tò mò",
+    "Giới thiệu kiến thức",
+    "Minh họa trực quan",
+    "Làm mẫu",
+    "Hướng dẫn trẻ thực hành",
+    "Thực hành độc lập",
+    "Phản hồi",
+    "Củng cố",
+    "Vận dụng"
+   ],
+   "feedback": "Khen cụ thể theo việc bé làm, không lặp một câu khen; chọn sai không khen, gợi ý sau 2–3 lần; gợi ý bằng làm sáng chỗ cần chạm khi bé chưa trả lời.",
+   "difficulty": [
+    "4–5: tô tự do, tô ít nhất nửa tranh. 5–6: tô theo số, phải đúng màu từng vùng.",
+    "4–5: chủ đề gợi ý mặt trời. 5–6: chủ đề tự chọn, cần nhiều nét hơn."
+   ],
+   "variants": "Sinh biến thể không giới hạn theo seed (thứ tự, vị trí, vật được chọn, số lượng) từ nội dung đã duyệt, không gọi AI khi bé học.",
+   "assess": "Tô tự do không chấm; tô theo số chấm đúng màu từng vùng.",
+   "demo": [
+    "CC-16",
+    "CC-15"
+   ],
+   "support": "Mới bổ sung",
+   "version": "1.0.0",
+   "status": "ready_for_review"
+  }
+ ],
+ "mechanics": [
+  {
+   "id": "CC-01",
+   "name": "Chạm chọn một đáp án",
+   "engine": "E01",
+   "verdict": "Đã có sẵn",
+   "before": "E01 items/count/listen",
+   "added": "Chế độ clue (manh mối), flash (nhìn nhanh); thẻ chữ cái lớn",
+   "demo": "CC-01",
+   "methods": [
+    "PT-01",
+    "PT-02",
+    "PT-13",
+    "PT-15",
+    "PT-17",
+    "PT-30",
+    "PT-33",
+    "PT-35"
+   ]
+  },
+  {
+   "id": "CC-02",
+   "name": "Chạm chọn nhiều đối tượng",
+   "engine": "E06 multi",
+   "verdict": "Cần mở rộng",
+   "before": "E06 chạm nhiều vật cùng loại",
+   "added": "Chế độ multi: loại + màu + kích thước, điều kiện \"không phải\"",
+   "demo": "CC-02",
+   "methods": [
+    "PT-08"
+   ]
+  },
+  {
+   "id": "CC-03",
+   "name": "Kéo thả",
+   "engine": "E02",
+   "verdict": "Đã có sẵn",
+   "before": "E02 shadow/pair, kéo hoặc chạm-chạm",
+   "added": "Chỉ thêm nội dung",
+   "demo": "CC-03",
+   "methods": [
+    "PT-07",
+    "PT-27"
+   ]
+  },
+  {
+   "id": "CC-04",
+   "name": "Ghép cặp",
+   "engine": "E02 pair",
+   "verdict": "Đã có sẵn",
+   "before": "E02 pair",
+   "added": "Hình đồ vật và công dụng mới",
+   "demo": "CC-04",
+   "methods": [
+    "PT-22",
+    "PT-31",
+    "PT-34"
+   ]
+  },
+  {
+   "id": "CC-05",
+   "name": "Nối đường",
+   "engine": "E02 line",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Chế độ line: kéo đường nối hai cột, có chạm-chạm",
+   "demo": "CC-05",
+   "methods": [
+    "PT-22",
+    "PT-40"
+   ]
+  },
+  {
+   "id": "CC-06",
+   "name": "Phân loại vào nhóm",
+   "engine": "E03",
+   "verdict": "Đã có sẵn",
+   "before": "E03 phân loại 2–3 nhóm",
+   "added": "Chưa có đổi luật giữa chừng (cần mở rộng)",
+   "demo": "CC-06",
+   "methods": [
+    "PT-11",
+    "PT-16",
+    "PT-40",
+    "PT-41"
+   ]
+  },
+  {
+   "id": "CC-07",
+   "name": "Sắp xếp trình tự",
+   "engine": "E04 cards",
+   "verdict": "Cần mở rộng",
+   "before": "E04 order/pattern",
+   "added": "Chế độ cards: xếp 3–5 tranh vào ô số rồi kể lại",
+   "demo": "CC-07",
+   "methods": [
+    "PT-02",
+    "PT-10",
+    "PT-23",
+    "PT-28"
+   ]
+  },
+  {
+   "id": "CC-08",
+   "name": "Lật thẻ",
+   "engine": "E05",
+   "verdict": "Đã có sẵn",
+   "before": "E05 lật thẻ",
+   "added": "Cặp liên quan (mẹ và con) cho 5–6 tuổi; quy tắc tam: sai im lặng, đúng \"ting\"",
+   "demo": "CC-08",
+   "methods": [
+    "PT-12"
+   ]
+  },
+  {
+   "id": "CC-09",
+   "name": "Tìm kiếm trong tranh",
+   "engine": "E06 scene",
+   "verdict": "Mới bổ sung",
+   "before": "E06 tìm trong lưới",
+   "added": "Chế độ scene: vật ẩn trên tranh nền thật, bụi cỏ che; diff: tìm điểm khác",
+   "demo": "CC-09",
+   "methods": [
+    "PT-01",
+    "PT-05",
+    "PT-06"
+   ]
+  },
+  {
+   "id": "CC-10",
+   "name": "Kéo đồ vật vào vùng đích",
+   "engine": "E11 place",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Chế độ place: vùng đích trong/trên/dưới/trái/phải, nghe hai lệnh liền nhau",
+   "demo": "CC-10",
+   "methods": [
+    "PT-09",
+    "PT-29"
+   ]
+  },
+  {
+   "id": "CC-11",
+   "name": "Xoay hình",
+   "engine": "E08 rotate",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có (E08 chỉ có trong danh mục)",
+   "added": "Engine E08 chế độ rotate",
+   "demo": "CC-11",
+   "methods": [
+    "PT-20"
+   ]
+  },
+  {
+   "id": "CC-12",
+   "name": "Ghép mảnh",
+   "engine": "E08 jigsaw",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Engine E08 chế độ jigsaw, tranh mờ làm mẫu cho 4–5 tuổi",
+   "demo": "CC-12",
+   "methods": [
+    "PT-21"
+   ]
+  },
+  {
+   "id": "CC-13",
+   "name": "Di chuyển qua mê cung",
+   "engine": "E07",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Engine E07: mê cung sinh theo seed, luôn có đường đi, nhặt vật",
+   "demo": "CC-13",
+   "methods": [
+    "PT-19"
+   ]
+  },
+  {
+   "id": "CC-14",
+   "name": "Tô theo nét",
+   "engine": "E13 trace",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Engine E13: tô theo nét ba bước (xem mẫu, có hỗ trợ, tự tô); dữ liệu nét chữ và số",
+   "demo": "CC-14",
+   "methods": [
+    "PT-32"
+   ]
+  },
+  {
+   "id": "CC-15",
+   "name": "Vẽ tự do",
+   "engine": "E14 draw",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Engine E14 chế độ draw: bút sáp, hoàn tác, Lu hỏi bé vẽ gì",
+   "demo": "CC-15",
+   "methods": [
+    "PT-24",
+    "PT-46"
+   ]
+  },
+  {
+   "id": "CC-16",
+   "name": "Tô màu",
+   "engine": "E13 color",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Chế độ color: tô tự do và tô theo số",
+   "demo": "CC-16",
+   "methods": [
+    "PT-46"
+   ]
+  },
+  {
+   "id": "CC-17",
+   "name": "Chạm từng đối tượng để đếm",
+   "engine": "E01 count",
+   "verdict": "Đã có sẵn",
+   "before": "E01 count",
+   "added": "Khung mười cho số 11–20",
+   "demo": "CC-17",
+   "methods": [
+    "PT-26",
+    "PT-29"
+   ]
+  },
+  {
+   "id": "CC-18",
+   "name": "Thay đổi trạng thái đồ vật",
+   "engine": "E11 steps",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Chế độ steps: chọn đồ vật cho từng bước, hình đổi trạng thái",
+   "demo": "CC-18",
+   "methods": [
+    "PT-10"
+   ]
+  },
+  {
+   "id": "CC-19",
+   "name": "Điều khiển mô phỏng",
+   "engine": "E11 sinkfloat",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có (E11 chỉ có trong danh mục)",
+   "added": "Chế độ sinkfloat: đoán, thả, quan sát, giải thích",
+   "demo": "CC-19",
+   "methods": [
+    "PT-04",
+    "PT-39"
+   ]
+  },
+  {
+   "id": "CC-20",
+   "name": "Tương tác âm thanh",
+   "engine": "E12 identify",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Engine E12: âm nhạc cụ tổng hợp trong trình duyệt, rèm che",
+   "demo": "CC-20",
+   "methods": [
+    "PT-14",
+    "PT-43"
+   ]
+  },
+  {
+   "id": "CC-21",
+   "name": "Gõ theo nhịp",
+   "engine": "E12 rhythm",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Chế độ rhythm: chấm tiết tấu, chấm nhịp cho 5–6 tuổi",
+   "demo": "CC-21",
+   "methods": [
+    "PT-34",
+    "PT-44"
+   ]
+  },
+  {
+   "id": "CC-22",
+   "name": "Hội thoại phân nhánh",
+   "engine": "E10",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có (E10 chỉ có trong danh mục)",
+   "added": "Engine E10: cảnh nối nhau, câu hỏi có đáp án và lựa chọn mở",
+   "demo": "CC-22",
+   "methods": [
+    "PT-18",
+    "PT-33",
+    "PT-36",
+    "PT-37",
+    "PT-41"
+   ]
+  },
+  {
+   "id": "CC-23",
+   "name": "Lựa chọn diễn biến",
+   "engine": "E10",
+   "verdict": "Mới bổ sung",
+   "before": "E00 kể chuyện tuyến tính",
+   "added": "E10 rẽ nhánh nhiều kết thúc, câu đoán",
+   "demo": "CC-23",
+   "methods": [
+    "PT-03",
+    "PT-04"
+   ]
+  },
+  {
+   "id": "CC-24",
+   "name": "Tạo sản phẩm sáng tạo",
+   "engine": "E14 sticker",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Chế độ sticker: kéo hình dán vào tranh, lưu tủ tranh",
+   "demo": "CC-24",
+   "methods": [
+    "PT-25"
+   ]
+  },
+  {
+   "id": "CC-25",
+   "name": "Hoạt động mở không có đáp án duy nhất",
+   "engine": "E14 draw (hình gợi ý)",
+   "verdict": "Mới bổ sung",
+   "before": "Chưa có",
+   "added": "Hình gợi ý có sẵn, nhiều ý tưởng đều đúng",
+   "demo": "CC-25",
+   "methods": [
+    "PT-03",
+    "PT-24"
+   ]
+  },
+  {
+   "id": "CC-26",
+   "name": "Hoạt động ngoài màn hình",
+   "engine": "E15 do",
+   "verdict": "Đã có sẵn",
+   "before": "E15 do/say/breath",
+   "added": "Chỉ thêm nội dung",
+   "demo": "CC-26",
+   "methods": [
+    "PT-36",
+    "PT-38",
+    "PT-42",
+    "PT-45"
+   ]
+  }
+ ],
+ "id_rules": [
+  "M001–M100 là mã tham chiếu tạm của chỉ thị, không dùng làm mã chính thức.",
+  "M01–M58 (MECH trong giao-trinh-2.0) đang dùng, giữ nguyên, ghi ở cột mech_in_use.",
+  "E00–E15 là mã engine đang dùng, giữ nguyên.",
+  "PT-01… là mã phương thức đã hợp nhất; CC-01…CC-26 là mã cơ chế tương tác của trẻ."
+ ],
+ "layers": [
+  "Phương pháp giảng dạy (PT) → Mẫu bài tập → Cơ chế tương tác (CC) → Engine (E) → Hoạt động (activity_id) → Biến thể (seed)"
+ ]
+}

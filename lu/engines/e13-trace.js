@@ -19,8 +19,8 @@ export const generate = act => ({ rounds: act.mode === 'trace' ? act.glyphs.map(
 export const verify = () => [];
 export function lines(act) {
   const L = [...(act.intro || []), act.done, act.start_here, act.redo, act.watch, act.your_turn, act.alone, act.wrong_color, act.more];
-  if (act.mode === 'trace') act.glyphs.forEach(g => { L.push(act.say?.[g]); GLYPHS[g].strokes.forEach(s => L.push(s.say)); });
-  if (act.mode === 'color') { (act.palette || []).forEach(p => L.push(p.say)); (act.praise || []).forEach(p => L.push(p)); }
+  if (act.mode === 'trace') act.glyphs.forEach(g => { L.push(act.say?.[g], (act.done || '').replace('{name}', GLYPHS[g].name)); GLYPHS[g].strokes.forEach(s => L.push(s.say)); });
+  if (act.mode === 'color') { (act.palette || []).forEach(p => L.push(p.say, (act.wrong_color || 'Vùng số {n} tô màu {c} nhé.').replace('{n}', p.n).replace('{c}', p.name), (act.done || '').replace('{c}', p.name))); (act.praise || []).forEach(p => L.push(p)); }
   return L.filter(Boolean);
 }
 export async function mount(ctx, act, v) {

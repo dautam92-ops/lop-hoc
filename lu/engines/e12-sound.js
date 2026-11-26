@@ -26,7 +26,7 @@ export function verify(act, v) {
   if (act.mode === 'seq') v.rounds.forEach((r, k) => { if (r.seq.some(i => !act.items[i])) e.push(`${act.activity_id} vòng ${k + 1}: vật không có`); });
   return e;
 }
-export const lines = act => [...(act.intro || []), act.q, act.no, act.done, act.listen, act.your_turn, act.explore_say, act.again, ...(act.sounds || []).map(s => act.names?.[s]).filter(Boolean),
+export const lines = act => [...(act.intro || []), act.q, act.no, act.done, act.listen, act.your_turn, act.explore_say, act.again, ...(act.sounds || []).flatMap(s => [nm(act, s), `Đúng rồi, đó là tiếng ${nm(act, s)}.`]),
   ...(act.oks || [])].filter(Boolean);
 
 export async function mount(ctx, act, v) {
