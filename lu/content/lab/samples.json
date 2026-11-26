@@ -5606,15 +5606,12 @@
     "4-5": {
      "skill_id": "TD.QH.03",
      "style": "face",
-     "intro": [
-      "Có bạn đang trốn sau tấm bìa có lỗ. Bé nhìn qua lỗ rồi đoán là ai nhé."
-     ],
      "items": [
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:1:art:meo",
        "a": 0,
-       "ok": "Đúng rồi, là bạn mèo.",
+       "ok": "Đúng rồi, con mèo.",
        "opts": [
         {
          "e": "art:meo",
@@ -5631,10 +5628,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:1:art:ga",
        "a": 0,
-       "ok": "Đúng rồi, là cô gà.",
+       "ok": "Đúng rồi, con gà.",
        "opts": [
         {
          "e": "art:ga",
@@ -5651,10 +5648,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:1:art:buom",
        "a": 0,
-       "ok": "Đúng rồi, là bạn bướm.",
+       "ok": "Đúng rồi, con bướm.",
        "opts": [
         {
          "e": "art:buom",
@@ -5671,7 +5668,7 @@
        ]
       }
      ],
-     "no": "Bé nhìn màu và hình qua từng lỗ nhé.",
+     "no": "Bé đoán lại nhé.",
      "engine": "E01",
      "mode": "items",
      "activity_id": "LAB-MT-06-4-5",
@@ -5680,15 +5677,12 @@
     "5-6": {
      "skill_id": "TD.QH.03",
      "style": "face",
-     "intro": [
-      "Tấm bìa lần này chỉ có hai lỗ nhỏ. Bé nhìn thật kỹ rồi đoán nhé."
-     ],
      "items": [
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:2:art:ech",
        "a": 0,
-       "ok": "Đúng rồi, là bạn ếch.",
+       "ok": "Đúng rồi, con ếch.",
        "opts": [
         {
          "e": "art:ech",
@@ -5709,10 +5703,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:2:art:chim",
        "a": 0,
-       "ok": "Đúng rồi, là bạn chim.",
+       "ok": "Đúng rồi, con chim.",
        "opts": [
         {
          "e": "art:chim",
@@ -5733,10 +5727,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:2:art:oc",
        "a": 0,
-       "ok": "Đúng rồi, là bạn ốc sên.",
+       "ok": "Đúng rồi, con ốc sên.",
        "opts": [
         {
          "e": "art:oc",
@@ -5757,7 +5751,7 @@
        ]
       }
      ],
-     "no": "Bé nhìn màu và hình qua từng lỗ nhé.",
+     "no": "Bé đoán lại nhé.",
      "engine": "E01",
      "mode": "items",
      "activity_id": "LAB-MT-06-5-6",
