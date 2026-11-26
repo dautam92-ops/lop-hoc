@@ -2,11 +2,13 @@
 //   pattern : dãy quy luật hiện thành MỘT hàng, ô "?" nằm trong dãy, chọn hình điền vào (S02-R10)
 //   order   : chạm các nhóm vật theo thứ tự từ ít đến nhiều
 import { fill, esc } from '../core/lu-core.js';
+import * as MORE from './e04-more.js';
 import { optHTML, verifyChoice, need, onTap, vis, okVi, OK_VI, groupHTML } from './common.js';
 
 export const id = 'E04', version = '1.0.0', name = 'Sắp xếp thứ tự';
 
 export function validate(act) {
+  if (MORE.MORE.has(act.mode)) return MORE.validate(act);
   const e = need(act, ['mode', 'skill_id', 'title', 'no']);
   if (act.mode === 'pattern') { e.push(...need(act, ['pool', 'patterns', 'ok'])); if ((act.pool || []).length < 3) e.push(`${act.activity_id}: pool cần ít nhất 3 hình`); }
   if (act.mode === 'order') { e.push(...need(act, [act.object ? 'object' : 'emoji', 'max', 'ok'])); if (act.max > 10) e.push(`${act.activity_id}: số vượt phạm vi 10`); }
@@ -14,6 +16,7 @@ export function validate(act) {
 }
 
 export function generate(act, rng) {
+  if (MORE.MORE.has(act.mode)) return MORE.generate(act, rng);
   const rounds = [];
   for (let r = 0; r < (act.rounds || 3); r++) {
     if (act.mode === 'pattern') {
@@ -35,6 +38,7 @@ export function generate(act, rng) {
 }
 
 export function verify(act, v) {
+  if (MORE.MORE.has(act.mode)) return MORE.verify(act, v);
   const e = [];
   v.rounds.forEach((r, k) => {
     const where = `${act.activity_id} vòng ${k + 1}`;
@@ -53,9 +57,9 @@ export function verify(act, v) {
 }
 
 const seqWords = (act, r) => [...new Set(r.pat)].map(l => act.pool[r.units[[...new Set(r.pat)].indexOf(l)]].name).join(', ');
-export function lines(act) { return [...(act.intro || []), act.q, act.no, ...OK_VI].filter(Boolean); }
+export function lines(act) { if (MORE.MORE.has(act.mode)) return MORE.lines(act); return [...(act.intro || []), act.q, act.no, ...OK_VI].filter(Boolean); }
 
-export async function mount(ctx, act, v) { for (let r = 0; r < v.rounds.length; r++) { await (act.mode === 'pattern' ? pattern : order)(ctx, act, v.rounds[r], r === 0); ctx.tick?.(); } }
+export async function mount(ctx, act, v) { if (MORE.MORE.has(act.mode)) return MORE.mount(ctx, act, v); for (let r = 0; r < v.rounds.length; r++) { await (act.mode === 'pattern' ? pattern : order)(ctx, act, v.rounds[r], r === 0); ctx.tick?.(); } }
 
 function pattern(ctx, act, R, first) {
   const { ui, voice } = ctx; let tries = 0, hints = 0;

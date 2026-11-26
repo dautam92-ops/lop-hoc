@@ -4,11 +4,13 @@
 //   listen : nghe từ rồi chạm đúng hình (phần tiếng Anh)
 import { fill, luArt, esc } from '../core/lu-core.js';
 import { optHTML, verifyChoice, need, onTap, BAL_COLORS, balloonSVG, vis, LETTERS, letterLine, optSay, textOpts, readOptLines } from './common.js';
+import * as MORE from './e01-more.js';
 const showHTML = s => Array.isArray(s) ? s.map(x => `<span class="sv">${vis(x)}</span>`).join('') : vis(s || '');
 
 export const id = 'E01', version = '1.0.0', name = 'Chạm chọn';
 
 export function validate(act) {
+  if (MORE.MORE.has(act.mode)) return MORE.validate(act);
   const e = need(act, ['mode', 'skill_id', 'title']);
   if (act.mode === 'items') { if (!act.items?.length) e.push(`${act.activity_id}: thiếu items`); act.items?.forEach((it, k) => e.push(...verifyChoice(it.opts, it.any ? 0 : it.a, `${act.activity_id} câu ${k + 1}`))); }
   if (act.mode === 'count') { e.push(...need(act, ['pool', 'words', 'q', 'ok', 'no'])); if (act.words && act.pool && Math.max(...act.pool) > act.words.length) e.push(`${act.activity_id}: thiếu chữ số đọc`); }
@@ -18,6 +20,7 @@ export function validate(act) {
 }
 
 export function generate(act, rng) {
+  if (MORE.MORE.has(act.mode)) return MORE.generate(act, rng);
   if (act.mode === 'items') {
     let items = act.items.map((it, k) => k);
     if (act.order !== 'fixed') items = rng.shuffle(items);
@@ -38,6 +41,7 @@ export function answerOf(act, round) {
 }
 
 export function verify(act, variant) {
+  if (MORE.MORE.has(act.mode)) return MORE.verify(act, variant);
   const e = [];
   variant.rounds.forEach((r, k) => {
     const where = `${act.activity_id} vòng ${k + 1}`;
@@ -51,6 +55,7 @@ export function verify(act, variant) {
 
 // Các câu sẽ được đọc – để kiểm tra đủ giọng (S06-R03)
 export function lines(act) {
+  if (MORE.MORE.has(act.mode)) return MORE.lines(act);
   const L = [...(act.intro || [])];
   if (act.mode === 'items') act.items.forEach(it => { L.push(it.q, it.ok, it.any ? null : (it.no || act.no)); it.opts.forEach(o => { o.say && L.push(o.say); o.reply && L.push(o.reply); }); if (textOpts(it.opts, it.style || act.style)) L.push(...LETTERS.slice(0, it.opts.length).map(letterLine), ...it.opts.map(optSay)); });
   if (act.mode === 'count') { L.push(act.hint, act.q, act.no, ...act.words); act.pool.forEach(n => L.push(fill(act.ok, { word: act.words[n - 1] }))); }
@@ -59,6 +64,7 @@ export function lines(act) {
 }
 
 export async function mount(ctx, act, variant) {
+  if (MORE.MORE.has(act.mode)) return MORE.mount(ctx, act, variant);
   for (let r = 0; r < variant.rounds.length; r++) { await round(ctx, act, variant.rounds[r], r === 0); ctx.tick?.(); }
 }
 

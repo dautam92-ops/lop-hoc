@@ -27,10 +27,10 @@ export const ART_DEFS = `<svg width="0" height="0" style="position:absolute" ari
 </defs></svg>`;
 export function ensureArtDefs(doc = document) { if (defsDone || !doc?.body) return; doc.body.insertAdjacentHTML('afterbegin', ART_DEFS); defsDone = true; }
 
-const wrap = (inner, label = '', vb = '0 0 100 100') => `<svg class="lu-art" viewBox="${vb}" role="img"${label ? ` aria-label="${label}"` : ' aria-hidden="true"'}>${inner}</svg>`;
-const wc = s => `<g filter="url(#lu-wc)">${s}</g>`;
-const pen = s => `<g filter="url(#lu-pencil)" fill="none" stroke="${INK}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${s}</g>`;
-const shadow = (cx = 50, cy = 90, rx = 26) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="4.5" fill="#6b5232" opacity=".12"/>`;
+export const wrap = (inner, label = '', vb = '0 0 100 100') => `<svg class="lu-art" viewBox="${vb}" role="img"${label ? ` aria-label="${label}"` : ' aria-hidden="true"'}>${inner}</svg>`;
+export const wc = s => `<g filter="url(#lu-wc)">${s}</g>`;
+export const pen = s => `<g filter="url(#lu-pencil)" fill="none" stroke="${INK}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${s}</g>`;
+export const shadow = (cx = 50, cy = 90, rx = 26) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="4.5" fill="#6b5232" opacity=".12"/>`;
 
 /* ---------- Đồ vật ---------- */
 const BEAN = 'M36 30c9-8 25-6 31 6 4 8 0 14-5 18-4 3-4 8 0 12 6 7 0 19-14 18-15-1-24-14-22-30 1-10 4-18 10-24z';

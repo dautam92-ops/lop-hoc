@@ -1,0 +1,13 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lu – Thư viện hình vẽ mã</title><link rel="stylesheet" href="../ui/lu-ds.css">
+<style>body{background:var(--lu-cream);font-family:'Be Vietnam Pro',sans-serif;color:var(--lu-ink);margin:0;padding:16px}h1{font-family:'Baloo 2';margin:0 0 12px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}.c{background:var(--lu-paper);border:1.5px solid var(--lu-line);border-radius:16px;padding:8px;text-align:center;font-size:13px}
+.c .lu-art{width:96px;height:96px}.big{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}.big .lu-art{width:320px;height:auto;background:var(--lu-paper);border-radius:16px}</style></head>
+<body><h1>Thư viện hình vẽ bằng mã (Phòng mẫu)</h1><div class="g" id="g"></div><div class="big" id="b"></div>
+<script type="module">
+import { ART, ensureArtDefs, vis } from '../ui/art.js'; import { LAB_ART_KEYS, bigHen } from '../ui/art-lab.js';
+ensureArtDefs();
+const keys = new URLSearchParams(location.search).get('all') ? Object.keys(ART) : LAB_ART_KEYS;
+document.getElementById('g').innerHTML = keys.map(k => `<div class="c">${vis('art:' + k + (k==='khung10'?':14':''))}<div>${k}</div></div>`).join('');
+document.getElementById('b').innerHTML = bigHen();
+</script></body></html>
