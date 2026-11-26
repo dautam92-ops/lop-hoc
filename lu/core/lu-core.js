@@ -50,6 +50,9 @@ export function createVoice({ clips = {}, base = '', fast = false, onMissing = (
     };
     next();
   });
+  // Âm hiệu ngắn phát song song, không khóa chạm (vd. tiếng "ting" khi lật đúng một đôi).
+  const fx = typeof Audio !== 'undefined' ? new Audio() : null;
+  v.sfx = k => { const s = src(k); if (fast || !fx || !s) return; try { fx.currentTime = 0; } catch {} fx.src = s; const p = fx.play(); if (p && p.catch) p.catch(() => {}); };
   v.say = keys => { v.last = [].concat(keys).filter(k => k && !k.startsWith('__')); return v.speak(keys); };
   v.replay = () => (!v.busy && v.last.length ? v.speak(v.last) : Promise.resolve());
   v.unlock = () => { if (!audio) return; audio.muted = true; const p = audio.play(); if (p && p.catch) p.catch(() => {}); audio.pause(); audio.muted = false; };
