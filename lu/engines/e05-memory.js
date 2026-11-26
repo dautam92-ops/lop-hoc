@@ -34,8 +34,8 @@ export function mount(ctx, act, v) {
       const [x, y] = open;
       if (cards[+x.dataset.i] === cards[+y.dataset.i]) {
         open = []; found++; x.classList.add('right'); y.classList.add('right');
-        if (found === act.pairs) { ctx.record({ skill_id: act.skill_id, correct: true, first_try: misses <= (act.free_misses ?? 3), tries: misses + 1, hints: 0 }); voice.say(['__jingle', act.done]).then(done); }
-        else { voice.speak(['__jingle']); markNext(); }
+        if (found === act.pairs) { ctx.record({ skill_id: act.skill_id, correct: true, first_try: misses <= (act.free_misses ?? 3), tries: misses + 1, hints: 0 }); voice.say(['__dung', act.done]).then(done); }
+        else { voice.sfx ? voice.sfx('__dung') : voice.speak(['__dung']); markNext(); }
       } else {
         misses++; lock = true;
         setTimeout(() => { x.classList.remove('up'); y.classList.remove('up'); open = []; lock = false; }, ctx.fast ? 0 : 1100);

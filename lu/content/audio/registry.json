@@ -304,7 +304,8 @@
   "Quả táo, củ cà rốt, quả đậu đều ăn được. Còn thứ nào khác?": "f246a5b919ff.mp3",
   "Cây non cần ánh nắng. Bé tìm hình có nắng nhé.": "6f72cd01f337.mp3",
   "Đúng rồi! Đó là chú chim.": "9acf13ff6d78.mp3",
-  "Một hạt đậu.": "37f6f5a1eb3f.mp3"
+  "Một hạt đậu.": "37f6f5a1eb3f.mp3",
+  "__dung": "58b5205fe2e7.mp3"
  },
  "entries": [
   {
@@ -3033,6 +3034,15 @@
    "voice": "vi-VN-HoaiMyNeural",
    "provider": "edge-tts",
    "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "__dung",
+   "file": "58b5205fe2e7.mp3",
+   "lang": "sfx",
+   "bytes": 7917,
+   "voice": null,
+   "provider": "tự tổng hợp bằng tools/am-hieu/ting.py (numpy, không dùng âm thanh bên ngoài)",
+   "license": "tự tạo, thuộc dự án Lu"
   }
  ]
 }
