@@ -83,7 +83,7 @@ const clipsStart = h.indexOf('const CLIPS=');
 if (clipsStart > 0) {
   const isVi = t => /[à-ỹđ]/i.test(t) && !/^[\x00-\x7F]*$/.test(t);
   const need = new Set();
-  for (const K of Object.values(LESSON.kids)) for (const a of K.acts) { if (a.q && isVi(a.q)) need.add(a.q); (a.rounds || []).forEach(R => { for (const t of [R.q, R.ok, R.no, R.hint, R.say, ...(R.opts || []).map(o => o && o.say)]) if (t && isVi(t)) need.add(t); }); if (a.seq && (a.rounds || []).some(R => !R.show)) need.add('Số nào điền vào ô trống?');
+  for (const K of Object.values(LESSON.kids)) for (const a of K.acts) { if (a.q && isVi(a.q)) need.add(a.q); (a.rounds || []).forEach(R => { for (const t of [R.q, R.ok, R.no, R.hint, R.say, ...(R.opts || []).map(o => o && o.say)]) if (t && isVi(t)) need.add(t); if (a.type === 'order' && !a.en) (R.items || []).forEach(it => { if (it.t) need.add(it.t); }); }); if (a.seq && (a.rounds || []).some(R => !R.show)) need.add('Số nào điền vào ô trống?');
     if (a.type === 'choice' && a.txt) (a.rounds || []).forEach(R => { if (R.opts.some(o => typeof o === 'string' && /\p{L}/u.test(o))) { R.opts.forEach((o, j) => { need.add('Đáp án ' + 'ABCDE'[j]); if (!a.en && typeof o === 'string' && /\p{L}/u.test(o)) need.add(o); }); } }); }
   const missing = [...need].filter(t => !h.includes(JSON.stringify(t).slice(0, -1) + '":'));
   if (missing.length) notes.push(`${missing.length} câu tiếng Việt chưa có giọng Hoài My: ` + missing.join(' | '));
