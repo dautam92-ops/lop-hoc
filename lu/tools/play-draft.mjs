@@ -1,7 +1,7 @@
 // Chạy trọn một buổi học nháp nhiều chặng (D42) trên trình duyệt thật, chụp mỗi chặng, đo hình minh họa.
 // Chạy: node tools/play-draft.mjs L001   → reports/draft-L001/*.png, reports/draft-L001.json
 import { doToGiua } from './do-to-giua.mjs';
-import { kiemLoiCu } from './kiem-loi-cu.mjs';
+import { kiemLoiCu, kiemGio } from './kiem-loi-cu.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -42,8 +42,6 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
       });
       m.toGiua = await page.evaluate(doToGiua);
       m.loiCu = (await kiemLoiCu(page)).errs;
-      m.toGiua = await page.evaluate(doToGiua);
-      m.loiCu = (await kiemLoiCu(page)).errs;
       const file = `${String(k++).padStart(2, '0')}-${vp}.png`; await page.screenshot({ path: path.join(OUT, file) });
       shots.push({ step: st.step, title: st.t, file, ...m });
     }
@@ -57,6 +55,7 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
         const bad = await page.evaluate(() => window.__wrongEl.classList.contains('right') || (window.__luTest.events || []).slice(window.__evBefore).some(e => e.correct));
         if (bad) wrongOk.push(st.step + ' ' + st.t); else wrongChecked++; }
     }
+    { const g = await kiemGio(page); if (g && !g.ok && shots.length) { const L = shots[shots.length - 1]; L.loiCu = [...new Set([...(L.loiCu || []), ...g.errs])]; } }
     await page.evaluate(() => { if (document.querySelector("[data-busy]")) return; const T = window.__luTest; const c = (T.current || []).slice(); T.current = [];
       c.forEach(el => { if (!el.isConnected) return; if (el.classList.contains('piece')) { const r = el.getBoundingClientRect(); el.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, clientX: r.x + 5, clientY: r.y + 5 })); dispatchEvent(new PointerEvent('pointerup', { clientX: r.x + 5, clientY: r.y + 5 })); } else el.click(); }); });
   }

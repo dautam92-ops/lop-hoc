@@ -35,3 +35,27 @@ export async function kiemLoiCu(page) {
     if (whShow !== null) { r.checks.upKinKhiHoi = whShow === 0; if (whShow) errs.push(`Ghi nhớ vị trí: lúc hỏi còn ${whShow} đồ vật nhìn thấy, chưa úp kín`); }
   return { checks: r.checks, errs };
 }
+
+// Phân loại vào giỏ (tam 26/11 18:47 "Xếp đồ về đúng chỗ"): sau mỗi lần thả, mọi vật đã thả phải hiện đủ, cỡ vừa phải,
+// nằm trọn trong giỏ, không chồng lên nhau; hình đầu giỏ nhỏ gọn. Gọi sau MỖI bước làm bài (test-lab, play-draft).
+export async function kiemGio(page) {
+  const m = await page.evaluate(() => {
+    const W = document.querySelector('.stage .bins[data-n]'); if (!W) return null; const e = [];
+    const tray = document.querySelectorAll('.stage .tray .piece').length; const spans = [...W.querySelectorAll('.bin-in > span')];
+    if (spans.length + tray !== +W.dataset.n) e.push(`đã thả ${+W.dataset.n - tray} vật mà giỏ chỉ có ${spans.length}`);
+    for (const b of W.querySelectorAll('.bin')) {
+      const B = b.getBoundingClientRect(); const lab = b.querySelector('.bin-h')?.innerText.trim();
+      for (const h of b.querySelectorAll('.bin-h img, .bin-h svg, .bin-h .lu-art')) { const R = h.getBoundingClientRect(); if (Math.max(R.width, R.height) > Math.min(96, B.height * .3)) e.push(`hình đầu giỏ "${lab}" quá to ${Math.round(Math.max(R.width, R.height))}px`); }
+      const rs = [...b.querySelectorAll('.bin-in > span')].map(s => s.getBoundingClientRect());
+      rs.forEach((R, i) => {
+        if (Math.min(R.width, R.height) < 28) e.push(`vật trong giỏ "${lab}" bị mất (cỡ ${Math.round(R.width)}×${Math.round(R.height)}px)`);
+        else if (Math.max(R.width, R.height) > Math.min(120, B.width * .6)) e.push(`vật trong giỏ "${lab}" quá to ${Math.round(Math.max(R.width, R.height))}px`);
+        if (R.left < B.left - 1 || R.right > B.right + 1 || R.top < B.top - 1 || R.bottom > B.bottom + 1) e.push(`vật trong giỏ "${lab}" tràn ra ngoài giỏ`);
+        if (R.bottom > innerHeight + 1) e.push(`vật trong giỏ "${lab}" nằm ngoài màn hình`);
+        rs.slice(i + 1).forEach(Q => { const ov = Math.max(0, Math.min(R.right, Q.right) - Math.max(R.left, Q.left)) * Math.max(0, Math.min(R.bottom, Q.bottom) - Math.max(R.top, Q.top)); if (ov > .1 * R.width * R.height) e.push(`vật trong giỏ "${lab}" chồng lên nhau`); });
+      });
+    }
+    return [...new Set(e)];
+  });
+  return m === null ? null : { ok: !m.length, errs: m.map(x => 'Xếp vào giỏ: ' + x) };
+}
