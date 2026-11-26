@@ -266,3 +266,26 @@
   .lu-lesson .opt.st-opt { min-width: 64px; min-height: 64px; }
   .lu-lesson .opt.st-opt .lu-art { width: 56px; height: 56px; }
 }
+
+/* Vừa một màn hình khi có nhiều ô (kiểm tra "nút tràn" 26/11). Ít ô thì giữ hình to như tam yêu cầu, chỉ thu nhỏ khi cần. */
+@media (orientation: landscape) {
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face { --fs: clamp(84px, calc((100dvh - 580px) / 2), 180px); min-width: var(--fs); min-height: var(--fs); }
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face .lu-art { width: calc(var(--fs) - 26px); height: calc(var(--fs) - 26px); }
+  .lu-lesson .answers.tray:has(.piece.stk) { flex-wrap: nowrap; }
+}
+@media (orientation: portrait) and (max-width: 600px) {
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face { min-width: 25vw; min-height: 25vw; width: 25vw; height: 25vw; padding: 4px; }
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face .lu-art { width: 20vw; height: 20vw; }
+  .lu-lesson .answers .big-btn { min-height: 56px; padding: 8px 22px; font-size: 18px; }
+  .lu-lesson .piece.stk { width: 64px !important; height: 64px !important; }
+  .lu-lesson .opt.drum { width: 150px; height: 136px; }
+}
+.lu-lesson .piece.stk { width: min(120px, 10vw); height: min(120px, 10vw); flex: 0 1 auto; }
+.lu-lesson .ln-col .opt.face { --fs: min(180px, calc((100dvh - 330px) / 3 - 14px)); min-width: var(--fs); min-height: var(--fs); width: var(--fs); height: var(--fs); }
+.lu-lesson .ln-col:has(> :nth-child(4)) .opt.face { --fs: min(180px, calc((100dvh - 340px) / 4 - 14px)); }
+.lu-lesson .ln-col .opt.face .lu-art { width: calc(var(--fs) - 24px); height: calc(var(--fs) - 24px); }
+.lu-lesson .vn-tray { width: min(100%, 520px, calc(var(--vis-h) * 1.25)); }
+.lu-lesson .grid.mg { width: min(100%, 560px, calc((100dvh - 400px) * var(--ar, 1))) !important; }
+.lu-lesson .rhy, .lu-lesson .rhy-dots { max-width: 100%; }
+.lu-lesson .rhy-dots { flex-wrap: wrap; justify-content: center; }
+@media (orientation: landscape) { .lu-lesson .opt.face.vn-opt { min-width: 140px; min-height: 140px; } .lu-lesson .opt.face.vn-opt .lu-art { width: 112px; height: 112px; } }
