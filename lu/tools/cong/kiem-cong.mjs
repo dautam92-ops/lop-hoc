@@ -11,7 +11,8 @@ import { donVi, kiemTrung, taoSo, themVaoSo } from './van-tay.mjs';
 import { lapSo } from './so-bai-300.mjs';
 import { serve } from '../serve.mjs';
 import { doToGiua, danhGia } from '../do-to-giua.mjs';
-import { kiemLoiCu } from '../kiem-loi-cu.mjs';
+import { kiemLoiCu, kiemGio } from '../kiem-loi-cu.mjs';
+import { doMan } from '../do-man.mjs';
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const id = (process.argv[2] || 'so-dem').replace(/[^\w-]/g, '');
@@ -72,9 +73,9 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
       if (st.man === 'luot' && st.n && key !== last) {
         last = key; await page.waitForTimeout(200);
         const tg = danhGia(await page.evaluate(doToGiua), vp === 'phone' ? 'phone' : 'ipad');
-        const lc = (await kiemLoiCu(page)).errs;
+        const lc = (await kiemLoiCu(page)).errs; const dm = await page.evaluate(doMan);
         const file = `${ph}-${String(++k).padStart(2, '0')}-${vp}.png`; await page.screenshot({ path: path.join(OUT, file) });
-        run.man.push({ file, title: st.t, toGiua: tg, loiCu: lc });
+        run.man.push({ file, title: st.t, toGiua: tg, loiCu: lc, ...dm });
       }
       if (st.man === 'luot' && st.n && !tried.has(last)) {
         tried.add(last);
@@ -83,6 +84,7 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
           const o = [...c[0].parentElement.querySelectorAll('.opt')].find(x => x !== c[0]); if (!o) return false; window.__w = o; window.__e0 = window.__luTest.events.length; o.click(); return true; });
         if (t) { await page.waitForTimeout(150); const bad = await page.evaluate(() => window.__w.classList.contains('right') || window.__luTest.events.slice(window.__e0).some(e => e.correct)); if (bad) run.wrongOk.push(`${ph} ${st.t}`); else run.wrongChecked++; }
       }
+      { const g = await kiemGio(page); if (g && !g.ok && run.man.length) run.man.at(-1).loiCu.push(...g.errs); }
       await page.evaluate(() => { if (document.querySelector('[data-busy]')) return; const T = window.__luTest; const c = (T.current || []).slice(); T.current = [];
         c.forEach(el => { if (!el.isConnected) return; if (el.classList.contains('piece')) { const r = el.getBoundingClientRect(); el.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, clientX: r.x + 5, clientY: r.y + 5 })); dispatchEvent(new PointerEvent('pointerup', { clientX: r.x + 5, clientY: r.y + 5 })); } else el.click(); }); });
     }
@@ -102,6 +104,14 @@ for (const r of runs) {
   const tg = r.man.flatMap(m => m.toGiua.map(e => `${m.file}: ${e}`)); const lc = r.man.flatMap(m => m.loiCu.map(e => `${m.file}: ${e}`));
   check(`[${r.vp}] Nội dung học to, nằm giữa màn (quy tắc 33)`, r.man.length && !tg.length, tg.slice(0, 3).join('; '));
   check(`[${r.vp}] Không lặp lỗi tam đã báo`, !lc.length, lc.slice(0, 3).join('; '));
+  // Cùng các mục của bài học (play-draft → cong-kiem-tra), đo bằng cùng hàm tools/do-man.mjs
+  const s = r.man;
+  check(`[${r.vp}] Mọi màn có nền ảnh thật`, s.length && s.every(x => x.realBackdrop), `${s.filter(x => x.realBackdrop).length}/${s.length}`);
+  check(`[${r.vp}] Không emoji trên màn`, s.every(x => !x.emoji));
+  const minTap = Math.min(...s.map(x => x.minTap || 999));
+  check(`[${r.vp}] Nút chạm từ 48px trở lên`, minTap >= 48, `${minTap}px`);
+  const avg = Math.round(s.reduce((a, x) => a + x.illusPct, 0) / (s.length || 1));
+  check(`[${r.vp}] Hình minh họa chiếm 65% màn hình trở lên`, avg >= 65, `${avg}%`);
   check(`[${r.vp}] Sau ${3} lượt trong ngày Lu rủ nghỉ, bố mẹ mở thêm được`, r.nghi);
 }
 await writeFile(path.join(ROOT, 'reports', `cong-${id}.json`), JSON.stringify({ id, at: new Date().toISOString(), rows, runs }, null, 1));
