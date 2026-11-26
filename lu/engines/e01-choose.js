@@ -67,7 +67,7 @@ function round(ctx, act, R, first) {
   return new Promise(done => {
     let opts, order, ans, style, q, okKeys, noKeys, label;
     if (act.mode === 'items') {
-      const it = act.items[R.item]; opts = it.opts; order = R.order; ans = it.any ? -1 : it.a; R._any = it; style = it.style || act.style || 'face'; q = [it.q];
+      const it = act.items[R.item]; opts = it.opts; order = R.order; ans = it.any ? -1 : it.a; R._any = it.any ? it : null; style = it.style || act.style || 'face'; q = [it.q];
       okKeys = i => [opts[i].say, '__jingle', it.ok]; noKeys = i => [opts[i].say, '__boing', it.no || act.no];
       label = it.label || act.label || 'Bé chọn một đáp án';
       ui.scene(it.title || act.title, act.scene === 'lu' ? luArt(it.lu || act.lu || 'to-mo') : `<div class="story${it.shadow || act.shadow ? ' bong-den' : ''}">${showHTML(it.show)}</div>`);
@@ -89,6 +89,7 @@ function round(ctx, act, R, first) {
     // D43 (chị tam 26/11 02:26): đáp án là chữ cần đọc hiểu → gắn nhãn A, B, C và Lu đọc "Đáp án A…" bằng tiếng Việt, cho mọi bài.
     const readOpts = act.mode === 'items' && textOpts(opts, style);
     const box = ui.answers(label, order.map((i, k) => optHTML(opts[i], i, style, readOpts ? LETTERS[k] : '')).join(''));
+    if (R._any) box.dataset.any = '1';
     if (readOpts) q = [...q, ...readOptLines(order.map(i => opts[i]))];
     ctx.test.mark(box.querySelector(ans < 0 ? '.opt' : `[data-i="${ans}"]`));
     const en = act.mode === 'listen';
