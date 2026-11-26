@@ -1,8 +1,8 @@
 // E05 – Lật thẻ trí nhớ: lật hai thẻ, giống nhau là được một đôi.
-// Quy tắc tam 26/11: chỉ giải thích lúc đầu. Lật sai: chỉ úp thẻ lại, KHÔNG nói gì. Lật đúng một đôi: chỉ âm báo đúng.
+// Quy tắc tam 26/11: chỉ giải thích lúc đầu. Lật sai: chỉ úp thẻ lại, KHÔNG nói gì. Lật đúng một đôi: âm "ting" vui tai (__dung), không lời.
 // Xong cả bài mới khen (act.done).
 // Cặp liên quan (5–6 tuổi): act.match = [[a, b], …] – hai thẻ khác hình nhưng là một đôi (số 3 với 3 chấm, gà mẹ với gà con).
-import { need, vis, okVi, OK_VI } from './common.js';
+import { need, vis } from './common.js';
 
 export const id = 'E05', version = '1.0.0', name = 'Lật thẻ trí nhớ';
 
@@ -40,8 +40,8 @@ export function mount(ctx, act, v) {
       const [x, y] = open;
       if (keyOf(v, +x.dataset.i) === keyOf(v, +y.dataset.i)) {
         open = []; found++; x.classList.add('right'); y.classList.add('right');
-        if (found === act.pairs) { ctx.record({ skill_id: act.skill_id, correct: true, first_try: misses <= (act.free_misses ?? 3), tries: misses + 1, hints: 0 }); voice.say(['__jingle', act.done]).then(done); }
-        else { voice.speak(['__jingle']); markNext(); }
+        if (found === act.pairs) { ctx.record({ skill_id: act.skill_id, correct: true, first_try: misses <= (act.free_misses ?? 3), tries: misses + 1, hints: 0 }); voice.say(['__dung', act.done]).then(done); }
+        else { voice.sfx ? voice.sfx('__dung') : voice.speak(['__dung']); markNext(); }
       } else {
         misses++; lock = true;
         setTimeout(() => { x.classList.remove('up'); y.classList.remove('up'); open = []; lock = false; }, ctx.fast ? 0 : 1100);

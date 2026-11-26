@@ -857,7 +857,7 @@
      ],
      "pairs": 3,
      "no": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
-     "done": "Ba đôi thẻ đã tìm xong!",
+     "done": "Bé nhớ chỗ các thẻ giỏi lắm!",
      "evidence": "tiep-xuc"
     },
     {
@@ -877,7 +877,7 @@
      ],
      "pairs": 4,
      "no": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
-     "done": "Bé nhớ chỗ giỏi quá!",
+     "done": "Bé giỏi lắm!",
      "evidence": "tiep-xuc"
     },
     {
@@ -897,7 +897,7 @@
      ],
      "pairs": 4,
      "no": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
-     "done": "Bé tìm đủ các đôi thẻ rồi!",
+     "done": "Bé nhớ chỗ giỏi quá!",
      "evidence": "tiep-xuc"
     }
    ],
