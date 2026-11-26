@@ -239,3 +239,115 @@
 .lu-lesson .opt.ln-a.sel { border-color: var(--lu-sun-deep); }
 .lu-lesson .pz-full img.lu { object-fit: contain !important; }
 .lu-lesson .stage:has(.answers.tray) { --vis-h: max(150px, calc(100dvh - 580px)); }
+
+/* Lật thẻ (E05): lưới cân đối, thẻ co theo chiều cao màn hình để không tràn (tam 26/11: 8 thẻ bị tràn khỏi iPad) */
+.lu-lesson .answers.mem { display: grid; grid-template-columns: repeat(var(--c), var(--cs)); justify-content: center; gap: 10px; --c: var(--cl); --r: var(--rl);
+  --cs: max(56px, min(150px, calc((100dvh - 400px) / var(--r) - 10px), calc((100vw - 90px) / var(--c) - 10px))); }
+.lu-lesson .answers.mem .lbl { grid-column: 1 / -1; }
+.lu-lesson .answers.mem .opt.card { min-width: 0; min-height: 0; width: var(--cs); height: var(--cs); padding: 0; }
+@media (orientation: portrait) { .lu-lesson .answers.mem { --c: var(--cp); --r: var(--rp); } }
+.lu-lesson .stage:has(.answers.mem) .scene { flex: 0 0 auto; min-height: 0; padding-bottom: 24px; }
+.lu-lesson .stage:has(.answers.mem) { justify-content: flex-start; }
+
+/* Điện thoại dọc: thu gọn cảnh và đáp án để mọi chỗ cần chạm nằm trong một màn hình (vùng chạm vẫn ≥ 56px) */
+@media (orientation: portrait) and (max-width: 600px) {
+  .lu-lesson .balloons:has(.obj.art) { padding: 14px 20px 18px; gap: 6px 10px; max-width: 100%; }
+  .lu-lesson .bal:has(.obj.art) { width: 56px; }
+  .lu-lesson .answers .opt { min-width: 60px; min-height: 60px; }
+  .lu-lesson .answers .opt.wide { min-height: 60px; }
+  .lu-lesson .answers { gap: 8px; padding-top: 6px; padding-bottom: 8px; }
+  .lu-lesson .sim-lab { flex-wrap: nowrap; align-items: center; gap: 10px; }
+  .lu-lesson .tank { width: 52vw; }
+  .lu-lesson .sim-obj { width: 28vw; }
+  .lu-lesson .sim-steps { flex-wrap: nowrap; gap: 10px; }
+  .lu-lesson .st-main { width: 30vw; }
+  .lu-lesson .st-list { font-size: 14px; gap: 3px; }
+  .lu-lesson .st-list li span { width: 24px; height: 24px; }
+  .lu-lesson .opt.st-opt { min-width: 64px; min-height: 64px; }
+  .lu-lesson .opt.st-opt .lu-art { width: 56px; height: 56px; }
+}
+
+/* Vừa một màn hình khi có nhiều ô (kiểm tra "nút tràn" 26/11). Ít ô thì giữ hình to như tam yêu cầu, chỉ thu nhỏ khi cần. */
+@media (orientation: landscape) {
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face { --fs: clamp(84px, calc((100dvh - 580px) / 2), 180px); min-width: var(--fs); min-height: var(--fs); }
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face .lu-art { width: calc(var(--fs) - 26px); height: calc(var(--fs) - 26px); }
+  .lu-lesson .answers.tray:has(.piece.stk) { flex-wrap: nowrap; }
+}
+@media (orientation: portrait) and (max-width: 600px) {
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face { min-width: 25vw; min-height: 25vw; width: 25vw; height: 25vw; padding: 4px; }
+  .lu-lesson .answers:has(> .opt.face:nth-of-type(5)) .opt.face .lu-art { width: 20vw; height: 20vw; }
+  .lu-lesson .answers .big-btn { min-height: 56px; padding: 8px 22px; font-size: 18px; }
+  .lu-lesson .piece.stk { width: 64px !important; height: 64px !important; }
+  .lu-lesson .opt.drum { width: 150px; height: 136px; }
+}
+.lu-lesson .piece.stk { width: min(120px, 10vw); height: min(120px, 10vw); flex: 0 1 auto; }
+.lu-lesson .ln-col .opt.face { --fs: min(180px, calc((100dvh - 330px) / 3 - 14px)); min-width: var(--fs); min-height: var(--fs); width: var(--fs); height: var(--fs); }
+.lu-lesson .ln-col:has(> :nth-child(4)) .opt.face { --fs: min(180px, calc((100dvh - 340px) / 4 - 14px)); }
+.lu-lesson .ln-col .opt.face .lu-art { width: calc(var(--fs) - 24px); height: calc(var(--fs) - 24px); }
+.lu-lesson .vn-tray { width: min(100%, 520px, calc(var(--vis-h) * 1.25)); }
+.lu-lesson .grid.mg { width: min(100%, 560px, calc((100dvh - 400px) * var(--ar, 1))) !important; }
+.lu-lesson .rhy, .lu-lesson .rhy-dots { max-width: 100%; }
+.lu-lesson .rhy-dots { flex-wrap: wrap; justify-content: center; }
+@media (orientation: landscape) { .lu-lesson .opt.face.vn-opt { min-width: 140px; min-height: 140px; } .lu-lesson .opt.face.vn-opt .lu-art { width: 112px; height: 112px; } }
+
+/* ===== Phương pháp giáo dục bổ sung (Montessori, phát triển nhận thức) – tam 26/11 16:26 ===== */
+/* Ghi nhớ vị trí (E06 where) */
+.lu-lesson .wh-grid { display: grid; grid-template-columns: repeat(var(--n), var(--wz)); gap: 10px; --wz: clamp(64px, min(calc((var(--vis-h) - 20px) / 3), calc((100vw - 80px) / var(--n) - 10px)), 130px); }
+.lu-lesson .wh-c { position: relative; width: var(--wz); height: var(--wz); border-radius: 16px; border: 3px solid var(--lu-line); background: #fffaf0; padding: 6px; cursor: pointer; }
+.lu-lesson .wh-f { display: grid; place-items: center; width: 100%; height: 100%; }
+.lu-lesson .wh-f .lu-art { width: 100%; height: 100%; object-fit: contain; }
+.lu-lesson .wh-b { position: absolute; inset: -3px; border-radius: 16px; background: #8fae3e radial-gradient(circle at 30% 30%, #b5cf6b 0 18%, transparent 19%), radial-gradient(circle at 70% 72%, #b5cf6b 0 12%, transparent 13%); background-blend-mode: normal; opacity: 0; transform: scale(.9); transition: opacity .35s, transform .35s; pointer-events: none; }
+.lu-lesson .wh-grid.cov .wh-c:not(.open) .wh-b { opacity: 1; transform: none; }
+.lu-lesson .wh-c.got { border-color: var(--lu-leaf); animation: lu-pop .3s; }
+.lu-lesson .wh-c.hint .wh-b { box-shadow: 0 0 0 5px #f6c85f; }
+/* Tái tạo mô hình (E06 copy) */
+.lu-lesson .mt-copy { display: flex; gap: clamp(16px, 4vw, 48px); align-items: center; justify-content: center; flex-wrap: wrap; }
+.lu-lesson .mt-side { display: flex; flex-direction: column; align-items: center; gap: 6px; font: 700 15px var(--lu-font-body); color: var(--lu-ink-soft); }
+.lu-lesson .mt-side b { background: rgba(255,250,240,.9); border-radius: 999px; padding: 2px 12px; }
+.lu-lesson .mt-grid { display: grid; grid-template-columns: repeat(var(--n), var(--cz)); gap: 6px; padding: 10px; background: rgba(255,250,240,.92); border-radius: 18px; border: 3px solid #dcc79a; --cz: clamp(44px, min(calc((var(--vis-h) - 70px) / var(--n)), calc((50vw - 70px) / var(--n))), 84px); }
+.lu-lesson .mt-model { --cz: clamp(30px, calc((var(--vis-h) - 70px) / var(--n) * .8), 64px); }
+.lu-lesson .mt-c { width: var(--cz); height: var(--cz); border-radius: 10px; border: 2.5px solid var(--lu-line); background: #fff; padding: 0; }
+.lu-lesson button.mt-c { cursor: pointer; }
+.lu-lesson .mt-c.on { background: var(--k); border-color: color-mix(in srgb, var(--k) 70%, #5a4128); }
+.lu-lesson .mt-copy.done .mt-mine { box-shadow: 0 0 0 5px var(--lu-leaf); }
+.lu-lesson .mt-pal { min-width: 72px; min-height: 72px; }
+.lu-lesson .mt-pal i { display: block; width: 44px; height: 44px; border-radius: 50%; background: var(--k); border: 3px solid rgba(90,65,40,.3); }
+.lu-lesson .mt-pal.sel { border-color: var(--lu-leaf); box-shadow: 0 4px 0 var(--lu-leaf-deep); background: #f1f6df; }
+/* Nhận diện toàn cảnh: chỉ thấy qua vài lỗ */
+.lu-lesson .peek { display: inline-block; position: relative; width: clamp(150px, min(30vh, 40vw), 260px); aspect-ratio: 1; background: #fbf6ec; border-radius: 22px; overflow: hidden; }
+.lu-lesson .peek .pk-in { position: absolute; inset: 6%; display: grid; place-items: center; }
+.lu-lesson .peek .pk-in .lu-art { width: 100% !important; height: 100% !important; object-fit: contain; }
+/* tấm bìa nâu có lỗ: mỗi lớp mặt nạ khoét một lỗ, giao các lớp lại */
+.lu-lesson .peek .pk-cov { position: absolute; inset: 0; background: repeating-linear-gradient(45deg, #a57a4c 0 10px, #9a7045 10px 20px); border-radius: 22px; box-shadow: inset 0 0 0 4px #6b5232; -webkit-mask: radial-gradient(circle at 28% 34%, transparent 0 15%, #000 calc(15% + .5%)), radial-gradient(circle at 70% 30%, transparent 0 13%, #000 calc(13% + .5%)), radial-gradient(circle at 50% 74%, transparent 0 15%, #000 calc(15% + .5%)); -webkit-mask-composite: source-in; mask: radial-gradient(circle at 28% 34%, transparent 0 15%, #000 calc(15% + .5%)), radial-gradient(circle at 70% 30%, transparent 0 13%, #000 calc(13% + .5%)), radial-gradient(circle at 50% 74%, transparent 0 15%, #000 calc(15% + .5%)); mask-composite: intersect; }
+.lu-lesson .peek.p2 .pk-cov { -webkit-mask: radial-gradient(circle at 35% 40%, transparent 0 12%, #000 calc(12% + .5%)), radial-gradient(circle at 64% 70%, transparent 0 11%, #000 calc(11% + .5%)); -webkit-mask-composite: source-in; mask: radial-gradient(circle at 35% 40%, transparent 0 12%, #000 calc(12% + .5%)), radial-gradient(circle at 64% 70%, transparent 0 11%, #000 calc(11% + .5%)); mask-composite: intersect; }
+.lu-lesson .peek.p0 .pk-cov { display: none; }
+/* Khối xếp theo kích thước, sắc độ màu, thanh số, khung số, nửa hình đối xứng */
+.lu-lesson .blk { display: inline-block; width: calc(var(--s) * 76px); height: calc(var(--s) * 76px); background: #e98b9a; border: 2.5px solid #b85a6a; border-radius: 6px; box-shadow: inset -6px -6px 0 rgba(0,0,0,.08); }
+.lu-lesson .blk.nau { background: #b0784a; border-color: #7d5230; height: 30px; }
+.lu-lesson .sw { display: inline-block; width: 64px; height: 44px; border-radius: 10px; border: 2.5px solid rgba(90,65,40,.25); }
+.lu-lesson .rod { display: inline-block; height: 28px; width: calc(var(--n) * var(--u, 16px)); border-radius: 5px; border: 2px solid #5a4128; background: repeating-linear-gradient(90deg, #d9544a 0 var(--u, 16px), #3f7fc1 var(--u, 16px) calc(var(--u, 16px) * 2)); }
+.lu-lesson .rods { display: inline-flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.lu-lesson .tf { display: inline-grid; grid-template-columns: repeat(5, 30px); gap: 3px; padding: 5px; background: #fff; border: 3px solid #6b5232; border-radius: 8px; }
+.lu-lesson .tf i { width: 30px; height: 30px; border: 1.5px solid #c9b48c; border-radius: 4px; display: grid; place-items: center; }
+.lu-lesson .tf i.on::after { content: ''; width: 22px; height: 22px; border-radius: 50%; background: #d9544a; }
+.lu-lesson .sym { display: inline-grid; grid-template-columns: repeat(var(--c), 26px); gap: 2px; padding: 4px; background: #fff; border-radius: 6px; }
+.lu-lesson .sym i { width: 26px; height: 26px; background: #f3ead8; border-radius: 3px; }
+.lu-lesson .sym i.on { background: #3f7fc1; }
+.lu-lesson .sym-wrap { display: inline-flex; align-items: stretch; gap: 0; }
+.lu-lesson .sym-wrap .mid { width: 0; border-left: 4px dashed #d9544a; margin: 0 4px; }
+.lu-lesson .sym.q i { background: #fbf6ec; outline: 2px dashed #dcc79a; outline-offset: -3px; }
+@media (orientation: portrait) and (max-width: 600px) { .lu-lesson .sym { grid-template-columns: repeat(var(--c), 20px); } .lu-lesson .sym i { width: 20px; height: 20px; } .lu-lesson .tf { grid-template-columns: repeat(5, 22px); } .lu-lesson .tf i { width: 22px; height: 22px; } .lu-lesson .tf i.on::after { width: 16px; height: 16px; } }
+/* Tái tạo mô hình trên điện thoại dọc: mẫu nhỏ bên trái, lưới của bé to hơn bên phải, cùng một hàng để vừa màn hình */
+@media (orientation: portrait) and (max-width: 600px) {
+  .lu-lesson .mt-copy { flex-wrap: nowrap; gap: 10px; }
+  .lu-lesson .mt-grid { gap: 4px; padding: 6px; }
+  .lu-lesson .mt-model { --cz: calc((100vw - 150px) * .38 / var(--n)); }
+  .lu-lesson .mt-mine { --cz: calc((100vw - 150px) * .62 / var(--n)); }
+  .lu-lesson .mt-pal { min-width: 60px; min-height: 60px; }
+}
+/* Hình đối xứng trên khung câu hỏi to hơn đáp án để bé nhìn rõ */
+.lu-lesson .story .sym { grid-template-columns: repeat(var(--c), clamp(26px, 5vh, 44px)); }
+.lu-lesson .story .sym i { width: clamp(26px, 5vh, 44px); height: clamp(26px, 5vh, 44px); }
+.lu-lesson .opt .sym { grid-template-columns: repeat(var(--c), clamp(22px, 4vh, 32px)); }
+.lu-lesson .opt .sym i { width: clamp(22px, 4vh, 32px); height: clamp(22px, 4vh, 32px); }
+@media (orientation: portrait) and (max-width: 600px) { .lu-lesson .story .sym, .lu-lesson .opt .sym { grid-template-columns: repeat(var(--c), 22px); } .lu-lesson .story .sym i, .lu-lesson .opt .sym i { width: 22px; height: 22px; } }

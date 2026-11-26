@@ -7,11 +7,13 @@
 import { vis, esc, fill, sleep, setAuto, frameHTML, req } from './kit.js';
 import { okVi } from './common.js';
 import { LAB_COLORS } from '../ui/art-lab.js';
+import * as MT from './e06-mt.js';
 
-export const MORE = new Set(['diff', 'scene', 'vanish', 'multi']);
+export const MORE = new Set(['diff', 'scene', 'vanish', 'multi', ...MT.MODES]);
 const COLOR_NAMES = { do: 'đỏ', xanh: 'xanh dương', vang: 'vàng', la: 'xanh lá', tim: 'tím', hong: 'hồng', cam: 'cam' };
 
 export function validate(act) {
+  if (MT.MODES.has(act.mode)) return MT.validate(act);
   const e = req(act, ['skill_id', 'title', 'done']);
   if (act.mode === 'diff') { e.push(...req(act, ['scenes', 'n'])); (act.scenes || []).forEach((s, i) => { const able = s.objs.filter(o => o.change !== false).length; if (able < act.n) e.push(`${act.activity_id}: tranh ${i + 1} không đủ vật để tạo ${act.n} điểm khác`); }); }
   if (act.mode === 'scene') e.push(...req(act, ['bg', 'targets', 'decoys', 'q']));
@@ -21,6 +23,7 @@ export function validate(act) {
 }
 
 export function generate(act, rng) {
+  if (MT.MODES.has(act.mode)) return MT.generate(act, rng);
   const rounds = [], n = act.rounds || 1;
   for (let r = 0; r < n; r++) {
     if (act.mode === 'diff') {
@@ -60,6 +63,7 @@ export function generate(act, rng) {
 }
 const multiMatch = (R, it) => it.kind === R.want.kind && (R.rule === 'kind-notcolor' ? it.color !== R.want.color : it.color === R.want.color) && (R.rule === 'kind-color-size' ? it.big === R.want.big : true);
 export function verify(act, v) {
+  if (MT.MODES.has(act.mode)) return MT.verify(act, v);
   const e = [];
   v.rounds.forEach((R, k) => {
     const w = `${act.activity_id} vòng ${k + 1}`;
@@ -74,7 +78,7 @@ export function verify(act, v) {
 }
 const colorOf = v => v.split(':')[2] || '';
 const recolor = (v, c) => { const p = v.split(':'); p[2] = c; return p.join(':'); };
-export const lines = act => [...(act.intro || []), act.q, act.done, act.hint, act.look_again, act.again, act.each,
+export const lines = act => MT.MODES.has(act.mode) ? MT.lines(act) : [...(act.intro || []), act.q, act.done, act.hint, act.look_again, act.again, act.each,
   ...(act.mode === 'scene' ? act.targets.flatMap(t => [fill(act.q, { name: t.name }), t.found]) : []),
   ...(act.mode === 'multi' ? multiLines(act) : []), okVi()].filter(Boolean);
 function multiLines(act) { const L = []; for (const r of act.rules) for (const k of act.kinds) for (const c of act.colors) for (const b of r === 'kind-color-size' ? [true, false] : [null]) L.push(multiQ(act, r, k.k, c, b)); return L; }
@@ -82,6 +86,7 @@ export const multiQ = (act, rule, kind, color, big) => { const k = act.kinds.fin
   return rule === 'kind-notcolor' ? `Bé chạm tất cả ${k} KHÔNG phải màu ${c}.` : rule === 'kind-color-size' ? `Bé chạm tất cả ${k} màu ${c} loại ${big ? 'to' : 'nhỏ'}.` : `Bé chạm tất cả ${k} màu ${c}.`; };
 
 export async function mount(ctx, act, v) {
+  if (MT.MODES.has(act.mode)) return MT.mount(ctx, act, v);
   for (let r = 0; r < v.rounds.length; r++) { await ({ diff, scene, vanish, multi })[act.mode](ctx, act, v.rounds[r], r === 0); ctx.tick?.(); }
 }
 

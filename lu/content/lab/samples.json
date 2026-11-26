@@ -254,6 +254,151 @@
   "Vận động và phối hợp tay mắt",
   "Chuẩn bị vào lớp 1"
  ],
+ "rep20": [
+  {
+   "n": 1,
+   "name": "Ghi nhớ hình ảnh",
+   "ids": [
+    "MX-03",
+    "CC-08"
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Ghi nhớ vị trí",
+   "ids": [
+    "MT-07"
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Ghi nhớ trình tự",
+   "ids": [
+    "MX-04"
+   ]
+  },
+  {
+   "n": 4,
+   "name": "Liên tưởng hình ảnh",
+   "ids": [
+    "CC-08",
+    "CC-05"
+   ]
+  },
+  {
+   "n": 5,
+   "name": "Hoàn thiện hình đối xứng",
+   "ids": [
+    "MT-05"
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Xoay hình",
+   "ids": [
+    "CC-11"
+   ]
+  },
+  {
+   "n": 7,
+   "name": "Tái tạo mô hình",
+   "ids": [
+    "MT-08"
+   ]
+  },
+  {
+   "n": 8,
+   "name": "Nhận diện toàn cảnh",
+   "ids": [
+    "MT-06"
+   ]
+  },
+  {
+   "n": 9,
+   "name": "Tưởng tượng từ hình khối",
+   "ids": [
+    "CC-25"
+   ]
+  },
+  {
+   "n": 10,
+   "name": "Sáng tạo câu chuyện",
+   "ids": [
+    "MT-10"
+   ]
+  },
+  {
+   "n": 11,
+   "name": "Xếp vật theo kích thước",
+   "ids": [
+    "MT-01"
+   ]
+  },
+  {
+   "n": 12,
+   "name": "Phân biệt sắc độ màu",
+   "ids": [
+    "MT-02"
+   ]
+  },
+  {
+   "n": 13,
+   "name": "Thanh số Montessori",
+   "ids": [
+    "MT-03"
+   ]
+  },
+  {
+   "n": 14,
+   "name": "Ghép số với số lượng",
+   "ids": [
+    "CC-03",
+    "CC-17"
+   ]
+  },
+  {
+   "n": 15,
+   "name": "Tạo nhóm mười",
+   "ids": [
+    "MT-04"
+   ]
+  },
+  {
+   "n": 16,
+   "name": "Nhận diện âm đầu",
+   "ids": [
+    "MT-09"
+   ]
+  },
+  {
+   "n": 17,
+   "name": "Tập tô chữ cái",
+   "ids": [
+    "CC-14"
+   ]
+  },
+  {
+   "n": 18,
+   "name": "Mô phỏng sắp xếp đồ dùng",
+   "ids": [
+    "CC-06"
+   ]
+  },
+  {
+   "n": 19,
+   "name": "Thực hành chăm sóc cây",
+   "ids": [
+    "MT-11"
+   ]
+  },
+  {
+   "n": 20,
+   "name": "Phối hợp hai tay và vận động ngoài màn hình",
+   "ids": [
+    "MT-12"
+   ]
+  }
+ ],
  "samples": [
   {
    "id": "CC-01",
@@ -275,7 +420,12 @@
    ],
    "diff": "4–5: làm quen o, a, e với 3 thẻ. 5–6: phân biệt o, ô, ơ và c với 4 thẻ.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "phong",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -461,7 +611,12 @@
    ],
    "diff": "4–5: loại + màu, 9 ô. 5–6: thêm kích thước hoặc điều kiện phủ định \"không phải màu…\", 12 ô.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-05",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -565,7 +720,18 @@
    ],
    "diff": "4–5: số 1–3. 5–6: số 4–8, bốn cọc mỗi lượt.",
    "note": "",
+   "pp": [
+    "PP-MON",
+    "PP-STEM"
+   ],
+   "nl": [
+    "NL02",
+    "NL16"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-04",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -688,7 +854,12 @@
    ],
    "diff": "4–5: 3 cặp quen thuộc. 5–6: 4 cặp, có đồ vật ít gặp hơn.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-01",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -795,7 +966,17 @@
    ],
    "diff": "4–5: nối 3 con vật với nơi sống. 5–6: nối 3 nghề với dụng cụ, rồi 4 con vật với nơi sống.",
    "note": "",
+   "pp": [
+    "PP-PLAY"
+   ],
+   "nl": [
+    "NL10",
+    "NL04"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-02",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -906,7 +1087,18 @@
    ],
    "diff": "4–5: 2 nhóm (đồ vệ sinh và đồ ăn). 5–6: 3 nhóm (dưới nước, trên trời, trên cạn), 6 vật mỗi lượt.",
    "note": "Ếch và vịt sống được cả trên cạn; mẫu xếp theo nơi chúng kiếm ăn chính (dưới nước). Cần chuyên môn xác nhận.",
+   "pp": [
+    "PP-EXP",
+    "PP-MON"
+   ],
+   "nl": [
+    "NL01",
+    "NL10"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "nha-sang",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1071,7 +1263,12 @@
    ],
    "diff": "4–5: 3 tranh. 5–6: 4 tranh, thêm một truyện vòng đời gà.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-03",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1186,7 +1383,18 @@
    ],
    "diff": "4–5: 3 đôi giống hệt nhau. 5–6: 4 đôi có liên quan, hai thẻ khác hình.",
    "note": "Theo quy tắc tam: chỉ giải thích lúc đầu, lật sai úp lại im lặng, đôi đúng có tiếng \"ting\", xong cả bài mới khen.",
+   "pp": [
+    "PP-PLAY",
+    "PP-RETR"
+   ],
+   "nl": [
+    "NL07",
+    "NL10"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "hien",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1263,7 +1471,12 @@
    ],
    "diff": "4–5: tìm 2 con, hình to. 5–6: tìm 4 con, hình nhỏ hơn, nhiều vật gây nhiễu.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "vuon",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1382,7 +1595,12 @@
    ],
    "diff": "4–5: một chỉ dẫn mỗi lần, trong, trên, dưới. 5–6: nghe hai chỉ dẫn liền nhau rồi mới làm, thêm trái và phải.",
    "note": "Trái, phải tính theo phía bé nhìn vào màn hình.",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "phong",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1490,7 +1708,17 @@
    ],
    "diff": "4–5: 4 mảnh vuông. 5–6: 9 mảnh vuông.",
    "note": "",
+   "pp": [
+    "PP-STEM",
+    "PP-SCAF"
+   ],
+   "nl": [
+    "NL06"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "san",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1561,7 +1789,12 @@
    ],
    "diff": "4–5: 4 mảnh, có tranh mờ làm mẫu. 5–6: 9 mảnh, không có tranh mẫu.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "cay-cao",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1632,7 +1865,12 @@
    ],
    "diff": "4–5: mê cung 4×3. 5–6: 6×5 và nhặt 3 hạt đậu trước khi về nhà.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-02",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1694,7 +1932,19 @@
    ],
    "diff": "4–5: nét cơ bản (thẳng, ngang, cong), có mẫu và hỗ trợ. 5–6: chữ o, ô, ơ, thêm bước tự tô với độ chính xác cao hơn.",
    "note": "Dữ liệu nét chữ là bản nháp, cần chuyên môn tiểu học kiểm tra điểm bắt đầu và chiều nét trước khi dùng thật.",
+   "pp": [
+    "PP-SCAF",
+    "PP-MULTI",
+    "PP-PHON"
+   ],
+   "nl": [
+    "NL16",
+    "NL03"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "phong",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1761,7 +2011,12 @@
    ],
    "diff": "4–5: chủ đề gợi ý mặt trời. 5–6: chủ đề tự chọn, cần nhiều nét hơn.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "hien",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1851,7 +2106,12 @@
    ],
    "diff": "4–5: tô tự do, tô ít nhất nửa tranh. 5–6: tô theo số, phải đúng màu từng vùng.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "vuon-gio",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1980,7 +2240,18 @@
    ],
    "diff": "4–5: đếm 1–5. 5–6: đếm 6–10.",
    "note": "",
+   "pp": [
+    "PP-STEM",
+    "PP-MULTI"
+   ],
+   "nl": [
+    "NL02",
+    "NL16"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "vuon",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2073,7 +2344,12 @@
    ],
    "diff": "4–5: 4 bước. 5–6: 5 bước, thêm bước xắn tay áo.",
    "note": "Hình đôi tay đổi màu là hình vẽ mã tạm; bản chính cần ảnh vẽ tay từng trạng thái (bẩn, ướt, có bọt, sạch).",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "bep",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2193,7 +2469,12 @@
    ],
    "diff": "4–5: 3 vật quen thuộc. 5–6: 5 vật, có vật dễ đoán nhầm (khúc gỗ to vẫn nổi).",
    "note": "Dự đoán không chấm đúng sai. Lời giải thích khoa học cần chuyên môn kiểm duyệt.",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "bo-ao",
+   "dot": 1,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2331,7 +2612,12 @@
    ],
    "diff": "4–5: làm quen từng nhạc cụ trước, chọn 1 trong 2. 5–6: chọn 1 trong 4, không làm quen trước.",
    "note": "Âm nhạc cụ đang tổng hợp bằng trình duyệt; bản chính nên thu âm nhạc cụ thật.",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "san",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2409,7 +2695,18 @@
    ],
    "diff": "4–5: 2–3 tiếng, chỉ cần đúng số tiếng, có chấm nhìn. 5–6: có nghỉ, phải đúng nhịp ngắn dài, ẩn chấm.",
    "note": "",
+   "pp": [
+    "PP-MULTI",
+    "PP-PLAY"
+   ],
+   "nl": [
+    "NL14",
+    "NL08"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-05",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2482,7 +2779,12 @@
    ],
    "diff": "4–5: nhận ra cảm xúc (có đáp án) rồi chọn cách làm. 5–6: thêm câu hỏi vì sao bạn buồn và một lượt thứ hai.",
    "note": "Câu hỏi cảm xúc có đáp án; câu hỏi cách làm là lựa chọn mở, mọi lựa chọn đều được Lu đón nhận và giải thích.",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "phong",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2695,7 +2997,12 @@
    ],
    "diff": "4–5: một lựa chọn, hai kết thúc. 5–6: thêm câu đoán và câu hỏi hiểu chuyện.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "mua",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2909,7 +3216,12 @@
    ],
    "diff": "4–5: dán ít nhất 3 hình. 5–6: dán ít nhất 5 hình, nhiều lựa chọn hơn.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "vuon-gio",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2980,7 +3292,17 @@
    ],
    "diff": "4–5: một vòng tròn. 5–6: hình tam giác và hai nét, cần nhiều nét hơn.",
    "note": "Hoạt động mở: không chấm đúng sai, Lu đón nhận mọi ý tưởng.",
+   "pp": [
+    "PP-PLAY"
+   ],
+   "nl": [
+    "NL11",
+    "NL12"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-01",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3079,7 +3401,12 @@
    ],
    "diff": "4–5: tìm 3 đồ vật màu đỏ. 5–6: tìm 3 đồ vật hình tròn và xếp từ nhỏ đến lớn.",
    "note": "Hoạt động ngoài màn hình chỉ ghi đã tham gia; bố mẹ xác nhận.",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "nha-sang",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3135,7 +3462,12 @@
    ],
    "diff": "4–5: 4 bộ phận, hỏi 2 câu. 5–6: 6 bộ phận kèm từ tiếng Anh, hỏi 4 câu.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-02",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3273,7 +3605,12 @@
    ],
    "diff": "4–5: 2 điểm khác. 5–6: 4 điểm khác.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "san",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3473,7 +3810,18 @@
    ],
    "diff": "4–5: 3 vật, mất 1. 5–6: 5 vật, mất 2.",
    "note": "",
+   "pp": [
+    "PP-RETR",
+    "PP-PLAY"
+   ],
+   "nl": [
+    "NL07",
+    "NL09"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "phong",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3557,7 +3905,19 @@
    ],
    "diff": "4–5: chuỗi 2–3, 3 bông hoa. 5–6: chuỗi 3–5, 4 bông hoa.",
    "note": "",
+   "pp": [
+    "PP-MULTI",
+    "PP-RETR"
+   ],
+   "nl": [
+    "NL08",
+    "NL05",
+    "NL09"
+   ],
+   "mon": null,
+   "rep": [],
    "bd": "vuon",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3662,7 +4022,12 @@
    ],
    "diff": "4–5: quy luật AB, AAB. 5–6: ABC, ABB, AABB, hình khác nhau cả màu và dạng.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "hien",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3768,7 +4133,12 @@
    ],
    "diff": "4–5: 2 manh mối, 3 hình. 5–6: 3 manh mối, 5 hình.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "bo-ao",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4017,7 +4387,12 @@
    ],
    "diff": "4–5: thêm và bớt trong phạm vi 5. 5–6: gộp và tách trong phạm vi 10.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "bep",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4138,7 +4513,12 @@
    ],
    "diff": "4–5: số 1, 2, 3 có mẫu và hỗ trợ. 5–6: số 5, 8, 9 thêm bước tự tô.",
    "note": "Dữ liệu nét số là bản nháp, cần chuyên môn kiểm tra.",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "phong",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4202,7 +4582,12 @@
    ],
    "diff": "4–5: 3 con vật quen thuộc. 5–6: 5 con vật, có từ dài hơn.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "san",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4290,7 +4675,12 @@
    ],
    "diff": "4–5: in và on. 5–6: in, on, under, nghe hai câu liền nhau.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "nha-sang",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4392,7 +4782,12 @@
    ],
    "diff": "4–5: 2–5 vật, xem 2,5 giây. 5–6: 11–20 trên khung mười, xem 3,5 giây.",
    "note": "",
+   "pp": [],
+   "nl": [],
+   "mon": null,
+   "rep": [],
    "bd": "L001-BG-04",
+   "dot": 0,
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4484,6 +4879,1954 @@
      "mode": "flash",
      "activity_id": "LAB-MX-11-5-6",
      "title": "Nhìn nhanh, nhớ số"
+    }
+   }
+  },
+  {
+   "id": "MT-01",
+   "title": "Tháp hồng và cầu thang nâu",
+   "cc": [
+    "CC-07"
+   ],
+   "x": [],
+   "program": "Toán tư duy",
+   "group": "Toán",
+   "goal": "Xếp khối theo kích thước từ nhỏ đến lớn (lấy cảm hứng từ tháp hồng, cầu thang nâu Montessori); sau đó làm với đồ vật thật.",
+   "engine": "E04",
+   "mode": "cards",
+   "methods": [
+    "M026",
+    "M052"
+   ],
+   "diff": "4–5: 3 khối, to nhỏ rõ. 5–6: 5 khối chênh nhau ít hơn, thêm cầu thang nâu (dày mỏng).",
+   "note": "Loại B: mô phỏng trên app, bố mẹ cho bé xếp đồ thật (cốc, hộp, đũa). Chơi xong game không có nghĩa là đã thành thạo ngoài đời.",
+   "pp": [
+    "PP-MON",
+    "PP-MULTI",
+    "PP-SCAF"
+   ],
+   "nl": [
+    "NL04",
+    "NL05",
+    "NL02"
+   ],
+   "mon": [
+    "Cảm quan",
+    "B"
+   ],
+   "rep": [],
+   "bd": "phong",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TD.LG.02",
+     "intro": [
+      "Lu có mấy khối hồng to nhỏ khác nhau. Bé xếp từ khối nhỏ nhất đến khối to nhất nhé."
+     ],
+     "label": "Bé chạm từ nhỏ đến to",
+     "sets": [
+      {
+       "q": "Khối nào nhỏ nhất?",
+       "items": [
+        {
+         "e": "<span class=\"blk\" style=\"--s:0.45\"></span>",
+         "say": "Khối nhỏ nhất."
+        },
+        {
+         "e": "<span class=\"blk\" style=\"--s:0.85\"></span>",
+         "say": "Khối to hơn."
+        },
+        {
+         "e": "<span class=\"blk\" style=\"--s:1.25\"></span>",
+         "say": "Khối to nhất."
+        }
+       ],
+       "ok": "Bé xếp thành một cái tháp rồi!"
+      }
+     ],
+     "rounds": 1,
+     "done": "Bé xếp từ nhỏ đến to giỏi lắm! Ở nhà bé thử xếp ba cái cốc lồng vào nhau nhé.",
+     "engine": "E04",
+     "mode": "cards",
+     "activity_id": "LAB-MT-01-4-5",
+     "title": "Tháp hồng và cầu thang nâu"
+    },
+    "5-6": {
+     "skill_id": "TO.DO.04",
+     "intro": [
+      "Lần này các khối chỉ hơn nhau một chút thôi. Bé nhìn thật kỹ nhé."
+     ],
+     "label": "Bé chạm từ nhỏ đến to",
+     "again": "Giờ đến cầu thang nâu. Bé xếp từ thanh mỏng nhất nhé.",
+     "sets": [
+      {
+       "q": "Khối nào nhỏ nhất?",
+       "items": [
+        {
+         "e": "<span class=\"blk\" style=\"--s:0.4\"></span>",
+         "say": "Khối thứ nhất."
+        },
+        {
+         "e": "<span class=\"blk\" style=\"--s:0.6\"></span>",
+         "say": "Khối thứ hai."
+        },
+        {
+         "e": "<span class=\"blk\" style=\"--s:0.8\"></span>",
+         "say": "Khối thứ ba."
+        },
+        {
+         "e": "<span class=\"blk\" style=\"--s:1.0\"></span>",
+         "say": "Khối thứ tư."
+        },
+        {
+         "e": "<span class=\"blk\" style=\"--s:1.2\"></span>",
+         "say": "Khối to nhất."
+        }
+       ],
+       "ok": "Tháp hồng đã xong!"
+      },
+      {
+       "q": "Thanh nào mỏng nhất?",
+       "items": [
+        {
+         "e": "<span class=\"blk nau\" style=\"--s:0.5\"></span>",
+         "say": "Thanh ngắn nhất."
+        },
+        {
+         "e": "<span class=\"blk nau\" style=\"--s:0.75\"></span>",
+         "say": "Thanh dài hơn."
+        },
+        {
+         "e": "<span class=\"blk nau\" style=\"--s:1.0\"></span>",
+         "say": "Thanh dài hơn nữa."
+        },
+        {
+         "e": "<span class=\"blk nau\" style=\"--s:1.25\"></span>",
+         "say": "Thanh dài nhất."
+        }
+       ],
+       "ok": "Cầu thang nâu đã xong!"
+      }
+     ],
+     "rounds": 2,
+     "done": "Bé so sánh rất tinh mắt! Ở nhà bé thử xếp đũa hoặc bút từ ngắn đến dài nhé.",
+     "engine": "E04",
+     "mode": "cards",
+     "activity_id": "LAB-MT-01-5-6",
+     "title": "Tháp hồng và cầu thang nâu"
+    }
+   }
+  },
+  {
+   "id": "MT-02",
+   "title": "Hộp màu đậm nhạt",
+   "cc": [
+    "CC-07"
+   ],
+   "x": [],
+   "program": "Quan sát",
+   "group": "Tư duy",
+   "goal": "Xếp các ô màu từ nhạt đến đậm (lấy cảm hứng từ hộp màu số 3 Montessori).",
+   "engine": "E04",
+   "mode": "cards",
+   "methods": [
+    "M011"
+   ],
+   "diff": "4–5: 3 sắc độ xanh, chênh rõ. 5–6: 5 sắc độ đỏ rồi 4 sắc độ xanh lá, chênh ít.",
+   "note": "Kỹ năng \"Phân biệt sắc độ\" chưa có trong Skill Tree; tạm gắn kỹ năng gần nhất, đề xuất thêm kỹ năng mới (chờ tam duyệt).",
+   "pp": [
+    "PP-MON",
+    "PP-MULTI"
+   ],
+   "nl": [
+    "NL15",
+    "NL04",
+    "NL05"
+   ],
+   "mon": [
+    "Cảm quan",
+    "B"
+   ],
+   "rep": [],
+   "bd": "hien",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TD.LG.01",
+     "intro": [
+      "Ba ô màu xanh này có ô nhạt, có ô đậm. Bé xếp từ ô nhạt nhất đến ô đậm nhất nhé."
+     ],
+     "label": "Bé chạm từ nhạt đến đậm",
+     "sets": [
+      {
+       "q": "Ô nào nhạt nhất?",
+       "items": [
+        {
+         "e": "<span class=\"sw\" style=\"background:#d6e8f5\"></span>",
+         "say": "Xanh nhạt nhất."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#8ebfe0\"></span>",
+         "say": "Xanh vừa."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#2f6aa8\"></span>",
+         "say": "Xanh đậm nhất."
+        }
+       ],
+       "ok": "Từ nhạt đến đậm rồi!"
+      }
+     ],
+     "rounds": 1,
+     "done": "Đôi mắt bé tinh quá! Ra ngoài, bé thử tìm những chiếc lá xanh nhạt và xanh đậm nhé.",
+     "engine": "E04",
+     "mode": "cards",
+     "activity_id": "LAB-MT-02-4-5",
+     "title": "Hộp màu đậm nhạt"
+    },
+    "5-6": {
+     "skill_id": "TD.QS.09",
+     "intro": [
+      "Các ô màu này chỉ khác nhau một chút. Bé xếp từ nhạt nhất đến đậm nhất nhé."
+     ],
+     "label": "Bé chạm từ nhạt đến đậm",
+     "again": "Giờ đến màu xanh lá.",
+     "sets": [
+      {
+       "q": "Ô đỏ nào nhạt nhất?",
+       "items": [
+        {
+         "e": "<span class=\"sw\" style=\"background:#fbe0dc\"></span>",
+         "say": "Ô nhạt nhất."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#f4b3a9\"></span>",
+         "say": "Ô thứ hai."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#e98173\"></span>",
+         "say": "Ô thứ ba."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#d9544a\"></span>",
+         "say": "Ô thứ tư."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#a8352c\"></span>",
+         "say": "Ô đậm nhất."
+        }
+       ],
+       "ok": "Màu đỏ đã xếp xong!"
+      },
+      {
+       "q": "Ô xanh lá nào nhạt nhất?",
+       "items": [
+        {
+         "e": "<span class=\"sw\" style=\"background:#e3efc9\"></span>",
+         "say": "Ô nhạt nhất."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#bcd88c\"></span>",
+         "say": "Ô thứ hai."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#8fae3e\"></span>",
+         "say": "Ô thứ ba."
+        },
+        {
+         "e": "<span class=\"sw\" style=\"background:#5b7a22\"></span>",
+         "say": "Ô đậm nhất."
+        }
+       ],
+       "ok": "Màu xanh lá đã xếp xong!"
+      }
+     ],
+     "rounds": 2,
+     "done": "Bé phân biệt màu đậm nhạt rất giỏi! Ra vườn bé thử xếp lá từ nhạt đến đậm nhé.",
+     "engine": "E04",
+     "mode": "cards",
+     "activity_id": "LAB-MT-02-5-6",
+     "title": "Hộp màu đậm nhạt"
+    }
+   }
+  },
+  {
+   "id": "MT-03",
+   "title": "Thanh số đỏ xanh",
+   "cc": [
+    "CC-01"
+   ],
+   "x": [],
+   "program": "Toán tư duy",
+   "group": "Toán",
+   "goal": "Đếm đoạn trên thanh số để biết độ dài ứng với con số; 5–6 tuổi ghép hai thanh thành thanh dài hơn.",
+   "engine": "E01",
+   "mode": "items",
+   "methods": [
+    "M046",
+    "M052"
+   ],
+   "diff": "4–5: thanh 1–5, đếm đoạn. 5–6: thanh 6–10 và ghép hai thanh bằng một thanh dài.",
+   "note": "Loại B: ở nhà dùng que, đũa hoặc giấy cắt thành thanh 1–10 để bé ghép thật.",
+   "pp": [
+    "PP-MON",
+    "PP-MULTI",
+    "PP-SCAF"
+   ],
+   "nl": [
+    "NL02",
+    "NL06",
+    "NL01"
+   ],
+   "mon": [
+    "Toán",
+    "B"
+   ],
+   "rep": [],
+   "bd": "nha-sang",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TO.SO.02",
+     "style": "face",
+     "intro": [
+      "Mỗi thanh có các đoạn đỏ và xanh xen nhau. Bé đếm số đoạn để biết thanh số mấy nhé."
+     ],
+     "items": [
+      {
+       "q": "Thanh này là số mấy?",
+       "show": "<span class=\"rod\" style=\"--n:3;--u:34px\"></span>",
+       "a": 0,
+       "ok": "Đúng rồi, ba đoạn là thanh số ba.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">3</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">2</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">5</b>"
+        }
+       ]
+      },
+      {
+       "q": "Thanh này là số mấy?",
+       "show": "<span class=\"rod\" style=\"--n:5;--u:34px\"></span>",
+       "a": 0,
+       "ok": "Đúng rồi, năm đoạn là thanh số năm.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">5</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">4</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">3</b>"
+        }
+       ]
+      },
+      {
+       "q": "Thanh này là số mấy?",
+       "show": "<span class=\"rod\" style=\"--n:4;--u:34px\"></span>",
+       "a": 0,
+       "ok": "Đúng rồi, bốn đoạn là thanh số bốn.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">4</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">5</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">2</b>"
+        }
+       ]
+      }
+     ],
+     "no": "Bé chạm theo từng đoạn và đếm nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-03-4-5",
+     "title": "Thanh số đỏ xanh"
+    },
+    "5-6": {
+     "skill_id": "TO.TG.04",
+     "style": "face",
+     "intro": [
+      "Các thanh số dài hơn rồi. Bé đếm đoạn, rồi thử ghép hai thanh nhé."
+     ],
+     "items": [
+      {
+       "q": "Thanh này là số mấy?",
+       "show": "<span class=\"rod\" style=\"--n:8;--u:30px\"></span>",
+       "a": 0,
+       "ok": "Đúng rồi, thanh số tám.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">8</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">7</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">9</b>"
+        }
+       ]
+      },
+      {
+       "q": "Thanh ba ghép với thanh nào thì dài bằng thanh năm?",
+       "show": "<span class=\"rods\"><span class=\"rod\" style=\"--n:5;--u:34px\"></span><span class=\"rod\" style=\"--n:3;--u:34px\"></span></span>",
+       "a": 0,
+       "ok": "Đúng rồi, ba với hai là năm.",
+       "opts": [
+        {
+         "e": "<span class=\"rod\" style=\"--n:2;--u:34px\"></span>"
+        },
+        {
+         "e": "<span class=\"rod\" style=\"--n:1;--u:34px\"></span>"
+        },
+        {
+         "e": "<span class=\"rod\" style=\"--n:4;--u:34px\"></span>"
+        }
+       ]
+      },
+      {
+       "q": "Thanh sáu ghép với thanh nào thì dài bằng thanh mười?",
+       "show": "<span class=\"rods\"><span class=\"rod\" style=\"--n:10;--u:26px\"></span><span class=\"rod\" style=\"--n:6;--u:26px\"></span></span>",
+       "a": 0,
+       "ok": "Đúng rồi, sáu với bốn là mười.",
+       "opts": [
+        {
+         "e": "<span class=\"rod\" style=\"--n:4;--u:26px\"></span>"
+        },
+        {
+         "e": "<span class=\"rod\" style=\"--n:3;--u:26px\"></span>"
+        },
+        {
+         "e": "<span class=\"rod\" style=\"--n:5;--u:26px\"></span>"
+        }
+       ]
+      }
+     ],
+     "no": "Bé so phần còn thiếu với từng thanh nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-03-5-6",
+     "title": "Thanh số đỏ xanh"
+    }
+   }
+  },
+  {
+   "id": "MT-04",
+   "title": "Khung năm, khung mười",
+   "cc": [
+    "CC-01"
+   ],
+   "x": [],
+   "program": "Chữ số",
+   "group": "Toán",
+   "goal": "Nhìn khung có sẵn chấm và tìm số còn thiếu để đủ năm (4–5) hoặc đủ mười, nhận ra một chục và mấy đơn vị (5–6).",
+   "engine": "E01",
+   "mode": "items",
+   "methods": [
+    "M047",
+    "M053"
+   ],
+   "diff": "4–5: khung năm ô. 5–6: khung mười ô, số 11–20 bằng một khung đầy và một khung lẻ.",
+   "note": "",
+   "pp": [
+    "PP-MON",
+    "PP-SCAF",
+    "PP-RETR"
+   ],
+   "nl": [
+    "NL02",
+    "NL09"
+   ],
+   "mon": [
+    "Toán",
+    "A"
+   ],
+   "rep": [],
+   "bd": "L001-BG-04",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TO.TG.01",
+     "style": "face",
+     "intro": [
+      "Khung này có năm ô. Bé xem còn mấy ô trống thì đủ năm nhé."
+     ],
+     "items": [
+      {
+       "q": "Cần thêm mấy chấm nữa cho đủ năm?",
+       "show": "<span class=\"tf\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i></span>",
+       "a": 0,
+       "ok": "Đúng rồi, ba thêm hai là năm.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">2</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">1</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">3</b>"
+        }
+       ]
+      },
+      {
+       "q": "Cần thêm mấy chấm nữa cho đủ năm?",
+       "show": "<span class=\"tf\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i></span>",
+       "a": 0,
+       "ok": "Đúng rồi, bốn thêm một là năm.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">1</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">2</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">3</b>"
+        }
+       ]
+      },
+      {
+       "q": "Cần thêm mấy chấm nữa cho đủ năm?",
+       "show": "<span class=\"tf\"><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span>",
+       "a": 0,
+       "ok": "Đúng rồi, một thêm bốn là năm.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">4</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">3</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">2</b>"
+        }
+       ]
+      }
+     ],
+     "no": "Bé đếm các ô còn trống nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-04-4-5",
+     "title": "Khung năm, khung mười"
+    },
+    "5-6": {
+     "skill_id": "TO.SO.06",
+     "style": "face",
+     "intro": [
+      "Một khung đầy là mười, gọi là một chục. Bé nhìn khung rồi trả lời nhé."
+     ],
+     "items": [
+      {
+       "q": "Cần thêm mấy chấm nữa cho đủ mười?",
+       "show": "<span class=\"tf\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span>",
+       "a": 0,
+       "ok": "Đúng rồi, bảy thêm ba là mười.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">3</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">2</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">4</b>"
+        }
+       ]
+      },
+      {
+       "q": "Có tất cả mấy chấm?",
+       "show": [
+        "<span class=\"tf\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>",
+        "<span class=\"tf\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span>"
+       ],
+       "a": 0,
+       "ok": "Đúng rồi, một chục và bốn là mười bốn.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">14</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">41</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">10</b>"
+        }
+       ]
+      },
+      {
+       "q": "Có tất cả mấy chấm?",
+       "show": [
+        "<span class=\"tf\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span>",
+        "<span class=\"tf\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i></span>"
+       ],
+       "a": 0,
+       "ok": "Đúng rồi, một chục và tám là mười tám.",
+       "opts": [
+        {
+         "e": "<b class=\"glyph\">18</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">16</b>"
+        },
+        {
+         "e": "<b class=\"glyph\">81</b>"
+        }
+       ]
+      }
+     ],
+     "no": "Một khung đầy là mười. Bé đếm tiếp khung thứ hai nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-04-5-6",
+     "title": "Khung năm, khung mười"
+    }
+   }
+  },
+  {
+   "id": "MT-05",
+   "title": "Nửa kia của hình",
+   "cc": [
+    "CC-01"
+   ],
+   "x": [],
+   "program": "Nhận thức",
+   "group": "Tư duy",
+   "goal": "Chọn nửa bên phải để hình đối xứng qua đường gương; hình chép y nguyên (không lật) là đáp án nhiễu.",
+   "engine": "E01",
+   "mode": "items",
+   "methods": [
+    "M031"
+   ],
+   "diff": "4–5: lưới 3 hàng 2 cột, ít ô. 5–6: lưới 4 hàng 3 cột, nhiều ô hơn.",
+   "note": "Ở nhà: gấp đôi tờ giấy, chấm màu một bên rồi ép lại để thấy hình đối xứng.",
+   "pp": [
+    "PP-MULTI",
+    "PP-SCAF"
+   ],
+   "nl": [
+    "NL06",
+    "NL13",
+    "NL04"
+   ],
+   "mon": null,
+   "rep": [],
+   "bd": "san",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TD.QH.02",
+     "style": "face",
+     "intro": [
+      "Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình giống hệt khi soi gương nhé."
+     ],
+     "items": [
+      {
+       "q": "Nửa nào ghép vào thì hai bên giống nhau như soi gương?",
+       "show": "<span class=\"sym-wrap\"><span class=\"sym\" style=\"--c:2\"><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i></span><span class=\"mid\"></span><span class=\"sym q\" style=\"--c:2\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span></span>",
+       "a": 0,
+       "ok": "Đúng rồi, hai bên giống hệt nhau qua tấm gương.",
+       "no": "Bé nhìn đường gạch đỏ như tấm gương nhé. Bên phải phải giống bên trái lật lại.",
+       "opts": [
+        {
+         "e": "<span class=\"sym\" style=\"--c:2\"><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:2\"><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:2\"><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></span>"
+        }
+       ]
+      },
+      {
+       "q": "Nửa nào ghép vào thì hai bên giống nhau như soi gương?",
+       "show": "<span class=\"sym-wrap\"><span class=\"sym\" style=\"--c:2\"><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></span><span class=\"mid\"></span><span class=\"sym q\" style=\"--c:2\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span></span>",
+       "a": 0,
+       "ok": "Đúng rồi, hình đã đối xứng.",
+       "no": "Bé nhìn đường gạch đỏ như tấm gương nhé. Bên phải phải giống bên trái lật lại.",
+       "opts": [
+        {
+         "e": "<span class=\"sym\" style=\"--c:2\"><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:2\"><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:2\"><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i></span>"
+        }
+       ]
+      }
+     ],
+     "no": "Bé nhìn tấm gương đỏ nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-05-4-5",
+     "title": "Nửa kia của hình"
+    },
+    "5-6": {
+     "skill_id": "TD.KG.12",
+     "style": "face",
+     "intro": [
+      "Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình đối xứng nhé."
+     ],
+     "items": [
+      {
+       "q": "Nửa nào làm cho hình đối xứng?",
+       "show": "<span class=\"sym-wrap\"><span class=\"sym\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i></span><span class=\"mid\"></span><span class=\"sym q\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span></span>",
+       "a": 0,
+       "ok": "Đúng rồi, như một cánh bướm.",
+       "no": "Bé nhìn đường gạch đỏ như tấm gương nhé. Bên phải phải giống bên trái lật lại.",
+       "opts": [
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></span>"
+        }
+       ]
+      },
+      {
+       "q": "Nửa nào làm cho hình đối xứng?",
+       "show": "<span class=\"sym-wrap\"><span class=\"sym\" style=\"--c:3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i></span><span class=\"mid\"></span><span class=\"sym q\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span></span>",
+       "a": 0,
+       "ok": "Đúng rồi, hai bên giống nhau qua tấm gương.",
+       "no": "Bé nhìn đường gạch đỏ như tấm gương nhé. Bên phải phải giống bên trái lật lại.",
+       "opts": [
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></span>"
+        }
+       ]
+      },
+      {
+       "q": "Nửa nào làm cho hình đối xứng?",
+       "show": "<span class=\"sym-wrap\"><span class=\"sym\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i></span><span class=\"mid\"></span><span class=\"sym q\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span></span>",
+       "a": 0,
+       "ok": "Đúng rồi, bé nhìn rất kỹ.",
+       "no": "Bé nhìn đường gạch đỏ như tấm gương nhé. Bên phải phải giống bên trái lật lại.",
+       "opts": [
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i></span>"
+        },
+        {
+         "e": "<span class=\"sym\" style=\"--c:3\"><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span>"
+        }
+       ]
+      }
+     ],
+     "no": "Bé nhìn tấm gương đỏ nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-05-5-6",
+     "title": "Nửa kia của hình"
+    }
+   }
+  },
+  {
+   "id": "MT-06",
+   "title": "Ai trốn sau tấm bìa?",
+   "cc": [
+    "CC-01"
+   ],
+   "x": [],
+   "program": "Quan sát",
+   "group": "Tư duy",
+   "goal": "Chỉ thấy vài mảnh nhỏ qua lỗ tấm bìa, bé ghép trong đầu thành cả con vật (nhận diện toàn cảnh từ chi tiết).",
+   "engine": "E01",
+   "mode": "items",
+   "methods": [
+    "M011",
+    "M015"
+   ],
+   "diff": "4–5: lỗ to, 3 lựa chọn. 5–6: ít lỗ hơn, 4 lựa chọn có con vật gần giống.",
+   "note": "",
+   "pp": [
+    "PP-INQ",
+    "PP-PLAY"
+   ],
+   "nl": [
+    "NL13",
+    "NL04",
+    "NL10"
+   ],
+   "mon": null,
+   "rep": [],
+   "bd": "L001-BG-01",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TD.QH.02",
+     "style": "face",
+     "intro": [
+      "Có bạn đang trốn sau tấm bìa có lỗ. Bé nhìn qua lỗ rồi đoán là ai nhé."
+     ],
+     "items": [
+      {
+       "q": "Ai đang trốn sau tấm bìa?",
+       "show": "peek:1:art:meo",
+       "a": 0,
+       "ok": "Đúng rồi, là bạn mèo.",
+       "opts": [
+        {
+         "e": "art:meo",
+         "say": "Con mèo."
+        },
+        {
+         "e": "art:ca",
+         "say": "Con cá."
+        },
+        {
+         "e": "art:chim",
+         "say": "Con chim."
+        }
+       ]
+      },
+      {
+       "q": "Ai đang trốn sau tấm bìa?",
+       "show": "peek:1:art:ga",
+       "a": 0,
+       "ok": "Đúng rồi, là cô gà.",
+       "opts": [
+        {
+         "e": "art:ga",
+         "say": "Con gà."
+        },
+        {
+         "e": "art:ech",
+         "say": "Con ếch."
+        },
+        {
+         "e": "art:oc",
+         "say": "Con ốc sên."
+        }
+       ]
+      },
+      {
+       "q": "Ai đang trốn sau tấm bìa?",
+       "show": "peek:1:art:buom",
+       "a": 0,
+       "ok": "Đúng rồi, là bạn bướm.",
+       "opts": [
+        {
+         "e": "art:buom",
+         "say": "Con bướm."
+        },
+        {
+         "e": "art:tho",
+         "say": "Con thỏ."
+        },
+        {
+         "e": "art:ca",
+         "say": "Con cá."
+        }
+       ]
+      }
+     ],
+     "no": "Bé nhìn màu và hình qua từng lỗ nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-06-4-5",
+     "title": "Ai trốn sau tấm bìa?"
+    },
+    "5-6": {
+     "skill_id": "TD.QH.02",
+     "style": "face",
+     "intro": [
+      "Tấm bìa lần này chỉ có hai lỗ nhỏ. Bé nhìn thật kỹ rồi đoán nhé."
+     ],
+     "items": [
+      {
+       "q": "Ai đang trốn sau tấm bìa?",
+       "show": "peek:2:art:ech",
+       "a": 0,
+       "ok": "Đúng rồi, là bạn ếch.",
+       "opts": [
+        {
+         "e": "art:ech",
+         "say": "Con ếch."
+        },
+        {
+         "e": "art:ca",
+         "say": "Con cá."
+        },
+        {
+         "e": "art:oc",
+         "say": "Con ốc sên."
+        },
+        {
+         "e": "art:meo",
+         "say": "Con mèo."
+        }
+       ]
+      },
+      {
+       "q": "Ai đang trốn sau tấm bìa?",
+       "show": "peek:2:art:chim",
+       "a": 0,
+       "ok": "Đúng rồi, là bạn chim.",
+       "opts": [
+        {
+         "e": "art:chim",
+         "say": "Con chim."
+        },
+        {
+         "e": "art:ga",
+         "say": "Con gà."
+        },
+        {
+         "e": "art:buom",
+         "say": "Con bướm."
+        },
+        {
+         "e": "art:ong",
+         "say": "Con ong."
+        }
+       ]
+      },
+      {
+       "q": "Ai đang trốn sau tấm bìa?",
+       "show": "peek:2:art:oc",
+       "a": 0,
+       "ok": "Đúng rồi, là bạn ốc sên.",
+       "opts": [
+        {
+         "e": "art:oc",
+         "say": "Con ốc sên."
+        },
+        {
+         "e": "art:ech",
+         "say": "Con ếch."
+        },
+        {
+         "e": "art:ca",
+         "say": "Con cá."
+        },
+        {
+         "e": "art:ong",
+         "say": "Con ong."
+        }
+       ]
+      }
+     ],
+     "no": "Bé nhìn màu và hình qua từng lỗ nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-06-5-6",
+     "title": "Ai trốn sau tấm bìa?"
+    }
+   }
+  },
+  {
+   "id": "MT-07",
+   "title": "Đồ vật nằm ở ô nào?",
+   "cc": [
+    "CC-09"
+   ],
+   "x": [],
+   "program": "Ghi nhớ",
+   "group": "Tư duy",
+   "goal": "Nhìn các đồ vật trên lưới ô, Lu úp lại, rồi bé chạm đúng ô của vật Lu gọi (ghi nhớ vị trí). Có nút Xem lại.",
+   "engine": "E06",
+   "mode": "where",
+   "methods": [
+    "M023",
+    "M022"
+   ],
+   "diff": "4–5: 6 ô, 3 vật, hỏi 1 vật mỗi lượt. 5–6: 8 ô, 4 vật, hỏi 2 vật mỗi lượt.",
+   "note": "",
+   "pp": [
+    "PP-RETR",
+    "PP-PLAY"
+   ],
+   "nl": [
+    "NL07",
+    "NL09",
+    "NL06"
+   ],
+   "mon": null,
+   "rep": [],
+   "bd": "vuon-gio",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TD.TN.01",
+     "objs": [
+      {
+       "e": "art:meo",
+       "name": "bạn mèo",
+       "found": "Bạn mèo ở đây."
+      },
+      {
+       "e": "art:tao",
+       "name": "quả táo",
+       "found": "Quả táo ở đây."
+      },
+      {
+       "e": "art:bong",
+       "name": "quả bóng",
+       "found": "Quả bóng ở đây."
+      },
+      {
+       "e": "art:hoa",
+       "name": "bông hoa",
+       "found": "Bông hoa ở đây."
+      },
+      {
+       "e": "art:sao",
+       "name": "ngôi sao",
+       "found": "Ngôi sao ở đây."
+      },
+      {
+       "e": "art:ca",
+       "name": "con cá",
+       "found": "Con cá ở đây."
+      },
+      {
+       "e": "art:mu",
+       "name": "cái mũ",
+       "found": "Cái mũ ở đây."
+      },
+      {
+       "e": "art:la",
+       "name": "chiếc lá",
+       "found": "Chiếc lá ở đây."
+      }
+     ],
+     "cols": 3,
+     "cells": 6,
+     "show": 3,
+     "asks": 1,
+     "look_ms": 4000,
+     "rounds": 3,
+     "intro": [
+      "Lu đặt đồ vật vào các ô. Bé nhớ vật nào nằm ở đâu nhé."
+     ],
+     "look": "Bé nhìn thật kỹ nhé.",
+     "q": "{name} nằm ở ô nào?",
+     "hint": "Ô sáng lên đó, bé thử chạm nhé.",
+     "done": "Bé nhớ chỗ rất giỏi!",
+     "engine": "E06",
+     "mode": "where",
+     "activity_id": "LAB-MT-07-4-5",
+     "title": "Đồ vật nằm ở ô nào?"
+    },
+    "5-6": {
+     "skill_id": "TD.TN.11",
+     "objs": [
+      {
+       "e": "art:meo",
+       "name": "bạn mèo",
+       "found": "Bạn mèo ở đây."
+      },
+      {
+       "e": "art:tao",
+       "name": "quả táo",
+       "found": "Quả táo ở đây."
+      },
+      {
+       "e": "art:bong",
+       "name": "quả bóng",
+       "found": "Quả bóng ở đây."
+      },
+      {
+       "e": "art:hoa",
+       "name": "bông hoa",
+       "found": "Bông hoa ở đây."
+      },
+      {
+       "e": "art:sao",
+       "name": "ngôi sao",
+       "found": "Ngôi sao ở đây."
+      },
+      {
+       "e": "art:ca",
+       "name": "con cá",
+       "found": "Con cá ở đây."
+      },
+      {
+       "e": "art:mu",
+       "name": "cái mũ",
+       "found": "Cái mũ ở đây."
+      },
+      {
+       "e": "art:la",
+       "name": "chiếc lá",
+       "found": "Chiếc lá ở đây."
+      }
+     ],
+     "cols": 4,
+     "cells": 8,
+     "show": 4,
+     "asks": 2,
+     "look_ms": 4500,
+     "rounds": 3,
+     "intro": [
+      "Lu đặt bốn đồ vật vào các ô. Lần này Lu hỏi hai vật liền nhau."
+     ],
+     "look": "Bé nhìn thật kỹ nhé.",
+     "q": "{name} nằm ở ô nào?",
+     "hint": "Ô sáng lên đó, bé thử chạm nhé.",
+     "done": "Bé nhớ chỗ rất giỏi!",
+     "engine": "E06",
+     "mode": "where",
+     "activity_id": "LAB-MT-07-5-6",
+     "title": "Đồ vật nằm ở ô nào?"
+    }
+   }
+  },
+  {
+   "id": "MT-08",
+   "title": "Xếp theo mẫu của Lu",
+   "cc": [
+    "CC-02"
+   ],
+   "x": [],
+   "program": "Nhận thức",
+   "group": "Tư duy",
+   "goal": "Nhìn mẫu và tô lại đúng ô trên lưới trống (tái tạo mô hình). Ô không có trong mẫu thì không tô được, bé tự nhìn lại mẫu.",
+   "engine": "E06",
+   "mode": "copy",
+   "methods": [
+    "M031",
+    "M034"
+   ],
+   "diff": "4–5: lưới 3×3, một màu, 3–4 ô. 5–6: lưới 4×4, hai màu, 5–6 ô.",
+   "note": "Ở nhà: bố mẹ xếp 3–5 khối hoặc nắp chai theo hình, bé xếp lại giống hệt bên cạnh.",
+   "pp": [
+    "PP-MON",
+    "PP-SCAF"
+   ],
+   "nl": [
+    "NL06",
+    "NL04",
+    "NL09"
+   ],
+   "mon": [
+    "Cảm quan",
+    "B"
+   ],
+   "rep": [],
+   "bd": "phong",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TD.KG.04",
+     "size": 3,
+     "colors": [
+      "#3f7fc1"
+     ],
+     "models": [
+      [
+       {
+        "c": 0
+       },
+       {
+        "c": 3
+       },
+       {
+        "c": 6
+       },
+       {
+        "c": 7
+       }
+      ],
+      [
+       {
+        "c": 1
+       },
+       {
+        "c": 3
+       },
+       {
+        "c": 4
+       },
+       {
+        "c": 5
+       }
+      ],
+      [
+       {
+        "c": 2
+       },
+       {
+        "c": 4
+       },
+       {
+        "c": 6
+       }
+      ]
+     ],
+     "rounds": 2,
+     "intro": [
+      "Bên trái là mẫu của Lu. Bé chạm vào lưới bên phải để xếp giống hệt mẫu nhé."
+     ],
+     "q": "Bé xếp giống mẫu nhé.",
+     "again": "Mẫu mới đây. Bé xếp tiếp nhé.",
+     "hint": "Bé đếm xem ô xanh nằm ở hàng nào nhé.",
+     "done": "Giống hệt mẫu rồi!",
+     "engine": "E06",
+     "mode": "copy",
+     "activity_id": "LAB-MT-08-4-5",
+     "title": "Xếp theo mẫu của Lu"
+    },
+    "5-6": {
+     "skill_id": "TD.KG.11",
+     "size": 4,
+     "colors": [
+      "#d9544a",
+      "#3f7fc1"
+     ],
+     "color_names": [
+      "đỏ",
+      "xanh"
+     ],
+     "pick": "Bé chọn màu rồi chạm ô",
+     "pick_color": "Ô này màu {name}, bé chọn màu {name} nhé.",
+     "models": [
+      [
+       {
+        "c": 0,
+        "k": 0
+       },
+       {
+        "c": 1,
+        "k": 0
+       },
+       {
+        "c": 5,
+        "k": 1
+       },
+       {
+        "c": 9,
+        "k": 1
+       },
+       {
+        "c": 13,
+        "k": 0
+       }
+      ],
+      [
+       {
+        "c": 3,
+        "k": 1
+       },
+       {
+        "c": 6,
+        "k": 0
+       },
+       {
+        "c": 9,
+        "k": 0
+       },
+       {
+        "c": 12,
+        "k": 1
+       },
+       {
+        "c": 10,
+        "k": 1
+       },
+       {
+        "c": 5,
+        "k": 0
+       }
+      ],
+      [
+       {
+        "c": 4,
+        "k": 0
+       },
+       {
+        "c": 5,
+        "k": 1
+       },
+       {
+        "c": 6,
+        "k": 1
+       },
+       {
+        "c": 7,
+        "k": 0
+       },
+       {
+        "c": 1,
+        "k": 1
+       },
+       {
+        "c": 14,
+        "k": 1
+       }
+      ]
+     ],
+     "rounds": 2,
+     "intro": [
+      "Mẫu của Lu có hai màu. Bé chọn màu rồi chạm ô cho giống mẫu nhé."
+     ],
+     "q": "Bé xếp giống mẫu nhé.",
+     "again": "Mẫu mới đây. Bé xếp tiếp nhé.",
+     "hint": "Bé đếm hàng và cột nhé.",
+     "done": "Giống hệt mẫu rồi!",
+     "engine": "E06",
+     "mode": "copy",
+     "activity_id": "LAB-MT-08-5-6",
+     "title": "Xếp theo mẫu của Lu"
+    }
+   }
+  },
+  {
+   "id": "MT-09",
+   "title": "Âm đầu của từ",
+   "cc": [
+    "CC-01"
+   ],
+   "x": [],
+   "program": "Chữ cái tiếng Việt",
+   "group": "Tiếng Việt",
+   "goal": "Nghe tên ba bốn hình rồi chọn hình có âm đầu Lu nói (âm vị học, chưa cần biết chữ).",
+   "engine": "E01",
+   "mode": "items",
+   "methods": [
+    "M056",
+    "M059"
+   ],
+   "diff": "4–5: âm bờ, mờ, cờ; 3 hình khác âm rõ. 5–6: âm gần nhau tờ và thờ, chờ và giờ; 4 hình.",
+   "note": "",
+   "pp": [
+    "PP-PHON",
+    "PP-MULTI"
+   ],
+   "nl": [
+    "NL08",
+    "NL03"
+   ],
+   "mon": null,
+   "rep": [],
+   "bd": "L001-BG-02",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TV.AM.02",
+     "style": "face",
+     "intro": [
+      "Lu đọc tên từng hình. Bé nghe tiếng đầu tiên rồi chọn hình đúng nhé."
+     ],
+     "items": [
+      {
+       "q": "Bóng, cá, mèo. Hình nào bắt đầu bằng âm bờ?",
+       "a": 0,
+       "ok": "Đúng rồi, bờ, bóng.",
+       "opts": [
+        {
+         "e": "art:bong",
+         "say": "Bóng."
+        },
+        {
+         "e": "art:ca",
+         "say": "Cá."
+        },
+        {
+         "e": "art:meo",
+         "say": "Mèo."
+        }
+       ]
+      },
+      {
+       "q": "Mèo, gà, thỏ. Hình nào bắt đầu bằng âm mờ?",
+       "a": 0,
+       "ok": "Đúng rồi, mờ, mèo.",
+       "opts": [
+        {
+         "e": "art:meo",
+         "say": "Mèo."
+        },
+        {
+         "e": "art:ga",
+         "say": "Gà."
+        },
+        {
+         "e": "art:tho",
+         "say": "Thỏ."
+        }
+       ]
+      },
+      {
+       "q": "Cá, vịt, lá. Hình nào bắt đầu bằng âm cờ?",
+       "a": 0,
+       "ok": "Đúng rồi, cờ, cá.",
+       "opts": [
+        {
+         "e": "art:ca",
+         "say": "Cá."
+        },
+        {
+         "e": "art:vit",
+         "say": "Vịt."
+        },
+        {
+         "e": "art:la",
+         "say": "Lá."
+        }
+       ]
+      }
+     ],
+     "no": "Bé nghe Lu đọc lại nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-09-4-5",
+     "title": "Âm đầu của từ"
+    },
+    "5-6": {
+     "skill_id": "TV.AM.04",
+     "style": "face",
+     "intro": [
+      "Lần này có những âm nghe gần giống nhau. Bé nghe thật kỹ nhé."
+     ],
+     "items": [
+      {
+       "q": "Táo, thỏ, lá, mèo. Hình nào bắt đầu bằng âm tờ?",
+       "a": 0,
+       "ok": "Đúng rồi, tờ, táo. Còn thỏ là âm thờ.",
+       "opts": [
+        {
+         "e": "art:tao",
+         "say": "Táo."
+        },
+        {
+         "e": "art:tho",
+         "say": "Thỏ."
+        },
+        {
+         "e": "art:la",
+         "say": "Lá."
+        },
+        {
+         "e": "art:meo",
+         "say": "Mèo."
+        }
+       ]
+      },
+      {
+       "q": "Chim, giày, cá, sao. Hình nào bắt đầu bằng âm chờ?",
+       "a": 0,
+       "ok": "Đúng rồi, chờ, chim.",
+       "opts": [
+        {
+         "e": "art:chim",
+         "say": "Chim."
+        },
+        {
+         "e": "art:giay",
+         "say": "Giày."
+        },
+        {
+         "e": "art:ca",
+         "say": "Cá."
+        },
+        {
+         "e": "art:sao",
+         "say": "Sao."
+        }
+       ]
+      },
+      {
+       "q": "Sách, ếch, hoa, vịt. Hình nào bắt đầu bằng âm sờ?",
+       "a": 0,
+       "ok": "Đúng rồi, sờ, sách.",
+       "opts": [
+        {
+         "e": "art:sach",
+         "say": "Sách."
+        },
+        {
+         "e": "art:ech",
+         "say": "Ếch."
+        },
+        {
+         "e": "art:hoa",
+         "say": "Hoa."
+        },
+        {
+         "e": "art:vit",
+         "say": "Vịt."
+        }
+       ]
+      }
+     ],
+     "no": "Bé nghe Lu đọc lại nhé.",
+     "engine": "E01",
+     "mode": "items",
+     "activity_id": "LAB-MT-09-5-6",
+     "title": "Âm đầu của từ"
+    }
+   }
+  },
+  {
+   "id": "MT-10",
+   "title": "Bé làm tác giả",
+   "cc": [
+    "CC-23",
+    "CC-25"
+   ],
+   "x": [],
+   "program": "Tưởng tượng",
+   "group": "Nghệ thuật",
+   "goal": "Bé chọn nhân vật, nơi chốn và sự việc để cùng Lu tạo câu chuyện mới; mọi lựa chọn đều đúng. 5–6 tuổi tự kể cái kết cho bố mẹ nghe.",
+   "engine": "E10",
+   "mode": null,
+   "methods": [
+    "M007",
+    "M041"
+   ],
+   "diff": "4–5: chọn nhân vật và nơi chốn. 5–6: thêm sự việc, rồi tự kể cái kết ngoài màn hình.",
+   "note": "Hoạt động mở: không chấm đúng sai. Phần kể cái kết là ngoài màn hình, bố mẹ lắng nghe.",
+   "pp": [
+    "PP-STORY",
+    "PP-PLAY",
+    "PP-SEL"
+   ],
+   "nl": [
+    "NL11",
+    "NL12",
+    "NL03"
+   ],
+   "mon": null,
+   "rep": [],
+   "bd": "luong",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "TD.TTg.02",
+     "start": "a",
+     "nodes": {
+      "a": {
+       "say": [
+        "Mình cùng làm một câu chuyện mới nhé. Bé chọn, Lu kể."
+       ],
+       "q": "Nhân vật chính là ai?",
+       "choices": [
+        {
+         "e": "art:meo",
+         "say": "Bạn mèo.",
+         "reply": [
+          "Ngày xưa có một bạn mèo nhỏ rất tò mò."
+         ],
+         "next": "b"
+        },
+        {
+         "e": "art:tho",
+         "say": "Bạn thỏ.",
+         "reply": [
+          "Ngày xưa có một bạn thỏ nhỏ rất nhanh nhẹn."
+         ],
+         "next": "b"
+        },
+        {
+         "e": "art:ga",
+         "say": "Bạn gà con.",
+         "reply": [
+          "Ngày xưa có một bạn gà con rất chăm chỉ."
+         ],
+         "next": "b"
+        }
+       ]
+      },
+      "b": {
+       "say": [
+        "Một buổi sáng đẹp trời, bạn ấy muốn đi chơi."
+       ],
+       "q": "Bạn ấy đi đâu?",
+       "choices": [
+        {
+         "e": "art:cay",
+         "say": "Vào khu rừng.",
+         "reply": [
+          "Bạn ấy đi vào khu rừng xanh mát."
+         ],
+         "next": "c"
+        },
+        {
+         "e": "art:nha",
+         "say": "Sang nhà bà.",
+         "reply": [
+          "Bạn ấy sang nhà bà chơi."
+         ],
+         "next": "c"
+        },
+        {
+         "e": "art:cau-vong",
+         "say": "Lên cầu vồng.",
+         "reply": [
+          "Bạn ấy leo lên chiếc cầu vồng bảy màu."
+         ],
+         "next": "c"
+        }
+       ]
+      },
+      "c": {
+       "say": [
+        "Ở đó bạn ấy gặp một người bạn mới, hai bạn chơi với nhau thật vui.",
+        "Câu chuyện của bé thật hay! Bé kể lại cho bố mẹ nghe nhé."
+       ],
+       "end": true
+      }
+     },
+     "done": "Câu chuyện của bé thật hay!",
+     "engine": "E10",
+     "activity_id": "LAB-MT-10-4-5",
+     "title": "Bé làm tác giả"
+    },
+    "5-6": {
+     "skill_id": "TD.TTg.03",
+     "start": "a",
+     "nodes": {
+      "a": {
+       "say": [
+        "Hôm nay bé là tác giả. Bé chọn, Lu kể."
+       ],
+       "q": "Nhân vật chính là ai?",
+       "choices": [
+        {
+         "e": "art:meo",
+         "say": "Bạn mèo.",
+         "reply": [
+          "Ngày xưa có một bạn mèo nhỏ rất tò mò."
+         ],
+         "next": "b"
+        },
+        {
+         "e": "art:tho",
+         "say": "Bạn thỏ.",
+         "reply": [
+          "Ngày xưa có một bạn thỏ nhỏ rất nhanh nhẹn."
+         ],
+         "next": "b"
+        },
+        {
+         "e": "art:ga",
+         "say": "Bạn gà con.",
+         "reply": [
+          "Ngày xưa có một bạn gà con rất chăm chỉ."
+         ],
+         "next": "b"
+        }
+       ]
+      },
+      "b": {
+       "say": [
+        "Một buổi sáng đẹp trời, bạn ấy muốn đi chơi."
+       ],
+       "q": "Bạn ấy đi đâu?",
+       "choices": [
+        {
+         "e": "art:cay",
+         "say": "Vào khu rừng.",
+         "reply": [
+          "Bạn ấy đi vào khu rừng xanh mát."
+         ],
+         "next": "c"
+        },
+        {
+         "e": "art:nha",
+         "say": "Sang nhà bà.",
+         "reply": [
+          "Bạn ấy sang nhà bà chơi."
+         ],
+         "next": "c"
+        },
+        {
+         "e": "art:cau-vong",
+         "say": "Lên cầu vồng.",
+         "reply": [
+          "Bạn ấy leo lên chiếc cầu vồng bảy màu."
+         ],
+         "next": "c"
+        }
+       ]
+      },
+      "c": {
+       "say": [
+        "Đang đi thì có chuyện xảy ra."
+       ],
+       "q": "Chuyện gì xảy ra?",
+       "choices": [
+        {
+         "e": "art:mua",
+         "say": "Trời đổ mưa.",
+         "reply": [
+          "Bỗng trời đổ mưa to."
+         ],
+         "next": "k"
+        },
+        {
+         "e": "art:chim",
+         "say": "Gặp chú chim bị lạc.",
+         "reply": [
+          "Bạn ấy gặp một chú chim nhỏ bị lạc mẹ."
+         ],
+         "next": "k"
+        },
+        {
+         "e": "art:bong",
+         "say": "Tìm thấy quả bóng lạ.",
+         "reply": [
+          "Bạn ấy tìm thấy một quả bóng biết nói."
+         ],
+         "next": "k"
+        }
+       ]
+      },
+      "k": {
+       "say": [
+        "Rồi chuyện gì xảy ra tiếp theo? Bé tự nghĩ cái kết nhé.",
+        "Bé kể cả câu chuyện cho bố mẹ nghe. Kể xong bé bấm nút."
+       ],
+       "next": "end",
+       "button": "Bé kể xong rồi"
+      },
+      "end": {
+       "say": [
+        "Câu chuyện của bé thật hay. Lu thích lắm!"
+       ],
+       "end": true
+      }
+     },
+     "done": "Câu chuyện của bé thật hay!",
+     "engine": "E10",
+     "activity_id": "LAB-MT-10-5-6",
+     "title": "Bé làm tác giả"
+    }
+   }
+  },
+  {
+   "id": "MT-11",
+   "title": "Bé chăm cây",
+   "cc": [
+    "CC-18"
+   ],
+   "x": [],
+   "program": "Kỹ năng sống",
+   "group": "Kỹ năng sống",
+   "goal": "Chọn đúng đồ dùng cho từng bước chăm cây, chậu cây đổi theo từng bước; sau đó bé chăm một cây thật ở nhà.",
+   "engine": "E11",
+   "mode": "steps",
+   "methods": [
+    "M086",
+    "M087"
+   ],
+   "diff": "4–5: 3 bước. 5–6: 5 bước từ gieo hạt tới lau lá.",
+   "note": "Loại B: game chỉ là bước làm quen. Việc thật: bé tưới và quan sát cây ở nhà trong một tuần, bố mẹ ghi nhận.",
+   "pp": [
+    "PP-MON",
+    "PP-EXP",
+    "PP-INQ"
+   ],
+   "nl": [
+    "NL05",
+    "NL18"
+   ],
+   "mon": [
+    "Thực hành cuộc sống",
+    "B"
+   ],
+   "rep": [],
+   "bd": "vuon",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "KP.KH.01",
+     "state0": "art:chau-cay",
+     "intro": [
+      "Cây của Lu đang khát nước. Bé giúp Lu chăm cây nhé."
+     ],
+     "steps": [
+      {
+       "e": "art:binh-tuoi",
+       "label": "Tưới nước",
+       "ask": "Đầu tiên, cây cần gì?",
+       "say": "Tưới nước nhẹ nhàng vào gốc cây.",
+       "state": "art:chau-cay"
+      },
+      {
+       "e": "art:mat-troi",
+       "label": "Đặt chỗ có nắng",
+       "ask": "Tiếp theo, mình để cây ở đâu?",
+       "say": "Đặt cây ở chỗ có nắng.",
+       "state": "art:chau-cay"
+      },
+      {
+       "e": "art:la",
+       "label": "Ngắm lá mới",
+       "ask": "Vài ngày sau, mình xem gì nhé?",
+       "say": "Cây ra lá mới xanh tươi.",
+       "state": "art:hoa"
+      }
+     ],
+     "no": "Chưa đến bước đó đâu.",
+     "done": "Cây của Lu xanh tốt rồi! Ở nhà bé thử tưới một chậu cây thật cùng bố mẹ nhé.",
+     "engine": "E11",
+     "mode": "steps",
+     "activity_id": "LAB-MT-11-4-5",
+     "title": "Bé chăm cây"
+    },
+    "5-6": {
+     "skill_id": "KS.TN.01",
+     "state0": "art:hat-dau",
+     "intro": [
+      "Mình trồng và chăm một cây đậu từ hạt nhé."
+     ],
+     "steps": [
+      {
+       "e": "art:chau-cay",
+       "label": "Gieo hạt vào chậu",
+       "ask": "Đầu tiên, mình gieo hạt vào đâu?",
+       "say": "Gieo hạt vào chậu đất.",
+       "state": "art:chau-cay"
+      },
+      {
+       "e": "art:binh-tuoi",
+       "label": "Tưới nước",
+       "ask": "Tiếp theo là gì?",
+       "say": "Tưới một chút nước cho đất ẩm.",
+       "state": "art:chau-cay"
+      },
+      {
+       "e": "art:mat-troi",
+       "label": "Đặt chỗ có nắng",
+       "ask": "Hạt cần gì để nảy mầm?",
+       "say": "Đặt chậu ở chỗ có nắng.",
+       "state": "art:mam-dau"
+      },
+      {
+       "e": "art:khan",
+       "label": "Lau lá bụi",
+       "ask": "Lá bị bụi thì làm gì?",
+       "say": "Lau lá nhẹ nhàng bằng khăn ẩm.",
+       "state": "art:mam-dau"
+      },
+      {
+       "e": "art:qua-dau",
+       "label": "Thu quả đậu",
+       "ask": "Cây lớn rồi, mình được gì?",
+       "say": "Cây ra quả đậu.",
+       "state": "art:qua-dau"
+      }
+     ],
+     "no": "Chưa đến bước đó đâu.",
+     "done": "Bé chăm cây giỏi lắm! Ở nhà bé nhận chăm một chậu cây mỗi ngày nhé.",
+     "engine": "E11",
+     "mode": "steps",
+     "activity_id": "LAB-MT-11-5-6",
+     "title": "Bé chăm cây"
+    }
+   }
+  },
+  {
+   "id": "MT-12",
+   "title": "Hai tay cùng làm",
+   "cc": [
+    "CC-26"
+   ],
+   "x": [],
+   "program": "Vận động và phối hợp tay mắt",
+   "group": "Vận động",
+   "goal": "Rời màn hình làm việc cần hai tay phối hợp với đồ thật; bố mẹ xác nhận.",
+   "engine": "E15",
+   "mode": "do",
+   "methods": [
+    "M090",
+    "M100"
+   ],
+   "diff": "4–5: gấp khăn tay làm đôi hai lần. 5–6: một tay giữ dây, một tay xâu 5 hạt hoặc ống hút cắt khúc.",
+   "note": "Loại C: cần đồ thật. App chỉ hướng dẫn và ghi đã tham gia; bố mẹ xác nhận. Không coi bấm nút là đã thành thạo.",
+   "pp": [
+    "PP-EXP",
+    "PP-MON"
+   ],
+   "nl": [
+    "NL17",
+    "NL16"
+   ],
+   "mon": [
+    "Thực hành cuộc sống",
+    "C"
+   ],
+   "rep": [],
+   "bd": "nha-sang",
+   "dot": 0,
+   "status": "ready_for_review",
+   "version": "1.0.0",
+   "levels": {
+    "4-5": {
+     "skill_id": "KP.VD.02",
+     "lu": "kham-pha",
+     "intro": [
+      "Mình rời màn hình một chút nhé. Bé cần dùng cả hai tay."
+     ],
+     "task": "Bé lấy một chiếc khăn tay. Hai tay cầm hai góc, gấp đôi lại, rồi gấp đôi lần nữa cho vuông. Bố mẹ xem giúp bé nhé. Xong rồi bé bấm nút.",
+     "button": "Bé gấp xong rồi!",
+     "seconds": 60,
+     "evidence": "tiep-xuc",
+     "engine": "E15",
+     "mode": "do",
+     "activity_id": "LAB-MT-12-4-5",
+     "title": "Hai tay cùng làm"
+    },
+    "5-6": {
+     "skill_id": "KP.VD.03",
+     "lu": "kham-pha",
+     "intro": [
+      "Mình rời màn hình một chút nhé. Bé cần dùng cả hai tay."
+     ],
+     "task": "Bố mẹ đưa bé một sợi dây và năm khúc ống hút. Một tay bé giữ dây, tay kia xâu từng khúc vào thành vòng tay. Xong rồi bé bấm nút.",
+     "button": "Bé xâu xong rồi!",
+     "seconds": 120,
+     "evidence": "tiep-xuc",
+     "engine": "E15",
+     "mode": "do",
+     "activity_id": "LAB-MT-12-5-6",
+     "title": "Hai tay cùng làm"
     }
    }
   }

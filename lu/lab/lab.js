@@ -7,6 +7,8 @@ const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const get = u => fetch(u).then(r => (r.ok ? r.json() : null)).catch(() => null);
 const [D, LIB, ENG, AUD] = await Promise.all([get('../content/lab/samples.json'), get('../content/lab/library.json'), get('../registry/engines.json'), get('../content/audio/registry.json')]);
+const MET = await get('../content/lab/methodology.json');
+const PPN = Object.fromEntries((MET?.methods || []).map(m => [m.id, m.ten])); const NLN = Object.fromEntries((MET?.abilities || []).map(a => [a.id, a.ten]));
 const CLIPS = AUD?.clips || {};
 const STATUS = { draft: 'Bản nháp', ready_for_review: 'Chờ duyệt', needs_revision: 'Cần sửa', approved: 'Đã duyệt', deprecated: 'Ngừng dùng' };
 const AGE = { '4-5': '4–5 tuổi', '5-6': '5–6 tuổi' };
@@ -22,7 +24,7 @@ const tagSt = id => `<span class="tag st-${statusOf(id)}">${STATUS[statusOf(id)]
 
 /* ---------- Trạng thái trang ---------- */
 const P = new URLSearchParams(location.hash.slice(1));
-const st = { tab: P.get('tab') || 'cc', id: P.get('s') || null, age: P.get('age') || '4-5', dev: P.get('dev') || 'ipad', seed: Number(P.get('seed')) || 7, idle: 0 };
+const st = { tab: P.get('tab') || 'd1', id: P.get('s') || null, age: P.get('age') || '4-5', dev: P.get('dev') || 'ipad', seed: Number(P.get('seed')) || 7, idle: 0, anh: P.get('anh') || 'cho' };
 const saveHash = () => { const h = new URLSearchParams({ tab: st.tab, ...(st.id ? { s: st.id, age: st.age, dev: st.dev, seed: st.seed } : {}) }); history.replaceState(null, '', '#' + h); };
 
 /* ---------- Danh sách ---------- */
@@ -32,20 +34,22 @@ function renderList() {
   document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === st.tab));
   const F = $('#filters'), I = $('#items'); F.hidden = st.tab !== 'all';
   if (st.tab === 'cc') I.innerHTML = D.mechanics.map(m => { const s = D.samples.find(x => x.cc.includes(m.id)); return s ? card(s, `${m.id} ${m.name}`) : `<div class="item"><div class="k">${m.id}</div><div class="t">${esc(m.name)}</div><div class="m">Chưa có mẫu</div></div>`; }).join('');
+  if (st.tab === 'd1') I.innerHTML = D.samples.filter(s => s.dot === 1).map(s => card(s, `${s.cc.join(', ')} · 10 bài hoàn chỉnh`)).join('');
+  if (st.tab === 'pp20') I.innerHTML = (D.rep20 || []).map(r => r.ids.map(id => byId[id] ? card(byId[id], `${r.n}. ${r.name}${byId[id].id.startsWith('MT') ? ' · mẫu mới' : ' · dùng lại'}`) : '').join('')).join('');
   if (st.tab === 'x30') I.innerHTML = D.x30.map(x => { const ss = D.samples.filter(s => s.x.includes(x.n)); return ss.map(s => card(s, `Mẫu ${x.n}. ${x.name}`)).join(''); }).join('');
   if (st.tab === 'all') {
     const v = id => $(id).value;
     I.innerHTML = D.samples.filter(s => (!v('#f-group') || s.group === v('#f-group')) && (!v('#f-prog') || s.program === v('#f-prog')) && (!v('#f-eng') || s.engine === v('#f-eng')) && (!v('#f-status') || statusOf(s.id) === v('#f-status'))).map(s => card(s)).join('') || '<div class="empty">Không có mẫu khớp bộ lọc.</div>';
   }
-  if (st.tab === 'pt' || st.tab === 'eng' || st.tab === 'rv') I.innerHTML = '<div class="empty">Bảng ở khung bên phải.</div>';
-  I.querySelectorAll('.item[data-id]').forEach(b => b.onclick = () => { st.id = b.dataset.id; if (['pt', 'eng', 'rv'].includes(st.tab)) st.tab = 'cc'; renderList(); renderDetail(); if (innerWidth < 900) $('#detail').scrollIntoView({ behavior: 'smooth' }); });
+  if (['pt', 'eng', 'rv', 'kb'].includes(st.tab)) I.innerHTML = '<div class="empty">Bảng ở khung bên phải.</div>';
+  I.querySelectorAll('.item[data-id]').forEach(b => b.onclick = () => { st.id = b.dataset.id; if (['pt', 'eng', 'rv', 'kb'].includes(st.tab)) st.tab = 'cc'; renderList(); renderDetail(); if (innerWidth < 900) $('#detail').scrollIntoView({ behavior: 'smooth' }); });
 }
 const fill = (sel, vals, lab = x => x) => { const e = $(sel); vals.forEach(v => e.insertAdjacentHTML('beforeend', `<option value="${esc(v)}">${esc(lab(v))}</option>`)); e.onchange = renderList; };
 fill('#f-group', [...new Set(D.samples.map(s => s.group))].sort());
 fill('#f-prog', D.programs.filter(p => D.samples.some(s => s.program === p)));
 fill('#f-eng', [...new Set(D.samples.map(s => s.engine))].sort(), e => `${e} ${ENG?.engines?.find(x => x.engine_id === e || x.id === e)?.ten || ''}`.trim());
 fill('#f-status', Object.keys(STATUS), k => STATUS[k]);
-document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { st.tab = b.dataset.tab; renderList(); if (['pt', 'eng', 'rv'].includes(st.tab)) renderTable(); else renderDetail(); saveHash(); });
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { st.tab = b.dataset.tab; renderList(); if (['pt', 'eng', 'rv', 'kb'].includes(st.tab)) renderTable(); else renderDetail(); saveHash(); });
 
 /* ---------- Bảng: phương thức, engine, nhận xét ---------- */
 function renderTable() {
@@ -62,6 +66,21 @@ function renderTable() {
     box.innerHTML = `<h2>26 cơ chế và engine</h2><div style="overflow:auto;max-height:75vh"><table><thead><tr><th>Cơ chế</th><th>Engine</th><th>Đánh giá</th><th>Đã có trước</th><th>Bổ sung lần này</th><th>Mẫu</th></tr></thead><tbody>
       ${rows.map(r => `<tr><td><b>${r.id}</b> ${esc(r.name)}</td><td>${esc(r.engine)}</td><td>${esc(r.verdict)}</td><td>${esc(r.before)}</td><td>${esc(r.added)}</td><td><a href="#" data-go="${r.demo}">${r.demo}</a></td></tr>`).join('')}</tbody></table></div>
       <h3>Engine</h3><table><thead><tr><th>Mã</th><th>Tên</th><th>Chế độ</th><th>Trạng thái</th></tr></thead><tbody>${(ENG?.engines || []).map(e => `<tr><td>${esc(e.engine_id || e.id)}</td><td>${esc(e.ten || e.name)}</td><td>${esc((e.modes || []).join(', '))}</td><td>${esc(e.trang_thai || '')}</td></tr>`).join('')}</tbody></table>`;
+  }
+  if (st.tab === 'kb') {
+    if (!MET) { box.innerHTML = '<div class="empty">Chưa có khung phương pháp.</div>'; return; }
+    const go = ids => (ids || []).map(d => byId[d] ? `<a href="#" data-go="${d}">${d}</a>` : esc(d)).join(' ');
+    const src = m => m.nguon.map(n => n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.t)}</a>` : esc(n.t)).join('<br>');
+    box.innerHTML = `<h2>Khung phương pháp giáo dục</h2><p class="meta">Bản chờ tam duyệt · ${MET.methods.length} phương pháp · ${MET.abilities.length} năng lực · ${MET.montessori.reduce((a, v) => a + v.hoat_dong.length, 0)} hoạt động Montessori (A ${MET.montessori_abc.A}, B ${MET.montessori_abc.B}, C ${MET.montessori_abc.C}) · ${MET.offscreen.length} hoạt động ngoài màn hình · ${MET.new_skills.length} kỹ năng đề xuất</p>
+      <div class="note">${MET.nguyen_tac.map(esc).join(' · ')}</div>
+      <h3>Phương pháp và mức bằng chứng</h3><div style="overflow:auto;max-height:60vh"><table><thead><tr><th>Mã</th><th>Phương pháp</th><th>Bằng chứng</th><th>4–5 / 5–6</th><th>Số hóa</th><th>Giới hạn</th><th>Nguồn</th><th>Mức nghiên cứu</th><th>Mẫu</th></tr></thead><tbody>
+      ${MET.methods.map(m => `<tr><td><b>${m.id}</b></td><td>${esc(m.ten)}<br><small>${esc(m.ten_en)}</small></td><td><b>${m.chung_cu}</b> ${esc(m.chung_cu_ghi)}</td><td>${esc(m.tuoi['4-5'])}<br>${esc(m.tuoi['5-6'])}</td><td>${esc(m.so_hoa)}</td><td>${esc(m.gioi_han.join('; '))}</td><td><small>${src(m)}</small></td><td>${m.nghien_cuu === 'doi-chieu' ? 'Đã đối chiếu nguồn' : 'Tổng quan'}</td><td>${go(m.mau)}</td></tr>`).join('')}</tbody></table></div>
+      <h3>18 năng lực nhận thức và Skill Tree</h3><table><thead><tr><th>Năng lực</th><th>Kỹ năng hiện có</th><th>Mức</th><th>Đề xuất thêm</th><th>Mẫu</th></tr></thead><tbody>
+      ${MET.abilities.map(a => `<tr><td><b>${a.id}</b> ${esc(a.ten)}<br><small>${esc(a.mo_ta)}</small></td><td>${a.so_ky_nang}</td><td>${esc(a.muc)}</td><td>${esc(a.de_xuat.join(', '))}</td><td>${go(a.mau)}</td></tr>`).join('')}</tbody></table>
+      <h3>Kỹ năng đề xuất (chưa thêm, chờ duyệt)</h3><table><thead><tr><th>Mã</th><th>Tên</th><th>Tuổi</th><th>Mục tiêu</th><th>Lý do</th></tr></thead><tbody>${MET.new_skills.map(n => `<tr><td>${n.id}</td><td>${esc(n.ten)}</td><td>${esc(n.tuoi)}</td><td>${esc(n.muc_tieu)}</td><td>${esc(n.ly_do)}</td></tr>`).join('')}</tbody></table>
+      <h3>Montessori 5 vùng (A làm đủ trên app · B mô phỏng + làm thật · C cần đồ thật)</h3>${MET.montessori.map(v => `<h4>${esc(v.vung)} <small>${esc(v.en)}</small></h4><table><thead><tr><th>#</th><th>Hoạt động</th><th>Giáo cụ</th><th>Tự sửa lỗi</th><th>Tuổi</th><th>Loại</th><th>Mẫu</th></tr></thead><tbody>${v.hoat_dong.map(a => `<tr><td>${a.thu_tu}</td><td>${esc(a.ten)}<br><small>${esc(a.huong_dan)}</small></td><td>${esc(a.giao_cu)}</td><td>${esc(a.tu_sua_loi)}</td><td>${esc(a.tuoi)}</td><td><b>${a.loai}</b></td><td>${go([a.mau].filter(Boolean))}</td></tr>`).join('')}</tbody></table>`).join('')}
+      <h3>Hoạt động ngoài màn hình</h3><table><thead><tr><th>Mã</th><th>Hoạt động</th><th>Vật liệu rẻ</th><th>Hướng dẫn bố mẹ</th><th>An toàn</th></tr></thead><tbody>${MET.offscreen.map(o => `<tr><td>${o.id}</td><td>${esc(o.ten)}<br><small>${esc(o.tuoi)} · ${o.phut} phút</small></td><td>${esc(o.vat_lieu.join(', '))}</td><td>${esc(o.huong_dan_bo_me.join('. '))}</td><td>${esc(o.an_toan)}</td></tr>`).join('')}</tbody></table>
+      <h3>Tích hợp 300 buổi</h3><ul>${MET.plan_rules.map(r => `<li>${esc(r)}</li>`).join('')}</ul><table><thead><tr><th>Vùng</th><th>Buổi</th><th>Trọng tâm</th><th>Phương pháp nhấn mạnh</th><th>Montessori</th><th>Ngoài màn hình</th><th>Mẫu</th></tr></thead><tbody>${MET.plan.map(r => `<tr><td>${r.vung}</td><td>${r.bai}<br><small>${esc(r.tuoi)}</small></td><td>${esc(r.trong_tam)}</td><td>${r.pp.map(p => esc(PPN[p] || p)).join(', ')}</td><td>${esc(r.montessori.join('; '))}</td><td>${esc(r.ngoai_man_hinh.join(', '))}</td><td>${go(r.mau)}</td></tr>`).join('')}</tbody></table>`;
   }
   if (st.tab === 'rv') {
     const ids = Object.keys(REV).filter(k => byId[k]);
@@ -88,10 +107,11 @@ function renderDetail() {
   box.innerHTML = `<div class="d-head"><h2>${esc(s.title)}</h2><div class="meta">${s.id} · ${esc(s.engine)}${s.mode ? ' / ' + esc(s.mode) : ''} · ${esc(s.program)} · phiên bản ${esc(s.version)} ${tagSt(s.id)}</div></div>
     <div class="d-grid"><div><b>Mục tiêu giáo dục</b>${esc(s.goal)}</div><div><b>Hai mức tuổi</b>${esc(s.diff)}</div>
       <div><b>Cơ chế tương tác</b>${esc(mech || 'Mẫu nghiệm thu')}</div><div><b>Mẫu nghiệm thu</b>${esc(xs || '–')}</div>
-      <div><b>Kỹ năng (${esc(AGE[st.age])})</b>${esc(act.skill_id)}</div><div><b>Phương thức tham chiếu</b>${esc(s.methods.join(', '))}</div></div>
+      <div><b>Kỹ năng (${esc(AGE[st.age])})</b>${esc(act.skill_id)}</div><div><b>Phương thức tham chiếu</b>${esc(s.methods.join(', '))}</div>${s.pp?.length ? `<div><b>Phương pháp giáo dục</b>${esc(s.pp.map(p => PPN[p] || p).join(', '))}</div><div><b>Năng lực nhận thức</b>${esc((s.nl || []).map(n => NLN[n] || n).join(', '))}${s.mon ? ` · Montessori: ${esc(s.mon[0])}, loại ${esc(s.mon[1])}` : ''}</div>` : ''}</div>
     ${s.note ? `<div class="note">${esc(s.note)}</div>` : ''}
     <div class="bar"><span class="seg" id="age">${Object.keys(s.levels).map(a => `<button data-v="${a}" class="${a === st.age ? 'on' : ''}">${AGE[a]}</button>`).join('')}</span>
       <span class="seg" id="dev"><button data-v="ipad" class="${st.dev === 'ipad' ? 'on' : ''}">iPad</button><button data-v="phone" class="${st.dev === 'phone' ? 'on' : ''}">Điện thoại</button></span>
+      <span class="seg" id="anh" title="Ảnh vẽ tay mới chỉ dùng trong bài sau khi tam duyệt. Chọn 'Xem ảnh chờ duyệt' để xem trước ảnh trong bài."><button data-v="cho" class="${st.anh === 'cho' ? 'on' : ''}">Xem ảnh chờ duyệt</button><button data-v="duyet" class="${st.anh === 'duyet' ? 'on' : ''}">Chỉ ảnh đã duyệt</button></span>
       <label>Biến thể <input class="seed" id="seed" type="number" value="${st.seed}"></label><button class="btn" id="other">Biến thể khác</button></div>
     <div class="bar"><button class="btn" id="restart">Chơi lại</button><button class="btn ok" id="right">Thử đúng</button><button class="btn warn" id="wrong">Thử sai</button>
       <button class="btn" id="idle">Thử không trả lời</button><button class="btn" id="replay">Nghe lại</button><button class="btn" id="pause">Tạm dừng</button><button class="btn" id="skip">Bỏ qua câu</button></div>
@@ -114,6 +134,7 @@ function renderDetail() {
   load();
   // Điều khiển
   box.querySelectorAll('#age button').forEach(b => b.onclick = () => { st.age = b.dataset.v; renderDetail(); });
+  box.querySelectorAll('#anh button').forEach(b => b.onclick = () => { st.anh = b.dataset.v; renderDetail(); });
   box.querySelectorAll('#dev button').forEach(b => b.onclick = () => { st.dev = b.dataset.v; renderDetail(); });
   $('#seed').onchange = e => { st.seed = Number(e.target.value) || 1; st.idle = 0; load(); };
   $('#other').onclick = () => { st.seed = Math.floor(Math.random() * 99999) + 1; $('#seed').value = st.seed; st.idle = 0; load(); };
@@ -133,7 +154,7 @@ function renderDetail() {
 }
 function load(auto = false) {
   saveHash(); $('#log').innerHTML = '';
-  frame.src = `play.html?s=${encodeURIComponent(st.id)}&age=${st.age}&seed=${st.seed}${st.idle ? `&idle=${st.idle}` : ''}${auto ? '&auto=1' : ''}`;
+  frame.src = `play.html?s=${encodeURIComponent(st.id)}&age=${st.age}&seed=${st.seed}${st.idle ? `&idle=${st.idle}` : ''}${auto ? '&auto=1' : ''}${st.anh === 'cho' ? '&anh=cho' : ''}`;
 }
 const log = (cls, t) => { const l = $('#log'); if (!l) return; l.insertAdjacentHTML('beforeend', `<div class="${cls}">${esc(t)}</div>`); l.scrollTop = l.scrollHeight; };
 const SFX = { __jingle: '[âm báo đúng]', __dung: '[tiếng "ting"]', __boing: '[âm nhẹ: chưa đúng]', __ok: '[Excellent!]', __no: '[Oops!]' };
@@ -154,4 +175,4 @@ function sayLine(t) {
   const u = new SpeechSynthesisUtterance(t); const vi = /[^\x00-\x7f]/.test(t); u.lang = vi ? 'vi-VN' : 'en-US'; speechSynthesis.speak(u);
 }
 
-renderList(); if (['pt', 'eng', 'rv'].includes(st.tab)) renderTable(); else renderDetail();
+renderList(); if (['pt', 'eng', 'rv', 'kb'].includes(st.tab)) renderTable(); else renderDetail();

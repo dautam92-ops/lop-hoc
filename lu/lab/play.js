@@ -18,7 +18,8 @@ const post = (ev, data = {}) => { try { parent.postMessage({ type: 'lu-lab', ev,
 const [chars, areg, audio, lab] = await Promise.all(['../registry/characters.json', '../registry/assets.json', '../content/audio/registry.json', '../content/lab/samples.json'].map(u => fetch(u).then(r => r.json())));
 const LU = {}; for (const g of ['bieu_cam', 'tu_the', 'goc_nhin']) for (const [k, v] of Object.entries(chars.LU[g] || {})) LU[k] ??= '../' + v.webp;
 setLuArt(expr => `<img class="lu" src="${LU[expr] || LU.vui}" alt="" draggable="false">`);
-const ok = areg.assets.filter(a => a.trang_thai === 'da_duyet');
+// &anh=cho: xem trước cả ảnh chờ duyệt (chỉ trong Phòng mẫu, để tam duyệt ảnh ngay trong bài). Mặc định chỉ ảnh đã duyệt.
+const ok = areg.assets.filter(a => a.trang_thai === 'da_duyet' || (p.get('anh') === 'cho' && a.trang_thai === 'cho_duyet'));
 setSceneAssets(Object.fromEntries(ok.filter(a => a.slot).map(a => [a.slot, '../' + a.path])));
 setVisAssets(Object.fromEntries(ok.flatMap(a => [[a.asset_id, '../' + a.path], ...(String(a.slot || '').startsWith('art:') ? [[a.slot, '../' + a.path]] : [])])));
 

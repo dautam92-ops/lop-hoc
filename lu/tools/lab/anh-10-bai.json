@@ -1,0 +1,319 @@
+{
+ "format": "lu-art-prompts",
+ "version": "PM10-1",
+ "ghi_chu": "Ảnh cho 10 bài mẫu hoàn chỉnh đầu tiên (Phòng mẫu). Bối cảnh: slot = tên cảnh (thay nền vẽ mã). Đồ vật: slot art:<tên> (thay hình vẽ mã). Chạy trên máy tam, ảnh chỉ hiện sau khi tam duyệt. Đồ vật dùng style_do_vat (bỏ \"natural expression\": mô hình vẽ thêm mặt người vào giọt nước, mũ, sỏi).",
+ "bai": [
+  "CC-01",
+  "CC-03",
+  "CC-07",
+  "CC-08",
+  "CC-09",
+  "CC-12",
+  "CC-13",
+  "CC-17",
+  "CC-18",
+  "CC-19"
+ ],
+ "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, natural expression, simple clean composition, not too detailed, for kids aged 4 to 6",
+ "negative": "3d render, cgi, plastic, glossy, shiny, photorealistic, photo, anime, text, letters, watermark, signature, logo, extra limbs, extra fingers, deformed, cluttered background, harsh shadows, neon colors, scary",
+ "seeds": [
+  22,
+  23,
+  24,
+  25
+ ],
+ "items": [
+  {
+   "id": "PM10-BG-phong",
+   "slot": "phong",
+   "vi": "Phòng chơi của Lu",
+   "prompt": "a cozy child playroom inside a small cottage, round window on the left, wooden shelves with a few toys on the right, soft rug, empty space in the center, wide landscape, no characters",
+   "tach_nen": false,
+   "width": 1344,
+   "height": 768
+  },
+  {
+   "id": "PM10-BG-hien",
+   "slot": "hien",
+   "vi": "Hiên nhà gỗ trong nhà, tường ván",
+   "prompt": "an indoor wooden veranda with plank walls, a low wooden bench on the right, warm light, empty floor in the center, wide landscape, no characters",
+   "tach_nen": false,
+   "width": 1344,
+   "height": 768
+  },
+  {
+   "id": "PM10-BG-vuon",
+   "slot": "vuon",
+   "vi": "Vườn rau có hoa",
+   "prompt": "a gentle vegetable garden with bean plants, small flowers and leafy vegetables, soft hills, open space in the foreground, wide landscape, no characters",
+   "tach_nen": false,
+   "width": 1344,
+   "height": 768
+  },
+  {
+   "id": "PM10-BG-cay-cao",
+   "slot": "cay-cao",
+   "vi": "Cây đậu leo cao bên đồi",
+   "prompt": "tall climbing bean plants on bamboo sticks on the right side, soft hills and sky, open meadow on the left and center, wide landscape, no characters",
+   "tach_nen": false,
+   "width": 1344,
+   "height": 768
+  },
+  {
+   "id": "PM10-BG-bep",
+   "slot": "bep",
+   "vi": "Bếp nhỏ của nhà Lu",
+   "prompt": "inside a small warm cottage kitchen, wooden counter standing on the floor along the bottom, a simple sink with tap, round window, wide landscape, no characters",
+   "tach_nen": false,
+   "width": 1344,
+   "height": 768,
+   "prompt_goc": "a small warm cottage kitchen, wooden counter along the bottom, a simple sink with tap, round window, a few fruits, empty wall in the center, wide landscape, no characters"
+  },
+  {
+   "id": "PM10-BG-bo-ao",
+   "slot": "bo-ao",
+   "vi": "Bờ ao",
+   "prompt": "a small calm pond with reeds and lily pads, grassy bank in the foreground, soft hills behind, open water in the center, wide landscape, no characters",
+   "tach_nen": false,
+   "width": 1344,
+   "height": 768
+  },
+  {
+   "id": "PM10-OB-ao",
+   "slot": "art:ao",
+   "vi": "Chiếc áo trẻ em",
+   "prompt": "a small red child t-shirt laid flat, no person, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "a small red child t-shirt, isolated on plain white background"
+  },
+  {
+   "id": "PM10-OB-ao-nuoc",
+   "slot": "art:ao-nuoc",
+   "vi": "Cái ao nhỏ",
+   "prompt": "a small round pond with water lilies seen from slightly above, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-binh-tuoi",
+   "slot": "art:binh-tuoi",
+   "vi": "Bình tưới cây",
+   "prompt": "a small green watering can, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-bong",
+   "slot": "art:bong",
+   "vi": "Quả bóng",
+   "prompt": "a red and white rubber ball, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-buom",
+   "slot": "art:buom",
+   "vi": "Con bướm",
+   "prompt": "a yellow butterfly with open wings, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-ca",
+   "slot": "art:ca",
+   "vi": "Con cá",
+   "prompt": "a small orange fish, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-ca-rot",
+   "slot": "art:ca-rot",
+   "vi": "Củ cà rốt",
+   "prompt": "one carrot with green leaves, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-cay",
+   "slot": "art:cay",
+   "vi": "Cái cây",
+   "prompt": "a small round leafy tree, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-chao",
+   "slot": "art:chao",
+   "vi": "Cái chảo",
+   "prompt": "a black frying pan with wooden handle, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-chia-khoa",
+   "slot": "art:chia-khoa",
+   "vi": "Chìa khóa",
+   "prompt": "one old brass key, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-chim",
+   "slot": "art:chim",
+   "vi": "Con chim",
+   "prompt": "a small blue bird, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-dong-xu",
+   "slot": "art:dong-xu",
+   "vi": "Đồng xu",
+   "prompt": "one golden coin with a star shape embossed, no numbers, no letters, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "one golden coin, isolated on plain white background"
+  },
+  {
+   "id": "PM10-OB-ech",
+   "slot": "art:ech",
+   "vi": "Con ếch",
+   "prompt": "a cute green frog sitting, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-ga",
+   "slot": "art:ga",
+   "vi": "Gà mái",
+   "prompt": "a brown mother hen, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-ga-con",
+   "slot": "art:ga-con",
+   "vi": "Gà con",
+   "prompt": "a fluffy yellow chick, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-giot-nuoc",
+   "slot": "art:giot-nuoc",
+   "vi": "Giọt nước",
+   "prompt": "one simple blue water drop shape, no face, no person, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "one blue water drop, isolated on plain white background"
+  },
+  {
+   "id": "PM10-OB-hoa",
+   "slot": "art:hoa",
+   "vi": "Bông hoa",
+   "prompt": "one pink flower with green stem, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-khan",
+   "slot": "art:khan",
+   "vi": "Cái khăn",
+   "prompt": "a folded soft towel, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-khuc-go",
+   "slot": "art:khuc-go",
+   "vi": "Khúc gỗ",
+   "prompt": "a short wooden log, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-la",
+   "slot": "art:la",
+   "vi": "Chiếc lá",
+   "prompt": "one green leaf, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-la-cay",
+   "slot": "art:la-cay",
+   "vi": "Chùm lá cây",
+   "prompt": "a small bunch of green leaves, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-meo",
+   "slot": "art:meo",
+   "vi": "Con mèo",
+   "prompt": "a cute orange cat sitting, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-mu-dau-bep",
+   "slot": "art:mu-dau-bep",
+   "vi": "Mũ đầu bếp",
+   "prompt": "a white chef hat on its own, no person, no head, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "a white chef hat, isolated on plain white background"
+  },
+  {
+   "id": "PM10-OB-nha",
+   "slot": "art:nha",
+   "vi": "Ngôi nhà nhỏ",
+   "prompt": "a small cozy cottage with a red roof, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-oc",
+   "slot": "art:oc",
+   "vi": "Con ốc sên",
+   "prompt": "a small snail with a spiral shell, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-ong",
+   "slot": "art:ong",
+   "vi": "Con ong",
+   "prompt": "a cute bee, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-rau",
+   "slot": "art:rau",
+   "vi": "Cây rau",
+   "prompt": "a leafy green vegetable, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-soi",
+   "slot": "art:soi",
+   "vi": "Viên sỏi",
+   "prompt": "one smooth grey pebble stone, no face, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "one smooth grey pebble, isolated on plain white background"
+  },
+  {
+   "id": "PM10-OB-tao",
+   "slot": "art:tao",
+   "vi": "Quả táo",
+   "prompt": "one red apple with a leaf, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-to-ong",
+   "slot": "art:to-ong",
+   "vi": "Tổ ong",
+   "prompt": "a hanging beehive, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-trung",
+   "slot": "art:trung",
+   "vi": "Quả trứng",
+   "prompt": "one white egg, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-voi-nuoc",
+   "slot": "art:voi-nuoc",
+   "vi": "Vòi nước",
+   "prompt": "a water tap, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM10-OB-xa-phong",
+   "slot": "art:xa-phong",
+   "vi": "Bánh xà phòng",
+   "prompt": "a bar of soap with bubbles, isolated on plain white background",
+   "tach_nen": true
+  }
+ ],
+ "style_do_vat": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, simple clean composition, not too detailed, for kids aged 4 to 6, plain object without face or eyes"
+}

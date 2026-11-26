@@ -142,6 +142,8 @@ export const setVisAssets = m => { assetSrc = m || {}; };
 export function vis(x) {
   if (typeof x !== 'string') return '';
   if (x.startsWith('lu:')) return luFn ? luFn(x.slice(3)) : '';
+  // peek:<mức>:<vật> – chỉ thấy qua vài lỗ nhỏ (Nhận diện toàn cảnh). Mức 1: 3 lỗ to, mức 2: 2 lỗ nhỏ hơn. Ví dụ peek:2:art:meo
+  if (x.startsWith('peek:')) { const [, lv, ...rest] = x.split(':'); return `<span class="peek p${String(lv).replace(/[^a-z0-9]/gi, '')}"><span class="pk-in">${vis(rest.join(':'))}</span><i class="pk-cov" aria-hidden="true"></i></span>`; }
   if (x.startsWith('asset:')) { const k = x.slice(6), src = assetSrc[k]; return src ? `<img class="lu-art asset" src="${src}" alt="">` : ''; }
   const g = x.match(/^((?:art|face):[^*]+)\*(\d+)$/); if (g) return groupHTML(g[1], Math.min(+g[2], 10));
   if (x.startsWith('art:')) { const [, k, arg] = x.split(':');
