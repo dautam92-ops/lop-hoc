@@ -1,0 +1,399 @@
+{
+ "LU": {
+  "ten": "Lu",
+  "vai_tro": "nhân vật thương hiệu duy nhất (D26)",
+  "chi_hinh_tinh": true,
+  "khung_chuan": "PNG nền trong suốt: góc nhìn 1024×1024, biểu cảm, tư thế, trang phục 512×512; chân chạm đường đáy 95%, căn giữa; không phóng to quá 15%; bản xuất bản WebP 512×512",
+  "golden_reference": [
+   "LU-0001",
+   "LU-0010",
+   "LU-0035",
+   "LU-0066"
+  ],
+  "goc_nhin": {
+   "truoc": {
+    "asset_id": "LU-0002",
+    "png": "assets/lu/golden-reference/LU-0002_lu-goc-nhin-truoc_v01.png",
+    "webp_id": "LU-0003",
+    "webp": "assets/lu/xuat-ban/LU-0003_lu-goc-nhin-truoc-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0001"
+   },
+   "nghieng": {
+    "asset_id": "LU-0004",
+    "png": "assets/lu/golden-reference/LU-0004_lu-goc-nhin-nghieng_v01.png",
+    "webp_id": "LU-0005",
+    "webp": "assets/lu/xuat-ban/LU-0005_lu-goc-nhin-nghieng-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0001"
+   },
+   "ben": {
+    "asset_id": "LU-0006",
+    "png": "assets/lu/golden-reference/LU-0006_lu-goc-nhin-ben_v01.png",
+    "webp_id": "LU-0007",
+    "webp": "assets/lu/xuat-ban/LU-0007_lu-goc-nhin-ben-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0001"
+   },
+   "sau": {
+    "asset_id": "LU-0008",
+    "png": "assets/lu/golden-reference/LU-0008_lu-goc-nhin-sau_v01.png",
+    "webp_id": "LU-0009",
+    "webp": "assets/lu/xuat-ban/LU-0009_lu-goc-nhin-sau-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0001"
+   }
+  },
+  "bieu_cam": {
+   "vui": {
+    "asset_id": "LU-0011",
+    "png": "assets/lu/bieu-cam/LU-0011_lu-bieu-cam-vui_v01.png",
+    "webp_id": "LU-0012",
+    "webp": "assets/lu/xuat-ban/LU-0012_lu-bieu-cam-vui-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 3 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "buon": {
+    "asset_id": "LU-0013",
+    "png": "assets/lu/bieu-cam/LU-0013_lu-bieu-cam-buon_v01.png",
+    "webp_id": "LU-0014",
+    "webp": "assets/lu/xuat-ban/LU-0014_lu-bieu-cam-buon-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0010"
+   },
+   "to-mo": {
+    "asset_id": "LU-0015",
+    "png": "assets/lu/bieu-cam/LU-0015_lu-bieu-cam-to-mo_v01.png",
+    "webp_id": "LU-0016",
+    "webp": "assets/lu/xuat-ban/LU-0016_lu-bieu-cam-to-mo-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 2 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "suy-nghi": {
+    "asset_id": "LU-0017",
+    "png": "assets/lu/bieu-cam/LU-0017_lu-bieu-cam-suy-nghi_v01.png",
+    "webp_id": "LU-0018",
+    "webp": "assets/lu/xuat-ban/LU-0018_lu-bieu-cam-suy-nghi-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 2 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "ngac-nhien": {
+    "asset_id": "LU-0019",
+    "png": "assets/lu/bieu-cam/LU-0019_lu-bieu-cam-ngac-nhien_v01.png",
+    "webp_id": "LU-0020",
+    "webp": "assets/lu/xuat-ban/LU-0020_lu-bieu-cam-ngac-nhien-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 3 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "tu-tin": {
+    "asset_id": "LU-0021",
+    "png": "assets/lu/bieu-cam/LU-0021_lu-bieu-cam-tu-tin_v01.png",
+    "webp_id": "LU-0022",
+    "webp": "assets/lu/xuat-ban/LU-0022_lu-bieu-cam-tu-tin-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 3 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "phan-khich": {
+    "asset_id": "LU-0023",
+    "png": "assets/lu/bieu-cam/LU-0023_lu-bieu-cam-phan-khich_v01.png",
+    "webp_id": "LU-0024",
+    "webp": "assets/lu/xuat-ban/LU-0024_lu-bieu-cam-phan-khich-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 4 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "lo-lang": {
+    "asset_id": "LU-0025",
+    "png": "assets/lu/bieu-cam/LU-0025_lu-bieu-cam-lo-lang_v01.png",
+    "webp_id": "LU-0026",
+    "webp": "assets/lu/xuat-ban/LU-0026_lu-bieu-cam-lo-lang-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0010"
+   },
+   "buon-ngu": {
+    "asset_id": "LU-0027",
+    "png": "assets/lu/bieu-cam/LU-0027_lu-bieu-cam-buon-ngu_v01.png",
+    "webp_id": "LU-0028",
+    "webp": "assets/lu/xuat-ban/LU-0028_lu-bieu-cam-buon-ngu-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 2 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "tu-hao": {
+    "asset_id": "LU-0029",
+    "png": "assets/lu/bieu-cam/LU-0029_lu-bieu-cam-tu-hao_v01.png",
+    "webp_id": "LU-0030",
+    "webp": "assets/lu/xuat-ban/LU-0030_lu-bieu-cam-tu-hao-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 2 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "cuoi-lon": {
+    "asset_id": "LU-0031",
+    "png": "assets/lu/bieu-cam/LU-0031_lu-bieu-cam-cuoi-lon_v01.png",
+    "webp_id": "LU-0032",
+    "webp": "assets/lu/xuat-ban/LU-0032_lu-bieu-cam-cuoi-lon-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 2 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0010"
+   },
+   "binh-tinh": {
+    "asset_id": "LU-0033",
+    "png": "assets/lu/bieu-cam/LU-0033_lu-bieu-cam-binh-tinh_v01.png",
+    "webp_id": "LU-0034",
+    "webp": "assets/lu/xuat-ban/LU-0034_lu-bieu-cam-binh-tinh-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0010"
+   }
+  },
+  "tu_the": {
+   "dung": {
+    "asset_id": "LU-0036",
+    "png": "assets/lu/tu-the/LU-0036_lu-tu-the-dung_v01.png",
+    "webp_id": "LU-0037",
+    "webp": "assets/lu/xuat-ban/LU-0037_lu-tu-the-dung-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0035"
+   },
+   "vay-tay": {
+    "asset_id": "LU-0038",
+    "png": "assets/lu/tu-the/LU-0038_lu-tu-the-vay-tay_v01.png",
+    "webp_id": "LU-0039",
+    "webp": "assets/lu/xuat-ban/LU-0039_lu-tu-the-vay-tay-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 3 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "ngoi": {
+    "asset_id": "LU-0040",
+    "png": "assets/lu/tu-the/LU-0040_lu-tu-the-ngoi_v01.png",
+    "webp_id": "LU-0041",
+    "webp": "assets/lu/xuat-ban/LU-0041_lu-tu-the-ngoi-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0035"
+   },
+   "di-bo": {
+    "asset_id": "LU-0042",
+    "png": "assets/lu/tu-the/LU-0042_lu-tu-the-di-bo_v01.png",
+    "webp_id": "LU-0043",
+    "webp": "assets/lu/xuat-ban/LU-0043_lu-tu-the-di-bo-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0035"
+   },
+   "nhay": {
+    "asset_id": "LU-0044",
+    "png": "assets/lu/tu-the/LU-0044_lu-tu-the-nhay_v01.png",
+    "webp_id": "LU-0045",
+    "webp": "assets/lu/xuat-ban/LU-0045_lu-tu-the-nhay-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 4 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "doc-sach": {
+    "asset_id": "LU-0046",
+    "png": "assets/lu/tu-the/LU-0046_lu-tu-the-doc-sach_v01.png",
+    "webp_id": "LU-0047",
+    "webp": "assets/lu/xuat-ban/LU-0047_lu-tu-the-doc-sach-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0035"
+   },
+   "chi-tay": {
+    "asset_id": "LU-0048",
+    "png": "assets/lu/tu-the/LU-0048_lu-tu-the-chi-tay_v01.png",
+    "webp_id": "LU-0049",
+    "webp": "assets/lu/xuat-ban/LU-0049_lu-tu-the-chi-tay-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 3 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "vui-mung": {
+    "asset_id": "LU-0050",
+    "png": "assets/lu/tu-the/LU-0050_lu-tu-the-vui-mung_v01.png",
+    "webp_id": "LU-0051",
+    "webp": "assets/lu/xuat-ban/LU-0051_lu-tu-the-vui-mung-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 4 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "an-mung": {
+    "asset_id": "LU-0052",
+    "png": "assets/lu/tu-the/LU-0052_lu-tu-the-an-mung_v01.png",
+    "webp_id": "LU-0053",
+    "webp": "assets/lu/xuat-ban/LU-0053_lu-tu-the-an-mung-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 15 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "suy-nghi": {
+    "asset_id": "LU-0054",
+    "png": "assets/lu/tu-the/LU-0054_lu-tu-the-suy-nghi_v01.png",
+    "webp_id": "LU-0055",
+    "webp": "assets/lu/xuat-ban/LU-0055_lu-tu-the-suy-nghi-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 2 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "nhin-xa": {
+    "asset_id": "LU-0056",
+    "png": "assets/lu/tu-the/LU-0056_lu-tu-the-nhin-xa_v01.png",
+    "webp_id": "LU-0057",
+    "webp": "assets/lu/xuat-ban/LU-0057_lu-tu-the-nhin-xa-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 3 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "kham-pha": {
+    "asset_id": "LU-0058",
+    "png": "assets/lu/tu-the/LU-0058_lu-tu-the-kham-pha_v01.png",
+    "webp_id": "LU-0059",
+    "webp": "assets/lu/xuat-ban/LU-0059_lu-tu-the-kham-pha-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0035"
+   },
+   "ngu": {
+    "asset_id": "LU-0060",
+    "png": "assets/lu/tu-the/LU-0060_lu-tu-the-ngu_v01.png",
+    "webp_id": "LU-0061",
+    "webp": "assets/lu/xuat-ban/LU-0061_lu-tu-the-ngu-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 2 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "khen": {
+    "asset_id": "LU-0062",
+    "png": "assets/lu/tu-the/LU-0062_lu-tu-the-khen_v01.png",
+    "webp_id": "LU-0063",
+    "webp": "assets/lu/xuat-ban/LU-0063_lu-tu-the-khen-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 3 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   },
+   "dang-tay": {
+    "asset_id": "LU-0064",
+    "png": "assets/lu/tu-the/LU-0064_lu-tu-the-dang-tay_v01.png",
+    "webp_id": "LU-0065",
+    "webp": "assets/lu/xuat-ban/LU-0065_lu-tu-the-dang-tay-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [
+     "đã bỏ 5 hiệu ứng rời (lấp lánh, dấu hỏi, zzz…)"
+    ],
+    "nguon": "LU-0035"
+   }
+  },
+  "trang_phuc": {
+   "tham-hiem": {
+    "asset_id": "LU-0067",
+    "png": "assets/lu/trang-phuc/LU-0067_lu-trang-phuc-tham-hiem_v01.png",
+    "webp_id": "LU-0068",
+    "webp": "assets/lu/xuat-ban/LU-0068_lu-trang-phuc-tham-hiem-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0066"
+   },
+   "nha-khoa-hoc": {
+    "asset_id": "LU-0069",
+    "png": "assets/lu/trang-phuc/LU-0069_lu-trang-phuc-nha-khoa-hoc_v01.png",
+    "webp_id": "LU-0070",
+    "webp": "assets/lu/xuat-ban/LU-0070_lu-trang-phuc-nha-khoa-hoc-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0066"
+   },
+   "hoa-si": {
+    "asset_id": "LU-0071",
+    "png": "assets/lu/trang-phuc/LU-0071_lu-trang-phuc-hoa-si_v01.png",
+    "webp_id": "LU-0072",
+    "webp": "assets/lu/xuat-ban/LU-0072_lu-trang-phuc-hoa-si-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0066"
+   },
+   "lam-vuon": {
+    "asset_id": "LU-0073",
+    "png": "assets/lu/trang-phuc/LU-0073_lu-trang-phuc-lam-vuon_v01.png",
+    "webp_id": "LU-0074",
+    "webp": "assets/lu/xuat-ban/LU-0074_lu-trang-phuc-lam-vuon-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0066"
+   },
+   "phi-hanh-gia": {
+    "asset_id": "LU-0075",
+    "png": "assets/lu/trang-phuc/LU-0075_lu-trang-phuc-phi-hanh-gia_v01.png",
+    "webp_id": "LU-0076",
+    "webp": "assets/lu/xuat-ban/LU-0076_lu-trang-phuc-phi-hanh-gia-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0066"
+   },
+   "di-mua": {
+    "asset_id": "LU-0077",
+    "png": "assets/lu/trang-phuc/LU-0077_lu-trang-phuc-di-mua_v01.png",
+    "webp_id": "LU-0078",
+    "webp": "assets/lu/xuat-ban/LU-0078_lu-trang-phuc-di-mua-512_v01.webp",
+    "kiem_tra": "ĐẠT",
+    "ghi_chu": [],
+    "nguon": "LU-0066"
+   }
+  },
+  "can_co": {
+   "goc_nhin": 4,
+   "bieu_cam": 12,
+   "tu_the": 15,
+   "trang_phuc": 6
+  }
+ }
+}

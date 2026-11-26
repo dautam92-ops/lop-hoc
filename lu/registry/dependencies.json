@@ -1,0 +1,194 @@
+{
+ "note": "Dependency Registry (S13-R13). Kiểm tra lại điều khoản mỗi 6 tháng. Chi phí API hiện tại: 0 đồng/tháng (D27).",
+ "updated": "2026-11-25",
+ "items": [
+  {
+   "name": "Node.js",
+   "use": "chạy máy chủ trên máy, công cụ kiểm tra",
+   "license": "MIT",
+   "cost": 0
+  },
+  {
+   "name": "Playwright + Chromium",
+   "use": "kiểm thử giao diện",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "dev_only": true
+  },
+  {
+   "name": "edge-tts (giọng Microsoft Edge)",
+   "use": "giọng đọc bài mẫu",
+   "license": "KHÔNG có giấy phép thương mại",
+   "cost": 0,
+   "status": "chỉ dùng thử nội bộ; thay bằng Azure Speech trả phí trước khi bán (cần trình chi phí)"
+  },
+  {
+   "name": "Phông Be Vietnam Pro, Baloo 2",
+   "use": "chữ giao diện",
+   "license": "SIL OFL 1.1",
+   "cost": 0,
+   "status": "hiện dùng phông máy dự phòng; sẽ tự lưu tệp phông trong dự án"
+  },
+  {
+   "name": "Emoji hệ điều hành",
+   "use": "hình tạm trong bài mẫu",
+   "license": "thuộc hãng hệ điều hành; chỉ dùng khi thử",
+   "cost": 0,
+   "status": "thay bằng SVG và hình trong Asset Registry trước khi bán (S08)"
+  },
+  {
+   "name": "ChatGPT Image (OpenAI)",
+   "use": "thiết kế Lu, bộ nhận diện, Golden Reference (D25)",
+   "license": "Điều khoản OpenAI: người dùng sở hữu đầu ra; không bảo đảm đầu ra là duy nhất",
+   "cost": "dùng gói đang có",
+   "check": "cần đọc lại điều khoản trước khi dùng hình thương mại"
+  },
+  {
+   "name": "Tesseract OCR + gói tiếng Việt",
+   "use": "Knowledge Base (D29)",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "status": "đề xuất cho thử nghiệm 3 cuốn"
+  },
+  {
+   "name": "Ollama",
+   "use": "tác vụ AI chạy trên máy (D27)",
+   "license": "MIT (công cụ); mỗi mô hình có giấy phép riêng",
+   "cost": 0,
+   "status": "tùy chọn"
+  },
+  {
+   "name": "Claude Code",
+   "use": "AI Worker Local Mode (D27)",
+   "license": "theo điều khoản Anthropic của gói đang dùng",
+   "cost": "gói đang có",
+   "check": "chỉ dùng cách chạy chính thức; không chạy tự động không người giám sát khi chưa xác nhận điều khoản"
+  },
+  {
+   "name": "ComfyUI (Comfy Desktop, đã cài trên máy)",
+   "use": "chạy mô hình ảnh qua API local 127.0.0.1:8188 (D37)",
+   "license": "GPL-3.0 (chỉ là công cụ; ảnh tạo ra không bị ràng buộc GPL)",
+   "cost": 0,
+   "status": "dùng"
+  },
+  {
+   "name": "ComfyUI-GGUF (city96)",
+   "use": "nạp mô hình nén GGUF cho 8 GB VRAM",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "status": "đang thử"
+  },
+  {
+   "name": "Stable Diffusion XL base 1.0",
+   "use": "benchmark; nền cho IP-Adapter, ControlNet, LoRA phong cách",
+   "license": "CreativeML Open RAIL++-M: dùng thương mại được, kèm danh sách cấm lạm dụng",
+   "cost": 0,
+   "status": "đang thử"
+  },
+  {
+   "name": "FLUX.1 Schnell (bản GGUF Q4)",
+   "use": "benchmark",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "status": "đang thử"
+  },
+  {
+   "name": "FLUX.1 Dev và mọi LoRA, ControlNet dựng trên Dev",
+   "use": "—",
+   "license": "FLUX.1 [dev] Non-Commercial",
+   "cost": 0,
+   "status": "CẤM dùng"
+  },
+  {
+   "name": "Qwen-Image (GGUF Q4) + Qwen-Image-Lightning",
+   "use": "benchmark",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "status": "đang thử"
+  },
+  {
+   "name": "Z-Image Turbo (đã có sẵn trên máy)",
+   "use": "benchmark",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "status": "đang thử"
+  },
+  {
+   "name": "IP-Adapter (h94) + bộ mã hóa ảnh OpenCLIP",
+   "use": "tạo ảnh theo ảnh tham chiếu phong cách",
+   "license": "Apache-2.0; OpenCLIP MIT",
+   "cost": 0,
+   "status": "thử sau khi chọn mô hình nền"
+  },
+  {
+   "name": "ControlNet Union SDXL (xinsir)",
+   "use": "giữ bố cục, tư thế",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "status": "thử sau khi chọn mô hình nền"
+  },
+  {
+   "name": "LoRA tải từ Civitai, Hugging Face",
+   "use": "—",
+   "license": "mỗi LoRA một giấy phép, và kế thừa giấy phép mô hình nền",
+   "cost": 0,
+   "status": "mặc định KHÔNG dùng; chỉ dùng khi giấy phép ghi rõ được bán ảnh và mô hình nền cho phép thương mại. Ưu tiên LoRA tự huấn luyện LU_STYLE_V1"
+  },
+  {
+   "name": "kohya-ss sd-scripts",
+   "use": "huấn luyện LoRA LU_STYLE_V1 trên 8 GB",
+   "license": "Apache-2.0",
+   "cost": 0,
+   "status": "chuẩn bị"
+  },
+  {
+   "name": "ostris ai-toolkit",
+   "use": "huấn luyện LoRA cho FLUX, Qwen-Image, Z-Image nếu chọn các mô hình này",
+   "license": "MIT",
+   "cost": 0,
+   "status": "dự phòng; cần đo VRAM"
+  },
+  {
+   "name": "rembg + isnet-anime",
+   "use": "tách nền (đã dùng cho 37 hình Lu)",
+   "license": "rembg MIT; isnet-anime Apache-2.0",
+   "cost": 0,
+   "status": "dùng"
+  },
+  {
+   "name": "BiRefNet",
+   "use": "tách nền dự phòng cho ảnh khó",
+   "license": "MIT",
+   "cost": 0,
+   "status": "dự phòng"
+  },
+  {
+   "name": "BRIA RMBG 1.4 / 2.0",
+   "use": "—",
+   "license": "CC BY-NC (phi thương mại)",
+   "cost": 0,
+   "status": "CẤM dùng"
+  },
+  {
+   "name": "Pillow, libwebp",
+   "use": "tối ưu ảnh, xuất WebP",
+   "license": "HPND / BSD",
+   "cost": 0,
+   "status": "dùng"
+  },
+  {
+   "name": "Phaser 4.2.1",
+   "use": "vẽ bản đồ phiêu lưu (Map Player); lưu sẵn trong vendor/phaser, không tải từ mạng",
+   "license": "MIT",
+   "cost": 0,
+   "checked": "2026-11-25, npm phaser@4.2.1"
+  },
+  {
+   "name": "Tiled Map Editor 1.11",
+   "use": "chỉnh tay file bản đồ .tmj trên máy (không bắt buộc, file .tmj sinh bằng tools/map-bake.mjs)",
+   "license": "GPL-2.0 cho phần mềm; file bản đồ tạo ra thuộc người dùng",
+   "cost": 0,
+   "dev_only": true
+  }
+ ]
+}

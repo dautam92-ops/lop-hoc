@@ -1,0 +1,113 @@
+/* Lu Design System v1.0 – token và component dùng chung (S04 v1.0, D38).
+   Mọi màn hình (bé, bố mẹ, Admin, bài học) dùng file này. Không viết mã màu trực tiếp trong module. */
+
+@font-face { font-family: 'Baloo 2'; src: url('../assets/thuong-hieu/phong-chu/Baloo2-var.woff2') format('woff2'); font-weight: 400 800; font-display: swap; }
+@font-face { font-family: 'Be Vietnam Pro'; src: url('../assets/thuong-hieu/phong-chu/BeVietnamPro-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Be Vietnam Pro'; src: url('../assets/thuong-hieu/phong-chu/BeVietnamPro-SemiBold.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Be Vietnam Pro'; src: url('../assets/thuong-hieu/phong-chu/BeVietnamPro-Bold.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+
+:root {
+  /* Màu thương hiệu – lấy từ bộ hình Lu đã duyệt */
+  --lu-leaf: #8fae3e;        /* lá mầm */
+  --lu-leaf-deep: #5f7a2a;   /* lá đậm, chữ nhấn; nền cho chữ trắng cỡ nhỏ (4,9:1) */
+  --lu-leaf-strong: #6a8a2a; /* nền nút lớn chữ trắng đậm (4:1, đạt chuẩn chữ lớn) */
+  --lu-leaf-soft: #e3ecc4;
+  --lu-sun: #f6c85f;         /* khăn vàng */
+  --lu-sun-deep: #d99a2b;
+  --lu-sun-soft: #fdf0cc;
+  --lu-cream: #fbf3e2;       /* mặt Lu, nền giấy */
+  --lu-paper: #fffaf0;
+  --lu-bark: #8a6a3a;        /* ba lô */
+  --lu-ink: #4a3b22;         /* chữ chính, nét viền – nâu đậm thay cho đen */
+  --lu-ink-soft: #7b6a4e;
+  --lu-sky: #a9d3df;
+  --lu-sky-deep: #4f8fa3;
+  --lu-berry: #e48a76;       /* điểm nhấn ấm */
+  --lu-berry-soft: #f8ddd4;
+  --lu-line: #e8dcc2;
+  --lu-white: #fff;
+  /* Màu ngữ nghĩa – không bao giờ dùng đỏ chói để báo sai (S04-R07) */
+  --lu-good: var(--lu-leaf-deep);
+  --lu-try: var(--lu-sun-deep);
+  /* Chữ */
+  --lu-font-display: 'Baloo 2', 'Be Vietnam Pro', system-ui, sans-serif;
+  --lu-font-body: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --lu-fs-kid-title: clamp(28px, 4.2vw, 44px);
+  --lu-fs-kid: clamp(24px, 3vw, 30px);
+  --lu-fs-h1: clamp(30px, 4vw, 52px);
+  --lu-fs-h2: clamp(22px, 2.6vw, 32px);
+  --lu-fs-body: 16px;
+  --lu-fs-small: 13px;
+  /* Khoảng cách 4-8-12-16-24-32-48-64 */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
+  /* Bo góc – mềm, tròn */
+  --r-sm: 10px; --r-md: 18px; --r-lg: 28px; --r-xl: 40px; --r-pill: 999px;
+  /* Bóng: ấm, mềm như giấy đặt trên bàn; không bóng nhựa */
+  --sh-1: 0 1px 0 rgba(74, 59, 34, .08), 0 2px 6px rgba(74, 59, 34, .08);
+  --sh-2: 0 2px 0 rgba(74, 59, 34, .10), 0 8px 22px rgba(74, 59, 34, .12);
+  --sh-press: 0 1px 0 rgba(74, 59, 34, .12);
+  /* Cỡ chạm (S04-R03) */
+  --lu-tap-min: 64px; --lu-tap-main: 88px;
+  /* Chuyển động (S04-R12) */
+  --t-fast: 140ms; --t-mid: 260ms; --t-slow: 520ms;
+  --ease: cubic-bezier(.3, .7, .3, 1); --ease-bounce: cubic-bezier(.34, 1.56, .64, 1);
+  /* Tương thích token cũ trong lu-core.css */
+  --lu-color-ink: var(--lu-ink); --lu-color-bg: var(--lu-cream);
+}
+
+/* ---------- Nền giấy ---------- */
+.lu-paper-bg {
+  background-color: var(--lu-cream);
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(246, 200, 95, .18), transparent 55%),
+    radial-gradient(ellipse at 85% 90%, rgba(143, 174, 62, .16), transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .36 0 0 0 0 .2 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Nút ---------- */
+.lu-button {
+  --bg: var(--lu-leaf-strong); --fg: #fff; --edge: #4f6722;
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s2);
+  min-height: var(--lu-tap-min); padding: 0 var(--s5); border: 0; border-radius: var(--r-pill);
+  font: 700 20px/1 var(--lu-font-display); color: var(--fg); background: var(--bg);
+  box-shadow: 0 4px 0 var(--edge), var(--sh-1); cursor: pointer; text-decoration: none;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), filter var(--t-fast);
+  -webkit-tap-highlight-color: transparent; user-select: none; touch-action: manipulation;
+}
+.lu-button:hover { filter: brightness(1.04); }
+.lu-button:active, .lu-button.is-pressed { transform: translateY(3px); box-shadow: 0 1px 0 var(--edge), var(--sh-press); }
+.lu-button:focus-visible { outline: 4px solid var(--lu-sky-deep); outline-offset: 3px; }
+.lu-button svg { width: 28px; height: 28px; }
+.lu-button--sun { --bg: var(--lu-sun); --fg: var(--lu-ink); --edge: var(--lu-sun-deep); }
+.lu-button--paper { --bg: var(--lu-paper); --fg: var(--lu-ink); --edge: var(--lu-line); }
+.lu-button--ghost { --bg: transparent; --fg: var(--lu-ink); --edge: transparent; box-shadow: none; }
+.lu-button--xl { min-height: var(--lu-tap-main); padding: 0 var(--s6); font-size: 28px; }
+.lu-button--round { width: var(--lu-tap-min); padding: 0; border-radius: 50%; }
+.lu-button--round.lu-button--xl { width: var(--lu-tap-main); }
+.lu-button[disabled] { filter: grayscale(.6) opacity(.55); cursor: default; }
+
+/* ---------- Thẻ ---------- */
+.lu-card { background: var(--lu-paper); border-radius: var(--r-lg); box-shadow: var(--sh-2); border: 1.5px solid var(--lu-line); }
+
+/* ---------- Biểu tượng ---------- */
+.lu-ic { width: 1em; height: 1em; display: inline-block; vertical-align: -0.15em; flex: none; }
+
+/* ---------- Chuyển cảnh ---------- */
+@keyframes lu-in { from { opacity: 0; transform: translateY(14px) scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes lu-pop { 0% { transform: scale(.6); opacity: 0; } 70% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes lu-float { from { transform: translateY(0); } to { transform: translateY(-8px); } }
+@keyframes lu-wiggle { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-4deg); } 75% { transform: rotate(4deg); } }
+@keyframes lu-shimmer { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+.lu-enter { animation: lu-in var(--t-slow) var(--ease) both; }
+.lu-pop { animation: lu-pop var(--t-slow) var(--ease-bounce) both; }
+.lu-float { animation: lu-float 2.4s ease-in-out infinite alternate; }
+
+/* ---------- Trạng thái tải, mất kết nối ---------- */
+.lu-loading { display: grid; place-items: center; min-height: 60vh; gap: var(--s4); color: var(--lu-ink-soft); font: 600 18px var(--lu-font-display); }
+.lu-loading img { width: 120px; animation: lu-float 1.2s ease-in-out infinite alternate; }
+.lu-offline { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 50; background: var(--lu-paper); color: var(--lu-ink);
+  border-radius: var(--r-pill); padding: 10px 18px; box-shadow: var(--sh-2); font: 600 15px var(--lu-font-body); display: flex; gap: 8px; align-items: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
+}

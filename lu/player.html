@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lu</title>
+<link rel="stylesheet" href="ui/lu-ds.css">
+<link rel="stylesheet" href="core/lu-core.css">
+<link rel="stylesheet" href="ui/lesson.css">
+</head>
+<body class="lu-paper-bg">
+<div class="lu-lesson"><div id="lu" class="lu-root lesson-root"></div></div>
+<script type="module">
+// Trang chơi bài: player.html?lesson=MAU-001[&seed=123][&fast=1][&mode=preview][&ns=lu-preview]
+import { runLesson, runActivity } from './core/runner.js';
+import { LocalStorageAdapter } from './core/storage.js';
+import { setLuArt } from './core/lu-core.js';
+import { setSceneAssets } from './ui/scenes.js';
+import { setVisAssets } from './ui/art.js';
+// Ảnh Lu chính thức từ Character Registry (như app của bé), không dùng hình vẽ tạm
+const chars = await (await fetch('registry/characters.json')).json(); const LU = {};
+for (const g of ['bieu_cam', 'tu_the', 'goc_nhin']) for (const [k, v] of Object.entries(chars.LU[g] || {})) LU[k] ??= v.webp;
+setLuArt(expr => `<img class="lu" src="${LU[expr] || LU.vui}" alt="" draggable="false">`);
+// Ảnh đã duyệt trong Asset Registry: bối cảnh theo slot (mã manifest), đồ vật theo asset_id (S08-R08)
+const areg = await (await fetch('registry/assets.json')).json(); const ok = areg.assets.filter(a => a.trang_thai === 'da_duyet');
+setSceneAssets(Object.fromEntries(ok.filter(a => a.slot).map(a => [a.slot, a.path])));
+setVisAssets(Object.fromEntries(ok.map(a => [a.asset_id, a.path])));
+const p = new URLSearchParams(location.search);
+const base = new URL('content/', location.href);
+const audio = await (await fetch(new URL('audio/registry.json', base))).json();
+const mode = p.get('mode') || 'adventure';
+const fast = p.get('fast') === '1', seed = p.has('seed') ? Number(p.get('seed')) : undefined;
+// Xem trước trong Admin dùng kho riêng để không lẫn vào dữ liệu của bé
+const storage = new LocalStorageAdapter(p.get('ns') || (mode === 'adventure' ? 'lu' : 'lu-' + mode));
+const root = document.getElementById('lu');
+if (p.get('demo')) {
+  // Xem trước MỘT hoạt động mẫu (dùng cho Admin và Sân chơi)
+  const acts = await (await fetch(new URL('demo/activities.json', base))).json();
+  const act = acts.activities.find(a => a.activity_id === p.get('demo'));
+  window.__luApp = await runActivity(root, act, { clips: audio.clips, audioBase: 'content/audio/', fast, seed, mode: 'preview' });
+} else {
+  // ?draft=L001: bản nháp chưa xuất bản (content/drafts), chỉ để xem trước trên máy
+  const draft = p.get('draft'); const id = (draft || p.get('lesson') || 'MAU-001').replace(/[^\w-]/g, '');
+  const pkg = await (await fetch(new URL(`${draft ? 'drafts' : 'lessons'}/${id}.json`, base))).json();
+  window.__luApp = await runLesson(root, pkg, { clips: audio.clips, audioBase: 'content/audio/', fast, mode, storage, seed });
+}
+window.__luStorage = storage;
+</script>
+</body>
+</html>

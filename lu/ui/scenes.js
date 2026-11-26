@@ -1,0 +1,37 @@
+// Bối cảnh lớp L1–L2 cho buổi học nhiều chặng (S04 mục 6, D42).
+// Thứ tự ưu tiên: ảnh đã duyệt trong Asset Registry (slot = mã trong Asset Manifest, ví dụ "L001-BG-02")
+// → nếu chưa có thì dùng nền TẠM vẽ bằng mã theo loại cảnh. Nền tạm chỉ dùng cho bản nháp;
+// Quality Gate chặn xuất bản khi manifest còn hình bắt buộc chưa duyệt (S08-R08).
+const INK = '#6b5232';
+const sky = (a, b) => `<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect width="1600" height="900" fill="url(#sk)"/>`;
+const hills = (c1 = '#cfe3a2', c2 = '#b5d37c') => `<g filter="url(#lu-wc-big)"><path d="M0 560C220 470 420 500 640 540S1080 470 1300 500 1560 540 1600 530V900H0z" fill="${c1}"/><path d="M0 650C260 600 520 640 820 660S1340 610 1600 640V900H0z" fill="${c2}"/></g>`;
+const sun = (x = 1340, y = 150) => `<g filter="url(#lu-wc)"><circle cx="${x}" cy="${y}" r="70" fill="#f8d77a"/></g>`;
+const cloud = (x, y, s = 1) => `<g filter="url(#lu-wc)" transform="translate(${x} ${y}) scale(${s})"><path d="M0 40c0-26 30-36 48-24 8-24 52-26 62 0 26-6 44 18 32 34H6C2 50 0 46 0 40z" fill="#fffaf0" opacity=".9"/></g>`;
+const fence = y => `<g stroke="${INK}" stroke-width="5" stroke-linecap="round" fill="#e7c89a">${Array.from({ length: 14 }, (_, i) => `<path d="M${i * 120 + 20} ${y}v-90l14-16 14 16v90z"/>`).join('')}<path d="M0 ${y - 60}H1600M0 ${y - 25}H1600" fill="none"/></g>`;
+const house = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><g filter="url(#lu-wc)"><rect x="0" y="120" width="320" height="200" fill="#f6e6c6"/><path d="M-30 130 160 0l190 130z" fill="#c9785a"/><rect x="130" y="200" width="70" height="120" rx="35" fill="#a77a4a"/><circle cx="70" cy="210" r="32" fill="#a9d3df"/><circle cx="260" cy="210" r="32" fill="#a9d3df"/></g><g fill="none" stroke="${INK}" stroke-width="5" stroke-linejoin="round"><rect x="0" y="120" width="320" height="200"/><path d="M-30 130 160 0l190 130z"/><rect x="130" y="200" width="70" height="120" rx="35"/><circle cx="70" cy="210" r="32"/><circle cx="260" cy="210" r="32"/></g></g>`;
+const beanPlant = (x, y, h = 260) => `<g transform="translate(${x} ${y})"><path d="M0 0V-${h}" stroke="#a77a4a" stroke-width="8"/><g filter="url(#lu-wc)" fill="#8fbf55">${Array.from({ length: Math.floor(h / 55) }, (_, i) => `<ellipse cx="${i % 2 ? 26 : -26}" cy="${-30 - i * 55}" rx="30" ry="16" transform="rotate(${i % 2 ? -25 : 25} ${i % 2 ? 26 : -26} ${-30 - i * 55})"/>`).join('')}</g></g>`;
+const bed = (x, y, w = 380) => `<g filter="url(#lu-wc)"><ellipse cx="${x}" cy="${y}" rx="${w / 2}" ry="60" fill="#9a6b45"/><ellipse cx="${x}" cy="${y - 10}" rx="${w / 2 - 20}" ry="44" fill="#b4835a"/></g>`;
+const flowers = (y, n = 10, seed = 3) => Array.from({ length: n }, (_, i) => { const x = (i * 163 + seed * 71) % 1580 + 10, c = ['#f19a86', '#f6c85f', '#ffffff', '#c7a6e0'][(i + seed) % 4]; return `<g filter="url(#lu-wc)"><circle cx="${x}" cy="${y + (i % 3) * 30}" r="12" fill="${c}"/><circle cx="${x}" cy="${y + (i % 3) * 30}" r="5" fill="#f6c85f"/></g>`; }).join('');
+const floor = (c = '#e9cf9f') => `<g filter="url(#lu-wc-big)"><rect y="600" width="1600" height="300" fill="${c}"/></g><g stroke="#c9a66e" stroke-width="4">${Array.from({ length: 8 }, (_, i) => `<path d="M0 ${640 + i * 40}H1600"/>`).join('')}</g>`;
+const windowBox = (x, y) => `<g transform="translate(${x} ${y})"><g filter="url(#lu-wc)"><circle r="120" fill="#bfe0ea"/><circle cx="40" cy="-40" r="28" fill="#f8d77a"/><path d="M-118 30c40-26 90-30 130-10s70 14 106 0v40a120 120 0 0 1-236 0z" fill="#a9c75a"/></g><circle r="120" fill="none" stroke="#9a7445" stroke-width="18"/><path d="M0-120V120M-120 0H120" stroke="#9a7445" stroke-width="10"/></g>`;
+
+const SCENES = {
+  'nha-sang': () => `<rect width="1600" height="900" fill="#f4e3c3"/><g filter="url(#lu-wc-big)"><rect width="1600" height="620" fill="#f1dcb4"/></g>${windowBox(1180, 260)}${floor()}<g filter="url(#lu-wc)"><rect x="160" y="420" width="260" height="190" rx="18" fill="#c99a63"/><rect x="190" y="380" width="200" height="60" rx="14" fill="#f19a86"/></g>`,
+  'san': () => `${sky('#cfe8f0', '#f7efd9')}${sun()}${cloud(240, 120)}${cloud(760, 80, .8)}${hills()}${house(1080, 260, .9)}${fence(700)}${flowers(760, 12, 2)}`,
+  'vuon': () => `${sky('#d3ebf2', '#f7efd9')}${sun(260, 140)}${cloud(980, 100)}${hills('#d6e7ad', '#bcd889')}${[220, 420, 1180, 1380].map((x, i) => beanPlant(x, 700, 240 + i * 20)).join('')}${flowers(780, 14, 5)}`,
+  'vuon-gio': () => `${sky('#c9e2ee', '#eef1e0')}${cloud(200, 120)}${cloud(700, 70, 1.2)}${cloud(1200, 140, .9)}${hills('#d6e7ad', '#bcd889')}<g filter="url(#lu-wc)" fill="#8fbf55">${Array.from({ length: 9 }, (_, i) => `<ellipse cx="${180 + i * 160}" cy="${260 + (i % 3) * 60}" rx="22" ry="11" transform="rotate(${i * 37} ${180 + i * 160} ${260 + (i % 3) * 60})"/>`).join('')}</g><g stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".8"><path d="M120 330c120-30 240 30 360 0"/><path d="M900 420c120-30 240 30 360 0"/></g>${flowers(780, 12, 1)}`,
+  'luong': () => `${sky('#d3ebf2', '#f7efd9')}${hills('#d6e7ad', '#c2dc90')}${bed(380, 720)}${bed(800, 740)}${bed(1220, 720)}`,
+  'hien': () => `<rect width="1600" height="900" fill="#f6ead2"/><g filter="url(#lu-wc-big)"><rect width="1600" height="560" fill="#ead2a6"/></g><g stroke="#b28a55" stroke-width="5">${Array.from({ length: 12 }, (_, i) => `<path d="M${i * 140} 0V560"/>`).join('')}</g>${floor('#dcb987')}<g filter="url(#lu-wc)"><rect x="1080" y="500" width="380" height="40" rx="12" fill="#a77a4a"/><rect x="1110" y="540" width="24" height="90" fill="#8d6238"/><rect x="1406" y="540" width="24" height="90" fill="#8d6238"/></g>`,
+  'cay-cao': () => `${sky('#d3ebf2', '#f7efd9')}${hills()}${beanPlant(1200, 760, 560)}${beanPlant(1290, 760, 470)}<g filter="url(#lu-wc)" fill="#7fb04a">${[[1225, 250], [1180, 310], [1310, 360]].map(([x, y]) => `<path d="M${x} ${y}c10 20 10 50 0 70-10-20-10-50 0-70z"/>`).join('')}</g>${flowers(800, 10, 4)}`,
+};
+
+let assetMap = {};
+export function setSceneAssets(map) { assetMap = map || {}; }
+// key: mã manifest (L001-BG-02) hoặc loại cảnh; kind: loại cảnh dùng khi chưa có ảnh
+export function sceneHTML(key, kind) {
+  const src = assetMap[key];
+  if (src) return { html: `<img class="bd-img" src="${src}" alt="">`, real: true };
+  const f = SCENES[kind] || SCENES[key]; if (!f) return { html: '', real: false };
+  return { html: `<svg class="bd-svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${f()}</svg>`, real: false };
+}
+export const SCENE_KINDS = Object.keys(SCENES);
