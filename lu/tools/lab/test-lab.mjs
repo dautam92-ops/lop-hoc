@@ -30,7 +30,7 @@ for (const s of D.samples) {
       // Không tràn màn hình: mọi nút bé cần chạm phải nằm trong khung nhìn, không phải cuộn (tam 26/11: 8 thẻ lật bị tràn iPad)
       const over = await page.evaluate(() => { const b = [...document.querySelectorAll('.stage button, .stage .opt')].filter(x => x.offsetParent).map(x => x.getBoundingClientRect().bottom); return b.length ? Math.round(Math.max(...b) - innerHeight) : 0; });
       r.checks.vuaManHinh = over <= 2; if (over > 2) errs.push(`nút tràn khỏi màn hình ${over}px`);
-      if (shots && age === '4-5' || shots && dev === 'ipad') await page.screenshot({ path: new URL(`${s.id}_${age}_${dev}.png`, OUT).pathname });
+      if (shots) await page.screenshot({ path: new URL(`${s.id}_${age}_${dev}.png`, OUT).pathname });
       // ---- thử sai trước
       const w = await page.evaluate(async () => {
         const T = window.__labTest; const n0 = T.spoken.length, e0 = T.events.length, f0 = (T.sfx || []).length;

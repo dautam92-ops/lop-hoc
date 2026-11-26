@@ -50,16 +50,17 @@ SAMPLES = []
 # Nền theo nội dung từng bài (tam 26/11: cùng một nền thì bé nhanh chán). Mã L001-BG-xx = ảnh đã duyệt; còn lại là cảnh vẽ mã trong ui/scenes.js.
 # 10 bài hoàn chỉnh trước (tam 26/11 14:22): giọng Hoài My đủ + ảnh vẽ tay
 DOT1 = {'CC-01','CC-03','CC-07','CC-08','CC-09','CC-12','CC-13','CC-17','CC-18','CC-19'}
-BD = {'CC-01': 'phong', 'CC-02': 'L001-BG-05', 'CC-03': 'L001-BG-04', 'CC-04': 'L001-BG-01', 'CC-05': 'L001-BG-02', 'CC-06': 'nha-sang', 'CC-07': 'L001-BG-03', 'CC-08': 'hien', 'CC-09': 'vuon', 'CC-10': 'phong', 'CC-11': 'san', 'CC-12': 'cay-cao', 'CC-13': 'L001-BG-02', 'CC-14': 'phong', 'CC-15': 'hien', 'CC-16': 'vuon-gio', 'CC-17': 'vuon', 'CC-18': 'bep', 'CC-19': 'bo-ao', 'CC-20': 'san', 'CC-21': 'L001-BG-05', 'CC-22': 'phong', 'CC-23': 'mua', 'CC-24': 'vuon-gio', 'CC-25': 'L001-BG-01', 'CC-26': 'nha-sang', 'MX-01': 'L001-BG-02', 'MX-02': 'san', 'MX-03': 'phong', 'MX-04': 'vuon', 'MX-05': 'hien', 'MX-06': 'bo-ao', 'MX-07': 'bep', 'MX-08': 'phong', 'MX-09': 'san', 'MX-10': 'nha-sang', 'MX-11': 'L001-BG-04'}
+BD = {'CC-01': 'phong', 'CC-02': 'L001-BG-05', 'CC-03': 'L001-BG-04', 'CC-04': 'L001-BG-01', 'CC-05': 'L001-BG-02', 'CC-06': 'nha-sang', 'CC-07': 'L001-BG-03', 'CC-08': 'hien', 'CC-09': 'vuon', 'CC-10': 'phong', 'CC-11': 'san', 'CC-12': 'cay-cao', 'CC-13': 'L001-BG-02', 'CC-14': 'phong', 'CC-15': 'hien', 'CC-16': 'vuon-gio', 'CC-17': 'vuon', 'CC-18': 'bep', 'CC-19': 'bo-ao', 'CC-20': 'san', 'CC-21': 'L001-BG-05', 'CC-22': 'phong', 'CC-23': 'mua', 'CC-24': 'vuon-gio', 'CC-25': 'L001-BG-01', 'CC-26': 'nha-sang', 'MX-01': 'L001-BG-02', 'MX-02': 'san', 'MX-03': 'phong', 'MX-04': 'vuon', 'MX-05': 'hien', 'MX-06': 'bo-ao', 'MX-07': 'bep', 'MX-08': 'phong', 'MX-09': 'san', 'MX-10': 'nha-sang', 'MX-11': 'L001-BG-04',
+      'MT-01': 'phong', 'MT-02': 'hien', 'MT-03': 'nha-sang', 'MT-04': 'L001-BG-04', 'MT-05': 'san', 'MT-06': 'L001-BG-01', 'MT-07': 'vuon-gio', 'MT-08': 'phong', 'MT-09': 'L001-BG-02', 'MT-10': 'luong', 'MT-11': 'vuon', 'MT-12': 'nha-sang'}
 
-def S(id, title, *, cc=(), x=(), program, group, goal, engine, mode=None, l45, l56, methods=(), diff='', note=''):
+def S(id, title, *, cc=(), x=(), program, group, goal, engine, mode=None, l45, l56, methods=(), diff='', note='', pp=(), nl=(), mon=None, rep=()):
     for age, a in (('4-5', l45), ('5-6', l56)):
         a.setdefault('engine', engine)
         if mode and 'mode' not in a: a['mode'] = mode
         a['activity_id'] = f'LAB-{id}-{age}'
         a.setdefault('title', title)
     SAMPLES.append(dict(id=id, title=title, cc=list(cc), x=list(x), program=program, group=group, goal=goal,
-                        engine=engine, mode=mode, methods=list(methods), diff=diff, note=note,
+                        engine=engine, mode=mode, methods=list(methods), diff=diff, note=note, pp=list(pp), nl=list(nl), mon=mon, rep=list(rep),
                         bd=BD[id], dot=(1 if id in DOT1 else 0), status='ready_for_review', version='1.0.0', levels={'4-5': l45, '5-6': l56}))
 
 # ===================================================================== 26 cơ chế
@@ -462,6 +463,219 @@ S('MX-11', 'Nhìn nhanh, nhớ số', x=[17], program='Chữ số', group='Toán
   l45=dict(skill_id='TO.DEM.01', objs=['art:tao', 'art:hoa', 'art:sao'], pool=[2, 3, 4, 5], words=VI_NUM[:6], rounds=3, show_ms=2500, intro=['Lu cho bé nhìn thật nhanh rồi che lại nhé.'], look='Bé nhìn kỹ nhé.', q='Có mấy cái?', ok='Đúng rồi! Có {word} cái.', no='Bé có thể bấm Xem lại.'),
   l56=dict(skill_id='TO.SO.05', objs=['art:tao'], ten_frame=True, pool=[11, 12, 13, 14, 15, 16, 17, 18, 19, 20], words=VI_NUM, rounds=3, show_ms=3500, intro=['Mỗi khung có mười ô. Bé nhìn nhanh rồi đoán số nhé.'], look='Bé nhìn kỹ nhé.', q='Có tất cả mấy chấm?', ok='Đúng rồi! Có {word} chấm.', no='Một khung đầy là mười. Bé có thể bấm Xem lại.'))
 
+# ===================================================================== Mở rộng phương pháp giáo dục (tam 26/11 16:26)
+# 12 mẫu mới MT-01..MT-12 bù chỗ còn thiếu trong 20 mẫu đại diện; 8 mẫu còn lại dùng lại mẫu đã có (REP20 bên dưới).
+# pp = mã phương pháp (content/lab/methodology.json), nl = năng lực nhận thức NL01–NL18, mon = vùng Montessori và loại A/B/C.
+# Không gắn nhãn não trái/não phải; không hứa tăng IQ. Montessori ở đây là "lấy cảm hứng", không phải chương trình Montessori chuẩn.
+def BLK(s, nau=False): return f'<span class="blk{" nau" if nau else ""}" style="--s:{s}"></span>'
+def SW(c): return f'<span class="sw" style="background:{c}"></span>'
+def ROD(n, u=16): return f'<span class="rod" style="--n:{n};--u:{u}px"></span>'
+def RODS(*ns, u=16): return '<span class="rods">' + ''.join(ROD(n, u) for n in ns) + '</span>'
+def TF(n, cells=10): return '<span class="tf">' + ''.join(f'<i class="{"on" if i < n else ""}"></i>' for i in range(cells)) + '</span>'
+def SYMG(on, rows, cols, q=False): return f'<span class="sym{" q" if q else ""}" style="--c:{cols}">' + ''.join(f'<i class="{"on" if (r, c) in on else ""}"></i>' for r in range(rows) for c in range(cols)) + '</span>'
+def SYM_ITEM(left, rows, cols, other, q, ok):
+    """Nửa trái + đường gương + nửa phải trống; đáp án đúng là hình lật gương, nhiễu là hình chép y nguyên (không lật) và một hình khác."""
+    mirror = {(r, cols - 1 - c) for r, c in left}
+    assert mirror != set(left), 'nửa trái phải không tự đối xứng, nếu không hình chép trùng đáp án'
+    show = f'<span class="sym-wrap">{SYMG(left, rows, cols)}<span class="mid"></span>{SYMG(set(), rows, cols, True)}</span>'
+    return dict(q=q, show=show, a=0, ok=ok, no='Bé nhìn đường gạch đỏ như tấm gương nhé. Bên phải phải giống bên trái lật lại.',
+                opts=[{'e': SYMG(mirror, rows, cols)}, {'e': SYMG(set(left), rows, cols)}, {'e': SYMG(set(other), rows, cols)}])
+
+S('MT-01', 'Tháp hồng và cầu thang nâu', cc=['CC-07'], program='Toán tư duy', group='Toán', engine='E04', mode='cards',
+  pp=['PP-MON', 'PP-MULTI', 'PP-SCAF'], nl=['NL04', 'NL05', 'NL02'], mon=('Cảm quan', 'B'), methods=['M026', 'M052'],
+  goal='Xếp khối theo kích thước từ nhỏ đến lớn (lấy cảm hứng từ tháp hồng, cầu thang nâu Montessori); sau đó làm với đồ vật thật.',
+  diff='4–5: 3 khối, to nhỏ rõ. 5–6: 5 khối chênh nhau ít hơn, thêm cầu thang nâu (dày mỏng).',
+  l45=dict(skill_id='TD.LG.02', intro=['Lu có mấy khối hồng to nhỏ khác nhau. Bé xếp từ khối nhỏ nhất đến khối to nhất nhé.'], label='Bé chạm từ nhỏ đến to',
+           sets=[dict(q='Khối nào nhỏ nhất?', items=[{'e': BLK(0.45), 'say': 'Khối nhỏ nhất.'}, {'e': BLK(0.85), 'say': 'Khối to hơn.'}, {'e': BLK(1.25), 'say': 'Khối to nhất.'}], ok='Bé xếp thành một cái tháp rồi!')],
+           rounds=1, done='Bé xếp từ nhỏ đến to giỏi lắm! Ở nhà bé thử xếp ba cái cốc lồng vào nhau nhé.'),
+  l56=dict(skill_id='TO.DO.04', intro=['Lần này các khối chỉ hơn nhau một chút thôi. Bé nhìn thật kỹ nhé.'], label='Bé chạm từ nhỏ đến to', again='Giờ đến cầu thang nâu. Bé xếp từ thanh mỏng nhất nhé.',
+           sets=[dict(q='Khối nào nhỏ nhất?', items=[{'e': BLK(0.4), 'say': 'Khối thứ nhất.'}, {'e': BLK(0.6), 'say': 'Khối thứ hai.'}, {'e': BLK(0.8), 'say': 'Khối thứ ba.'}, {'e': BLK(1.0), 'say': 'Khối thứ tư.'}, {'e': BLK(1.2), 'say': 'Khối to nhất.'}], ok='Tháp hồng đã xong!'),
+                 dict(q='Thanh nào mỏng nhất?', items=[{'e': BLK(0.5, True), 'say': 'Thanh ngắn nhất.'}, {'e': BLK(0.75, True), 'say': 'Thanh dài hơn.'}, {'e': BLK(1.0, True), 'say': 'Thanh dài hơn nữa.'}, {'e': BLK(1.25, True), 'say': 'Thanh dài nhất.'}], ok='Cầu thang nâu đã xong!')],
+           rounds=2, done='Bé so sánh rất tinh mắt! Ở nhà bé thử xếp đũa hoặc bút từ ngắn đến dài nhé.'),
+  note='Loại B: mô phỏng trên app, bố mẹ cho bé xếp đồ thật (cốc, hộp, đũa). Chơi xong game không có nghĩa là đã thành thạo ngoài đời.')
+
+S('MT-02', 'Hộp màu đậm nhạt', cc=['CC-07'], program='Quan sát', group='Tư duy', engine='E04', mode='cards',
+  pp=['PP-MON', 'PP-MULTI'], nl=['NL15', 'NL04', 'NL05'], mon=('Cảm quan', 'B'), methods=['M011'],
+  goal='Xếp các ô màu từ nhạt đến đậm (lấy cảm hứng từ hộp màu số 3 Montessori).',
+  diff='4–5: 3 sắc độ xanh, chênh rõ. 5–6: 5 sắc độ đỏ rồi 4 sắc độ xanh lá, chênh ít.',
+  l45=dict(skill_id='TD.LG.01', intro=['Ba ô màu xanh này có ô nhạt, có ô đậm. Bé xếp từ ô nhạt nhất đến ô đậm nhất nhé.'], label='Bé chạm từ nhạt đến đậm',
+           sets=[dict(q='Ô nào nhạt nhất?', items=[{'e': SW('#d6e8f5'), 'say': 'Xanh nhạt nhất.'}, {'e': SW('#8ebfe0'), 'say': 'Xanh vừa.'}, {'e': SW('#2f6aa8'), 'say': 'Xanh đậm nhất.'}], ok='Từ nhạt đến đậm rồi!')],
+           rounds=1, done='Đôi mắt bé tinh quá! Ra ngoài, bé thử tìm những chiếc lá xanh nhạt và xanh đậm nhé.'),
+  l56=dict(skill_id='TD.QS.09', intro=['Các ô màu này chỉ khác nhau một chút. Bé xếp từ nhạt nhất đến đậm nhất nhé.'], label='Bé chạm từ nhạt đến đậm', again='Giờ đến màu xanh lá.',
+           sets=[dict(q='Ô đỏ nào nhạt nhất?', items=[{'e': SW('#fbe0dc'), 'say': 'Ô nhạt nhất.'}, {'e': SW('#f4b3a9'), 'say': 'Ô thứ hai.'}, {'e': SW('#e98173'), 'say': 'Ô thứ ba.'}, {'e': SW('#d9544a'), 'say': 'Ô thứ tư.'}, {'e': SW('#a8352c'), 'say': 'Ô đậm nhất.'}], ok='Màu đỏ đã xếp xong!'),
+                 dict(q='Ô xanh lá nào nhạt nhất?', items=[{'e': SW('#e3efc9'), 'say': 'Ô nhạt nhất.'}, {'e': SW('#bcd88c'), 'say': 'Ô thứ hai.'}, {'e': SW('#8fae3e'), 'say': 'Ô thứ ba.'}, {'e': SW('#5b7a22'), 'say': 'Ô đậm nhất.'}], ok='Màu xanh lá đã xếp xong!')],
+           rounds=2, done='Bé phân biệt màu đậm nhạt rất giỏi! Ra vườn bé thử xếp lá từ nhạt đến đậm nhé.'),
+  note='Kỹ năng "Phân biệt sắc độ" chưa có trong Skill Tree; tạm gắn kỹ năng gần nhất, đề xuất thêm kỹ năng mới (chờ tam duyệt).')
+
+S('MT-03', 'Thanh số đỏ xanh', cc=['CC-01'], program='Toán tư duy', group='Toán', engine='E01', mode='items',
+  pp=['PP-MON', 'PP-MULTI', 'PP-SCAF'], nl=['NL02', 'NL06', 'NL01'], mon=('Toán', 'B'), methods=['M046', 'M052'],
+  goal='Đếm đoạn trên thanh số để biết độ dài ứng với con số; 5–6 tuổi ghép hai thanh thành thanh dài hơn.',
+  diff='4–5: thanh 1–5, đếm đoạn. 5–6: thanh 6–10 và ghép hai thanh bằng một thanh dài.',
+  l45=dict(skill_id='TO.SO.02', style='face', intro=['Mỗi thanh có các đoạn đỏ và xanh xen nhau. Bé đếm số đoạn để biết thanh số mấy nhé.'],
+           items=[dict(q='Thanh này là số mấy?', show=ROD(3, 34), a=0, ok='Đúng rồi, ba đoạn là thanh số ba.', opts=[{'e': G('3')}, {'e': G('2')}, {'e': G('5')}]),
+                  dict(q='Thanh này là số mấy?', show=ROD(5, 34), a=0, ok='Đúng rồi, năm đoạn là thanh số năm.', opts=[{'e': G('5')}, {'e': G('4')}, {'e': G('3')}]),
+                  dict(q='Thanh này là số mấy?', show=ROD(4, 34), a=0, ok='Đúng rồi, bốn đoạn là thanh số bốn.', opts=[{'e': G('4')}, {'e': G('5')}, {'e': G('2')}])],
+           no='Bé chạm theo từng đoạn và đếm nhé.'),
+  l56=dict(skill_id='TO.TG.04', style='face', intro=['Các thanh số dài hơn rồi. Bé đếm đoạn, rồi thử ghép hai thanh nhé.'],
+           items=[dict(q='Thanh này là số mấy?', show=ROD(8, 30), a=0, ok='Đúng rồi, thanh số tám.', opts=[{'e': G('8')}, {'e': G('7')}, {'e': G('9')}]),
+                  dict(q='Thanh ba ghép với thanh nào thì dài bằng thanh năm?', show=RODS(5, 3, u=34), a=0, ok='Đúng rồi, ba với hai là năm.', opts=[{'e': ROD(2, 34)}, {'e': ROD(1, 34)}, {'e': ROD(4, 34)}]),
+                  dict(q='Thanh sáu ghép với thanh nào thì dài bằng thanh mười?', show=RODS(10, 6, u=26), a=0, ok='Đúng rồi, sáu với bốn là mười.', opts=[{'e': ROD(4, 26)}, {'e': ROD(3, 26)}, {'e': ROD(5, 26)}])],
+           no='Bé so phần còn thiếu với từng thanh nhé.'),
+  note='Loại B: ở nhà dùng que, đũa hoặc giấy cắt thành thanh 1–10 để bé ghép thật.')
+
+S('MT-04', 'Khung năm, khung mười', cc=['CC-01'], program='Chữ số', group='Toán', engine='E01', mode='items',
+  pp=['PP-MON', 'PP-SCAF', 'PP-RETR'], nl=['NL02', 'NL09'], mon=('Toán', 'A'), methods=['M047', 'M053'],
+  goal='Nhìn khung có sẵn chấm và tìm số còn thiếu để đủ năm (4–5) hoặc đủ mười, nhận ra một chục và mấy đơn vị (5–6).',
+  diff='4–5: khung năm ô. 5–6: khung mười ô, số 11–20 bằng một khung đầy và một khung lẻ.',
+  l45=dict(skill_id='TO.TG.01', style='face', intro=['Khung này có năm ô. Bé xem còn mấy ô trống thì đủ năm nhé.'],
+           items=[dict(q='Cần thêm mấy chấm nữa cho đủ năm?', show=TF(3, 5), a=0, ok='Đúng rồi, ba thêm hai là năm.', opts=[{'e': G('2')}, {'e': G('1')}, {'e': G('3')}]),
+                  dict(q='Cần thêm mấy chấm nữa cho đủ năm?', show=TF(4, 5), a=0, ok='Đúng rồi, bốn thêm một là năm.', opts=[{'e': G('1')}, {'e': G('2')}, {'e': G('3')}]),
+                  dict(q='Cần thêm mấy chấm nữa cho đủ năm?', show=TF(1, 5), a=0, ok='Đúng rồi, một thêm bốn là năm.', opts=[{'e': G('4')}, {'e': G('3')}, {'e': G('2')}])],
+           no='Bé đếm các ô còn trống nhé.'),
+  l56=dict(skill_id='TO.SO.06', style='face', intro=['Một khung đầy là mười, gọi là một chục. Bé nhìn khung rồi trả lời nhé.'],
+           items=[dict(q='Cần thêm mấy chấm nữa cho đủ mười?', show=TF(7), a=0, ok='Đúng rồi, bảy thêm ba là mười.', opts=[{'e': G('3')}, {'e': G('2')}, {'e': G('4')}]),
+                  dict(q='Có tất cả mấy chấm?', show=[TF(10), TF(4)], a=0, ok='Đúng rồi, một chục và bốn là mười bốn.', opts=[{'e': G('14')}, {'e': G('41')}, {'e': G('10')}]),
+                  dict(q='Có tất cả mấy chấm?', show=[TF(10), TF(8)], a=0, ok='Đúng rồi, một chục và tám là mười tám.', opts=[{'e': G('18')}, {'e': G('16')}, {'e': G('81')}])],
+           no='Một khung đầy là mười. Bé đếm tiếp khung thứ hai nhé.'))
+
+S('MT-05', 'Nửa kia của hình', cc=['CC-01'], program='Nhận thức', group='Tư duy', engine='E01', mode='items',
+  pp=['PP-MULTI', 'PP-SCAF'], nl=['NL06', 'NL13', 'NL04'], methods=['M031'],
+  goal='Chọn nửa bên phải để hình đối xứng qua đường gương; hình chép y nguyên (không lật) là đáp án nhiễu.',
+  diff='4–5: lưới 3 hàng 2 cột, ít ô. 5–6: lưới 4 hàng 3 cột, nhiều ô hơn.',
+  l45=dict(skill_id='TD.QH.02', style='face', intro=['Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình giống hệt khi soi gương nhé.'],
+           items=[SYM_ITEM({(0, 0), (1, 0), (1, 1), (2, 0)}, 3, 2, {(0, 1), (2, 1)}, 'Nửa nào ghép vào thì hai bên giống nhau như soi gương?', 'Đúng rồi, hai bên giống hệt nhau qua tấm gương.'),
+                  SYM_ITEM({(0, 1), (1, 0), (2, 1)}, 3, 2, {(1, 0), (1, 1)}, 'Nửa nào ghép vào thì hai bên giống nhau như soi gương?', 'Đúng rồi, hình đã đối xứng.')],
+           no='Bé nhìn tấm gương đỏ nhé.'),
+  l56=dict(skill_id='TD.KG.12', style='face', intro=['Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình đối xứng nhé.'],
+           items=[SYM_ITEM({(0, 2), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2), (3, 1)}, 4, 3, {(0, 0), (1, 0), (2, 2), (3, 2)}, 'Nửa nào làm cho hình đối xứng?', 'Đúng rồi, như một cánh bướm.'),
+                  SYM_ITEM({(0, 0), (0, 1), (1, 1), (2, 1), (2, 2), (3, 0)}, 4, 3, {(0, 2), (1, 2), (3, 2)}, 'Nửa nào làm cho hình đối xứng?', 'Đúng rồi, hai bên giống nhau qua tấm gương.'),
+                  SYM_ITEM({(0, 2), (1, 0), (1, 2), (2, 2), (3, 0), (3, 1)}, 4, 3, {(0, 0), (2, 0), (2, 1)}, 'Nửa nào làm cho hình đối xứng?', 'Đúng rồi, bé nhìn rất kỹ.')],
+           no='Bé nhìn tấm gương đỏ nhé.'),
+  note='Ở nhà: gấp đôi tờ giấy, chấm màu một bên rồi ép lại để thấy hình đối xứng.')
+
+S('MT-06', 'Ai trốn sau tấm bìa?', cc=['CC-01'], program='Quan sát', group='Tư duy', engine='E01', mode='items',
+  pp=['PP-INQ', 'PP-PLAY'], nl=['NL13', 'NL04', 'NL10'], methods=['M011', 'M015'],
+  goal='Chỉ thấy vài mảnh nhỏ qua lỗ tấm bìa, bé ghép trong đầu thành cả con vật (nhận diện toàn cảnh từ chi tiết).',
+  diff='4–5: lỗ to, 3 lựa chọn. 5–6: ít lỗ hơn, 4 lựa chọn có con vật gần giống.',
+  l45=dict(skill_id='TD.QH.02', style='face', intro=['Có bạn đang trốn sau tấm bìa có lỗ. Bé nhìn qua lỗ rồi đoán là ai nhé.'],
+           items=[dict(q='Ai đang trốn sau tấm bìa?', show='peek:1:art:meo', a=0, ok='Đúng rồi, là bạn mèo.', opts=[{'e': 'art:meo', 'say': 'Con mèo.'}, {'e': 'art:ca', 'say': 'Con cá.'}, {'e': 'art:chim', 'say': 'Con chim.'}]),
+                  dict(q='Ai đang trốn sau tấm bìa?', show='peek:1:art:ga', a=0, ok='Đúng rồi, là cô gà.', opts=[{'e': 'art:ga', 'say': 'Con gà.'}, {'e': 'art:ech', 'say': 'Con ếch.'}, {'e': 'art:oc', 'say': 'Con ốc sên.'}]),
+                  dict(q='Ai đang trốn sau tấm bìa?', show='peek:1:art:buom', a=0, ok='Đúng rồi, là bạn bướm.', opts=[{'e': 'art:buom', 'say': 'Con bướm.'}, {'e': 'art:tho', 'say': 'Con thỏ.'}, {'e': 'art:ca', 'say': 'Con cá.'}])],
+           no='Bé nhìn màu và hình qua từng lỗ nhé.'),
+  l56=dict(skill_id='TD.QH.02', style='face', intro=['Tấm bìa lần này chỉ có hai lỗ nhỏ. Bé nhìn thật kỹ rồi đoán nhé.'],
+           items=[dict(q='Ai đang trốn sau tấm bìa?', show='peek:2:art:ech', a=0, ok='Đúng rồi, là bạn ếch.', opts=[{'e': 'art:ech', 'say': 'Con ếch.'}, {'e': 'art:ca', 'say': 'Con cá.'}, {'e': 'art:oc', 'say': 'Con ốc sên.'}, {'e': 'art:meo', 'say': 'Con mèo.'}]),
+                  dict(q='Ai đang trốn sau tấm bìa?', show='peek:2:art:chim', a=0, ok='Đúng rồi, là bạn chim.', opts=[{'e': 'art:chim', 'say': 'Con chim.'}, {'e': 'art:ga', 'say': 'Con gà.'}, {'e': 'art:buom', 'say': 'Con bướm.'}, {'e': 'art:ong', 'say': 'Con ong.'}]),
+                  dict(q='Ai đang trốn sau tấm bìa?', show='peek:2:art:oc', a=0, ok='Đúng rồi, là bạn ốc sên.', opts=[{'e': 'art:oc', 'say': 'Con ốc sên.'}, {'e': 'art:ech', 'say': 'Con ếch.'}, {'e': 'art:ca', 'say': 'Con cá.'}, {'e': 'art:ong', 'say': 'Con ong.'}])],
+           no='Bé nhìn màu và hình qua từng lỗ nhé.'))
+
+WH = [{'e': 'art:meo', 'name': 'bạn mèo', 'found': 'Bạn mèo ở đây.'}, {'e': 'art:tao', 'name': 'quả táo', 'found': 'Quả táo ở đây.'}, {'e': 'art:bong', 'name': 'quả bóng', 'found': 'Quả bóng ở đây.'},
+      {'e': 'art:hoa', 'name': 'bông hoa', 'found': 'Bông hoa ở đây.'}, {'e': 'art:sao', 'name': 'ngôi sao', 'found': 'Ngôi sao ở đây.'}, {'e': 'art:ca', 'name': 'con cá', 'found': 'Con cá ở đây.'},
+      {'e': 'art:mu', 'name': 'cái mũ', 'found': 'Cái mũ ở đây.'}, {'e': 'art:la', 'name': 'chiếc lá', 'found': 'Chiếc lá ở đây.'}]
+S('MT-07', 'Đồ vật nằm ở ô nào?', cc=['CC-09'], program='Ghi nhớ', group='Tư duy', engine='E06', mode='where',
+  pp=['PP-RETR', 'PP-PLAY'], nl=['NL07', 'NL09', 'NL06'], methods=['M023', 'M022'],
+  goal='Nhìn các đồ vật trên lưới ô, Lu úp lại, rồi bé chạm đúng ô của vật Lu gọi (ghi nhớ vị trí). Có nút Xem lại.',
+  diff='4–5: 6 ô, 3 vật, hỏi 1 vật mỗi lượt. 5–6: 8 ô, 4 vật, hỏi 2 vật mỗi lượt.',
+  l45=dict(skill_id='TD.TN.01', objs=WH, cols=3, cells=6, show=3, asks=1, look_ms=4000, rounds=3,
+           intro=['Lu đặt đồ vật vào các ô. Bé nhớ vật nào nằm ở đâu nhé.'], look='Bé nhìn thật kỹ nhé.', q='{name} nằm ở ô nào?', hint='Ô sáng lên đó, bé thử chạm nhé.', done='Bé nhớ chỗ rất giỏi!'),
+  l56=dict(skill_id='TD.TN.11', objs=WH, cols=4, cells=8, show=4, asks=2, look_ms=4500, rounds=3,
+           intro=['Lu đặt bốn đồ vật vào các ô. Lần này Lu hỏi hai vật liền nhau.'], look='Bé nhìn thật kỹ nhé.', q='{name} nằm ở ô nào?', hint='Ô sáng lên đó, bé thử chạm nhé.', done='Bé nhớ chỗ rất giỏi!'))
+
+S('MT-08', 'Xếp theo mẫu của Lu', cc=['CC-02'], program='Nhận thức', group='Tư duy', engine='E06', mode='copy',
+  pp=['PP-MON', 'PP-SCAF'], nl=['NL06', 'NL04', 'NL09'], mon=('Cảm quan', 'B'), methods=['M031', 'M034'],
+  goal='Nhìn mẫu và tô lại đúng ô trên lưới trống (tái tạo mô hình). Ô không có trong mẫu thì không tô được, bé tự nhìn lại mẫu.',
+  diff='4–5: lưới 3×3, một màu, 3–4 ô. 5–6: lưới 4×4, hai màu, 5–6 ô.',
+  l45=dict(skill_id='TD.KG.04', size=3, colors=['#3f7fc1'], models=[[{'c': 0}, {'c': 3}, {'c': 6}, {'c': 7}], [{'c': 1}, {'c': 3}, {'c': 4}, {'c': 5}], [{'c': 2}, {'c': 4}, {'c': 6}]], rounds=2,
+           intro=['Bên trái là mẫu của Lu. Bé chạm vào lưới bên phải để xếp giống hệt mẫu nhé.'], q='Bé xếp giống mẫu nhé.', again='Mẫu mới đây. Bé xếp tiếp nhé.', hint='Bé đếm xem ô xanh nằm ở hàng nào nhé.', done='Giống hệt mẫu rồi!'),
+  l56=dict(skill_id='TD.KG.11', size=4, colors=['#d9544a', '#3f7fc1'], color_names=['đỏ', 'xanh'], pick='Bé chọn màu rồi chạm ô', pick_color='Ô này màu {name}, bé chọn màu {name} nhé.',
+           models=[[{'c': 0, 'k': 0}, {'c': 1, 'k': 0}, {'c': 5, 'k': 1}, {'c': 9, 'k': 1}, {'c': 13, 'k': 0}], [{'c': 3, 'k': 1}, {'c': 6, 'k': 0}, {'c': 9, 'k': 0}, {'c': 12, 'k': 1}, {'c': 10, 'k': 1}, {'c': 5, 'k': 0}],
+                   [{'c': 4, 'k': 0}, {'c': 5, 'k': 1}, {'c': 6, 'k': 1}, {'c': 7, 'k': 0}, {'c': 1, 'k': 1}, {'c': 14, 'k': 1}]], rounds=2,
+           intro=['Mẫu của Lu có hai màu. Bé chọn màu rồi chạm ô cho giống mẫu nhé.'], q='Bé xếp giống mẫu nhé.', again='Mẫu mới đây. Bé xếp tiếp nhé.', hint='Bé đếm hàng và cột nhé.', done='Giống hệt mẫu rồi!'),
+  note='Ở nhà: bố mẹ xếp 3–5 khối hoặc nắp chai theo hình, bé xếp lại giống hệt bên cạnh.')
+
+def W(e, name): return {'e': e, 'say': name}
+S('MT-09', 'Âm đầu của từ', cc=['CC-01'], program='Chữ cái tiếng Việt', group='Tiếng Việt', engine='E01', mode='items',
+  pp=['PP-PHON', 'PP-MULTI'], nl=['NL08', 'NL03'], methods=['M056', 'M059'],
+  goal='Nghe tên ba bốn hình rồi chọn hình có âm đầu Lu nói (âm vị học, chưa cần biết chữ).',
+  diff='4–5: âm bờ, mờ, cờ; 3 hình khác âm rõ. 5–6: âm gần nhau tờ và thờ, chờ và giờ; 4 hình.',
+  l45=dict(skill_id='TV.AM.02', style='face', intro=['Lu đọc tên từng hình. Bé nghe tiếng đầu tiên rồi chọn hình đúng nhé.'],
+           items=[dict(q='Bóng, cá, mèo. Hình nào bắt đầu bằng âm bờ?', a=0, ok='Đúng rồi, bờ, bóng.', opts=[W('art:bong', 'Bóng.'), W('art:ca', 'Cá.'), W('art:meo', 'Mèo.')]),
+                  dict(q='Mèo, gà, thỏ. Hình nào bắt đầu bằng âm mờ?', a=0, ok='Đúng rồi, mờ, mèo.', opts=[W('art:meo', 'Mèo.'), W('art:ga', 'Gà.'), W('art:tho', 'Thỏ.')]),
+                  dict(q='Cá, vịt, lá. Hình nào bắt đầu bằng âm cờ?', a=0, ok='Đúng rồi, cờ, cá.', opts=[W('art:ca', 'Cá.'), W('art:vit', 'Vịt.'), W('art:la', 'Lá.')])],
+           no='Bé nghe Lu đọc lại nhé.'),
+  l56=dict(skill_id='TV.AM.04', style='face', intro=['Lần này có những âm nghe gần giống nhau. Bé nghe thật kỹ nhé.'],
+           items=[dict(q='Táo, thỏ, lá, mèo. Hình nào bắt đầu bằng âm tờ?', a=0, ok='Đúng rồi, tờ, táo. Còn thỏ là âm thờ.', opts=[W('art:tao', 'Táo.'), W('art:tho', 'Thỏ.'), W('art:la', 'Lá.'), W('art:meo', 'Mèo.')]),
+                  dict(q='Chim, giày, cá, sao. Hình nào bắt đầu bằng âm chờ?', a=0, ok='Đúng rồi, chờ, chim.', opts=[W('art:chim', 'Chim.'), W('art:giay', 'Giày.'), W('art:ca', 'Cá.'), W('art:sao', 'Sao.')]),
+                  dict(q='Sách, ếch, hoa, vịt. Hình nào bắt đầu bằng âm sờ?', a=0, ok='Đúng rồi, sờ, sách.', opts=[W('art:sach', 'Sách.'), W('art:ech', 'Ếch.'), W('art:hoa', 'Hoa.'), W('art:vit', 'Vịt.')])],
+           no='Bé nghe Lu đọc lại nhé.'))
+
+def CH(e, say, reply, nxt): return {'e': e, 'say': say, 'reply': [reply], 'next': nxt}
+S('MT-10', 'Bé làm tác giả', cc=['CC-23', 'CC-25'], program='Tưởng tượng', group='Nghệ thuật', engine='E10',
+  pp=['PP-STORY', 'PP-PLAY', 'PP-SEL'], nl=['NL11', 'NL12', 'NL03'], methods=['M007', 'M041'],
+  goal='Bé chọn nhân vật, nơi chốn và sự việc để cùng Lu tạo câu chuyện mới; mọi lựa chọn đều đúng. 5–6 tuổi tự kể cái kết cho bố mẹ nghe.',
+  diff='4–5: chọn nhân vật và nơi chốn. 5–6: thêm sự việc, rồi tự kể cái kết ngoài màn hình.',
+  l45=dict(skill_id='TD.TTg.02', start='a',
+           nodes={'a': {'say': ['Mình cùng làm một câu chuyện mới nhé. Bé chọn, Lu kể.'], 'q': 'Nhân vật chính là ai?',
+                        'choices': [CH('art:meo', 'Bạn mèo.', 'Ngày xưa có một bạn mèo nhỏ rất tò mò.', 'b'), CH('art:tho', 'Bạn thỏ.', 'Ngày xưa có một bạn thỏ nhỏ rất nhanh nhẹn.', 'b'), CH('art:ga', 'Bạn gà con.', 'Ngày xưa có một bạn gà con rất chăm chỉ.', 'b')]},
+                  'b': {'say': ['Một buổi sáng đẹp trời, bạn ấy muốn đi chơi.'], 'q': 'Bạn ấy đi đâu?',
+                        'choices': [CH('art:cay', 'Vào khu rừng.', 'Bạn ấy đi vào khu rừng xanh mát.', 'c'), CH('art:nha', 'Sang nhà bà.', 'Bạn ấy sang nhà bà chơi.', 'c'), CH('art:cau-vong', 'Lên cầu vồng.', 'Bạn ấy leo lên chiếc cầu vồng bảy màu.', 'c')]},
+                  'c': {'say': ['Ở đó bạn ấy gặp một người bạn mới, hai bạn chơi với nhau thật vui.', 'Câu chuyện của bé thật hay! Bé kể lại cho bố mẹ nghe nhé.'], 'end': True}},
+           done='Câu chuyện của bé thật hay!'),
+  l56=dict(skill_id='TD.TTg.03', start='a',
+           nodes={'a': {'say': ['Hôm nay bé là tác giả. Bé chọn, Lu kể.'], 'q': 'Nhân vật chính là ai?',
+                        'choices': [CH('art:meo', 'Bạn mèo.', 'Ngày xưa có một bạn mèo nhỏ rất tò mò.', 'b'), CH('art:tho', 'Bạn thỏ.', 'Ngày xưa có một bạn thỏ nhỏ rất nhanh nhẹn.', 'b'), CH('art:ga', 'Bạn gà con.', 'Ngày xưa có một bạn gà con rất chăm chỉ.', 'b')]},
+                  'b': {'say': ['Một buổi sáng đẹp trời, bạn ấy muốn đi chơi.'], 'q': 'Bạn ấy đi đâu?',
+                        'choices': [CH('art:cay', 'Vào khu rừng.', 'Bạn ấy đi vào khu rừng xanh mát.', 'c'), CH('art:nha', 'Sang nhà bà.', 'Bạn ấy sang nhà bà chơi.', 'c'), CH('art:cau-vong', 'Lên cầu vồng.', 'Bạn ấy leo lên chiếc cầu vồng bảy màu.', 'c')]},
+                  'c': {'say': ['Đang đi thì có chuyện xảy ra.'], 'q': 'Chuyện gì xảy ra?',
+                        'choices': [CH('art:mua', 'Trời đổ mưa.', 'Bỗng trời đổ mưa to.', 'k'), CH('art:chim', 'Gặp chú chim bị lạc.', 'Bạn ấy gặp một chú chim nhỏ bị lạc mẹ.', 'k'), CH('art:bong', 'Tìm thấy quả bóng lạ.', 'Bạn ấy tìm thấy một quả bóng biết nói.', 'k')]},
+                  'k': {'say': ['Rồi chuyện gì xảy ra tiếp theo? Bé tự nghĩ cái kết nhé.', 'Bé kể cả câu chuyện cho bố mẹ nghe. Kể xong bé bấm nút.'], 'next': 'end', 'button': 'Bé kể xong rồi'},
+                  'end': {'say': ['Câu chuyện của bé thật hay. Lu thích lắm!'], 'end': True}},
+           done='Câu chuyện của bé thật hay!'),
+  note='Hoạt động mở: không chấm đúng sai. Phần kể cái kết là ngoài màn hình, bố mẹ lắng nghe.')
+
+S('MT-11', 'Bé chăm cây', cc=['CC-18'], program='Kỹ năng sống', group='Kỹ năng sống', engine='E11', mode='steps',
+  pp=['PP-MON', 'PP-EXP', 'PP-INQ'], nl=['NL05', 'NL18'], mon=('Thực hành cuộc sống', 'B'), methods=['M086', 'M087'],
+  goal='Chọn đúng đồ dùng cho từng bước chăm cây, chậu cây đổi theo từng bước; sau đó bé chăm một cây thật ở nhà.',
+  diff='4–5: 3 bước. 5–6: 5 bước từ gieo hạt tới lau lá.',
+  l45=dict(skill_id='KP.KH.01', state0='art:chau-cay', intro=['Cây của Lu đang khát nước. Bé giúp Lu chăm cây nhé.'],
+           steps=[{'e': 'art:binh-tuoi', 'label': 'Tưới nước', 'ask': 'Đầu tiên, cây cần gì?', 'say': 'Tưới nước nhẹ nhàng vào gốc cây.', 'state': 'art:chau-cay'},
+                  {'e': 'art:mat-troi', 'label': 'Đặt chỗ có nắng', 'ask': 'Tiếp theo, mình để cây ở đâu?', 'say': 'Đặt cây ở chỗ có nắng.', 'state': 'art:chau-cay'},
+                  {'e': 'art:la', 'label': 'Ngắm lá mới', 'ask': 'Vài ngày sau, mình xem gì nhé?', 'say': 'Cây ra lá mới xanh tươi.', 'state': 'art:hoa'}],
+           no='Chưa đến bước đó đâu.', done='Cây của Lu xanh tốt rồi! Ở nhà bé thử tưới một chậu cây thật cùng bố mẹ nhé.'),
+  l56=dict(skill_id='KS.TN.01', state0='art:hat-dau', intro=['Mình trồng và chăm một cây đậu từ hạt nhé.'],
+           steps=[{'e': 'art:chau-cay', 'label': 'Gieo hạt vào chậu', 'ask': 'Đầu tiên, mình gieo hạt vào đâu?', 'say': 'Gieo hạt vào chậu đất.', 'state': 'art:chau-cay'},
+                  {'e': 'art:binh-tuoi', 'label': 'Tưới nước', 'ask': 'Tiếp theo là gì?', 'say': 'Tưới một chút nước cho đất ẩm.', 'state': 'art:chau-cay'},
+                  {'e': 'art:mat-troi', 'label': 'Đặt chỗ có nắng', 'ask': 'Hạt cần gì để nảy mầm?', 'say': 'Đặt chậu ở chỗ có nắng.', 'state': 'art:mam-dau'},
+                  {'e': 'art:khan', 'label': 'Lau lá bụi', 'ask': 'Lá bị bụi thì làm gì?', 'say': 'Lau lá nhẹ nhàng bằng khăn ẩm.', 'state': 'art:mam-dau'},
+                  {'e': 'art:qua-dau', 'label': 'Thu quả đậu', 'ask': 'Cây lớn rồi, mình được gì?', 'say': 'Cây ra quả đậu.', 'state': 'art:qua-dau'}],
+           no='Chưa đến bước đó đâu.', done='Bé chăm cây giỏi lắm! Ở nhà bé nhận chăm một chậu cây mỗi ngày nhé.'),
+  note='Loại B: game chỉ là bước làm quen. Việc thật: bé tưới và quan sát cây ở nhà trong một tuần, bố mẹ ghi nhận.')
+
+S('MT-12', 'Hai tay cùng làm', cc=['CC-26'], program='Vận động và phối hợp tay mắt', group='Vận động', engine='E15', mode='do',
+  pp=['PP-EXP', 'PP-MON'], nl=['NL17', 'NL16'], mon=('Thực hành cuộc sống', 'C'), methods=['M090', 'M100'],
+  goal='Rời màn hình làm việc cần hai tay phối hợp với đồ thật; bố mẹ xác nhận.',
+  diff='4–5: gấp khăn tay làm đôi hai lần. 5–6: một tay giữ dây, một tay xâu 5 hạt hoặc ống hút cắt khúc.',
+  l45=dict(skill_id='KP.VD.02', lu='kham-pha', intro=['Mình rời màn hình một chút nhé. Bé cần dùng cả hai tay.'], task='Bé lấy một chiếc khăn tay. Hai tay cầm hai góc, gấp đôi lại, rồi gấp đôi lần nữa cho vuông. Bố mẹ xem giúp bé nhé. Xong rồi bé bấm nút.', button='Bé gấp xong rồi!', seconds=60, evidence='tiep-xuc'),
+  l56=dict(skill_id='KP.VD.03', lu='kham-pha', intro=['Mình rời màn hình một chút nhé. Bé cần dùng cả hai tay.'], task='Bố mẹ đưa bé một sợi dây và năm khúc ống hút. Một tay bé giữ dây, tay kia xâu từng khúc vào thành vòng tay. Xong rồi bé bấm nút.', button='Bé xâu xong rồi!', seconds=120, evidence='tiep-xuc'),
+  note='Loại C: cần đồ thật. App chỉ hướng dẫn và ghi đã tham gia; bố mẹ xác nhận. Không coi bấm nút là đã thành thạo.')
+
+# 20 mẫu đại diện theo chỉ thị mục 6 → mẫu trong Phòng mẫu (dùng lại mẫu đã có, chỉ làm mới khi thiếu)
+REP20 = [('Ghi nhớ hình ảnh', ['MX-03', 'CC-08']), ('Ghi nhớ vị trí', ['MT-07']), ('Ghi nhớ trình tự', ['MX-04']),
+         ('Liên tưởng hình ảnh', ['CC-08', 'CC-05']), ('Hoàn thiện hình đối xứng', ['MT-05']), ('Xoay hình', ['CC-11']),
+         ('Tái tạo mô hình', ['MT-08']), ('Nhận diện toàn cảnh', ['MT-06']), ('Tưởng tượng từ hình khối', ['CC-25']),
+         ('Sáng tạo câu chuyện', ['MT-10']), ('Xếp vật theo kích thước', ['MT-01']), ('Phân biệt sắc độ màu', ['MT-02']),
+         ('Thanh số Montessori', ['MT-03']), ('Ghép số với số lượng', ['CC-03', 'CC-17']), ('Tạo nhóm mười', ['MT-04']),
+         ('Nhận diện âm đầu', ['MT-09']), ('Tập tô chữ cái', ['CC-14']), ('Mô phỏng sắp xếp đồ dùng', ['CC-06']),
+         ('Thực hành chăm sóc cây', ['MT-11']), ('Phối hợp hai tay và vận động ngoài màn hình', ['MT-12'])]
+
+
+# Mẫu cũ dùng lại cho 20 mẫu đại diện: gắn thêm phương pháp và năng lực (không đổi nội dung mẫu)
+TAGS = {'MX-03': (['PP-RETR', 'PP-PLAY'], ['NL07', 'NL09']), 'CC-08': (['PP-PLAY', 'PP-RETR'], ['NL07', 'NL10']), 'MX-04': (['PP-MULTI', 'PP-RETR'], ['NL08', 'NL05', 'NL09']),
+        'CC-05': (['PP-PLAY'], ['NL10', 'NL04']), 'CC-11': (['PP-STEM', 'PP-SCAF'], ['NL06']), 'CC-25': (['PP-PLAY'], ['NL11', 'NL12']), 'CC-03': (['PP-MON', 'PP-STEM'], ['NL02', 'NL16']),
+        'CC-17': (['PP-STEM', 'PP-MULTI'], ['NL02', 'NL16']), 'CC-14': (['PP-SCAF', 'PP-MULTI', 'PP-PHON'], ['NL16', 'NL03']), 'CC-06': (['PP-EXP', 'PP-MON'], ['NL01', 'NL10']),
+        'CC-21': (['PP-MULTI', 'PP-PLAY'], ['NL14', 'NL08'])}
+for _s in SAMPLES:
+    if _s['id'] in TAGS: _s['pp'], _s['nl'] = map(list, TAGS[_s['id']])
+
 # ===================================================================== kiểm tra và ghi
 def check():
     errs = []
@@ -478,13 +692,17 @@ def check():
     xs = {x for s in SAMPLES for x in s['x']}
     for i, n in enumerate(X30, 1):
         if i not in xs: errs.append(f'thiếu mẫu nghiệm thu {i}. {n}')
+    if len(REP20) != 20: errs.append('REP20 phải đủ 20 mẫu đại diện')
+    for n, l in REP20:
+        for i in l:
+            if i not in ids: errs.append(f'mẫu đại diện "{n}" trỏ tới {i} không có')
     return errs
 
 if __name__ == '__main__':
     e = check()
     if e: print('\n'.join(e)); sys.exit(1)
     out = dict(format='lu-lab-samples', version='1.0.0', mechanics=[dict(id=m, name=n) for m, n in MECHANICS],
-               x30=[dict(n=i, name=n) for i, n in enumerate(X30, 1)], programs=PROGRAMS, samples=SAMPLES)
+               x30=[dict(n=i, name=n) for i, n in enumerate(X30, 1)], programs=PROGRAMS, rep20=[dict(n=i, name=n, ids=l) for i, (n, l) in enumerate(REP20, 1)], samples=SAMPLES)
     os.makedirs(os.path.join(ROOT, 'content/lab'), exist_ok=True)
     p = os.path.join(ROOT, 'content/lab/samples.json')
     json.dump(out, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

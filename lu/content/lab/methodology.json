@@ -1,0 +1,3008 @@
+{
+ "format": "lu-methodology",
+ "version": "1.0.0",
+ "ngay": "2026-11-26",
+ "trang_thai": "cho_duyet",
+ "nguyen_tac": [
+  "Chỉ bổ sung, không thay thế giáo trình đã duyệt",
+  "Không gắn nhãn não trái, não phải; không hứa tăng IQ hay tạo thiên tài",
+  "Lu lấy cảm hứng từ Montessori, không phải chương trình Montessori chuẩn",
+  "Không số hóa mọi thứ: loại B, C cần đồ thật",
+  "Hoàn thành trò chơi không đồng nghĩa thành thạo kỹ năng thật (D24)",
+  "Không gọi AI khi bé học (D18)"
+ ],
+ "bang_chung": {
+  "A": "Mạnh: nhiều nghiên cứu và phân tích tổng hợp, kết quả khá nhất quán",
+  "B": "Trung bình: có phân tích tổng hợp hoặc thử nghiệm tốt nhưng hiệu quả phụ thuộc cách làm",
+  "C": "Hạn chế: ít nghiên cứu chặt chẽ ở trẻ 4–6 tuổi hoặc kết quả trái chiều",
+  "D": "Chủ yếu lý thuyết và kinh nghiệm thực hành"
+ },
+ "methods": [
+  {
+   "id": "PP-PLAY",
+   "ten": "Học qua chơi có dẫn dắt",
+   "ten_en": "Play-based / guided play",
+   "nguon": [
+    {
+     "t": "Skene và cộng sự (2022). Can guidance during play enhance children's learning and development in educational contexts? A systematic review and meta-analysis. Child Development 93(4).",
+     "loai": "Phân tích tổng hợp",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/35018635/",
+     "da_tra": true
+    },
+    {
+     "t": "Zosh và cộng sự (2017). Learning through play: a review of the evidence. LEGO Foundation.",
+     "loai": "Tổng quan",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Bé chủ động, vui, có ý nghĩa; người lớn đặt mục tiêu học nhưng để bé dẫn cuộc chơi",
+    "Chơi có dẫn dắt (guided play) hiệu quả hơn chơi tự do khi cần học một kiến thức cụ thể"
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Phân tích tổng hợp 2022: chơi có dẫn dắt cho kết quả toán sớm và một số kỹ năng tốt hơn so với dạy trực tiếp; nhiều kết quả khác chưa đủ chắc.",
+   "muc_tieu": [
+    "Hứng thú học",
+    "Toán sớm",
+    "Ngôn ngữ",
+    "Chức năng điều hành"
+   ],
+   "tuoi": {
+    "4-5": "Rất phù hợp, là cách chính",
+    "5-6": "Rất phù hợp, thêm luật chơi phức tạp hơn"
+   },
+   "dang_hoat_dong": [
+    "Trò chơi có mục tiêu",
+    "Nhập vai",
+    "Sân chơi Discovery"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Ngoài màn hình",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "Chơi tự do không dẫn dắt ít hiệu quả cho mục tiêu học cụ thể",
+    "Phần thưởng ảo không phải là chơi"
+   ],
+   "so_hoa": "Cao",
+   "hoat_dong_thuc_te": [
+    "Chơi bán hàng đếm xu",
+    "Trốn tìm đồ vật theo màu"
+   ],
+   "skill_ids": [
+    "TO.TIEN.01",
+    "TD.QS.01",
+    "KP.ST.D04"
+   ],
+   "knowledge_ids": [
+    "KN.PP.CHOI"
+   ],
+   "engines": [
+    "E01",
+    "E05",
+    "E06",
+    "E14"
+   ],
+   "mau": [
+    "CC-08",
+    "MT-06",
+    "MT-07"
+   ],
+   "nghien_cuu": "doi-chieu"
+  },
+  {
+   "id": "PP-INQ",
+   "ten": "Học qua khám phá có dẫn dắt",
+   "ten_en": "Inquiry-based (guided discovery)",
+   "nguon": [
+    {
+     "t": "Alfieri và cộng sự (2011). Does discovery-based instruction enhance learning? Journal of Educational Psychology 103(1).",
+     "loai": "Phân tích tổng hợp",
+     "url": "https://www.fisme.science.uu.nl/publicaties/literatuur/2011_alfieri_discovery_learning.pdf",
+     "da_tra": true
+    }
+   ],
+   "nguyen_tac": [
+    "Đặt câu hỏi, dự đoán, thử, quan sát, nói lại",
+    "Khám phá có hỗ trợ (gợi ý, phản hồi, yêu cầu giải thích) chứ không để bé tự mò"
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Phân tích tổng hợp 2011: khám phá không hướng dẫn kém dạy trực tiếp; khám phá có hướng dẫn tốt hơn các cách khác.",
+   "muc_tieu": [
+    "Tư duy khoa học",
+    "Nhân quả",
+    "Đặt câu hỏi"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp với câu hỏi đơn giản, một biến",
+    "5-6": "Phù hợp, thêm dự đoán và so sánh hai lần thử"
+   },
+   "dang_hoat_dong": [
+    "Dự đoán rồi quan sát",
+    "Mô phỏng thí nghiệm",
+    "Câu đố manh mối"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Ngoài màn hình"
+   ],
+   "gioi_han": [
+    "Không để bé đoán mò quá lâu, sau 2 lần sai phải có gợi ý",
+    "Mô phỏng không thay trải nghiệm thật"
+   ],
+   "so_hoa": "Vừa",
+   "hoat_dong_thuc_te": [
+    "Thả đồ vào chậu nước xem chìm nổi",
+    "Soi bóng đèn pin"
+   ],
+   "skill_ids": [
+    "KP.KH.03",
+    "KP.TG.06",
+    "TD.LG.13",
+    "TD.NQ.01"
+   ],
+   "knowledge_ids": [
+    "KN.KH.CHIM-NOI",
+    "KN.KH.ANH-SANG"
+   ],
+   "engines": [
+    "E11",
+    "E10",
+    "E01"
+   ],
+   "mau": [
+    "CC-19",
+    "MX-06",
+    "MT-06"
+   ],
+   "nghien_cuu": "doi-chieu"
+  },
+  {
+   "id": "PP-EXP",
+   "ten": "Học qua trải nghiệm",
+   "ten_en": "Experiential learning",
+   "nguon": [
+    {
+     "t": "Kolb (1984). Experiential Learning; Dewey (1938). Experience and Education.",
+     "loai": "Sách gốc",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Làm thật, cảm nhận, nghĩ lại, làm lại",
+    "Gắn với việc hằng ngày của bé"
+   ],
+   "chung_cu": "D",
+   "chung_cu_ghi": "Nền lý thuyết vững; bằng chứng định lượng riêng cho mầm non còn ít.",
+   "muc_tieu": [
+    "Kỹ năng sống",
+    "Tự lập",
+    "Vận dụng ngoài đời"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp, việc ngắn 3–5 phút",
+    "5-6": "Phù hợp, việc dài hơn, bé tự kể lại"
+   },
+   "dang_hoat_dong": [
+    "Hoạt động ngoài màn hình",
+    "Mô phỏng việc nhà rồi làm thật"
+   ],
+   "cach_truyen_dat": [
+    "Ngoài màn hình",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "App chỉ hướng dẫn và ghi đã tham gia; bố mẹ xác nhận",
+    "Hoàn thành game không phải đã thành thạo (D24)"
+   ],
+   "so_hoa": "Thấp",
+   "hoat_dong_thuc_te": [
+    "Rót nước",
+    "Gấp khăn",
+    "Chăm cây"
+   ],
+   "skill_ids": [
+    "KS.TP.01",
+    "KS.TN.01",
+    "TD.VDg.01"
+   ],
+   "knowledge_ids": [
+    "KN.KS.VIEC-NHA"
+   ],
+   "engines": [
+    "E15",
+    "E11"
+   ],
+   "mau": [
+    "CC-26",
+    "MT-11",
+    "MT-12"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-MULTI",
+   "ten": "Đa giác quan",
+   "ten_en": "Multisensory learning",
+   "nguon": [
+    {
+     "t": "Shams và Seitz (2008). Benefits of multisensory learning. Trends in Cognitive Sciences 12(11).",
+     "loai": "Tổng quan",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Pashler và cộng sự (2008). Learning styles: concepts and evidence. Psychological Science in the Public Interest 9(3). (Không có bằng chứng cho \"phong cách học\" theo giác quan.)",
+     "loai": "Tổng quan",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Cùng một kiến thức đi qua mắt, tai, tay (nhìn, nghe Lu đọc, chạm và kéo)",
+    "Không chia trẻ theo \"phong cách học\""
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Kết hợp nhiều giác quan giúp nhận biết và ghi nhớ tốt hơn trong nhiều thí nghiệm; ý tưởng \"mỗi trẻ một phong cách học\" không có bằng chứng.",
+   "muc_tieu": [
+    "Nhận biết chữ, số",
+    "Ghi nhớ",
+    "Cảm quan"
+   ],
+   "tuoi": {
+    "4-5": "Rất phù hợp",
+    "5-6": "Rất phù hợp"
+   },
+   "dang_hoat_dong": [
+    "Chạm và nghe",
+    "Tô theo nét có lời đọc",
+    "Ghép âm thanh với hình"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Ngoài màn hình"
+   ],
+   "gioi_han": [
+    "Màn hình chỉ có nhìn, nghe, chạm; xúc giác, khứu giác cần đồ thật",
+    "Quá nhiều hiệu ứng gây phân tán"
+   ],
+   "so_hoa": "Vừa",
+   "hoat_dong_thuc_te": [
+    "Sờ chữ cắt bằng giấy nhám",
+    "Đoán đồ vật trong túi kín"
+   ],
+   "skill_ids": [
+    "TV.CC.02",
+    "TO.SO.01",
+    "KP.AN.D01"
+   ],
+   "knowledge_ids": [
+    "KN.TV.CHU-CAI"
+   ],
+   "engines": [
+    "E01",
+    "E13",
+    "E12"
+   ],
+   "mau": [
+    "CC-01",
+    "CC-14",
+    "MT-02"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-SCAF",
+   "ten": "Giàn giáo (hỗ trợ giảm dần)",
+   "ten_en": "Scaffolding",
+   "nguon": [
+    {
+     "t": "Wood, Bruner và Ross (1976). The role of tutoring in problem solving. Journal of Child Psychology and Psychiatry 17(2).",
+     "loai": "Nghiên cứu gốc",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Vygotsky (1978). Mind in Society (vùng phát triển gần).",
+     "loai": "Sách gốc",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Làm mẫu, làm cùng, tự làm",
+    "Gợi ý tăng dần theo số lần sai, rút bớt khi bé làm được"
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Nền lý thuyết mạnh và được dùng rộng rãi; hiệu quả phụ thuộc chất lượng gợi ý.",
+   "muc_tieu": [
+    "Tự lập trong học",
+    "Vượt mức hiện tại vừa sức"
+   ],
+   "tuoi": {
+    "4-5": "Rất phù hợp",
+    "5-6": "Rất phù hợp"
+   },
+   "dang_hoat_dong": [
+    "Tô chữ 3 bước mẫu, hỗ trợ, độc lập",
+    "Gợi ý sau 2 lần sai",
+    "Hai mức tuổi"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "Gợi ý quá sớm làm bé ỷ lại",
+    "Cần dữ liệu lần thử để giảm hỗ trợ"
+   ],
+   "so_hoa": "Cao",
+   "hoat_dong_thuc_te": [
+    "Bố mẹ cầm tay tập tô rồi buông dần"
+   ],
+   "skill_ids": [
+    "TV.VT.01",
+    "TO.SO.02",
+    "TD.KG.11"
+   ],
+   "knowledge_ids": [
+    "KN.PP.GIAN-GIAO"
+   ],
+   "engines": [
+    "E13",
+    "E01",
+    "E06"
+   ],
+   "mau": [
+    "MX-08",
+    "MT-03",
+    "MT-08"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-SPACE",
+   "ten": "Lặp lại cách quãng",
+   "ten_en": "Spaced repetition",
+   "nguon": [
+    {
+     "t": "Vlach và Sandhofer (2012). Distributing learning over time: the spacing effect in children's acquisition and generalization of science concepts. Child Development 83(4).",
+     "loai": "Thực nghiệm với trẻ mầm non",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3399982",
+     "da_tra": true
+    },
+    {
+     "t": "Cepeda và cộng sự (2006). Distributed practice in verbal recall tasks: a review and quantitative synthesis. Psychological Bulletin 132(3).",
+     "loai": "Phân tích tổng hợp",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Ôn lại kiến thức sau vài ngày thay vì dồn một lần",
+    "Mỗi lần ôn đổi bối cảnh một chút"
+   ],
+   "chung_cu": "A",
+   "chung_cu_ghi": "Hiệu ứng cách quãng rất vững ở người lớn; thực nghiệm 2012 cho thấy trẻ mầm non nhớ và khái quát tốt hơn khi học cách quãng.",
+   "muc_tieu": [
+    "Nhớ lâu",
+    "Khái quát kiến thức"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp, do hệ thống tự xếp lịch",
+    "5-6": "Phù hợp"
+   },
+   "dang_hoat_dong": [
+    "Thẻ ôn trong buổi sau 1, 3, 7 buổi",
+    "Ngân hàng luyện tập không giới hạn"
+   ],
+   "cach_truyen_dat": [
+    "Trên app"
+   ],
+   "gioi_han": [
+    "Cần luật lịch ôn trong ngân hàng luyện tập (luật đơn giản theo D07)",
+    "Không biến ôn thành kiểm tra áp lực (D06)"
+   ],
+   "so_hoa": "Cao",
+   "hoat_dong_thuc_te": [
+    "Bố mẹ hỏi lại chữ đã học khi đi đường"
+   ],
+   "skill_ids": [
+    "TO.SO.05",
+    "TV.CC.02",
+    "EN.EN.07"
+   ],
+   "knowledge_ids": [
+    "KN.PP.ON-TAP"
+   ],
+   "engines": [
+    "Tất cả engine qua seed biến thể"
+   ],
+   "mau": [
+    "MX-11"
+   ],
+   "nghien_cuu": "doi-chieu"
+  },
+  {
+   "id": "PP-RETR",
+   "ten": "Luyện nhớ lại (truy xuất)",
+   "ten_en": "Retrieval practice",
+   "nguon": [
+    {
+     "t": "Roediger và Karpicke (2006). Test-enhanced learning. Psychological Science 17(3).",
+     "loai": "Thực nghiệm",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Dunlosky và cộng sự (2013). Improving students' learning with effective learning techniques. Psychological Science in the Public Interest 14(1).",
+     "loai": "Tổng quan",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Bé tự nhớ lại khi không nhìn thấy, thay vì xem lại",
+    "Luôn có phản hồi đúng sau khi nhớ lại"
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Rất mạnh ở học sinh và người lớn; nghiên cứu ở trẻ 4–6 tuổi ít hơn nên xếp mức B cho Lu.",
+   "muc_tieu": [
+    "Ghi nhớ",
+    "Tự tin"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp ở dạng trò chơi (che lại rồi hỏi)",
+    "5-6": "Phù hợp"
+   },
+   "dang_hoat_dong": [
+    "Vật nào biến mất",
+    "Nhìn nhanh nhớ số",
+    "Ghi nhớ vị trí",
+    "Câu hỏi nhớ lại cuối buổi"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "Có nút Xem lại để không gây căng thẳng",
+    "Không chấm điểm trí nhớ"
+   ],
+   "so_hoa": "Cao",
+   "hoat_dong_thuc_te": [
+    "Kim's game: che khay đồ, hỏi món nào mất"
+   ],
+   "skill_ids": [
+    "TD.TN.05",
+    "TD.TN.11",
+    "TD.TN.01"
+   ],
+   "knowledge_ids": [
+    "KN.PP.NHO-LAI"
+   ],
+   "engines": [
+    "E06",
+    "E01",
+    "E05"
+   ],
+   "mau": [
+    "MX-03",
+    "MX-11",
+    "MT-07"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-STORY",
+   "ten": "Học qua câu chuyện",
+   "ten_en": "Story-based / dialogic reading",
+   "nguon": [
+    {
+     "t": "Mol, Bus và de Jong (2009). Interactive book reading in early education: a tool to stimulate print knowledge as well as oral language. Review of Educational Research 79(2).",
+     "loai": "Phân tích tổng hợp",
+     "url": "https://searchworks.jioinstitute.edu.in/articles/eric__EJ879465",
+     "da_tra": true
+    }
+   ],
+   "nguyen_tac": [
+    "Đọc truyện có hỏi đáp (đọc đối thoại)",
+    "Bé đoán, chọn diễn biến, kể lại"
+   ],
+   "chung_cu": "A",
+   "chung_cu_ghi": "Phân tích tổng hợp 2009: đọc sách tương tác cải thiện ngôn ngữ nói và hiểu biết về chữ ở trẻ mầm non.",
+   "muc_tieu": [
+    "Ngôn ngữ",
+    "Nghe hiểu",
+    "Tưởng tượng",
+    "Cảm xúc"
+   ],
+   "tuoi": {
+    "4-5": "Rất phù hợp, truyện 3–4 cảnh",
+    "5-6": "Rất phù hợp, thêm câu hỏi hiểu và tự kể"
+   },
+   "dang_hoat_dong": [
+    "Truyện rẽ nhánh",
+    "Xếp tranh kể chuyện",
+    "Bé làm tác giả"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "Lựa chọn diễn biến không chấm đúng sai",
+    "Bé kể lại cần người lớn lắng nghe"
+   ],
+   "so_hoa": "Cao",
+   "hoat_dong_thuc_te": [
+    "Bố mẹ đọc sách giấy và hỏi \"theo con chuyện gì xảy ra tiếp?\""
+   ],
+   "skill_ids": [
+    "TV.NG.01",
+    "TD.NQ.02",
+    "TD.TTg.03"
+   ],
+   "knowledge_ids": [
+    "KN.TV.TRUYEN"
+   ],
+   "engines": [
+    "E10",
+    "E04",
+    "E00"
+   ],
+   "mau": [
+    "CC-23",
+    "CC-07",
+    "MT-10"
+   ],
+   "nghien_cuu": "doi-chieu"
+  },
+  {
+   "id": "PP-SEL",
+   "ten": "Học cảm xúc xã hội",
+   "ten_en": "Social-emotional learning (SEL)",
+   "nguon": [
+    {
+     "t": "CASEL. Khung năng lực SEL 5 nhóm (tự nhận thức, tự quản lý, nhận thức xã hội, kỹ năng quan hệ, ra quyết định có trách nhiệm).",
+     "loai": "Tổ chức chuyên môn",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Durlak và cộng sự (2011). The impact of enhancing students' social and emotional learning. Child Development 82(1). (Chủ yếu học sinh phổ thông.)",
+     "loai": "Phân tích tổng hợp",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Bierman và cộng sự (2008). Promoting academic and social-emotional school readiness: the Head Start REDI program. Child Development 79(6).",
+     "loai": "Thử nghiệm ngẫu nhiên",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Nhận biết, gọi tên, điều chỉnh cảm xúc; thấu cảm; giải quyết xung đột",
+    "Không chấm điểm đạo đức (D04)"
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Rất mạnh ở học sinh phổ thông (2011); ở mầm non có thử nghiệm tốt (Head Start REDI) với chương trình có giáo viên.",
+   "muc_tieu": [
+    "EQ",
+    "Kỹ năng xã hội",
+    "Tự điều chỉnh"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp, cảm xúc cơ bản",
+    "5-6": "Phù hợp, nguyên nhân cảm xúc và nhiều cách xử lý"
+   },
+   "dang_hoat_dong": [
+    "Truyện EQ rẽ nhánh",
+    "Hỏi cảm xúc đầu buổi",
+    "Nhập vai"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "App không thay tương tác thật với người",
+    "Giữ chương trình EQ riêng như tam yêu cầu"
+   ],
+   "so_hoa": "Vừa",
+   "hoat_dong_thuc_te": [
+    "Gọi tên cảm xúc trong bữa tối",
+    "Thở bóng bay khi giận"
+   ],
+   "skill_ids": [
+    "EQ.CX.01",
+    "EQ.XH.01",
+    "EQ.CX.05"
+   ],
+   "knowledge_ids": [
+    "KN.EQ.CAM-XUC"
+   ],
+   "engines": [
+    "E10",
+    "E01"
+   ],
+   "mau": [
+    "CC-22"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-STEM",
+   "ten": "STEM sớm",
+   "ten_en": "Early STEM",
+   "nguon": [
+    {
+     "t": "National Research Council (2009). Mathematics Learning in Early Childhood: Paths Toward Excellence and Equity.",
+     "loai": "Báo cáo chính thức",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Clements và Sarama (2008, 2011). Building Blocks: thử nghiệm chương trình toán mầm non.",
+     "loai": "Thử nghiệm ngẫu nhiên",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Uttal và cộng sự (2013). The malleability of spatial skills: a meta-analysis of training studies. Psychological Bulletin 139(2).",
+     "loai": "Phân tích tổng hợp",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Toán sớm theo lộ trình phát triển (đếm, số, hình, đo, quy luật)",
+    "Không gian và hình khối luyện được; liên hệ với toán"
+   ],
+   "chung_cu": "A",
+   "chung_cu_ghi": "Báo cáo NRC 2009 và thử nghiệm Building Blocks cho thấy toán mầm non có lộ trình cải thiện kết quả; phân tích tổng hợp 2013: kỹ năng không gian luyện được.",
+   "muc_tieu": [
+    "Toán",
+    "Không gian",
+    "Khoa học",
+    "Tư duy máy tính (lệnh tuần tự)"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp, số 1–10",
+    "5-6": "Phù hợp, số 11–20, đo, thời gian"
+   },
+   "dang_hoat_dong": [
+    "Đếm chạm",
+    "Khung mười",
+    "Xếp hình",
+    "Thẻ lệnh",
+    "Mô phỏng khoa học"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Ngoài màn hình"
+   ],
+   "gioi_han": [
+    "Không đẩy phép tính viết trước tuổi",
+    "Hình học cần đồ thật để xoay, ghép"
+   ],
+   "so_hoa": "Cao",
+   "hoat_dong_thuc_te": [
+    "Đếm đồ vật thật",
+    "Đo bằng gang tay"
+   ],
+   "skill_ids": [
+    "TO.DEM.02",
+    "TO.SO.06",
+    "TD.KG.10",
+    "TD.CD.01"
+   ],
+   "knowledge_ids": [
+    "KN.TO.SO",
+    "KN.TO.HINH"
+   ],
+   "engines": [
+    "E01",
+    "E02",
+    "E07",
+    "E08",
+    "E11"
+   ],
+   "mau": [
+    "CC-17",
+    "MT-04",
+    "CC-11"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-PHON",
+   "ten": "Âm vị học và âm vần",
+   "ten_en": "Phonics / phonological awareness",
+   "nguon": [
+    {
+     "t": "National Early Literacy Panel (2008). Developing Early Literacy (nhận thức âm vị dự báo khả năng đọc).",
+     "loai": "Báo cáo chính thức",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "National Reading Panel (2000). Teaching Children to Read (dạy âm vần có hệ thống).",
+     "loai": "Báo cáo chính thức",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Bộ GD&ĐT. Chương trình Giáo dục mầm non, Văn bản hợp nhất 01/VBHN-BGDĐT ngày 13/4/2021.",
+     "loai": "Văn bản chính thức",
+     "url": "https://luatvietnam.vn/giao-duc/van-ban-hop-nhat-01-vbhn-bgddt-bo-giao-duc-va-dao-tao-150202-d5.html",
+     "da_tra": true
+    }
+   ],
+   "nguyen_tac": [
+    "4–5 tuổi: nghe tiếng, vần, âm đầu bằng tai (chưa cần chữ)",
+    "5–6 tuổi: làm quen 29 chữ cái, âm đầu gắn với chữ; tập tô từ 5 tuổi"
+   ],
+   "chung_cu": "A",
+   "chung_cu_ghi": "Nhận thức âm vị là yếu tố dự báo mạnh khả năng đọc (NELP 2008); dạy âm vần có hệ thống hiệu quả (NRP 2000). Các nghiên cứu chủ yếu bằng tiếng Anh; tiếng Việt cần đối chiếu Chương trình GDMN.",
+   "muc_tieu": [
+    "Chuẩn bị đọc",
+    "Chữ cái tiếng Việt"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp ở dạng nghe, vỗ tay tiếng",
+    "5-6": "Rất phù hợp, chuẩn bị lớp 1"
+   },
+   "dang_hoat_dong": [
+    "Vỗ tay đếm tiếng",
+    "Âm đầu",
+    "Tìm chữ",
+    "Tập tô"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Ngoài màn hình",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "Không dạy đánh vần ép buộc trước tuổi",
+    "Tiếng Anh dạy riêng, không trộn (D44)"
+   ],
+   "so_hoa": "Cao",
+   "hoat_dong_thuc_te": [
+    "Đi chợ tìm đồ bắt đầu bằng âm bờ"
+   ],
+   "skill_ids": [
+    "TV.AM.01",
+    "TV.AM.04",
+    "TV.CC.02"
+   ],
+   "knowledge_ids": [
+    "KN.TV.AM-DAU"
+   ],
+   "engines": [
+    "E01",
+    "E13",
+    "E12"
+   ],
+   "mau": [
+    "MT-09",
+    "CC-01",
+    "CC-14"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-PROJ",
+   "ten": "Học theo dự án nhỏ",
+   "ten_en": "Project-based (project approach)",
+   "nguon": [
+    {
+     "t": "Katz và Chard (2000). Engaging Children's Minds: The Project Approach.",
+     "loai": "Sách chuyên môn",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Một chủ đề kéo dài nhiều buổi, bé hỏi, tìm hiểu, làm sản phẩm, trình bày",
+    "Gắn với 10 vùng đất của Lu"
+   ],
+   "chung_cu": "C",
+   "chung_cu_ghi": "Được dùng rộng rãi (Reggio Emilia, Project Approach); nghiên cứu định lượng ở mầm non còn ít.",
+   "muc_tieu": [
+    "Tự lập",
+    "Sáng tạo",
+    "Ngôn ngữ",
+    "Hợp tác"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp với dự án 2–3 buổi",
+    "5-6": "Phù hợp với dự án 1–2 tuần"
+   },
+   "dang_hoat_dong": [
+    "Dự án cuối vùng (lễ hội)",
+    "Sản phẩm thật cùng bố mẹ"
+   ],
+   "cach_truyen_dat": [
+    "Ngoài màn hình",
+    "Cùng bố mẹ",
+    "Trên app"
+   ],
+   "gioi_han": [
+    "Cần người lớn đồng hành",
+    "App chỉ khởi động và lưu ảnh sản phẩm"
+   ],
+   "so_hoa": "Thấp",
+   "hoat_dong_thuc_te": [
+    "Làm đèn lồng",
+    "Trồng đậu và vẽ nhật ký"
+   ],
+   "skill_ids": [
+    "KP.ST.02",
+    "KP.ST.05",
+    "KS.TN.01"
+   ],
+   "knowledge_ids": [
+    "KN.PP.DU-AN"
+   ],
+   "engines": [
+    "E15",
+    "E14"
+   ],
+   "mau": [
+    "MT-11"
+   ],
+   "nghien_cuu": "tong-quan"
+  },
+  {
+   "id": "PP-MON",
+   "ten": "Lấy cảm hứng từ Montessori",
+   "ten_en": "Montessori-inspired",
+   "nguon": [
+    {
+     "t": "Maria Montessori (1912). The Montessori Method; (1967) The Discovery of the Child.",
+     "loai": "Sách gốc",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Lillard (2017). Montessori: The Science Behind the Genius (bản 3).",
+     "loai": "Sách chuyên môn",
+     "url": null,
+     "da_tra": false
+    },
+    {
+     "t": "Marshall (2017). Montessori education: a review of the evidence base. npj Science of Learning 2.",
+     "loai": "Tổng quan",
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6161506/",
+     "da_tra": true
+    },
+    {
+     "t": "Randolph và cộng sự (2023). Montessori education's impact on academic and nonacademic outcomes: a systematic review. Campbell Systematic Reviews 19(3).",
+     "loai": "Phân tích tổng hợp",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10406168/",
+     "da_tra": true
+    }
+   ],
+   "nguyen_tac": [
+    "Đồ dùng tự sửa lỗi (bé tự thấy chỗ sai)",
+    "Tách một khó khăn mỗi lần",
+    "Đi từ cụ thể đến trừu tượng",
+    "Thực hành cuộc sống, tự lập, tôn trọng nhịp của bé"
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Tổng quan hệ thống 2023 (Campbell): giáo dục Montessori có tác động dương ở nhiều kết quả học tập và phi học tập, chất lượng bằng chứng còn khác nhau. Các kết quả này là của lớp Montessori đầy đủ với giáo viên được đào tạo, không phải của app.",
+   "muc_tieu": [
+    "Cảm quan",
+    "Toán cụ thể",
+    "Tự lập",
+    "Tập trung"
+   ],
+   "tuoi": {
+    "4-5": "Rất phù hợp (cảm quan, thực hành cuộc sống)",
+    "5-6": "Rất phù hợp (toán, ngôn ngữ)"
+   },
+   "dang_hoat_dong": [
+    "Xếp theo kích thước, sắc độ",
+    "Thanh số",
+    "Tái tạo mô hình",
+    "Việc nhà thật"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Ngoài màn hình",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "Lu không phải chương trình Montessori chuẩn",
+    "Montessori cốt lõi là đồ thật và môi trường chuẩn bị; app chỉ mô phỏng phần nhìn được",
+    "Không số hóa mọi hoạt động"
+   ],
+   "so_hoa": "Vừa (A/B/C từng hoạt động)",
+   "hoat_dong_thuc_te": [
+    "Rót nước",
+    "Gấp khăn",
+    "Xếp cốc lồng"
+   ],
+   "skill_ids": [
+    "TD.LG.02",
+    "TO.SO.02",
+    "KS.TP.01"
+   ],
+   "knowledge_ids": [
+    "KN.MON.CAM-QUAN"
+   ],
+   "engines": [
+    "E04",
+    "E01",
+    "E06",
+    "E11",
+    "E15"
+   ],
+   "mau": [
+    "MT-01",
+    "MT-02",
+    "MT-03",
+    "MT-08"
+   ],
+   "nghien_cuu": "doi-chieu"
+  },
+  {
+   "id": "PP-COG",
+   "ten": "Phát triển nhận thức toàn diện",
+   "ten_en": "Whole-brain cognitive development (18 năng lực)",
+   "nguon": [
+    {
+     "t": "Diamond và Lee (2011). Interventions shown to aid executive function development in children 4 to 12 years old. Science 333.",
+     "loai": "Tổng quan",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21852486/",
+     "da_tra": true
+    },
+    {
+     "t": "Center on the Developing Child, Harvard. How Early Experiences Shape the Development of Executive Function.",
+     "loai": "Tổ chức chuyên môn",
+     "url": "https://developingchild.harvard.edu/wp-content/uploads/2024/10/How-Early-Experiences-Shape-the-Development-of-Executive-Function.pdf",
+     "da_tra": true
+    },
+    {
+     "t": "Nielsen và cộng sự (2013). An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity MRI. PLOS ONE 8(8). (Không có người \"thuận não trái/phải\".)",
+     "loai": "Nghiên cứu",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23967180/",
+     "da_tra": true
+    },
+    {
+     "t": "Melby-Lervåg và Hulme (2013). Is working memory training effective? A meta-analytic review. Developmental Psychology 49(2). (Luyện trí nhớ làm việc ít chuyển sang năng lực khác.)",
+     "loai": "Phân tích tổng hợp",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/22612437/",
+     "da_tra": true
+    },
+    {
+     "t": "Sala và Gobet (2017). When the music's over: does music skill transfer to children's and young adolescents' cognitive and academic skills? Educational Research Review 20.",
+     "loai": "Phân tích tổng hợp",
+     "url": null,
+     "da_tra": false
+    }
+   ],
+   "nguyen_tac": [
+    "Luyện nhiều năng lực nhận thức qua hoạt động có nội dung thật (toán, chữ, khoa học), không luyện \"não\" tách rời",
+    "Hai bán cầu não luôn làm việc cùng nhau; không gắn nhãn trẻ",
+    "Vận động, nghệ thuật, chơi giả vờ hỗ trợ chức năng điều hành"
+   ],
+   "chung_cu": "B",
+   "chung_cu_ghi": "Chức năng điều hành cải thiện được qua chương trình có luyện tập và tăng độ khó (Diamond và Lee 2011). Không có người \"thuận não trái/phải\" (Nielsen 2013). Luyện trí nhớ làm việc hay học nhạc ít chuyển sang IQ hay năng lực khác (2013, 2017).",
+   "muc_tieu": [
+    "18 năng lực ở mục năng lực"
+   ],
+   "tuoi": {
+    "4-5": "Phù hợp",
+    "5-6": "Phù hợp"
+   },
+   "dang_hoat_dong": [
+    "Toàn bộ 26 cơ chế và 20 mẫu đại diện"
+   ],
+   "cach_truyen_dat": [
+    "Trên app",
+    "Ngoài màn hình",
+    "Cùng bố mẹ"
+   ],
+   "gioi_han": [
+    "Không hứa tăng IQ, kích hoạt não phải, tạo thiên tài",
+    "Không đo IQ; chỉ ghi tiến bộ theo kỹ năng"
+   ],
+   "so_hoa": "Cao (trừ vận động)",
+   "hoat_dong_thuc_te": [
+    "Vận động hai tay",
+    "Chơi giả vờ"
+   ],
+   "skill_ids": [
+    "TD.TT.05",
+    "TD.TN.D01",
+    "TD.CY.01"
+   ],
+   "knowledge_ids": [
+    "KN.NT.DIEU-HANH"
+   ],
+   "engines": [
+    "Tất cả"
+   ],
+   "mau": [
+    "MX-04",
+    "MT-05",
+    "MT-07"
+   ],
+   "nghien_cuu": "doi-chieu"
+  }
+ ],
+ "abilities": [
+  {
+   "id": "NL01",
+   "ten": "Tư duy logic",
+   "mo_ta": "Phân loại, quy luật, suy luận, nếu thì",
+   "so_ky_nang": 16,
+   "muc": "Đủ",
+   "skill_ids": [
+    "TD.LG.01",
+    "TD.LG.02",
+    "TD.LG.03",
+    "TD.LG.04",
+    "TD.LG.05",
+    "TD.LG.06",
+    "TD.LG.07",
+    "TD.LG.08",
+    "TD.LG.09",
+    "TD.LG.10",
+    "TD.LG.11",
+    "TD.LG.12",
+    "TD.LG.13",
+    "TD.LG.14",
+    "TD.NQ.01",
+    "TD.NQ.02"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-06",
+    "MT-03"
+   ]
+  },
+  {
+   "id": "NL02",
+   "ten": "Toán học",
+   "mo_ta": "Đếm, số, tách gộp, đo, hình",
+   "so_ky_nang": 47,
+   "muc": "Đủ",
+   "skill_ids": [
+    "TO.DEM.01",
+    "TO.DEM.02",
+    "TO.DEM.03",
+    "TO.DEM.04",
+    "TO.DEM.05",
+    "TO.DO.01",
+    "TO.DO.02",
+    "TO.DO.03",
+    "TO.DO.04",
+    "TO.DO.05",
+    "TO.DO.06",
+    "TO.HINH.01",
+    "TO.HINH.02",
+    "TO.HINH.03",
+    "TO.HINH.04",
+    "TO.HINH.05",
+    "TO.HINH.06",
+    "TO.SO.01",
+    "TO.SO.02",
+    "TO.SO.03",
+    "TO.SO.04",
+    "TO.SO.05",
+    "TO.SO.06",
+    "TO.SS.01",
+    "TO.SS.02",
+    "TO.SS.03",
+    "TO.SS.04",
+    "TO.STAT.01",
+    "TO.STAT.02",
+    "TO.TG.01",
+    "TO.TG.02",
+    "TO.TG.03",
+    "TO.TG.04",
+    "TO.TG.05",
+    "TO.TG.06",
+    "TO.TG.07",
+    "TO.TG.08",
+    "TO.TG.09",
+    "TO.TGIAN.01",
+    "TO.TGIAN.02",
+    "TO.TGIAN.03",
+    "TO.TGIAN.04",
+    "TO.TIEN.01",
+    "TO.TIEN.02",
+    "TO.TIEN.03",
+    "TO.TIEN.D01",
+    "TO.TIEN.D02"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-03",
+    "CC-17",
+    "MT-01",
+    "MT-03",
+    "MT-04"
+   ]
+  },
+  {
+   "id": "NL03",
+   "ten": "Ngôn ngữ",
+   "mo_ta": "Nghe hiểu, từ, câu, kể chuyện (tiếng Việt; tiếng Anh tách riêng)",
+   "so_ky_nang": 18,
+   "muc": "Đủ",
+   "skill_ids": [
+    "TV.NG.01",
+    "TV.NG.02",
+    "TV.NG.03",
+    "TV.NG.04",
+    "TV.NG.05",
+    "TV.NG.06",
+    "TV.NG.07",
+    "TV.NG.08",
+    "TV.NG.09",
+    "TV.NG.10",
+    "TV.NG.P01",
+    "TV.TU.01",
+    "TV.TU.02",
+    "TV.TU.03",
+    "TV.TU.04",
+    "TV.TU.05",
+    "TV.TU.06",
+    "TV.TU.07"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-14",
+    "MT-09",
+    "MT-10"
+   ]
+  },
+  {
+   "id": "NL04",
+   "ten": "Phân tích",
+   "mo_ta": "So sánh, tìm điểm khác, tách bộ phận",
+   "so_ky_nang": 14,
+   "muc": "Đủ",
+   "skill_ids": [
+    "KP.TG.04",
+    "TD.QH.01",
+    "TD.QH.02",
+    "TD.QS.01",
+    "TD.QS.02",
+    "TD.QS.03",
+    "TD.QS.04",
+    "TD.QS.05",
+    "TD.QS.06",
+    "TD.QS.07",
+    "TD.QS.08",
+    "TD.QS.09",
+    "TD.QS.10",
+    "TD.QS.11"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-05",
+    "MT-01",
+    "MT-02",
+    "MT-05",
+    "MT-06",
+    "MT-08"
+   ]
+  },
+  {
+   "id": "NL05",
+   "ten": "Tư duy tuần tự",
+   "mo_ta": "Theo bước, trình tự, lệnh nối tiếp",
+   "so_ky_nang": 15,
+   "muc": "Đủ",
+   "skill_ids": [
+    "KP.TG.05",
+    "KS.SH.01",
+    "KS.VS.01",
+    "TD.CD.01",
+    "TD.CD.02",
+    "TD.CD.03",
+    "TD.CD.04",
+    "TD.CD.05",
+    "TD.CD.06",
+    "TD.TN.03",
+    "TD.TN.08",
+    "TO.TGIAN.01",
+    "TO.TGIAN.02",
+    "TO.TGIAN.03",
+    "TO.TGIAN.04"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "MT-01",
+    "MT-02",
+    "MT-11",
+    "MX-04"
+   ]
+  },
+  {
+   "id": "NL06",
+   "ten": "Tư duy không gian",
+   "mo_ta": "Vị trí, hướng, xoay, đối xứng, ghép hình",
+   "so_ky_nang": 21,
+   "muc": "Đủ",
+   "skill_ids": [
+    "TD.KG.01",
+    "TD.KG.02",
+    "TD.KG.03",
+    "TD.KG.04",
+    "TD.KG.05",
+    "TD.KG.06",
+    "TD.KG.07",
+    "TD.KG.08",
+    "TD.KG.09",
+    "TD.KG.10",
+    "TD.KG.11",
+    "TD.KG.12",
+    "TD.KG.13",
+    "TD.KG.14",
+    "TD.TTg.01",
+    "TO.HINH.01",
+    "TO.HINH.02",
+    "TO.HINH.03",
+    "TO.HINH.04",
+    "TO.HINH.05",
+    "TO.HINH.06"
+   ],
+   "de_xuat": [
+    "TD.KG.15",
+    "TD.KG.16"
+   ],
+   "mau": [
+    "CC-11",
+    "MT-03",
+    "MT-05",
+    "MT-07",
+    "MT-08"
+   ]
+  },
+  {
+   "id": "NL07",
+   "ten": "Trí nhớ hình ảnh",
+   "mo_ta": "Nhớ hình, màu, vị trí đã thấy",
+   "so_ky_nang": 6,
+   "muc": "Đủ",
+   "skill_ids": [
+    "TD.TN.01",
+    "TD.TN.02",
+    "TD.TN.04",
+    "TD.TN.05",
+    "TD.TN.07",
+    "TD.TN.11"
+   ],
+   "de_xuat": [
+    "TD.TN.13"
+   ],
+   "mau": [
+    "CC-08",
+    "MT-07",
+    "MX-03"
+   ]
+  },
+  {
+   "id": "NL08",
+   "ten": "Trí nhớ thính giác",
+   "mo_ta": "Nhớ lời, âm, chuỗi âm thanh",
+   "so_ky_nang": 4,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "TD.GN.01",
+    "TD.TN.06",
+    "TD.TN.10",
+    "TD.TN.12"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-21",
+    "MT-09",
+    "MX-04"
+   ]
+  },
+  {
+   "id": "NL09",
+   "ten": "Trí nhớ làm việc",
+   "mo_ta": "Giữ thông tin trong đầu để làm việc",
+   "so_ky_nang": 5,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "TD.CY.01",
+    "TD.TN.08",
+    "TD.TN.09",
+    "TD.TN.D01",
+    "TD.TT.05"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "MT-04",
+    "MT-07",
+    "MT-08",
+    "MX-03",
+    "MX-04"
+   ]
+  },
+  {
+   "id": "NL10",
+   "ten": "Liên tưởng",
+   "mo_ta": "Nối sự vật theo quan hệ, công dụng, nơi sống",
+   "so_ky_nang": 5,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "KP.TG.03",
+    "KP.TG.07",
+    "TD.LG.04",
+    "TD.LG.05",
+    "TD.QH.01"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-05",
+    "CC-06",
+    "CC-08",
+    "MT-06"
+   ]
+  },
+  {
+   "id": "NL11",
+   "ten": "Tưởng tượng",
+   "mo_ta": "Hình dung điều chưa thấy, giả vờ",
+   "so_ky_nang": 3,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "TD.TTg.01",
+    "TD.TTg.02",
+    "TD.TTg.03"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-25",
+    "MT-10"
+   ]
+  },
+  {
+   "id": "NL12",
+   "ten": "Sáng tạo",
+   "mo_ta": "Tạo sản phẩm, nhiều cách giải quyết",
+   "so_ky_nang": 11,
+   "muc": "Đủ",
+   "skill_ids": [
+    "KP.ST.01",
+    "KP.ST.02",
+    "KP.ST.03",
+    "KP.ST.04",
+    "KP.ST.05",
+    "KP.ST.D01",
+    "KP.ST.D02",
+    "KP.ST.D03",
+    "KP.ST.D04",
+    "KP.ST.D05",
+    "TD.GQ.01"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-25",
+    "MT-10"
+   ]
+  },
+  {
+   "id": "NL13",
+   "ten": "Tư duy tổng thể",
+   "mo_ta": "Nhìn chi tiết nhận ra toàn cảnh, bộ phận và toàn thể",
+   "so_ky_nang": 3,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "TD.KG.04",
+    "TD.KG.08",
+    "TD.QH.02"
+   ],
+   "de_xuat": [
+    "TD.QH.03"
+   ],
+   "mau": [
+    "MT-05",
+    "MT-06"
+   ]
+  },
+  {
+   "id": "NL14",
+   "ten": "Cảm thụ âm nhạc",
+   "mo_ta": "Nhịp, to nhỏ, cao thấp, cảm xúc của nhạc",
+   "so_ky_nang": 9,
+   "muc": "Đủ",
+   "skill_ids": [
+    "KP.AN.01",
+    "KP.AN.02",
+    "KP.AN.03",
+    "KP.AN.04",
+    "KP.AN.D01",
+    "KP.AN.D02",
+    "KP.AN.D03",
+    "KP.AN.D04",
+    "KP.AN.D05"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "CC-21"
+   ]
+  },
+  {
+   "id": "NL15",
+   "ten": "Cảm thụ mỹ thuật",
+   "mo_ta": "Màu, sắc độ, bố cục, giữ gìn sản phẩm",
+   "so_ky_nang": 4,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "KP.AN.P01",
+    "KP.ST.01",
+    "KP.ST.D01",
+    "KP.ST.D02"
+   ],
+   "de_xuat": [
+    "TD.QS.12"
+   ],
+   "mau": [
+    "MT-02"
+   ]
+  },
+  {
+   "id": "NL16",
+   "ten": "Phối hợp tay mắt",
+   "mo_ta": "Tô, nối, kéo chính xác",
+   "so_ky_nang": 4,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "TO.SO.01",
+    "TV.VT.01",
+    "TV.VT.02",
+    "TV.VT.03"
+   ],
+   "de_xuat": [
+    "KP.VD.05"
+   ],
+   "mau": [
+    "CC-03",
+    "CC-14",
+    "CC-17",
+    "MT-12"
+   ]
+  },
+  {
+   "id": "NL17",
+   "ten": "Phối hợp hai bên cơ thể",
+   "mo_ta": "Hai tay, hai chân phối hợp",
+   "so_ky_nang": 3,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "KP.VD.02",
+    "KP.VD.03",
+    "KP.VD.P02"
+   ],
+   "de_xuat": [
+    "KP.VD.04"
+   ],
+   "mau": [
+    "MT-12"
+   ]
+  },
+  {
+   "id": "NL18",
+   "ten": "Giải quyết vấn đề",
+   "mo_ta": "Tìm cách, chọn công cụ, sửa lỗi",
+   "so_ky_nang": 5,
+   "muc": "Mỏng",
+   "skill_ids": [
+    "TD.CD.05",
+    "TD.GQ.01",
+    "TD.GQ.02",
+    "TD.LG.13",
+    "TD.VDg.01"
+   ],
+   "de_xuat": [],
+   "mau": [
+    "MT-11"
+   ]
+  }
+ ],
+ "new_skills": [
+  {
+   "id": "TD.QS.12",
+   "ten": "Phân biệt sắc độ màu",
+   "nhom": "Tư duy",
+   "nhanh": "Quan sát",
+   "tuoi": "4–6",
+   "muc_tieu": "Xếp 3–5 sắc độ một màu từ nhạt đến đậm.",
+   "mau": "MT-02",
+   "ly_do": "Chưa có kỹ năng sắc độ; MT-02 tạm gắn TD.LG.01, TD.QS.09"
+  },
+  {
+   "id": "TO.DO.07",
+   "ten": "Xếp theo kích thước nhiều bậc",
+   "nhom": "Toán",
+   "nhanh": "Đo lường",
+   "tuoi": "5–6",
+   "muc_tieu": "Xếp 5 vật chênh nhau ít theo kích thước, dày mỏng.",
+   "mau": "MT-01",
+   "ly_do": "TD.LG.02 chỉ 3 vật, 4–5 tuổi"
+  },
+  {
+   "id": "TO.SO.07",
+   "ten": "Độ dài ứng với số (thanh số)",
+   "nhom": "Toán",
+   "nhanh": "Nhận biết số",
+   "tuoi": "4–6",
+   "muc_tieu": "Đếm đoạn trên thanh để biết số; ghép hai thanh thành thanh dài hơn.",
+   "mau": "MT-03",
+   "ly_do": "Chưa có cách biểu diễn số bằng độ dài"
+  },
+  {
+   "id": "TD.KG.15",
+   "ten": "Hoàn thiện hình đối xứng đơn giản",
+   "nhom": "Tư duy",
+   "nhanh": "Không gian",
+   "tuoi": "4–5",
+   "muc_tieu": "Chọn nửa còn lại của hình đối xứng ít ô.",
+   "mau": "MT-05",
+   "ly_do": "TD.KG.12 chỉ cho 5–6 tuổi"
+  },
+  {
+   "id": "TD.KG.16",
+   "ten": "Tái tạo mô hình theo mẫu",
+   "nhom": "Tư duy",
+   "nhanh": "Không gian",
+   "tuoi": "4–5",
+   "muc_tieu": "Xếp lại 3–4 khối hoặc ô giống hệt mẫu.",
+   "mau": "MT-08",
+   "ly_do": "TD.KG.11 là 5–6 tuổi, sơ đồ 3x3"
+  },
+  {
+   "id": "TD.TN.13",
+   "ten": "Ghi nhớ vị trí đồ vật",
+   "nhom": "Tư duy",
+   "nhanh": "Trí nhớ",
+   "tuoi": "4–5",
+   "muc_tieu": "Nhớ chỗ của 3 đồ vật sau khi bị che.",
+   "mau": "MT-07",
+   "ly_do": "TD.TN.11 (bản đồ) là 5–6 tuổi"
+  },
+  {
+   "id": "TD.QH.03",
+   "ten": "Nhận ra toàn thể từ chi tiết",
+   "nhom": "Tư duy",
+   "nhanh": "Quan hệ",
+   "tuoi": "4–6",
+   "muc_tieu": "Nhìn vài mảnh nhỏ đoán ra con vật, đồ vật.",
+   "mau": "MT-06",
+   "ly_do": "Tư duy tổng thể chỉ có ghép tranh"
+  },
+  {
+   "id": "KP.VD.04",
+   "ten": "Phối hợp hai tay",
+   "nhom": "Khám phá",
+   "nhanh": "Vận động",
+   "tuoi": "4–6",
+   "muc_tieu": "Một tay giữ, tay kia làm: gấp, xâu, vặn nắp (bố mẹ quan sát).",
+   "mau": "MT-12",
+   "ly_do": "Chưa có phối hợp hai bên cơ thể"
+  },
+  {
+   "id": "KP.VD.05",
+   "ten": "Vận động tinh của ngón tay",
+   "nhom": "Khám phá",
+   "nhanh": "Vận động",
+   "tuoi": "4–6",
+   "muc_tieu": "Nhặt, gắp, cài nút, xé dán (bố mẹ quan sát).",
+   "mau": "–",
+   "ly_do": "Chỉ có tập tô trên màn hình"
+  },
+  {
+   "id": "KS.TP.02",
+   "ten": "Rót và chuyển đồ",
+   "nhom": "Kỹ năng sống",
+   "nhanh": "Tự phục vụ",
+   "tuoi": "4–6",
+   "muc_tieu": "Rót nước, xúc hạt từ bát này sang bát khác không đổ (Thực hành cuộc sống).",
+   "mau": "–",
+   "ly_do": "Thiếu nhóm Thực hành cuộc sống Montessori"
+  },
+  {
+   "id": "KS.TP.03",
+   "ten": "Gấp quần áo, khăn",
+   "nhom": "Kỹ năng sống",
+   "nhanh": "Tự phục vụ",
+   "tuoi": "4–6",
+   "muc_tieu": "Gấp khăn, áo đơn giản và cất vào ngăn.",
+   "mau": "MT-12",
+   "ly_do": "KS.TP.01 chỉ có mặc, cởi"
+  },
+  {
+   "id": "KS.CS.02",
+   "ten": "Chăm sóc cây và con vật nuôi",
+   "nhom": "Kỹ năng sống",
+   "nhanh": "Chăm sóc",
+   "tuoi": "4–6",
+   "muc_tieu": "Tưới cây, cho vật nuôi ăn theo lịch cùng bố mẹ.",
+   "mau": "MT-11",
+   "ly_do": "KP.KH.01 là kiến thức, chưa có kỹ năng chăm sóc thật"
+  },
+  {
+   "id": "KP.TG.16",
+   "ten": "Đất, nước và địa cầu",
+   "nhom": "Khám phá",
+   "nhanh": "Thế giới quanh bé",
+   "tuoi": "5–6",
+   "muc_tieu": "Phân biệt đất liền và biển trên quả địa cầu, bản đồ đơn giản (Văn hóa Montessori).",
+   "mau": "–",
+   "ly_do": "Vùng Văn hóa của Montessori còn mỏng"
+  }
+ ],
+ "montessori": [
+  {
+   "vung": "Thực hành cuộc sống",
+   "en": "Practical Life",
+   "muc_dich": "Tự lập, phối hợp, tập trung, trật tự",
+   "hoat_dong": [
+    {
+     "ten": "Rót nước từ bình sang cốc",
+     "giao_cu": "Bình nhỏ có quai, 2 cốc, khay, khăn",
+     "huong_dan": "Làm mẫu chậm, không nói nhiều; bé làm lại; đổ thì lau bằng khăn",
+     "muc_tieu": "Phối hợp tay mắt, tập trung",
+     "tuoi": "4–5",
+     "thu_tu": 1,
+     "tu_sua_loi": "Nước tràn là bé tự thấy",
+     "loai": "C",
+     "skill_ids": [
+      "KS.TP.02"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Xúc hạt bằng thìa",
+     "giao_cu": "Hai bát, hạt đậu to, thìa",
+     "huong_dan": "Xúc từ trái sang phải",
+     "muc_tieu": "Vận động tinh",
+     "tuoi": "4–5",
+     "thu_tu": 2,
+     "tu_sua_loi": "Hạt rơi ra khay",
+     "loai": "C",
+     "skill_ids": [
+      "KP.VD.05"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Gấp khăn",
+     "giao_cu": "Khăn vuông có đường may chỉ dẫn",
+     "huong_dan": "Gấp đôi theo đường, rồi gấp đôi lần nữa",
+     "muc_tieu": "Phối hợp hai tay, trật tự",
+     "tuoi": "4–5",
+     "thu_tu": 3,
+     "tu_sua_loi": "Mép khăn không khớp",
+     "loai": "C",
+     "skill_ids": [
+      "KS.TP.03",
+      "KP.VD.04"
+     ],
+     "mau": "MT-12"
+    },
+    {
+     "ten": "Rửa tay theo bước",
+     "giao_cu": "Chậu, xà phòng, khăn",
+     "huong_dan": "Từng bước có thứ tự",
+     "muc_tieu": "Vệ sinh, tuần tự",
+     "tuoi": "4–5",
+     "thu_tu": 4,
+     "tu_sua_loi": "Tay còn bọt",
+     "loai": "B",
+     "skill_ids": [
+      "KS.VS.01"
+     ],
+     "mau": "CC-18"
+    },
+    {
+     "ten": "Sắp xếp, cất đồ chơi",
+     "giao_cu": "Khay, kệ có hình dán chỗ cất",
+     "huong_dan": "Lấy ra, chơi, cất đúng chỗ",
+     "muc_tieu": "Trật tự, trách nhiệm",
+     "tuoi": "4–6",
+     "thu_tu": 5,
+     "tu_sua_loi": "Hình dán trên kệ không khớp đồ",
+     "loai": "B",
+     "skill_ids": [
+      "KS.SX.01",
+      "KS.NN.01"
+     ],
+     "mau": "CC-06"
+    },
+    {
+     "ten": "Chăm sóc cây",
+     "giao_cu": "Bình tưới nhỏ, khăn lau lá",
+     "huong_dan": "Tưới gốc, lau lá, quan sát",
+     "muc_tieu": "Trách nhiệm, khoa học",
+     "tuoi": "4–6",
+     "thu_tu": 6,
+     "tu_sua_loi": "Đất khô hoặc đọng nước",
+     "loai": "B",
+     "skill_ids": [
+      "KS.CS.02",
+      "KP.KH.01"
+     ],
+     "mau": "MT-11"
+    },
+    {
+     "ten": "Cài nút, kéo khóa (khung mặc đồ)",
+     "giao_cu": "Áo có nút to, khóa kéo",
+     "huong_dan": "Từng nút từ trên xuống",
+     "muc_tieu": "Tự phục vụ, vận động tinh",
+     "tuoi": "4–6",
+     "thu_tu": 7,
+     "tu_sua_loi": "Nút lệch hàng",
+     "loai": "C",
+     "skill_ids": [
+      "KS.TP.01",
+      "KP.VD.05"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Ứng xử lịch sự",
+     "giao_cu": "Không cần đồ",
+     "huong_dan": "Nhập vai chào hỏi, xin phép, cảm ơn",
+     "muc_tieu": "Giao tiếp",
+     "tuoi": "4–6",
+     "thu_tu": 8,
+     "tu_sua_loi": "Người lớn phản hồi",
+     "loai": "B",
+     "skill_ids": [
+      "KS.GT.01"
+     ],
+     "mau": "CC-22"
+    }
+   ]
+  },
+  {
+   "vung": "Cảm quan",
+   "en": "Sensorial",
+   "muc_dich": "Tinh chỉnh giác quan, so sánh, sắp thứ tự, chuẩn bị cho toán",
+   "hoat_dong": [
+    {
+     "ten": "Tháp hồng (kích thước)",
+     "giao_cu": "10 khối hồng 1–10 cm",
+     "huong_dan": "Xếp từ to đến nhỏ thành tháp",
+     "muc_tieu": "Phân biệt kích thước",
+     "tuoi": "4–5",
+     "thu_tu": 1,
+     "tu_sua_loi": "Tháp đổ hoặc lệch thấy ngay",
+     "loai": "B",
+     "skill_ids": [
+      "TD.LG.02",
+      "TO.DO.07"
+     ],
+     "mau": "MT-01"
+    },
+    {
+     "ten": "Cầu thang nâu (dày mỏng)",
+     "giao_cu": "10 thanh nâu cùng dài, dày khác nhau",
+     "huong_dan": "Xếp thành cầu thang",
+     "muc_tieu": "Phân biệt độ dày",
+     "tuoi": "4–6",
+     "thu_tu": 2,
+     "tu_sua_loi": "Bậc không đều",
+     "loai": "B",
+     "skill_ids": [
+      "TO.DO.07"
+     ],
+     "mau": "MT-01"
+    },
+    {
+     "ten": "Thanh đỏ (dài ngắn)",
+     "giao_cu": "10 thanh đỏ 10–100 cm",
+     "huong_dan": "Xếp từ ngắn đến dài",
+     "muc_tieu": "Độ dài, chuẩn bị thanh số",
+     "tuoi": "4–6",
+     "thu_tu": 3,
+     "tu_sua_loi": "Mép phải không thành bậc",
+     "loai": "B",
+     "skill_ids": [
+      "TO.DO.04",
+      "TO.DO.01"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Hộp màu 2 (ghép đôi màu)",
+     "giao_cu": "11 cặp thẻ màu",
+     "huong_dan": "Ghép hai thẻ cùng màu",
+     "muc_tieu": "Nhận biết màu",
+     "tuoi": "4–5",
+     "thu_tu": 4,
+     "tu_sua_loi": "Còn thừa thẻ lẻ",
+     "loai": "A",
+     "skill_ids": [
+      "TD.LG.01"
+     ],
+     "mau": "CC-08"
+    },
+    {
+     "ten": "Hộp màu 3 (sắc độ)",
+     "giao_cu": "9 màu × 7 sắc độ",
+     "huong_dan": "Xếp từ nhạt đến đậm",
+     "muc_tieu": "Phân biệt sắc độ",
+     "tuoi": "4–6",
+     "thu_tu": 5,
+     "tu_sua_loi": "Bé so cạnh nhau thấy lệch",
+     "loai": "B",
+     "skill_ids": [
+      "TD.QS.12"
+     ],
+     "mau": "MT-02"
+    },
+    {
+     "ten": "Trụ âm thanh",
+     "giao_cu": "2 bộ 6 trụ lắc ra tiếng khác nhau",
+     "huong_dan": "Ghép đôi trụ cùng tiếng",
+     "muc_tieu": "Phân biệt âm thanh",
+     "tuoi": "4–6",
+     "thu_tu": 6,
+     "tu_sua_loi": "Còn trụ lẻ",
+     "loai": "B",
+     "skill_ids": [
+      "KP.AN.D02",
+      "KP.KH.D02"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Túi bí mật (xúc giác)",
+     "giao_cu": "Túi vải, đồ vật quen",
+     "huong_dan": "Sờ và đoán, rồi lấy ra xem",
+     "muc_tieu": "Xúc giác, ngôn ngữ",
+     "tuoi": "4–6",
+     "thu_tu": 7,
+     "tu_sua_loi": "Lấy ra là thấy đúng sai",
+     "loai": "C",
+     "skill_ids": [
+      "KP.TG.01"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Hình học đặt khuôn và tái tạo mô hình",
+     "giao_cu": "Khay hình, khối màu",
+     "huong_dan": "Xếp khối giống thẻ mẫu",
+     "muc_tieu": "Không gian",
+     "tuoi": "4–6",
+     "thu_tu": 8,
+     "tu_sua_loi": "So với thẻ mẫu",
+     "loai": "A",
+     "skill_ids": [
+      "TD.KG.16",
+      "TD.KG.11"
+     ],
+     "mau": "MT-08"
+    },
+    {
+     "ten": "Tam giác cấu tạo, đối xứng",
+     "giao_cu": "Các tam giác màu ghép thành hình",
+     "huong_dan": "Ghép hai nửa thành hình",
+     "muc_tieu": "Đối xứng, hình học",
+     "tuoi": "5–6",
+     "thu_tu": 9,
+     "tu_sua_loi": "Đường viền mẫu",
+     "loai": "A",
+     "skill_ids": [
+      "TD.KG.12",
+      "TD.KG.15"
+     ],
+     "mau": "MT-05"
+    }
+   ]
+  },
+  {
+   "vung": "Toán",
+   "en": "Mathematics",
+   "muc_dich": "Từ cụ thể đến trừu tượng: số lượng, ký hiệu, hệ thập phân",
+   "hoat_dong": [
+    {
+     "ten": "Thanh số",
+     "giao_cu": "10 thanh đỏ xanh 1–10 đoạn",
+     "huong_dan": "Đếm đoạn, gắn thẻ số",
+     "muc_tieu": "Số ứng độ dài",
+     "tuoi": "4–6",
+     "thu_tu": 1,
+     "tu_sua_loi": "Thanh xếp thành bậc",
+     "loai": "B",
+     "skill_ids": [
+      "TO.SO.07",
+      "TO.SO.02"
+     ],
+     "mau": "MT-03"
+    },
+    {
+     "ten": "Chữ số nhám",
+     "giao_cu": "Thẻ chữ số giấy nhám",
+     "huong_dan": "Tô theo chiều viết bằng ngón tay, nói tên số",
+     "muc_tieu": "Ký hiệu số, chuẩn bị viết",
+     "tuoi": "4–6",
+     "thu_tu": 2,
+     "tu_sua_loi": "Ngón tay cảm thấy nhám",
+     "loai": "B",
+     "skill_ids": [
+      "TO.SO.01",
+      "TV.VT.01"
+     ],
+     "mau": "MX-08"
+    },
+    {
+     "ten": "Hộp que (số lượng và số)",
+     "giao_cu": "Hộp 0–9, 45 que",
+     "huong_dan": "Đặt đúng số que vào ô",
+     "muc_tieu": "Số lượng, số 0",
+     "tuoi": "4–5",
+     "thu_tu": 3,
+     "tu_sua_loi": "Đủ 45 que là đúng hết",
+     "loai": "A",
+     "skill_ids": [
+      "TO.DEM.02",
+      "TO.SO.04"
+     ],
+     "mau": "CC-03"
+    },
+    {
+     "ten": "Thẻ số và hạt đếm (chẵn lẻ)",
+     "giao_cu": "Thẻ 1–10, hạt đếm",
+     "huong_dan": "Xếp hạt thành cặp dưới số",
+     "muc_tieu": "Số lượng",
+     "tuoi": "5–6",
+     "thu_tu": 4,
+     "tu_sua_loi": "Hạt còn thừa",
+     "loai": "A",
+     "skill_ids": [
+      "TO.DEM.05"
+     ],
+     "mau": "CC-17"
+    },
+    {
+     "ten": "Khung mười, nhóm mười",
+     "giao_cu": "Khung 10 ô, hạt",
+     "huong_dan": "Lấp đủ mười, đếm tiếp",
+     "muc_tieu": "Hệ thập phân sớm",
+     "tuoi": "5–6",
+     "thu_tu": 5,
+     "tu_sua_loi": "Ô trống thấy ngay",
+     "loai": "A",
+     "skill_ids": [
+      "TO.SO.06",
+      "TO.SO.05"
+     ],
+     "mau": "MT-04"
+    },
+    {
+     "ten": "Hạt vàng (đơn vị, chục, trăm)",
+     "giao_cu": "Hạt lẻ, thanh 10, tấm 100",
+     "huong_dan": "Đổi 10 hạt lẻ lấy một thanh",
+     "muc_tieu": "Hệ thập phân",
+     "tuoi": "5–6 trở lên",
+     "thu_tu": 6,
+     "tu_sua_loi": "Đếm lại thanh",
+     "loai": "C",
+     "skill_ids": [
+      "TO.SO.06"
+     ],
+     "mau": ""
+    }
+   ]
+  },
+  {
+   "vung": "Ngôn ngữ",
+   "en": "Language",
+   "muc_dich": "Nghe, nói, âm vị, chuẩn bị viết rồi đọc",
+   "hoat_dong": [
+    {
+     "ten": "Trò chơi \"Tôi thấy\" (âm đầu)",
+     "giao_cu": "Đồ vật quanh nhà",
+     "huong_dan": "Người lớn nói âm đầu, bé tìm vật",
+     "muc_tieu": "Nhận thức âm vị",
+     "tuoi": "4–6",
+     "thu_tu": 1,
+     "tu_sua_loi": "Người lớn đọc lại tên vật",
+     "loai": "B",
+     "skill_ids": [
+      "TV.AM.02",
+      "TV.AM.04"
+     ],
+     "mau": "MT-09"
+    },
+    {
+     "ten": "Chữ cái nhám",
+     "giao_cu": "Thẻ chữ giấy nhám",
+     "huong_dan": "Tô chữ bằng ngón tay theo chiều viết, nói âm",
+     "muc_tieu": "Gắn âm với chữ",
+     "tuoi": "5–6",
+     "thu_tu": 2,
+     "tu_sua_loi": "Cảm giác nhám",
+     "loai": "B",
+     "skill_ids": [
+      "TV.CC.02",
+      "TV.VT.02"
+     ],
+     "mau": "CC-14"
+    },
+    {
+     "ten": "Bảng chữ di động",
+     "giao_cu": "Hộp chữ cái rời",
+     "huong_dan": "Ghép tiếng bằng chữ rời",
+     "muc_tieu": "Ghép âm",
+     "tuoi": "5–6",
+     "thu_tu": 3,
+     "tu_sua_loi": "Người lớn đọc lại",
+     "loai": "B",
+     "skill_ids": [
+      "TV.AM.08"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Thẻ phân loại (từ vựng)",
+     "giao_cu": "Thẻ tranh theo chủ đề",
+     "huong_dan": "Gọi tên, phân nhóm",
+     "muc_tieu": "Từ vựng",
+     "tuoi": "4–6",
+     "thu_tu": 4,
+     "tu_sua_loi": "Thẻ có hình mẫu",
+     "loai": "A",
+     "skill_ids": [
+      "TV.TU.01",
+      "KP.TG.01"
+     ],
+     "mau": "CC-06"
+    },
+    {
+     "ten": "Khuôn kim loại (tiền viết)",
+     "giao_cu": "Khuôn hình, bút chì",
+     "huong_dan": "Tô quanh khuôn, tô kín bằng nét song song",
+     "muc_tieu": "Cầm bút, điều khiển nét",
+     "tuoi": "5–6",
+     "thu_tu": 5,
+     "tu_sua_loi": "Nét ra ngoài viền",
+     "loai": "C",
+     "skill_ids": [
+      "TV.VT.01",
+      "KP.VD.05"
+     ],
+     "mau": ""
+    }
+   ]
+  },
+  {
+   "vung": "Văn hóa",
+   "en": "Cultural",
+   "muc_dich": "Địa lý, khoa học, thực vật, động vật, nghệ thuật, âm nhạc",
+   "hoat_dong": [
+    {
+     "ten": "Quả địa cầu đất và nước",
+     "giao_cu": "Quả địa cầu nhám",
+     "huong_dan": "Sờ phần đất nhám, phần nước nhẵn",
+     "muc_tieu": "Địa lý sớm",
+     "tuoi": "5–6",
+     "thu_tu": 1,
+     "tu_sua_loi": "Cảm giác nhám, nhẵn",
+     "loai": "B",
+     "skill_ids": [
+      "KP.TG.16"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Bộ phận của cây, con vật",
+     "giao_cu": "Tranh ghép bộ phận",
+     "huong_dan": "Gọi tên từng bộ phận",
+     "muc_tieu": "Khoa học, từ vựng",
+     "tuoi": "4–6",
+     "thu_tu": 2,
+     "tu_sua_loi": "Mảnh chỉ khớp một chỗ",
+     "loai": "A",
+     "skill_ids": [
+      "TD.QH.02"
+     ],
+     "mau": "MX-01"
+    },
+    {
+     "ten": "Vòng đời",
+     "giao_cu": "Thẻ tranh các giai đoạn",
+     "huong_dan": "Xếp theo thứ tự",
+     "muc_tieu": "Tuần tự, khoa học",
+     "tuoi": "5–6",
+     "thu_tu": 3,
+     "tu_sua_loi": "Thẻ có số mặt sau",
+     "loai": "A",
+     "skill_ids": [
+      "KP.KH.05",
+      "KP.TG.05"
+     ],
+     "mau": "CC-07"
+    },
+    {
+     "ten": "Vật chìm, vật nổi",
+     "giao_cu": "Chậu nước, đồ vật",
+     "huong_dan": "Dự đoán rồi thả",
+     "muc_tieu": "Khám phá khoa học",
+     "tuoi": "4–6",
+     "thu_tu": 4,
+     "tu_sua_loi": "Kết quả thật",
+     "loai": "B",
+     "skill_ids": [
+      "KP.KH.03"
+     ],
+     "mau": "CC-19"
+    },
+    {
+     "ten": "Quan sát thiên nhiên",
+     "giao_cu": "Kính lúp, sổ vẽ",
+     "huong_dan": "Đi dạo, nhặt lá, vẽ lại",
+     "muc_tieu": "Quan sát",
+     "tuoi": "4–6",
+     "thu_tu": 5,
+     "tu_sua_loi": "Không cần",
+     "loai": "C",
+     "skill_ids": [
+      "TD.QS.01",
+      "KP.KH.02"
+     ],
+     "mau": ""
+    },
+    {
+     "ten": "Âm nhạc và nghệ thuật dân gian",
+     "giao_cu": "Nhạc cụ đơn giản, tranh Đông Hồ",
+     "huong_dan": "Nghe, gõ nhịp, xem tranh",
+     "muc_tieu": "Cảm thụ",
+     "tuoi": "4–6",
+     "thu_tu": 6,
+     "tu_sua_loi": "Không cần",
+     "loai": "B",
+     "skill_ids": [
+      "KP.AN.01",
+      "KP.TG.11"
+     ],
+     "mau": "CC-21"
+    }
+   ]
+  }
+ ],
+ "montessori_abc": {
+  "A": 9,
+  "B": 17,
+  "C": 8
+ },
+ "offscreen": [
+  {
+   "id": "NG-01",
+   "ten": "Rót nước",
+   "tuoi": "4–6",
+   "phut": 5,
+   "vat_lieu": [
+    "Bình nhựa nhỏ có quai",
+    "2 cốc nhựa",
+    "Khay",
+    "Khăn lau"
+   ],
+   "huong_dan_bo_me": [
+    "Bố mẹ rót mẫu thật chậm, không nói",
+    "Bé rót từ bình sang cốc, rồi đổ lại",
+    "Đổ ra khay thì bé tự lấy khăn lau",
+    "Tăng dần: thêm vạch dừng trên cốc"
+   ],
+   "an_toan": "Dùng đồ nhựa, nước nguội",
+   "cau_hoi_quan_sat": [
+    "Bé có giữ bình bằng hai tay không?",
+    "Bé có dừng đúng vạch không?"
+   ],
+   "skill_ids": [
+    "KS.TP.02",
+    "KP.VD.04"
+   ],
+   "pp": [
+    "PP-MON",
+    "PP-EXP"
+   ],
+   "mau": "",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-02",
+   "ten": "Gấp quần áo",
+   "tuoi": "4–6",
+   "phut": 5,
+   "vat_lieu": [
+    "Khăn tay",
+    "Áo phông của bé"
+   ],
+   "huong_dan_bo_me": [
+    "Bắt đầu với khăn vuông: gấp đôi, gấp đôi lần nữa",
+    "Rồi áo phông: trải phẳng, gấp hai tay áo vào, gấp đôi",
+    "Bé cất vào ngăn của mình"
+   ],
+   "an_toan": "Không có",
+   "cau_hoi_quan_sat": [
+    "Bé có vuốt phẳng trước khi gấp không?"
+   ],
+   "skill_ids": [
+    "KS.TP.03",
+    "KP.VD.04"
+   ],
+   "pp": [
+    "PP-MON",
+    "PP-EXP"
+   ],
+   "mau": "MT-12",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-03",
+   "ten": "Sắp xếp đồ chơi",
+   "tuoi": "4–6",
+   "phut": 10,
+   "vat_lieu": [
+    "Hộp hoặc rổ",
+    "Hình dán lên hộp"
+   ],
+   "huong_dan_bo_me": [
+    "Dán hình lên mỗi hộp (khối, xe, búp bê)",
+    "Sau giờ chơi bé cất đúng hộp",
+    "Bố mẹ khen việc làm, không khen chung chung"
+   ],
+   "an_toan": "Không có",
+   "cau_hoi_quan_sat": [
+    "Bé tự cất khi chưa được nhắc không?"
+   ],
+   "skill_ids": [
+    "KS.SX.01",
+    "KS.NN.01"
+   ],
+   "pp": [
+    "PP-EXP",
+    "PP-MON"
+   ],
+   "mau": "CC-06",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-04",
+   "ten": "Phân loại đồ dùng",
+   "tuoi": "4–6",
+   "phut": 10,
+   "vat_lieu": [
+    "Thìa, đũa, nắp chai, kẹp",
+    "Khay chia ngăn hoặc bát"
+   ],
+   "huong_dan_bo_me": [
+    "Bé chia đồ theo loại",
+    "Rồi chia lại theo màu hoặc kích thước",
+    "5–6 tuổi: bé tự nghĩ cách chia mới và nói lý do"
+   ],
+   "an_toan": "Không dùng đồ nhỏ dưới 3 cm với trẻ hay cho vào miệng",
+   "cau_hoi_quan_sat": [
+    "Bé có đổi được tiêu chí khi bố mẹ đổi luật không?"
+   ],
+   "skill_ids": [
+    "TD.LG.01",
+    "TD.LG.09",
+    "TD.CY.01"
+   ],
+   "pp": [
+    "PP-PLAY",
+    "PP-COG"
+   ],
+   "mau": "CC-06",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-05",
+   "ten": "Chăm sóc cây",
+   "tuoi": "4–6",
+   "phut": 5,
+   "vat_lieu": [
+    "Một chậu cây hoặc hạt đậu trong cốc bông ẩm",
+    "Bình tưới nhỏ"
+   ],
+   "huong_dan_bo_me": [
+    "Bé nhận chăm một cây",
+    "Mỗi ngày tưới một chút, xem lá",
+    "Vẽ hoặc chụp ảnh cây mỗi 2 ngày"
+   ],
+   "an_toan": "Rửa tay sau khi chạm đất",
+   "cau_hoi_quan_sat": [
+    "Bé có nhớ tưới mà không cần nhắc không?",
+    "Bé kể được cây thay đổi thế nào không?"
+   ],
+   "skill_ids": [
+    "KS.CS.02",
+    "KP.KH.01",
+    "KS.TN.01"
+   ],
+   "pp": [
+    "PP-EXP",
+    "PP-INQ",
+    "PP-PROJ"
+   ],
+   "mau": "MT-11",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-06",
+   "ten": "Quan sát thiên nhiên",
+   "tuoi": "4–6",
+   "phut": 15,
+   "vat_lieu": [
+    "Túi nhỏ",
+    "Kính lúp (nếu có)"
+   ],
+   "huong_dan_bo_me": [
+    "Đi dạo, nhặt 5 chiếc lá khác nhau",
+    "Về nhà xếp lá từ nhỏ đến to, nhạt đến đậm",
+    "Bé kể chiếc lá bé thích"
+   ],
+   "an_toan": "Không nhặt quả lạ, không cho vào miệng",
+   "cau_hoi_quan_sat": [
+    "Bé thấy điểm khác nào giữa các lá?"
+   ],
+   "skill_ids": [
+    "TD.QS.01",
+    "KP.KH.02",
+    "TD.QS.12"
+   ],
+   "pp": [
+    "PP-INQ",
+    "PP-MON"
+   ],
+   "mau": "MT-02",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-07",
+   "ten": "Vẽ tranh",
+   "tuoi": "4–6",
+   "phut": 15,
+   "vat_lieu": [
+    "Giấy A4",
+    "Bút sáp"
+   ],
+   "huong_dan_bo_me": [
+    "Bé vẽ tự do theo chủ đề buổi học",
+    "Bố mẹ hỏi \"con kể cho mẹ nghe về tranh nhé\"",
+    "Treo tranh hoặc cất vào hộp tranh"
+   ],
+   "an_toan": "Không có",
+   "cau_hoi_quan_sat": [
+    "Bé dùng mấy màu? Bé kể được gì?"
+   ],
+   "skill_ids": [
+    "KP.ST.01",
+    "KP.AN.P01",
+    "TD.TTg.02"
+   ],
+   "pp": [
+    "PP-PLAY",
+    "PP-STORY"
+   ],
+   "mau": "",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-08",
+   "ten": "Tập tô trên giấy",
+   "tuoi": "5–6",
+   "phut": 10,
+   "vat_lieu": [
+    "Giấy in nét chấm",
+    "Bút chì 2B ngắn"
+   ],
+   "huong_dan_bo_me": [
+    "Chỉ bắt đầu từ 5 tuổi",
+    "Tô nét cơ bản trước, rồi chữ cái đã học trên app",
+    "Ngồi đúng tư thế, cầm bút ba ngón",
+    "Dừng khi bé mỏi tay"
+   ],
+   "an_toan": "Không ép tô lâu quá 10 phút",
+   "cau_hoi_quan_sat": [
+    "Bé bắt đầu đúng điểm và đúng chiều nét không?"
+   ],
+   "skill_ids": [
+    "TV.VT.01",
+    "TV.VT.02",
+    "TO.SO.02"
+   ],
+   "pp": [
+    "PP-SCAF",
+    "PP-MULTI"
+   ],
+   "mau": "CC-14",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-09",
+   "ten": "Đếm đồ vật thật",
+   "tuoi": "4–6",
+   "phut": 5,
+   "vat_lieu": [
+    "Hạt đậu, cúc áo, thìa"
+   ],
+   "huong_dan_bo_me": [
+    "4–5 tuổi: đếm đến 10, chạm từng vật",
+    "5–6 tuổi: đếm đến 20, bó mỗi 10 vật thành nhóm",
+    "Hỏi \"có tất cả bao nhiêu?\""
+   ],
+   "an_toan": "Đồ nhỏ phải có người lớn trông",
+   "cau_hoi_quan_sat": [
+    "Bé có chạm mỗi vật một lần không?",
+    "Bé nói số cuối là tổng không?"
+   ],
+   "skill_ids": [
+    "TO.DEM.02",
+    "TO.DEM.05",
+    "TO.SO.06"
+   ],
+   "pp": [
+    "PP-STEM",
+    "PP-MON"
+   ],
+   "mau": "CC-17",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-10",
+   "ten": "Vận động phối hợp",
+   "tuoi": "4–6",
+   "phut": 10,
+   "vat_lieu": [
+    "Bóng nhẹ",
+    "Băng dính kẻ vạch"
+   ],
+   "huong_dan_bo_me": [
+    "Ném bắt bóng bằng hai tay",
+    "Đi trên vạch thẳng",
+    "Vỗ tay chéo: tay phải chạm gối trái"
+   ],
+   "an_toan": "Chỗ rộng, sàn không trơn",
+   "cau_hoi_quan_sat": [
+    "Bé giữ thăng bằng được bao lâu?"
+   ],
+   "skill_ids": [
+    "KP.VD.02",
+    "KP.VD.03",
+    "KP.VD.04"
+   ],
+   "pp": [
+    "PP-COG",
+    "PP-EXP"
+   ],
+   "mau": "MT-12",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-11",
+   "ten": "Giao tiếp",
+   "tuoi": "4–6",
+   "phut": 5,
+   "vat_lieu": [
+    "Không cần"
+   ],
+   "huong_dan_bo_me": [
+    "Bữa tối: mỗi người kể một điều vui, một điều buồn trong ngày",
+    "Tập chào, xin phép, cảm ơn khi đi chơi",
+    "Gọi tên cảm xúc khi bé giận"
+   ],
+   "an_toan": "Không có",
+   "cau_hoi_quan_sat": [
+    "Bé gọi tên được cảm xúc của mình không?"
+   ],
+   "skill_ids": [
+    "EQ.CX.01",
+    "KS.GT.01",
+    "EQ.XH.01"
+   ],
+   "pp": [
+    "PP-SEL",
+    "PP-STORY"
+   ],
+   "mau": "CC-22",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  },
+  {
+   "id": "NG-12",
+   "ten": "Dự án nhỏ",
+   "tuoi": "4–6",
+   "phut": 20,
+   "vat_lieu": [
+    "Giấy màu, hộp giấy cũ, keo dán an toàn"
+   ],
+   "huong_dan_bo_me": [
+    "Cuối mỗi vùng đất: làm một sản phẩm (đèn lồng, nhà trên đảo, bù nhìn)",
+    "Bé chọn vật liệu, bố mẹ giúp phần cắt",
+    "Bé trình bày sản phẩm, chụp ảnh lưu vào Ngôi nhà của Lu"
+   ],
+   "an_toan": "Kéo và keo nóng do người lớn dùng",
+   "cau_hoi_quan_sat": [
+    "Bé tự nghĩ được ý tưởng nào?"
+   ],
+   "skill_ids": [
+    "KP.ST.02",
+    "KP.ST.05",
+    "KP.ST.04"
+   ],
+   "pp": [
+    "PP-PROJ",
+    "PP-PLAY"
+   ],
+   "mau": "",
+   "luu_y": "Hoàn thành trên app không có nghĩa là bé đã thành thạo việc thật. Bố mẹ ghi nhận bằng quan sát của mình."
+  }
+ ],
+ "activity_types": {
+  "co": [
+   "Chạm chọn",
+   "Chọn nhiều",
+   "Kéo thả",
+   "Ghép cặp",
+   "Nối",
+   "Phân loại",
+   "Xếp trình tự (tranh, kích thước, sắc độ)",
+   "Lật thẻ",
+   "Tìm trong tranh",
+   "Tìm điểm khác",
+   "Vật biến mất",
+   "Xoay hình",
+   "Ghép mảnh",
+   "Mê cung",
+   "Tô theo nét",
+   "Vẽ tự do",
+   "Tô màu",
+   "Đếm chạm",
+   "Mô phỏng trạng thái",
+   "Mô phỏng thí nghiệm",
+   "Nhịp, chuỗi âm",
+   "Hội thoại, truyện rẽ nhánh",
+   "Hình dán sáng tạo",
+   "Ngoài màn hình có bố mẹ xác nhận"
+  ],
+  "moi_lam": [
+   "Ghi nhớ vị trí (E06 where)",
+   "Tái tạo mô hình có tự sửa lỗi (E06 copy)",
+   "Nhìn qua lỗ nhận ra toàn cảnh (peek)",
+   "Thanh số và khung năm, khung mười (hình dựng bằng mã)",
+   "Hoàn thiện hình đối xứng"
+  ],
+  "con_thieu": [
+   "Ghép đôi âm thanh (trụ âm thanh): làm bằng E05 với thẻ âm thanh",
+   "Luật lịch ôn cách quãng trong ngân hàng luyện tập",
+   "Đổi luật giữa chừng (PT-11, cần thêm chế độ E03)",
+   "Nhật ký dự án nhiều buổi (ảnh sản phẩm do bố mẹ chụp)",
+   "Kéo thả xây tháp (xếp chồng) thay cho chạm theo thứ tự"
+  ]
+ },
+ "plan": [
+  {
+   "vung": 1,
+   "bai": "L001–L030",
+   "tuoi": "4–5",
+   "trong_tam": "Số 1–3, đếm chạm; nghe tiếng; cảm xúc cơ bản",
+   "pp": [
+    "PP-PLAY",
+    "PP-MULTI",
+    "PP-SCAF",
+    "PP-STORY"
+   ],
+   "montessori": [
+    "Thực hành cuộc sống: rót, xúc hạt",
+    "Cảm quan: tháp hồng"
+   ],
+   "ngoai_man_hinh": [
+    "NG-01",
+    "NG-03",
+    "NG-09"
+   ],
+   "mau": [
+    "MT-01",
+    "MT-07",
+    "MT-11"
+   ]
+  },
+  {
+   "vung": 2,
+   "bai": "L031–L060",
+   "tuoi": "4–5",
+   "trong_tam": "Số 4–5, hình; phân loại; lá cây",
+   "pp": [
+    "PP-INQ",
+    "PP-MON",
+    "PP-RETR",
+    "PP-SEL"
+   ],
+   "montessori": [
+    "Cảm quan: sắc độ, thanh đỏ",
+    "Văn hóa: bộ phận cây"
+   ],
+   "ngoai_man_hinh": [
+    "NG-05",
+    "NG-06",
+    "NG-04"
+   ],
+   "mau": [
+    "MT-02",
+    "MT-06",
+    "MT-11"
+   ]
+  },
+  {
+   "vung": 3,
+   "bai": "L061–L090",
+   "tuoi": "4–5",
+   "trong_tam": "Số 6–7; chìm nổi; ghép hình; âm đầu bằng tai",
+   "pp": [
+    "PP-INQ",
+    "PP-PHON",
+    "PP-SPACE",
+    "PP-PLAY"
+   ],
+   "montessori": [
+    "Văn hóa: chìm nổi",
+    "Ngôn ngữ: trò chơi Tôi thấy"
+   ],
+   "ngoai_man_hinh": [
+    "NG-06",
+    "NG-10",
+    "NG-11"
+   ],
+   "mau": [
+    "MT-09",
+    "MT-05",
+    "MT-03"
+   ]
+  },
+  {
+   "vung": 4,
+   "bai": "L091–L120",
+   "tuoi": "4–5",
+   "trong_tam": "Số 8–10; mê cung; thời tiết; nhớ chuỗi",
+   "pp": [
+    "PP-STEM",
+    "PP-RETR",
+    "PP-SCAF",
+    "PP-COG"
+   ],
+   "montessori": [
+    "Toán: thanh số 1–10, hộp que",
+    "Cảm quan: trụ âm thanh"
+   ],
+   "ngoai_man_hinh": [
+    "NG-09",
+    "NG-10",
+    "NG-02"
+   ],
+   "mau": [
+    "MT-03",
+    "MT-04",
+    "MT-08"
+   ]
+  },
+  {
+   "vung": 5,
+   "bai": "L121–L150",
+   "tuoi": "4–5",
+   "trong_tam": "Ôn 1–10; lễ hội; dự án đèn lồng",
+   "pp": [
+    "PP-PROJ",
+    "PP-STORY",
+    "PP-SEL",
+    "PP-SPACE"
+   ],
+   "montessori": [
+    "Thực hành cuộc sống: gấp, cài nút",
+    "Văn hóa: lễ hội"
+   ],
+   "ngoai_man_hinh": [
+    "NG-12",
+    "NG-07",
+    "NG-11"
+   ],
+   "mau": [
+    "MT-10",
+    "MT-12"
+   ]
+  },
+  {
+   "vung": 6,
+   "bai": "L151–L180",
+   "tuoi": "5–6",
+   "trong_tam": "29 chữ cái, tập tô từ 5 tuổi; số 11–12",
+   "pp": [
+    "PP-PHON",
+    "PP-MULTI",
+    "PP-SCAF",
+    "PP-SPACE"
+   ],
+   "montessori": [
+    "Ngôn ngữ: chữ nhám, bảng chữ di động",
+    "Toán: khung mười"
+   ],
+   "ngoai_man_hinh": [
+    "NG-08",
+    "NG-04",
+    "NG-11"
+   ],
+   "mau": [
+    "MT-09",
+    "MT-04",
+    "CC-14"
+   ]
+  },
+  {
+   "vung": 7,
+   "bai": "L181–L210",
+   "tuoi": "5–6",
+   "trong_tam": "Số 13–15; đo lường; vòng đời; nhân quả",
+   "pp": [
+    "PP-INQ",
+    "PP-STEM",
+    "PP-MON",
+    "PP-EXP"
+   ],
+   "montessori": [
+    "Cảm quan: cầu thang nâu",
+    "Văn hóa: vòng đời"
+   ],
+   "ngoai_man_hinh": [
+    "NG-05",
+    "NG-09",
+    "NG-02"
+   ],
+   "mau": [
+    "MT-01",
+    "MT-11",
+    "MT-03"
+   ]
+  },
+  {
+   "vung": 8,
+   "bai": "L211–L240",
+   "tuoi": "5–6",
+   "trong_tam": "Số 16–18; đối xứng; quy luật; trí nhớ làm việc",
+   "pp": [
+    "PP-COG",
+    "PP-RETR",
+    "PP-STEM",
+    "PP-STORY"
+   ],
+   "montessori": [
+    "Cảm quan: tam giác cấu tạo",
+    "Toán: hạt vàng (giới thiệu)"
+   ],
+   "ngoai_man_hinh": [
+    "NG-10",
+    "NG-06",
+    "NG-07"
+   ],
+   "mau": [
+    "MT-05",
+    "MT-07",
+    "MT-08"
+   ]
+  },
+  {
+   "vung": 9,
+   "bai": "L241–L270",
+   "tuoi": "5–6",
+   "trong_tam": "Số 19–20; bản đồ; thiết kế; giải quyết vấn đề",
+   "pp": [
+    "PP-PROJ",
+    "PP-INQ",
+    "PP-PLAY",
+    "PP-SEL"
+   ],
+   "montessori": [
+    "Văn hóa: địa cầu đất và nước"
+   ],
+   "ngoai_man_hinh": [
+    "NG-12",
+    "NG-06",
+    "NG-03"
+   ],
+   "mau": [
+    "MT-06",
+    "MT-10"
+   ]
+  },
+  {
+   "vung": 10,
+   "bai": "L271–L300",
+   "tuoi": "5–6",
+   "trong_tam": "Chuẩn bị lớp 1: ôn chữ, số đến 20, thời gian biểu, tự lập",
+   "pp": [
+    "PP-SPACE",
+    "PP-RETR",
+    "PP-EXP",
+    "PP-SEL"
+   ],
+   "montessori": [
+    "Thực hành cuộc sống: tự chuẩn bị cặp, gấp quần áo"
+   ],
+   "ngoai_man_hinh": [
+    "NG-02",
+    "NG-08",
+    "NG-11"
+   ],
+   "mau": [
+    "MT-04",
+    "MT-09",
+    "MT-12"
+   ]
+  }
+ ],
+ "plan_rules": [
+  "Giữ nguyên 300 buổi, câu chuyện, mục tiêu và mẫu buổi đã duyệt (D42, D46, D47): mỗi buổi ≥ 20 phút học thật (mục tiêu 25–30), 12–16 thẻ bài nhỏ, đủ 13 nhóm năng lực.",
+  "Phương pháp là CÁCH dạy gắn vào thẻ bài, không phải môn mới: mỗi thẻ ghi mã phương pháp (pp) và năng lực (nl). Không bắt buộc mọi buổi dùng mọi phương pháp; mỗi buổi dùng ít nhất 4 phương pháp khác nhau.",
+  "Mỗi buổi có 1 thẻ hoạt động ngoài màn hình (loại B hoặc C) chọn từ thư viện NG-01..NG-12, không khóa bài nếu bé chưa làm.",
+  "Mỗi buổi có ít nhất 1 thẻ ôn cách quãng (kiến thức của buổi trước 1, 3 và 7 buổi) lấy từ ngân hàng luyện tập không giới hạn.",
+  "Giữ 6 năng lực Chim Đa Đa (Tư duy, Quan sát, Chú ý, Ghi nhớ, Nhận thức, Tưởng tượng) làm trục chính; 18 năng lực nhận thức là lớp phân tích chi tiết hơn, ánh xạ về 6 năng lực này.",
+  "Số 1–10 ở năm 1 (4–5 tuổi), 11–20 ở năm 2 (5–6 tuổi). Đủ 29 chữ cái ở năm 2; tập tô chữ chỉ từ 5 tuổi (năm 2). Tiếng Anh và EQ giữ chương trình riêng.",
+  "Cảm quan Montessori đi trước toán tương ứng (thanh đỏ trước thanh số, tháp hồng trước so sánh nhiều bậc).",
+  "Làm theo từng đợt nhỏ như D47 (L004–L006 trước), mỗi đợt qua kiểm thử rồi mới làm tiếp."
+ ],
+ "rep20": [
+  {
+   "n": 1,
+   "name": "Ghi nhớ hình ảnh",
+   "ids": [
+    "MX-03",
+    "CC-08"
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Ghi nhớ vị trí",
+   "ids": [
+    "MT-07"
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Ghi nhớ trình tự",
+   "ids": [
+    "MX-04"
+   ]
+  },
+  {
+   "n": 4,
+   "name": "Liên tưởng hình ảnh",
+   "ids": [
+    "CC-08",
+    "CC-05"
+   ]
+  },
+  {
+   "n": 5,
+   "name": "Hoàn thiện hình đối xứng",
+   "ids": [
+    "MT-05"
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Xoay hình",
+   "ids": [
+    "CC-11"
+   ]
+  },
+  {
+   "n": 7,
+   "name": "Tái tạo mô hình",
+   "ids": [
+    "MT-08"
+   ]
+  },
+  {
+   "n": 8,
+   "name": "Nhận diện toàn cảnh",
+   "ids": [
+    "MT-06"
+   ]
+  },
+  {
+   "n": 9,
+   "name": "Tưởng tượng từ hình khối",
+   "ids": [
+    "CC-25"
+   ]
+  },
+  {
+   "n": 10,
+   "name": "Sáng tạo câu chuyện",
+   "ids": [
+    "MT-10"
+   ]
+  },
+  {
+   "n": 11,
+   "name": "Xếp vật theo kích thước",
+   "ids": [
+    "MT-01"
+   ]
+  },
+  {
+   "n": 12,
+   "name": "Phân biệt sắc độ màu",
+   "ids": [
+    "MT-02"
+   ]
+  },
+  {
+   "n": 13,
+   "name": "Thanh số Montessori",
+   "ids": [
+    "MT-03"
+   ]
+  },
+  {
+   "n": 14,
+   "name": "Ghép số với số lượng",
+   "ids": [
+    "CC-03",
+    "CC-17"
+   ]
+  },
+  {
+   "n": 15,
+   "name": "Tạo nhóm mười",
+   "ids": [
+    "MT-04"
+   ]
+  },
+  {
+   "n": 16,
+   "name": "Nhận diện âm đầu",
+   "ids": [
+    "MT-09"
+   ]
+  },
+  {
+   "n": 17,
+   "name": "Tập tô chữ cái",
+   "ids": [
+    "CC-14"
+   ]
+  },
+  {
+   "n": 18,
+   "name": "Mô phỏng sắp xếp đồ dùng",
+   "ids": [
+    "CC-06"
+   ]
+  },
+  {
+   "n": 19,
+   "name": "Thực hành chăm sóc cây",
+   "ids": [
+    "MT-11"
+   ]
+  },
+  {
+   "n": 20,
+   "name": "Phối hợp hai tay và vận động ngoài màn hình",
+   "ids": [
+    "MT-12"
+   ]
+  }
+ ]
+}
