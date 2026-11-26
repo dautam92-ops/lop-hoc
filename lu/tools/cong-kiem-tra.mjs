@@ -33,6 +33,11 @@ const assets = JSON.parse(await readFile(path.join(ROOT, 'registry/assets.json')
 const aMiss = []; for (const a of assets.filter(a => a.trang_thai === 'da_duyet')) { try { await access(path.join(ROOT, a.path)); } catch { aMiss.push(a.asset_id); } }
 check('Ảnh đã duyệt có đủ tệp', aMiss.length === 0, aMiss.join(', '));
 
+// 3b. Quy tắc lật thẻ (tam 26/11): sai chỉ úp lại, im lặng; đúng một đôi chỉ âm báo; xong cả bài mới khen.
+const e05 = await readFile(path.join(ROOT, 'engines/e05-memory.js'), 'utf8');
+const mountSrc = e05.slice(e05.indexOf('export function mount'));
+check('Lật thẻ: sai thì im lặng, đúng một đôi chỉ có âm báo', !/__boing|act\.no\b|okVi\(/.test(mountSrc));
+
 // 4. Chơi thật trên iPad và điện thoại (play-draft): hết buổi, không lỗi JS, chọn sai bị báo sai, ...
 const pd = run(['tools/play-draft.mjs', id]);
 let rep; try { rep = JSON.parse(await readFile(path.join(ROOT, 'reports', `draft-${id}.json`), 'utf8')); } catch { rep = { runs: [] }; }

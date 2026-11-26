@@ -1,10 +1,10 @@
 // E05 – Lật thẻ trí nhớ: lật hai thẻ, giống nhau là được một đôi.
-import { need, vis, okVi, OK_VI } from './common.js';
+import { need, vis } from './common.js';
 
 export const id = 'E05', version = '1.0.0', name = 'Lật thẻ trí nhớ';
 
 export function validate(act) {
-  const e = need(act, ['skill_id', 'title', 'pool', 'pairs', 'no', 'done']);
+  const e = need(act, ['skill_id', 'title', 'pool', 'pairs', 'done']);
   if (act.pool && act.pairs > act.pool.length) e.push(`${act.activity_id}: không đủ hình cho ${act.pairs} đôi`);
   if (act.pairs > 8) e.push(`${act.activity_id}: quá 8 đôi, quá khó với 4–6 tuổi`);
   return e;
@@ -17,7 +17,8 @@ export function verify(act, v) {
   if (c.length !== act.pairs * 2) e.push(`${act.activity_id}: sai số thẻ`);
   return e;
 }
-export const lines = act => [...(act.intro || []), act.no, act.done, ...OK_VI].filter(Boolean);
+// tam 26/11: lật thẻ chỉ giải thích lúc đầu. Lật sai: úp lại, im lặng. Lật đúng: chỉ âm báo đúng. Xong cả bài mới khen.
+export const lines = act => [...(act.intro || []), act.done].filter(Boolean);
 
 export function mount(ctx, act, v) {
   const { ui, voice } = ctx; const cards = v.rounds[0].cards; let open = [], found = 0, misses = 0, lock = false;
@@ -34,10 +35,10 @@ export function mount(ctx, act, v) {
       if (cards[+x.dataset.i] === cards[+y.dataset.i]) {
         open = []; found++; x.classList.add('right'); y.classList.add('right');
         if (found === act.pairs) { ctx.record({ skill_id: act.skill_id, correct: true, first_try: misses <= (act.free_misses ?? 3), tries: misses + 1, hints: 0 }); voice.say(['__jingle', act.done]).then(done); }
-        else { voice.speak([okVi()]); markNext(); }
+        else { voice.speak(['__jingle']); markNext(); }
       } else {
         misses++; lock = true;
-        setTimeout(() => { x.classList.remove('up'); y.classList.remove('up'); open = []; lock = false; if (misses === 2 || misses === 5) voice.say(['__boing', act.no]); }, ctx.fast ? 0 : 1100);
+        setTimeout(() => { x.classList.remove('up'); y.classList.remove('up'); open = []; lock = false; }, ctx.fast ? 0 : 1100);
       }
     });
     voice.say(act.intro);

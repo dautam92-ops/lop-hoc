@@ -11,5 +11,6 @@ Quy tắc (tam 26/11/2026): lỗi đã gặp không được lặp lại. Mỗi 
 | 26/11 | Hình hạt đậu, túi hạt trống trên bảng bài nhỏ | Ảnh thật 841px không co vào khung 84px | ui/lesson.css co ảnh; cổng mục "Ảnh đã duyệt có đủ tệp" + xem ảnh chụp màn bảng bài |
 | 26/11 | Hình bóng quá bé | Lớp `shadow` trùng ô đích E02, giới hạn 80px | CSS `bong-den`; cổng mục "Hình minh họa chiếm 65% trở lên" |
 | 26/11 | Câu thiếu giọng đọc | Câu mới chưa tạo giọng trên máy | cổng mục "Mọi câu đều có giọng đọc" và "Tệp giọng đọc có đủ trên đĩa" |
+| 26/11 | Lật thẻ sai thì Lu nói "chưa giống nhau", đúng một đôi thì nói "Đúng rồi!" làm bé mất hứng | Thiết kế cũ của E05 | Quy tắc tam: chỉ giải thích lúc đầu, sai chỉ úp lại, đúng một đôi chỉ âm báo, xong cả bài mới khen; cổng mục "Lật thẻ: sai thì im lặng" |
 
 Còn thiếu (chưa có tính năng nên chưa kiểm được): bé không trả lời thì Lu nhắc lại câu hỏi sau một lúc. Sẽ làm cùng Demo Lab (chỉ thị Method Library mục VIII "Thử không trả lời").
