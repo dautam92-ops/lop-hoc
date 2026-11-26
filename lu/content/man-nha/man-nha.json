@@ -1,0 +1,24 @@
+{
+  "format": "lu-man-nha",
+  "version": 1,
+  "ghi_chu": "Màn nhà mới (tam duyệt 26/11/2026 20:51): bỏ bản đồ, màn nhà = buổi hôm nay + 12 cổng. Lời Lu mỗi câu tối đa 10 từ (quy tắc 34). Ảnh nền chương chưa vẽ thì dùng ảnh đã duyệt gần nhất, xem anh-can-ve.json.",
+  "ns": "lu-thu-online",
+  "nen_mac_dinh": "assets/boi-canh/BC-0008_vuon-rau-co-hoa_v01.webp",
+  "chu_de": [
+    { "so": 1, "nen": "assets/boi-canh/BC-0008_vuon-rau-co-hoa_v01.webp" }
+  ],
+  "lu": {
+    "chi": "assets/lu/xuat-ban/LU-0049_lu-tu-the-chi-tay-512_v01.webp",
+    "khen": "assets/lu/xuat-ban/LU-0063_lu-tu-the-khen-512_v01.webp",
+    "vay": "assets/lu/xuat-ban/LU-0039_lu-tu-the-vay-tay-512_v01.webp"
+  },
+  "loi": {
+    "hoc_tiep": "Bé học tiếp nào!",
+    "bat_dau": "Bé học buổi đầu tiên nào!",
+    "xong": "Bé học xong rồi. Bé luyện thêm nhé!",
+    "sap_co": "Buổi sau sắp có. Bé luyện thêm nhé!",
+    "cong_sap_mo": "Cổng này sắp mở.",
+    "chon_buoi": "Bé chọn buổi học nhé.",
+    "buoi_khoa": "Buổi này chưa mở."
+  }
+}
