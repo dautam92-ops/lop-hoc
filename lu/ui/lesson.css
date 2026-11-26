@@ -162,3 +162,6 @@ body { background: var(--lu-cream); }
 .lu-lesson .cell-f { min-width: clamp(92px, 22vw, 170px); min-height: clamp(92px, 22vw, 170px); }
 .lu-lesson .opt.card { min-width: clamp(92px, 24vw, 160px); min-height: clamp(92px, 24vw, 160px); }
 @media (max-width: 480px) { .lu-lesson .shadows { gap: 10px; } .lu-lesson .shadow { width: calc((100vw - 118px) / 3); height: calc((100vw - 118px) / 3); } }
+/* Ảnh vẽ thật (asset) thay hình vẽ mã: luôn co vừa khung */
+.lu-lesson img.lu-art.asset { object-fit: contain; max-width: 100%; }
+.lu-lesson .hub-card .hc-art img.lu-art { width: 100%; height: 100%; }
