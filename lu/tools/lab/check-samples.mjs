@@ -37,4 +37,12 @@ console.log(`Nền: ${nb} loại cho ${bds.length} bài.`);
   for (const [k, ids] of khongTheoDoi) { hinhLoi++; console.log(`LỖI hình nghèo nàn: art:${k} (${[...ids].join(', ')}) đang là hình vẽ mã, chưa có ảnh vẽ tay và không có trong danh sách chờ vẽ anh-con-thieu.json`); }
   const thua = [...cho].filter(k => artSlots.has(k)); if (thua.length) console.log(`Ảnh đã duyệt, gỡ khỏi danh sách chờ: ${thua.join(', ')}`);
   console.log(`Hình vẽ tay: ${used.size - thieu.length}/${used.size} hình đã có ảnh; ${thieu.length} hình chờ vẽ trên máy 24H.`); }
+// Quy tắc 34 (tam 26/11 19:56 và 20:07): lời dẫn ngắn, hỏi thẳng việc bé cần làm.
+// Bài trên màn: câu hỏi ≤ 10 từ, lời mở đầu và câu hướng dẫn ≤ 12 từ. Bài ngoài màn hình (E15) ≤ 25 từ; kể chuyện (E10) là nội dung truyện, không đo.
+{ const wc = x => String(x).trim().split(/\s+/).length;
+  for (const s of D.samples) for (const [age, l] of Object.entries(s.levels)) { if (l.engine === 'E10') continue; const lim = l.engine === 'E15' ? 25 : 12;
+    const qs = [l.q, ...(l.items || []).map(i => i.q), ...(l.tasks || []).map(t => t.q)].filter(x => typeof x === 'string');
+    const hd = [...(l.intro || []), l.listen, l.look, l.your_turn, l.again, ...(l.tasks || []).map(t => t.act)].filter(x => typeof x === 'string');
+    for (const q of qs) if (wc(q) > 10) { hinhLoi++; console.log(`LỖI quy tắc 34 ${s.id} ${age}: câu hỏi dài ${wc(q)} từ (≤ 10): ${q}`); }
+    for (const x of hd) if (wc(x) > lim) { hinhLoi++; console.log(`LỖI quy tắc 34 ${s.id} ${age}: lời dẫn dài ${wc(x)} từ (≤ ${lim}): ${x}`); } } }
 console.log(`${n - bad}/${n} hoạt động đạt.`); if (hinhLoi) console.log(`${hinhLoi} hình nghèo nàn chưa được theo dõi.`); process.exit(bad || hinhLoi ? 1 : 0);

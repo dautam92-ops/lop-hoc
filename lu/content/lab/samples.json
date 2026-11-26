@@ -433,7 +433,7 @@
      "skill_id": "TV.CC.02",
      "style": "face",
      "intro": [
-      "Lu có mấy tấm thẻ chữ. Lu gọi tên chữ nào, bé chạm vào chữ đó nhé."
+      "Lu gọi chữ nào, bé chạm vào chữ đó nhé."
      ],
      "items": [
       {
@@ -498,7 +498,7 @@
      "skill_id": "TV.CC.02",
      "style": "face",
      "intro": [
-      "Ba chữ o, ô, ơ trông gần giống nhau. Bé nhìn kỹ cái mũ và cái râu nhé."
+      "Lu gọi chữ nào, bé chạm vào chữ đó nhé."
      ],
      "items": [
       {
@@ -623,7 +623,7 @@
     "4-5": {
      "skill_id": "TD.LG.09",
      "intro": [
-      "Đồ chơi của Lu lẫn lộn hết rồi. Bé giúp Lu tìm nhé."
+      "Bé giúp Lu tìm đồ chơi nhé."
      ],
      "kinds": [
       {
@@ -659,7 +659,7 @@
     "5-6": {
      "skill_id": "TD.LG.09",
      "intro": [
-      "Lần này có thêm điều kiện. Bé nghe hết lời Lu rồi mới chạm nhé."
+      "Bé nghe hết lời Lu rồi chạm nhé."
      ],
      "kinds": [
       {
@@ -739,7 +739,7 @@
      "skill_id": "TO.SO.01",
      "target_style": "pair",
      "intro": [
-      "Mỗi luống có một cọc ghi số. Bé kéo rổ cà rốt về đúng cọc nhé."
+      "Bé kéo rổ cà rốt về đúng cọc số nhé."
      ],
      "label": "Kéo rổ về đúng cọc",
      "sets": [
@@ -784,7 +784,7 @@
      "skill_id": "TO.SO.02",
      "target_style": "pair",
      "intro": [
-      "Lần này số lớn hơn. Bé đếm thật kỹ rồi kéo về đúng cọc nhé."
+      "Bé kéo rổ cà rốt về đúng cọc số nhé."
      ],
      "label": "Kéo rổ về đúng cọc",
      "sets": [
@@ -867,7 +867,7 @@
      "skill_id": "KP.TG.02",
      "target_style": "pair",
      "intro": [
-      "Mỗi đồ vật có một công dụng. Bé kéo đồ vật đến chỗ cần dùng nó nhé."
+      "Đồ vật này dùng ở đâu? Bé kéo vào nhé."
      ],
      "label": "Kéo đồ vật đến chỗ dùng nó",
      "sets": [
@@ -897,7 +897,7 @@
      "skill_id": "KP.TG.02",
      "target_style": "pair",
      "intro": [
-      "Mỗi đồ vật có một công dụng. Bé kéo đồ vật đến chỗ cần dùng nó nhé."
+      "Đồ vật này dùng ở đâu? Bé kéo vào nhé."
      ],
      "label": "Kéo đồ vật đến chỗ dùng nó",
      "sets": [
@@ -1014,7 +1014,7 @@
     "5-6": {
      "skill_id": "KP.TG.07",
      "intro": [
-      "Mỗi cô chú làm một nghề và dùng một dụng cụ. Bé nối mũ với dụng cụ của nghề đó nhé."
+      "Bé nối mũ với dụng cụ của nghề đó nhé."
      ],
      "sets": [
       [
@@ -1105,7 +1105,7 @@
     "4-5": {
      "skill_id": "TD.LG.04",
      "intro": [
-      "Đồ dùng vệ sinh và đồ ăn bị lẫn vào nhau. Bé xếp mỗi thứ về đúng giỏ nhé."
+      "Bé xếp mỗi thứ về đúng giỏ nhé."
      ],
      "again": "Bé xếp tiếp nhé.",
      "groups": [
@@ -1167,7 +1167,7 @@
     "5-6": {
      "skill_id": "TD.LG.05",
      "intro": [
-      "Các con vật đi lạc rồi. Bé đưa con vật về chỗ của nó nhé: dưới nước, trên trời hay trên cạn."
+      "Con vật này sống ở đâu? Bé kéo vào đúng giỏ nhé."
      ],
      "again": "Bé xếp tiếp nhé.",
      "groups": [
@@ -1275,7 +1275,7 @@
     "4-5": {
      "skill_id": "TV.NG.01",
      "intro": [
-      "Lu kể chuyện trồng đậu. Bé xếp tranh theo đúng thứ tự nhé."
+      "Bé xếp tranh theo đúng thứ tự nhé."
      ],
      "label": "Bé chạm tranh theo thứ tự",
      "sets": [
@@ -1308,7 +1308,7 @@
     "5-6": {
      "skill_id": "TV.NG.01",
      "intro": [
-      "Lu có hai câu chuyện. Bé xếp tranh theo đúng thứ tự nhé."
+      "Bé xếp tranh theo đúng thứ tự nhé."
      ],
      "label": "Bé chạm tranh theo thứ tự",
      "again": "Câu chuyện thứ hai nhé.",
@@ -1401,7 +1401,7 @@
     "4-5": {
      "skill_id": "TD.TN.02",
      "intro": [
-      "Bé lật hai thẻ. Hai thẻ giống nhau là được một đôi nhé."
+      "Bé lật tìm hai thẻ giống nhau nhé."
      ],
      "pool": [
       "art:meo",
@@ -1419,7 +1419,7 @@
     "5-6": {
      "skill_id": "TD.TN.02",
      "intro": [
-      "Lần này hai thẻ của một đôi không giống hệt nhau mà có liên quan với nhau, như con gà và quả trứng. Bé lật và nhớ thật kỹ nhé."
+      "Bé lật tìm hai thẻ đi cùng nhau, như gà và trứng."
      ],
      "match": [
       [
@@ -1484,7 +1484,7 @@
      "skill_id": "TD.QS.07",
      "bg": "asset:BC-0003",
      "intro": [
-      "Trong vườn đậu có mấy bạn nhỏ đang trốn."
+      "Bé tìm các bạn nhỏ đang trốn nhé."
      ],
      "q": "Bé tìm {name} nhé.",
      "find": 2,
@@ -1524,7 +1524,7 @@
      "skill_id": "TD.QS.07",
      "bg": "asset:BC-0003",
      "intro": [
-      "Trong vườn đậu có nhiều bạn nhỏ đang trốn kỹ lắm."
+      "Bé tìm các bạn nhỏ đang trốn nhé."
      ],
      "q": "Bé tìm {name} nhé.",
      "find": 4,
@@ -1608,7 +1608,7 @@
      "skill_id": "TD.KG.01",
      "anchor": "art:hop",
      "intro": [
-      "Lu có một cái hộp. Bé nghe Lu nói rồi đặt đồ chơi vào đúng chỗ nhé."
+      "Bé nghe Lu nói rồi đặt đồ chơi nhé."
      ],
      "rounds": 3,
      "tasks": [
@@ -1648,7 +1648,7 @@
      "skill_id": "TD.TT.05",
      "anchor": "art:hop",
      "intro": [
-      "Lần này Lu nói hai việc liền nhau. Bé nghe hết rồi mới làm nhé."
+      "Bé nghe hết lời Lu rồi làm nhé."
      ],
      "rounds": 2,
      "per": 2,
@@ -1734,7 +1734,7 @@
      "rows": 2,
      "aspect": "1/1",
      "intro": [
-      "Gió thổi làm ảnh của Lu bị xoay lung tung. Bé chạm vào mảnh nghiêng để xoay nó lại nhé."
+      "Bé chạm vào mảnh nghiêng để xoay lại nhé."
      ],
      "done": "Ảnh của Lu thẳng lại rồi!",
      "engine": "E08",
@@ -1759,7 +1759,7 @@
      "aspect": "1/1",
      "rounds": 1,
      "intro": [
-      "Gió thổi làm ảnh của Lu bị xoay lung tung. Bé chạm vào mảnh nghiêng để xoay nó lại nhé."
+      "Bé chạm vào mảnh nghiêng để xoay lại nhé."
      ],
      "done": "Ảnh của Lu thẳng lại rồi!",
      "engine": "E08",
@@ -1810,7 +1810,7 @@
      "rows": 2,
      "ghost": true,
      "intro": [
-      "Tranh vườn đậu bị rơi ra thành mảnh. Bé kéo từng mảnh vào đúng chỗ nhé."
+      "Bé kéo từng mảnh vào đúng chỗ nhé."
      ],
      "no": "Bé nhìn tranh mờ phía sau để tìm chỗ nhé.",
      "done": "Tranh vườn đậu đã ghép xong!",
@@ -1834,7 +1834,7 @@
      "cols": 3,
      "rows": 3,
      "intro": [
-      "Tranh bị rơi ra thành chín mảnh. Bé kéo từng mảnh vào đúng chỗ nhé."
+      "Bé kéo từng mảnh vào đúng chỗ nhé."
      ],
      "no": "Bé nhìn màu và đường nét ở mép mảnh nhé.",
      "look": "Bầu trời ở trên, mặt đất ở dưới đó.",
@@ -1901,7 +1901,7 @@
       "need": "Lu còn thiếu hạt đậu. Bé nhặt đủ rồi mới về nhé."
      },
      "intro": [
-      "Trên đường về, Lu muốn nhặt ba hạt đậu. Bé dẫn Lu nhặt đủ rồi về nhà nhé."
+      "Bé dẫn Lu nhặt ba hạt đậu rồi về nhà nhé."
      ],
      "hint": "Bé nhìn trước đường đi rồi mới kéo nhé.",
      "bump": "Ở đây có tường rồi.",
@@ -1960,7 +1960,7 @@
       "ho-tro"
      ],
      "intro": [
-      "Mình cùng tập tô nhé. Bé xem Lu tô trước."
+      "Mình cùng tập tô nhé."
      ],
      "done": "Bé tô {name} đẹp lắm!",
      "engine": "E13",
@@ -1981,7 +1981,7 @@
       "doc-lap"
      ],
      "intro": [
-      "Hôm nay mình tô chữ o, ô, ơ. Bé xem Lu tô trước, rồi tô cùng Lu, rồi tự tô nhé."
+      "Mình cùng tô chữ o, ô, ơ nhé."
      ],
      "done": "Bé tô {name} đẹp lắm!",
      "engine": "E13",
@@ -2024,7 +2024,7 @@
      "skill_id": "KP.ST.D01",
      "trace": "<circle cx=\"200\" cy=\"150\" r=\"55\"/><path d=\"M200 70 V40 M200 230 V260 M120 150 H90 M280 150 H310 M143 93 L122 72 M257 93 L278 72 M143 207 L122 228 M257 207 L278 228\"/>",
      "intro": [
-      "Bé chọn màu bút sáp rồi tô theo nét đứt để vẽ ông mặt trời nhé. Vẽ xong bé bấm Vẽ xong."
+      "Bé tô theo nét đứt để vẽ ông mặt trời nhé."
      ],
      "min_strokes": 2,
      "done": "Ông mặt trời của bé thật ấm áp! Lu cất tranh vào tủ tranh rồi.",
@@ -2037,7 +2037,7 @@
      "skill_id": "KP.ST.D01",
      "trace": "<path d=\"M110 150 Q180 80 260 150 Q180 220 110 150 Z\"/><path d=\"M260 150 L320 110 L320 190 Z\"/><circle cx=\"150\" cy=\"140\" r=\"8\"/><path d=\"M185 115 Q200 95 220 112\"/><path d=\"M70 240 Q95 225 120 240 T170 240 M230 240 Q255 225 280 240 T330 240\"/>",
      "intro": [
-      "Bé tô theo nét đứt để vẽ chú cá đang bơi nhé. Tô xong bé vẽ thêm gì cũng được, rồi bấm Vẽ xong."
+      "Bé tô theo nét đứt để vẽ chú cá nhé."
      ],
      "min_strokes": 4,
      "done": "Chú cá của bé bơi thật vui! Lu cất tranh vào tủ tranh rồi.",
@@ -2081,7 +2081,7 @@
      "picture": "buom-hoa",
      "style": "tu-do",
      "intro": [
-      "Bé chọn màu bút sáp rồi chạm vào tranh để tô nhé. Tô xong bé bấm Xong rồi."
+      "Bé chọn màu rồi chạm vào tranh để tô nhé."
      ],
      "palette": [
       {
@@ -2132,7 +2132,7 @@
      "picture": "buom-hoa",
      "style": "theo-so",
      "intro": [
-      "Mỗi vùng có một con số. Số nào thì tô màu nấy nhé, nhìn bảng màu ở dưới."
+      "Số nào thì tô màu nấy nhé."
      ],
      "palette": [
       {
@@ -2251,7 +2251,7 @@
      "skill_id": "TO.SO.02",
      "object": "art:tao",
      "intro": [
-      "Lần này nhiều táo hơn. Bé chạm từng quả và đếm thật chậm nhé."
+      "Bé chạm từng quả táo và đếm nhé."
      ],
      "hint": "Bé chạm từng quả, mỗi quả đếm một tiếng.",
      "q": "Trong rổ có mấy quả táo?",
@@ -2361,7 +2361,7 @@
      "skill_id": "KS.VS.01",
      "state0": "art:ban-tay:#c9a27a",
      "intro": [
-      "Tay Lu bẩn rồi. Bé giúp Lu rửa tay đúng các bước nhé."
+      "Bé giúp Lu rửa tay đúng các bước nhé."
      ],
      "steps": [
       {
@@ -2537,7 +2537,7 @@
      ],
      "rounds": 5,
      "intro": [
-      "Hôm nay mình làm nhà khoa học. Bé đoán trước, rồi thả vào nước để xem kết quả nhé."
+      "Vật này chìm hay nổi? Bé đoán rồi thả nhé."
      ],
      "done": "Bé làm thí nghiệm giỏi lắm!",
      "predict_q": "Bé đoán xem {name} sẽ chìm hay nổi?",
@@ -2600,7 +2600,7 @@
       "dan": "đàn",
       "xac-xo": "cái xắc xô"
      },
-     "q": "Bé nghe xem tiếng gì sau tấm rèm nhé.",
+     "q": "Tiếng gì sau tấm rèm?",
      "again": "Bé nghe tiếp nhé.",
      "no": "Bé nghe lại nhé.",
      "done": "Bé có đôi tai thật tinh!",
@@ -2625,7 +2625,7 @@
       "dan": "đàn",
       "xac-xo": "cái xắc xô"
      },
-     "q": "Bé nghe xem tiếng gì sau tấm rèm nhé.",
+     "q": "Tiếng gì sau tấm rèm?",
      "again": "Bé nghe tiếp nhé.",
      "no": "Bé nghe lại nhé.",
      "done": "Bé có đôi tai thật tinh!",
@@ -3198,7 +3198,7 @@
      ],
      "min": 3,
      "intro": [
-      "Vườn đậu còn trống. Bé kéo hình dán để trang trí vườn nhé. Xong bé bấm Xong rồi."
+      "Bé kéo hình dán để trang trí vườn nhé."
      ],
      "done": "Khu vườn của bé thật đẹp! Lu cất vào tủ tranh rồi.",
      "engine": "E14",
@@ -3222,7 +3222,7 @@
      ],
      "min": 5,
      "intro": [
-      "Bé hãy làm khu vườn trong mơ của bé. Kéo thật nhiều hình dán vào nhé. Xong bé bấm Xong rồi."
+      "Bé kéo hình dán làm khu vườn trong mơ nhé."
      ],
      "done": "Khu vườn trong mơ của bé thật đẹp! Lu cất vào tủ tranh rồi.",
      "engine": "E14",
@@ -3272,7 +3272,7 @@
      "base": "<circle cx=\"200\" cy=\"150\" r=\"70\"/>",
      "trace": "<path d=\"M200 60 V35 M200 240 V265 M110 150 H85 M290 150 H315 M137 87 L118 68 M263 87 L282 68 M137 213 L118 232 M263 213 L282 232\"/><circle cx=\"175\" cy=\"135\" r=\"6\"/><circle cx=\"225\" cy=\"135\" r=\"6\"/><path d=\"M170 170 Q200 195 230 170\"/>",
      "intro": [
-      "Lu vẽ một vòng tròn. Bé tô theo nét đứt để vòng tròn biến thành ông mặt trời nhé."
+      "Bé tô nét đứt để vòng tròn thành ông mặt trời nhé."
      ],
      "min_strokes": 2,
      "done": "Vòng tròn đã thành ông mặt trời rồi! Bé giỏi quá.",
@@ -3286,7 +3286,7 @@
      "base": "<path d=\"M200 70 L270 200 L130 200 Z\"/>",
      "trace": "<path d=\"M145 200 V265 H255 V200\"/><path d=\"M185 265 V225 H215 V265\"/><path d=\"M225 215 h22 v20 h-22 Z\"/><path d=\"M60 265 H340\"/><path d=\"M235 105 V75 H255 V140\"/>",
      "intro": [
-      "Lu vẽ một hình tam giác. Bé tô theo nét đứt để biến nó thành ngôi nhà nhé. Tô xong bé vẽ thêm gì cũng được."
+      "Bé tô nét đứt để tam giác thành ngôi nhà nhé."
      ],
      "min_strokes": 4,
      "done": "Hình tam giác đã thành ngôi nhà xinh rồi! Bé giỏi quá.",
@@ -3395,7 +3395,7 @@
       "Ai đang kêu cục ta cục tác sau tấm vải nhỉ?"
      ],
      "intro": [
-      "Đây là cô gà mái. Lu chỉ cho bé cái mào trước nhé."
+      "Đây là cô gà mái."
      ],
      "explore": "Giờ bé chạm vào từng chỗ sáng để nghe Lu kể nhé.",
      "parts": [
@@ -3445,7 +3445,7 @@
       "Ai đang kêu cục ta cục tác sau tấm vải nhỉ?"
      ],
      "intro": [
-      "Đây là cô gà mái. Lu chỉ cho bé cái mào trước nhé."
+      "Đây là cô gà mái."
      ],
      "explore": "Giờ bé chạm vào từng chỗ sáng để nghe Lu kể nhé.",
      "parts": [
@@ -3611,7 +3611,7 @@
      "intro": [
       "Hai bức tranh này gần giống nhau."
      ],
-     "q": "Bé tìm hai chỗ khác nhau và chạm vào nhé.",
+     "q": "Bé tìm hai chỗ khác nhau nhé.",
      "hint": "Bé nhìn từng đồ vật ở hai tranh nhé.",
      "done": "Bé tìm ra hết chỗ khác nhau rồi!",
      "engine": "E06",
@@ -3699,7 +3699,7 @@
      "intro": [
       "Hai bức tranh này gần giống nhau."
      ],
-     "q": "Bé tìm bốn chỗ khác nhau và chạm vào nhé.",
+     "q": "Bé tìm bốn chỗ khác nhau nhé.",
      "hint": "Bé nhìn từng đồ vật ở hai tranh nhé.",
      "done": "Bé tìm ra hết chỗ khác nhau rồi!",
      "engine": "E06",
@@ -3760,10 +3760,10 @@
      "look_ms": 4000,
      "rounds": 2,
      "intro": [
-      "Bé nhìn thật kỹ các đồ vật trên khay nhé. Lu sẽ che khăn lại."
+      "Bé nhìn kỹ các đồ vật trên khay nhé."
      ],
      "q": "Vật nào đã biến mất?",
-     "again": "Mình chơi thêm lượt nữa. Bé nhìn kỹ nhé.",
+     "again": "Bé nhìn kỹ nhé.",
      "look_again": "Bé có thể bấm Xem lại.",
      "done": "Bé nhớ giỏi lắm!",
      "engine": "E06",
@@ -3791,10 +3791,10 @@
      "look_ms": 5000,
      "rounds": 2,
      "intro": [
-      "Bé nhìn thật kỹ các đồ vật trên khay nhé. Lần này có hai vật biến mất."
+      "Bé nhìn kỹ các đồ vật trên khay nhé."
      ],
      "q": "Hai vật nào đã biến mất?",
-     "again": "Mình chơi thêm lượt nữa. Bé nhìn kỹ nhé.",
+     "again": "Bé nhìn kỹ nhé.",
      "look_again": "Bé có thể bấm Xem lại.",
      "done": "Bé nhớ giỏi lắm!",
      "engine": "E06",
@@ -3977,7 +3977,7 @@
      "intro": [
       "Lu xâu chuỗi hạt theo quy luật."
      ],
-     "q": "Hạt tiếp theo là hạt nào?",
+     "q": "Hình tiếp theo là hình gì?",
      "no": "Bé nhìn lại cả hàng hạt nhé.",
      "ok": "Đúng rồi! Quy luật là {seq}, rồi lặp lại.",
      "engine": "E04",
@@ -4021,9 +4021,9 @@
      "length": 7,
      "rounds": 3,
      "intro": [
-      "Lu xâu chuỗi hạt theo quy luật khó hơn."
+      "Lu xâu chuỗi hạt theo quy luật."
      ],
-     "q": "Hạt tiếp theo là hạt nào?",
+     "q": "Hình tiếp theo là hình gì?",
      "no": "Bé nhìn lại cả hàng hạt nhé.",
      "ok": "Đúng rồi! Quy luật là {seq}, rồi lặp lại.",
      "engine": "E04",
@@ -4062,7 +4062,7 @@
     "4-5": {
      "skill_id": "TD.LG.13",
      "intro": [
-      "Lu đang nghĩ về một con vật. Mỗi lần Lu nói một manh mối, bé chạm vào con vật KHÔNG đúng để loại nó nhé."
+      "Lu nghĩ con gì? Bé loại con không đúng nhé."
      ],
      "puzzles": [
       {
@@ -4154,7 +4154,7 @@
     "5-6": {
      "skill_id": "TD.LG.13",
      "intro": [
-      "Lu đang nghĩ về một con vật. Mỗi lần Lu nói một manh mối, bé chạm vào con vật KHÔNG đúng để loại nó nhé."
+      "Lu nghĩ con gì? Bé loại con không đúng nhé."
      ],
      "puzzles": [
       {
@@ -4351,7 +4351,7 @@
        "say": [
         "Trên đĩa có bốn quả táo."
        ],
-       "act": "Lu ăn một quả. Bé chạm vào một quả để Lu ăn nhé.",
+       "act": "Bé chạm một quả để Lu ăn nhé.",
        "q": "Trên đĩa còn mấy quả táo?",
        "ok": "Đúng rồi, bốn bớt một còn ba."
       }
@@ -4400,7 +4400,7 @@
        "say": [
         "Trên đĩa có tám quả táo."
        ],
-       "act": "Lu chia cho bạn ba quả. Bé chạm vào ba quả nhé.",
+       "act": "Bé chạm ba quả để chia cho bạn nhé.",
        "q": "Trên đĩa còn mấy quả táo?",
        "ok": "Đúng rồi, tám bớt ba còn năm."
       }
@@ -4451,7 +4451,7 @@
       "ho-tro"
      ],
      "intro": [
-      "Mình cùng tô số nhé. Bé xem Lu tô trước."
+      "Mình cùng tô số nhé."
      ],
      "done": "Bé tô {name} đẹp lắm!",
      "engine": "E13",
@@ -4472,7 +4472,7 @@
       "doc-lap"
      ],
      "intro": [
-      "Hôm nay mình tô số năm, số tám và số chín. Bé xem Lu tô, tô cùng Lu, rồi tự tô nhé."
+      "Mình cùng tô số năm, tám và chín nhé."
      ],
      "done": "Bé tô {name} đẹp lắm!",
      "engine": "E13",
@@ -4510,6 +4510,9 @@
    "levels": {
     "4-5": {
      "skill_id": "EN.EN.07",
+     "intro": [
+      "Bé hãy nghe rồi chạm vào hình đúng nhé."
+     ],
      "rounds": 3,
      "words": [
       {
@@ -4535,6 +4538,9 @@
     },
     "5-6": {
      "skill_id": "EN.EN.37",
+     "intro": [
+      "Bé hãy nghe rồi chạm vào hình đúng nhé."
+     ],
      "rounds": 5,
      "words": [
       {
@@ -4645,7 +4651,7 @@
      "skill_id": "EN.EN.50",
      "anchor": "art:hop",
      "intro": [
-      "Mình nghe tiếng Anh và làm theo nhé. Lần này có hai câu liền nhau."
+      "Bé nghe tiếng Anh rồi làm theo nhé."
      ],
      "rounds": 2,
      "per": 2,
@@ -4732,7 +4738,7 @@
      "rounds": 3,
      "show_ms": 2500,
      "intro": [
-      "Lu cho bé nhìn thật nhanh rồi che lại nhé."
+      "Bé nhìn nhanh rồi đoán số nhé."
      ],
      "look": "Bé nhìn kỹ nhé.",
      "q": "Có mấy cái?",
@@ -4786,7 +4792,7 @@
      "rounds": 3,
      "show_ms": 3500,
      "intro": [
-      "Mỗi khung có mười ô. Bé nhìn nhanh rồi đoán số nhé."
+      "Bé nhìn nhanh rồi đoán số nhé."
      ],
      "look": "Bé nhìn kỹ nhé.",
      "q": "Có tất cả mấy chấm?",
@@ -4840,7 +4846,7 @@
     "4-5": {
      "skill_id": "TD.LG.02",
      "intro": [
-      "Lu có mấy khối hồng to nhỏ khác nhau. Bé xếp từ khối nhỏ nhất đến khối to nhất nhé."
+      "Bé xếp từ khối nhỏ nhất đến to nhất nhé."
      ],
      "label": "Bé chạm từ nhỏ đến to",
      "sets": [
@@ -4873,10 +4879,10 @@
     "5-6": {
      "skill_id": "TO.DO.07",
      "intro": [
-      "Lần này các khối chỉ hơn nhau một chút thôi. Bé nhìn thật kỹ nhé."
+      "Bé xếp từ khối nhỏ nhất đến to nhất nhé."
      ],
      "label": "Bé chạm từ nhỏ đến to",
-     "again": "Giờ đến cầu thang nâu. Bé xếp từ thanh mỏng nhất nhé.",
+     "again": "Bé xếp cầu thang nâu từ thanh mỏng nhất nhé.",
      "sets": [
       {
        "q": "Khối nào nhỏ nhất?",
@@ -4975,7 +4981,7 @@
     "4-5": {
      "skill_id": "TD.QS.12",
      "intro": [
-      "Ba ô màu xanh này có ô nhạt, có ô đậm. Bé xếp từ ô nhạt nhất đến ô đậm nhất nhé."
+      "Bé xếp từ ô nhạt nhất đến đậm nhất nhé."
      ],
      "label": "Bé chạm từ nhạt đến đậm",
      "sets": [
@@ -5008,7 +5014,7 @@
     "5-6": {
      "skill_id": "TD.QS.12",
      "intro": [
-      "Các ô màu này chỉ khác nhau một chút. Bé xếp từ nhạt nhất đến đậm nhất nhé."
+      "Bé xếp từ ô nhạt nhất đến đậm nhất nhé."
      ],
      "label": "Bé chạm từ nhạt đến đậm",
      "again": "Giờ đến màu xanh lá.",
@@ -5113,7 +5119,7 @@
      "skill_id": "TO.SO.07",
      "style": "face",
      "intro": [
-      "Mỗi thanh có các đoạn đỏ và xanh xen nhau. Bé đếm số đoạn để biết thanh số mấy nhé."
+      "Thanh này là số mấy? Bé đếm đoạn nhé."
      ],
      "items": [
       {
@@ -5178,7 +5184,7 @@
      "skill_id": "TO.SO.07",
      "style": "face",
      "intro": [
-      "Các thanh số dài hơn rồi. Bé đếm đoạn, rồi thử ghép hai thanh nhé."
+      "Thanh này là số mấy? Bé đếm đoạn nhé."
      ],
      "items": [
       {
@@ -5199,7 +5205,7 @@
        ]
       },
       {
-       "q": "Thanh ba ghép với thanh nào thì dài bằng thanh năm?",
+       "q": "Thanh ba ghép thanh nào thì bằng thanh năm?",
        "show": "<span class=\"rods\"><span class=\"rod\" style=\"--n:5;--u:34px\"></span><span class=\"rod\" style=\"--n:3;--u:34px\"></span></span>",
        "a": 0,
        "ok": "Đúng rồi, ba với hai là năm.",
@@ -5216,7 +5222,7 @@
        ]
       },
       {
-       "q": "Thanh sáu ghép với thanh nào thì dài bằng thanh mười?",
+       "q": "Thanh sáu ghép thanh nào thì bằng thanh mười?",
        "show": "<span class=\"rods\"><span class=\"rod\" style=\"--n:10;--u:26px\"></span><span class=\"rod\" style=\"--n:6;--u:26px\"></span></span>",
        "a": 0,
        "ok": "Đúng rồi, sáu với bốn là mười.",
@@ -5282,7 +5288,7 @@
      "skill_id": "TO.TG.01",
      "style": "face",
      "intro": [
-      "Khung này có năm ô. Bé xem còn mấy ô trống thì đủ năm nhé."
+      "Còn mấy ô trống thì đủ năm?"
      ],
      "items": [
       {
@@ -5347,7 +5353,7 @@
      "skill_id": "TO.SO.06",
      "style": "face",
      "intro": [
-      "Một khung đầy là mười, gọi là một chục. Bé nhìn khung rồi trả lời nhé."
+      "Bé nhìn khung rồi trả lời nhé."
      ],
      "items": [
       {
@@ -5453,11 +5459,11 @@
      "skill_id": "TD.KG.15",
      "style": "face",
      "intro": [
-      "Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình giống hệt khi soi gương nhé."
+      "Bé chọn nửa còn lại của hình nhé."
      ],
      "items": [
       {
-       "q": "Nửa nào ghép vào thì hai bên giống nhau như soi gương?",
+       "q": "Nửa nào ghép vào cho giống soi gương?",
        "show": "<span class=\"sym-wrap\"><span class=\"sym\" style=\"--c:2\"><i class=\"on\"></i><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i></span><span class=\"mid\"></span><span class=\"sym q\" style=\"--c:2\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span></span>",
        "a": 0,
        "ok": "Đúng rồi, hai bên giống hệt nhau qua tấm gương.",
@@ -5475,7 +5481,7 @@
        ]
       },
       {
-       "q": "Nửa nào ghép vào thì hai bên giống nhau như soi gương?",
+       "q": "Nửa nào ghép vào cho giống soi gương?",
        "show": "<span class=\"sym-wrap\"><span class=\"sym\" style=\"--c:2\"><i class=\"\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"on\"></i></span><span class=\"mid\"></span><span class=\"sym q\" style=\"--c:2\"><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i><i class=\"\"></i></span></span>",
        "a": 0,
        "ok": "Đúng rồi, hình đã đối xứng.",
@@ -5503,7 +5509,7 @@
      "skill_id": "TD.KG.12",
      "style": "face",
      "intro": [
-      "Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình đối xứng nhé."
+      "Bé chọn nửa còn lại của hình nhé."
      ],
      "items": [
       {
@@ -5606,15 +5612,12 @@
     "4-5": {
      "skill_id": "TD.QH.03",
      "style": "face",
-     "intro": [
-      "Có bạn đang trốn sau tấm bìa có lỗ. Bé nhìn qua lỗ rồi đoán là ai nhé."
-     ],
      "items": [
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:1:art:meo",
        "a": 0,
-       "ok": "Đúng rồi, là bạn mèo.",
+       "ok": "Đúng rồi, con mèo.",
        "opts": [
         {
          "e": "art:meo",
@@ -5631,10 +5634,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:1:art:ga",
        "a": 0,
-       "ok": "Đúng rồi, là cô gà.",
+       "ok": "Đúng rồi, con gà.",
        "opts": [
         {
          "e": "art:ga",
@@ -5651,10 +5654,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:1:art:buom",
        "a": 0,
-       "ok": "Đúng rồi, là bạn bướm.",
+       "ok": "Đúng rồi, con bướm.",
        "opts": [
         {
          "e": "art:buom",
@@ -5671,7 +5674,7 @@
        ]
       }
      ],
-     "no": "Bé nhìn màu và hình qua từng lỗ nhé.",
+     "no": "Bé đoán lại nhé.",
      "engine": "E01",
      "mode": "items",
      "activity_id": "LAB-MT-06-4-5",
@@ -5680,15 +5683,12 @@
     "5-6": {
      "skill_id": "TD.QH.03",
      "style": "face",
-     "intro": [
-      "Tấm bìa lần này chỉ có hai lỗ nhỏ. Bé nhìn thật kỹ rồi đoán nhé."
-     ],
      "items": [
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:2:art:ech",
        "a": 0,
-       "ok": "Đúng rồi, là bạn ếch.",
+       "ok": "Đúng rồi, con ếch.",
        "opts": [
         {
          "e": "art:ech",
@@ -5709,10 +5709,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:2:art:chim",
        "a": 0,
-       "ok": "Đúng rồi, là bạn chim.",
+       "ok": "Đúng rồi, con chim.",
        "opts": [
         {
          "e": "art:chim",
@@ -5733,10 +5733,10 @@
        ]
       },
       {
-       "q": "Ai đang trốn sau tấm bìa?",
+       "q": "Sau tấm bìa là con gì?",
        "show": "peek:2:art:oc",
        "a": 0,
-       "ok": "Đúng rồi, là bạn ốc sên.",
+       "ok": "Đúng rồi, con ốc sên.",
        "opts": [
         {
          "e": "art:oc",
@@ -5757,7 +5757,7 @@
        ]
       }
      ],
-     "no": "Bé nhìn màu và hình qua từng lỗ nhé.",
+     "no": "Bé đoán lại nhé.",
      "engine": "E01",
      "mode": "items",
      "activity_id": "LAB-MT-06-5-6",
@@ -5850,7 +5850,7 @@
      "look_ms": 4000,
      "rounds": 3,
      "intro": [
-      "Lu đặt đồ vật vào các ô. Bé nhớ vật nào nằm ở đâu nhé."
+      "Bé nhớ đồ vật nằm ở ô nào nhé."
      ],
      "look": "Bé nhìn thật kỹ nhé.",
      "q": "{name} nằm ở ô nào?",
@@ -5912,7 +5912,7 @@
      "look_ms": 4500,
      "rounds": 3,
      "intro": [
-      "Lu đặt bốn đồ vật vào các ô. Lần này Lu hỏi hai vật liền nhau."
+      "Bé nhớ đồ vật nằm ở ô nào nhé."
      ],
      "look": "Bé nhìn thật kỹ nhé.",
      "q": "{name} nằm ở ô nào?",
@@ -6011,7 +6011,7 @@
      ],
      "rounds": 2,
      "intro": [
-      "Bên trái là mẫu của Lu. Bé chạm vào lưới bên phải để xếp giống hệt mẫu nhé."
+      "Bé chạm ô để xếp giống mẫu nhé."
      ],
      "q": "Bé xếp giống mẫu nhé.",
      "again": "Mẫu mới đây. Bé xếp tiếp nhé.",
@@ -6113,7 +6113,7 @@
      ],
      "rounds": 2,
      "intro": [
-      "Mẫu của Lu có hai màu. Bé chọn màu rồi chạm ô cho giống mẫu nhé."
+      "Bé chọn màu rồi chạm ô cho giống mẫu nhé."
      ],
      "q": "Bé xếp giống mẫu nhé.",
      "again": "Mẫu mới đây. Bé xếp tiếp nhé.",
@@ -6163,7 +6163,7 @@
      "skill_id": "TV.AM.02",
      "style": "face",
      "intro": [
-      "Lu đọc tên từng hình. Bé nghe tiếng đầu tiên rồi chọn hình đúng nhé."
+      "Bé nghe tiếng đầu rồi chọn hình đúng nhé."
      ],
      "items": [
       {
@@ -6234,11 +6234,11 @@
      "skill_id": "TV.AM.04",
      "style": "face",
      "intro": [
-      "Lần này có những âm nghe gần giống nhau. Bé nghe thật kỹ nhé."
+      "Bé nghe tiếng đầu rồi chọn hình đúng nhé."
      ],
      "items": [
       {
-       "q": "Táo, thỏ, lá, mèo. Hình nào bắt đầu bằng âm tờ?",
+       "q": "Hình nào bắt đầu bằng âm tờ?",
        "a": 0,
        "ok": "Đúng rồi, tờ, táo. Còn thỏ là âm thờ.",
        "opts": [
@@ -6261,7 +6261,7 @@
        ]
       },
       {
-       "q": "Chim, giày, cá, sao. Hình nào bắt đầu bằng âm chờ?",
+       "q": "Hình nào bắt đầu bằng âm chờ?",
        "a": 0,
        "ok": "Đúng rồi, chờ, chim.",
        "opts": [
@@ -6284,7 +6284,7 @@
        ]
       },
       {
-       "q": "Sách, ếch, hoa, vịt. Hình nào bắt đầu bằng âm sờ?",
+       "q": "Hình nào bắt đầu bằng âm sờ?",
        "a": 0,
        "ok": "Đúng rồi, sờ, sách.",
        "opts": [
@@ -6595,7 +6595,7 @@
      "skill_id": "KS.CS.02",
      "state0": "art:chau-cay",
      "intro": [
-      "Cây của Lu đang khát nước. Bé giúp Lu chăm cây nhé."
+      "Bé giúp Lu chăm cây nhé."
      ],
      "steps": [
       {
@@ -6631,7 +6631,7 @@
      "skill_id": "KS.CS.02",
      "state0": "art:hat-dau",
      "intro": [
-      "Mình trồng và chăm một cây đậu từ hạt nhé."
+      "Bé trồng và chăm cây đậu nhé."
      ],
      "steps": [
       {

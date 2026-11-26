@@ -80,6 +80,15 @@ for (const r of rep.runs) {
   check(`[${r.vp}] Nội dung học to, nằm giữa màn (quy tắc 33)`, s.length > 0 && !tg.length, tg.slice(0, 3).join('; '));
 }
 
+// 5. Màn nhà và danh sách buổi (tam 26/11): mọi lỗi đã báo áp dụng cho MỌI màn hình, kể cả menu.
+//    To và giữa, không tràn, nút đủ to, không emoji, hình vẽ mã chỉ khi chờ vẽ tay, lời Lu ngắn, ảnh đã duyệt.
+{
+  const mn = run(['tools/nha/kiem-man-nha.mjs']);
+  let r2; try { r2 = JSON.parse(await readFile(path.join(ROOT, 'reports', 'man-nha.json'), 'utf8')); } catch { r2 = { rows: [] }; }
+  const red2 = r2.rows.filter(x => !x.ok);
+  check('Màn nhà và danh sách buổi đạt mọi phép thử (3 cỡ màn)', r2.rows.length > 0 && !red2.length, red2.length ? red2.slice(0, 3).map(x => x.ten + (x.chiTiet ? ': ' + x.chiTiet : '')).join('; ') : (r2.rows.length ? `${r2.rows.length} mục` : mn.slice(-300)));
+}
+
 const red = rows.filter(r => !r.ok);
 for (const r of rows) console.log(`${r.ok ? 'ĐẠT ' : 'ĐỎ  '} ${r.ten}${r.chiTiet ? ' — ' + r.chiTiet : ''}`);
 console.log(red.length ? `\nCỔNG ĐÓNG: ${red.length} mục đỏ. Không được đưa ${id} lên mạng.` : `\nCỔNG MỞ: ${id} đạt ${rows.length}/${rows.length} mục.`);
