@@ -87,16 +87,16 @@ export function createVoice({ clips = {}, base = '', fast = false, onMissing = (
 }
 
 /* ---------- Lu gợi ý khi bé chưa trả lời (Phòng mẫu: "Thử không trả lời") ----------
-   Sau khi Lu nói xong, nếu bé không chạm: lần 1 Lu nhắc lại đề bài, lần 2 Lu làm sáng chỗ cần chạm và nói gợi ý.
+   Sau khi Lu nói xong, nếu bé không chạm: lần 1 Lu nhắc lại đề bài, lần 2 Lu làm sáng chỗ cần chạm và hỏi lại đúng câu hỏi (không nói câu chung chung).
    Không trừ điểm, không báo sai; chỉ ghi sự kiện "idle" để bố mẹ biết bé cần hỗ trợ. */
-export function idleHelp(root, voice, { getTargets = () => [], delay = 9000, hintLine = 'Bé thử chạm vào chỗ đang sáng nhé.', onIdle = () => {} } = {}) {
+export function idleHelp(root, voice, { getTargets = () => [], delay = 9000, hintLine = null, onIdle = () => {} } = {}) {
   let tm = null, step = 0;
   const clear = () => { clearTimeout(tm); tm = null; };
   const arm = () => { clear(); if (voice.busy || step >= 2) return; tm = setTimeout(fire, delay); };
   const fire = () => {
     if (voice.busy) return; step++; onIdle(step);
     if (step === 1) voice.replay().then(arm);
-    else { getTargets().forEach(el => el && el.classList && el.classList.add('hint')); voice.speak([hintLine]); }
+    else { getTargets().forEach(el => el && el.classList && el.classList.add('hint')); if (hintLine) voice.speak([hintLine]); else voice.replay(); } // tam 26/11 20:07: nhắc lại đúng câu hỏi, không nói câu chung chung
   };
   const prev = voice.onBusy; voice.onBusy = b => { prev(b); if (!b) arm(); else clear(); };
   root.addEventListener('pointerdown', () => { step = 0; clear(); }, true);

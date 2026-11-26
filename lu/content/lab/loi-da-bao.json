@@ -73,6 +73,54 @@
    "dev": "ipad",
    "sua": "Đã chặn bằng phép thử. Còn chờ 39 ảnh vẽ tay (mây, bụi cỏ, thỏ…) vẽ trên máy 24H rồi tam duyệt",
    "cho": true
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Ai trốn sau tấm bìa?: lời dẫn giải thích dài, chỉ cần hỏi \"Sau tấm bìa là con gì?\"",
+   "s": "MT-06",
+   "age": "5-6",
+   "dev": "ipad",
+   "sua": "Câu hỏi ngắn, bỏ lời giới thiệu; quy tắc 34 đo độ dài câu hỏi và lời mở đầu cho mọi mẫu"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Nửa kia của hình: chọn đúng mà ô trống vẫn trống",
+   "s": "MT-05",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Đáp án tự bay vào ô trống; quy tắc 35 và phép thử cho mọi bài có ô trống"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Đồ vật nằm ở ô nào?: cần đếm ngược 3, 2, 1 to rồi mới úp tranh",
+   "s": "MT-07",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Đếm ngược to giữa màn ở bài ghi nhớ (cả Vật nào biến mất)"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Listen and touch: không có câu mở đầu hướng dẫn, Lu chỉ đọc \"Butterfly.\"",
+   "s": "MX-09",
+   "age": "5-6",
+   "dev": "ipad",
+   "sua": "Thêm \"Bé hãy nghe rồi chạm vào hình đúng nhé.\"; quy tắc 36 và phép thử cho mọi mẫu"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Đĩa táo của Lu: lấy táo từ giỏ nhưng giỏ trống, giỏ quá bé",
+   "s": "MX-07",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Giỏ to ngang đĩa, có sẵn táo, lấy ra thì vơi dần; quy tắc 37 và phép thử"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Lời giải thích trong các bài mẫu hơi dài (vd Chuỗi hạt: \"Bé thử chạm vào chỗ đang sáng nhé\")",
+   "s": "MX-05",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Rút gọn lời dẫn toàn Phòng mẫu; câu hỏi ≤ 10 từ, lời dẫn ≤ 12 từ; dừng tay thì Lu hỏi lại đúng câu hỏi"
   }
  ]
 }

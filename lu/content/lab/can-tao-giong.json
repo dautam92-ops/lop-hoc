@@ -1,10 +1,14 @@
 {
  "format": "lu-voice-todo",
  "lesson": "PHONG-MAU",
- "at": "2026-11-26T11:31:40.198Z",
+ "at": "2026-11-26T13:14:48.309Z",
  "lines": [
   {
-   "text": "Đồ chơi của Lu lẫn lộn hết rồi. Bé giúp Lu tìm nhé.",
+   "text": "Lu gọi chữ nào, bé chạm vào chữ đó nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giúp Lu tìm đồ chơi nhé.",
    "lang": "vi"
   },
   {
@@ -48,7 +52,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lần này có thêm điều kiện. Bé nghe hết lời Lu rồi mới chạm nhé.",
+   "text": "Bé nghe hết lời Lu rồi chạm nhé.",
    "lang": "vi"
   },
   {
@@ -248,7 +252,11 @@
    "lang": "vi"
   },
   {
-   "text": "Mỗi đồ vật có một công dụng. Bé kéo đồ vật đến chỗ cần dùng nó nhé.",
+   "text": "Bé kéo rổ cà rốt về đúng cọc số nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đồ vật này dùng ở đâu? Bé kéo vào nhé.",
    "lang": "vi"
   },
   {
@@ -288,7 +296,7 @@
    "lang": "vi"
   },
   {
-   "text": "Mỗi cô chú làm một nghề và dùng một dụng cụ. Bé nối mũ với dụng cụ của nghề đó nhé.",
+   "text": "Bé nối mũ với dụng cụ của nghề đó nhé.",
    "lang": "vi"
   },
   {
@@ -316,7 +324,7 @@
    "lang": "vi"
   },
   {
-   "text": "Đồ dùng vệ sinh và đồ ăn bị lẫn vào nhau. Bé xếp mỗi thứ về đúng giỏ nhé.",
+   "text": "Bé xếp mỗi thứ về đúng giỏ nhé.",
    "lang": "vi"
   },
   {
@@ -340,7 +348,7 @@
    "lang": "vi"
   },
   {
-   "text": "Các con vật đi lạc rồi. Bé đưa con vật về chỗ của nó nhé: dưới nước, trên trời hay trên cạn.",
+   "text": "Con vật này sống ở đâu? Bé kéo vào đúng giỏ nhé.",
    "lang": "vi"
   },
   {
@@ -364,7 +372,23 @@
    "lang": "vi"
   },
   {
-   "text": "Lu có một cái hộp. Bé nghe Lu nói rồi đặt đồ chơi vào đúng chỗ nhé.",
+   "text": "Bé xếp tranh theo đúng thứ tự nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé lật tìm hai thẻ giống nhau nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé lật tìm hai thẻ đi cùng nhau, như gà và trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm các bạn nhỏ đang trốn nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe Lu nói rồi đặt đồ chơi nhé.",
    "lang": "vi"
   },
   {
@@ -408,7 +432,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lần này Lu nói hai việc liền nhau. Bé nghe hết rồi mới làm nhé.",
+   "text": "Bé nghe hết lời Lu rồi làm nhé.",
    "lang": "vi"
   },
   {
@@ -440,7 +464,7 @@
    "lang": "vi"
   },
   {
-   "text": "Gió thổi làm ảnh của Lu bị xoay lung tung. Bé chạm vào mảnh nghiêng để xoay nó lại nhé.",
+   "text": "Bé chạm vào mảnh nghiêng để xoay lại nhé.",
    "lang": "vi"
   },
   {
@@ -448,7 +472,15 @@
    "lang": "vi"
   },
   {
-   "text": "Mình cùng tập tô nhé. Bé xem Lu tô trước.",
+   "text": "Bé kéo từng mảnh vào đúng chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé dẫn Lu nhặt ba hạt đậu rồi về nhà nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng tập tô nhé.",
    "lang": "vi"
   },
   {
@@ -476,7 +508,7 @@
    "lang": "vi"
   },
   {
-   "text": "Hôm nay mình tô chữ o, ô, ơ. Bé xem Lu tô trước, rồi tô cùng Lu, rồi tự tô nhé.",
+   "text": "Mình cùng tô chữ o, ô, ơ nhé.",
    "lang": "vi"
   },
   {
@@ -508,7 +540,7 @@
    "lang": "vi"
   },
   {
-   "text": "Bé chọn màu bút sáp rồi tô theo nét đứt để vẽ ông mặt trời nhé. Vẽ xong bé bấm Vẽ xong.",
+   "text": "Bé tô theo nét đứt để vẽ ông mặt trời nhé.",
    "lang": "vi"
   },
   {
@@ -516,7 +548,7 @@
    "lang": "vi"
   },
   {
-   "text": "Bé tô theo nét đứt để vẽ chú cá đang bơi nhé. Tô xong bé vẽ thêm gì cũng được, rồi bấm Vẽ xong.",
+   "text": "Bé tô theo nét đứt để vẽ chú cá nhé.",
    "lang": "vi"
   },
   {
@@ -524,7 +556,7 @@
    "lang": "vi"
   },
   {
-   "text": "Bé chọn màu bút sáp rồi chạm vào tranh để tô nhé. Tô xong bé bấm Xong rồi.",
+   "text": "Bé chọn màu rồi chạm vào tranh để tô nhé.",
    "lang": "vi"
   },
   {
@@ -580,7 +612,7 @@
    "lang": "vi"
   },
   {
-   "text": "Mỗi vùng có một con số. Số nào thì tô màu nấy nhé, nhìn bảng màu ở dưới.",
+   "text": "Số nào thì tô màu nấy nhé.",
    "lang": "vi"
   },
   {
@@ -612,7 +644,19 @@
    "lang": "vi"
   },
   {
-   "text": "Bé nghe xem tiếng gì sau tấm rèm nhé.",
+   "text": "Bé chạm từng quả táo và đếm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giúp Lu rửa tay đúng các bước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vật này chìm hay nổi? Bé đoán rồi thả nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tiếng gì sau tấm rèm?",
    "lang": "vi"
   },
   {
@@ -924,7 +968,7 @@
    "lang": "vi"
   },
   {
-   "text": "Vườn đậu còn trống. Bé kéo hình dán để trang trí vườn nhé. Xong bé bấm Xong rồi.",
+   "text": "Bé kéo hình dán để trang trí vườn nhé.",
    "lang": "vi"
   },
   {
@@ -932,7 +976,7 @@
    "lang": "vi"
   },
   {
-   "text": "Bé hãy làm khu vườn trong mơ của bé. Kéo thật nhiều hình dán vào nhé. Xong bé bấm Xong rồi.",
+   "text": "Bé kéo hình dán làm khu vườn trong mơ nhé.",
    "lang": "vi"
   },
   {
@@ -940,7 +984,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lu vẽ một vòng tròn. Bé tô theo nét đứt để vòng tròn biến thành ông mặt trời nhé.",
+   "text": "Bé tô nét đứt để vòng tròn thành ông mặt trời nhé.",
    "lang": "vi"
   },
   {
@@ -948,7 +992,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lu vẽ một hình tam giác. Bé tô theo nét đứt để biến nó thành ngôi nhà nhé. Tô xong bé vẽ thêm gì cũng được.",
+   "text": "Bé tô nét đứt để tam giác thành ngôi nhà nhé.",
    "lang": "vi"
   },
   {
@@ -972,7 +1016,7 @@
    "lang": "vi"
   },
   {
-   "text": "Đây là cô gà mái. Lu chỉ cho bé cái mào trước nhé.",
+   "text": "Đây là cô gà mái.",
    "lang": "vi"
   },
   {
@@ -1064,7 +1108,7 @@
    "lang": "vi"
   },
   {
-   "text": "Bé tìm hai chỗ khác nhau và chạm vào nhé.",
+   "text": "Bé tìm hai chỗ khác nhau nhé.",
    "lang": "vi"
   },
   {
@@ -1076,11 +1120,11 @@
    "lang": "vi"
   },
   {
-   "text": "Bé tìm bốn chỗ khác nhau và chạm vào nhé.",
+   "text": "Bé tìm bốn chỗ khác nhau nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bé nhìn thật kỹ các đồ vật trên khay nhé. Lu sẽ che khăn lại.",
+   "text": "Bé nhìn kỹ các đồ vật trên khay nhé.",
    "lang": "vi"
   },
   {
@@ -1096,11 +1140,7 @@
    "lang": "vi"
   },
   {
-   "text": "Mình chơi thêm lượt nữa. Bé nhìn kỹ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhìn thật kỹ các đồ vật trên khay nhé. Lần này có hai vật biến mất.",
+   "text": "Bé nhìn kỹ nhé.",
    "lang": "vi"
   },
   {
@@ -1132,7 +1172,7 @@
    "lang": "vi"
   },
   {
-   "text": "Hạt tiếp theo là hạt nào?",
+   "text": "Hình tiếp theo là hình gì?",
    "lang": "vi"
   },
   {
@@ -1140,11 +1180,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lu xâu chuỗi hạt theo quy luật khó hơn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đang nghĩ về một con vật. Mỗi lần Lu nói một manh mối, bé chạm vào con vật KHÔNG đúng để loại nó nhé.",
+   "text": "Lu nghĩ con gì? Bé loại con không đúng nhé.",
    "lang": "vi"
   },
   {
@@ -1292,7 +1328,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lu ăn một quả. Bé chạm vào một quả để Lu ăn nhé.",
+   "text": "Bé chạm một quả để Lu ăn nhé.",
    "lang": "vi"
   },
   {
@@ -1340,11 +1376,11 @@
    "lang": "vi"
   },
   {
-   "text": "Lu chia cho bạn ba quả. Bé chạm vào ba quả nhé.",
+   "text": "Bé chạm ba quả để chia cho bạn nhé.",
    "lang": "vi"
   },
   {
-   "text": "Mình cùng tô số nhé. Bé xem Lu tô trước.",
+   "text": "Mình cùng tô số nhé.",
    "lang": "vi"
   },
   {
@@ -1372,7 +1408,7 @@
    "lang": "vi"
   },
   {
-   "text": "Hôm nay mình tô số năm, số tám và số chín. Bé xem Lu tô, tô cùng Lu, rồi tự tô nhé.",
+   "text": "Mình cùng tô số năm, tám và chín nhé.",
    "lang": "vi"
   },
   {
@@ -1405,6 +1441,10 @@
   },
   {
    "text": "Rồi kéo nét thẳng xuống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hãy nghe rồi chạm vào hình đúng nhé.",
    "lang": "vi"
   },
   {
@@ -1500,7 +1540,7 @@
    "lang": "en"
   },
   {
-   "text": "Mình nghe tiếng Anh và làm theo nhé. Lần này có hai câu liền nhau.",
+   "text": "Bé nghe tiếng Anh rồi làm theo nhé.",
    "lang": "vi"
   },
   {
@@ -1516,15 +1556,11 @@
    "lang": "en"
   },
   {
-   "text": "Lu cho bé nhìn thật nhanh rồi che lại nhé.",
+   "text": "Bé nhìn nhanh rồi đoán số nhé.",
    "lang": "vi"
   },
   {
    "text": "Có mấy cái?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhìn kỹ nhé.",
    "lang": "vi"
   },
   {
@@ -1541,10 +1577,6 @@
   },
   {
    "text": "Đúng rồi! Có năm cái.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mỗi khung có mười ô. Bé nhìn nhanh rồi đoán số nhé.",
    "lang": "vi"
   },
   {
@@ -1596,7 +1628,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lu có mấy khối hồng to nhỏ khác nhau. Bé xếp từ khối nhỏ nhất đến khối to nhất nhé.",
+   "text": "Bé xếp từ khối nhỏ nhất đến to nhất nhé.",
    "lang": "vi"
   },
   {
@@ -1624,15 +1656,11 @@
    "lang": "vi"
   },
   {
-   "text": "Lần này các khối chỉ hơn nhau một chút thôi. Bé nhìn thật kỹ nhé.",
-   "lang": "vi"
-  },
-  {
    "text": "Bé so sánh rất tinh mắt! Ở nhà bé thử xếp đũa hoặc bút từ ngắn đến dài nhé.",
    "lang": "vi"
   },
   {
-   "text": "Giờ đến cầu thang nâu. Bé xếp từ thanh mỏng nhất nhé.",
+   "text": "Bé xếp cầu thang nâu từ thanh mỏng nhất nhé.",
    "lang": "vi"
   },
   {
@@ -1680,7 +1708,7 @@
    "lang": "vi"
   },
   {
-   "text": "Ba ô màu xanh này có ô nhạt, có ô đậm. Bé xếp từ ô nhạt nhất đến ô đậm nhất nhé.",
+   "text": "Bé xếp từ ô nhạt nhất đến đậm nhất nhé.",
    "lang": "vi"
   },
   {
@@ -1705,10 +1733,6 @@
   },
   {
    "text": "Xanh đậm nhất.",
-   "lang": "vi"
-  },
-  {
-   "text": "Các ô màu này chỉ khác nhau một chút. Bé xếp từ nhạt nhất đến đậm nhất nhé.",
    "lang": "vi"
   },
   {
@@ -1756,7 +1780,7 @@
    "lang": "vi"
   },
   {
-   "text": "Mỗi thanh có các đoạn đỏ và xanh xen nhau. Bé đếm số đoạn để biết thanh số mấy nhé.",
+   "text": "Thanh này là số mấy? Bé đếm đoạn nhé.",
    "lang": "vi"
   },
   {
@@ -1780,10 +1804,6 @@
    "lang": "vi"
   },
   {
-   "text": "Các thanh số dài hơn rồi. Bé đếm đoạn, rồi thử ghép hai thanh nhé.",
-   "lang": "vi"
-  },
-  {
    "text": "Đúng rồi, thanh số tám.",
    "lang": "vi"
   },
@@ -1792,7 +1812,7 @@
    "lang": "vi"
   },
   {
-   "text": "Thanh ba ghép với thanh nào thì dài bằng thanh năm?",
+   "text": "Thanh ba ghép thanh nào thì bằng thanh năm?",
    "lang": "vi"
   },
   {
@@ -1800,7 +1820,7 @@
    "lang": "vi"
   },
   {
-   "text": "Thanh sáu ghép với thanh nào thì dài bằng thanh mười?",
+   "text": "Thanh sáu ghép thanh nào thì bằng thanh mười?",
    "lang": "vi"
   },
   {
@@ -1808,7 +1828,7 @@
    "lang": "vi"
   },
   {
-   "text": "Khung này có năm ô. Bé xem còn mấy ô trống thì đủ năm nhé.",
+   "text": "Còn mấy ô trống thì đủ năm?",
    "lang": "vi"
   },
   {
@@ -1828,7 +1848,7 @@
    "lang": "vi"
   },
   {
-   "text": "Một khung đầy là mười, gọi là một chục. Bé nhìn khung rồi trả lời nhé.",
+   "text": "Bé nhìn khung rồi trả lời nhé.",
    "lang": "vi"
   },
   {
@@ -1852,11 +1872,11 @@
    "lang": "vi"
   },
   {
-   "text": "Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình giống hệt khi soi gương nhé.",
+   "text": "Bé chọn nửa còn lại của hình nhé.",
    "lang": "vi"
   },
   {
-   "text": "Nửa nào ghép vào thì hai bên giống nhau như soi gương?",
+   "text": "Nửa nào ghép vào cho giống soi gương?",
    "lang": "vi"
   },
   {
@@ -1869,10 +1889,6 @@
   },
   {
    "text": "Đúng rồi, hình đã đối xứng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình đối xứng nhé.",
    "lang": "vi"
   },
   {
@@ -1892,47 +1908,39 @@
    "lang": "vi"
   },
   {
-   "text": "Có bạn đang trốn sau tấm bìa có lỗ. Bé nhìn qua lỗ rồi đoán là ai nhé.",
+   "text": "Sau tấm bìa là con gì?",
    "lang": "vi"
   },
   {
-   "text": "Ai đang trốn sau tấm bìa?",
+   "text": "Đúng rồi, con mèo.",
    "lang": "vi"
   },
   {
-   "text": "Đúng rồi, là bạn mèo.",
+   "text": "Bé đoán lại nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bé nhìn màu và hình qua từng lỗ nhé.",
+   "text": "Đúng rồi, con gà.",
    "lang": "vi"
   },
   {
-   "text": "Đúng rồi, là cô gà.",
+   "text": "Đúng rồi, con bướm.",
    "lang": "vi"
   },
   {
-   "text": "Đúng rồi, là bạn bướm.",
+   "text": "Đúng rồi, con ếch.",
    "lang": "vi"
   },
   {
-   "text": "Tấm bìa lần này chỉ có hai lỗ nhỏ. Bé nhìn thật kỹ rồi đoán nhé.",
+   "text": "Đúng rồi, con chim.",
    "lang": "vi"
   },
   {
-   "text": "Đúng rồi, là bạn ếch.",
+   "text": "Đúng rồi, con ốc sên.",
    "lang": "vi"
   },
   {
-   "text": "Đúng rồi, là bạn chim.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, là bạn ốc sên.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đặt đồ vật vào các ô. Bé nhớ vật nào nằm ở đâu nhé.",
+   "text": "Bé nhớ đồ vật nằm ở ô nào nhé.",
    "lang": "vi"
   },
   {
@@ -2012,11 +2020,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lu đặt bốn đồ vật vào các ô. Lần này Lu hỏi hai vật liền nhau.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bên trái là mẫu của Lu. Bé chạm vào lưới bên phải để xếp giống hệt mẫu nhé.",
+   "text": "Bé chạm ô để xếp giống mẫu nhé.",
    "lang": "vi"
   },
   {
@@ -2036,7 +2040,7 @@
    "lang": "vi"
   },
   {
-   "text": "Mẫu của Lu có hai màu. Bé chọn màu rồi chạm ô cho giống mẫu nhé.",
+   "text": "Bé chọn màu rồi chạm ô cho giống mẫu nhé.",
    "lang": "vi"
   },
   {
@@ -2056,7 +2060,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lu đọc tên từng hình. Bé nghe tiếng đầu tiên rồi chọn hình đúng nhé.",
+   "text": "Bé nghe tiếng đầu rồi chọn hình đúng nhé.",
    "lang": "vi"
   },
   {
@@ -2116,11 +2120,7 @@
    "lang": "vi"
   },
   {
-   "text": "Lần này có những âm nghe gần giống nhau. Bé nghe thật kỹ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Táo, thỏ, lá, mèo. Hình nào bắt đầu bằng âm tờ?",
+   "text": "Hình nào bắt đầu bằng âm tờ?",
    "lang": "vi"
   },
   {
@@ -2132,7 +2132,7 @@
    "lang": "vi"
   },
   {
-   "text": "Chim, giày, cá, sao. Hình nào bắt đầu bằng âm chờ?",
+   "text": "Hình nào bắt đầu bằng âm chờ?",
    "lang": "vi"
   },
   {
@@ -2152,7 +2152,7 @@
    "lang": "en"
   },
   {
-   "text": "Sách, ếch, hoa, vịt. Hình nào bắt đầu bằng âm sờ?",
+   "text": "Hình nào bắt đầu bằng âm sờ?",
    "lang": "vi"
   },
   {
@@ -2292,7 +2292,7 @@
    "lang": "vi"
   },
   {
-   "text": "Cây của Lu đang khát nước. Bé giúp Lu chăm cây nhé.",
+   "text": "Bé giúp Lu chăm cây nhé.",
    "lang": "vi"
   },
   {
@@ -2324,7 +2324,7 @@
    "lang": "vi"
   },
   {
-   "text": "Mình trồng và chăm một cây đậu từ hạt nhé.",
+   "text": "Bé trồng và chăm cây đậu nhé.",
    "lang": "vi"
   },
   {
