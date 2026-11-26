@@ -110,7 +110,7 @@
 .lu-lesson .rhy-dots.hid i.b:not(.on) { background: #efe7d6; }
 .lu-lesson .rhy-you i { width: 26px; height: 26px; border-radius: 50%; background: var(--lu-leaf); animation: lu-pop .2s both; }
 .lu-lesson .rhy-you.bad i { background: var(--lu-sun-deep); }
-.lu-lesson .opt.drum { width: min(220px, 50vw); height: min(200px, 44vw); }
+.lu-lesson .opt.drum { width: min(220px, 50vw); height: min(180px, 44vw); }
 .lu-lesson .opt.drum .lu-art { width: 100%; height: 100%; }
 .lu-lesson .opt.drum.hit { animation: lu-pop .18s; }
 .lu-lesson .opt.sq { min-width: 110px; min-height: 110px; }
@@ -254,7 +254,7 @@
   .lu-lesson .balloons:has(.obj.art) { padding: 14px 20px 18px; gap: 6px 10px; max-width: 100%; }
   .lu-lesson .bal:has(.obj.art) { width: 56px; }
   .lu-lesson .answers .opt { min-width: 60px; min-height: 60px; }
-  .lu-lesson .answers .opt.wide { min-height: 60px; }
+  .lu-lesson .answers > .opt.wide { min-height: 60px; }
   .lu-lesson .answers { gap: 8px; padding-top: 6px; padding-bottom: 8px; }
   .lu-lesson .sim-lab { flex-wrap: nowrap; align-items: center; gap: 10px; }
   .lu-lesson .tank { width: 52vw; }
@@ -351,3 +351,48 @@
 .lu-lesson .opt .sym { grid-template-columns: repeat(var(--c), clamp(22px, 4vh, 32px)); }
 .lu-lesson .opt .sym i { width: clamp(22px, 4vh, 32px); height: clamp(22px, 4vh, 32px); }
 @media (orientation: portrait) and (max-width: 600px) { .lu-lesson .story .sym, .lu-lesson .opt .sym { grid-template-columns: repeat(var(--c), 22px); } .lu-lesson .story .sym i, .lu-lesson .opt .sym i { width: 22px; height: 22px; } }
+
+/* Quy tắc 33 (tam 26/11 17:35): mọi thứ bé học TO và nằm GIỮA màn hình.
+   Cảnh (câu hỏi, hình) và khu đáp án dồn thành một khối ở giữa màn, không còn khoảng trống lớn ở giữa rồi đáp án nhỏ dưới đáy.
+   Bút màu (.crayon) là dụng cụ, không phải nội dung học, giữ cỡ cũ. Đo tự động: tools/do-to-giua.mjs (Phòng mẫu và cổng kiểm tra). */
+.lu-lesson .stage, .lu-lesson .stage:has(.answers.mem) { justify-content: center; }
+.lu-lesson .stage .scene, .lu-lesson .stage:has(.answers .grid) .scene, .lu-lesson .stage:has(.answers.tray) .scene { flex: 0 1 auto; min-height: 0; padding-bottom: 18px; }
+.lu-lesson .answers > .opt:not(.crayon) { --s: clamp(104px, 17vw, 200px); min-width: var(--s); min-height: var(--s); }
+.lu-lesson .stage:has(.scene > :not(.title):not(.cap):not(.guide):not(.bd-note):not(:empty)) .answers > .opt:not(.crayon) { --s: clamp(104px, 13vw, 160px); }
+.lu-lesson .answers:has(> .opt:nth-of-type(5)) > .opt:not(.crayon) { --s: clamp(104px, 11vw, 140px); }
+.lu-lesson .answers:has(> .opt:nth-of-type(7)) > .opt:not(.crayon) { --s: clamp(96px, 10vw, 124px); }
+.lu-lesson .answers > .opt.drum { --s: 136px !important; }
+.lu-lesson .answers.tray .piece:not(.pz-piece):not(.stk) { width: clamp(96px, 11vw, 150px); height: clamp(96px, 11vw, 150px); }
+.lu-lesson .answers.tray:has(.piece.stk) { flex-wrap: wrap !important; }
+.lu-lesson .piece.stk { width: clamp(84px, 9.4vw, 116px) !important; height: clamp(84px, 9.4vw, 116px) !important; flex: 0 0 auto; }
+.lu-lesson .answers > .opt:not(.wide):not(.face):not(.card):not(.plate):not(.crayon) { font-size: clamp(56px, 8vw, 110px); }
+.lu-lesson .answers > .opt.wide { min-height: 104px; font-size: clamp(26px, 3.4vw, 40px); }
+.lu-lesson .scene .title { font-size: clamp(30px, 3.4vw, 40px); }
+.lu-lesson .seq .cell { --c: min(100px, calc((min(100vw, 1120px) - 90px) / var(--n, 7) - 6px)); width: var(--c); height: var(--c); font-size: calc(var(--c) * .6); }
+.lu-lesson .seq .cell .lu-art { width: 86%; height: 86%; }
+.lu-lesson .answers > .opt .glyph { font-size: clamp(64px, 9vw, 120px); }
+.lu-lesson .scene .guide { width: clamp(110px, 16vw, 200px); }
+.lu-lesson .stage { --vis-h: max(150px, calc(100dvh - 540px)); }
+.lu-lesson .stage:has(.answers.tray) { --vis-h: max(140px, calc(100dvh - 600px)); }
+.lu-lesson .bal:has(.obj.art) { width: clamp(72px, min(11vw, calc((100dvh - 520px) / 3)), 130px); }
+@media (orientation: portrait) and (max-width: 600px) {
+  /* Màn chỉ có câu hỏi (không hình): tối đa 4 đáp án thành ô rất to hai cột. Có hình hoặc nhiều đáp án: ba cột. */
+  .lu-lesson .answers > .opt:not(.crayon) { --o: min(140px, calc((100vw - 84px) / 2)); min-width: var(--o); min-height: var(--o); }
+  .lu-lesson .answers > .opt:not(.crayon):not(.wide) { width: var(--o); height: var(--o); padding: 4px; flex: 0 0 auto; }
+  .lu-lesson .stage:has(.scene > :not(.title):not(.cap):not(.guide):not(.bd-note):not(:empty)) .answers > .opt:not(.crayon),
+  .lu-lesson .answers:has(> .opt:nth-of-type(5)) > .opt:not(.crayon) { --o: min(104px, calc((100vw - 92px) / 3)); }
+  /* chỉ 2–3 đáp án: luôn ô to hai cột */
+  .lu-lesson .stage .answers:not(:has(> .opt:nth-of-type(4))) > .opt:not(.crayon) { --o: min(132px, calc((100vw - 84px) / 2)) !important; }
+  .lu-lesson .answers > .opt:not(.wide):not(.face):not(.card):not(.plate):not(.crayon) { font-size: 64px; }
+  .lu-lesson .answers > .opt .glyph { font-size: min(84px, calc(var(--o) * .6)); }
+  .lu-lesson .answers > .opt.wide { min-height: 88px; }
+  .lu-lesson .scene .guide { width: 88px; left: 0; }
+  /* Lu đứng bên trái lời dẫn, không đè lên chữ */
+  .lu-lesson .stage:has(.answers > .opt:not(.crayon)) .scene:has(> .guide) > .cap:not(:empty) { margin-left: 62px; max-width: calc(100% - 62px); box-sizing: border-box; }
+  .lu-lesson .balloons:not(:has(> :nth-child(6))) .bal:has(.obj.art) { width: 72px; }
+  .lu-lesson .stage:not(:has(.answers.tray, .crayon)) .scene { padding-inline: 12px; }
+  .lu-lesson .stage:has(.crayon) { --vis-h: 200px; }
+  .lu-lesson .piece.stk { width: 76px !important; height: 76px !important; }
+  .lu-lesson .bal:has(.obj.art) { width: 54px; }
+  .lu-lesson .balloons:has(.obj.art) { padding: 10px 16px 12px; }
+}

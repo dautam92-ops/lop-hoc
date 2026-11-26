@@ -7,6 +7,7 @@
 // Chạy: node tools/lab/test-lab.mjs [CC-08] [--shots]   (tự bật máy chủ tĩnh trên máy)
 import { createRequire } from 'node:module';
 import { serve } from '../serve.mjs';
+import { doToGiua, danhGia } from '../do-to-giua.mjs';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 const port = 5900 + Math.floor(Math.random() * 90); const srv = await serve(port);
@@ -30,6 +31,9 @@ for (const s of D.samples) {
       // Không tràn màn hình: mọi nút bé cần chạm phải nằm trong khung nhìn, không phải cuộn (tam 26/11: 8 thẻ lật bị tràn iPad)
       const over = await page.evaluate(() => { const b = [...document.querySelectorAll('.stage button, .stage .opt')].filter(x => x.offsetParent).map(x => x.getBoundingClientRect().bottom); return b.length ? Math.round(Math.max(...b) - innerHeight) : 0; });
       r.checks.vuaManHinh = over <= 2; if (over > 2) errs.push(`nút tràn khỏi màn hình ${over}px`);
+      // Quy tắc 33: nội dung bé học to và nằm giữa màn hình
+      r.toGiua = await page.evaluate(doToGiua); const tg = danhGia(r.toGiua, dev);
+      r.checks.toGiua = !tg.length; for (const x of tg) errs.push('Quy tắc 33: ' + x);
       if (shots) await page.screenshot({ path: new URL(`${s.id}_${age}_${dev}.png`, OUT).pathname });
       // ---- thử sai trước
       const w = await page.evaluate(async () => {

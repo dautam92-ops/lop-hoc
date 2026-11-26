@@ -25,6 +25,7 @@ const tagSt = id => `<span class="tag st-${statusOf(id)}">${STATUS[statusOf(id)]
 /* ---------- Trạng thái trang ---------- */
 const P = new URLSearchParams(location.hash.slice(1));
 const st = { tab: P.get('tab') || 'd1', id: P.get('s') || null, age: P.get('age') || '4-5', dev: P.get('dev') || 'ipad', seed: Number(P.get('seed')) || 7, idle: 0, anh: P.get('anh') || 'cho' };
+if (['pp20', 'kb'].includes(st.tab)) st.tab = 'd1'; // tam 26/11 18:12: gỡ hai tab phương pháp (khung chưa được duyệt)
 const saveHash = () => { const h = new URLSearchParams({ tab: st.tab, ...(st.id ? { s: st.id, age: st.age, dev: st.dev, seed: st.seed } : {}) }); history.replaceState(null, '', '#' + h); };
 
 /* ---------- Danh sách ---------- */

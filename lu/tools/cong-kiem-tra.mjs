@@ -1,6 +1,7 @@
 // Cổng kiểm tra bắt buộc trước khi đưa một bài lên mạng.
 // Chạy: node tools/cong-kiem-tra.mjs L001   (thoát mã 1 nếu có mục đỏ)
 // Mỗi lỗi đã gặp phải có ít nhất một mục ở đây (xem SO-LOI.md).
+import { danhGia } from './do-to-giua.mjs';
 import { spawnSync } from 'node:child_process';
 import { readFile, access } from 'node:fs/promises';
 import path from 'node:path';
@@ -55,6 +56,10 @@ for (const r of rep.runs) {
   check(`[${r.vp}] Nút chạm từ 48px trở lên`, minTap >= 48, `${minTap}px`);
   const avg = Math.round(s.reduce((a, x) => a + x.illusPct, 0) / (s.length || 1));
   check(`[${r.vp}] Hình minh họa chiếm 65% màn hình trở lên`, avg >= 65, `${avg}%`);
+  // Quy tắc 33 (tam 26/11 17:35): nội dung bé học to và nằm giữa màn hình
+  const dev = r.vp === 'phone' ? 'phone' : 'ipad';
+  const tg = s.flatMap(x => danhGia(x.toGiua, dev).map(e => `${x.file}: ${e}`));
+  check(`[${r.vp}] Nội dung học to, nằm giữa màn (quy tắc 33)`, s.length > 0 && !tg.length, tg.slice(0, 3).join('; '));
 }
 
 const red = rows.filter(r => !r.ok);
