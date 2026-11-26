@@ -1,0 +1,32 @@
+/* Cổng luyện tập (core/cong.js). Dùng lại thẻ bài nhỏ (.hub-card) của buổi học cho đồng bộ. Mọi thẻ nằm trọn trong một màn, không cuộn. */
+.lu-lesson .cg-grid{grid-template-columns:repeat(6,minmax(0,1fr));max-width:1080px;margin:0 auto;gap:12px}
+.lu-lesson .cg-phongs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.lu-lesson .cg .hub-head .lu,.lu-lesson .cg .hub-head > .lu-art,.lu-lesson .cg .hub-head > .grp-box,.lu-lesson .cg .hub-head > img.lu-art{width:76px;height:76px;flex:none}
+.lu-lesson .cg-card{min-height:190px;justify-content:center}
+.lu-lesson .cg-card .hc-art{width:112px;height:112px}
+.lu-lesson .cg-card .hc-t{font-size:17px}
+.lu-lesson .cg-chu{font:800 60px/1 var(--lu-font-display);color:var(--lu-leaf-deep);white-space:nowrap}
+.lu-lesson .cg-chu.dai{font-size:38px}
+.lu-lesson .cg-card.sap{background:#f4eddc;box-shadow:0 5px 0 var(--line);cursor:default}
+.lu-lesson .cg-card.sap .hc-art{filter:saturate(.45);opacity:.7}
+.lu-lesson .cg-card.sap .hc-t{color:var(--lu-ink-soft)}
+.lu-lesson .cg-card .hc-n{font:700 13px var(--lu-font-body);color:var(--lu-ink-soft)}
+.lu-lesson .cg-so{width:auto;min-width:0;height:72px;font:800 44px/72px var(--lu-font-display);color:var(--lu-leaf-deep);white-space:nowrap}
+.lu-lesson .cg-phong{min-height:150px}
+.lu-lesson .cg-phong.khoa{background:#f1e9d6;box-shadow:0 5px 0 #e3d7bb;cursor:default}
+.lu-lesson .cg-phong.khoa .cg-so,.lu-lesson .cg-phong.khoa .hc-t{color:#a8987a}
+.lu-lesson .cg-sao{display:flex;gap:4px}
+.lu-lesson .cg-sao i{width:22px;height:22px;background:#e8dcc2;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.lu-lesson .cg-sao i.co{background:var(--lu-sun)}
+@media (max-width:900px){.lu-lesson .cg-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.lu-lesson .cg-phongs{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:640px){
+  .lu-lesson .cg-grid,.lu-lesson .cg-phongs{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .lu-lesson .cg .hub-card{min-height:0;padding:8px 4px;gap:2px;border-width:3px;border-radius:16px}
+  .lu-lesson .cg-card .hc-art{width:64px;height:64px}
+  .lu-lesson .cg .hub-card .hc-t{font-size:14px}
+  .lu-lesson .cg-chu{font-size:44px}.lu-lesson .cg-chu.dai{font-size:28px}
+  .lu-lesson .cg-so{height:52px;font-size:32px;line-height:52px}
+  .lu-lesson .cg-sao i{width:16px;height:16px}
+  .lu-lesson .cg .hub-head .lu,.lu-lesson .cg .hub-head > .lu-art,.lu-lesson .cg .hub-head > .grp-box,.lu-lesson .cg .hub-head > img.lu-art{width:56px;height:56px}
+  .lu-lesson .cg-card .hc-n{font-size:11px}
+}

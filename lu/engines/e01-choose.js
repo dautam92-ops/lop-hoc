@@ -13,7 +13,7 @@ export function validate(act) {
   if (MORE.MORE.has(act.mode)) return MORE.validate(act);
   const e = need(act, ['mode', 'skill_id', 'title']);
   if (act.mode === 'items') { if (!act.items?.length) e.push(`${act.activity_id}: thiếu items`); act.items?.forEach((it, k) => e.push(...verifyChoice(it.opts, it.any ? 0 : it.a, `${act.activity_id} câu ${k + 1}`))); }
-  if (act.mode === 'count') { e.push(...need(act, ['pool', 'words', 'q', 'ok', 'no'])); if (act.words && act.pool && Math.max(...act.pool) > act.words.length) e.push(`${act.activity_id}: thiếu chữ số đọc`); }
+  if (act.mode === 'count') { e.push(...need(act, ['pool', 'words', 'q', 'ok', 'no'])); if (act.words && act.pool && Math.max(...act.pool) > act.words.length) e.push(`${act.activity_id}: thiếu chữ số đọc`); if (act.n && !act.pool?.includes(act.n)) e.push(`${act.activity_id}: số ${act.n} không có trong lựa chọn`); }
   if (act.mode === 'listen') { e.push(...need(act, ['words'])); if ((act.words || []).length < 2) e.push(`${act.activity_id}: cần ít nhất 2 từ`); }
   if (!['items', 'count', 'listen'].includes(act.mode)) e.push(`${act.activity_id}: mode không hợp lệ`);
   return e;
@@ -27,6 +27,8 @@ export function generate(act, rng) {
     if (act.rounds) items = items.slice(0, act.rounds);
     return { rounds: items.map(k => ({ item: k, order: rng.shuffle(act.items[k].opts.map((o, i) => i)) })) };
   }
+  // n cố định: bài cụ thể trong kho cổng luyện tập (một bài tập, không bốc số ngẫu nhiên, để kiểm tra trùng được)
+  if (act.mode === 'count' && act.n) return { rounds: [{ n: act.n, color0: rng.int(0, 4) }] };
   if (act.mode === 'count') return { rounds: rng.sample(act.pool, act.rounds || 3).map(n => ({ n, color0: rng.int(0, 4) })) };
   const words = act.words.map((w, i) => i);
   const targets = rng.sample(words, act.rounds || words.length);
@@ -58,7 +60,7 @@ export function lines(act) {
   if (MORE.MORE.has(act.mode)) return MORE.lines(act);
   const L = [...(act.intro || [])];
   if (act.mode === 'items') act.items.forEach(it => { L.push(it.q, it.ok, it.any ? null : (it.no || act.no)); it.opts.forEach(o => { o.say && L.push(o.say); o.reply && L.push(o.reply); }); if (textOpts(it.opts, it.style || act.style)) L.push(...LETTERS.slice(0, it.opts.length).map(letterLine), ...it.opts.map(optSay)); });
-  if (act.mode === 'count') { L.push(act.hint, act.q, act.no, ...act.words); act.pool.forEach(n => L.push(fill(act.ok, { word: act.words[n - 1] }))); }
+  if (act.mode === 'count') { L.push(act.hint, act.q, act.no, ...act.words); (act.n ? [act.n] : act.pool).forEach(n => L.push(fill(act.ok, { word: act.words[n - 1] }))); }
   if (act.mode === 'listen') act.words.forEach(w => L.push(w.w, w.ok));
   return L.filter(Boolean);
 }

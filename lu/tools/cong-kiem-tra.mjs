@@ -54,6 +54,15 @@ const mountSrc = e05.slice(e05.indexOf('export function mount'));
 check('Lật thẻ: sai thì im lặng, đúng một đôi chỉ có âm báo', !/__boing|act\.no\b|okVi\(/.test(mountSrc));
 check('Lật thẻ: lật đúng có tiếng "ting" vui tai', mountSrc.includes("'__dung'") && !!reg.__dung, reg.__dung ? '' : 'thiếu tệp __dung');
 
+// 3c. Cổng luyện tập (tam 26/11 20:35): bài cổng không trùng bài tập nào trong 300 buổi, đáp án đúng, chơi thật không lỗi.
+//     Sổ 300 buổi lập lại mỗi lần chạy, nên buổi mới thêm vào mà va bài cổng thì cổng đóng: sinh lại kho bằng tools/cong/sinh-so-dem.mjs.
+{
+  const out = run(['tools/cong/kiem-cong.mjs', 'so-dem']);
+  const r = out.split('\n').filter(l => /^(XANH|ĐỎ)/.test(l));
+  const red = r.filter(l => l.startsWith('ĐỎ'));
+  check(`Cổng luyện Số và đếm: ${r.length - red.length}/${r.length} mục xanh (không trùng 300 buổi, đáp án, chơi thật)`, r.length > 0 && !red.length, red.slice(0, 3).map(l => l.replace(/^ĐỎ\s+/, '')).join('; ') || (r.length ? '' : out.slice(-300)));
+}
+
 // 4. Chơi thật trên iPad và điện thoại (play-draft): hết buổi, không lỗi JS, chọn sai bị báo sai, ...
 const pd = run(['tools/play-draft.mjs', id]);
 let rep; try { rep = JSON.parse(await readFile(path.join(ROOT, 'reports', `draft-${id}.json`), 'utf8')); } catch { rep = { runs: [] }; }

@@ -1,0 +1,927 @@
+{
+ "format": "lu-so-bai-300",
+ "at": "2026-11-26T13:38:20.622Z",
+ "buoi": [
+  "L001"
+ ],
+ "so_bai_tap": 49,
+ "muc": [
+  {
+   "nguon": "L001/L001-B01#1",
+   "dang": "dem",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    1
+   ],
+   "da": "1",
+   "extra": "1+2+3",
+   "fp": "65e9619d5a09c255",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:1#1",
+    "d:1"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B01#2",
+   "dang": "dem",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    2
+   ],
+   "da": "2",
+   "extra": "1+2+3",
+   "fp": "25bf4e62d3ea3f39",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:2#1",
+    "d:2"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B01#3",
+   "dang": "dem",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    3
+   ],
+   "da": "3",
+   "extra": "1+2+3",
+   "fp": "1271bc1c4c832ba3",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:3#1",
+    "d:3"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B02#1",
+   "dang": "chon",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    1,
+    2,
+    3
+   ],
+   "da": "hat-dau#2",
+   "extra": "",
+   "fp": "eb3823279cc1a00d",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:1#1",
+    "s:2#1",
+    "s:3#1",
+    "d:hat-dau#2"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B02#2",
+   "dang": "chon",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    1,
+    2,
+    3
+   ],
+   "da": "hat-dau#3",
+   "extra": "",
+   "fp": "9f3318d7dd314333",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:1#1",
+    "s:2#1",
+    "s:3#1",
+    "d:hat-dau#3"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B03#1",
+   "dang": "ghep",
+   "vat": [
+    "coc",
+    "hat-dau"
+   ],
+   "so": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3
+   ],
+   "da": "art:hat-dau*1>art:coc:1|art:hat-dau*2>art:coc:2|art:hat-dau*3>art:coc:3",
+   "extra": "",
+   "fp": "ed0e2cb33b5d61f5",
+   "dac_diem": [
+    "v:coc",
+    "v:hat-dau",
+    "s:1#1",
+    "s:1#2",
+    "s:2#1",
+    "s:2#2",
+    "s:3#1",
+    "s:3#2",
+    "d:art:hat-dau*1>art:coc:1|art:hat-dau*2>art:coc:2|art:hat-dau*3>art:coc:3"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B04#1",
+   "dang": "ghep",
+   "vat": [
+    "coc",
+    "hat-dau"
+   ],
+   "so": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3
+   ],
+   "da": "art:hat-dau*1>art:coc:1|art:hat-dau*2>art:coc:2|art:hat-dau*3>art:coc:3",
+   "extra": "",
+   "fp": "ed0e2cb33b5d61f5",
+   "dac_diem": [
+    "v:coc",
+    "v:hat-dau",
+    "s:1#1",
+    "s:1#2",
+    "s:2#1",
+    "s:2#2",
+    "s:3#1",
+    "s:3#2",
+    "d:art:hat-dau*1>art:coc:1|art:hat-dau*2>art:coc:2|art:hat-dau*3>art:coc:3"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B05#1",
+   "dang": "xep",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [],
+   "da": "23ff8007a49c",
+   "extra": "",
+   "fp": "d1fe0ed4a425d391",
+   "dac_diem": [
+    "v:hat-dau",
+    "d:23ff8007a49c"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B06#1",
+   "dang": "dem",
+   "vat": [
+    "chim"
+   ],
+   "so": [
+    1
+   ],
+   "da": "1",
+   "extra": "1+2+3",
+   "fp": "53dcc658ae5cfaba",
+   "dac_diem": [
+    "v:chim",
+    "s:1#1",
+    "d:1"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B06#2",
+   "dang": "dem",
+   "vat": [
+    "chim"
+   ],
+   "so": [
+    2
+   ],
+   "da": "2",
+   "extra": "1+2+3",
+   "fp": "6817195c6ca2f8af",
+   "dac_diem": [
+    "v:chim",
+    "s:2#1",
+    "d:2"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B06#3",
+   "dang": "dem",
+   "vat": [
+    "chim"
+   ],
+   "so": [
+    3
+   ],
+   "da": "3",
+   "extra": "1+2+3",
+   "fp": "121bf52da988843e",
+   "dac_diem": [
+    "v:chim",
+    "s:3#1",
+    "d:3"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B07#1",
+   "dang": "chon",
+   "vat": [
+    "ao",
+    "gio",
+    "tui"
+   ],
+   "so": [],
+   "da": "tui#",
+   "extra": "",
+   "fp": "740457843457ad6f",
+   "dac_diem": [
+    "v:ao",
+    "v:gio",
+    "v:tui",
+    "d:tui#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B07#2",
+   "dang": "chon",
+   "vat": [
+    "ao",
+    "binh-tuoi",
+    "bong-bay"
+   ],
+   "so": [],
+   "da": "binh-tuoi#",
+   "extra": "",
+   "fp": "1b3676e64273542f",
+   "dac_diem": [
+    "v:ao",
+    "v:binh-tuoi",
+    "v:bong-bay",
+    "d:binh-tuoi#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B07#3",
+   "dang": "chon",
+   "vat": [
+    "chau-cay",
+    "may",
+    "nha"
+   ],
+   "so": [],
+   "da": "chau-cay#",
+   "extra": "",
+   "fp": "a43689ca66d3047b",
+   "dac_diem": [
+    "v:chau-cay",
+    "v:may",
+    "v:nha",
+    "d:chau-cay#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B08#1",
+   "dang": "E15:do",
+   "vat": [],
+   "so": [],
+   "da": "b1ba07b9beaa",
+   "extra": "",
+   "fp": "0c0f67291c06776c",
+   "dac_diem": [
+    "d:b1ba07b9beaa"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B09#1",
+   "dang": "E00:",
+   "vat": [
+    "chau-cay",
+    "giot-nuoc",
+    "mat-troi"
+   ],
+   "so": [],
+   "da": "d24b1f596d3f",
+   "extra": "",
+   "fp": "70bdf145b2266c1f",
+   "dac_diem": [
+    "v:chau-cay",
+    "v:giot-nuoc",
+    "v:mat-troi",
+    "d:d24b1f596d3f"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B10#1",
+   "dang": "chon",
+   "vat": [
+    "hoa",
+    "la",
+    "qua-dau"
+   ],
+   "so": [],
+   "da": "qua-dau#",
+   "extra": "",
+   "fp": "e902dc3443b5294d",
+   "dac_diem": [
+    "v:hoa",
+    "v:la",
+    "v:qua-dau",
+    "d:qua-dau#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B10#2",
+   "dang": "chon",
+   "vat": [
+    "ao",
+    "binh-tuoi",
+    "bong-bay"
+   ],
+   "so": [],
+   "da": "binh-tuoi#",
+   "extra": "",
+   "fp": "1b3676e64273542f",
+   "dac_diem": [
+    "v:ao",
+    "v:binh-tuoi",
+    "v:bong-bay",
+    "d:binh-tuoi#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B10#3",
+   "dang": "chon",
+   "vat": [
+    "mat-trang",
+    "mat-troi",
+    "may"
+   ],
+   "so": [],
+   "da": "mat-troi#",
+   "extra": "",
+   "fp": "effebb71bf82ee6c",
+   "dac_diem": [
+    "v:mat-trang",
+    "v:mat-troi",
+    "v:may",
+    "d:mat-troi#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B11#1",
+   "dang": "chon",
+   "vat": [
+    "binh-tuoi",
+    "chau-cay",
+    "gio"
+   ],
+   "so": [],
+   "da": "binh-tuoi#",
+   "extra": "",
+   "fp": "9c00978fafea6559",
+   "dac_diem": [
+    "v:binh-tuoi",
+    "v:chau-cay",
+    "v:gio",
+    "d:binh-tuoi#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B11#2",
+   "dang": "chon",
+   "vat": [
+    "ca-rot",
+    "la",
+    "qua-dau"
+   ],
+   "so": [],
+   "da": "qua-dau#",
+   "extra": "",
+   "fp": "ee3a1e083c835f5a",
+   "dac_diem": [
+    "v:ca-rot",
+    "v:la",
+    "v:qua-dau",
+    "d:qua-dau#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B11#3",
+   "dang": "chon",
+   "vat": [
+    "chim",
+    "la",
+    "tho"
+   ],
+   "so": [],
+   "da": "chim#",
+   "extra": "",
+   "fp": "ab81816e93d32892",
+   "dac_diem": [
+    "v:chim",
+    "v:la",
+    "v:tho",
+    "d:chim#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B11#4",
+   "dang": "chon",
+   "vat": [
+    "chong-chong",
+    "hoa",
+    "sao"
+   ],
+   "so": [],
+   "da": "hoa#",
+   "extra": "",
+   "fp": "32d691a4b8c847b5",
+   "dac_diem": [
+    "v:chong-chong",
+    "v:hoa",
+    "v:sao",
+    "d:hoa#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B12#1",
+   "dang": "E06:",
+   "vat": [
+    "hat-dau",
+    "la",
+    "soi"
+   ],
+   "so": [],
+   "da": "90ae5bf9623c",
+   "extra": "",
+   "fp": "1f70e388eb9cd99e",
+   "dac_diem": [
+    "v:hat-dau",
+    "v:la",
+    "v:soi",
+    "d:90ae5bf9623c"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B13#1",
+   "dang": "E06:",
+   "vat": [
+    "hat-dau",
+    "hoa",
+    "la",
+    "mam-dau"
+   ],
+   "so": [],
+   "da": "5feb39245b17",
+   "extra": "",
+   "fp": "5f27f06ea9b84cd2",
+   "dac_diem": [
+    "v:hat-dau",
+    "v:hoa",
+    "v:la",
+    "v:mam-dau",
+    "d:5feb39245b17"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B14#1",
+   "dang": "E05:",
+   "vat": [
+    "hat-dau",
+    "mam-dau",
+    "qua-dau"
+   ],
+   "so": [],
+   "da": "04dc1530831e",
+   "extra": "",
+   "fp": "4096b3e83c11fd11",
+   "dac_diem": [
+    "v:hat-dau",
+    "v:mam-dau",
+    "v:qua-dau",
+    "d:04dc1530831e"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B15#1",
+   "dang": "E05:",
+   "vat": [
+    "binh-tuoi",
+    "chau-cay",
+    "giot-nuoc",
+    "mat-troi"
+   ],
+   "so": [],
+   "da": "b6f8466903bd",
+   "extra": "",
+   "fp": "e7e016f90aec0d83",
+   "dac_diem": [
+    "v:binh-tuoi",
+    "v:chau-cay",
+    "v:giot-nuoc",
+    "v:mat-troi",
+    "d:b6f8466903bd"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B16#1",
+   "dang": "E05:",
+   "vat": [
+    "chim",
+    "hoa",
+    "la",
+    "tho"
+   ],
+   "so": [],
+   "da": "425ea3db6a0f",
+   "extra": "",
+   "fp": "757a017b2d16f22b",
+   "dac_diem": [
+    "v:chim",
+    "v:hoa",
+    "v:la",
+    "v:tho",
+    "d:425ea3db6a0f"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B17#1",
+   "dang": "E00:",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    1,
+    2,
+    3
+   ],
+   "da": "63e222b3181a",
+   "extra": "",
+   "fp": "055ae2e20ae387db",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:1#1",
+    "s:2#1",
+    "s:3#1",
+    "d:63e222b3181a"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B18#1",
+   "dang": "nghe-chon",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    1
+   ],
+   "da": "one",
+   "extra": "",
+   "fp": "14a7fed61e834f98",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:1#1",
+    "d:one"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B18#2",
+   "dang": "nghe-chon",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    2
+   ],
+   "da": "two",
+   "extra": "",
+   "fp": "79be6de0f4966195",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:2#1",
+    "d:two"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B18#3",
+   "dang": "nghe-chon",
+   "vat": [
+    "hat-dau"
+   ],
+   "so": [
+    3
+   ],
+   "da": "three",
+   "extra": "",
+   "fp": "324a5d39b4b5376a",
+   "dac_diem": [
+    "v:hat-dau",
+    "s:3#1",
+    "d:three"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B19#1",
+   "dang": "E15:say",
+   "vat": [],
+   "so": [],
+   "da": "55045ba9c706",
+   "extra": "",
+   "fp": "d1d99dcf2624d6b1",
+   "dac_diem": [
+    "d:55045ba9c706"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B20#1",
+   "dang": "chon",
+   "vat": [
+    "face:buon",
+    "face:gian",
+    "face:vui"
+   ],
+   "so": [],
+   "da": "tu-do",
+   "extra": "lu tưới hạt cả buổi mà chưa thấy mầm lu có thể thấy thế nào",
+   "fp": "e8a7b18d188cabe3",
+   "dac_diem": [
+    "v:face:buon",
+    "v:face:gian",
+    "v:face:vui",
+    "d:tu-do"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B20#2",
+   "dang": "chon",
+   "vat": [
+    "face:binh-tinh",
+    "face:ngac-nhien",
+    "face:vui"
+   ],
+   "so": [],
+   "da": "tu-do",
+   "extra": "sáng nay mầm đậu nhú lên rồi lu có thể thấy thế nào",
+   "fp": "1d3d13ed30395e8e",
+   "dac_diem": [
+    "v:face:binh-tinh",
+    "v:face:ngac-nhien",
+    "v:face:vui",
+    "d:tu-do"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B20#3",
+   "dang": "chon",
+   "vat": [
+    "face:buon",
+    "face:gian",
+    "face:so"
+   ],
+   "so": [],
+   "da": "tu-do",
+   "extra": "gió to làm đổ chậu mầm lu có thể thấy thế nào",
+   "fp": "702f8e49d49372a2",
+   "dac_diem": [
+    "v:face:buon",
+    "v:face:gian",
+    "v:face:so",
+    "d:tu-do"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B21#1",
+   "dang": "E15:breath",
+   "vat": [],
+   "so": [],
+   "da": "4a3c27e68460",
+   "extra": "",
+   "fp": "9ca008a7479c7fc9",
+   "dac_diem": [
+    "d:4a3c27e68460"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B22#1",
+   "dang": "ghep",
+   "vat": [
+    "ban-tay",
+    "coc",
+    "voi-nuoc",
+    "xa-phong"
+   ],
+   "so": [
+    1,
+    2,
+    3
+   ],
+   "da": "art:ban-tay>art:coc:3|art:voi-nuoc>art:coc:1|art:xa-phong>art:coc:2",
+   "extra": "",
+   "fp": "ef28fb170306290c",
+   "dac_diem": [
+    "v:ban-tay",
+    "v:coc",
+    "v:voi-nuoc",
+    "v:xa-phong",
+    "s:1#1",
+    "s:2#1",
+    "s:3#1",
+    "d:art:ban-tay>art:coc:3|art:voi-nuoc>art:coc:1|art:xa-phong>art:coc:2"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B23#1",
+   "dang": "E15:do",
+   "vat": [],
+   "so": [],
+   "da": "64996c826f9b",
+   "extra": "",
+   "fp": "1810de665a926a78",
+   "dac_diem": [
+    "d:64996c826f9b"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B24#1",
+   "dang": "chon",
+   "vat": [],
+   "so": [],
+   "da": "tu-do",
+   "extra": "lu nên làm gì bé chọn một cách",
+   "fp": "fbca7454a45fa2cb",
+   "dac_diem": [
+    "d:tu-do"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B24#2",
+   "dang": "chon",
+   "vat": [],
+   "so": [],
+   "da": "tu-do",
+   "extra": "túi hạt đậu bị gió thổi lên nóc chuồng gà lu nên làm gì",
+   "fp": "051f55ef5b40e8ba",
+   "dac_diem": [
+    "d:tu-do"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B25#1",
+   "dang": "chon",
+   "vat": [
+    "bong-bay",
+    "hat-dau",
+    "mam-dau",
+    "qua-dau"
+   ],
+   "so": [],
+   "da": "bong-bay#",
+   "extra": "",
+   "fp": "cb78f8e756cc1424",
+   "dac_diem": [
+    "v:bong-bay",
+    "v:hat-dau",
+    "v:mam-dau",
+    "v:qua-dau",
+    "d:bong-bay#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B25#2",
+   "dang": "chon",
+   "vat": [
+    "hoa",
+    "la",
+    "mam-dau",
+    "soi"
+   ],
+   "so": [],
+   "da": "soi#",
+   "extra": "",
+   "fp": "d55c53762d674b21",
+   "dac_diem": [
+    "v:hoa",
+    "v:la",
+    "v:mam-dau",
+    "v:soi",
+    "d:soi#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B25#3",
+   "dang": "chon",
+   "vat": [
+    "ao",
+    "binh-tuoi",
+    "chau-cay",
+    "giot-nuoc"
+   ],
+   "so": [],
+   "da": "ao#",
+   "extra": "",
+   "fp": "c04fb9a47343904b",
+   "dac_diem": [
+    "v:ao",
+    "v:binh-tuoi",
+    "v:chau-cay",
+    "v:giot-nuoc",
+    "d:ao#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B25#4",
+   "dang": "chon",
+   "vat": [
+    "ca-rot",
+    "chong-chong",
+    "qua-dau",
+    "tao"
+   ],
+   "so": [],
+   "da": "chong-chong#",
+   "extra": "",
+   "fp": "1f8071182a816387",
+   "dac_diem": [
+    "v:ca-rot",
+    "v:chong-chong",
+    "v:qua-dau",
+    "v:tao",
+    "d:chong-chong#"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B26#1",
+   "dang": "E15:do",
+   "vat": [],
+   "so": [],
+   "da": "a4b1d366460c",
+   "extra": "",
+   "fp": "872b18b153a46193",
+   "dac_diem": [
+    "d:a4b1d366460c"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B27#1",
+   "dang": "chon",
+   "vat": [
+    "cau-vong",
+    "chim",
+    "may"
+   ],
+   "so": [],
+   "da": "tu-do",
+   "extra": "nếu cây đậu cao tới tận mây lu leo lên sẽ thấy gì bé chọn điều bé thích",
+   "fp": "454ccd7134e1f1b1",
+   "dac_diem": [
+    "v:cau-vong",
+    "v:chim",
+    "v:may",
+    "d:tu-do"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B28#1",
+   "dang": "E00:",
+   "vat": [
+    "hoa"
+   ],
+   "so": [],
+   "da": "433b5fcbad75",
+   "extra": "",
+   "fp": "07e5145299bb5ace",
+   "dac_diem": [
+    "v:hoa",
+    "d:433b5fcbad75"
+   ]
+  },
+  {
+   "nguon": "L001/L001-B29#1",
+   "dang": "E00:",
+   "vat": [
+    "chau-cay",
+    "mam-dau"
+   ],
+   "so": [],
+   "da": "36aba90f4f27",
+   "extra": "",
+   "fp": "ef1f448bde27e640",
+   "dac_diem": [
+    "v:chau-cay",
+    "v:mam-dau",
+    "d:36aba90f4f27"
+   ]
+  }
+ ]
+}
