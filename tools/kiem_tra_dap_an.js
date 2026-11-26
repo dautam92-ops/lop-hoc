@@ -81,7 +81,7 @@ for (const [kid, K] of Object.entries(LESSON.kids)) K.acts.forEach((a, ai) => {
 for (const K of Object.values(LESSON.kids)) for (const a of K.acts) (a.rounds || []).forEach(R => { if (/thấy thế nào/.test(R.q) && !(R.opts || []).every(o => o && o.say)) errors.push(`${a.title}: câu cảm xúc phải có lời đọc cho từng đáp án (opts:[{e,say}]) vì bé chưa đọc được`); });
 const clipsStart = h.indexOf('const CLIPS=');
 if (clipsStart > 0) {
-  const isVi = t => /[ăâđêôơưàáạảãèéẹẻẽìíịỉĩòóọỏõùúụủũỳýỵỷỹ]/i.test(t);
+  const isVi = t => /[à-ỹđ]/i.test(t) && !/^[\x00-\x7F]*$/.test(t);
   const need = new Set();
   for (const K of Object.values(LESSON.kids)) for (const a of K.acts) { if (a.q && isVi(a.q)) need.add(a.q); (a.rounds || []).forEach(R => { for (const t of [R.q, R.ok, R.no, R.hint, R.say, ...(R.opts || []).map(o => o && o.say)]) if (t && isVi(t)) need.add(t); }); if (a.seq && (a.rounds || []).some(R => !R.show)) need.add('Số nào điền vào ô trống?');
     if (a.type === 'choice' && a.txt) (a.rounds || []).forEach(R => { if (R.opts.some(o => typeof o === 'string' && /\p{L}/u.test(o))) { R.opts.forEach((o, j) => { need.add('Đáp án ' + 'ABCDE'[j]); if (!a.en && typeof o === 'string' && /\p{L}/u.test(o)) need.add(o); }); } }); }
