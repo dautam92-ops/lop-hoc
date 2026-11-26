@@ -13,4 +13,6 @@ Quy tắc (tam 26/11/2026): lỗi đã gặp không được lặp lại. Mỗi 
 | 26/11 | Câu thiếu giọng đọc | Câu mới chưa tạo giọng trên máy | cổng mục "Mọi câu đều có giọng đọc" và "Tệp giọng đọc có đủ trên đĩa" |
 | 26/11 | Lật thẻ sai thì Lu nói "chưa giống nhau", đúng một đôi thì nói "Đúng rồi!" làm bé mất hứng | Thiết kế cũ của E05 | Quy tắc tam: chỉ giải thích lúc đầu, sai chỉ úp lại, đúng một đôi chỉ âm báo, xong cả bài mới khen; cổng mục "Lật thẻ: sai thì im lặng" |
 
-Còn thiếu (chưa có tính năng nên chưa kiểm được): bé không trả lời thì Lu nhắc lại câu hỏi sau một lúc. Sẽ làm cùng Demo Lab (chỉ thị Method Library mục VIII "Thử không trả lời").
+| 26/11 | Mẫu mới trong Phòng mẫu có thể lặp lại lỗi cũ | Mỗi engine mới tự xử lý chọn sai | `tools/lab/test-lab.mjs`: mọi mẫu × hai tuổi × iPad và điện thoại đều CỐ TÌNH CHỌN SAI TRƯỚC (không được khen, không âm báo đúng, không ghi "đúng"), lật thẻ sai hay đúng Lu không được nói, phải chơi được tới cuối |
+| 26/11 | Bé không trả lời thì không có gì xảy ra | Chưa có tính năng | `idleHelp` trong lu-core: Lu nhắc lại câu hỏi, lần sau làm sáng chỗ cần chạm (lật thẻ thì không nhắc); `test-lab.mjs` mục "không trả lời" |
+| 26/11 | Màn mẫu tràn khỏi màn hình iPad (khay mảnh ghép, hình dán bị cắt) | Hình chính không giới hạn chiều cao | CSS `--vis-h` co hình chính theo chiều cao màn; ảnh chụp từng mẫu trong `tools/lab/out/` để soát bằng mắt |

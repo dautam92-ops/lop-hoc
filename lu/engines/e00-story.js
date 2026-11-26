@@ -3,21 +3,24 @@
 import { luArt, esc } from '../core/lu-core.js';
 import { vis } from '../ui/art.js';
 import { need } from './common.js';
+import * as MORE from './e00-more.js';
 
 export const id = 'E00', version = '1.0.0', name = 'Kể chuyện bằng tranh';
 
 export function validate(act) {
+  if (MORE.MORE.has(act.mode)) return MORE.validate(act);
   const e = need(act, ['title', 'story']);
   if (act.story && !Array.isArray(act.story)) e.push(`${act.activity_id}: story phải là danh sách câu`);
   if ((act.tap || act.explore) && !act.props?.length) e.push(`${act.activity_id}: tap/explore cần có props để chạm`);
   if (act.explore) (act.props || []).forEach((p, i) => { if (!p.say) e.push(`${act.activity_id}: đồ vật ${i + 1} cần lời đọc "say" khi chạm`); });
   return e;
 }
-export const generate = () => ({ rounds: [{}] });
+export const generate = (act, rng) => MORE.MORE.has(act.mode) ? MORE.generate(act, rng) : ({ rounds: [{}] });
 export const verify = () => [];
-export const lines = act => [...(act.intro || []), ...(act.story || []), act.after, ...(act.props || []).flatMap(p => [p.say, p.en])].filter(Boolean);
+export const lines = act => MORE.MORE.has(act.mode) ? MORE.lines(act) : [...(act.intro || []), ...(act.story || []), act.after, ...(act.props || []).flatMap(p => [p.say, p.en])].filter(Boolean);
 
-export function mount(ctx, act) {
+export function mount(ctx, act, v) {
+  if (MORE.MORE.has(act.mode)) return MORE.mount(ctx, act, v);
   const { ui, voice } = ctx;
   return new Promise(done => {
     const props = (act.props || []).map((p, i) => `<button class="prop" data-i="${i}" aria-label="${esc(p.name || 'đồ vật')}">${vis(p.e)}</button>`).join('');

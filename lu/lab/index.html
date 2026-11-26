@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phòng mẫu Lu</title>
+<link rel="stylesheet" href="lab.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b>Phòng mẫu Lu</b><span>Bài giảng mẫu cho từng cơ chế tương tác của trẻ</span></div>
+  <nav class="tabs" role="tablist">
+    <button data-tab="cc" class="on">26 cơ chế</button>
+    <button data-tab="x30">30 mẫu nghiệm thu</button>
+    <button data-tab="all">Tất cả mẫu</button>
+    <button data-tab="pt">Thư viện phương thức</button>
+    <button data-tab="eng">Engine</button>
+    <button data-tab="rv">Nhận xét của tôi</button>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="list" id="list">
+    <div class="filters" id="filters" hidden>
+      <select id="f-group"><option value="">Mọi nhóm kỹ năng</option></select>
+      <select id="f-prog"><option value="">Mọi chương trình</option></select>
+      <select id="f-eng"><option value="">Mọi engine</option></select>
+      <select id="f-status"><option value="">Mọi trạng thái</option></select>
+    </div>
+    <div id="items"></div>
+  </section>
+  <section class="detail" id="detail"><div class="empty">Chọn một mẫu ở bên trái để chơi thử.</div></section>
+</main>
+<script type="module" src="lab.js"></script>
+</body>
+</html>

@@ -12,6 +12,12 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "story",
+    "explore",
+    "tap",
+    "teach"
    ]
   },
   {
@@ -25,6 +31,13 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "items",
+    "count",
+    "listen",
+    "clue",
+    "flash"
    ]
   },
   {
@@ -38,6 +51,10 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "shadow",
+    "pair"
    ]
   },
   {
@@ -51,6 +68,9 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "groups"
    ]
   },
   {
@@ -64,6 +84,11 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "pattern",
+    "order",
+    "cards"
    ]
   },
   {
@@ -77,6 +102,10 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "pool",
+    "match"
    ]
   },
   {
@@ -90,6 +119,142 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "grid",
+    "diff",
+    "scene",
+    "vanish",
+    "multi"
+   ]
+  },
+  {
+   "id": "E07",
+   "name": "Đường đi, mê cung",
+   "version": "1.0.0",
+   "file": "engines/e07-maze.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ],
+   "trang_thai": "ready_for_review",
+   "modes": [
+    "grid"
+   ]
+  },
+  {
+   "id": "E08",
+   "name": "Xếp hình không gian",
+   "version": "1.0.0",
+   "file": "engines/e08-puzzle.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ],
+   "trang_thai": "ready_for_review",
+   "modes": [
+    "jigsaw",
+    "rotate"
+   ]
+  },
+  {
+   "id": "E10",
+   "name": "Truyện tương tác rẽ nhánh",
+   "version": "1.0.0",
+   "file": "engines/e10-branch.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ],
+   "trang_thai": "ready_for_review",
+   "modes": [
+    "mo",
+    "du-doan",
+    "hieu"
+   ]
+  },
+  {
+   "id": "E11",
+   "name": "Mô phỏng",
+   "version": "1.0.0",
+   "file": "engines/e11-sim.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ],
+   "trang_thai": "ready_for_review",
+   "modes": [
+    "sinkfloat",
+    "steps",
+    "place",
+    "tray"
+   ]
+  },
+  {
+   "id": "E12",
+   "name": "Âm thanh và nhịp",
+   "version": "1.0.0",
+   "file": "engines/e12-sound.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ],
+   "trang_thai": "ready_for_review",
+   "modes": [
+    "identify",
+    "rhythm",
+    "seq"
+   ]
+  },
+  {
+   "id": "E13",
+   "name": "Vẽ nét và tô",
+   "version": "1.0.0",
+   "file": "engines/e13-trace.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ],
+   "trang_thai": "ready_for_review",
+   "modes": [
+    "trace",
+    "color"
+   ]
+  },
+  {
+   "id": "E14",
+   "name": "Xây dựng, trang trí tự do",
+   "version": "1.0.0",
+   "file": "engines/e14-create.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ],
+   "trang_thai": "ready_for_review",
+   "modes": [
+    "draw",
+    "sticker"
    ]
   },
   {
@@ -103,6 +268,11 @@
     "verify",
     "lines",
     "mount"
+   ],
+   "modes": [
+    "breath",
+    "say",
+    "do"
    ]
   }
  ]

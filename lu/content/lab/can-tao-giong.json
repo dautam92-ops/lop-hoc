@@ -1,0 +1,2279 @@
+{
+ "format": "lu-voice-todo",
+ "lesson": "PHONG-MAU",
+ "at": "2026-11-26T07:03:19.225Z",
+ "lines": [
+  {
+   "text": "Bé thử chạm vào chỗ đang sáng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đi theo lối không có tường nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có mấy tấm thẻ chữ. Lu gọi tên chữ nào, bé chạm vào chữ đó nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ o.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đây là chữ o. Chữ o tròn như quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ o tròn xoe như quả trứng đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ a.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đây là chữ a.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ a có một vòng tròn và một nét thẳng bên phải.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ e.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đây là chữ e.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ e có một nét ngang ở giữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ba chữ o, ô, ơ trông gần giống nhau. Bé nhìn kỹ cái mũ và cái râu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ ô.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ ô đội mũ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ ô có cái mũ trên đầu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ ơ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ ơ có râu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ ơ có cái râu nhỏ bên phải.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ o không có mũ, không có râu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ o tròn xoe, không có mũ, không có râu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ c.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ c hở một bên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ c giống chữ o bị hở một bên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đồ chơi của Lu lẫn lộn hết rồi. Bé giúp Lu tìm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đủ rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu xanh dương.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu xanh dương.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu xanh dương.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này có thêm điều kiện. Bé nghe hết lời Lu rồi mới chạm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đủ rồi, không sót cái nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu đỏ loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu đỏ loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu xanh dương loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu xanh dương loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu vàng loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu vàng loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu xanh lá loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng màu xanh lá loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu đỏ loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu đỏ loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu xanh dương loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu xanh dương loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu vàng loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu vàng loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu xanh lá loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ màu xanh lá loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu đỏ loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu đỏ loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu xanh dương loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu xanh dương loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu vàng loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu vàng loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu xanh lá loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô màu xanh lá loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu đỏ loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu đỏ loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu xanh dương loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu xanh dương loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu vàng loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu vàng loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu xanh lá loại to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày màu xanh lá loại nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng KHÔNG phải màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng KHÔNG phải màu xanh dương.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng KHÔNG phải màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả quả bóng KHÔNG phải màu xanh lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ KHÔNG phải màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ KHÔNG phải màu xanh dương.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ KHÔNG phải màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc mũ KHÔNG phải màu xanh lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô KHÔNG phải màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô KHÔNG phải màu xanh dương.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô KHÔNG phải màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc ô KHÔNG phải màu xanh lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày KHÔNG phải màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày KHÔNG phải màu xanh dương.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày KHÔNG phải màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm tất cả chiếc giày KHÔNG phải màu xanh lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi luống có một cọc ghi số. Bé kéo rổ cà rốt về đúng cọc nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình làm thêm một lượt nữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm lại số vật rồi tìm cọc có số giống vậy nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rổ nào cũng về đúng cọc rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này số lớn hơn. Bé đếm thật kỹ rồi kéo về đúng cọc nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi đồ vật có một công dụng. Bé kéo đồ vật đến chỗ cần dùng nó nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghĩ xem mình dùng đồ vật này lúc nào nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bàn chải để đánh răng, lược để chải tóc, ô để che mưa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Thêm một lượt nữa nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đồ vật nào cũng về đúng chỗ rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé kéo một đường từ con vật đến nơi nó sống nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật nào cũng về đúng nhà rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Cá sống dưới ao.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ong sống trong tổ ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà ngủ trong chuồng gà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi cô chú làm một nghề và dùng một dụng cụ. Bé nối mũ với dụng cụ của nghề đó nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giờ mình nối thêm một bảng nữa nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nối đúng hết rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đầu bếp nấu ăn bằng chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú thợ xây dùng búa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú lính cứu hỏa dùng vòi phun nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chim làm tổ trên cây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đồ dùng vệ sinh và đồ ăn bị lẫn vào nhau. Bé xếp mỗi thứ về đúng giỏ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé xếp tiếp nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghĩ xem mình dùng thứ này để làm gì nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đồ nào cũng về đúng giỏ rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏ đồ vệ sinh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏ đồ ăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Các con vật đi lạc rồi. Bé đưa con vật về chỗ của nó nhé: dưới nước, trên trời hay trên cạn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghĩ xem con vật này bơi, bay hay đi trên mặt đất nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật nào cũng về đúng chỗ rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Dưới nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên trời.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên cạn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu kể chuyện trồng đậu. Bé xếp tranh theo đúng thứ tự nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Câu chuyện đã xếp xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chuyện gì xảy ra trước tiên?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé kể lại giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đầu tiên, Lu gieo hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi hạt nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cuối cùng, cây ra quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có hai câu chuyện. Bé xếp tranh theo đúng thứ tự nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hai câu chuyện đã xếp xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Câu chuyện thứ hai nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu tưới nước mỗi ngày.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt nảy mầm xanh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây lớn lên và ra quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú gà bắt đầu từ đâu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng là vòng đời của gà rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đầu tiên là quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trứng nở ra gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con lớn lên thành gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé lật hai thẻ. Hai thẻ giống nhau là được một đôi nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Đôi nào cũng tìm ra rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này hai thẻ của một đôi không giống hệt nhau mà có liên quan với nhau, như con gà và quả trứng. Bé lật và nhớ thật kỹ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong vườn đậu có mấy bạn nhỏ đang trốn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm thấy hết các bạn rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn kỹ dưới các bụi cỏ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm chú ốc sên nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "A, chú ốc sên đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm bạn bướm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn bướm đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm chú ếch nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú ếch đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong vườn đậu có nhiều bạn nhỏ đang trốn kỹ lắm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm bạn ong nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn ong đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm chú chim nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú chim đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có một cái hộp. Bé nghe Lu nói rồi đặt đồ chơi vào đúng chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đặt đúng hết rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe lại lời Lu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đặt chú mèo vào trong hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mèo đã ở trong hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đặt quả bóng lên trên hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Quả bóng ở trên hộp rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đặt chiếc giày ở dưới hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chiếc giày ở dưới hộp rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đặt quyển sách lên trên hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Quyển sách ở trên hộp rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này Lu nói hai việc liền nhau. Bé nghe hết rồi mới làm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ và làm đúng cả hai việc rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đặt chú mèo vào trong hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đặt quả bóng lên trên hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đặt chiếc giày ở dưới hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đặt quyển sách ở bên trái hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đặt cái cốc ở bên phải hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ cả hai việc nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gió thổi làm ảnh của Lu bị xoay lung tung. Bé chạm vào mảnh nghiêng để xoay nó lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ảnh của Lu thẳng lại rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh vườn đậu bị rơi ra thành mảnh. Bé kéo từng mảnh vào đúng chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn tranh mờ phía sau để tìm chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh vườn đậu đã ghép xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh bị rơi ra thành chín mảnh. Bé kéo từng mảnh vào đúng chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn màu và đường nét ở mép mảnh nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh đã ghép xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bầu trời ở trên, mặt đất ở dưới đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu muốn về nhà. Bé kéo Lu đi theo lối trống nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ở đây có tường rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu về tới nhà rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên đường về, Lu muốn nhặt ba hạt đậu. Bé dẫn Lu nhặt đủ rồi về nhà nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn trước đường đi rồi mới kéo nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu nhặt đủ hạt và về tới nhà rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhặt được một hạt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu còn thiếu hạt đậu. Bé nhặt đủ rồi mới về nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng tập tô nhé. Bé xem Lu tô trước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô nét thẳng đứng đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bắt đầu từ chấm xanh, kéo thẳng xuống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô nét ngang đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bắt đầu từ chấm xanh, kéo ngang sang phải.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô nét cong trái đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đi vòng sang trái rồi cong xuống dưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay mình tô chữ o, ô, ơ. Bé xem Lu tô trước, rồi tô cùng Lu, rồi tự tô nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô chữ o đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ o là một nét cong tròn khép kín. Đi vòng sang trái, về chỗ bắt đầu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô chữ ô đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Tô nét cong tròn trước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi đội mũ cho chữ ô.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô chữ ơ đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi thêm cái râu bên phải.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chọn màu bút sáp rồi vẽ ông mặt trời nhé. Vẽ xong bé bấm Xong rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu cất tranh của bé vào tủ tranh rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đã vẽ gì nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Ông mặt trời.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ông mặt trời của bé thật ấm áp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Một bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bông hoa của bé thật xinh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Một ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ngôi nhà của bé thật vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé vẽ con vật bé thích nhất nhé. Vẽ xong bé bấm Xong rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đã vẽ con gì nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú mèo của bé trông thật đáng yêu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú cá của bé bơi thật vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con chim.",
+   "lang": "en"
+  },
+  {
+   "text": "Chú chim của bé sắp bay lên rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn bướm của bé có đôi cánh thật đẹp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chọn màu bút sáp rồi chạm vào tranh để tô nhé. Tô xong bé bấm Xong rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh của bé nhiều màu thật đẹp!",
+   "lang": "vi"
+  },
+  {
+   "text": "Màu hồng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vùng số 1 tô màu hồng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Màu tím.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vùng số 2 tô màu tím nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Màu nâu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vùng số 3 tô màu nâu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vùng số 4 tô màu vàng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vùng số 5 tô màu đỏ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Màu xanh lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vùng số 6 tô màu xanh lá nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi vùng có một con số. Số nào thì tô màu nấy nhé, nhìn bảng màu ở dưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô đúng hết các số rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Số một, màu hồng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Số hai, màu tím.",
+   "lang": "vi"
+  },
+  {
+   "text": "Số ba, màu nâu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Số bốn, màu vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Số năm, màu đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Số sáu, màu xanh lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm từng quả táo và đếm cùng Lu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm từng quả, mỗi quả đếm một tiếng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong rổ có mấy quả táo?",
+   "lang": "vi"
+  },
+  {
+   "text": "năm",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này nhiều táo hơn. Bé chạm từng quả và đếm thật chậm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "sáu",
+   "lang": "vi"
+  },
+  {
+   "text": "bảy",
+   "lang": "vi"
+  },
+  {
+   "text": "tám",
+   "lang": "vi"
+  },
+  {
+   "text": "chín",
+   "lang": "vi"
+  },
+  {
+   "text": "mười",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu bẩn rồi. Bé giúp Lu rửa tay nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu sạch thơm rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chưa đến bước đó đâu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mở vòi, làm ướt hai bàn tay.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đầu tiên, bé chạm vào thứ gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Xoa xà phòng thật đều, kẽ ngón tay nữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tiếp theo là gì nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Xả nước cho sạch hết bọt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi mình làm gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lau khô tay bằng khăn sạch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bước cuối cùng là gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu bẩn rồi. Bé giúp Lu rửa tay đúng các bước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu sạch thơm rồi! Bé nhớ rửa tay trước khi ăn nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Xắn tay áo lên cho khỏi ướt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trước khi rửa tay, mình làm gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tiếp theo là gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Xoa xà phòng lòng bàn tay, mu bàn tay, kẽ ngón tay.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi sao nữa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay mình làm nhà khoa học nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm thí nghiệm giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giờ bé thả vào chậu nước xem nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Kết quả giống điều bé đoán.",
+   "lang": "vi"
+  },
+  {
+   "text": "Kết quả khác điều bé đoán. Nhà khoa học cũng hay gặp như vậy đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chìm",
+   "lang": "vi"
+  },
+  {
+   "text": "Nổi",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem chiếc lá sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chiếc lá nhẹ và mỏng nên nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, chiếc lá nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem viên sỏi sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Viên sỏi nặng so với độ lớn của nó nên chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, viên sỏi chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem khúc gỗ sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Gỗ nhẹ hơn nước nên khúc gỗ nổi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, khúc gỗ nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem chiếc chìa khóa sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chìa khóa làm bằng kim loại, nặng nên chìm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, chiếc chìa khóa chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem quả bóng sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong quả bóng có không khí nên bóng nổi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, quả bóng nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem đồng xu sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đồng xu bằng kim loại, nặng nên chìm xuống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, đồng xu chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay mình làm nhà khoa học. Bé đoán trước, rồi thả vào nước để xem kết quả nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe xem tiếng gì sau tấm rèm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé có đôi tai thật tinh!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm từng nhạc cụ để nghe tiếng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe tiếp nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "cái trống",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đó là tiếng cái trống.",
+   "lang": "vi"
+  },
+  {
+   "text": "cái chuông",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đó là tiếng cái chuông.",
+   "lang": "vi"
+  },
+  {
+   "text": "đàn",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đó là tiếng đàn.",
+   "lang": "vi"
+  },
+  {
+   "text": "cái xắc xô",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đó là tiếng cái xắc xô.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình nghe lại rồi gõ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé gõ trống hay lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe Lu gõ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đến lượt bé gõ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé gõ giống Lu rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này bé gõ đúng rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe kỹ chỗ nghỉ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé gõ đúng nhịp rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này bé gõ đúng nhịp rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu và bạn Mi xếp tháp khối. Bạn Mi lỡ tay làm đổ tháp của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu đang cảm thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn khuôn mặt Lu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, Lu buồn vì tháp bị đổ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn Mi cũng lo lắng lắm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nếu là bé, bé sẽ nói gì với bạn Mi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao, mình xếp lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy nhẹ lòng hơn. Hai bạn cùng xếp lại tháp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần sau bạn cẩn thận nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn Mi gật đầu: mình sẽ cẩn thận hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Khi bạn lỡ làm sai, mình nói nhẹ nhàng thì cả hai đều vui hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vì sao Lu buồn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe lại câu chuyện nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vì Lu đói bụng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vì tháp Lu xếp bị đổ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi. Lu xếp lâu lắm mới được cái tháp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vì trời mưa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn Mi đứng im, mặt đỏ lên vì lo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé sẽ làm gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Rủ bạn Mi cùng xếp lại.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hai bạn cùng xếp, tháp mới còn cao hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nói cho bạn biết mình buồn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn Mi xin lỗi Lu. Nói ra cảm xúc giúp bạn hiểu mình.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hít thở thật sâu cho bình tĩnh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm sau, bạn Bin làm rơi bút chì của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này Lu nên nói gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao, bạn nhặt giúp mình nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn Bin nhặt bút và cảm ơn Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn hư quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn Bin buồn lắm. Mình thử nói nhẹ nhàng hơn nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hiểu cảm xúc của bạn và nói nhẹ nhàng giúp mọi người vui vẻ bên nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu chuẩn bị sang nhà bà chơi. Bầu trời có nhiều mây đen.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu nên mang theo gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mang chiếc ô.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu cầm chiếc ô rồi lên đường.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mang quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu ôm quả bóng rồi lên đường.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đi được một đoạn thì trời đổ mưa. Lu bung ô ra, không bị ướt chút nào.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu tới nhà bà, vừa khô ráo vừa vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đi được một đoạn thì trời đổ mưa. Lu ướt hết cả áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bà lấy khăn lau cho Lu. Lần sau trời có mây đen, Lu sẽ nhớ mang ô.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem chuyện gì sắp xảy ra?",
+   "lang": "vi"
+  },
+  {
+   "text": "Trời sắp mưa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán theo đám mây đen. Mình xem tiếp nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trời sắp nắng to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình xem tiếp nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu nhìn đám mây đen và nghĩ một lúc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trời đổ mưa. Lu bung ô ra, không bị ướt chút nào.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trời đổ mưa. Lu ướt hết cả áo. Bà lấy khăn lau cho Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng nhớ lại câu chuyện nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vì sao Lu biết trời sắp mưa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ lại bầu trời lúc đầu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vì có nhiều mây đen.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi. Mây đen là dấu hiệu trời sắp mưa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vì bà gọi điện.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trước khi ra ngoài, mình nhìn bầu trời để chuẩn bị nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vườn đậu còn trống. Bé kéo hình dán để trang trí vườn nhé. Xong bé bấm Xong rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Khu vườn của bé thật đẹp! Lu cất vào tủ tranh rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hãy làm khu vườn trong mơ của bé. Kéo thật nhiều hình dán vào nhé. Xong bé bấm Xong rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Khu vườn trong mơ của bé thật đẹp! Lu cất vào tủ tranh rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu vẽ một vòng tròn. Bé vẽ thêm để vòng tròn biến thành thứ gì bé thích nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ý tưởng của bé hay lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Vòng tròn của bé đã thành gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Ông mặt trời rực rỡ quá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Quả bóng tròn lăn thật xa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Quả táo trông ngon quá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Khuôn mặt con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú mèo của bé thật đáng yêu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu vẽ một hình tam giác và hai nét ngang. Bé biến chúng thành một bức tranh nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đã vẽ thành gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ngôi nhà của bé thật ấm cúng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cái cây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cái cây của bé thật cao.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chiếc nón lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chiếc nón lá thật xinh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con diều.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con diều bay thật cao.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình rời màn hình một chút nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đi tìm trong nhà ba đồ vật màu đỏ, mang lại cho bố mẹ xem. Xong rồi bé bấm nút nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đi tìm trong nhà ba đồ vật hình tròn, rồi xếp chúng từ nhỏ đến lớn. Bố mẹ xem giúp bé nhé. Xong rồi bé bấm nút.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ai đang kêu cục ta cục tác sau tấm vải nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đây là cô gà mái. Lu chỉ cho bé cái mào trước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giờ bé chạm vào từng chỗ sáng để nghe Lu kể nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào cái mào của gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào cái mỏ của gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào đôi cánh của gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào đôi chân của gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn lại con gà nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đã biết nhiều về cô gà mái rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đây là cái mào đỏ trên đầu gà.",
+   "lang": "vi"
+  },
+  {
+   "text": "comb",
+   "lang": "en"
+  },
+  {
+   "text": "Đây là cái mỏ. Gà dùng mỏ để mổ thóc.",
+   "lang": "vi"
+  },
+  {
+   "text": "beak",
+   "lang": "en"
+  },
+  {
+   "text": "Đây là đôi cánh. Gà vỗ cánh khi chạy nhanh.",
+   "lang": "vi"
+  },
+  {
+   "text": "wing",
+   "lang": "en"
+  },
+  {
+   "text": "Đây là đôi chân. Gà dùng chân để bới đất tìm sâu.",
+   "lang": "vi"
+  },
+  {
+   "text": "leg",
+   "lang": "en"
+  },
+  {
+   "text": "Bé chạm vào con mắt của gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào cái đuôi của gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đây là con mắt. Gà nhìn thấy hạt thóc rất nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "eye",
+   "lang": "en"
+  },
+  {
+   "text": "Đây là cái đuôi có nhiều lông.",
+   "lang": "vi"
+  },
+  {
+   "text": "tail",
+   "lang": "en"
+  },
+  {
+   "text": "Hai bức tranh này gần giống nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm hai chỗ khác nhau và chạm vào nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm ra hết chỗ khác nhau rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn từng đồ vật ở hai tranh nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm bốn chỗ khác nhau và chạm vào nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn thật kỹ các đồ vật trên khay nhé. Lu sẽ che khăn lại.",
+   "lang": "vi"
+  },
+  {
+   "text": "Vật nào đã biến mất?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé có thể bấm Xem lại.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình chơi thêm lượt nữa. Bé nhìn kỹ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn thật kỹ các đồ vật trên khay nhé. Lần này có hai vật biến mất.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hai vật nào đã biến mất?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi bông hoa hát một nốt nhạc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình xem lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé xem hoa nào sáng lên nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chuỗi dài hơn rồi. Bé xem nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ đúng rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu xâu chuỗi hạt theo quy luật.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt tiếp theo là hạt nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn lại cả hàng hạt nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu xâu chuỗi hạt theo quy luật khó hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu đang nghĩ về một con vật. Mỗi lần Lu nói một manh mối, bé chạm vào con vật KHÔNG đúng để loại nó nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé suy luận giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật Lu nghĩ là con gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, Lu nghĩ về con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật này không sống dưới nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật này có cánh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này Lu nghĩ về con gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, Lu nghĩ về con thỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật này nhảy rất giỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con gà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con thỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, Lu nghĩ về con gà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật này có hai chân.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật này không bay cao được.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, Lu nghĩ về con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật này không có cánh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vật này thích sống gần nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con vịt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con ong.",
+   "lang": "en"
+  },
+  {
+   "text": "Con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có một đĩa táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm lại số táo trên đĩa nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên đĩa có hai quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bây giờ trên đĩa có mấy quả táo?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, hai thêm một là ba.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào giỏ để lấy thêm một quả.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên đĩa có ba quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, ba thêm hai là năm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào giỏ để lấy thêm hai quả.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên đĩa có bốn quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên đĩa còn mấy quả táo?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, bốn bớt một còn ba.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu ăn một quả. Bé chạm vào một quả để Lu ăn nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có mấy đĩa táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm lại thật kỹ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa này có bốn quả, đĩa kia có ba quả.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gộp lại có tất cả mấy quả?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, bốn và ba là bảy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé bấm Gộp lại để dồn hai đĩa nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có mười quả táo. Sáu quả ở ngoài, còn lại Lu cất vào hộp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong hộp có mấy quả táo?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, mười tách ra sáu và bốn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên đĩa có tám quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, tám bớt ba còn năm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu chia cho bạn ba quả. Bé chạm vào ba quả nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng tô số nhé. Bé xem Lu tô trước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô số 1 đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Số một: xiên lên một chút rồi kéo thẳng xuống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô số 2 đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Số hai: cong lên, xiên xuống, rồi kéo ngang.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô số 3 đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Số ba: hai nét cong nối nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay mình tô số năm, số tám và số chín. Bé xem Lu tô, tô cùng Lu, rồi tự tô nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô số 5 đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Số năm: kéo xuống, rồi cong bụng to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi thêm nét ngang ở trên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô số 8 đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Số tám: hai vòng tròn chồng lên nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tô số 9 đẹp lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Số chín: tô vòng tròn ở trên trước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi kéo nét thẳng xuống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cat.",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! Cat!",
+   "lang": "en"
+  },
+  {
+   "text": "Fish.",
+   "lang": "en"
+  },
+  {
+   "text": "Bird.",
+   "lang": "en"
+  },
+  {
+   "text": "Duck.",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! Duck!",
+   "lang": "en"
+  },
+  {
+   "text": "Chicken.",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! Chicken!",
+   "lang": "en"
+  },
+  {
+   "text": "Rabbit.",
+   "lang": "en"
+  },
+  {
+   "text": "Butterfly.",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! Butterfly!",
+   "lang": "en"
+  },
+  {
+   "text": "Frog.",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! Frog!",
+   "lang": "en"
+  },
+  {
+   "text": "Mình nghe tiếng Anh và làm theo nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Well done!",
+   "lang": "en"
+  },
+  {
+   "text": "Put the cat in the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Great! The cat is in the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Put the ball on the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Great! The ball is on the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Put the book on the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Great! The book is on the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Put the shoe in the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Great! The shoe is in the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Mình nghe tiếng Anh và làm theo nhé. Lần này có hai câu liền nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Put the shoe under the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Put the book under the box.",
+   "lang": "en"
+  },
+  {
+   "text": "Listen to both.",
+   "lang": "en"
+  },
+  {
+   "text": "Lu cho bé nhìn thật nhanh rồi che lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy cái?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn kỹ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai cái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba cái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn cái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm cái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi khung có mười ô. Bé nhìn nhanh rồi đoán số nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có tất cả mấy chấm?",
+   "lang": "vi"
+  },
+  {
+   "text": "Một khung đầy là mười. Bé có thể bấm Xem lại.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười một chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười hai chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười ba chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười bốn chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười lăm chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười sáu chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười bảy chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười tám chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười chín chấm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai mươi chấm.",
+   "lang": "vi"
+  }
+ ]
+}

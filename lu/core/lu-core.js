@@ -24,40 +24,84 @@ export function fill(text, vars = {}) {
 }
 export const uid = () => (globalThis.crypto?.randomUUID ? crypto.randomUUID() : 'e' + Date.now().toString(36) + Math.random().toString(36).slice(2));
 
-/* ---------- Giọng đọc: đọc hết câu rồi mới cho chạm (S02-R06) ---------- */
+/* ---------- Giọng đọc: Audio State Machine (S02-R06, Teaching Method Library mục VI) ----------
+   Trạng thái: idle → speaking ⇄ paused → idle. Các lời thoại xếp hàng nối tiếp nhau, KHÔNG bao giờ phát chồng lên nhau.
+   busy = true từ lúc gọi đến khi câu cuối trong hàng đọc xong: engine không nhận chạm và không chuyển hoạt động khi Lu chưa nói xong.
+   skip() bỏ qua câu đang đọc, pause()/resume() tạm dừng, stop() xóa cả hàng.
+   tts (tùy chọn, chỉ dùng trong Phòng mẫu): giọng tạm của trình duyệt khi câu chưa có file giọng Hoài My. */
 // Âm khen tiếng Anh chỉ dùng trong phần tiếng Anh; khi phát thì chữ hiển thị cũng là tiếng Anh, không để chữ tiếng Việt cũ.
 const CAP = { __ok: 'Excellent!', __no: 'Oops!' };
-export function createVoice({ clips = {}, base = '', fast = false, onMissing = () => {} } = {}) {
+export function createVoice({ clips = {}, base = '', fast = false, onMissing = () => {}, tts = null } = {}) {
   const audio = typeof Audio !== 'undefined' ? new Audio() : null;
-  const v = { busy: false, last: [], caption: null, onBusy: () => {} };
+  const v = { busy: false, paused: false, state: 'idle', last: [], caption: null, onBusy: () => {}, onState: () => {} };
   const src = k => { const c = clips[k]; if (!c) return null; return c.startsWith('data:') || /^https?:|^\//.test(c) ? c : base + c; };
-  v.speak = (keys) => new Promise(done => {
-    keys = [].concat(keys).filter(Boolean); v.busy = true; v.onBusy(true);
-    let i = 0;
-    const finish = () => { v.busy = false; v.onBusy(false); done(); };
-    const next = () => {
-      if (i >= keys.length) return finish();
-      const k = keys[i++];
-      if (v.caption && (!k.startsWith('__') || CAP[k])) v.caption.textContent = CAP[k] || k; // chữ hiện luôn khớp lời đang đọc, cùng ngôn ngữ
-      if (!k.startsWith('__') && !clips[k]) onMissing(k);
-      if (fast || !audio) return setTimeout(next, 5);
-      const s = src(k);
-      if (!s) return setTimeout(next, k.startsWith('__') ? 300 : 500 + k.length * 55);
-      let ended = false; const go = () => { if (!ended) { ended = true; next(); } };
+  let chain = Promise.resolve(), gen = 0, pending = 0, cur = null;
+  const setState = st => { v.state = st; v.onState(st); };
+  const busyOn = () => { if (!v.busy) { v.busy = true; v.onBusy(true); } };
+  const busyOff = () => { if (v.busy) { v.busy = false; v.onBusy(false); } if (!v.paused) setState('idle'); };
+  const waitResume = () => new Promise(r => { const t = () => (v.paused ? setTimeout(t, 120) : r()); t(); });
+  // Phát MỘT câu; trả về khi câu kết thúc (hết tiếng, bị bỏ qua hoặc bị dừng)
+  const playOne = (k, g) => new Promise(res => {
+    if (g !== gen) return res();
+    if (v.caption && (!k.startsWith('__') || CAP[k])) v.caption.textContent = CAP[k] || k; // chữ hiện luôn khớp lời đang đọc, cùng ngôn ngữ
+    if (!k.startsWith('__') && !clips[k]) onMissing(k);
+    let ended = false, tm = null;
+    const go = () => { if (ended) return; ended = true; clearTimeout(tm); cur = null; res(); };
+    const timer = ms => { clearTimeout(tm); tm = setTimeout(go, ms); };
+    const s = src(k);
+    cur = { skip: go, pause: () => clearTimeout(tm), resume: () => timer(400) };
+    if (fast || !audio) return timer(5);
+    if (s) {
       audio.onended = go; audio.onerror = go; audio.src = s;
-      const p = audio.play(); if (p && p.catch) p.catch(() => setTimeout(go, 500 + k.length * 55));
-      setTimeout(go, 15000);
-    };
-    next();
+      cur.pause = () => audio.pause(); cur.resume = () => { const p = audio.play(); if (p && p.catch) p.catch(go); };
+      const p = audio.play(); if (p && p.catch) p.catch(() => timer(500 + k.length * 55));
+      return;
+    }
+    if (tts && !k.startsWith('__') && tts.ok()) {
+      const run = () => tts.speak(k).then(() => { if (!v.paused) go(); });
+      cur.pause = () => tts.cancel(); cur.resume = run; cur.skip = () => { tts.cancel(); go(); };
+      run(); timer(4000 + k.length * 160); // chốt an toàn nếu trình duyệt không báo đọc xong
+      return;
+    }
+    timer(k.startsWith('__') ? 300 : 500 + k.length * 55);
   });
+  v.speak = keys => {
+    keys = [].concat(keys).filter(Boolean); const g = gen; pending++; busyOn();
+    const job = chain.then(async () => {
+      if (g === gen) { setState(v.paused ? 'paused' : 'speaking'); for (const k of keys) { if (g !== gen) break; if (v.paused) await waitResume(); await playOne(k, g); } }
+      if (--pending <= 0) { pending = 0; busyOff(); }
+    });
+    chain = job; return job;
+  };
   // Âm hiệu ngắn phát song song, không khóa chạm (vd. tiếng "ting" khi lật đúng một đôi).
   const fx = typeof Audio !== 'undefined' ? new Audio() : null;
   v.sfx = k => { const s = src(k); if (fast || !fx || !s) return; try { fx.currentTime = 0; } catch {} fx.src = s; const p = fx.play(); if (p && p.catch) p.catch(() => {}); };
   v.say = keys => { v.last = [].concat(keys).filter(k => k && !k.startsWith('__')); return v.speak(keys); };
   v.replay = () => (!v.busy && v.last.length ? v.speak(v.last) : Promise.resolve());
-  v.unlock = () => { if (!audio) return; audio.muted = true; const p = audio.play(); if (p && p.catch) p.catch(() => {}); audio.pause(); audio.muted = false; };
-  v.stop = () => { if (audio) audio.pause(); v.busy = false; v.onBusy(false); };
+  v.skip = () => { if (cur) cur.skip(); };
+  v.pause = () => { if (!v.busy || v.paused) return; v.paused = true; if (cur) cur.pause(); setState('paused'); };
+  v.resume = () => { if (!v.paused) return; v.paused = false; setState(v.busy ? 'speaking' : 'idle'); if (cur) cur.resume(); };
+  v.unlock = () => { if (!audio) return; audio.muted = true; const p = audio.play(); if (p && p.catch) p.catch(() => {}); audio.pause(); audio.muted = false; if (tts) tts.unlock?.(); };
+  v.stop = () => { gen++; v.paused = false; if (audio) audio.pause(); if (tts) tts.cancel(); if (cur) cur.skip(); pending = 0; busyOff(); };
   return v;
+}
+
+/* ---------- Lu gợi ý khi bé chưa trả lời (Phòng mẫu: "Thử không trả lời") ----------
+   Sau khi Lu nói xong, nếu bé không chạm: lần 1 Lu nhắc lại đề bài, lần 2 Lu làm sáng chỗ cần chạm và nói gợi ý.
+   Không trừ điểm, không báo sai; chỉ ghi sự kiện "idle" để bố mẹ biết bé cần hỗ trợ. */
+export function idleHelp(root, voice, { getTargets = () => [], delay = 9000, hintLine = 'Bé thử chạm vào chỗ đang sáng nhé.', onIdle = () => {} } = {}) {
+  let tm = null, step = 0;
+  const clear = () => { clearTimeout(tm); tm = null; };
+  const arm = () => { clear(); if (voice.busy || step >= 2) return; tm = setTimeout(fire, delay); };
+  const fire = () => {
+    if (voice.busy) return; step++; onIdle(step);
+    if (step === 1) voice.replay().then(arm);
+    else { getTargets().forEach(el => el && el.classList && el.classList.add('hint')); voice.speak([hintLine]); }
+  };
+  const prev = voice.onBusy; voice.onBusy = b => { prev(b); if (!b) arm(); else clear(); };
+  root.addEventListener('pointerdown', () => { step = 0; clear(); }, true);
+  root.addEventListener('pointerup', () => setTimeout(arm, 60), true);
+  return { stop: clear, reset: () => { step = 0; arm(); } };
 }
 
 /* ---------- Khung màn hình: thanh chặng, cảnh học, khu đáp án tách riêng (S02-R07, S04-R08) ---------- */
@@ -69,11 +113,21 @@ const luArtHook = { fn: null };
 export function setLuArt(fn) { luArtHook.fn = fn; setVisLu(fn); }
 export const luArt = (expr = 'vui') => (luArtHook.fn ? luArtHook.fn(expr) : LU_SVG);
 
-export function createUI(root, voice) {
-  root.innerHTML = `<div class="app"><div class="backdrop" aria-hidden="true"></div><div class="top"><div class="steps"></div><button class="ibtn replay" aria-label="Nghe lại"><svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9c1.2 1.6 1.2 4.4 0 6"/><path d="M18 6.8c2.4 2.9 2.4 7.5 0 10.4"/></svg></button></div><div class="stage"></div></div>`;
+const IC_PAUSE = '<svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6v12M15 6v12"/></svg>';
+const IC_PLAY = '<svg class="lu-ic" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10-6.5z"/></svg>';
+const IC_SKIP = '<svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l7 6-7 6zM17 6v12"/></svg>';
+// opts.controls: hiện thêm nút Tạm dừng và Bỏ qua lời thoại (Phòng mẫu; bản cho bé chờ tam quyết định)
+export function createUI(root, voice, opts = {}) {
+  const ctl = opts.controls ? `<button class="ibtn pause" aria-label="Tạm dừng">${IC_PAUSE}</button><button class="ibtn skip" aria-label="Bỏ qua lời thoại">${IC_SKIP}</button>` : '';
+  root.innerHTML = `<div class="app"><div class="backdrop" aria-hidden="true"></div><div class="top"><div class="steps"></div>${ctl}<button class="ibtn replay" aria-label="Nghe lại"><svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9c1.2 1.6 1.2 4.4 0 6"/><path d="M18 6.8c2.4 2.9 2.4 7.5 0 10.4"/></svg></button></div><div class="stage"></div></div>`;
   const q = s => root.querySelector(s);
   const ui = { root, stage: q('.stage'), steps: [] };
   q('.replay').onclick = () => voice.replay();
+  if (opts.controls) {
+    const pb = q('.pause'); pb.onclick = () => { if (voice.paused) voice.resume(); else voice.pause(); };
+    q('.skip').onclick = () => voice.skip();
+    voice.onState = st => { pb.innerHTML = st === 'paused' ? IC_PLAY : IC_PAUSE; pb.setAttribute('aria-label', st === 'paused' ? 'Đọc tiếp' : 'Tạm dừng'); root.dataset.voice = st; };
+  }
   voice.onBusy = b => { if (b) root.dataset.busy = 1; else delete root.dataset.busy; const lu = root.querySelector('.lu'); if (lu) lu.classList.toggle('talk', b); };
   ui.setSteps = names => { ui.steps = names; };
   ui.setStep = n => { q('.steps').innerHTML = ui.steps.map((s, i) => `<i class="${i < n ? 'done' : i === n ? 'now' : ''}" title="${esc(s)}"></i>`).join(''); };

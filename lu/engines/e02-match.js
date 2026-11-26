@@ -2,30 +2,35 @@
 // target_style: "shadow" (đích là bóng của chính hình) hoặc "pair" (mỗi mục có {piece, target} riêng).
 import { dragOrTap, esc } from '../core/lu-core.js';
 import { need, vis, okVi, OK_VI } from './common.js';
+import * as MORE from './e02-line.js';
 
 export const id = 'E02', version = '1.0.0', name = 'Kéo thả ghép cặp';
 
 const setsOf = act => act.target_style === 'pair' ? act.sets.map(s => s.map(p => ({ k: p.piece, piece: p.piece, target: p.target }))) : act.sets.map(s => s.map(k => ({ k, piece: k, target: k })));
 
 export function validate(act) {
+  if (MORE.MORE.has(act.mode)) return MORE.validate(act);
   const e = need(act, ['skill_id', 'title', 'sets', 'no', 'done']);
   (act.sets || []).forEach((s, i) => { if (s.length < 2) e.push(`${act.activity_id}: bộ ${i + 1} cần ít nhất 2 hình`); });
   return e;
 }
 export function generate(act, rng) {
+  if (MORE.MORE.has(act.mode)) return MORE.generate(act, rng);
   const sets = setsOf(act); const pick = rng.sample(sets.map((s, i) => i), act.rounds || sets.length);
   return { rounds: pick.map(i => ({ set: i, targets: rng.shuffle(sets[i].map((x, j) => j)), pieces: rng.shuffle(sets[i].map((x, j) => j)) })) };
 }
 export function verify(act, v) {
+  if (MORE.MORE.has(act.mode)) return MORE.verify(act, v);
   const e = []; const sets = setsOf(act);
   v.rounds.forEach((r, k) => { const s = sets[r.set]; if (!s) return e.push(`${act.activity_id} vòng ${k + 1}: bộ không có`);
     if (new Set(s.map(x => x.k)).size !== s.length) e.push(`${act.activity_id} vòng ${k + 1}: hai hình trùng nhau`);
     if (new Set(s.map(x => x.target)).size !== s.length) e.push(`${act.activity_id} vòng ${k + 1}: hai đích trùng nhau`); });
   return e;
 }
-export const lines = act => [...(act.intro || []), act.again, act.no, act.done, act.ok_each, ...OK_VI].filter(Boolean);
+export const lines = act => MORE.MORE.has(act.mode) ? MORE.lines(act) : [...(act.intro || []), act.again, act.no, act.done, act.ok_each, ...OK_VI].filter(Boolean);
 
 export async function mount(ctx, act, v) {
+  if (MORE.MORE.has(act.mode)) return MORE.mount(ctx, act, v);
   const sets = setsOf(act);
   for (let r = 0; r < v.rounds.length; r++) { await round(ctx, act, sets[v.rounds[r].set], v.rounds[r], r === 0); ctx.tick?.(); }
 }
