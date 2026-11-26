@@ -34,7 +34,7 @@ export async function mount(ctx, act, v) { for (let r = 0; r < v.rounds.length; 
 function round(ctx, act, R, first) {
   const { ui, voice } = ctx; const tries = {}; let left = R.items.length, sel = null;
   return new Promise(done => {
-    ui.scene(act.title, `<div class="bins">${act.groups.map(g => `<div class="bin" data-g="${esc(g.id)}"><div class="bin-h">${g.e ? vis(g.e) : ''} ${esc(g.label)}</div><div class="bin-in"></div></div>`).join('')}</div>`);
+    ui.scene(act.title, `<div class="bins" data-n="${R.items.length}">${act.groups.map(g => `<div class="bin" data-g="${esc(g.id)}"><div class="bin-h">${g.e ? vis(g.e) : ''} ${esc(g.label)}</div><div class="bin-in"></div></div>`).join('')}</div>`);
     const tray = ui.answers(act.label || 'Kéo vào đúng nhóm', R.items.map(i => `<div class="piece" data-i="${i}">${vis(act.items[i].e)}</div>`).join('')); tray.classList.add('tray');
     const markNext = () => { const p = tray.querySelector('.piece'); if (p) ctx.test.mark([p, ui.stage.querySelector(`.bin[data-g="${CSS.escape(act.items[+p.dataset.i].g)}"]`)]); };
     const drop = (piece, bin) => {

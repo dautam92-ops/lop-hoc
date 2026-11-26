@@ -8,7 +8,7 @@
 import { createRequire } from 'node:module';
 import { serve } from '../serve.mjs';
 import { doToGiua, danhGia } from '../do-to-giua.mjs';
-import { kiemLoiCu } from '../kiem-loi-cu.mjs';
+import { kiemLoiCu, kiemGio } from '../kiem-loi-cu.mjs';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 const port = 5900 + Math.floor(Math.random() * 90); const srv = await serve(port);
@@ -69,6 +69,7 @@ for (const s of D.samples) {
           return { ok, spoken: T.spoken.slice(n0).map(x => x.k), done: T.done, engine: T.variant && 1 };
         });
         if (st === 'done') break;
+        { await page.waitForTimeout(60); const g = await kiemGio(page); if (g) { r.checks.gioDuVat = (r.checks.gioDuVat ?? true) && g.ok; for (const x of g.errs) if (!errs.includes(x)) errs.push(x); } }
         if (s.engine === 'E05' && st.spoken && !st.done) { const bad = st.spoken.filter(k => k !== '__dung'); if (bad.length && !(await page.evaluate(() => window.__labTest.done))) { errs.push('Lật đúng mà Lu vẫn nói: ' + bad.join(' | ')); r.checks.lat_dung_chi_ting = false; } }
         await page.waitForTimeout(30);
       }

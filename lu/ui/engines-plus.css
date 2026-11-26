@@ -411,3 +411,17 @@
 /* Chạm chọn điểm trên ảnh (tam 26/11 18:35): vùng chạm rộng hơn vật một lề để bé chạm gần cũng nhận */
 .lu-lesson .frame .fr-it.tap::after { content: ''; position: absolute; inset: -35%; min-width: 0; }
 .lu-lesson .frame .fr-it.tap { z-index: 1; }
+
+/* ---- Xếp vào giỏ (tam 26/11 18:47): vật đã thả hiện đủ, cỡ vừa, xếp gọn trong giỏ; hình đầu giỏ nhỏ gọn.
+   Phép thử: kiemGio() trong tools/kiem-loi-cu.mjs, chạy sau mỗi lần thả. */
+.lu-lesson .bin { --t: 76px; --hi: 52px; justify-content: flex-start; overflow: hidden; min-height: 270px; }
+.lu-lesson .bin-h { display: flex; flex-direction: column; align-items: center; gap: 2px; flex: 0 0 auto; }
+.lu-lesson .bin .bin-h .lu-art, .lu-lesson .bin .bin-h img, .lu-lesson .bin .bin-h svg { width: var(--hi) !important; height: var(--hi) !important; max-width: none; max-height: none; object-fit: contain; }
+.lu-lesson .bin-in { display: flex; flex-wrap: wrap; align-content: flex-start; justify-content: center; gap: 6px; width: 100%; margin-top: 6px; font-size: calc(var(--t) * .7); }
+.lu-lesson .bin-in > span { flex: 0 0 var(--t); width: var(--t); height: var(--t); display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 14px; box-shadow: 0 2px 0 rgba(0,0,0,.06); animation: lu-pop .25s ease-out; }
+.lu-lesson .bin .bin-in > span .lu-art, .lu-lesson .bin .bin-in > span img, .lu-lesson .bin .bin-in > span svg { width: 86% !important; height: 86% !important; max-width: none; max-height: none; object-fit: contain; }
+@media (max-width: 600px) {
+  .lu-lesson .bin { --t: 44px; --hi: 36px; min-height: 230px; }
+  .lu-lesson .bin-in { gap: 4px; margin-top: 4px; }
+  .lu-lesson .bin-in > span { border-radius: 10px; }
+}
