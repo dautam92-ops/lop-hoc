@@ -95,6 +95,21 @@ for (const id of ['CC-01', 'CC-17', 'MX-09', 'CC-08']) {
   rows.push({ id, age: '4-5', dev: 'ipad', checks: { khong_tra_loi: ok }, errs, ok }); console.log(`${ok ? 'ĐẠT ' : 'LỖI '} ${id} không trả lời${errs.length ? '\n    ' + errs.join('\n    ') : ''}`);
   await page.close();
 }
+// ---- Ghi nhớ (tam 26/11 19:41): lúc bé nhìn, số đếm ngược 3, 2, 1 thật to giữa màn; đếm xong tranh mới úp/biến mất
+for (const [id, sel, cov] of [['MT-07', '.wh-grid', '.wh-grid.cov'], ['MX-03', '.vn-tray', '.vn-tray.covered']]) for (const dev of ['ipad', 'phone']) {
+  if (only.length && !only.includes(id)) continue;
+  const page = await b.newPage(DEV[dev]); const errs = [];
+  await page.goto(`${BASE}?s=${id}&age=4-5&seed=7&auto=1&tts=0&idle=600000`);
+  const r = await page.evaluate(async ([sel, cov]) => { const seen = []; let big = 0, mid = 1, during = true, t0 = performance.now();
+    while (performance.now() - t0 < 20000 && !document.querySelector(cov)) { const c = document.querySelector('.lu-cdn'); if (c && c.getBoundingClientRect().width) { const d = c.innerText.trim(); if (seen[seen.length - 1] !== d) seen.push(d);
+        const q = c.querySelector('b').getBoundingClientRect(); big = Math.max(big, q.height); mid = Math.abs(q.left + q.width / 2 - innerWidth / 2) / innerWidth; if (document.querySelector(cov)) during = false; }
+      await new Promise(r => setTimeout(r, 50)); }
+    await new Promise(r => setTimeout(r, 150)); return { seen, big, mid, during, after: !!document.querySelector('.lu-cdn'), covered: !!document.querySelector(cov) }; }, [sel, cov]);
+  const ok = r.seen.join(',') === '3,2,1' && r.big >= (dev === 'phone' ? 64 : 90) && r.mid <= .08 && r.during && !r.after && r.covered;
+  if (!ok) { fail++; errs.push('Ghi nhớ: cần đếm ngược 3, 2, 1 to giữa màn rồi mới úp tranh: ' + JSON.stringify(r)); }
+  rows.push({ id, age: '4-5', dev, checks: { demNguoc: ok }, errs, ok }); console.log(`${ok ? 'ĐẠT ' : 'LỖI '} ${id} ${dev} đếm ngược${errs.length ? '\n    ' + errs.join('\n    ') : ''}`);
+  await page.close();
+}
 await b.close(); srv.close();
 writeFileSync(new URL('ket-qua.json', OUT), JSON.stringify({ at: new Date().toISOString(), total: rows.length, fail, rows }, null, 1));
 console.log(`\n${rows.length - fail}/${rows.length} lượt đạt.`); process.exit(fail ? 1 : 0);

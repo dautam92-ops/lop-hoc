@@ -4,7 +4,7 @@
 //   vanish : nhìn rồi nhớ: khăn che lại, một (hoặc hai) vật biến mất, bé chọn vật đã biến mất. Có nút "Xem lại" (không áp lực).
 //   multi  : tìm tất cả đối tượng thỏa NHIỀU điều kiện cùng lúc (loại + màu, + kích thước, hoặc "không phải màu…").
 // Chạm sai: chỉ âm nhẹ, không giải thích dài (tam 26/11); từ lần sai thứ 3 Lu mới gợi ý.
-import { vis, esc, fill, sleep, setAuto, frameHTML, req } from './kit.js';
+import { vis, esc, fill, sleep, setAuto, frameHTML, req, countdown } from './kit.js';
 import { okVi } from './common.js';
 import { LAB_COLORS } from '../ui/art-lab.js';
 import * as MT from './e06-mt.js';
@@ -156,7 +156,7 @@ function vanish(ctx, act, R, first) {
     const tray = () => `<div class="vn-tray" style="--n:${R.show.length}">${R.show.map((s, i) => `<span class="vn-it" data-i="${i}">${vis(s)}</span>`).join('')}<div class="vn-cloth"></div></div>`;
     ui.scene(act.title, tray());
     const T = ui.stage.querySelector('.vn-tray');
-    const look = async () => { T.classList.remove('covered', 'after'); T.querySelectorAll('.vn-it').forEach(x => x.classList.remove('gone')); await sleep(ctx, (act.look_ms || 3500)); T.classList.add('covered'); await sleep(ctx, 900); R.gone.forEach(g => T.querySelector(`.vn-it[data-i="${g}"]`).classList.add('gone')); T.classList.remove('covered'); T.classList.add('after'); };
+    const look = async () => { T.classList.remove('covered', 'after'); T.querySelectorAll('.vn-it').forEach(x => x.classList.remove('gone')); await countdown(ctx, act.look_ms || 3500); T.classList.add('covered'); await sleep(ctx, 900); R.gone.forEach(g => T.querySelector(`.vn-it[data-i="${g}"]`).classList.add('gone')); T.classList.remove('covered'); T.classList.add('after'); };
     const ask = () => {
       const box = ui.answers(R.gone.length > 1 ? 'Bé chọn hai vật đã biến mất' : 'Vật nào đã biến mất?', R.opts.map((o, i) => `<button class="opt face vn-opt" data-i="${i}">${vis(o)}</button>`).join('') + `<button class="big-btn alt vn-again">Xem lại</button>`);
       const goneVals = R.gone.map(g => R.show[g]);
