@@ -2,6 +2,8 @@
 // Chạy: node tools/cong-kiem-tra.mjs L001   (thoát mã 1 nếu có mục đỏ)
 // Mỗi lỗi đã gặp phải có ít nhất một mục ở đây (xem SO-LOI.md).
 import { danhGia } from './do-to-giua.mjs';
+import { kiemCauTruc, kiemOn } from './kiem-cau-truc.mjs';
+import { readdir } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import { readFile, access } from 'node:fs/promises';
 import path from 'node:path';
@@ -20,6 +22,18 @@ const engErr = +(cd.match(/lỗi engine (\d+)/) || [, 99])[1];
 check('Đáp án đúng ở 100 biến thể mỗi hoạt động', engErr === 0, engErr ? `${engErr} hoạt động lỗi` : '');
 const phut = +(cd.match(/phút ([\d.]+)/) || [, 0])[1];
 check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
+
+// 1b. Cấu trúc buổi như L001 (tam 26/11): 10–12 bài nhỏ, mỗi bài 3–4 bài tập, đủ 6 nhóm kỹ năng.
+//     Lịch ôn (tam duyệt 26/11): mỗi lượt ôn chữ/số một cách học mới; từ L004 mỗi buổi có thẻ ôn.
+{
+  const dir = path.join(ROOT, 'content/drafts'); const all = [];
+  for (const f of (await readdir(dir)).filter(f => /^L\d+\.json$/.test(f))) all.push(JSON.parse(await readFile(path.join(dir, f), 'utf8')));
+  const pkg = all.find(p => p.lesson_id === id); const so = x => +String(x).replace(/\D/g, '');
+  const ct = pkg ? kiemCauTruc(pkg) : [`không thấy ${id}`];
+  check('Cấu trúc như L001: 10–12 bài nhỏ, 3–4 bài tập mỗi bài, đủ 6 nhóm kỹ năng', !ct.length, ct.slice(0, 3).join('; '));
+  const ot = pkg ? kiemOn(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
+  check('Ôn chữ/số: mỗi lượt ôn một cách học mới, từ L004 có thẻ ôn', !ot.length, ot.slice(0, 3).join('; '));
+}
 
 // 2. Giọng đọc: mọi câu đều có tệp, tệp tồn tại
 const vl = run(['tools/voice-lines-bai.mjs', id]);
