@@ -6,7 +6,8 @@ Nguyên tắc:
 - Chỉ BỔ SUNG vào Lu, không thay giáo trình 300 buổi, không lập chương trình Montessori / "não bộ" / Chim Đa Đa riêng.
 - Không gắn nhãn trẻ "não trái / não phải"; không hứa kích hoạt bán cầu não, tăng IQ, tạo thiên tài.
 - Lu "lấy cảm hứng từ Montessori", không tự nhận là chương trình Montessori chuẩn (AMI/AMS).
-- Kỹ năng mới chỉ là ĐỀ XUẤT, chưa ghi vào content/skills.json cho tới khi tam duyệt.
+- 26/11 18:28 tam DUYỆT toàn bộ khung (14 phương pháp, 18 năng lực, 34 hoạt động Montessori, 12 hoạt động ngoài màn hình, 13 kỹ năng)
+  và yêu cầu thêm vào chương trình đào tạo. 13 kỹ năng đã vào Skill Tree v0.4 (giao-trinh-2.0/src/duyet_v04.py) và content/skills.json.
 - Mức nghiên cứu ghi trung thực: 'doi-chieu' = đã tra và xác nhận nguồn tồn tại, nội dung khớp tóm tắt;
   'tong-quan' = tổng hợp từ hiểu biết chung về tài liệu, chưa tra lại; cần chuyên gia mầm non soát trước khi dùng cho tiếp thị.
 """
@@ -192,7 +193,7 @@ AB = [
 ]
 def depth(n): return 'Đủ' if n >= 6 else 'Mỏng' if n >= 3 else 'Thiếu'
 
-# ---- Kỹ năng đề xuất (CHƯA ghi vào skills.json; chờ tam duyệt). Không trùng kỹ năng cũ.
+# ---- 13 kỹ năng mới (tam duyệt 26/11 18:28, đã ghi vào Skill Tree v0.4 và skills.json).
 NEW_SKILLS = [
  ('TD.QS.12', 'Phân biệt sắc độ màu', 'Tư duy', 'Quan sát', '4–6', 'Xếp 3–5 sắc độ một màu từ nhạt đến đậm.', 'MT-02', 'Chưa có kỹ năng sắc độ; MT-02 tạm gắn TD.LG.01, TD.QS.09'),
  ('TO.DO.07', 'Xếp theo kích thước nhiều bậc', 'Toán', 'Đo lường', '5–6', 'Xếp 5 vật chênh nhau ít theo kích thước, dày mỏng.', 'MT-01', 'TD.LG.02 chỉ 3 vật, 4–5 tuổi'),
@@ -320,11 +321,9 @@ def build():
             for k in a['skill_ids']:
                 if k not in SK and k not in {n[0] for n in NEW_SKILLS}: errs.append(f"Montessori {a['ten']}: kỹ năng {k} không có")
             if a['mau'] and a['mau'] not in SID: errs.append(f"Montessori {a['ten']}: mẫu {a['mau']}")
-    for n in NEW_SKILLS:
-        if n[0] in SK: errs.append(f'kỹ năng đề xuất {n[0]} trùng mã đã có')
-    names = {v['ten'].lower() for v in SK.values()}
-    for n in NEW_SKILLS:
-        if n[1].lower() in names: errs.append(f'kỹ năng đề xuất trùng tên: {n[1]}')
+    for n in NEW_SKILLS:  # đã duyệt: phải có trong skills.json với đúng tên
+        if n[0] not in SK: errs.append(f'kỹ năng {n[0]} đã duyệt nhưng chưa có trong skills.json')
+        elif SK[n[0]]['ten'] != n[1]: errs.append(f'kỹ năng {n[0]}: tên trong skills.json khác ({SK[n[0]]["ten"]})')
     for o in OFFSCREEN:
         for k in o['skill_ids']:
             if k not in SK and k not in {n[0] for n in NEW_SKILLS}: errs.append(f"{o['id']}: kỹ năng {k}")
@@ -341,7 +340,7 @@ def build():
             if s not in SID: errs.append(f'vùng {r[0]}: mẫu {s}')
     if errs: print('\n'.join(errs)); sys.exit(1)
     mon_count = {k: sum(a['loai'] == k for v in MONTESSORI for a in v['hoat_dong']) for k in 'ABC'}
-    return dict(format='lu-methodology', version='1.0.0', ngay='2026-11-26', trang_thai='cho_duyet',
+    return dict(format='lu-methodology', version='1.0.0', ngay='2026-11-26', trang_thai='da_duyet', duyet=dict(nguoi='tam', luc='2026-11-26T18:28+07:00', noi_dung='Duyệt khung, thêm vào chương trình đào tạo'),
                 nguyen_tac=['Chỉ bổ sung, không thay thế giáo trình đã duyệt', 'Không gắn nhãn não trái, não phải; không hứa tăng IQ hay tạo thiên tài',
                             'Lu lấy cảm hứng từ Montessori, không phải chương trình Montessori chuẩn', 'Không số hóa mọi thứ: loại B, C cần đồ thật',
                             'Hoàn thành trò chơi không đồng nghĩa thành thạo kỹ năng thật (D24)', 'Không gọi AI khi bé học (D18)'],
@@ -354,5 +353,5 @@ if __name__ == '__main__':
     out = build()
     p = os.path.join(ROOT, 'content/lab/methodology.json')
     json.dump(out, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print(f"{len(out['methods'])} phương pháp, {len(out['abilities'])} năng lực, {sum(len(v['hoat_dong']) for v in out['montessori'])} hoạt động Montessori {out['montessori_abc']}, {len(out['offscreen'])} hoạt động ngoài màn hình, {len(out['new_skills'])} kỹ năng đề xuất -> {p}")
+    print(f"{len(out['methods'])} phương pháp, {len(out['abilities'])} năng lực, {sum(len(v['hoat_dong']) for v in out['montessori'])} hoạt động Montessori {out['montessori_abc']}, {len(out['offscreen'])} hoạt động ngoài màn hình, {len(out['new_skills'])} kỹ năng mới (đã duyệt) -> {p}")
     for a in out['abilities']: print(f"  {a['id']} {a['ten']}: {a['so_ky_nang']} kỹ năng ({a['muc']}), mẫu {', '.join(a['mau'])}")

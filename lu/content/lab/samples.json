@@ -4871,7 +4871,7 @@
      "title": "Tháp hồng và cầu thang nâu"
     },
     "5-6": {
-     "skill_id": "TO.DO.04",
+     "skill_id": "TO.DO.07",
      "intro": [
       "Lần này các khối chỉ hơn nhau một chút thôi. Bé nhìn thật kỹ nhé."
      ],
@@ -4973,7 +4973,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "TD.LG.01",
+     "skill_id": "TD.QS.12",
      "intro": [
       "Ba ô màu xanh này có ô nhạt, có ô đậm. Bé xếp từ ô nhạt nhất đến ô đậm nhất nhé."
      ],
@@ -5006,7 +5006,7 @@
      "title": "Hộp màu đậm nhạt"
     },
     "5-6": {
-     "skill_id": "TD.QS.09",
+     "skill_id": "TD.QS.12",
      "intro": [
       "Các ô màu này chỉ khác nhau một chút. Bé xếp từ nhạt nhất đến đậm nhất nhé."
      ],
@@ -5110,7 +5110,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "TO.SO.02",
+     "skill_id": "TO.SO.07",
      "style": "face",
      "intro": [
       "Mỗi thanh có các đoạn đỏ và xanh xen nhau. Bé đếm số đoạn để biết thanh số mấy nhé."
@@ -5175,7 +5175,7 @@
      "title": "Thanh số đỏ xanh"
     },
     "5-6": {
-     "skill_id": "TO.TG.04",
+     "skill_id": "TO.SO.07",
      "style": "face",
      "intro": [
       "Các thanh số dài hơn rồi. Bé đếm đoạn, rồi thử ghép hai thanh nhé."
@@ -5450,7 +5450,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "TD.QH.02",
+     "skill_id": "TD.KG.15",
      "style": "face",
      "intro": [
       "Đường gạch đỏ giống như một tấm gương. Bé chọn nửa bên phải để hình giống hệt khi soi gương nhé."
@@ -5604,7 +5604,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "TD.QH.02",
+     "skill_id": "TD.QH.03",
      "style": "face",
      "intro": [
       "Có bạn đang trốn sau tấm bìa có lỗ. Bé nhìn qua lỗ rồi đoán là ai nhé."
@@ -5678,7 +5678,7 @@
      "title": "Ai trốn sau tấm bìa?"
     },
     "5-6": {
-     "skill_id": "TD.QH.02",
+     "skill_id": "TD.QH.03",
      "style": "face",
      "intro": [
       "Tấm bìa lần này chỉ có hai lỗ nhỏ. Bé nhìn thật kỹ rồi đoán nhé."
@@ -5800,7 +5800,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "TD.TN.01",
+     "skill_id": "TD.TN.13",
      "objs": [
       {
        "e": "art:meo",
@@ -5963,7 +5963,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "TD.KG.04",
+     "skill_id": "TD.KG.16",
      "size": 3,
      "colors": [
       "#3f7fc1"
@@ -6592,7 +6592,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "KP.KH.01",
+     "skill_id": "KS.CS.02",
      "state0": "art:chau-cay",
      "intro": [
       "Cây của Lu đang khát nước. Bé giúp Lu chăm cây nhé."
@@ -6628,7 +6628,7 @@
      "title": "Bé chăm cây"
     },
     "5-6": {
-     "skill_id": "KS.TN.01",
+     "skill_id": "KS.CS.02",
      "state0": "art:hat-dau",
      "intro": [
       "Mình trồng và chăm một cây đậu từ hạt nhé."
@@ -6716,7 +6716,7 @@
    "version": "1.0.0",
    "levels": {
     "4-5": {
-     "skill_id": "KP.VD.02",
+     "skill_id": "KP.VD.04",
      "lu": "kham-pha",
      "intro": [
       "Mình rời màn hình một chút nhé. Bé cần dùng cả hai tay."
@@ -6731,7 +6731,7 @@
      "title": "Hai tay cùng làm"
     },
     "5-6": {
-     "skill_id": "KP.VD.03",
+     "skill_id": "KP.VD.04",
      "lu": "kham-pha",
      "intro": [
       "Mình rời màn hình một chút nhé. Bé cần dùng cả hai tay."

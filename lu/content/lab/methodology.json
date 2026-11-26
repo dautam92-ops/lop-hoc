@@ -2,7 +2,12 @@
  "format": "lu-methodology",
  "version": "1.0.0",
  "ngay": "2026-11-26",
- "trang_thai": "cho_duyet",
+ "trang_thai": "da_duyet",
+ "duyet": {
+  "nguoi": "tam",
+  "luc": "2026-11-26T18:28+07:00",
+  "noi_dung": "Duyệt khung, thêm vào chương trình đào tạo"
+ },
  "nguyen_tac": [
   "Chỉ bổ sung, không thay thế giáo trình đã duyệt",
   "Không gắn nhãn não trái, não phải; không hứa tăng IQ hay tạo thiên tài",
@@ -1073,7 +1078,7 @@
    "id": "NL02",
    "ten": "Toán học",
    "mo_ta": "Đếm, số, tách gộp, đo, hình",
-   "so_ky_nang": 47,
+   "so_ky_nang": 49,
    "muc": "Đủ",
    "skill_ids": [
     "TO.DEM.01",
@@ -1087,6 +1092,7 @@
     "TO.DO.04",
     "TO.DO.05",
     "TO.DO.06",
+    "TO.DO.07",
     "TO.HINH.01",
     "TO.HINH.02",
     "TO.HINH.03",
@@ -1099,6 +1105,7 @@
     "TO.SO.04",
     "TO.SO.05",
     "TO.SO.06",
+    "TO.SO.07",
     "TO.SS.01",
     "TO.SS.02",
     "TO.SS.03",
@@ -1170,12 +1177,13 @@
    "id": "NL04",
    "ten": "Phân tích",
    "mo_ta": "So sánh, tìm điểm khác, tách bộ phận",
-   "so_ky_nang": 14,
+   "so_ky_nang": 16,
    "muc": "Đủ",
    "skill_ids": [
     "KP.TG.04",
     "TD.QH.01",
     "TD.QH.02",
+    "TD.QH.03",
     "TD.QS.01",
     "TD.QS.02",
     "TD.QS.03",
@@ -1186,7 +1194,8 @@
     "TD.QS.08",
     "TD.QS.09",
     "TD.QS.10",
-    "TD.QS.11"
+    "TD.QS.11",
+    "TD.QS.12"
    ],
    "de_xuat": [],
    "mau": [
@@ -1233,7 +1242,7 @@
    "id": "NL06",
    "ten": "Tư duy không gian",
    "mo_ta": "Vị trí, hướng, xoay, đối xứng, ghép hình",
-   "so_ky_nang": 21,
+   "so_ky_nang": 23,
    "muc": "Đủ",
    "skill_ids": [
     "TD.KG.01",
@@ -1250,6 +1259,8 @@
     "TD.KG.12",
     "TD.KG.13",
     "TD.KG.14",
+    "TD.KG.15",
+    "TD.KG.16",
     "TD.TTg.01",
     "TO.HINH.01",
     "TO.HINH.02",
