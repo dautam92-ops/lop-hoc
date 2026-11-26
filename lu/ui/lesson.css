@@ -114,7 +114,9 @@ body { background: var(--lu-cream); }
 .lu-lesson .scene.story { gap: 14px; }
 .lu-lesson .scene.story img.lu { width: min(300px, 44vw); filter: drop-shadow(0 10px 8px #6b523233); }
 .lu-lesson .scene.story .props { display: flex; gap: 18px; justify-content: center; }
-.lu-lesson .scene.story .props .lu-art { width: min(150px, 26vw); height: auto; }
+.lu-lesson .scene.story .props .lu-art { width: min(150px, 26vw); height: min(150px, 26vw); object-fit: contain; }
+/* Ô đồ vật luôn vuông, không co theo tỉ lệ ảnh vẽ tay (26/11: ảnh giọt nước hẹp làm nút còn 45px) */
+.lu-lesson .scene.story .props .prop { min-width: 64px; min-height: 64px; }
 .lu-lesson .bd-note { position: absolute; right: 10px; bottom: 8px; font-size: 12px; color: var(--lu-ink-soft); background: #fffaf0cc; padding: 2px 8px; border-radius: 8px; z-index: 2; }
 
 /* Trang buổi học nhiều bài nhỏ (D46): thẻ bài lớn có hình, bé tự chọn */
