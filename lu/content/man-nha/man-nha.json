@@ -3,9 +3,9 @@
   "version": 1,
   "ghi_chu": "Màn nhà mới (tam duyệt 26/11/2026 20:51): bỏ bản đồ, màn nhà = buổi hôm nay + 12 cổng. Lời Lu mỗi câu tối đa 10 từ (quy tắc 34). Ảnh nền chương chưa vẽ thì dùng ảnh đã duyệt gần nhất, xem anh-can-ve.json.",
   "ns": "lu-thu-online",
-  "nen_mac_dinh": "assets/boi-canh/BC-0008_vuon-rau-co-hoa_v01.webp",
+  "nen_mac_dinh": "assets/boi-canh/BC-0009_cay-dau-leo-cao-ben-doi_v01.webp",
   "chu_de": [
-    { "so": 1, "nen": "assets/boi-canh/BC-0008_vuon-rau-co-hoa_v01.webp" }
+    { "so": 1, "nen": "assets/boi-canh/BC-0009_cay-dau-leo-cao-ben-doi_v01.webp" }
   ],
   "lu": {
     "chi": "assets/lu/xuat-ban/LU-0049_lu-tu-the-chi-tay-512_v01.webp",

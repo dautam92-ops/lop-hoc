@@ -11,12 +11,12 @@
 <div class="nha-bg" id="nen"></div>
 <main class="nha" id="nha">
   <div class="nha-top">
-    <div class="kid"><img id="kid-anh" alt=""><span id="kid-ten">Bé</span></div>
-    <span class="sp"></span>
+    <div class="kid"><span class="mat"><img id="kid-anh" alt=""></span><span id="kid-ten">Bé</span></div>
+    <div class="day-dau" id="day-dau"></div>
     <button class="rbtn" id="bo-me" aria-label="Khu bố mẹ, giữ 2 giây"><span class="bar"></span></button>
   </div>
   <section class="nha-main" aria-label="Buổi học hôm nay">
-    <div class="loi"><span id="loi-chu"></span><button class="rbtn" id="nghe" aria-label="Nghe lại"></button></div>
+    <div class="loi"><span id="loi-chu"></span><button class="rbtn kem" id="nghe" aria-label="Nghe lại"></button></div>
     <img class="lu-dung" id="lu" alt="">
     <a class="hom-nay" id="hom-nay" href="#"><div class="bia" id="bia"><span class="so" id="so-buoi"></span></div>
       <div class="duoi"><div class="trai"><div class="ten" id="ten-buoi"></div><div class="cham" id="cham"></div></div><span class="choi" id="choi"></span></div></a>
@@ -28,7 +28,7 @@
   </aside>
 </main>
 <script type="module">
-import { taiDuLieu, moAmThanh, khuBoMe, congIcon, SVG } from './core/nha.js';
+import { taiDuLieu, moAmThanh, khuBoMe, congIcon, SVG, dayDau } from './core/nha.js';
 import { esc } from './core/lu-core.js';
 const D = await taiDuLieu(); const { cfg, voice } = D; const $ = id => document.getElementById(id);
 $('bo-me').insertAdjacentHTML('beforeend', SVG.khoa); $('nghe').innerHTML = SVG.loa; $('choi').innerHTML = SVG.choi;
@@ -39,6 +39,7 @@ const qs = D.p.toString(); if (qs) $('tat-ca').href = 'buoi.html?' + qs;
 // Buổi hôm nay
 const b = D.homNay; const cd = D.chuDe[(b ? b.chuDe : 10) - 1];
 $('nen').style.backgroundImage = `url("${cd.nen}")`;
+{ const cdb = cd.buoi; $('day-dau').innerHTML = dayDau(cdb.length, i => D.daXong(cdb[i].id), b ? cdb.findIndex(x => x.id === b.id) : -1); }
 const coBuoiXong = D.tatCa.some(x => D.daXong(x.id));
 let loi, pose = 'chi', link = null;
 if (!b) { loi = cfg.loi.xong; pose = 'khen'; }
@@ -51,7 +52,7 @@ else {
   const anh = bia && areg.assets.find(a => a.slot === bia && a.trang_thai === 'da_duyet');
   $('bia').style.backgroundImage = `url("${anh ? anh.path : cd.nen}")`;
   const n = goi?.stages?.length || 12; const xong = new Set(D.kv()['resume:' + b.id]?.done || []);
-  $('cham').innerHTML = Array.from({ length: n }, (_, i) => `<i class="${xong.has(i) ? 'xong' : ''}"></i>`).join('');
+  $('cham').innerHTML = Array.from({ length: n }, (_, i) => xong.has(i) ? SVG.hatXong : SVG.hatCho).join('');
   if (goi) { link = D.linkBuoi(b, goi.__nhap); $('hom-nay').href = link; loi = coBuoiXong ? cfg.loi.hoc_tiep : cfg.loi.bat_dau; }
   else { $('hom-nay').classList.add('cho'); $('hom-nay').removeAttribute('href'); $('hom-nay').setAttribute('aria-disabled', 'true'); loi = cfg.loi.sap_co; pose = 'vay'; }
 }
@@ -63,7 +64,10 @@ $('hom-nay').addEventListener('click', e => { if (!link) { e.preventDefault(); v
 // 12 cổng luyện tập
 $('cong').innerHTML = D.congs.map(c => {
   const mo = c.trang_thai === 'mo';
-  return `<a class="cong ${mo ? 'moi' : 'sap'}" ${mo ? `href="cong.html?cong=${esc(c.id)}"` : 'role="button" aria-disabled="true" tabindex="0"'} data-cong="${esc(c.id)}" aria-label="${esc(c.ten)}"><span class="hinh">${congIcon(c)}</span><span>${esc(c.ten)}</span></a>`;
+  // cổng mở mà bé chưa vào lần nào thì sáng vàng (có bài mới); cổng sắp mở có ổ khóa gỗ nhỏ ở góc
+  const daVao = Object.keys(D.kv()['cong:sao'] || {}).some(k => k.startsWith(c.id));
+  const cls = mo ? (daVao ? 'mo' : 'mo moi') : 'sap';
+  return `<a class="cong ${cls}" ${mo ? `href="cong.html?cong=${esc(c.id)}"` : 'role="button" aria-disabled="true" tabindex="0"'} data-cong="${esc(c.id)}" aria-label="${esc(c.ten)}"><span class="hinh">${congIcon(c)}</span><span class="nhan">${esc(c.ten)}</span>${mo ? '' : `<span class="o-khoa">${SVG.khoa}</span>`}</a>`;
 }).join('');
 $('cong').addEventListener('click', e => { const a = e.target.closest('.cong.sap'); if (a) { e.preventDefault(); voice.say(cfg.loi.cong_sap_mo); } });
 

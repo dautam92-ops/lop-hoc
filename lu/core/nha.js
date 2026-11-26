@@ -28,16 +28,35 @@ const ICON = {
   'tieng-anh': '<rect x="10" y="16" width="44" height="30" rx="8" fill="#cfe4f4"/><text x="32" y="38" font-size="18" font-weight="800" text-anchor="middle" fill="#2f6f86" font-family="Baloo 2,sans-serif">Hi!</text><path d="M20 46l-4 8 10-8" fill="#cfe4f4"/>',
   'kham-pha': '<path d="M16 48C16 26 30 14 50 14c0 22-12 34-34 34z" fill="#a8c24a"/><path d="M16 48L42 22" stroke="#5f7a2a" stroke-width="2.5"/>',
 };
+const HAT = (fill, stroke) => `<svg viewBox="0 0 34 22" aria-hidden="true"><path d="M3 12c0-6 6-9 12-8 4 .6 5 3 8 3s7-2 9 2c2 5-4 10-13 10C9 19 3 17 3 12z" fill="${fill}" stroke="${stroke}" stroke-width="2"/></svg>`;
 export const SVG = {
-  loa: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="#4a3b22"/><path d="M16 8.5c1.6 1.8 1.6 5.2 0 7M18.6 6c3 3.2 3 8.8 0 12" stroke="#4a3b22" stroke-width="2" fill="none" stroke-linecap="round"/></svg>',
-  khoa: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="#4a3b22"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="#4a3b22" stroke-width="2.4" fill="none"/></svg>',
-  khoaNhat: '<svg class="dau" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="#b4a17e"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="#b4a17e" stroke-width="2.4" fill="none"/></svg>',
-  la: '<svg class="dau" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 10 11 5 20 5c0 9-6 14-15 14z" fill="#8fae3e"/><path d="M5 19 15 9" stroke="#5f7a2a" stroke-width="1.8"/></svg>',
-  choi: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17l14-8.5z" fill="#fff"/></svg>',
-  nha: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V10l8-6 8 6v11h-5v-6H9v6z" fill="#8a6a3a"/></svg>',
-  ve: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6 4 12l6 6M4.5 12H15a5 5 0 0 1 0 10h-2" stroke="#4a3b22" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-  duong: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="18" r="2.8" fill="#8fae3e"/><circle cx="12" cy="12" r="2.8" fill="#8fae3e"/><circle cx="19" cy="6" r="2.8" fill="#c9b38a"/><path d="M6.9 16.1 10.1 13.9M13.9 10.1 17.1 7.9" stroke="#8a6a3a" stroke-width="1.8" stroke-dasharray="2 2"/></svg>',
+  loa: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="#4a3626"/><path d="M16 8.5c1.6 1.8 1.6 5.2 0 7M18.6 6c3 3.2 3 8.8 0 12" stroke="#4a3626" stroke-width="2" fill="none" stroke-linecap="round"/></svg>',
+  khoa: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="#fbf5e8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="#fbf5e8" stroke-width="2.4" fill="none"/><circle cx="12" cy="15.5" r="1.6" fill="#7d4f27"/></svg>',
+  khoaNhat: '<svg class="dau" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="#d9a86c" stroke="#7d4f27" stroke-width="1.2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="#7d4f27" stroke-width="2" fill="none"/><circle cx="12" cy="15.5" r="1.5" fill="#4a3626"/></svg>',
+  la: '<svg class="dau" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19C4 10 11 4 21 4c0 10-7 15-17 15z" fill="#8fae3e" stroke="#5f7a1e" stroke-width="1.2"/><path d="M4 19 16 8" stroke="#5f7a1e" stroke-width="1.6"/></svg>',
+  choi: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4.2v15.6c0 .8.9 1.3 1.6.9l12.2-7.8c.6-.4.6-1.4 0-1.8L8.1 3.3c-.7-.4-1.6.1-1.6.9z" fill="#fbf5e8"/></svg>',
+  nha: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5" stroke="#a9713f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 10v10h13V10" fill="#f2be2e" stroke="#7d4f27" stroke-width="1.6"/><rect x="10" y="14" width="4" height="6" fill="#a9713f"/></svg>',
+  ve: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5 4 10.5 9.5 16" stroke="#4a3626" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.8 10.5H14a6 6 0 0 1 0 12h-1.5" stroke="#4a3626" stroke-width="2.8" fill="none" stroke-linecap="round"/></svg>',
+  duong: '<svg viewBox="0 0 48 32" aria-hidden="true"><path d="M6 26C14 26 14 12 24 14S34 6 42 6" stroke="#a9713f" stroke-width="2.4" fill="none" stroke-dasharray="3 4" stroke-linecap="round"/><circle cx="6" cy="26" r="4.5" fill="#7d4f27"/><circle cx="24" cy="14" r="4.5" fill="#7d4f27"/><circle cx="42" cy="6" r="4.5" fill="#7d4f27"/></svg>',
+  hatXong: HAT('#7e9a35', '#4a6a1a'), hatCho: HAT('#fffaf0', '#c9a77a'),
 };
+// Dây đậu tiến độ của chủ đề (theo ảnh mẫu màn nhà đã duyệt): hạt xanh = đã học, hạt sáng = hôm nay, hạt viền = chưa tới.
+export function dayDau(n, xong, homNay) {
+  const W = 1000, H = 60, x0 = 40, x1 = 960, step = (x1 - x0) / Math.max(1, n - 1);
+  const y = i => 30 + Math.sin(i * 0.9) * 3;
+  let beans = '';
+  for (let i = 0; i < n; i++) {
+    const cx = x0 + i * step, cy = y(i), r = Math.min(15, step * 0.42);
+    const t = xong(i) ? 'x' : i === homNay ? 'h' : 'c';
+    const fill = t === 'x' ? '#7e9a35' : t === 'h' ? '#c8d94a' : '#fffaf0', st = t === 'c' ? '#c9a77a' : '#4a6a1a';
+    const k = t === 'h' ? 1.35 : 1;
+    if (t === 'h') beans += `<circle cx="${cx}" cy="${cy}" r="${r * 2}" fill="#f2be2e" opacity=".28"/>`;
+    beans += `<ellipse cx="${cx}" cy="${cy}" rx="${r * k}" ry="${r * 0.68 * k}" fill="${fill}" stroke="${st}" stroke-width="2.2"/>`;
+    if (t === 'x') beans += `<ellipse cx="${cx - r * .3}" cy="${cy - r * .2}" rx="${r * .3}" ry="${r * .16}" fill="#c8d94a" opacity=".7"/>`;
+  }
+  const leaf = (x, dir) => `<path d="M${x} 30c${dir * 14}-16 ${dir * 30}-14 ${dir * 34}-6c${-dir * 8} 10 ${-dir * 24} 12 ${-dir * 34} 6z" fill="#8fae3e" stroke="#5f7a1e" stroke-width="2"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Tiến độ chủ đề"><path d="M${x0 - 20} 30 Q ${W / 2} ${24} ${x1 + 20} 30" stroke="#6f8f2a" stroke-width="5" fill="none" stroke-linecap="round"/>${leaf(x0 - 20, -1)}${leaf(x1 + 20, 1)}${beans}</svg>`;
+}
 export const congIcon = c => c.hinh && /\.(webp|png|svg)$/.test(c.hinh) && !c.hinh_tam
   ? `<img src="${esc(c.hinh)}" alt="">`
   : `<svg viewBox="0 0 64 64" data-art="art:cong-${esc(c.id)}" aria-hidden="true">${ICON[c.id] || ICON['kham-pha']}</svg>`;
@@ -73,7 +92,7 @@ export async function taiDuLieu() {
   let congs = (congRaw && (congRaw.cong || congRaw.cổng || congRaw.gates || (Array.isArray(congRaw) ? congRaw : null))) || CONG_MAC_DINH;
   congs = congs.map(c => ({ id: c.id, ten: c.ten || c.name || c.id, hinh: c.hinh || c.icon || '', hinh_tam: c.hinh_tam, trang_thai: c.trang_thai || c.status || 'sap-mo' }));
   const voice = createVoice({ clips: audio.clips, base: 'content/audio/', fast, tts: fast ? null : makeTts() });
-  const luKid = chars?.LU?.goc_nhin?.truoc?.webp || cfg.lu.vay;
+  const luKid = chars?.LU?.bieu_cam?.vui?.webp || cfg.lu.vay;
   // Gói bài có sẵn chưa (bản nháp hoặc đã xuất bản)
   const goi = async id => { const t = ds.goi[id]; if (!t) return null; const x = await jOr(`content/${t}/${id}.json`, null); return x && { ...x, __nhap: t === 'drafts' }; };
   const linkBuoi = (b, nhap = true) => `player.html?${nhap ? 'draft' : 'lesson'}=${b.id}&ns=${encodeURIComponent(ns)}&nha=1`;
