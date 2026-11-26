@@ -440,14 +440,16 @@
 
 /* ---- Rổ lấy vật (tam 26/11 20:03 + 20:23 "giỏ táo phải thiết kế lại"): rổ tre đan to ngang đĩa, táo nằm TRONG lòng rổ
    (miệng rổ phía sau, thân rổ phía trước che nửa dưới quả), lấy ra thì vơi dần. Quy tắc 37 */
-.lu-lesson .tr-src.ro { --w: 290px; position: relative; width: var(--w); height: calc(var(--w) * .66); padding: 0; border: 0; background: none; cursor: pointer; }
-.lu-lesson .tr-src.ro .ro-sau { position: absolute; left: 3%; right: 3%; top: 22%; height: 30%; border-radius: 50%; background: radial-gradient(ellipse at 50% 60%, #7a5326 0 45%, #9c7038 75%); border: 5px solid #c99a55; box-sizing: border-box; }
-.lu-lesson .tr-src.ro .tr-src-in { position: absolute; left: 12%; right: 12%; bottom: 55%; display: flex; flex-wrap: wrap-reverse; justify-content: center; gap: 0 2px; z-index: 1; }
-.lu-lesson .tr-src.ro .tr-sv { width: calc(var(--w) * .24); height: calc(var(--w) * .24); margin-top: calc(var(--w) * -.1); filter: drop-shadow(0 2px 1px rgba(90,58,20,.25)); }
+.lu-lesson .tr-src.ro { --w: 290px; --ro: url(../assets/cho-duyet/ro-tre/ro-tre-s25-cat.webp); position: relative; width: var(--w); height: calc(var(--w) * .671); padding: 0; border: 0; background: none; cursor: pointer; }
+/* Rổ tre vẽ tay màu nước PM31-OB-ro-tre (bản s25, chờ tam duyệt). Hai lớp cùng một ảnh: lớp sau là cả rổ,
+   lớp trước chỉ giữ thân rổ dưới mép trong của miệng (clip-path nửa dưới hình bầu dục) để che nửa dưới quả táo. */
+.lu-lesson .tr-src.ro .ro-sau, .lu-lesson .tr-src.ro .ro-truoc { position: absolute; inset: 0; background: var(--ro) center / 100% 100% no-repeat; }
+.lu-lesson .tr-src.ro .ro-sau { filter: drop-shadow(0 6px 5px rgba(90,58,20,.22)); }
+.lu-lesson .tr-src.ro .ro-sau::after { content: ''; position: absolute; left: 6%; right: 6%; top: 9%; height: 58%; border-radius: 50%; background: radial-gradient(ellipse at 50% 55%, rgba(92,58,22,.42), rgba(92,58,22,.12) 70%, transparent 74%); }
+.lu-lesson .tr-src.ro .tr-src-in { position: absolute; left: 13%; right: 13%; bottom: 32%; display: flex; flex-wrap: wrap-reverse; justify-content: center; gap: 0 2px; z-index: 1; }
+.lu-lesson .tr-src.ro .tr-sv { width: calc(var(--w) * .24); height: calc(var(--w) * .24); margin-top: calc(var(--w) * -.12); filter: drop-shadow(0 2px 1px rgba(90,58,20,.25)); }
 .lu-lesson .tr-src.ro .tr-sv .lu-art { width: 100%; height: 100%; }
-.lu-lesson .tr-src.ro .ro-truoc { position: absolute; left: 3%; right: 3%; top: 37%; bottom: 4%; z-index: 2; border-radius: 0 0 48% 48% / 0 0 70% 70%; border-top: 6px solid #d9ab62;
-  background: repeating-linear-gradient(60deg, rgba(255,255,255,.0) 0 9px, rgba(122,83,38,.28) 9px 11px), repeating-linear-gradient(-60deg, rgba(255,255,255,.0) 0 9px, rgba(122,83,38,.28) 9px 11px), linear-gradient(#e2b56c, #b98840);
-  box-shadow: inset 0 -10px 18px rgba(90,58,20,.25), 0 10px 0 -4px rgba(107,82,50,.15); }
+.lu-lesson .tr-src.ro .ro-truoc { z-index: 2; clip-path: polygon(0% 38%, 2.5% 38%, 4.1% 46.4%, 8.9% 54.2%, 16.4% 61%, 26.2% 66.1%, 37.7% 69.4%, 50% 70.5%, 62.3% 69.4%, 73.7% 66.1%, 83.6% 61%, 91.1% 54.2%, 95.9% 46.4%, 97.5% 38%, 100% 38%, 100% 100%, 0% 100%); }
 .lu-lesson .tr-src.ro b { position: absolute; right: -6px; top: 4%; z-index: 3; }
 .lu-lesson .tr-src.ro:disabled { cursor: default; }
 @media (max-width: 600px) { .lu-lesson .tr-src.ro { --w: 260px; } }
