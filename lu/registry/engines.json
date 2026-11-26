@@ -1,0 +1,109 @@
+{
+ "note": "Sinh bởi tools/build-registry (S03-R07). Engine mới phải có ở đây, có 2 bộ dữ liệu mẫu và có test.",
+ "engines": [
+  {
+   "id": "E00",
+   "name": "Kể chuyện bằng tranh",
+   "version": "1.0.0",
+   "file": "engines/e00-story.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  },
+  {
+   "id": "E01",
+   "name": "Chạm chọn",
+   "version": "1.0.0",
+   "file": "engines/e01-choose.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  },
+  {
+   "id": "E02",
+   "name": "Kéo thả ghép cặp",
+   "version": "1.0.0",
+   "file": "engines/e02-match.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  },
+  {
+   "id": "E03",
+   "name": "Phân loại vào nhóm",
+   "version": "1.0.0",
+   "file": "engines/e03-sort.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  },
+  {
+   "id": "E04",
+   "name": "Sắp xếp thứ tự",
+   "version": "1.0.0",
+   "file": "engines/e04-order.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  },
+  {
+   "id": "E05",
+   "name": "Lật thẻ trí nhớ",
+   "version": "1.0.0",
+   "file": "engines/e05-memory.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  },
+  {
+   "id": "E06",
+   "name": "Tìm và phát hiện",
+   "version": "1.0.0",
+   "file": "engines/e06-find.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  },
+  {
+   "id": "E15",
+   "name": "Làm theo",
+   "version": "1.0.0",
+   "file": "engines/e15-follow.js",
+   "api": [
+    "validate",
+    "generate",
+    "verify",
+    "lines",
+    "mount"
+   ]
+  }
+ ]
+}

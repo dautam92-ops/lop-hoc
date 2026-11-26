@@ -1,0 +1,221 @@
+{
+ "note": "Module Registry (D22). Trước khi tạo module mới, AI và người phải tra file này. Trạng thái: co = đã có code; thiet_ke = mới có thiết kế; chua = chưa làm.",
+ "updated": "2026-11-25",
+ "modules": [
+  {
+   "id": "core",
+   "path": "core/",
+   "version": "0.1.0",
+   "status": "co",
+   "does": "Giọng đọc, khung màn hình, seed, chạy bài, ghi sự kiện, báo cáo bố mẹ cơ bản",
+   "api": [
+    "runLesson",
+    "runActivity",
+    "validateLesson",
+    "variantOf",
+    "makeRng",
+    "fill",
+    "createVoice",
+    "createUI"
+   ]
+  },
+  {
+   "id": "core/storage",
+   "path": "core/storage.js",
+   "version": "0.1.0",
+   "status": "co",
+   "does": "Storage Adapter: LocalStorage, Memory; sao lưu và khôi phục",
+   "api": [
+    "appendEvents",
+    "listEvents",
+    "appendObservation",
+    "listObservations",
+    "exportAll",
+    "importAll"
+   ]
+  },
+  {
+   "id": "adaptive/mastery",
+   "path": "core/mastery.js",
+   "version": "0.1.0",
+   "status": "co",
+   "does": "Tính mức vững và độ tin cậy theo S10",
+   "api": [
+    "computeSkillState"
+   ]
+  },
+  {
+   "id": "engines",
+   "path": "engines/",
+   "version": "0.1.0",
+   "status": "co",
+   "does": "E01–E06, E15 (bản tối thiểu)",
+   "registry": "registry/engines.json"
+  },
+  {
+   "id": "content",
+   "path": "content/",
+   "status": "co",
+   "does": "Gói bài, hoạt động mẫu, Audio Registry"
+  },
+  {
+   "id": "admin/preview",
+   "path": "admin/preview.html",
+   "status": "co",
+   "does": "Xem trước bài và hoạt động theo thiết bị và seed, kiểm tra tự động, xem sự kiện"
+  },
+  {
+   "id": "assets",
+   "status": "co",
+   "does": "Kho tài nguyên và Asset Registry: mã, phiên bản, nguồn, quyền dùng, chống trùng (S08, D26); Tài nguyên cần tạo (content/asset-slots.json), duyệt và gắn chỗ dùng trong Admin",
+   "path": "assets/",
+   "api": [
+    "tools/add-asset.mjs them|phien-ban-moi|duyet|nhap-moi|danh-sach"
+   ],
+   "registry": "registry/assets.json"
+  },
+  {
+   "id": "knowledge",
+   "status": "co",
+   "does": "Kho tri thức: nguồn có quyền dùng, nạp PDF/ảnh/TXT, phân tích trên máy (pdftotext, Tesseract nếu có), gợi ý kỹ năng, duyệt, tìm kiếm, khoảng trống",
+   "version": "0.1.0",
+   "path": "server/server.mjs (/api/kb), admin/admin.js"
+  },
+  {
+   "id": "adventure",
+   "status": "co",
+   "does": "Màn bản đồ của bé: thế giới 10 vùng và bản đồ vùng chạy bằng Lu Map Player (adventure/map) từ bản đồ đã xuất bản; chưa có bản xuất bản thì dùng bản vẽ SVG dự phòng (ui/scene.js)",
+   "version": "0.1.0",
+   "path": "app/app.js (screenMap), ui/scene.js (dự phòng)"
+  },
+  {
+   "id": "discovery",
+   "status": "co_mot_phan",
+   "does": "Menu 12 sân chơi; 4 trò chơi có nội dung, sân còn lại hiện 'Lu đang chuẩn bị'",
+   "version": "0.1.0",
+   "path": "app/app.js, content/playground/activities.json"
+  },
+  {
+   "id": "home",
+   "status": "co",
+   "does": "Nhà của Lu: tủ trang phục mở theo số chặng đã đi",
+   "version": "0.1.0",
+   "path": "app/app.js"
+  },
+  {
+   "id": "profile",
+   "status": "co_mot_phan",
+   "does": "Hồ sơ bé chỉ có biệt danh, lưu trên máy chủ ở máy; chưa đồng bộ nhiều máy"
+  },
+  {
+   "id": "parent",
+   "status": "co",
+   "does": "Khu bố mẹ: cổng phép cộng, tổng quan tuần, kỹ năng theo mức vững, chơi cùng con, chương trình, hồ sơ và dữ liệu; không điểm IQ/EQ",
+   "version": "0.1.0",
+   "path": "app/app.js (#/bo-me)"
+  },
+  {
+   "id": "studio",
+   "status": "co",
+   "does": "Lu Studio (nạp, kiểm lỗi, duyệt, xuất bản, bản phát hành, quay lại) và Map Studio (kéo vị trí chặng)",
+   "version": "0.1.0",
+   "path": "admin/admin.js, server/server.mjs"
+  },
+  {
+   "id": "command",
+   "status": "co_mot_phan",
+   "does": "Trung tâm điều phối Local Mode: tạo việc kèm bản giao việc; API Mode tắt (D27)",
+   "version": "0.1.0"
+  },
+  {
+   "id": "platform",
+   "status": "chua",
+   "does": "Đăng nhập, phân quyền, cờ tính năng, nhật ký"
+  },
+  {
+   "id": "art-factory",
+   "path": "art-factory/",
+   "version": "0.0.1",
+   "status": "dang_thu",
+   "does": "Lu Art Factory (D37): gọi ComfyUI local, đề bài chuẩn, hàng đợi, tách nền, tối ưu, duyệt, đăng ký vào Asset Registry. Hiện có bộ benchmark; giao diện Admin làm sau khi chốt workflow đạt chất lượng",
+   "api": [
+    "art_bench.py",
+    "workflows/*.json",
+    "prompts/*.json"
+   ],
+   "depends": [
+    "assets"
+   ]
+  },
+  {
+   "id": "server",
+   "path": "server/server.mjs",
+   "version": "0.2.0",
+   "status": "co",
+   "does": "Máy chủ chỉ nghe 127.0.0.1: tiến độ, bản phát hành, bản đồ, tài nguyên, kho tri thức, việc, nhật ký, sao lưu"
+  },
+  {
+   "id": "ui",
+   "path": "ui/",
+   "version": "1.0.0",
+   "status": "co",
+   "does": "Design System Lu: token, phông, nút, icon, hình vẽ màu nước bằng mã, cảnh bản đồ (D38)"
+  },
+  {
+   "id": "site",
+   "path": "site/",
+   "version": "1.0.0",
+   "status": "co",
+   "does": "Trang giới thiệu thương hiệu"
+  },
+  {
+   "id": "quality",
+   "path": "tools/quality-gate.mjs, tools/e2e.mjs, core/lint.js",
+   "version": "1.0.0",
+   "status": "co",
+   "does": "Quality Gate 10 nhóm, kiểm tra khi nạp bài, kiểm thử xuyên suốt ở 3 cỡ màn hình"
+  },
+  {
+   "id": "adventure/map",
+   "path": "map/",
+   "version": "0.1.0",
+   "status": "co",
+   "does": "Lu Map Player (Phaser 4) và Map Schema lu-map/1: 5 lớp Background, Decoration, Path, Stations, Interaction; nhập Tiled .tmj; kiểm tra; trạng thái hiển thị tách khỏi tiến độ bé; mỹ thuật bản đồ vẽ bằng mã (map/art/)",
+   "api": [
+    "mountMapPlayer",
+    "fromTiled",
+    "validate",
+    "viewState",
+    "walked",
+    "parseRef"
+   ],
+   "depends": [
+    "vendor/phaser 4.2.1"
+   ]
+  },
+  {
+   "id": "adventure/map-store",
+   "path": "server/maps.mjs",
+   "version": "0.1.0",
+   "status": "co",
+   "does": "Kho bản đồ có phiên bản trong data/maps; nháp, xuất bản (cần hình đã duyệt), hủy xuất bản, khôi phục; nhật ký",
+   "api": [
+    "GET /api/maps",
+    "GET /api/maps/:id/xuat-ban",
+    "GET /api/maps/:id/vN",
+    "POST /api/maps/import",
+    "POST /api/maps/:id/ban-nhap",
+    "POST /api/maps/:id/xuat-ban",
+    "POST /api/maps/:id/khoi-phuc",
+    "POST /api/maps/:id/huy-xuat-ban"
+   ]
+  },
+  {
+   "id": "admin/map-studio",
+   "path": "admin/map-studio.js",
+   "version": "0.1.0",
+   "status": "co",
+   "does": "Map Studio cơ bản: nạp .tmj, kiểm lỗi, xem trước bằng Player thật với tiến độ giả lập, đổi nền, sửa tọa độ, gán Lesson ID, lưu nháp, xuất bản, hủy, khôi phục, duyệt hình của bản đồ"
+  }
+ ]
+}

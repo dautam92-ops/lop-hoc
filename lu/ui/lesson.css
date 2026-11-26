@@ -1,0 +1,164 @@
+/* Giao diện bài học theo Lu Design System (ghi đè lu-core.css bằng token chung). Mọi engine dùng chung, không thiết kế lại từng bài. */
+:root {
+  --sky: var(--lu-cream); --grass: var(--lu-leaf-soft); --paper: var(--lu-paper); --ink: var(--lu-ink); --muted: var(--lu-ink-soft); --line: var(--lu-line);
+  --lu: var(--lu-leaf); --leaf: var(--lu-leaf-deep); --berry: var(--lu-berry); --sun: var(--lu-sun); --pick: var(--lu-sky-deep);
+}
+body { background: var(--lu-cream); }
+.lu-lesson { min-height: 100dvh; }
+.lu-lesson .app { min-height: 100dvh; }
+.lu-lesson .top { min-height: 64px; }
+.lu-lesson .steps i { height: 14px; background: rgba(255, 255, 255, .7); border: 2px solid var(--lu-line); }
+.lu-lesson .steps i.done { background: var(--lu-leaf); border-color: var(--lu-leaf-deep); }
+.lu-lesson .steps i.now { background: var(--lu-sun); border-color: var(--lu-sun-deep); }
+.lu-lesson .ibtn { width: 56px; height: 56px; border: 0; background: var(--lu-paper); color: var(--lu-ink); box-shadow: 0 3px 0 var(--lu-line), var(--sh-1); }
+.lu-lesson .ibtn svg { width: 28px; height: 28px; }
+.lu-lesson .scene { background: var(--lu-paper); border: 1.5px solid var(--lu-line); border-radius: var(--r-xl); box-shadow: var(--sh-2); animation: lu-in var(--t-mid) var(--ease) both;
+  background-image: radial-gradient(ellipse at 50% 110%, rgba(143, 174, 62, .18), transparent 60%); }
+.lu-lesson .title { color: var(--lu-ink); font-weight: 700; }
+.lu-lesson .answers { background: rgba(255, 250, 240, .85); border: 2.5px dashed #d9c79f; border-radius: var(--r-xl); }
+.lu-lesson .answers .lbl { color: var(--lu-ink-soft); text-transform: none; letter-spacing: 0; font: 600 15px var(--lu-font-body); }
+.lu-lesson .opt { border: 3px solid var(--lu-line); border-radius: var(--r-md); box-shadow: 0 4px 0 var(--lu-line); color: var(--lu-ink); transition: transform var(--t-fast) var(--ease); }
+.lu-lesson .opt:hover { transform: translateY(-2px); }
+.lu-lesson .opt.right { border-color: var(--lu-leaf); box-shadow: 0 4px 0 var(--lu-leaf-deep); background: #f1f6df; animation: lu-pop var(--t-mid) var(--ease-bounce); }
+.lu-lesson .opt .dots { color: var(--lu-sun-deep); }
+.lu-lesson .opt.face .lu-art, .lu-lesson .opt .lu-art { width: 64px; height: 64px; }
+.lu-lesson .opt.plate .grp { display: flex; gap: 2px; }
+.lu-lesson .opt.plate .grp .lu-art { width: 40px; height: 40px; }
+.lu-lesson .cell .lu-art, .lu-lesson .piece .lu-art, .lu-lesson .cell-f .lu-art { width: 100%; height: 100%; max-width: 72px; max-height: 72px; }
+.lu-lesson .shadow .sil { display: grid; place-items: center; width: 74%; height: 74%; }
+.lu-lesson .shadow .lu-art { width: 100%; height: 100%; max-width: 80px; max-height: 80px; }
+.lu-lesson .bal .obj.art { display: block; width: 72px; height: 72px; }
+.lu-lesson .bal .obj.art .lu-art { width: 100%; height: 100%; }
+.lu-lesson .bal { height: auto; min-height: 84px; width: 84px; }
+.lu-lesson .bal b { color: var(--lu-leaf-deep); }
+.lu-lesson .story .sv .lu-art, .lu-lesson .story > .lu-art { width: 110px; height: 110px; }
+.lu-lesson .flower .lu-art { width: 120px; height: 120px; }
+.lu-lesson .big-btn { background: var(--lu-leaf-strong); box-shadow: 0 5px 0 #4f6722; font-weight: 700; min-height: var(--lu-tap-main); }
+.lu-lesson .big-btn.alt { background: var(--lu-paper); color: var(--lu-ink); box-shadow: 0 5px 0 var(--lu-line); border: 2px solid var(--lu-line); }
+.lu-lesson .shake { animation: lu-wiggle .4s; }
+/* Ảnh Lu tĩnh theo ngữ cảnh */
+.lu-lesson img.lu { width: min(190px, 40vw); height: auto; filter: drop-shadow(0 6px 6px rgba(74, 59, 34, .12)); }
+.lu-lesson .scene.start img.lu { width: min(240px, 52vw); }
+.lu-lesson .lu.talk { animation: lu-float .5s ease-in-out infinite alternate; }
+/* Nút góc */
+.lu-lesson .corner-btn { position: absolute; top: 84px; left: max(14px, env(safe-area-inset-left)); width: 64px; height: 64px; border-radius: 50%; border: 0; background: var(--lu-paper); color: var(--lu-ink);
+  box-shadow: 0 3px 0 var(--lu-line), var(--sh-1); display: grid; place-items: center; cursor: pointer; z-index: 3; }
+.lu-lesson .corner-btn svg { width: 30px; height: 30px; }
+.lu-lesson .link-btn { position: relative; overflow: hidden; border: 0; background: none; color: var(--lu-ink-soft); font: 500 14px var(--lu-font-body); padding: 10px 14px; border-radius: var(--r-pill); cursor: pointer; }
+.lu-lesson .link-btn .bar { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--lu-sun-deep); width: 0; }
+/* Màn hình hoàn thành bài */
+.lu-lesson .scene.finish { padding-block: 28px; overflow: hidden; }
+.lu-lesson .finish .burst { position: absolute; inset: -40% -20% auto; height: 120%; background: radial-gradient(circle at 50% 45%, rgba(246, 200, 95, .45), transparent 55%); animation: lu-shimmer 3s ease-in-out infinite; pointer-events: none; }
+.lu-lesson .finish img.lu { width: min(220px, 48vw); animation: lu-pop .7s var(--ease-bounce) both; position: relative; }
+.lu-lesson .finish .stars { display: flex; gap: 10px; position: relative; }
+.lu-lesson .finish .stars span { width: 64px; height: 64px; animation: lu-pop .6s var(--ease-bounce) both; }
+.lu-lesson .finish .stars span:nth-child(2) { transform: translateY(-10px); width: 76px; height: 76px; }
+.lu-lesson .finish .stars svg { width: 100%; height: 100%; }
+.lu-lesson .finish .reward { position: relative; display: flex; align-items: center; gap: 14px; background: var(--lu-sun-soft); border: 2px solid #f0d995; border-radius: var(--r-lg); padding: 10px 18px 10px 10px; max-width: 480px;
+  animation: lu-in .6s .9s var(--ease) both; }
+.lu-lesson .finish .rw-art { width: 92px; height: 64px; flex: none; }
+.lu-lesson .finish .rw-art svg { width: 100%; height: 100%; }
+.lu-lesson .finish .rw-t { font: 600 16px/1.35 var(--lu-font-body); color: var(--lu-ink); }
+.lu-lesson .parent { background: var(--lu-paper); border-radius: var(--r-lg); }
+
+/* ---- Bố cục trò chơi: cảnh chiếm phần lớn màn hình, có nền cảnh vẽ tay, Lu đứng bên cạnh dẫn dắt ---- */
+.lu-lesson .stage { gap: 14px; }
+.lu-lesson .scene { flex: 1 1 auto; justify-content: center; min-height: min(46dvh, 420px); padding: 22px 22px 18px; overflow: hidden;
+  background-color: #fbf6e8;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 120' preserveAspectRatio='none'%3E%3Cpath d='M0 60 Q80 30 170 52 T340 46 T520 56 T700 40 T800 50 V120 H0z' fill='%23d5e5a6'/%3E%3Cpath d='M0 84 Q120 62 240 80 T480 76 T800 70 V120 H0z' fill='%23c4d98c'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 80% 0%, rgba(246, 200, 95, .25), transparent 45%),
+    linear-gradient(180deg, #f4f0df 0%, #fbf6e8 60%);
+  background-repeat: no-repeat; background-size: 100% 26%, auto, auto; background-position: bottom, 0 0, 0 0; }
+.lu-lesson .scene > * { position: relative; z-index: 1; }
+.lu-lesson .scene .guide { position: absolute; left: clamp(6px, 2vw, 24px); bottom: 6px; width: clamp(84px, 13vw, 150px); z-index: 0; pointer-events: none; }
+.lu-lesson .scene .guide img.lu { width: 100%; }
+@media (max-width: 600px) { .lu-lesson .scene .guide { width: 70px; opacity: .95; } }
+.lu-lesson .title { font-size: clamp(26px, 3.4vw, 38px); }
+.lu-lesson .cap { font: 500 clamp(17px, 2vw, 21px)/1.4 var(--lu-font-body); color: var(--lu-ink-soft); }
+.lu-lesson .balloons { gap: clamp(12px, 3vw, 36px); }
+.lu-lesson .balloons:has(.obj.art) { background: radial-gradient(ellipse at 50% 60%, #efd9a8, #e2c389 70%, transparent 71%); padding: 26px 50px 30px; border-radius: 50%; }
+.lu-lesson .bal:has(.obj.art) { width: clamp(84px, 11vw, 130px); min-height: auto; }
+.lu-lesson .bal .obj.art { width: 100%; height: auto; aspect-ratio: 1; }
+.lu-lesson .bal b { top: auto; bottom: -6px; font-size: 30px; color: var(--lu-leaf-deep); text-shadow: 0 2px 0 #fff, 0 0 6px #fff; }
+.lu-lesson .opt { min-width: clamp(88px, 10vw, 112px); min-height: clamp(88px, 10vw, 112px); }
+.lu-lesson .opt.face .lu-art { width: clamp(64px, 8vw, 84px); height: clamp(64px, 8vw, 84px); }
+.lu-lesson .grid { gap: clamp(10px, 2vw, 18px); }
+.lu-lesson .cell-f { min-width: clamp(92px, 11vw, 120px); min-height: clamp(92px, 11vw, 120px); }
+.lu-lesson .cell-f .lu-art { max-width: 92px; max-height: 92px; }
+.lu-lesson .opt.plate { min-width: clamp(130px, 16vw, 190px); }
+.lu-lesson .opt.plate .grp .lu-art { width: clamp(40px, 5vw, 56px); height: clamp(40px, 5vw, 56px); }
+.lu-lesson .finish img.lu { width: min(260px, 50vw); }
+.lu-lesson .finish .rw-art { width: 140px; height: 96px; }
+.lu-lesson .finish .rw-t { font: 700 18px/1.3 var(--lu-font-display); }
+.lu-lesson .scene.start { gap: 18px; }
+.lu-lesson .scene.start .title { font-size: clamp(32px, 4.6vw, 52px); }
+@media (orientation: landscape) and (min-height: 600px) { .lu-lesson .app { max-width: 1120px; } }
+.lu-lesson .stage:has(.answers .grid) .scene, .lu-lesson .stage:has(.answers.tray) .scene { flex: 0 0 auto; min-height: 0; padding-bottom: 60px; }
+.lu-lesson .scene .guide { width: clamp(96px, 14vw, 170px); }
+
+/* Nhóm vật xếp gọn trong ô vuông (groupHTML) */
+.lu-lesson .grp-box { position: relative; display: block; width: min(132px, 30vw); aspect-ratio: 1; }
+.lu-lesson .grp-it { position: absolute; transform: translate(-50%, -50%); display: grid; place-items: center; }
+.lu-lesson .grp-it .lu-art { width: 100%; height: 100%; }
+.lu-lesson .piece .grp-box, .lu-lesson .shadow .grp-box { width: 88%; }
+
+/* Buổi học nhiều chặng (D42): bối cảnh phủ cả màn, thẻ cảnh trong suốt để tranh chiếm phần lớn diện tích (S04-R13) */
+.lu-lesson .app { position: relative; isolation: isolate; }
+.lu-lesson .app > .backdrop { position: absolute; inset: 0; z-index: -1; overflow: hidden; border-radius: inherit; pointer-events: none; }
+.lu-lesson .app > .backdrop > svg, .lu-lesson .app > .backdrop > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lu-lesson .app.has-bd .scene { background: transparent; border-color: transparent; box-shadow: none; }
+.lu-lesson .app.has-bd .scene .title { background: color-mix(in srgb, var(--lu-paper) 88%, transparent); padding: 6px 18px; border-radius: 999px; box-shadow: var(--sh-1, 0 2px 6px #0001); }
+.lu-lesson .app.has-bd .scene .cap:not(:empty) { background: color-mix(in srgb, var(--lu-paper) 90%, transparent); border-radius: 14px; padding: 6px 14px; }
+.lu-lesson .app.has-bd .answers { background: color-mix(in srgb, var(--lu-paper) 80%, transparent); backdrop-filter: blur(2px); }
+.lu-lesson .scene.story { gap: 14px; }
+.lu-lesson .scene.story img.lu { width: min(300px, 44vw); filter: drop-shadow(0 10px 8px #6b523233); }
+.lu-lesson .scene.story .props { display: flex; gap: 18px; justify-content: center; }
+.lu-lesson .scene.story .props .lu-art { width: min(150px, 26vw); height: auto; }
+.lu-lesson .bd-note { position: absolute; right: 10px; bottom: 8px; font-size: 12px; color: var(--lu-ink-soft); background: #fffaf0cc; padding: 2px 8px; border-radius: 8px; z-index: 2; }
+
+/* Trang buổi học nhiều bài nhỏ (D46): thẻ bài lớn có hình, bé tự chọn */
+.scene.hub{background:#fffdf7ee;gap:14px;width:100%;box-sizing:border-box;max-width:100%}
+:has(> .scene.hub) .steps, .app:has(.scene.hub) .steps{visibility:hidden}
+.hub-head{display:flex;align-items:center;gap:14px;align-self:stretch}
+.hub-head .lu{width:88px;height:88px;flex:none}
+.hub-head .title{text-align:left}
+.hub-prog{font-weight:700;color:var(--muted);font-size:15px;margin-top:4px}
+.hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:14px;align-self:stretch;min-width:0}
+.hub-card{min-width:0;box-sizing:border-box}
+.hub-card .hc-art{overflow:hidden}
+.lu-lesson .hub-card .hc-art img.lu{width:100%;height:100%;object-fit:contain;filter:none;animation:none}
+.hub-card{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;min-height:168px;padding:12px 10px;border-radius:22px;border:4px solid var(--line);background:var(--paper);box-shadow:0 5px 0 var(--line);cursor:pointer;font-family:var(--display);color:var(--ink)}
+.hub-card .hc-art{width:84px;height:84px;display:grid;place-items:center}
+.hub-card .hc-art svg{width:100%;height:100%}
+.hub-card .hc-t{font-weight:800;font-size:18px;line-height:1.15;text-align:center}
+.hub-card .hc-tags{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+.hub-card .hc-tags i{font-style:normal;font-family:var(--body);font-size:12px;font-weight:700;color:#5a4a2c;background:#f6ead2;border-radius:99px;padding:2px 8px}
+.hub-card.next{border-color:var(--sun);box-shadow:0 5px 0 #e7ad16}
+.hub-card.done{background:#f3faef;border-color:#bfe0b0;box-shadow:0 5px 0 #bfe0b0}
+.hub-card .hc-star{position:absolute;top:-10px;right:-8px;width:44px;height:44px}
+.hub-card:active{transform:translateY(3px)}
+@media (max-width:480px){.hub-grid{grid-template-columns:repeat(2,1fr);gap:10px}.hub-card{min-height:150px}.hub-card .hc-art{width:68px;height:68px}.hub-head .lu{width:64px;height:64px}}
+.scene.finish.small .stars span{width:96px;height:96px;display:inline-block}
+/* Bài nhỏ 3–4 bài tập (tam 26/11 08:13) */
+.hub-card .hc-n{font-family:var(--body);font-size:13px;font-weight:700;color:var(--muted)}
+.hub-card.done .hc-n{color:#4f8a3c}
+.story.bong-den svg,.story.bong-den img{filter:brightness(0) opacity(.72)}
+
+/* Hình mô phỏng thật lớn (tam 26/11 08:31): hình chính giữa màn và ô đáp án hình to cho bé dễ nhìn */
+.lu-lesson .story .sv .lu-art, .lu-lesson .story > .lu-art { width: clamp(170px, min(34vh, 42vw), 340px); height: clamp(170px, min(34vh, 42vw), 340px); }
+.lu-lesson .story .sv:has(.lu-art) { padding: 10px; }
+.lu-lesson .opt.face { min-width: clamp(92px, 25vw, 180px); min-height: clamp(92px, 25vw, 180px); }
+.lu-lesson .opt.face .lu-art { width: clamp(76px, 20vw, 150px); height: clamp(76px, 20vw, 150px); }
+@media (max-height: 700px) { .lu-lesson .story .sv .lu-art, .lu-lesson .story > .lu-art { width: 150px; height: 150px; } .lu-lesson .opt.face { min-width: 96px; min-height: 96px; } .lu-lesson .opt.face .lu-art { width: 78px; height: 78px; } }
+/* Hình lớn cho các dạng kéo thả, lật thẻ, tìm vật (tam 26/11 08:31; đồng bộ với bản sửa trên máy 24H, giữ 3 ô một hàng trên điện thoại 390px) */
+.lu-lesson .shadow { width: clamp(88px, 25vw, 220px); height: clamp(88px, 25vw, 220px); }
+.lu-lesson .shadow .sil { width: 86%; height: 86%; }
+.lu-lesson .shadow .lu-art { max-width: none; max-height: none; }
+.lu-lesson .shadow .tgt { font-size: clamp(44px, 10vw, 96px); }
+.lu-lesson .piece { width: clamp(86px, 23vw, 190px); height: clamp(86px, 23vw, 190px); }
+.lu-lesson .piece .lu-art, .lu-lesson .cell-f .lu-art { max-width: none; max-height: none; width: 84%; height: 84%; }
+.lu-lesson .tray { min-height: clamp(110px, 28vw, 210px); }
+.lu-lesson .cell-f { min-width: clamp(92px, 22vw, 170px); min-height: clamp(92px, 22vw, 170px); }
+.lu-lesson .opt.card { min-width: clamp(92px, 24vw, 160px); min-height: clamp(92px, 24vw, 160px); }
+@media (max-width: 480px) { .lu-lesson .shadows { gap: 10px; } .lu-lesson .shadow { width: calc((100vw - 118px) / 3); height: calc((100vw - 118px) / 3); } }

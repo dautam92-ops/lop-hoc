@@ -1,0 +1,311 @@
+{
+ "format": "lu-activity-bank",
+ "note": "Hoạt động mẫu để kiểm thử engine E03, E04, E06 và các kiểu chưa có trong bài mẫu 1, 2. Không phải nội dung chính thức; chưa có giọng đọc.",
+ "content_version": "2026.11.25-demo",
+ "activities": [
+  {
+   "activity_id": "DEMO-E01-COUNT",
+   "step": "Đếm",
+   "engine": "E01",
+   "mechanic": "M01",
+   "mode": "count",
+   "skill_id": "TO.DEM.01",
+   "title": "Đếm hạt đậu",
+   "object": "art:hat-dau",
+   "intro": [
+    "Bé nhặt được mấy hạt đậu nhỉ?"
+   ],
+   "hint": "Bé chạm từng hạt, mỗi hạt đếm một tiếng.",
+   "q": "Có mấy hạt đậu?",
+   "pool": [
+    1,
+    2,
+    3
+   ],
+   "max": 3,
+   "rounds": 3,
+   "words": [
+    "một",
+    "hai",
+    "ba"
+   ],
+   "ok": "Bé giỏi lắm! Có {word} hạt đậu.",
+   "no": "Bé đếm lại nhé."
+  },
+  {
+   "activity_id": "DEMO-E02-PAIR",
+   "step": "Ghép",
+   "engine": "E02",
+   "mechanic": "M03",
+   "target_style": "pair",
+   "skill_id": "TO.DEM.01",
+   "title": "Ghép số với nhóm",
+   "intro": [
+    "Bé kéo mỗi nhóm về đúng số nhé."
+   ],
+   "label": "Kéo nhóm về đúng số",
+   "no": "Bé đếm lại nhóm này nhé.",
+   "done": "Bé giỏi lắm! Nhóm nào cũng về đúng số rồi.",
+   "sets": [
+    [
+     {
+      "piece": "art:tao*1",
+      "target": "1"
+     },
+     {
+      "piece": "art:tao*2",
+      "target": "2"
+     },
+     {
+      "piece": "art:tao*3",
+      "target": "3"
+     }
+    ],
+    [
+     {
+      "piece": "art:hoa*1",
+      "target": "1"
+     },
+     {
+      "piece": "art:hoa*2",
+      "target": "2"
+     },
+     {
+      "piece": "art:hoa*3",
+      "target": "3"
+     }
+    ]
+   ],
+   "rounds": 2
+  },
+  {
+   "activity_id": "DEMO-E03-SORT",
+   "step": "Phân loại",
+   "engine": "E03",
+   "mechanic": "M18",
+   "skill_id": "TD.LG.01",
+   "title": "Giúp Lu xếp hình",
+   "intro": [
+    "Các hình bị lẫn vào nhau. Bé xếp hình tròn vào một giỏ, hình vuông vào giỏ kia nhé."
+   ],
+   "again": "Bé xếp tiếp nhé.",
+   "groups": [
+    {
+     "id": "tron",
+     "label": "Hình tròn",
+     "e": "art:hinh-tron",
+     "say": "Hình tròn."
+    },
+    {
+     "id": "vuong",
+     "label": "Hình vuông",
+     "e": "art:hinh-vuong",
+     "say": "Hình vuông."
+    }
+   ],
+   "items": [
+    {
+     "e": "art:hinh-tron:#e0705a",
+     "g": "tron"
+    },
+    {
+     "e": "art:hinh-tron:#6aa6c8",
+     "g": "tron"
+    },
+    {
+     "e": "art:hinh-tron:#f6c85f",
+     "g": "tron"
+    },
+    {
+     "e": "art:hinh-tron:#8fae3e",
+     "g": "tron"
+    },
+    {
+     "e": "art:hinh-vuong:#e0705a",
+     "g": "vuong"
+    },
+    {
+     "e": "art:hinh-vuong:#6aa6c8",
+     "g": "vuong"
+    },
+    {
+     "e": "art:hinh-vuong:#f6c85f",
+     "g": "vuong"
+    },
+    {
+     "e": "art:hinh-vuong:#8fae3e",
+     "g": "vuong"
+    }
+   ],
+   "per_round": 4,
+   "rounds": 2,
+   "no": "Bé nhìn lại: hình này tròn hay vuông?",
+   "done": "Bé giỏi lắm! Hình nào cũng về đúng giỏ rồi."
+  },
+  {
+   "activity_id": "DEMO-E04-PATTERN",
+   "step": "Quy luật",
+   "engine": "E04",
+   "mechanic": "M17",
+   "mode": "pattern",
+   "skill_id": "TD.LG.03",
+   "title": "Chuỗi hạt của Lu",
+   "intro": [
+    "Lu xâu chuỗi hạt theo quy luật."
+   ],
+   "q": "Hạt tiếp theo là hạt nào?",
+   "no": "Bé nhìn lại cả hàng hạt nhé.",
+   "ok": "Đúng rồi! Quy luật là {seq}, rồi lặp lại.",
+   "patterns": [
+    "AB",
+    "AAB",
+    "ABB",
+    "ABC"
+   ],
+   "length": 6,
+   "rounds": 3,
+   "pool": [
+    {
+     "e": "art:hinh-tron:#e0705a",
+     "name": "đỏ"
+    },
+    {
+     "e": "art:hinh-tron:#6aa6c8",
+     "name": "xanh dương"
+    },
+    {
+     "e": "art:hinh-tron:#f6c85f",
+     "name": "vàng"
+    },
+    {
+     "e": "art:hinh-tron:#8fae3e",
+     "name": "xanh lá"
+    }
+   ]
+  },
+  {
+   "activity_id": "DEMO-E04-ORDER",
+   "step": "Sắp xếp",
+   "engine": "E04",
+   "mechanic": "M09",
+   "mode": "order",
+   "skill_id": "TO.SS.01",
+   "title": "Từ ít đến nhiều",
+   "intro": [
+    "Lu muốn xếp các đĩa táo từ ít đến nhiều."
+   ],
+   "q": "Bé chạm đĩa ít táo nhất trước nhé.",
+   "no": "Bé đếm lại từng đĩa nhé.",
+   "ok": "Bé giỏi lắm! Đĩa táo đã xếp từ ít đến nhiều.",
+   "max": 5,
+   "groups": 3,
+   "rounds": 2,
+   "object": "art:tao"
+  },
+  {
+   "activity_id": "DEMO-E05-MEMORY",
+   "step": "Trí nhớ",
+   "engine": "E05",
+   "mechanic": "M21",
+   "skill_id": "TD.TN.01",
+   "title": "Lật thẻ tìm đôi",
+   "intro": [
+    "Bé lật hai thẻ, hai hình giống nhau là được một đôi nhé!"
+   ],
+   "no": "Chưa giống nhau. Bé nhớ chỗ của từng thẻ nhé.",
+   "done": "Bé giỏi lắm! Đôi nào cũng tìm ra rồi.",
+   "pool": [
+    "art:hat-dau",
+    "art:la",
+    "art:hoa",
+    "art:tao",
+    "art:sao",
+    "art:bong-bay"
+   ],
+   "pairs": 4
+  },
+  {
+   "activity_id": "DEMO-E06-FIND",
+   "step": "Tìm",
+   "engine": "E06",
+   "mechanic": "M26",
+   "skill_id": "TD.QS.01",
+   "title": "Vườn nhà Lu",
+   "intro": [
+    "Vườn nhà Lu có nhiều thứ lắm."
+   ],
+   "q": "Bé tìm tất cả {name} nhé!",
+   "no": "Chưa phải rồi. Bé nhìn kỹ hình nhé.",
+   "done": "Bé giỏi lắm! Bé tìm thấy hết rồi.",
+   "targets": [
+    {
+     "e": "art:sao",
+     "name": "ngôi sao"
+    },
+    {
+     "e": "art:hoa",
+     "name": "bông hoa"
+    },
+    {
+     "e": "art:tao",
+     "name": "quả táo"
+    }
+   ],
+   "distractors": [
+    "art:la",
+    "art:mam-dau",
+    "art:hat-dau",
+    "art:chau-cay"
+   ],
+   "cells": 9,
+   "min": 2,
+   "max": 4,
+   "rounds": 2
+  },
+  {
+   "activity_id": "DEMO-E15-DO",
+   "step": "Vận động",
+   "engine": "E15",
+   "mechanic": "M56",
+   "mode": "do",
+   "skill_id": "KP.VD.01",
+   "title": "Nhảy như ếch",
+   "intro": [
+    "Mình đứng dậy vận động cùng Lu nhé!"
+   ],
+   "task": "Bé nhảy bật như chú ếch ba lần nhé. Nhớ nhảy chỗ rộng, không có đồ vật cứng xung quanh.",
+   "button": "Xong rồi!"
+  },
+  {
+   "activity_id": "DEMO-E00-STORY",
+   "step": "Kể chuyện",
+   "engine": "E00",
+   "title": "Túi hạt đậu",
+   "lu": "kham-pha",
+   "tap": true,
+   "story": [
+    "Lu ra sân. Bà để lại cho Lu một túi hạt đậu.",
+    "Bé chạm vào túi để mở ra nhé."
+   ],
+   "props": [
+    {
+     "e": "art:tui",
+     "name": "túi hạt đậu"
+    }
+   ],
+   "after": "Ồ, trong túi có thật nhiều hạt đậu!"
+  },
+  {
+   "activity_id": "DEMO-E00-NEXT",
+   "step": "Kể chuyện",
+   "engine": "E00",
+   "title": "Lu ra vườn",
+   "lu": "di-bo",
+   "story": [
+    "Nắng lên rồi. Lu đi ra vườn đậu."
+   ],
+   "button": "Đi tiếp",
+   "after": "Mình đi thôi!"
+  }
+ ]
+}

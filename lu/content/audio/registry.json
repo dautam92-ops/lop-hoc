@@ -1,0 +1,988 @@
+{
+ "format": "lu-audio-registry",
+ "version": 1,
+ "clips": {
+  "Blue! Well done!": "4b941919176c.mp3",
+  "Bạn Thỏ chạy đến, vẫy tay chào Lu. Lu thấy thế nào?": "05ad5dcbbf5b.mp3",
+  "Chưa giống nhau. Con nhớ chỗ của thẻ nhé.": "791d6d8ca267.mp3",
+  "Chưa đúng. Con nhìn kĩ hình dáng nhé.": "aba1e73c6d6b.mp3",
+  "Chạm vào từng quả bóng để đếm nhé.": "20e46cb8242b.mp3",
+  "Con chạm vào Lu để nghe, rồi nói theo thật to nhé!": "98e6c625d867.mp3",
+  "Con giỏi quá!": "189f061bdb35.mp3",
+  "Con thấy buồn.": "e3116d0f23a2.mp3",
+  "Con thấy bình thường.": "4803638da917.mp3",
+  "Con thấy mệt.": "c41ff70b0886.mp3",
+  "Con thấy vui.": "0629e1a2e6eb.mp3",
+  "Con đã học xong bài hôm nay rồi! Con giỏi quá.": "0bec6e438466.mp3",
+  "Các bạn tặng Lu bóng bay. Con đếm xem có mấy quả bóng nhé!": "58d31f04a44a.mp3",
+  "Có mấy quả bóng bay?": "64d548320037.mp3",
+  "Cảm ơn con đã kể cho cô nghe.": "dac412e528e8.mp3",
+  "Giật lấy xích đu.": "4bd09e8d4f5d.mp3",
+  "Giỏi quá!": "61d811303b52.mp3",
+  "Giỏi quá! Con tìm đúng hết các cái bóng.": "6f31cfc26eb7.mp3",
+  "Giỏi quá! Con tìm được hết các đôi rồi!": "a257ad142224.mp3",
+  "Giờ mình học tiếng Anh cùng Lu nhé! Con nghe và chạm đúng quả bóng.": "4b56fdb02d32.mp3",
+  "Giờ mình học tiếng Anh nhé! Con nghe và chạm đúng con vật.": "1b340736c537.mp3",
+  "Hello! Let's learn English!": "0560fa277acd.mp3",
+  "Hít vào thật sâu, ngửi bông hoa": "feb8669104d6.mp3",
+  "Hôm nay Lu chuyển đến Làng Hạt Đậu. Con đi cùng Lu làm quen các bạn nhé!": "f9c366001ed1.mp3",
+  "Hôm nay Lu sang nhà bạn Thỏ chơi. Con đi cùng Lu nhé!": "cc992631cb40.mp3",
+  "Hôm qua Lu đã đến Làng Hạt Đậu.": "372a66ad8dfd.mp3",
+  "Hẹn con ngày mai cùng Lu nhé! Bây giờ con mời bố mẹ đến xem nhé.": "8c04c352878e.mp3",
+  "Khi buồn, mình cùng Lu hít thở thật sâu nhé.": "920a5b873b31.mp3",
+  "Không để ý đến bạn.": "57612344cf98.mp3",
+  "Kéo mỗi hình về đúng cái bóng nhé.": "1343f983bc7a.mp3",
+  "Lu buồn.": "284c08c03d35.mp3",
+  "Lu muốn chơi xích đu cùng Thỏ. Lu nên nói gì?": "c918f8f97f84.mp3",
+  "Lu thấy dễ chịu hơn rồi.": "1e1c04548c46.mp3",
+  "Lu tức giận.": "e4a0758559a9.mp3",
+  "Lu vui.": "d03fae6fca25.mp3",
+  "Lu đến làng mới. Lu chưa quen bạn nào cả. Lu thấy thế nào?": "f89e5ea55ad1.mp3",
+  "Mình nhìn kĩ khuôn mặt của Lu và chọn lại nhé.": "f1a64db226e8.mp3",
+  "Mình nhìn kĩ khuôn mặt và chọn lại nhé.": "2762ed2f9fb7.mp3",
+  "Nếu con là bạn mới, con sẽ thấy thế nào nhỉ? Mình chọn lại nhé.": "48f2b9b3ca1e.mp3",
+  "Nếu là Thỏ, con sẽ thấy thế nào nhỉ? Mình chọn lại nhé.": "8809f05c7c59.mp3",
+  "Red! Well done!": "bd83e34cd9f4.mp3",
+  "Thỏ buồn.": "b5bf2cc46357.mp3",
+  "Thỏ cho Lu chơi xích đu trước. Lu thấy thế nào?": "b6004642e98f.mp3",
+  "Thỏ làm rơi gấu bông xuống vũng nước. Thỏ thấy thế nào?": "1aa0c64b48d2.mp3",
+  "Thỏ mời Lu ăn quà. Con giúp Lu tìm đĩa có nhiều hơn nhé.": "d2df3085fce5.mp3",
+  "Thỏ rủ Lu chơi lật thẻ. Con lật hai thẻ, nếu giống nhau là được một đôi nhé!": "75d0bf816b34.mp3",
+  "Thỏ tức giận.": "d4db4cc6323a.mp3",
+  "Thỏ vui.": "c687bafae717.mp3",
+  "Thỏ ơi, mình chơi cùng nhé!": "8eaf0554be25.mp3",
+  "Thở ra thật chậm, thổi nến": "1db80ceab4a6.mp3",
+  "Trêu bạn.": "2809d9618251.mp3",
+  "Trước khi đi, con cho cô biết hôm nay con thấy thế nào?": "73e73ec83024.mp3",
+  "Tuyệt vời!": "301f434021a5.mp3",
+  "Tuyệt vời! Con thật tốt bụng. Bạn mới sẽ vui lắm.": "b3828a9f8cba.mp3",
+  "Xin chào con! Đây là bạn Cún Lu.": "e60f4897a0dd.mp3",
+  "Yellow! Well done!": "dbe0eec36614.mp3",
+  "Yes! Bear!": "1f7a29265795.mp3",
+  "Yes! Bird!": "524a02545bbe.mp3",
+  "Yes! Fish!": "93d94e625b6d.mp3",
+  "Yes! Rabbit!": "b75572bae414.mp3",
+  "__boing": "ae291918ae8e.mp3",
+  "__jingle": "ffdb705dc8bf.mp3",
+  "__no": "065d83eefb99.mp3",
+  "__ok": "b05b6669ab90.mp3",
+  "ba": "6c0596b8ac60.mp3",
+  "bear": "09f5edeb4f5b.mp3",
+  "bird": "cd92815bf627.mp3",
+  "blue": "4c9a82ce72ca.mp3",
+  "bốn": "677b5fcfd6f8.mp3",
+  "fish": "64875fcccaac.mp3",
+  "hai": "8d813378c294.mp3",
+  "một": "c826fcda319b.mp3",
+  "rabbit": "6d0ebbbdce32.mp3",
+  "red": "78988010b890.mp3",
+  "yellow": "96de5543d183.mp3",
+  "Ôi, mình làm lại nhé!": "fa5b1d24458f.mp3",
+  "Ôi, mình đếm lại nhé!": "9a3e8d38b617.mp3",
+  "Ôi, mình đếm lại từng đĩa nhé!": "3cd0f480234b.mp3",
+  "Ôi, nắng lên rồi! Cái gì cũng có cái bóng. Con kéo mỗi hình về đúng cái bóng của nó nhé.": "f4198da30484.mp3",
+  "Đúng rồi!": "0825fa60e79e.mp3",
+  "Đúng rồi! Có ba quả bóng.": "e0f10efbd372.mp3",
+  "Đúng rồi! Có bạn chào, Lu vui lắm.": "a5378d49d2e9.mp3",
+  "Đúng rồi! Có bốn quả bóng.": "6379f488710e.mp3",
+  "Đúng rồi! Có hai quả bóng.": "51829b037b2c.mp3",
+  "Đúng rồi! Có một quả bóng.": "1d94332104e3.mp3",
+  "Đúng rồi! Lu buồn vì chưa có bạn.": "632fdc3a3134.mp3",
+  "Đúng rồi! Lu hỏi thật lễ phép, Thỏ vui lắm.": "83f522ff85c9.mp3",
+  "Đúng rồi! Lu vui. Lu nói: Cảm ơn Thỏ!": "e94e668f3e5c.mp3",
+  "Đúng rồi! Thỏ buồn. Lu ôm Thỏ một cái.": "e5d9d0321728.mp3",
+  "Đúng rồi! Đĩa này có nhiều cà rốt hơn.": "54dd24913d89.mp3",
+  "Đúng rồi! Đĩa này có nhiều táo hơn.": "1448a09d4c29.mp3",
+  "Đúng rồi! Đĩa này có ít bánh hơn.": "91e38d23a31c.mp3",
+  "Đĩa nào có nhiều cà rốt hơn?": "0e7b9d2bdb9c.mp3",
+  "Đĩa nào có nhiều táo hơn?": "5e912eb37332.mp3",
+  "Đĩa nào có ít bánh hơn?": "9c8e763d9e23.mp3",
+  "Đến chào bạn và rủ bạn cùng chơi.": "401143a787b3.mp3",
+  "Đứng khóc một mình.": "65b8258342df.mp3",
+  "Ở lớp có một bạn mới đứng một mình. Con sẽ làm gì?": "a98c4c69c6ba.mp3"
+ },
+ "entries": [
+  {
+   "key": "Blue! Well done!",
+   "file": "4b941919176c.mp3",
+   "lang": "en",
+   "bytes": 10653,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Bạn Thỏ chạy đến, vẫy tay chào Lu. Lu thấy thế nào?",
+   "file": "05ad5dcbbf5b.mp3",
+   "lang": "vi",
+   "bytes": 32544,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Chưa giống nhau. Con nhớ chỗ của thẻ nhé.",
+   "file": "791d6d8ca267.mp3",
+   "lang": "vi",
+   "bytes": 26208,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Chưa đúng. Con nhìn kĩ hình dáng nhé.",
+   "file": "aba1e73c6d6b.mp3",
+   "lang": "vi",
+   "bytes": 24048,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Chạm vào từng quả bóng để đếm nhé.",
+   "file": "20e46cb8242b.mp3",
+   "lang": "vi",
+   "bytes": 18144,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Con chạm vào Lu để nghe, rồi nói theo thật to nhé!",
+   "file": "98e6c625d867.mp3",
+   "lang": "vi",
+   "bytes": 25344,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Con giỏi quá!",
+   "file": "189f061bdb35.mp3",
+   "lang": "vi",
+   "bytes": 11520,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Con thấy buồn.",
+   "file": "e3116d0f23a2.mp3",
+   "lang": "vi",
+   "bytes": 11952,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Con thấy bình thường.",
+   "file": "4803638da917.mp3",
+   "lang": "vi",
+   "bytes": 13248,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Con thấy mệt.",
+   "file": "c41ff70b0886.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Con thấy vui.",
+   "file": "0629e1a2e6eb.mp3",
+   "lang": "vi",
+   "bytes": 11664,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Con đã học xong bài hôm nay rồi! Con giỏi quá.",
+   "file": "0bec6e438466.mp3",
+   "lang": "vi",
+   "bytes": 29232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Các bạn tặng Lu bóng bay. Con đếm xem có mấy quả bóng nhé!",
+   "file": "58d31f04a44a.mp3",
+   "lang": "vi",
+   "bytes": 32832,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Có mấy quả bóng bay?",
+   "file": "64d548320037.mp3",
+   "lang": "vi",
+   "bytes": 13968,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Cảm ơn con đã kể cho cô nghe.",
+   "file": "dac412e528e8.mp3",
+   "lang": "vi",
+   "bytes": 18288,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giật lấy xích đu.",
+   "file": "4bd09e8d4f5d.mp3",
+   "lang": "vi",
+   "bytes": 12672,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giỏi quá!",
+   "file": "61d811303b52.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giỏi quá! Con tìm đúng hết các cái bóng.",
+   "file": "6f31cfc26eb7.mp3",
+   "lang": "vi",
+   "bytes": 25776,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giỏi quá! Con tìm được hết các đôi rồi!",
+   "file": "a257ad142224.mp3",
+   "lang": "vi",
+   "bytes": 25632,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giờ mình học tiếng Anh cùng Lu nhé! Con nghe và chạm đúng quả bóng.",
+   "file": "4b56fdb02d32.mp3",
+   "lang": "vi",
+   "bytes": 34416,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giờ mình học tiếng Anh nhé! Con nghe và chạm đúng con vật.",
+   "file": "1b340736c537.mp3",
+   "lang": "vi",
+   "bytes": 31248,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hello! Let's learn English!",
+   "file": "0560fa277acd.mp3",
+   "lang": "en",
+   "bytes": 13005,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hít vào thật sâu, ngửi bông hoa",
+   "file": "feb8669104d6.mp3",
+   "lang": "vi",
+   "bytes": 19296,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hôm nay Lu chuyển đến Làng Hạt Đậu. Con đi cùng Lu làm quen các bạn nhé!",
+   "file": "f9c366001ed1.mp3",
+   "lang": "vi",
+   "bytes": 36720,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hôm nay Lu sang nhà bạn Thỏ chơi. Con đi cùng Lu nhé!",
+   "file": "cc992631cb40.mp3",
+   "lang": "vi",
+   "bytes": 31680,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hôm qua Lu đã đến Làng Hạt Đậu.",
+   "file": "372a66ad8dfd.mp3",
+   "lang": "vi",
+   "bytes": 18144,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hẹn con ngày mai cùng Lu nhé! Bây giờ con mời bố mẹ đến xem nhé.",
+   "file": "8c04c352878e.mp3",
+   "lang": "vi",
+   "bytes": 35856,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Khi buồn, mình cùng Lu hít thở thật sâu nhé.",
+   "file": "920a5b873b31.mp3",
+   "lang": "vi",
+   "bytes": 22464,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Không để ý đến bạn.",
+   "file": "57612344cf98.mp3",
+   "lang": "vi",
+   "bytes": 14256,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Kéo mỗi hình về đúng cái bóng nhé.",
+   "file": "1343f983bc7a.mp3",
+   "lang": "vi",
+   "bytes": 18000,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Lu buồn.",
+   "file": "284c08c03d35.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Lu muốn chơi xích đu cùng Thỏ. Lu nên nói gì?",
+   "file": "c918f8f97f84.mp3",
+   "lang": "vi",
+   "bytes": 29088,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Lu thấy dễ chịu hơn rồi.",
+   "file": "1e1c04548c46.mp3",
+   "lang": "vi",
+   "bytes": 16128,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Lu tức giận.",
+   "file": "e4a0758559a9.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Lu vui.",
+   "file": "d03fae6fca25.mp3",
+   "lang": "en",
+   "bytes": 11232,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Lu đến làng mới. Lu chưa quen bạn nào cả. Lu thấy thế nào?",
+   "file": "f89e5ea55ad1.mp3",
+   "lang": "vi",
+   "bytes": 40176,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mình nhìn kĩ khuôn mặt của Lu và chọn lại nhé.",
+   "file": "f1a64db226e8.mp3",
+   "lang": "vi",
+   "bytes": 22320,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mình nhìn kĩ khuôn mặt và chọn lại nhé.",
+   "file": "2762ed2f9fb7.mp3",
+   "lang": "vi",
+   "bytes": 19728,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Nếu con là bạn mới, con sẽ thấy thế nào nhỉ? Mình chọn lại nhé.",
+   "file": "48f2b9b3ca1e.mp3",
+   "lang": "vi",
+   "bytes": 36864,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Nếu là Thỏ, con sẽ thấy thế nào nhỉ? Mình chọn lại nhé.",
+   "file": "8809f05c7c59.mp3",
+   "lang": "vi",
+   "bytes": 34848,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Red! Well done!",
+   "file": "bd83e34cd9f4.mp3",
+   "lang": "en",
+   "bytes": 10653,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ buồn.",
+   "file": "b5bf2cc46357.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ cho Lu chơi xích đu trước. Lu thấy thế nào?",
+   "file": "b6004642e98f.mp3",
+   "lang": "vi",
+   "bytes": 28080,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ làm rơi gấu bông xuống vũng nước. Thỏ thấy thế nào?",
+   "file": "1aa0c64b48d2.mp3",
+   "lang": "vi",
+   "bytes": 29808,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ mời Lu ăn quà. Con giúp Lu tìm đĩa có nhiều hơn nhé.",
+   "file": "d2df3085fce5.mp3",
+   "lang": "vi",
+   "bytes": 33552,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ rủ Lu chơi lật thẻ. Con lật hai thẻ, nếu giống nhau là được một đôi nhé!",
+   "file": "75d0bf816b34.mp3",
+   "lang": "vi",
+   "bytes": 40608,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ tức giận.",
+   "file": "d4db4cc6323a.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ vui.",
+   "file": "c687bafae717.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thỏ ơi, mình chơi cùng nhé!",
+   "file": "8eaf0554be25.mp3",
+   "lang": "vi",
+   "bytes": 17568,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Thở ra thật chậm, thổi nến",
+   "file": "1db80ceab4a6.mp3",
+   "lang": "vi",
+   "bytes": 17568,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Trêu bạn.",
+   "file": "2809d9618251.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Trước khi đi, con cho cô biết hôm nay con thấy thế nào?",
+   "file": "73e73ec83024.mp3",
+   "lang": "vi",
+   "bytes": 24624,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tuyệt vời!",
+   "file": "301f434021a5.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tuyệt vời! Con thật tốt bụng. Bạn mới sẽ vui lắm.",
+   "file": "b3828a9f8cba.mp3",
+   "lang": "vi",
+   "bytes": 35280,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Xin chào con! Đây là bạn Cún Lu.",
+   "file": "e60f4897a0dd.mp3",
+   "lang": "vi",
+   "bytes": 24912,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Yellow! Well done!",
+   "file": "dbe0eec36614.mp3",
+   "lang": "en",
+   "bytes": 11325,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Yes! Bear!",
+   "file": "1f7a29265795.mp3",
+   "lang": "en",
+   "bytes": 9141,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Yes! Bird!",
+   "file": "524a02545bbe.mp3",
+   "lang": "en",
+   "bytes": 9813,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Yes! Fish!",
+   "file": "93d94e625b6d.mp3",
+   "lang": "en",
+   "bytes": 9645,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Yes! Rabbit!",
+   "file": "b75572bae414.mp3",
+   "lang": "en",
+   "bytes": 9981,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "__boing",
+   "file": "ae291918ae8e.mp3",
+   "lang": "sfx",
+   "bytes": 3765,
+   "voice": null,
+   "provider": "tự tạo bằng script",
+   "license": "cần xác minh nguồn âm hiệu"
+  },
+  {
+   "key": "__jingle",
+   "file": "ffdb705dc8bf.mp3",
+   "lang": "sfx",
+   "bytes": 6957,
+   "voice": null,
+   "provider": "tự tạo bằng script",
+   "license": "cần xác minh nguồn âm hiệu"
+  },
+  {
+   "key": "__no",
+   "file": "065d83eefb99.mp3",
+   "lang": "sfx",
+   "bytes": 13173,
+   "voice": null,
+   "provider": "tự tạo bằng script",
+   "license": "cần xác minh nguồn âm hiệu"
+  },
+  {
+   "key": "__ok",
+   "file": "b05b6669ab90.mp3",
+   "lang": "sfx",
+   "bytes": 11997,
+   "voice": null,
+   "provider": "tự tạo bằng script",
+   "license": "cần xác minh nguồn âm hiệu"
+  },
+  {
+   "key": "ba",
+   "file": "6c0596b8ac60.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "bear",
+   "file": "09f5edeb4f5b.mp3",
+   "lang": "en",
+   "bytes": 7293,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "bird",
+   "file": "cd92815bf627.mp3",
+   "lang": "en",
+   "bytes": 7629,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "blue",
+   "file": "4c9a82ce72ca.mp3",
+   "lang": "en",
+   "bytes": 7965,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "bốn",
+   "file": "677b5fcfd6f8.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "fish",
+   "file": "64875fcccaac.mp3",
+   "lang": "en",
+   "bytes": 7293,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "hai",
+   "file": "8d813378c294.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "một",
+   "file": "c826fcda319b.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "rabbit",
+   "file": "6d0ebbbdce32.mp3",
+   "lang": "en",
+   "bytes": 7965,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "red",
+   "file": "78988010b890.mp3",
+   "lang": "en",
+   "bytes": 7461,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "yellow",
+   "file": "96de5543d183.mp3",
+   "lang": "en",
+   "bytes": 7461,
+   "voice": "en-US (edge-tts)",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Ôi, mình làm lại nhé!",
+   "file": "fa5b1d24458f.mp3",
+   "lang": "vi",
+   "bytes": 15696,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Ôi, mình đếm lại nhé!",
+   "file": "9a3e8d38b617.mp3",
+   "lang": "vi",
+   "bytes": 15984,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Ôi, mình đếm lại từng đĩa nhé!",
+   "file": "3cd0f480234b.mp3",
+   "lang": "vi",
+   "bytes": 19008,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Ôi, nắng lên rồi! Cái gì cũng có cái bóng. Con kéo mỗi hình về đúng cái bóng của nó nhé.",
+   "file": "f4198da30484.mp3",
+   "lang": "vi",
+   "bytes": 50400,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi!",
+   "file": "0825fa60e79e.mp3",
+   "lang": "vi",
+   "bytes": 11232,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Có ba quả bóng.",
+   "file": "e0f10efbd372.mp3",
+   "lang": "vi",
+   "bytes": 21744,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Có bạn chào, Lu vui lắm.",
+   "file": "a5378d49d2e9.mp3",
+   "lang": "vi",
+   "bytes": 26352,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Có bốn quả bóng.",
+   "file": "6379f488710e.mp3",
+   "lang": "vi",
+   "bytes": 21888,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Có hai quả bóng.",
+   "file": "51829b037b2c.mp3",
+   "lang": "vi",
+   "bytes": 21744,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Có một quả bóng.",
+   "file": "1d94332104e3.mp3",
+   "lang": "vi",
+   "bytes": 21312,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Lu buồn vì chưa có bạn.",
+   "file": "632fdc3a3134.mp3",
+   "lang": "vi",
+   "bytes": 24912,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Lu hỏi thật lễ phép, Thỏ vui lắm.",
+   "file": "83f522ff85c9.mp3",
+   "lang": "vi",
+   "bytes": 28368,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Lu vui. Lu nói: Cảm ơn Thỏ!",
+   "file": "e94e668f3e5c.mp3",
+   "lang": "vi",
+   "bytes": 34416,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Thỏ buồn. Lu ôm Thỏ một cái.",
+   "file": "e5d9d0321728.mp3",
+   "lang": "vi",
+   "bytes": 32688,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Đĩa này có nhiều cà rốt hơn.",
+   "file": "54dd24913d89.mp3",
+   "lang": "vi",
+   "bytes": 26640,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Đĩa này có nhiều táo hơn.",
+   "file": "1448a09d4c29.mp3",
+   "lang": "vi",
+   "bytes": 25344,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Đĩa này có ít bánh hơn.",
+   "file": "91e38d23a31c.mp3",
+   "lang": "vi",
+   "bytes": 24480,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đĩa nào có nhiều cà rốt hơn?",
+   "file": "0e7b9d2bdb9c.mp3",
+   "lang": "vi",
+   "bytes": 16992,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đĩa nào có nhiều táo hơn?",
+   "file": "5e912eb37332.mp3",
+   "lang": "vi",
+   "bytes": 15552,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đĩa nào có ít bánh hơn?",
+   "file": "9c8e763d9e23.mp3",
+   "lang": "vi",
+   "bytes": 15408,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đến chào bạn và rủ bạn cùng chơi.",
+   "file": "401143a787b3.mp3",
+   "lang": "vi",
+   "bytes": 18864,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đứng khóc một mình.",
+   "file": "65b8258342df.mp3",
+   "lang": "vi",
+   "bytes": 12384,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Ở lớp có một bạn mới đứng một mình. Con sẽ làm gì?",
+   "file": "a98c4c69c6ba.mp3",
+   "lang": "vi",
+   "bytes": 31104,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng Azure Speech trả phí trước khi bán (S06-R02)"
+  }
+ ]
+}
