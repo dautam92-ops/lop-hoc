@@ -1,0 +1,78 @@
+{
+ "ghi_chu": "Lỗi tam đã báo trong Phòng mẫu. Bản đầy đủ: lu/SO-LOI.md. Mỗi lỗi có phép thử tự động, không được lặp lại.",
+ "loi": [
+  {
+   "ngay": "26/11",
+   "loi": "Chữ nào Lu gọi?: chữ và ô đáp án nhỏ, dồn đáy, nhiều khoảng trống (quy tắc 33)",
+   "s": "CC-01",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Nội dung to, nằm giữa màn; đo tự động cỡ ô, khối học, tâm, khoảng trống"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Lật thẻ: 8 thẻ tràn khỏi màn iPad",
+   "s": "CC-08",
+   "age": "5-6",
+   "dev": "ipad",
+   "sua": "Thẻ vừa màn; phép thử nút tràn màn"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Lật thẻ: lật sai Lu vẫn nói, đúng đôi phải chỉ có âm \"ting\"",
+   "s": "CC-08",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Lật sai im lặng, đúng đôi chỉ \"ting\""
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Kéo thả: đồ vật đang kéo phóng to khổng lồ che màn",
+   "s": "CC-06",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Vật kéo giữ đúng cỡ ô"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Bé vẽ tranh: hỏi lại bé vẽ gì với 3 hình có sẵn",
+   "s": "CC-15",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Bỏ câu hỏi, bé tô theo nét đứt của tranh có sẵn"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Hai bức tranh sân nhà: chạm điểm trên ảnh lệch, vòng đánh dấu lệch khỏi vật",
+   "s": "MX-02",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Vùng chạm rộng hơn vật, vòng đúng tâm"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Đồ vật nằm ở ô nào?: lúc hỏi đồ vật không bị úp",
+   "s": "MT-07",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Lúc hỏi mọi đồ vật úp kín"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Xếp đồ về đúng chỗ: vật thả vào giỏ bị mất hoặc phóng to",
+   "s": "CC-06",
+   "age": "4-5",
+   "dev": "ipad",
+   "sua": "Vật trong giỏ cỡ cố định, đủ số, nằm gọn trong giỏ"
+  },
+  {
+   "ngay": "26/11",
+   "loi": "Xếp đồ về đúng chỗ: giỏ Trên trời, Trên cạn và con thỏ hình nghèo nàn (vẽ bằng mã)",
+   "s": "CC-06",
+   "age": "5-6",
+   "dev": "ipad",
+   "sua": "Đã chặn bằng phép thử. Còn chờ 39 ảnh vẽ tay (mây, bụi cỏ, thỏ…) vẽ trên máy 24H rồi tam duyệt",
+   "cho": true
+  }
+ ]
+}

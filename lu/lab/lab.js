@@ -8,6 +8,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '
 const get = u => fetch(u).then(r => (r.ok ? r.json() : null)).catch(() => null);
 const [D, LIB, ENG, AUD] = await Promise.all([get('../content/lab/samples.json'), get('../content/lab/library.json'), get('../registry/engines.json'), get('../content/audio/registry.json')]);
 const MET = await get('../content/lab/methodology.json');
+const LOI = (await get('../content/lab/loi-da-bao.json'))?.loi || [];
 const PPN = Object.fromEntries((MET?.methods || []).map(m => [m.id, m.ten])); const NLN = Object.fromEntries((MET?.abilities || []).map(a => [a.id, a.ten]));
 const CLIPS = AUD?.clips || {};
 const STATUS = { draft: 'Bản nháp', ready_for_review: 'Chờ duyệt', needs_revision: 'Cần sửa', approved: 'Đã duyệt', deprecated: 'Ngừng dùng' };
@@ -37,12 +38,14 @@ function renderList() {
   if (st.tab === 'd1') I.innerHTML = D.samples.filter(s => s.dot === 1).map(s => card(s, `${s.cc.join(', ')} · 10 bài hoàn chỉnh`)).join('');
   if (st.tab === 'pp20') I.innerHTML = (D.rep20 || []).map(r => r.ids.map(id => byId[id] ? card(byId[id], `${r.n}. ${r.name}${byId[id].id.startsWith('MT') ? ' · mẫu mới' : ' · dùng lại'}`) : '').join('')).join('');
   if (st.tab === 'x30') I.innerHTML = D.x30.map(x => { const ss = D.samples.filter(s => s.x.includes(x.n)); return ss.map(s => card(s, `Mẫu ${x.n}. ${x.name}`)).join(''); }).join('');
+  // Lỗi tam đã báo: bấm để mở đúng bài, đúng tuổi, đúng máy
+  if (st.tab === 'loi') I.innerHTML = LOI.map(l => byId[l.s] ? `<button class="item" data-id="${l.s}" data-age="${esc(l.age)}" data-dev="${esc(l.dev)}"><div class="k">${esc(l.ngay)} · ${esc(l.s)} · ${l.dev === 'phone' ? 'điện thoại' : 'iPad'}</div><div class="t">${esc(l.loi)}</div><div class="m">${l.cho ? 'Đang chờ' : 'Đã sửa'}: ${esc(l.sua)}</div></button>` : '').join('');
   if (st.tab === 'all') {
     const v = id => $(id).value;
     I.innerHTML = D.samples.filter(s => (!v('#f-group') || s.group === v('#f-group')) && (!v('#f-prog') || s.program === v('#f-prog')) && (!v('#f-eng') || s.engine === v('#f-eng')) && (!v('#f-status') || statusOf(s.id) === v('#f-status'))).map(s => card(s)).join('') || '<div class="empty">Không có mẫu khớp bộ lọc.</div>';
   }
   if (['pt', 'eng', 'rv', 'kb'].includes(st.tab)) I.innerHTML = '<div class="empty">Bảng ở khung bên phải.</div>';
-  I.querySelectorAll('.item[data-id]').forEach(b => b.onclick = () => { st.id = b.dataset.id; if (['pt', 'eng', 'rv', 'kb'].includes(st.tab)) st.tab = 'cc'; renderList(); renderDetail(); if (innerWidth < 900) $('#detail').scrollIntoView({ behavior: 'smooth' }); });
+  I.querySelectorAll('.item[data-id]').forEach(b => b.onclick = () => { st.id = b.dataset.id; if (b.dataset.age) st.age = b.dataset.age; if (b.dataset.dev) st.dev = b.dataset.dev; if (['pt', 'eng', 'rv', 'kb'].includes(st.tab)) st.tab = 'cc'; renderList(); renderDetail(); if (innerWidth < 900) $('#detail').scrollIntoView({ behavior: 'smooth' }); });
 }
 const fill = (sel, vals, lab = x => x) => { const e = $(sel); vals.forEach(v => e.insertAdjacentHTML('beforeend', `<option value="${esc(v)}">${esc(lab(v))}</option>`)); e.onchange = renderList; };
 fill('#f-group', [...new Set(D.samples.map(s => s.group))].sort());

@@ -5,7 +5,7 @@ import { ENGINES } from '../../engines/index.js';
 import { makeRng } from '../../core/lu-core.js';
 import { SCENE_KINDS } from '../../ui/scenes.js';
 const D = JSON.parse(readFileSync(new URL('../../content/lab/samples.json', import.meta.url)));
-let bad = 0, n = 0;
+let bad = 0, n = 0, hinhLoi = 0;
 for (const s of D.samples) for (const [age, act] of Object.entries(s.levels)) {
   n++; const E = ENGINES[act.engine]; const errs = [];
   if (!E) errs.push('không có engine ' + act.engine);
@@ -25,4 +25,16 @@ D.samples.forEach((s, i) => {
 });
 const nb = new Set(bds).size; if (nb < 8) { bad++; console.log(`LỖI: chỉ có ${nb} nền khác nhau`); }
 console.log(`Nền: ${nb} loại cho ${bds.length} bài.`);
-console.log(`${n - bad}/${n} hoạt động đạt.`); process.exit(bad ? 1 : 0);
+// Hình nghèo nàn (tam 26/11 19:04 "Trên trời và trên cạn hình ảnh quá nghèo nàn"): đồ vật, con vật, cảnh bé nhìn phải là ảnh vẽ tay đã duyệt.
+// Hình vẽ mã chỉ được dùng cho hình học và hình có tham số (màu, số). Chỗ nào chưa có ảnh phải nằm trong danh sách chờ vẽ trên máy 24H (tools/lab/anh-con-thieu.json).
+{ const artSlots = new Set([...slots].filter(x => x.startsWith('art:')));
+  let cho = new Set(); try { cho = new Set(JSON.parse(readFileSync(new URL('./anh-con-thieu.json', import.meta.url))).items.map(i => i.slot)); } catch {}
+  const used = new Map(); const walk = (o, id) => { if (typeof o === 'string') { const m = o.match(/^art:([^*:]+)(\*\d+)?$/); if (m) (used.get(m[1]) || used.set(m[1], new Set()).get(m[1])).add(id); } else if (o && typeof o === 'object') for (const v of Object.values(o)) walk(v, id); };
+  for (const s of D.samples) walk(s, s.id);
+  const hinhHoc = k => /^hinh-/.test(k);
+  const thieu = [...used].filter(([k]) => !artSlots.has('art:' + k) && !hinhHoc(k));
+  const khongTheoDoi = thieu.filter(([k]) => !cho.has('art:' + k));
+  for (const [k, ids] of khongTheoDoi) { hinhLoi++; console.log(`LỖI hình nghèo nàn: art:${k} (${[...ids].join(', ')}) đang là hình vẽ mã, chưa có ảnh vẽ tay và không có trong danh sách chờ vẽ anh-con-thieu.json`); }
+  const thua = [...cho].filter(k => artSlots.has(k)); if (thua.length) console.log(`Ảnh đã duyệt, gỡ khỏi danh sách chờ: ${thua.join(', ')}`);
+  console.log(`Hình vẽ tay: ${used.size - thieu.length}/${used.size} hình đã có ảnh; ${thieu.length} hình chờ vẽ trên máy 24H.`); }
+console.log(`${n - bad}/${n} hoạt động đạt.`); if (hinhLoi) console.log(`${hinhLoi} hình nghèo nàn chưa được theo dõi.`); process.exit(bad || hinhLoi ? 1 : 0);

@@ -1,0 +1,289 @@
+{
+ "format": "lu-art-prompts",
+ "version": "PM31-1",
+ "ghi_chu": "Ảnh vẽ tay còn thiếu trong Phòng mẫu (tam 26/11 19:04: \"Trên trời và trên cạn hình ảnh quá nghèo nàn\" — hình vẽ mã là lỗi). Mỗi mục đang hiện tạm bằng hình vẽ mã; chạy trên máy 24H như PM10, ảnh chỉ hiện sau khi tam duyệt, rồi gỡ mục khỏi danh sách. Phép thử: check-samples.mjs và kiem-loi-cu.mjs chặn mọi hình vẽ mã không có trong danh sách này. Gồm cả hình engine tự dùng (nhạc cụ E-âm thanh) và bài 1 (mặt trăng, chong chóng).",
+ "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, natural expression, simple clean composition, not too detailed, for kids aged 4 to 6",
+ "style_do_vat": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, simple clean composition, not too detailed, for kids aged 4 to 6, plain object without face or eyes",
+ "negative": "3d render, cgi, plastic, glossy, shiny, photorealistic, photo, anime, text, letters, watermark, signature, logo, extra limbs, extra fingers, deformed, cluttered background, harsh shadows, neon colors, scary",
+ "seeds": [
+  22,
+  23,
+  24,
+  25
+ ],
+ "items": [
+  {
+   "id": "PM31-OB-bau-troi",
+   "slot": "art:bau-troi",
+   "vi": "Bầu trời (đầu giỏ \"Trên trời\")",
+   "prompt": "a small round patch of soft blue sky with two fluffy white clouds and a little warm yellow sun peeking out, vignette shape, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-mat-dat",
+   "slot": "art:mat-dat",
+   "vi": "Mặt đất (đầu giỏ \"Trên cạn\")",
+   "prompt": "a small round patch of green grassy ground with brown soil edge, a tiny tree and a few small flowers, vignette shape, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-tho",
+   "slot": "art:tho",
+   "vi": "Bạn thỏ",
+   "prompt": "a cute small white rabbit with long ears sitting on the grass, side view, gentle friendly animal, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-vit",
+   "slot": "art:vit",
+   "vi": "Con vịt",
+   "prompt": "a cute small yellow duck standing, side view, gentle friendly animal, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-may",
+   "slot": "art:may",
+   "vi": "Đám mây",
+   "prompt": "a single fluffy white cloud with soft blue shading, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-mat-troi",
+   "slot": "art:mat-troi",
+   "vi": "Mặt trời",
+   "prompt": "a warm yellow sun with soft rounded rays, no face, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-cau-vong",
+   "slot": "art:cau-vong",
+   "vi": "Cầu vồng",
+   "prompt": "a soft pastel rainbow arc with small white clouds at both ends, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-sao",
+   "slot": "art:sao",
+   "vi": "Ngôi sao",
+   "prompt": "a single golden five-pointed star with rounded tips, no face, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-bong-bay",
+   "slot": "art:bong-bay",
+   "vi": "Quả bóng bay",
+   "prompt": "a single red balloon with a curly string, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-ban-chai",
+   "slot": "art:ban-chai",
+   "vi": "Bàn chải đánh răng",
+   "prompt": "a child toothbrush with blue handle and soft white bristles, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-rang",
+   "slot": "art:rang",
+   "vi": "Cái răng",
+   "prompt": "a single clean white tooth, cute simple shape, no face, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-luoc",
+   "slot": "art:luoc",
+   "vi": "Cái lược",
+   "prompt": "a small pink plastic hair comb, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-toc",
+   "slot": "art:toc",
+   "vi": "Mái tóc",
+   "prompt": "a small tuft of brown child hair with a soft wave, no face, no person, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-o",
+   "slot": "art:o",
+   "vi": "Cái ô",
+   "prompt": "an open yellow child umbrella, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-mua",
+   "slot": "art:mua",
+   "vi": "Mưa",
+   "prompt": "a small grey rain cloud with blue raindrops falling, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-keo",
+   "slot": "art:keo",
+   "vi": "Cái kéo",
+   "prompt": "a pair of child safety scissors with rounded tips and green handles, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-giay-to",
+   "slot": "art:giay-to",
+   "vi": "Tờ giấy",
+   "prompt": "a sheet of white paper with a slightly curled corner, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-chau-cay",
+   "slot": "art:chau-cay",
+   "vi": "Chậu cây",
+   "prompt": "a small terracotta flower pot with a green seedling, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-thia",
+   "slot": "art:thia",
+   "vi": "Cái thìa",
+   "prompt": "a small child spoon, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-bat-com",
+   "slot": "art:bat-com",
+   "vi": "Bát cơm",
+   "prompt": "a bowl of white steamed rice in a blue patterned ceramic bowl, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-ban-tay",
+   "slot": "art:ban-tay",
+   "vi": "Bàn tay",
+   "prompt": "an open small child hand palm facing viewer, only the hand, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-nha-ga",
+   "slot": "art:nha-ga",
+   "vi": "Chuồng gà",
+   "prompt": "a small wooden chicken coop with a little door and straw, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-mu-tho-xay",
+   "slot": "art:mu-tho-xay",
+   "vi": "Mũ thợ xây",
+   "prompt": "a yellow construction hard hat, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-bua",
+   "slot": "art:bua",
+   "vi": "Cái búa",
+   "prompt": "a small wooden hammer with a grey metal head, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-mu-cuu-hoa",
+   "slot": "art:mu-cuu-hoa",
+   "vi": "Mũ lính cứu hỏa",
+   "prompt": "a red firefighter helmet, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-voi-cuu-hoa",
+   "slot": "art:voi-cuu-hoa",
+   "vi": "Vòi cứu hỏa",
+   "prompt": "a coiled red fire hose with brass nozzle, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-banh-mi",
+   "slot": "art:banh-mi",
+   "vi": "Ổ bánh mì",
+   "prompt": "a golden Vietnamese baguette bread loaf, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-hop",
+   "slot": "art:hop",
+   "vi": "Cái hộp",
+   "prompt": "a small closed cardboard box, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-giay",
+   "slot": "art:giay",
+   "vi": "Đôi giày",
+   "prompt": "a pair of small child sneakers, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-sach",
+   "slot": "art:sach",
+   "vi": "Quyển sách",
+   "prompt": "a closed colorful children picture book, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-ly",
+   "slot": "art:ly",
+   "vi": "Cái ly",
+   "prompt": "a clear glass of water, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-mu",
+   "slot": "art:mu",
+   "vi": "Cái mũ",
+   "prompt": "a small child sun hat, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-bui-co",
+   "slot": "art:bui-co",
+   "vi": "Bụi cỏ",
+   "prompt": "a small clump of fresh green grass with a few tiny flowers, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-trong",
+   "slot": "art:trong",
+   "vi": "Cái trống",
+   "prompt": "a small red child toy drum with two wooden drumsticks, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-chuong",
+   "slot": "art:chuong",
+   "vi": "Cái chuông",
+   "prompt": "a small golden hand bell with a wooden handle, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-dan",
+   "slot": "art:dan",
+   "vi": "Đàn gõ",
+   "prompt": "a small colorful child xylophone with rainbow bars and a mallet, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-xac-xo",
+   "slot": "art:xac-xo",
+   "vi": "Cái xắc xô",
+   "prompt": "a small wooden tambourine with little metal jingles, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-mat-trang",
+   "slot": "art:mat-trang",
+   "vi": "Mặt trăng",
+   "prompt": "a soft pale yellow crescent moon, no face, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "PM31-OB-chong-chong",
+   "slot": "art:chong-chong",
+   "vi": "Chong chóng",
+   "prompt": "a colorful paper pinwheel on a wooden stick, isolated on plain white background",
+   "tach_nen": true
+  }
+ ]
+}
