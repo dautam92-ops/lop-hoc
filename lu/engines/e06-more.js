@@ -99,19 +99,27 @@ function diff(ctx, act, R, first) {
     ui.scene(act.title, `<div class="diff"><div class="df-pic" data-p="L">${frameHTML({ bg: sc.bg, items: itemsL })}</div><div class="df-pic" data-p="R">${frameHTML({ bg: sc.bg, items: itemsR })}</div></div>
       <div class="df-count">${R.changes.map(() => '<i></i>').join('')}</div>`);
     const pics = [...ui.stage.querySelectorAll('.df-pic')], dots = [...ui.stage.querySelectorAll('.df-count i')];
-    const hits = R.changes.map(c => { const o = sc.objs[c.i]; const w = o.w || 16; return { c, x: o.x, y: (o.y ?? 90) - w * .89, r: Math.max(12, w * .95) }; });
-    const ring = (h, ok) => pics.forEach(p => p.querySelector('.frame').insertAdjacentHTML('beforeend', `<span class="df-ring${ok ? '' : ' x'}" style="left:${h.x}%;top:${h.y}%;width:${h.r * 2 / 1.78}%;"></span>`));
+    // Vùng chạm lấy từ vị trí THẬT của vật trên màn (không ước lượng), rộng hơn vật một lề để bé chạm gần cũng nhận;
+    // vòng đánh dấu đặt đúng tâm vật (tam 26/11 18:35: vòng lệch khỏi mặt trời, con mèo; chạm đúng vật không ăn).
+    const hits = R.changes.map(c => ({ c }));
+    const geo = (p, h) => { const fr = p.querySelector('.frame').getBoundingClientRect(); const el = p.querySelectorAll('.fr-it')[h.c.i]; const r = el.getBoundingClientRect();
+      const W = Math.max(r.width, r.height), pad = Math.max(28, W * .35);
+      return { fr, cx: r.left + r.width / 2 - fr.left, cy: r.top + r.height / 2 - fr.top, hw: r.width / 2 + pad, hh: r.height / 2 + pad, d: W * 1.3 }; };
+    const ring = (h, ok) => pics.forEach(p => { const g = geo(p, h); p.querySelector('.frame').insertAdjacentHTML('beforeend', `<span class="df-ring${ok ? '' : ' x'}" style="left:${g.cx / g.fr.width * 100}%;top:${g.cy / g.fr.height * 100}%;width:${g.d / g.fr.width * 100}%;"></span>`); });
     const tap = (p, x, y) => {
-      const hit = hits.find(h => !found.has(h.c.i) && Math.hypot((x - h.x) * 1.78, y - h.y) <= h.r * 1.2);
+      const hit = hits.map(h => ({ h, g: geo(p, h) })).filter(({ h }) => !found.has(h.c.i))
+        .map(o => ({ ...o, dx: Math.abs(x / 100 * o.g.fr.width - o.g.cx), dy: Math.abs(y / 100 * o.g.fr.height - o.g.cy) }))
+        .filter(o => o.dx <= o.g.hw && o.dy <= o.g.hh).sort((a, b) => Math.hypot(a.dx, a.dy) - Math.hypot(b.dx, b.dy))[0]?.h;
       if (hit) { found.add(hit.c.i); ring(hit, true); dots[found.size - 1].classList.add('on');
         ctx.record({ skill_id: act.skill_id, correct: true, first_try: misses === 0, tries: misses + 1, hints: 0 }); misses = 0;
         if (found.size === hits.length) voice.say(['__jingle', act.done]).then(done); else { voice.speak(['__jingle']); mark(); } }
-      else { misses++; const xx = pics[0].querySelector('.frame'); xx.insertAdjacentHTML('beforeend', `<span class="df-miss" style="left:${x}%;top:${y}%"></span>`); setTimeout(() => ui.stage.querySelectorAll('.df-miss').forEach(m => m.remove()), 600);
+      else { misses++; const xx = p.querySelector('.frame'); xx.insertAdjacentHTML('beforeend', `<span class="df-miss" style="left:${x}%;top:${y}%"></span>`); setTimeout(() => ui.stage.querySelectorAll('.df-miss').forEach(m => m.remove()), 600);
         voice.speak(['__boing']); if (misses === 3 && act.hint) voice.say([act.hint]); }
     };
+    globalThis.__luHit = () => hits.map(h => ({ i: h.c.i, found: found.has(h.c.i), pics: pics.map(p => { const g = geo(p, h); return { cx: g.cx + g.fr.left, cy: g.cy + g.fr.top, hw: g.hw, hh: g.hh }; }) }));
     pics.forEach(p => p.addEventListener('click', e => { if (voice.busy) return; const r = p.getBoundingClientRect(); tap(p, (e.clientX - r.left) / r.width * 100, (e.clientY - r.top) / r.height * 100); }));
     const mark = () => { const h = hits.find(h => !found.has(h.c.i)); if (!h) return; const el = pics[1]; ctx.test.mark([el]); };
-    setAuto(ctx, async () => { for (const h of hits) if (!found.has(h.c.i)) { tap(pics[1], h.x, h.y); await sleep(ctx, 120); while (voice.busy) await sleep(ctx, 60); } }, () => tap(pics[1], 2, 2));
+    setAuto(ctx, async () => { for (const h of hits) if (!found.has(h.c.i)) { const g = geo(pics[1], h); tap(pics[1], g.cx / g.fr.width * 100, g.cy / g.fr.height * 100); await sleep(ctx, 120); while (voice.busy) await sleep(ctx, 60); } }, () => tap(pics[1], 2, 2));
     mark();
     voice.say(first ? [...(act.intro || []), act.q] : [act.again || act.q]);
   });

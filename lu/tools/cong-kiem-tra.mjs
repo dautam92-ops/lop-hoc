@@ -59,6 +59,8 @@ for (const r of rep.runs) {
   // Quy tắc 33 (tam 26/11 17:35): nội dung bé học to và nằm giữa màn hình
   const dev = r.vp === 'phone' ? 'phone' : 'ipad';
   const tg = s.flatMap(x => danhGia(x.toGiua, dev).map(e => `${x.file}: ${e}`));
+  const lc = s.flatMap(x => (x.loiCu || []).map(e => `${x.file}: ${e}`));
+  check(`[${r.vp}] Không lặp lỗi tam đã báo (kéo thả, chạm điểm trên ảnh, úp đồ vật…)`, !lc.length, lc.slice(0, 3).join('; '));
   check(`[${r.vp}] Nội dung học to, nằm giữa màn (quy tắc 33)`, s.length > 0 && !tg.length, tg.slice(0, 3).join('; '));
 }
 
