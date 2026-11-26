@@ -1,6 +1,9 @@
 // Phép thử cho các lỗi tam đã báo (tam 26/11 18:40: "mọi lỗi tôi đã gửi không được phép lặp lại").
 // Chạy trên một màn đang mở; dùng chung cho Phòng mẫu (test-lab.mjs) và cổng kiểm tra bài (play-draft.mjs → cong-kiem-tra.mjs).
 // Thêm lỗi mới: viết phép thử ở đây, chạy trên bản lỗi để thấy nó bắt được, rồi sửa và ghi vào SO-LOI.md.
+import { readFileSync } from 'node:fs';
+// Hình vẽ mã còn chờ ảnh vẽ tay trên máy 24H (tools/lab/anh-con-thieu.json); ngoài danh sách này, đồ vật/con vật/cảnh vẽ mã là lỗi.
+const CHO_ANH = (() => { try { return JSON.parse(readFileSync(new URL('./lab/anh-con-thieu.json', import.meta.url))).items.map(i => i.slot.replace(/^art:/, '')); } catch { return []; } })();
 export async function kiemLoiCu(page) {
   const r = { checks: {} }, errs = [];
     // Kéo thả: vật đang kéo giữ đúng cỡ ô, không phóng to (tam 26/11 18:17: táo, rau khổng lồ che màn)
@@ -33,6 +36,9 @@ export async function kiemLoiCu(page) {
     return [...G.querySelectorAll('.wh-c:not(.open)')].filter(c => { const a = c.querySelector('.wh-f .lu-art, .wh-f img, .wh-f svg'); if (!a) return false; const r = c.getBoundingClientRect(); const t = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
       return getComputedStyle(a).visibility !== 'hidden' && (t === a || a.contains(t)); }).length; });
     if (whShow !== null) { r.checks.upKinKhiHoi = whShow === 0; if (whShow) errs.push(`Ghi nhớ vị trí: lúc hỏi còn ${whShow} đồ vật nhìn thấy, chưa úp kín`); }
+    // Hình nghèo nàn (tam 26/11 19:04): đồ vật, con vật, cảnh trên màn phải là ảnh vẽ tay; hình vẽ mã chỉ cho hình học, hình có tham số, hoặc đang chờ vẽ
+    const ma = await page.evaluate(cho => [...new Set([...document.querySelectorAll('.stage svg[data-art]')].filter(x => x.getBoundingClientRect().width > 0).map(x => x.dataset.art))].filter(k => !/^hinh-/.test(k) && !cho.includes(k)), CHO_ANH);
+    r.checks.hinhVeTay = !ma.length; if (ma.length) errs.push(`Hình nghèo nàn: ${ma.join(', ')} còn là hình vẽ mã, cần ảnh vẽ tay (thêm vào tools/lab/anh-con-thieu.json để vẽ trên máy 24H)`);
   return { checks: r.checks, errs };
 }
 

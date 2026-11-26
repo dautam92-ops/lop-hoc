@@ -49,6 +49,9 @@ const voice = createVoice({ clips: audio.clips, base: '../content/audio/', fast,
 const ui = createUI(root, voice, { controls: true });
 ui.setSteps([S.title]); ui.setStep(0);
 const bd = sceneHTML(S.bd || 'L001-BG-02'); ui.setBackdrop(S.bd || 'L001-BG-02', bd.html, bd.real);
+// Hình vẽ tạm bằng mã đang chờ ảnh vẽ tay (máy 24H): báo ngay trên màn để tam biết chỗ nào còn thiếu ảnh
+setInterval(() => { const k = [...new Set([...document.querySelectorAll('.stage svg[data-art]')].filter(x => x.getBoundingClientRect().width && !/^hinh-/.test(x.dataset.art)).map(x => x.dataset.art))]; let el = document.querySelector('.lab-hinh');
+  if (!k.length) { el?.remove(); return; } if (!el) { document.body.insertAdjacentHTML('beforeend', '<div class="lab-hinh"></div>'); el = document.querySelector('.lab-hinh'); } el.textContent = `Hình tạm, chờ ảnh vẽ tay: ${k.length}`; }, 800);
 const badge = () => { if (!usedTmp || document.querySelector('.lab-tmp')) return; document.body.insertAdjacentHTML('beforeend', '<div class="lab-tmp">Giọng tạm của trình duyệt: câu này chưa có file giọng Hoài My</div>'); };
 
 /* ---------- Ghi lời thoại đã phát để kiểm tra "sai thì không khen" ---------- */

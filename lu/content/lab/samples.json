@@ -1180,13 +1180,13 @@
       {
        "id": "troi",
        "label": "Trên trời",
-       "e": "art:may",
+       "e": "art:bau-troi",
        "say": "Trên trời."
       },
       {
        "id": "can",
        "label": "Trên cạn",
-       "e": "art:bui-co",
+       "e": "art:mat-dat",
        "say": "Trên cạn."
       }
      ],

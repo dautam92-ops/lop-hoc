@@ -130,7 +130,7 @@ S('CC-06', 'Xếp đồ về đúng chỗ', cc=['CC-06'], x=[11], program='Tư d
                   {'e': 'art:banh-mi', 'g': 'an'}, {'e': 'art:tao', 'g': 'an'}, {'e': 'art:ca-rot', 'g': 'an'}, {'e': 'art:rau', 'g': 'an'}],
            per_round=4, rounds=2, no='Bé nghĩ xem mình dùng thứ này để làm gì nhé.', done='Đồ nào cũng về đúng giỏ rồi!'),
   l56=dict(skill_id='TD.LG.05', intro=['Các con vật đi lạc rồi. Bé đưa con vật về chỗ của nó nhé: dưới nước, trên trời hay trên cạn.'], again='Bé xếp tiếp nhé.',
-           groups=[{'id': 'nuoc', 'label': 'Dưới nước', 'e': 'art:ao-nuoc', 'say': 'Dưới nước.'}, {'id': 'troi', 'label': 'Trên trời', 'e': 'art:may', 'say': 'Trên trời.'}, {'id': 'can', 'label': 'Trên cạn', 'e': 'art:bui-co', 'say': 'Trên cạn.'}],
+           groups=[{'id': 'nuoc', 'label': 'Dưới nước', 'e': 'art:ao-nuoc', 'say': 'Dưới nước.'}, {'id': 'troi', 'label': 'Trên trời', 'e': 'art:bau-troi', 'say': 'Trên trời.'}, {'id': 'can', 'label': 'Trên cạn', 'e': 'art:mat-dat', 'say': 'Trên cạn.'}],
            items=[{'e': 'art:ca', 'g': 'nuoc'}, {'e': 'art:ech', 'g': 'nuoc'}, {'e': 'art:vit', 'g': 'nuoc'}, {'e': 'art:chim', 'g': 'troi'}, {'e': 'art:buom', 'g': 'troi'}, {'e': 'art:ong', 'g': 'troi'},
                   {'e': 'art:meo', 'g': 'can'}, {'e': 'art:tho', 'g': 'can'}, {'e': 'art:ga', 'g': 'can'}, {'e': 'art:oc', 'g': 'can'}],
            per_round=5, rounds=2, no='Bé nghĩ xem con vật này bơi, bay hay đi trên mặt đất nhé.', done='Con vật nào cũng về đúng chỗ rồi!'),

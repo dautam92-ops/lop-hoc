@@ -137,6 +137,8 @@ export function groupHTML(obj, n) {
   return `<span class="grp-box" role="img" aria-label="${n}">${pts.map(([x, y]) => `<span class="grp-it" style="left:${x}%;top:${y}%;width:${size}%;height:${size}%">${vis(obj)}</span>`).join('')}</span>`;
 }
 let luFn = null, assetSrc = {};
+// Hình tạm cho slot mới khi chưa có ảnh vẽ tay (chờ máy 24H): bầu trời, mặt đất cho giỏ phân loại.
+const ART_TAM = { 'bau-troi': 'may', 'mat-dat': 'bui-co' };
 export const setVisLu = f => { luFn = f; };
 export const setVisAssets = m => { assetSrc = m || {}; };
 export function vis(x) {
@@ -149,7 +151,8 @@ export function vis(x) {
   if (x.startsWith('art:')) { const [, k, arg] = x.split(':');
     // Ảnh vẽ tay đã duyệt thay cho hình vẽ mã (slot "art:hat-dau" trong Asset Registry); hình có tham số (màu, số trên cọc) giữ hình vẽ mã
     if (!arg && assetSrc['art:' + k]) return `<img class="lu-art asset" src="${assetSrc['art:' + k]}" alt="" draggable="false">`;
-    return ART[k] ? ART[k](arg ? decodeURIComponent(arg) : undefined) : ''; }
+    // Hình vẽ mã gắn data-art để phép thử biết chỗ nào còn thiếu ảnh vẽ tay (tam 26/11: hình nghèo nàn là lỗi). Có tham số (màu, số) thì data-art-ts.
+    const f = ART[k] || ART[ART_TAM[k]]; return f ? f(arg ? decodeURIComponent(arg) : undefined).replace('<svg ', `<svg data-art${arg ? '-ts' : ''}="${k}" `) : ''; }
   if (x.startsWith('face:')) return face(x.slice(5));
   return x;
 }
