@@ -1,7 +1,7 @@
 {
  "format": "lu-voice-todo",
  "lesson": "PHONG-MAU",
- "at": "2026-11-26T10:05:35.627Z",
+ "at": "2026-11-26T11:31:40.198Z",
  "lines": [
   {
    "text": "Đồ chơi của Lu lẫn lộn hết rồi. Bé giúp Lu tìm nhé.",
@@ -508,79 +508,19 @@
    "lang": "vi"
   },
   {
-   "text": "Bé chọn màu bút sáp rồi vẽ ông mặt trời nhé. Vẽ xong bé bấm Xong rồi.",
+   "text": "Bé chọn màu bút sáp rồi tô theo nét đứt để vẽ ông mặt trời nhé. Vẽ xong bé bấm Vẽ xong.",
    "lang": "vi"
   },
   {
-   "text": "Lu cất tranh của bé vào tủ tranh rồi.",
+   "text": "Ông mặt trời của bé thật ấm áp! Lu cất tranh vào tủ tranh rồi.",
    "lang": "vi"
   },
   {
-   "text": "Bé đã vẽ gì nào?",
+   "text": "Bé tô theo nét đứt để vẽ chú cá đang bơi nhé. Tô xong bé vẽ thêm gì cũng được, rồi bấm Vẽ xong.",
    "lang": "vi"
   },
   {
-   "text": "Ông mặt trời.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ông mặt trời của bé thật ấm áp.",
-   "lang": "vi"
-  },
-  {
-   "text": "Một bông hoa.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bông hoa của bé thật xinh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Một ngôi nhà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ngôi nhà của bé thật vui.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé vẽ con vật bé thích nhất nhé. Vẽ xong bé bấm Xong rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé đã vẽ con gì nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Con mèo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chú mèo của bé trông thật đáng yêu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Con cá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chú cá của bé bơi thật vui.",
-   "lang": "vi"
-  },
-  {
-   "text": "Con chim.",
-   "lang": "en"
-  },
-  {
-   "text": "Chú chim của bé sắp bay lên rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Con bướm.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bạn bướm của bé có đôi cánh thật đẹp.",
+   "text": "Chú cá của bé bơi thật vui! Lu cất tranh vào tủ tranh rồi.",
    "lang": "vi"
   },
   {
@@ -1000,83 +940,19 @@
    "lang": "vi"
   },
   {
-   "text": "Lu vẽ một vòng tròn. Bé vẽ thêm để vòng tròn biến thành thứ gì bé thích nhé.",
+   "text": "Lu vẽ một vòng tròn. Bé tô theo nét đứt để vòng tròn biến thành ông mặt trời nhé.",
    "lang": "vi"
   },
   {
-   "text": "Ý tưởng của bé hay lắm!",
+   "text": "Vòng tròn đã thành ông mặt trời rồi! Bé giỏi quá.",
    "lang": "vi"
   },
   {
-   "text": "Vòng tròn của bé đã thành gì?",
+   "text": "Lu vẽ một hình tam giác. Bé tô theo nét đứt để biến nó thành ngôi nhà nhé. Tô xong bé vẽ thêm gì cũng được.",
    "lang": "vi"
   },
   {
-   "text": "Ông mặt trời rực rỡ quá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Quả bóng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Quả bóng tròn lăn thật xa.",
-   "lang": "vi"
-  },
-  {
-   "text": "Quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Quả táo trông ngon quá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Khuôn mặt con mèo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chú mèo của bé thật đáng yêu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu vẽ một hình tam giác và hai nét ngang. Bé biến chúng thành một bức tranh nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé đã vẽ thành gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Ngôi nhà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ngôi nhà của bé thật ấm cúng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cái cây.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cái cây của bé thật cao.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chiếc nón lá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chiếc nón lá thật xinh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Con diều.",
-   "lang": "vi"
-  },
-  {
-   "text": "Con diều bay thật cao.",
+   "text": "Hình tam giác đã thành ngôi nhà xinh rồi! Bé giỏi quá.",
    "lang": "vi"
   },
   {
@@ -1292,6 +1168,18 @@
    "lang": "vi"
   },
   {
+   "text": "Con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con chim.",
+   "lang": "en"
+  },
+  {
+   "text": "Con mèo.",
+   "lang": "vi"
+  },
+  {
    "text": "Lần này Lu nghĩ về con gì?",
    "lang": "vi"
   },
@@ -1325,6 +1213,10 @@
   },
   {
    "text": "Con vật này không bay cao được.",
+   "lang": "vi"
+  },
+  {
+   "text": "Con bướm.",
    "lang": "vi"
   },
   {

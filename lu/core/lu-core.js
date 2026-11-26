@@ -155,7 +155,7 @@ export function dragOrTap(piece, { isBusy, targetClass, onDrop, onSelect }) {
     if (isBusy()) return; ev.preventDefault();
     const r0 = piece.getBoundingClientRect(); const sx = ev.clientX, sy = ev.clientY; let moved = false, ghost = null;
     const mv = e => { const dx = e.clientX - sx, dy = e.clientY - sy;
-      if (!moved && Math.hypot(dx, dy) > 8) { moved = true; ghost = piece.cloneNode(true); ghost.classList.add('drag'); ghost.style.width = r0.width + 'px'; ghost.style.height = r0.height + 'px'; document.body.appendChild(ghost); piece.classList.add('ghost'); }
+      if (!moved && Math.hypot(dx, dy) > 8) { moved = true; ghost = piece.cloneNode(true); ghost.classList.add('drag'); ghost.style.width = r0.width + 'px'; ghost.style.height = r0.height + 'px'; (piece.closest('.lu-lesson') || document.body).appendChild(ghost); /* trong .lu-lesson để ảnh kéo giữ cỡ ô (26/11: ảnh vẽ tay bị phóng to cỡ gốc) */ piece.classList.add('ghost'); }
       if (ghost) { ghost.style.left = (r0.left + dx) + 'px'; ghost.style.top = (r0.top + dy) + 'px'; } };
     const up = e => { removeEventListener('pointermove', mv); removeEventListener('pointerup', up); removeEventListener('pointercancel', up);
       if (ghost) { ghost.remove(); piece.classList.remove('ghost'); const t = document.elementsFromPoint(e.clientX, e.clientY).find(x => x.classList && x.classList.contains(targetClass)); if (t) onDrop(piece, t); }

@@ -209,14 +209,12 @@ S('CC-14', 'Tập tô cùng Lu', cc=['CC-14'], x=[21], program='Tập tô chữ 
   note='Dữ liệu nét chữ là bản nháp, cần chuyên môn tiểu học kiểm tra điểm bắt đầu và chiều nét trước khi dùng thật.')
 
 S('CC-15', 'Bé vẽ tranh', cc=['CC-15'], x=[30], program='Nghệ thuật', group='Nghệ thuật', engine='E14', mode='draw',
-  methods=['M097', 'M096'], goal='Vẽ tự do bằng bút sáp; Lu hỏi bé vẽ gì và đáp lại.',
-  diff='4–5: chủ đề gợi ý mặt trời. 5–6: chủ đề tự chọn, cần nhiều nét hơn.',
-  l45=dict(skill_id='KP.ST.D01', intro=['Bé chọn màu bút sáp rồi vẽ ông mặt trời nhé. Vẽ xong bé bấm Xong rồi.'], min_strokes=2,
-           ask='Bé đã vẽ gì nào?', ideas=[{'e': 'art:mat-troi', 'say': 'Ông mặt trời.', 'reply': 'Ông mặt trời của bé thật ấm áp.'}, {'e': 'art:hoa', 'say': 'Một bông hoa.', 'reply': 'Bông hoa của bé thật xinh.'}, {'e': 'art:nha', 'say': 'Một ngôi nhà.', 'reply': 'Ngôi nhà của bé thật vui.'}],
-           done='Lu cất tranh của bé vào tủ tranh rồi.'),
-  l56=dict(skill_id='KP.ST.D01', intro=['Bé vẽ con vật bé thích nhất nhé. Vẽ xong bé bấm Xong rồi.'], min_strokes=4,
-           ask='Bé đã vẽ con gì nào?', ideas=[{'e': 'art:meo', 'say': 'Con mèo.', 'reply': 'Chú mèo của bé trông thật đáng yêu.'}, {'e': 'art:ca', 'say': 'Con cá.', 'reply': 'Chú cá của bé bơi thật vui.'}, {'e': 'art:chim', 'say': 'Con chim.', 'reply': 'Chú chim của bé sắp bay lên rồi.'}, {'e': 'art:buom', 'say': 'Con bướm.', 'reply': 'Bạn bướm của bé có đôi cánh thật đẹp.'}],
-           done='Lu cất tranh của bé vào tủ tranh rồi.'))
+  methods=['M097', 'M096'], goal='Cầm bút sáp tô theo nét đứt của tranh cho sẵn (tập kiểm soát nét), rồi vẽ thêm tùy thích. Không hỏi lại bé đã vẽ gì (tam 26/11).',
+  diff='4–5: ông mặt trời, nét tròn và nét thẳng. 5–6: con cá và sóng nước, nét cong, cần nhiều nét hơn.',
+  l45=dict(skill_id='KP.ST.D01', trace='<circle cx="200" cy="150" r="55"/><path d="M200 70 V40 M200 230 V260 M120 150 H90 M280 150 H310 M143 93 L122 72 M257 93 L278 72 M143 207 L122 228 M257 207 L278 228"/>', intro=['Bé chọn màu bút sáp rồi tô theo nét đứt để vẽ ông mặt trời nhé. Vẽ xong bé bấm Vẽ xong.'], min_strokes=2,
+           done='Ông mặt trời của bé thật ấm áp! Lu cất tranh vào tủ tranh rồi.'),
+  l56=dict(skill_id='KP.ST.D01', trace='<path d="M110 150 Q180 80 260 150 Q180 220 110 150 Z"/><path d="M260 150 L320 110 L320 190 Z"/><circle cx="150" cy="140" r="8"/><path d="M185 115 Q200 95 220 112"/><path d="M70 240 Q95 225 120 240 T170 240 M230 240 Q255 225 280 240 T330 240"/>', intro=['Bé tô theo nét đứt để vẽ chú cá đang bơi nhé. Tô xong bé vẽ thêm gì cũng được, rồi bấm Vẽ xong.'], min_strokes=4,
+           done='Chú cá của bé bơi thật vui! Lu cất tranh vào tủ tranh rồi.'))
 
 S('CC-16', 'Tô màu bướm và hoa', cc=['CC-16'], x=[30], program='Nghệ thuật', group='Nghệ thuật', engine='E13', mode='color',
   methods=['M096'], goal='Chọn màu và tô vào tranh; 5–6 tuổi tô theo số (số nào màu nấy).',
@@ -334,15 +332,13 @@ S('CC-24', 'Trang trí vườn hoa', cc=['CC-24'], x=[30], program='Sáng tạo'
   l56=dict(skill_id='KP.ST.D01', bg='asset:BC-0003', stickers=['art:hoa', 'art:buom', 'art:ong', 'art:mat-troi', 'art:may', 'art:chim', 'art:cau-vong', 'art:cay', 'art:oc'], min=5, intro=['Bé hãy làm khu vườn trong mơ của bé. Kéo thật nhiều hình dán vào nhé. Xong bé bấm Xong rồi.'], done='Khu vườn trong mơ của bé thật đẹp! Lu cất vào tủ tranh rồi.'))
 
 S('CC-25', 'Vòng tròn biến thành gì?', cc=['CC-25'], x=[16], program='Tưởng tượng', group='Nghệ thuật', engine='E14', mode='draw',
-  methods=['M041', 'M045', 'M042'], goal='Vẽ thêm vào hình có sẵn để biến nó thành vật bé tưởng tượng; không có đáp án duy nhất.',
-  diff='4–5: một vòng tròn. 5–6: hình tam giác và hai nét, cần nhiều nét hơn.',
-  l45=dict(skill_id='TD.TTg.02', base='<circle cx="200" cy="150" r="70"/>', intro=['Lu vẽ một vòng tròn. Bé vẽ thêm để vòng tròn biến thành thứ gì bé thích nhé.'], min_strokes=2,
-           ask='Vòng tròn của bé đã thành gì?', ideas=[{'e': 'art:mat-troi', 'say': 'Ông mặt trời.', 'reply': 'Ông mặt trời rực rỡ quá.'}, {'e': 'art:bong', 'say': 'Quả bóng.', 'reply': 'Quả bóng tròn lăn thật xa.'}, {'e': 'art:tao', 'say': 'Quả táo.', 'reply': 'Quả táo trông ngon quá.'}, {'e': 'art:meo', 'say': 'Khuôn mặt con mèo.', 'reply': 'Chú mèo của bé thật đáng yêu.'}],
-           done='Ý tưởng của bé hay lắm!'),
-  l56=dict(skill_id='TD.TTg.02', base='<path d="M200 70 L270 200 L130 200 Z"/><path d="M90 240 h60 M250 240 h60"/>', intro=['Lu vẽ một hình tam giác và hai nét ngang. Bé biến chúng thành một bức tranh nhé.'], min_strokes=4,
-           ask='Bé đã vẽ thành gì?', ideas=[{'e': 'art:nha', 'say': 'Ngôi nhà.', 'reply': 'Ngôi nhà của bé thật ấm cúng.'}, {'e': 'art:cay', 'say': 'Cái cây.', 'reply': 'Cái cây của bé thật cao.'}, {'e': 'art:non-la', 'say': 'Chiếc nón lá.', 'reply': 'Chiếc nón lá thật xinh.'}, {'e': 'art:dieu', 'say': 'Con diều.', 'reply': 'Con diều bay thật cao.'}],
-           done='Ý tưởng của bé hay lắm!'),
-  note='Hoạt động mở: không chấm đúng sai, Lu đón nhận mọi ý tưởng.')
+  methods=['M041', 'M045', 'M042'], goal='Hình có sẵn biến thành tranh khi bé tô theo nét đứt; tô xong bé vẽ thêm tùy thích. Không hỏi lại bé đã vẽ gì (tam 26/11).',
+  diff='4–5: vòng tròn thành ông mặt trời. 5–6: hình tam giác thành ngôi nhà, nhiều nét hơn.',
+  l45=dict(skill_id='TD.TTg.02', base='<circle cx="200" cy="150" r="70"/>', trace='<path d="M200 60 V35 M200 240 V265 M110 150 H85 M290 150 H315 M137 87 L118 68 M263 87 L282 68 M137 213 L118 232 M263 213 L282 232"/><circle cx="175" cy="135" r="6"/><circle cx="225" cy="135" r="6"/><path d="M170 170 Q200 195 230 170"/>', intro=['Lu vẽ một vòng tròn. Bé tô theo nét đứt để vòng tròn biến thành ông mặt trời nhé.'], min_strokes=2,
+           done='Vòng tròn đã thành ông mặt trời rồi! Bé giỏi quá.'),
+  l56=dict(skill_id='TD.TTg.02', base='<path d="M200 70 L270 200 L130 200 Z"/>', trace='<path d="M145 200 V265 H255 V200"/><path d="M185 265 V225 H215 V265"/><path d="M225 215 h22 v20 h-22 Z"/><path d="M60 265 H340"/><path d="M235 105 V75 H255 V140"/>', intro=['Lu vẽ một hình tam giác. Bé tô theo nét đứt để biến nó thành ngôi nhà nhé. Tô xong bé vẽ thêm gì cũng được.'], min_strokes=4,
+           done='Hình tam giác đã thành ngôi nhà xinh rồi! Bé giỏi quá.'),
+  note='Không chấm đúng sai; nét đứt chỉ để bé tập tô, tô lệch vẫn được.')
 
 S('CC-26', 'Đi tìm quanh nhà', cc=['CC-26'], x=[25], program='Vận động và phối hợp tay mắt', group='Vận động', engine='E15', mode='do',
   methods=['M090', 'M100', 'M099'], goal='Rời màn hình, tìm đồ vật thật trong nhà cùng bố mẹ rồi quay lại báo Lu.',

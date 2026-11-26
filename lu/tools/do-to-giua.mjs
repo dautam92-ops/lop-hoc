@@ -17,7 +17,10 @@ export async function doToGiua() {
   const ok = r => r.width > 4 && r.height > 4 && r.bottom > 0 && r.top < vh;
   const shown = el => { for (let x = el; x && x !== document.body; x = x.parentElement) { const s = getComputedStyle(x); if (s.visibility === 'hidden' || s.display === 'none') return false; } return true; };
   const TILE = '.stage .opt, .stage .card, .stage .piece, .stage .cell-f, .stage .shadow, .stage .prop';
-  const tiles = [...document.querySelectorAll(TILE)].filter(e => !e.closest('.lbl') && !e.classList.contains('crayon') && shown(e)).map(e => e.getBoundingClientRect()).filter(ok);
+  const els = [...document.querySelectorAll(TILE)].filter(e => !e.closest('.lbl') && !e.classList.contains('crayon') && shown(e)).filter(e => ok(e.getBoundingClientRect()));
+  const tiles = els.map(e => e.getBoundingClientRect());
+  // mảnh ghép tranh có hình dạng theo tranh gốc (dẹt), nên đo cạnh dài
+  const side = (e, r) => e.classList.contains('pz-piece') ? Math.max(r.width, r.height) : Math.min(r.width, r.height);
   if (!tiles.length) return { skip: true };
   const parts = [...document.querySelectorAll('.stage .scene > *:not(.guide):not(.bd-note), .stage .answers > *')]
     // ô lời dẫn (.cap) giữ chỗ cả khi Lu chưa nói, nên chỉ cần có chiều cao
@@ -28,7 +31,7 @@ export async function doToGiua() {
   let gap = 0, end = iv[0][1];
   for (const [a, b] of iv) { if (a > end) gap = Math.max(gap, a - end); end = Math.max(end, b); }
   return {
-    tile: Math.round(Math.min(...tiles.map(r => Math.min(r.width, r.height)))),
+    tile: Math.round(Math.min(...els.map((e, i) => side(e, tiles[i])))),
     cao: +((y1 - y0) / H).toFixed(2),
     tam: +(((y0 + y1) / 2 - top) / H).toFixed(2),
     trong: +(gap / vh).toFixed(2),
