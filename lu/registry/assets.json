@@ -2087,10 +2087,11 @@
    "tep_goc": "PM10-BG-phong.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; seed 22",
    "dung_o": [],
-   "slot": "phong"
+   "slot": "phong",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "BC-0007",
@@ -2109,10 +2110,11 @@
    "tep_goc": "PM10-BG-hien.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; seed 22",
    "dung_o": [],
-   "slot": "hien"
+   "slot": "hien",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "BC-0008",
@@ -2131,10 +2133,11 @@
    "tep_goc": "PM10-BG-vuon.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; seed 22",
    "dung_o": [],
-   "slot": "vuon"
+   "slot": "vuon",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "BC-0009",
@@ -2153,10 +2156,11 @@
    "tep_goc": "PM10-BG-cay-cao.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; seed 25",
    "dung_o": [],
-   "slot": "cay-cao"
+   "slot": "cay-cao",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "BC-0010",
@@ -2175,10 +2179,11 @@
    "tep_goc": "PM10-BG-bep.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; seed 23",
    "dung_o": [],
-   "slot": "bep"
+   "slot": "bep",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "BC-0011",
@@ -2197,10 +2202,11 @@
    "tep_goc": "PM10-BG-bo-ao.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; seed 22",
    "dung_o": [],
-   "slot": "bo-ao"
+   "slot": "bo-ao",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0009",
@@ -2219,10 +2225,11 @@
    "tep_goc": "PM10-OB-ao.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 24",
    "dung_o": [],
-   "slot": "art:ao"
+   "slot": "art:ao",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0010",
@@ -2241,10 +2248,11 @@
    "tep_goc": "PM10-OB-ao-nuoc.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:ao-nuoc"
+   "slot": "art:ao-nuoc",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0011",
@@ -2263,10 +2271,11 @@
    "tep_goc": "PM10-OB-binh-tuoi.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:binh-tuoi"
+   "slot": "art:binh-tuoi",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0012",
@@ -2285,10 +2294,11 @@
    "tep_goc": "PM10-OB-bong.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:bong"
+   "slot": "art:bong",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0013",
@@ -2307,10 +2317,11 @@
    "tep_goc": "PM10-OB-buom.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:buom"
+   "slot": "art:buom",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0014",
@@ -2329,10 +2340,11 @@
    "tep_goc": "PM10-OB-ca.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:ca"
+   "slot": "art:ca",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0015",
@@ -2351,10 +2363,11 @@
    "tep_goc": "PM10-OB-ca-rot.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 23",
    "dung_o": [],
-   "slot": "art:ca-rot"
+   "slot": "art:ca-rot",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0016",
@@ -2373,10 +2386,11 @@
    "tep_goc": "PM10-OB-cay.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:cay"
+   "slot": "art:cay",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0017",
@@ -2395,10 +2409,11 @@
    "tep_goc": "PM10-OB-chao.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:chao"
+   "slot": "art:chao",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0018",
@@ -2417,10 +2432,11 @@
    "tep_goc": "PM10-OB-chia-khoa.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:chia-khoa"
+   "slot": "art:chia-khoa",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0019",
@@ -2439,10 +2455,11 @@
    "tep_goc": "PM10-OB-chim.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:chim"
+   "slot": "art:chim",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0020",
@@ -2461,10 +2478,11 @@
    "tep_goc": "PM10-OB-dong-xu.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:dong-xu"
+   "slot": "art:dong-xu",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0021",
@@ -2483,10 +2501,11 @@
    "tep_goc": "PM10-OB-ech.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:ech"
+   "slot": "art:ech",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0022",
@@ -2505,10 +2524,11 @@
    "tep_goc": "PM10-OB-ga.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:ga"
+   "slot": "art:ga",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0023",
@@ -2527,10 +2547,11 @@
    "tep_goc": "PM10-OB-ga-con.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:ga-con"
+   "slot": "art:ga-con",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0024",
@@ -2549,10 +2570,11 @@
    "tep_goc": "PM10-OB-giot-nuoc.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:giot-nuoc"
+   "slot": "art:giot-nuoc",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0025",
@@ -2571,10 +2593,11 @@
    "tep_goc": "PM10-OB-hoa.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:hoa"
+   "slot": "art:hoa",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0026",
@@ -2593,10 +2616,11 @@
    "tep_goc": "PM10-OB-khan.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:khan"
+   "slot": "art:khan",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0027",
@@ -2615,10 +2639,11 @@
    "tep_goc": "PM10-OB-khuc-go.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:khuc-go"
+   "slot": "art:khuc-go",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0028",
@@ -2637,10 +2662,11 @@
    "tep_goc": "PM10-OB-la.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:la"
+   "slot": "art:la",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0029",
@@ -2659,10 +2685,11 @@
    "tep_goc": "PM10-OB-la-cay.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 24",
    "dung_o": [],
-   "slot": "art:la-cay"
+   "slot": "art:la-cay",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0030",
@@ -2681,10 +2708,11 @@
    "tep_goc": "PM10-OB-meo.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:meo"
+   "slot": "art:meo",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0031",
@@ -2703,10 +2731,11 @@
    "tep_goc": "PM10-OB-mu-dau-bep.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:mu-dau-bep"
+   "slot": "art:mu-dau-bep",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0032",
@@ -2725,10 +2754,11 @@
    "tep_goc": "PM10-OB-nha.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:nha"
+   "slot": "art:nha",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0033",
@@ -2747,10 +2777,11 @@
    "tep_goc": "PM10-OB-oc.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:oc"
+   "slot": "art:oc",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0034",
@@ -2769,10 +2800,11 @@
    "tep_goc": "PM10-OB-ong.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:ong"
+   "slot": "art:ong",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0035",
@@ -2791,10 +2823,11 @@
    "tep_goc": "PM10-OB-rau.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:rau"
+   "slot": "art:rau",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0036",
@@ -2813,10 +2846,11 @@
    "tep_goc": "PM10-OB-soi.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:soi"
+   "slot": "art:soi",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0037",
@@ -2835,10 +2869,11 @@
    "tep_goc": "PM10-OB-tao.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:tao"
+   "slot": "art:tao",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0038",
@@ -2857,10 +2892,11 @@
    "tep_goc": "PM10-OB-to-ong.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:to-ong"
+   "slot": "art:to-ong",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0039",
@@ -2879,10 +2915,11 @@
    "tep_goc": "PM10-OB-trung.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:trung"
+   "slot": "art:trung",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0040",
@@ -2901,10 +2938,11 @@
    "tep_goc": "PM10-OB-voi-nuoc.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 25",
    "dung_o": [],
-   "slot": "art:voi-nuoc"
+   "slot": "art:voi-nuoc",
+   "ngay_duyet": "2026-11-26"
   },
   {
    "asset_id": "DV-0041",
@@ -2923,10 +2961,11 @@
    "tep_goc": "PM10-OB-xa-phong.webp",
    "nguoi_tao": "tam",
    "ngay": "2026-11-26",
-   "trang_thai": "cho_duyet",
+   "trang_thai": "da_duyet",
    "ghi_chu": "PM10; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); seed 22",
    "dung_o": [],
-   "slot": "art:xa-phong"
+   "slot": "art:xa-phong",
+   "ngay_duyet": "2026-11-26"
   }
  ]
 }
