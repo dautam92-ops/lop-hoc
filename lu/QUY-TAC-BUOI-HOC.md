@@ -19,3 +19,10 @@ Ví dụ chữ a (giới thiệu L167–L171): ôn bằng lật thẻ chữ a v�
 Ví dụ số 5 (giới thiệu L026): nhìn nhanh rồi chọn số lượng theo trí nhớ; xếp 5 quả vào giỏ; vỗ tay 5 cái; nối nhóm 5 vật với chữ số 5; tô số 5. Ngoài màn hình: lấy 5 chiếc thìa.
 
 Phép thử: `kiemOn`, mục cổng "Ôn chữ/số: mỗi lượt ôn một cách học mới".
+
+## Q3. Lồng 18 năng lực vào mỗi buổi (tam duyệt 26/11/2026)
+- Sáu nhóm TO, TV, TD, KP, EQ, EN là nhóm kiến thức (môn). Các bộ kỹ năng như tư duy, tưởng tượng, sáng tạo là 18 năng lực NL01–NL18 của Khung phương pháp.
+- Mỗi bài tập ghi năng lực nó rèn (trường `nang_luc`, hoặc suy từ `mechanic`).
+- Từ L002: mỗi buổi rèn ít nhất 8 năng lực, luôn có NL11 tưởng tượng và NL12 sáng tạo; 5 buổi liền nhau phủ đủ 18 năng lực.
+
+Phép thử: `kiemNangLuc`, mục cổng "Năng lực: ≥ 8 mỗi buổi".
