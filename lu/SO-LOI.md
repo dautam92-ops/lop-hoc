@@ -1,0 +1,15 @@
+# Sổ lỗi đã gặp
+
+Quy tắc (tam 26/11/2026): lỗi đã gặp không được lặp lại. Mỗi lỗi tam báo phải:
+1. Có phép thử tự động bắt được nó TRƯỚC khi sửa (chạy thử cho thấy phép thử báo đỏ trên bản lỗi).
+2. Sửa xong, phép thử báo xanh.
+3. Phép thử nằm trong `tools/cong-kiem-tra.mjs` (cổng bắt buộc trước khi lên mạng, GitHub tự chạy mỗi bản mới) và giữ mãi.
+
+| Ngày | Lỗi | Nguyên nhân | Phép thử chặn |
+|---|---|---|---|
+| 26/11 | Bé chọn sai mà Lu vẫn nói "Đúng rồi!" (13 màn ở bài 1) | E01 dạng `items` coi mọi câu là câu tự do (`R._any = it`) | play-draft cố tình chọn sai ở mọi màn có đáp án; cổng mục "Chọn sai thì Lu báo sai" |
+| 26/11 | Hình hạt đậu, túi hạt trống trên bảng bài nhỏ | Ảnh thật 841px không co vào khung 84px | ui/lesson.css co ảnh; cổng mục "Ảnh đã duyệt có đủ tệp" + xem ảnh chụp màn bảng bài |
+| 26/11 | Hình bóng quá bé | Lớp `shadow` trùng ô đích E02, giới hạn 80px | CSS `bong-den`; cổng mục "Hình minh họa chiếm 65% trở lên" |
+| 26/11 | Câu thiếu giọng đọc | Câu mới chưa tạo giọng trên máy | cổng mục "Mọi câu đều có giọng đọc" và "Tệp giọng đọc có đủ trên đĩa" |
+
+Còn thiếu (chưa có tính năng nên chưa kiểm được): bé không trả lời thì Lu nhắc lại câu hỏi sau một lúc. Sẽ làm cùng Demo Lab (chỉ thị Method Library mục VIII "Thử không trả lời").
