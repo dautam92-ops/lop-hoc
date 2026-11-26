@@ -40,6 +40,24 @@ export const SVG = {
   duong: '<svg viewBox="0 0 48 32" aria-hidden="true"><path d="M6 26C14 26 14 12 24 14S34 6 42 6" stroke="#a9713f" stroke-width="2.4" fill="none" stroke-dasharray="3 4" stroke-linecap="round"/><circle cx="6" cy="26" r="4.5" fill="#7d4f27"/><circle cx="24" cy="14" r="4.5" fill="#7d4f27"/><circle cx="42" cy="6" r="4.5" fill="#7d4f27"/></svg>',
   hatXong: HAT('#7e9a35', '#4a6a1a'), hatCho: HAT('#fffaf0', '#c9a77a'),
 };
+// Chậu cây "Vườn ươm" (hình vẽ mã tạm, chờ tranh vẽ tay: anh-can-ve.json art:chau-*).
+// loai: 'trong' (chưa tới), 'hat' (hôm nay, hạt vừa ló), 'cay1' | 'cay2' | 'cay3' (đã học, cây lớn dần)
+export function chauCay(loai) {
+  const chau = '<path d="M14 52h72l-8 44H22z" fill="#c8794a" stroke="#7d4f27" stroke-width="2.4" stroke-linejoin="round"/><path d="M22 60c10 3 46 3 56 0" stroke="#e39a68" stroke-width="2.4" fill="none" opacity=".7"/><rect x="9" y="42" width="82" height="13" rx="4" fill="#d98b57" stroke="#7d4f27" stroke-width="2.4"/><ellipse cx="50" cy="43.5" rx="36" ry="4.5" fill="#6b4a2e"/>';
+  const la = (x, y, r, s = 1) => `<path d="M${x} ${y}c${8 * s}-${10 * r} ${22 * s}-${10 * r} ${26 * s}-${4 * r}c-${6 * s} ${9 * r}-${18 * s} ${10 * r}-${26 * s} ${4 * r}z" fill="#8fae3e" stroke="#5f7a1e" stroke-width="1.8"/>`;
+  const than = (h) => `<path d="M50 44c0-${h * .4} -2-${h * .7} 0-${h}" stroke="#5f7a1e" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+  let cay = '';
+  if (loai === 'hat') cay = '<ellipse cx="50" cy="41" rx="8" ry="5.5" fill="#e0b56a" stroke="#8a5a2e" stroke-width="1.8"/><path d="M50 38c-1-4 1-7 4-8" stroke="#7e9a35" stroke-width="2.4" fill="none" stroke-linecap="round"/>';
+  if (loai === 'cay1') cay = than(14) + la(50, 32, .8, -1) + la(50, 32, .8);
+  if (loai === 'cay2') cay = than(28) + la(50, 34, .9, -1) + la(50, 24, 1) + la(50, 18, .8, -1);
+  if (loai === 'cay3') cay = than(40) + la(50, 36, 1, -1) + la(50, 28, 1.1) + la(50, 18, 1, -1) + la(50, 9, .8) + '<path d="M57 30c5 2 6 9 3 14" stroke="#6f8f2a" stroke-width="5" fill="none" stroke-linecap="round"/>';
+  return `<svg class="chau" viewBox="2 -22 96 118" preserveAspectRatio="xMidYMax meet" data-art="art:chau-${loai}" aria-hidden="true"><g transform="translate(50 44) scale(1.45) translate(-50 -44)">${cay}</g>${chau}</svg>`;
+}
+export const SINH_VAT = {
+  ong: '<svg class="sinh-vat" viewBox="0 0 40 30" data-art="art:ong" aria-hidden="true"><ellipse cx="14" cy="9" rx="7" ry="6" fill="#fff" stroke="#c9b38a" stroke-width="1.5" opacity=".9"/><ellipse cx="24" cy="8" rx="7" ry="6" fill="#fff" stroke="#c9b38a" stroke-width="1.5" opacity=".9"/><ellipse cx="20" cy="19" rx="11" ry="8" fill="#f2be2e" stroke="#4a3626" stroke-width="1.8"/><path d="M17 12v14M23 12v14" stroke="#4a3626" stroke-width="2.4"/><circle cx="30" cy="18" r="1.4" fill="#4a3626"/></svg>',
+  buom: '<svg class="sinh-vat" viewBox="0 0 40 30" data-art="art:buom" aria-hidden="true"><path d="M20 15C14 2 2 4 6 14c-4 8 8 12 14 2z" fill="#f2a99a" stroke="#a8604f" stroke-width="1.5"/><path d="M20 15C26 2 38 4 34 14c4 8-8 12-14 2z" fill="#f7d58a" stroke="#a8803f" stroke-width="1.5"/><path d="M20 8v16" stroke="#4a3626" stroke-width="2.2" stroke-linecap="round"/></svg>',
+  oc: '<svg class="sinh-vat" viewBox="0 0 40 30" data-art="art:oc-sen" aria-hidden="true"><path d="M6 26h28c0-3-3-5-7-5" fill="#e8d3a6" stroke="#8a6a3a" stroke-width="1.6"/><circle cx="18" cy="17" r="9" fill="#d9a86c" stroke="#7d4f27" stroke-width="1.8"/><path d="M18 17m-4 0a4 4 0 1 0 4-4" stroke="#7d4f27" stroke-width="1.6" fill="none"/><path d="M30 21l2-7M33 21l3-6" stroke="#8a6a3a" stroke-width="1.4"/></svg>',
+};
 // Dây đậu tiến độ của chủ đề (theo ảnh mẫu màn nhà đã duyệt): hạt xanh = đã học, hạt sáng = hôm nay, hạt viền = chưa tới.
 export function dayDau(n, xong, homNay) {
   const W = 1000, H = 60, x0 = 40, x1 = 960, step = (x1 - x0) / Math.max(1, n - 1);

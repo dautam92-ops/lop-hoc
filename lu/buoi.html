@@ -17,10 +17,11 @@
   <main class="ds-luoi" id="luoi" aria-label="Các buổi học"></main>
 </div>
 <script type="module">
-import { taiDuLieu, moAmThanh, SVG } from './core/nha.js';
+import { taiDuLieu, moAmThanh, SVG, chauCay, SINH_VAT } from './core/nha.js';
 const D = await taiDuLieu(); const { cfg, voice } = D; const $ = id => document.getElementById(id);
 const qs = D.p.toString(); $('ve').href = 'index.html' + (qs ? '?' + qs : ''); $('ve').innerHTML = SVG.ve;
-const luImg = cfg.lu.chi;
+const luImg = cfg.lu.tuoi || cfg.lu.khen;
+const SV = { 8: 'ong', 15: 'buom', 23: 'oc' }; // tối đa 3 con vật nhỏ cho sinh động, cố định vị trí
 let cdHien = (D.homNay ? D.homNay.chuDe : 10);
 try { const h = +location.hash.replace(/\D/g, ''); if (h >= 1 && h <= D.chuDe.length) cdHien = h; } catch {}
 const coGoi = {};
@@ -33,12 +34,18 @@ async function ve() {
   }).join('');
   // buổi mở được: kiểm tra đã có gói bài chưa
   await Promise.all(cd.buoi.filter(b => D.moDuoc(b) && !(b.id in coGoi)).map(async b => { coGoi[b.id] = await D.goi(b.id); }));
-  $('luoi').innerHTML = cd.buoi.map(b => {
+  const o = cd.buoi.map((b, i) => {
     const xong = D.daXong(b.id), dang = D.homNay && b.id === D.homNay.id, mo = D.moDuoc(b), g = coGoi[b.id];
-    if (mo && g) return `<a class="buoi ${xong ? 'xong' : ''} ${dang ? 'dang' : ''}" href="${D.linkBuoi(b, g.__nhap)}" aria-label="Buổi ${b.so}">${dang ? `<img src="${luImg}" alt="">` : ''}<b>${b.so}</b>${xong ? SVG.la : ''}</a>`;
-    if (mo) return `<div class="buoi cho ${dang ? 'dang' : ''}" role="button" tabindex="0" data-loi="sap_co" aria-label="Buổi ${b.so}">${dang ? `<img src="${luImg}" alt="">` : ''}<b>${b.so}</b></div>`;
-    return `<div class="buoi khoa" role="button" tabindex="0" data-loi="buoi_khoa" aria-label="Buổi ${b.so}, chưa mở"><b>${b.so}</b>${SVG.khoaNhat}</div>`;
-  }).join('');
+    const loai = xong ? ['cay1', 'cay2', 'cay3'][Math.min(2, Math.floor((cd.buoi.filter(x => D.daXong(x.id)).length - cd.buoi.filter((x, j) => j <= i && D.daXong(x.id)).length) / 2))] : dang ? 'hat' : 'trong';
+    const sv = !xong && !dang && SV[i] ? SINH_VAT[SV[i]] : '';
+    const ruot = `${sv}${chauCay(loai)}${dang ? `<img class="lu-ngoi" src="${luImg}" alt="">` : ''}<b>${b.so}</b>`;
+    if (mo && g) return `<a class="buoi ${xong ? 'xong' : ''} ${dang ? 'dang' : ''}" href="${D.linkBuoi(b, g.__nhap)}" aria-label="Buổi ${b.so}">${ruot}</a>`;
+    if (mo) return `<div class="buoi cho ${dang ? 'dang' : ''}" role="button" tabindex="0" data-loi="sap_co" aria-label="Buổi ${b.so}">${ruot}</div>`;
+    return `<div class="buoi khoa" role="button" tabindex="0" data-loi="buoi_khoa" aria-label="Buổi ${b.so}, chưa mở">${ruot}</div>`;
+  });
+  const n = matchMedia('(max-aspect-ratio: 1/1)').matches ? 3 : 6; let h = '';
+  for (let i = 0; i < o.length; i += n) h += `<div class="ke">${o.slice(i, i + n).join('')}</div>`;
+  $('luoi').innerHTML = h;
   window.__luBuoi = { chuDe: cdHien, ready: true };
 }
 $('chuong').addEventListener('click', e => { const t = e.target.closest('button[data-cd]'); if (!t) return; cdHien = +t.dataset.cd; try { history.replaceState(null, '', '#cd' + cdHien); } catch {} ve(); });

@@ -2,19 +2,97 @@
   "format": "lu-anh-can-ve",
   "ghi_chu": "Ảnh vẽ tay còn thiếu cho màn nhà và danh sách buổi (tam duyệt bố cục 26/11/2026). Hình vẽ bằng mã gắn data-art chỉ được dùng khi mã nằm trong danh sách này; vẽ xong và duyệt thì gỡ khỏi danh sách. Phong cách: Golden Reference, màu nước + bút chì, nền trong suốt cho biểu tượng.",
   "anh": [
-    { "ma": "art:cong-chu-cai", "mo_ta": "Biểu tượng cổng Chữ cái: chữ A gỗ có lá non" },
-    { "ma": "art:cong-so-dem", "mo_ta": "Biểu tượng cổng Số và đếm: ba hạt đậu cạnh cọc số 3" },
-    { "ma": "art:cong-toan-tu-duy", "mo_ta": "Biểu tượng cổng Toán tư duy: cân thăng bằng nhỏ với quả táo" },
-    { "ma": "art:cong-logic", "mo_ta": "Biểu tượng cổng Logic: chuỗi tròn, vuông, tam giác bằng gỗ" },
-    { "ma": "art:cong-khong-gian", "mo_ta": "Biểu tượng cổng Không gian: khối gỗ xếp chồng" },
-    { "ma": "art:cong-tri-nho", "mo_ta": "Biểu tượng cổng Trí nhớ: hai thẻ lật, một thẻ có hình dâu" },
-    { "ma": "art:cong-tham-tu", "mo_ta": "Biểu tượng cổng Thám tử quan sát: kính lúp của Lu" },
-    { "ma": "art:cong-tuong-tuong", "mo_ta": "Biểu tượng cổng Trí tưởng tượng: đám mây có ngôi sao" },
-    { "ma": "art:cong-ke-chuyen", "mo_ta": "Biểu tượng cổng Từ ngữ kể chuyện: cuốn sách mở" },
-    { "ma": "art:cong-cam-xuc", "mo_ta": "Biểu tượng cổng Cảm xúc: khuôn mặt mầm đậu cười" },
-    { "ma": "art:cong-tieng-anh", "mo_ta": "Biểu tượng cổng Tiếng Anh: bóng nói có chữ Hi" },
-    { "ma": "art:cong-kham-pha", "mo_ta": "Biểu tượng cổng Khám phá: chiếc lá và ống nhòm" },
-    { "ma": "nen:chu-de-2..10", "mo_ta": "9 ảnh nền chủ đề còn lại (Rừng Lá Xanh, Biển Sóng Nhỏ, Núi Mây Trắng, Thị trấn Đèn Lồng, Vườn Chữ Cái, Trang trại Nắng, Dòng sông Sao, Đảo Khám Phá, Cổng Trường Tiểu Học), 1344x768, cảnh tĩnh, ít chi tiết ở giữa để đặt thẻ buổi" },
-    { "ma": "bia:Lxxx", "mo_ta": "Ảnh bìa mỗi buổi: hiện lấy nền bảng bài nhỏ của buổi (hub.backdrop); buổi chưa có thì dùng nền chủ đề" }
+    {
+      "ma": "art:cong-chu-cai",
+      "mo_ta": "Biểu tượng cổng Chữ cái: chữ A gỗ có lá non"
+    },
+    {
+      "ma": "art:cong-so-dem",
+      "mo_ta": "Biểu tượng cổng Số và đếm: ba hạt đậu cạnh cọc số 3"
+    },
+    {
+      "ma": "art:cong-toan-tu-duy",
+      "mo_ta": "Biểu tượng cổng Toán tư duy: cân thăng bằng nhỏ với quả táo"
+    },
+    {
+      "ma": "art:cong-logic",
+      "mo_ta": "Biểu tượng cổng Logic: chuỗi tròn, vuông, tam giác bằng gỗ"
+    },
+    {
+      "ma": "art:cong-khong-gian",
+      "mo_ta": "Biểu tượng cổng Không gian: khối gỗ xếp chồng"
+    },
+    {
+      "ma": "art:cong-tri-nho",
+      "mo_ta": "Biểu tượng cổng Trí nhớ: hai thẻ lật, một thẻ có hình dâu"
+    },
+    {
+      "ma": "art:cong-tham-tu",
+      "mo_ta": "Biểu tượng cổng Thám tử quan sát: kính lúp của Lu"
+    },
+    {
+      "ma": "art:cong-tuong-tuong",
+      "mo_ta": "Biểu tượng cổng Trí tưởng tượng: đám mây có ngôi sao"
+    },
+    {
+      "ma": "art:cong-ke-chuyen",
+      "mo_ta": "Biểu tượng cổng Từ ngữ kể chuyện: cuốn sách mở"
+    },
+    {
+      "ma": "art:cong-cam-xuc",
+      "mo_ta": "Biểu tượng cổng Cảm xúc: khuôn mặt mầm đậu cười"
+    },
+    {
+      "ma": "art:cong-tieng-anh",
+      "mo_ta": "Biểu tượng cổng Tiếng Anh: bóng nói có chữ Hi"
+    },
+    {
+      "ma": "art:cong-kham-pha",
+      "mo_ta": "Biểu tượng cổng Khám phá: chiếc lá và ống nhòm"
+    },
+    {
+      "ma": "nen:chu-de-2..10",
+      "mo_ta": "9 ảnh nền chủ đề còn lại (Rừng Lá Xanh, Biển Sóng Nhỏ, Núi Mây Trắng, Thị trấn Đèn Lồng, Vườn Chữ Cái, Trang trại Nắng, Dòng sông Sao, Đảo Khám Phá, Cổng Trường Tiểu Học), 1344x768, cảnh tĩnh, ít chi tiết ở giữa để đặt thẻ buổi"
+    },
+    {
+      "ma": "bia:Lxxx",
+      "mo_ta": "Ảnh bìa mỗi buổi: hiện lấy nền bảng bài nhỏ của buổi (hub.backdrop); buổi chưa có thì dùng nền chủ đề"
+    },
+    {
+      "ma": "art:chau-trong",
+      "mo_ta": "Chậu đất nung trống trên kệ (buổi chưa tới), có nhãn giấy dán số"
+    },
+    {
+      "ma": "art:chau-hat",
+      "mo_ta": "Chậu có hạt đậu vừa ló (buổi hôm nay)"
+    },
+    {
+      "ma": "art:chau-cay1",
+      "mo_ta": "Chậu có mầm hai lá (buổi đã học)"
+    },
+    {
+      "ma": "art:chau-cay2",
+      "mo_ta": "Chậu có cây đậu non ba lá"
+    },
+    {
+      "ma": "art:chau-cay3",
+      "mo_ta": "Chậu có cây đậu lớn có quả"
+    },
+    {
+      "ma": "art:ong",
+      "mo_ta": "Chú ong nhỏ"
+    },
+    {
+      "ma": "art:buom",
+      "mo_ta": "Chú bướm nhỏ"
+    },
+    {
+      "ma": "art:oc-sen",
+      "mo_ta": "Con ốc sên nhỏ"
+    },
+    {
+      "ma": "lu:tuoi-cay",
+      "mo_ta": "Lu ngồi cầm bình tưới nhỏ (cho buổi hôm nay trong Vườn ươm); hiện tạm dùng LU-0063 tư thế khen"
+    }
   ]
 }

@@ -5,12 +5,16 @@
   "ns": "lu-thu-online",
   "nen_mac_dinh": "assets/boi-canh/BC-0009_cay-dau-leo-cao-ben-doi_v01.webp",
   "chu_de": [
-    { "so": 1, "nen": "assets/boi-canh/BC-0009_cay-dau-leo-cao-ben-doi_v01.webp" }
+    {
+      "so": 1,
+      "nen": "assets/boi-canh/BC-0009_cay-dau-leo-cao-ben-doi_v01.webp"
+    }
   ],
   "lu": {
     "chi": "assets/lu/xuat-ban/LU-0049_lu-tu-the-chi-tay-512_v01.webp",
     "khen": "assets/lu/xuat-ban/LU-0063_lu-tu-the-khen-512_v01.webp",
-    "vay": "assets/lu/xuat-ban/LU-0039_lu-tu-the-vay-tay-512_v01.webp"
+    "vay": "assets/lu/xuat-ban/LU-0039_lu-tu-the-vay-tay-512_v01.webp",
+    "tuoi": "assets/lu/xuat-ban/LU-0063_lu-tu-the-khen-512_v01.webp"
   },
   "loi": {
     "hoc_tiep": "Bé học tiếp nào!",
