@@ -1,21 +1,30 @@
 {
  "format": "lu-voice-todo",
- "at": "2026-11-25T19:12:42.012Z",
+ "lesson": "L001",
+ "at": "2026-11-26T03:59:07.982Z",
  "lines": [
   {
-   "text": "Chào bé! Hôm nay bé là Lu, đi khám phá nhé!",
+   "text": "Chào bé! Hôm nay bé là Lu.",
    "lang": "vi"
   },
   {
-   "text": "Đậu trước nhà Lu vừa nảy mầm. Mình ra vườn xem đi!",
+   "text": "Sáng nay bà đi chợ sớm, để lại cho Lu một túi hạt đậu và một bình tưới.",
    "lang": "vi"
   },
   {
-   "text": "Bé giỏi lắm! Giỏ đậu nào cũng đếm xong rồi.",
+   "text": "Bà dặn: Lu gieo hạt xuống đất, rồi tưới nước cho hạt nhé.",
    "lang": "vi"
   },
   {
-   "text": "Mai mình ra vườn xem mầm đậu lớn chưa nhé.",
+   "text": "Mình cùng trồng những hạt đậu đầu tiên nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay bé đã đếm hạt, gieo hạt, tưới cây và học ba từ tiếng Anh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ở nhà, bé đếm bậc cầu thang cùng bố mẹ nhé.",
    "lang": "vi"
   },
   {
@@ -43,559 +52,139 @@
    "lang": "vi"
   },
   {
-   "text": "Bé vừa nhặt đậu bỏ vào giỏ.",
+   "text": "Đáp án A.",
    "lang": "vi"
   },
   {
-   "text": "Bé chạm từng hạt, mỗi hạt đếm một tiếng.",
+   "text": "Vui",
    "lang": "vi"
   },
   {
-   "text": "Trong giỏ có mấy hạt đậu?",
+   "text": "Đáp án B.",
    "lang": "vi"
   },
   {
-   "text": "Bé đếm lại nhé.",
+   "text": "Bình thường",
    "lang": "vi"
   },
   {
-   "text": "Bé giỏi lắm! Trong giỏ có một hạt đậu.",
+   "text": "Đáp án C.",
    "lang": "vi"
   },
   {
-   "text": "Bé giỏi lắm! Trong giỏ có hai hạt đậu.",
+   "text": "Buồn",
    "lang": "vi"
   },
   {
-   "text": "Bé giỏi lắm! Trong giỏ có ba hạt đậu.",
+   "text": "Đáp án D.",
    "lang": "vi"
   },
   {
-   "text": "Mấy mầm đậu đang trốn giữa đám hạt và lá.",
+   "text": "Lo lắng",
    "lang": "vi"
   },
   {
-   "text": "Mầm đậu có thân xanh nhú lên từ hạt.",
+   "text": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Lu gợi ý.",
    "lang": "vi"
   },
   {
-   "text": "Hết chỗ trốn rồi! Bé tìm ra đủ các mầm đậu.",
+   "text": "Bé chọn bài tiếp theo nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bé giỏi lắm!",
+   "text": "Bé đếm được từng hạt đậu rồi!",
    "lang": "vi"
   },
   {
-   "text": "Chính xác rồi!",
+   "text": "Các luống đã gieo xong rồi!",
    "lang": "vi"
   },
   {
-   "text": "Bé chạm vào từng mầm đậu nhé.",
+   "text": "Bé nhớ lời bà dặn rồi!",
    "lang": "vi"
   },
   {
-   "text": "Giờ mình đứng dậy làm hạt đậu nảy mầm!",
+   "text": "Bé biết hạt cần nước, nắng và đất rồi!",
    "lang": "vi"
   },
   {
-   "text": "Bé ngồi thu tròn như hạt đậu, rồi vươn thật cao. Mình làm ba lần.",
+   "text": "Bé tinh mắt lắm, đoán đúng các cái bóng!",
    "lang": "vi"
   },
   {
-   "text": "Mình xếp ba giỏ đậu từ ít đến nhiều nhé.",
+   "text": "Bé chú ý giỏi lắm!",
    "lang": "vi"
   },
   {
-   "text": "Bé chạm giỏ ít hạt nhất trước, rồi tới giỏ nhiều hơn.",
+   "text": "Bé nhớ chỗ các thẻ giỏi lắm!",
    "lang": "vi"
   },
   {
-   "text": "Bé đếm số hạt trong từng giỏ xem.",
+   "text": "Bé nghe được ba từ tiếng Anh rồi!",
    "lang": "vi"
   },
   {
-   "text": "Ơ, giỏ đậu của Lu bị đổ rồi.",
+   "text": "Bé đã cùng Lu bình tĩnh chờ mầm!",
    "lang": "vi"
   },
   {
-   "text": "Mấy hạt đậu lăn vào giữa đám lá và hoa.",
+   "text": "Bé biết cách giữ tay sạch và an toàn rồi!",
    "lang": "vi"
   },
   {
-   "text": "Hạt đậu nào cũng về lại giỏ rồi.",
+   "text": "Bé suy nghĩ giỏi lắm!",
    "lang": "vi"
   },
   {
-   "text": "Mai mình mang giỏ ra vườn gieo đậu.",
+   "text": "Khu vườn trong mơ của bé đẹp quá!",
    "lang": "vi"
   },
   {
-   "text": "Hạt đậu tròn, màu vàng nâu, nằm lẫn với lá.",
+   "text": "Mình đếm hạt đậu nhé. Mỗi hạt, chạm một lần, đếm một tiếng.",
    "lang": "vi"
   },
   {
-   "text": "Đây là lá cây. Hạt đậu tròn và có màu vàng nâu.",
+   "text": "Mỗi luống có một cọc số. Bé gieo đúng số hạt vào luống nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bé tìm ra hết hạt đậu rồi. Giỏ lại đầy.",
+   "text": "Lúc sáng bà dặn Lu mấy điều. Bé nhớ giúp Lu nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bé chạm vào từng hạt đậu nhé.",
+   "text": "Hạt đậu cần gì để lớn lên nhỉ? Mình cùng tìm hiểu nhé.",
    "lang": "vi"
   },
   {
-   "text": "Nắng chiếu vào vườn, mỗi đồ vật in một cái bóng.",
+   "text": "Nắng chiếu xuống vườn, đồ vật có bóng đen. Bé nhìn bóng, đoán xem là gì nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bé kéo mỗi hình về đúng cái bóng của nó.",
+   "text": "Gió thổi sỏi lẫn vào hạt đậu rồi. Bé chỉ nhặt hạt đậu thôi nhé.",
    "lang": "vi"
   },
   {
-   "text": "Mình so lại hình dáng của cái bóng.",
+   "text": "Bà có trò lật thẻ. Bé lật hai thẻ, tìm hai thẻ giống nhau nhé.",
    "lang": "vi"
   },
   {
-   "text": "Hình nào cũng về đúng bóng của mình rồi.",
+   "text": "Giờ Lu học đếm bằng tiếng Anh. Bé nghe cùng Lu nhé.",
    "lang": "vi"
   },
   {
-   "text": "Giờ mình làm hạt đậu lăn tròn!",
+   "text": "Gieo hạt xong, Lu phải chờ mầm mọc. Mình cùng nghĩ về cảm xúc của Lu nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bé ngồi ôm gối thật tròn, rồi lắc lư sang trái, sang phải. Mình làm ba lần.",
+   "text": "Tay Lu dính đầy đất. Mình rửa tay rồi mới ăn nhé.",
    "lang": "vi"
   },
   {
-   "text": "Lu úp các thẻ hình xuống. Bé lật hai thẻ, hai hình giống nhau là thành một đôi.",
+   "text": "Lu có mấy câu đố. Bé tìm thứ không cùng nhóm nhé.",
    "lang": "vi"
   },
   {
-   "text": "Hai hình này khác nhau. Bé nhớ chỗ của từng thẻ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đôi nào cũng tìm ra rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bạn Thỏ ghé vườn đậu chơi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ biết chào bằng tiếng Anh. Mình nghe Thỏ chào nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hôm nay bé đã chào Thỏ bằng tiếng Anh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lần sau Thỏ lại đến chơi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào Lu để nghe, rồi nói theo thật to.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hello!",
-   "lang": "en"
-  },
-  {
-   "text": "Thỏ mang tới ba quả bóng. Bé nghe tên màu rồi chạm đúng quả bóng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Yes! Red!",
-   "lang": "en"
-  },
-  {
-   "text": "Yes! Blue!",
-   "lang": "en"
-  },
-  {
-   "text": "Yes! Yellow!",
-   "lang": "en"
-  },
-  {
-   "text": "Thỏ phải về rồi. Mình vẫy tay chào Thỏ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Goodbye!",
-   "lang": "en"
-  },
-  {
-   "text": "Hôm nay ở vườn đậu có hai chuyện xảy ra với Lu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nghe rồi đoán xem Lu thấy thế nào.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hôm nay Lu vừa vui, vừa buồn, rồi lại thấy nhẹ lòng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cảm ơn bé đã ngồi cạnh Lu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bạn Thỏ tặng Lu một quả bóng bay đỏ. Lu thấy thế nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu vui vì được bạn tặng bóng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình nghe lại chuyện vừa xảy ra với Lu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Gió thổi bay mất quả bóng của Lu. Lu thấy thế nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu buồn vì quả bóng bay mất rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Khi buồn, Lu hít thở thật chậm. Bé thở cùng Lu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hít vào thật sâu, như ngửi một bông hoa",
-   "lang": "vi"
-  },
-  {
-   "text": "Thở ra thật chậm, như thổi nến",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu thấy nhẹ lòng hơn rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu vẫn còn buồn. Bé sẽ làm gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Được bạn hỏi han, Lu thấy đỡ buồn rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Nếu bé buồn, bé muốn bạn làm gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Ngồi cạnh và hỏi Lu có sao không.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cười Lu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bỏ đi chỗ khác.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé lật hai thẻ. Hai khuôn mặt giống nhau là thành một đôi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hai khuôn mặt này khác nhau. Bé nhớ chỗ của từng thẻ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé tìm ra hết các đôi khuôn mặt.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nghe chuyện hạt đậu nhỏ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu nhỏ nằm ngủ trong chậu đất.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mưa tưới nước. Nắng sưởi ấm.",
-   "lang": "vi"
-  },
-  {
-   "text": "Một sáng, hạt đậu nứt vỏ và nhú lên một mầm xanh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu nhỏ đã thành mầm xanh rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mai mình xem mầm đậu có thêm lá chưa.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu nhỏ nằm ngủ ở đâu?",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, hạt đậu ngủ trong chậu đất.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình nghe lại câu chuyện một chút.",
-   "lang": "vi"
-  },
-  {
-   "text": "Trong chậu đất.",
-   "lang": "vi"
-  },
-  {
-   "text": "Trong quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Trên ngôi sao.",
-   "lang": "vi"
-  },
-  {
-   "text": "Một sáng, hạt đậu nhú lên cái gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, một mầm xanh nhú lên.",
-   "lang": "vi"
-  },
-  {
-   "text": "Một mầm xanh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Một bông hoa.",
-   "lang": "vi"
-  },
-  {
-   "text": "Một quả bóng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nghe Lu nói, rồi nói theo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu nảy mầm.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình kể lại chuyện bằng cả người nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé ngồi thu tròn như hạt đậu ngủ. Rồi từ từ đứng dậy, giơ hai tay lên như mầm xanh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hôm nay Lu chuyển đến Làng Hạt Đậu. Bé đi cùng Lu làm quen các bạn nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé đã học xong bài hôm nay rồi! Bé giỏi lắm.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hẹn bé ngày mai cùng Lu nhé! Bây giờ bé mời bố mẹ đến xem nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thấy mệt.",
-   "lang": "vi"
-  },
-  {
-   "text": "Các bạn tặng Lu bóng bay. Bé đếm xem có mấy quả bóng nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Ôi, nắng lên rồi! Cái gì cũng có cái bóng. Bé kéo mỗi hình về đúng cái bóng của nó nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chưa đúng. Bé nhìn kĩ hình dáng nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏi quá! Bé tìm đúng hết các cái bóng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ở lớp có một bạn mới đứng một mình. Bé sẽ làm gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Tuyệt vời! Bé thật tốt bụng. Bạn mới sẽ vui lắm.",
-   "lang": "vi"
-  },
-  {
-   "text": "Nếu bé là bạn mới, bé sẽ thấy thế nào nhỉ? Mình chọn lại nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Giờ mình học tiếng Anh cùng Lu nhé! Bé nghe và chạm đúng quả bóng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào Lu để nghe, rồi nói theo thật to nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Hôm nay Lu sang nhà bạn Thỏ chơi. Bé đi cùng Lu nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ mời Lu ăn quà. Bé giúp Lu tìm đĩa có nhiều hơn nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ rủ Lu chơi lật thẻ. Bé lật hai thẻ, nếu giống nhau là được một đôi nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chưa giống nhau. Bé nhớ chỗ của thẻ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏi quá! Bé tìm được hết các đôi rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Nếu là Thỏ, bé sẽ thấy thế nào nhỉ? Mình chọn lại nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Giờ mình học tiếng Anh nhé! Bé nghe và chạm đúng con vật.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chặng này Lu đang chuẩn bị. Bé quay lại sau nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đây là thế giới của Lu. Mình đang ở Làng Hạt Đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé muốn chơi ở đâu?",
-   "lang": "vi"
-  },
-  {
-   "text": "Trò chơi này Lu đang làm. Bé chọn ngôi sao nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến nhà Lu! Bé chọn quần áo cho Lu nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bộ này sẽ mở khi bé đi thêm vài chặng nữa nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu thích bộ này lắm!",
-   "lang": "vi"
-  },
-  {
-   "text": "Làng Hạt Đậu đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Rừng Lá Xanh đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Biển Sóng Nhỏ đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Núi Mây Trắng đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thị trấn Đèn Lồng đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Vườn Chữ Cái đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Trang trại Nắng đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Dòng sông Sao đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đảo Khám Phá đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cổng Trường Tiểu Học đang chờ bé ở phía trước. Mình đi hết Làng Hạt Đậu trước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Thị trấn tiếng Anh!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Siêu thị toán học!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Rừng logic!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Vườn cảm xúc!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Đảo chữ số!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Vườn chữ cái!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Lâu đài trí nhớ!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Học viện thám tử!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Phòng thí nghiệm Lu!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Xưởng sáng tạo!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Thành phố tự lập!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào mừng bé đến Vương quốc âm nhạc!",
+   "text": "Mình cùng tưởng tượng về cây đậu nhé.",
    "lang": "vi"
   },
   {
@@ -615,127 +204,27 @@
    "lang": "vi"
   },
   {
-   "text": "Các hình bị lẫn vào nhau rồi. Bé xếp mỗi hình vào đúng giỏ nhé!",
+   "text": "Bé giỏi lắm!",
    "lang": "vi"
   },
   {
-   "text": "Mình nhìn kĩ góc và cạnh của hình nhé.",
+   "text": "Chính xác rồi!",
    "lang": "vi"
   },
   {
-   "text": "Gọn gàng quá! Hình nào cũng về đúng giỏ.",
+   "text": "Lu đếm trước: một, hai, ba. Ba hạt đậu! Giờ đến lượt bé.",
    "lang": "vi"
   },
   {
-   "text": "Lu xâu một chuỗi hoa lá thật đẹp. Bé tìm hình tiếp theo nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Hình tiếp theo là hình nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhìn lại cả hàng từ đầu nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cây táo nhà Lu có quả chín rồi. Bé đếm giúp Lu nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chạm từng quả, mỗi quả đếm một tiếng nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Có mấy quả táo?",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình đếm lại từng quả nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "năm",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, một quả táo!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, hai quả táo!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, ba quả táo!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, bốn quả táo!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, năm quả táo!",
-   "lang": "vi"
-  },
-  {
-   "text": "Mỗi gương mặt có một bạn giống hệt. Bé lật thẻ tìm đôi nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhớ giỏi quá! Tìm đủ các đôi rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu vừa thức dậy. Ngoài kia nắng đẹp lắm.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giỏi lắm! Hôm nay bé đếm hạt, gieo hạt và tìm mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ở nhà, bé đếm bậc cầu thang cùng bố mẹ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu sắp ra vườn. Hôm nay Lu mặc áo nào nhỉ?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào một chiếc áo cho Lu nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Áo đẹp quá! Lu mặc xong rồi, mình ra sân thôi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu ra sân. Bà để lại cho Lu một túi hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bà dặn: hạt đậu gieo xuống đất, tưới nước mỗi ngày, rồi hạt sẽ nảy mầm.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hôm nay Lu sẽ làm người trồng đậu. Bé giúp Lu nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào túi để mở ra.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ồ, trong túi có thật nhiều hạt đậu!",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đổ hạt ra khay. Mình đếm cùng nhau nhé.",
+   "text": "Bé chạm từng hạt, mỗi hạt đếm một tiếng.",
    "lang": "vi"
   },
   {
    "text": "Trên khay có mấy hạt đậu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm lại nhé.",
    "lang": "vi"
   },
   {
@@ -751,46 +240,6 @@
    "lang": "vi"
   },
   {
-   "text": "Bà còn để lại mấy quả đậu xanh. Mình đếm quả đậu nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mỗi quả đậu, bé đếm một tiếng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Có mấy quả đậu?",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình chạm đếm lại từng quả nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, có một quả đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, có hai quả đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, có ba quả đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé tìm giỏ có một hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Giỏ này có một hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé đếm từng hạt trong giỏ xem.",
-   "lang": "vi"
-  },
-  {
    "text": "Bé tìm giỏ có hai hạt đậu.",
    "lang": "vi"
   },
@@ -799,63 +248,15 @@
    "lang": "vi"
   },
   {
+   "text": "Bé đếm từng hạt trong giỏ xem.",
+   "lang": "vi"
+  },
+  {
    "text": "Bé tìm giỏ có ba hạt đậu.",
    "lang": "vi"
   },
   {
    "text": "Đúng rồi! Giỏ này có ba hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Còn chậu này? Bé tìm chậu có hai mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chính xác! Chậu này có hai mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm đếm từng mầm xem.",
-   "lang": "vi"
-  },
-  {
-   "text": "Còn chậu này? Bé tìm chậu có ba mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chính xác! Chậu này có ba mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Còn chậu này? Bé tìm chậu có một mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chính xác! Chậu này có một mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Giờ mình đứng dậy nào!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhảy cùng Lu ba cái nhé. Một, hai, ba!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé ngồi thu tròn như hạt đậu, rồi vươn thật cao như mầm cây. Mình làm ba lần.",
-   "lang": "vi"
-  },
-  {
-   "text": "Luống đất ở đằng kia. Mình bước ra luống nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé bước ba bước, mỗi bước đếm một tiếng. Một, hai, ba!",
-   "lang": "vi"
-  },
-  {
-   "text": "Ba luống đất đã có cọc số. Bé kéo đúng số hạt vào mỗi luống nhé.",
    "lang": "vi"
   },
   {
@@ -871,10 +272,6 @@
    "lang": "vi"
   },
   {
-   "text": "Còn một hàng luống nữa. Lần này bé tự làm nhé.",
-   "lang": "vi"
-  },
-  {
    "text": "Bé chạm đếm từng hạt trước nhé.",
    "lang": "vi"
   },
@@ -883,15 +280,75 @@
    "lang": "vi"
   },
   {
-   "text": "Hàng luống cuối cùng rồi. Bé gieo giúp Lu nhé.",
+   "text": "Bé chạm giỏ ít hạt nhất trước, rồi tới giỏ nhiều hơn.",
    "lang": "vi"
   },
   {
-   "text": "Cả vườn đã gieo hạt xong!",
+   "text": "Bé đếm số hạt trong từng giỏ xem.",
    "lang": "vi"
   },
   {
-   "text": "Lu thuộc một bài đồng dao về hạt đậu. Bé nghe Lu đọc trước nhé.",
+   "text": "Bé chạm từng chú chim, mỗi chú đếm một tiếng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy chú chim đậu trên hàng rào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm đếm lại từng chú nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi lắm! Có một chú chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi lắm! Có hai chú chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi lắm! Có ba chú chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bà để lại cho Lu cái gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Bà để lại một túi hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe lại nhé: bà để lại một túi hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bà dặn Lu tưới hạt bằng gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Lu tưới hạt bằng bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bà dặn Lu dùng bình tưới đấy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bà dặn Lu gieo hạt vào đâu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hạt đậu gieo xuống đất.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt đậu nằm trong đất mới mọc được.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giờ mình vừa đọc đồng dao vừa vỗ tay nhé.",
    "lang": "vi"
   },
   {
@@ -899,11 +356,319 @@
    "lang": "vi"
   },
   {
-   "text": "Giờ bé vừa đọc vừa vỗ tay cùng Lu nhé.",
+   "text": "Bé chạm vào từng hình để nghe nhé.",
    "lang": "vi"
   },
   {
-   "text": "Cây đậu nhà bà cao lắm. Có quả đậu ở tít trên cao.",
+   "text": "Nước, ánh nắng và đất giúp hạt đậu lớn lên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nước. Hạt cần nước để nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ánh nắng. Cây non cần nắng để lớn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đất. Hạt nằm trong đất để mọc rễ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt đậu nằm ở đâu trên cây?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hạt đậu nằm trong quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ lại: hạt nằm trong quả đậu xanh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đất khô quá. Lu mang gì ra để hạt lớn được?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Lu tưới nước, đất ẩm, hạt sẽ nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt cần nước. Bé tìm thứ đựng nước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trời tối rồi. Mầm cây chờ gì để lớn tiếp?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Sáng mai có nắng, mầm sẽ lớn tiếp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây non cần ánh nắng. Bé tìm hình có nắng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cái bóng này là của gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đó là cái bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn kỹ: bóng có vòi dài để tưới cây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đó là quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn kỹ: bóng dài và cong như quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cái bóng này là của ai?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đó là chú chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn kỹ: bóng có cánh và cái mỏ nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đó là bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn kỹ: bóng có nhiều cánh tròn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đó là viên sỏi màu xám. Hạt đậu có màu vàng nâu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhặt đủ hạt đậu rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào từng hạt đậu. Viên sỏi thì để lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mầm đậu nhú lên rồi! Bé chỉ chạm vào mầm đậu thôi nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mầm đậu có thân xanh nhú lên từ hạt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hết chỗ trốn rồi! Bé tìm ra đủ các mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào từng mầm đậu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ba đôi thẻ đã tìm xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Thêm một đôi nữa nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ chỗ giỏi quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lượt cuối rồi. Bé nhớ chỗ các thẻ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đủ các đôi thẻ rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào từng khay để nghe nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe được ba từ rồi. Giờ mình chơi nghe và chạm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Một hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "One.",
+   "lang": "en"
+  },
+  {
+   "text": "Hai hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Two.",
+   "lang": "en"
+  },
+  {
+   "text": "Ba hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Three.",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! One!",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! Two!",
+   "lang": "en"
+  },
+  {
+   "text": "Yes! Three!",
+   "lang": "en"
+  },
+  {
+   "text": "Bé muốn thì nói theo Lu nhé. Không nói cũng không sao.",
+   "lang": "vi"
+  },
+  {
+   "text": "One, two, three!",
+   "lang": "en"
+  },
+  {
+   "text": "Lu tưới hạt cả buổi mà chưa thấy mầm. Lu có thể thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Cảm ơn bé đã nghĩ cùng Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy buồn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ừ, chờ lâu thì có thể buồn. Hạt cần vài ngày mới nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy sốt ruột.",
+   "lang": "vi"
+  },
+  {
+   "text": "Sốt ruột là khi mình muốn nhanh mà phải chờ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu vẫn thấy vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu vui vì đã gieo hạt xong. Ngày mai mình lại ra xem.",
+   "lang": "vi"
+  },
+  {
+   "text": "Sáng nay mầm đậu nhú lên rồi! Lu có thể thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hiểu Lu quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu vui quá, chờ mấy hôm mầm đã mọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy ngạc nhiên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ồ, hôm qua chưa có, hôm nay đã có mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy nhẹ nhõm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu chờ được rồi, giờ Lu thấy dễ chịu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gió to làm đổ chậu mầm. Lu có thể thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy vui vì bé hỏi thăm Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ừ, buồn là bình thường. Lu và bà dựng chậu lên nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy lo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu lo mầm bị gãy. Mình cùng xem mầm còn khỏe không.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy bực.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bực thì mình hít thở chậm trước đã.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hít vào thật chậm, như ngửi một bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Thở ra từ từ, như thổi một ngọn nến.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bước một: làm ướt tay. Bước hai: xoa xà phòng. Bước ba: tráng sạch, lau khô.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ lại nhé: làm ướt tay, xoa xà phòng, rồi tráng sạch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu sạch rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé xoa hai bàn tay vào nhau như đang rửa tay. Mình đếm đến năm: một, hai, ba, bốn, năm.",
    "lang": "vi"
   },
   {
@@ -951,39 +716,99 @@
    "lang": "vi"
   },
   {
-   "text": "Mấy hôm sau, mầm đậu nhú lên rồi! Mầm đang trốn giữa đám lá.",
+   "text": "Thứ nào không phải của cây đậu?",
    "lang": "vi"
   },
   {
-   "text": "Cây đậu đã ra quả. Bé tìm các quả đậu giúp bà nhé.",
+   "text": "Đúng rồi! Quả bóng bay không phải của cây đậu.",
    "lang": "vi"
   },
   {
-   "text": "Quả đậu dài và xanh, có hạt tròn bên trong.",
+   "text": "Hạt, mầm, quả đều từ cây đậu. Còn thứ nào khác?",
    "lang": "vi"
   },
   {
-   "text": "Bé tìm đủ quả đậu rồi! Bà sẽ nấu chè đậu.",
+   "text": "Thứ nào không mọc lên được?",
    "lang": "vi"
   },
   {
-   "text": "Bé chạm vào từng quả đậu nhé.",
+   "text": "Đúng rồi! Viên sỏi không mọc được.",
    "lang": "vi"
   },
   {
-   "text": "Bà nhờ Lu xếp ba giỏ đậu từ ít đến nhiều.",
+   "text": "Lá, hoa, mầm đều mọc lên. Bé tìm thứ không mọc nhé.",
    "lang": "vi"
   },
   {
-   "text": "Bà có trò lật thẻ. Bé tìm hai thẻ giống nhau nhé.",
+   "text": "Thứ nào không dùng để chăm cây?",
    "lang": "vi"
   },
   {
-   "text": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
+   "text": "Đúng rồi! Chiếc áo không dùng để chăm cây.",
    "lang": "vi"
   },
   {
-   "text": "Bé tìm đủ các đôi thẻ rồi!",
+   "text": "Bình tưới, chậu, nước đều giúp cây. Còn thứ nào khác?",
+   "lang": "vi"
+  },
+  {
+   "text": "Thứ nào không ăn được?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Chong chóng không ăn được.",
+   "lang": "vi"
+  },
+  {
+   "text": "Quả táo, củ cà rốt, quả đậu đều ăn được. Còn thứ nào khác?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đứng dậy nào! Bé tưởng tượng mình là một hạt đậu nhỏ trong đất.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé ngồi thu tròn như hạt đậu, rồi vươn thật cao như mầm cây. Mình làm ba lần.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nếu cây đậu cao tới tận mây, Lu leo lên sẽ thấy gì? Bé chọn điều bé thích.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tưởng tượng hay quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy những đám mây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mây trắng bồng bềnh như bông.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu thấy cầu vồng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cầu vồng có nhiều màu quá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu gặp một chú chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú chim chào Lu rồi bay quanh cây đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Khu vườn cần thêm hoa. Bé chọn một bông hoa bé thích nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Khu vườn có thêm bông hoa bé chọn rồi!",
    "lang": "vi"
   },
   {
@@ -996,578 +821,6 @@
   },
   {
    "text": "Mầm đậu có nhà mới rồi! Mai mình tưới nước cho mầm nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào bé! Hôm nay bé lại là Lu nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mầm đậu hôm qua lớn thêm một chút rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giỏi lắm! Hôm nay bé nhìn thật kỹ và tìm được hết hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mai mình gặp bạn mới ở cổng làng nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu thức dậy, chạy ra xem chậu mầm đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào chậu mầm để tưới nước nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mầm đậu uống nước rồi. Lu xách giỏ đậu ra vườn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bỗng gió thổi thật mạnh. Vù vù!",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏ đậu của Lu bị đổ. Hạt đậu lăn khắp vườn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giúp Lu tìm hạt đậu nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình bắt đầu tìm thôi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Trước hết, mình xem trong giỏ còn mấy hạt.",
-   "lang": "vi"
-  },
-  {
-   "text": "Trong giỏ còn mấy hạt đậu?",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Trong giỏ còn một hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Trong giỏ còn hai hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Trong giỏ còn ba hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Gió còn thổi rơi mấy chiếc lá. Mình đếm lá nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mỗi chiếc lá, bé đếm một tiếng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Có mấy chiếc lá?",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình chạm đếm lại từng chiếc lá nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giỏi lắm! Có một chiếc lá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giỏi lắm! Có hai chiếc lá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giỏi lắm! Có ba chiếc lá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu tròn, màu nâu. Bé nhìn kỹ giữa đám lá và hoa nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu tròn và nâu, không có cánh hoa.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé tìm được hết hạt trong cỏ rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Có hạt lăn vào luống rau. Ở đây nhiều thứ hơn, bé nhìn thật kỹ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu tròn, màu nâu. Mầm đậu thì có lá xanh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Luống rau không còn hạt nào trốn nữa!",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình nghỉ tay một chút nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé dang tay làm chiếc lá, xoay một vòng thật chậm như gió thổi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé ngồi thu tròn như hạt đậu, rồi lắc lư sang trái, sang phải.",
-   "lang": "vi"
-  },
-  {
-   "text": "Nắng chiều chiếu vào, mỗi đồ vật có một cái bóng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hình nào cũng về đúng bóng rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu tìm mãi chưa thấy hạt đậu cuối cùng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhìn mặt Lu. Lu đang thấy thế nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi, Lu đang buồn vì mất hạt đậu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhìn miệng Lu xem, miệng đang cong xuống.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đang vui.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đang buồn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đang giận.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu buồn. Mình làm gì giúp Lu nhé?",
-   "lang": "vi"
-  },
-  {
-   "text": "Cảm ơn bé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ôm Lu một cái.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu thấy ấm áp hơn rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cùng Lu tìm tiếp.",
-   "lang": "vi"
-  },
-  {
-   "text": "Có bạn giúp, Lu thấy vui hơn.",
-   "lang": "vi"
-  },
-  {
-   "text": "A, hạt đậu cuối cùng nằm dưới chiếc lá!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào chiếc lá nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Tìm thấy rồi! Lu vui quá.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bà bày thẻ hình đồ vật trong vườn. Bé tìm hai thẻ giống nhau nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé tìm đĩa có một quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chính xác! Đĩa này có một quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm đếm từng quả xem.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé tìm đĩa có ba quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chính xác! Đĩa này có ba quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé tìm đĩa có hai quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chính xác! Đĩa này có hai quả táo.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu xếp các giỏ hạt lên kệ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bà nhờ Lu hái quả táo đỏ cho bữa chiều.",
-   "lang": "vi"
-  },
-  {
-   "text": "Quả táo màu đỏ, tròn tròn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé hái đủ táo cho bà rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào từng quả táo nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu đã về lại giỏ. Vườn gọn gàng rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào giỏ đậu để cất vào nhà nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ở nhà, bé tìm ba đồ vật màu đỏ cùng bố mẹ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chào bé! Hôm nay bé là Lu, ra cổng làng nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hôm nay có một bạn mới đến làng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giỏi lắm! Hôm nay bé đã chào bạn mới bằng tiếng Anh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đi ra cổng làng. Nắng sáng thật đẹp.",
-   "lang": "vi"
-  },
-  {
-   "text": "Nghe nói hôm nay có bạn mới đến chơi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình đợi bạn ở cổng nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bạn Thỏ từ làng bên đến chơi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ có đôi tai dài và cái đuôi tròn xinh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ đến từ một nơi rất xa, ở đó mọi người nói tiếng Anh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ biết chào bằng tiếng Anh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Khi gặp nhau, Thỏ nói: Hello!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào Lu để Lu chào lại Thỏ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hello! Lu chào Thỏ rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ làm rơi mấy hạt đậu. Bé giúp Thỏ nhặt nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu tròn, màu nâu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ cảm ơn bé đã nhặt giúp.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu muốn hái hoa tặng Thỏ. Bé tìm những bông hoa nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bông hoa có nhiều cánh tròn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ thích bó hoa lắm!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào từng bông hoa nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chạm vào Lu để nghe, rồi nói theo thật to nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu còn nói tên mình. Bé nghe rồi nói theo nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hello! I'm Lu.",
-   "lang": "en"
-  },
-  {
-   "text": "Khi gặp bạn, mình nói Hello. Khi chia tay, mình nói Goodbye.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nghe rồi chạm đúng tranh nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Yes! Hello!",
-   "lang": "en"
-  },
-  {
-   "text": "Yes! Goodbye!",
-   "lang": "en"
-  },
-  {
-   "text": "Giờ có thêm Yes và No. Bé nghe rồi chạm đúng tranh nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Yes!",
-   "lang": "en"
-  },
-  {
-   "text": "Yes! Yes!",
-   "lang": "en"
-  },
-  {
-   "text": "No!",
-   "lang": "en"
-  },
-  {
-   "text": "Yes! No!",
-   "lang": "en"
-  },
-  {
-   "text": "Lần cuối nhé. Bé nghe thật kỹ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu và Thỏ cùng hát. Bé vẫy tay theo nhịp nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hello, hello, hello! Vẫy tay, vẫy tay. Goodbye, goodbye! Vẫy tay chào nhau.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhảy lên một cái, vẫy tay thật cao và nói Hello!",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ đố Lu. Đúng thì bé chạm dấu xanh, nói Yes. Không đúng thì chạm dấu đỏ, nói No.",
-   "lang": "vi"
-  },
-  {
-   "text": "Is it a bean?",
-   "lang": "en"
-  },
-  {
-   "text": "Yes! Good job!",
-   "lang": "en"
-  },
-  {
-   "text": "Look again. Is it a bean?",
-   "lang": "en"
-  },
-  {
-   "text": "Great!",
-   "lang": "en"
-  },
-  {
-   "text": "Is it a apple?",
-   "lang": "en"
-  },
-  {
-   "text": "Well done!",
-   "lang": "en"
-  },
-  {
-   "text": "Look again. Is it a apple?",
-   "lang": "en"
-  },
-  {
-   "text": "Yes! You got it!",
-   "lang": "en"
-  },
-  {
-   "text": "Is it a flower?",
-   "lang": "en"
-  },
-  {
-   "text": "Look again. Is it a flower?",
-   "lang": "en"
-  },
-  {
-   "text": "Is it a leaf?",
-   "lang": "en"
-  },
-  {
-   "text": "Look again. Is it a leaf?",
-   "lang": "en"
-  },
-  {
-   "text": "Bé nghe Lu nói rồi nói theo nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nghe chuyện rồi chọn câu Lu nói nhé. Chạm vào ô để nghe câu.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ vừa đến cổng làng. Lu nói gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Yes! Hello! I'm Lu.",
-   "lang": "en"
-  },
-  {
-   "text": "Khi gặp bạn, mình nói Hello.",
-   "lang": "vi"
-  },
-  {
-   "text": "Trời tối, Thỏ phải về nhà. Lu nói gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Khi chia tay, mình nói Goodbye.",
-   "lang": "vi"
-  },
-  {
-   "text": "Sáng ra, Lu gặp bà. Lu nói gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Gặp người thân buổi sáng, mình nói Hello.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đi ngủ, chào bố mẹ. Lu nói gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Yes! Goodbye! Good night!",
-   "lang": "en"
-  },
-  {
-   "text": "Khi chia tay đi ngủ, mình nói Goodbye.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình đứng dậy chơi trò chào nhau nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu nói Hello thì bé nhảy lên vẫy tay. Lu nói Goodbye thì bé ngồi xuống vẫy tay. Hello! Goodbye! Hello!",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu nói Yes thì bé gật đầu. Lu nói No thì bé lắc đầu. Yes! No! Yes! No!",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu và mẹ đi chợ. Có một người lạ chào Lu và rủ Lu đi xem đồ chơi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình cùng nhớ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đi theo người lạ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Không đi theo người lạ nhé. Lu ở cạnh mẹ và nói: Không, cảm ơn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Lu đứng cạnh mẹ, nói: Không, cảm ơn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng là cách an toàn. Lu luôn ở cạnh mẹ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ có bộ thẻ. Bé tìm hai thẻ giống nhau nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ xáo thẻ lại rồi. Mình chơi thêm một lần nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Chưa giống nhau rồi. Bé thử thẻ khác nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏi quá, đủ đôi rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Chiều rồi, Thỏ phải về. Mình vẫy tay chào Thỏ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thỏ vẫy tay đi về làng bên.",
-   "lang": "vi"
-  },
-  {
-   "text": "Sáng mai, bé nói Hello với bố mẹ nhé.",
    "lang": "vi"
   }
  ]

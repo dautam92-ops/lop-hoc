@@ -144,7 +144,10 @@ export function vis(x) {
   if (x.startsWith('lu:')) return luFn ? luFn(x.slice(3)) : '';
   if (x.startsWith('asset:')) { const k = x.slice(6), src = assetSrc[k]; return src ? `<img class="lu-art asset" src="${src}" alt="">` : ''; }
   const g = x.match(/^((?:art|face):[^*]+)\*(\d+)$/); if (g) return groupHTML(g[1], Math.min(+g[2], 10));
-  if (x.startsWith('art:')) { const [, k, arg] = x.split(':'); return ART[k] ? ART[k](arg ? decodeURIComponent(arg) : undefined) : ''; }
+  if (x.startsWith('art:')) { const [, k, arg] = x.split(':');
+    // Ảnh vẽ tay đã duyệt thay cho hình vẽ mã (slot "art:hat-dau" trong Asset Registry); hình có tham số (màu, số trên cọc) giữ hình vẽ mã
+    if (!arg && assetSrc['art:' + k]) return `<img class="lu-art asset" src="${assetSrc['art:' + k]}" alt="" draggable="false">`;
+    return ART[k] ? ART[k](arg ? decodeURIComponent(arg) : undefined) : ''; }
   if (x.startsWith('face:')) return face(x.slice(5));
   return x;
 }
