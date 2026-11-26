@@ -275,6 +275,7 @@
    ],
    "diff": "4–5: làm quen o, a, e với 3 thẻ. 5–6: phân biệt o, ô, ơ và c với 4 thẻ.",
    "note": "",
+   "bd": "phong",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -460,6 +461,7 @@
    ],
    "diff": "4–5: loại + màu, 9 ô. 5–6: thêm kích thước hoặc điều kiện phủ định \"không phải màu…\", 12 ô.",
    "note": "",
+   "bd": "L001-BG-05",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -563,6 +565,7 @@
    ],
    "diff": "4–5: số 1–3. 5–6: số 4–8, bốn cọc mỗi lượt.",
    "note": "",
+   "bd": "L001-BG-04",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -685,6 +688,7 @@
    ],
    "diff": "4–5: 3 cặp quen thuộc. 5–6: 4 cặp, có đồ vật ít gặp hơn.",
    "note": "",
+   "bd": "L001-BG-01",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -791,6 +795,7 @@
    ],
    "diff": "4–5: nối 3 con vật với nơi sống. 5–6: nối 3 nghề với dụng cụ, rồi 4 con vật với nơi sống.",
    "note": "",
+   "bd": "L001-BG-02",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -901,6 +906,7 @@
    ],
    "diff": "4–5: 2 nhóm (đồ vệ sinh và đồ ăn). 5–6: 3 nhóm (dưới nước, trên trời, trên cạn), 6 vật mỗi lượt.",
    "note": "Ếch và vịt sống được cả trên cạn; mẫu xếp theo nơi chúng kiếm ăn chính (dưới nước). Cần chuyên môn xác nhận.",
+   "bd": "nha-sang",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1065,6 +1071,7 @@
    ],
    "diff": "4–5: 3 tranh. 5–6: 4 tranh, thêm một truyện vòng đời gà.",
    "note": "",
+   "bd": "L001-BG-03",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1179,6 +1186,7 @@
    ],
    "diff": "4–5: 3 đôi giống hệt nhau. 5–6: 4 đôi có liên quan, hai thẻ khác hình.",
    "note": "Theo quy tắc tam: chỉ giải thích lúc đầu, lật sai úp lại im lặng, đôi đúng có tiếng \"ting\", xong cả bài mới khen.",
+   "bd": "hien",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1255,6 +1263,7 @@
    ],
    "diff": "4–5: tìm 2 con, hình to. 5–6: tìm 4 con, hình nhỏ hơn, nhiều vật gây nhiễu.",
    "note": "",
+   "bd": "vuon",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1373,6 +1382,7 @@
    ],
    "diff": "4–5: một chỉ dẫn mỗi lần, trong, trên, dưới. 5–6: nghe hai chỉ dẫn liền nhau rồi mới làm, thêm trái và phải.",
    "note": "Trái, phải tính theo phía bé nhìn vào màn hình.",
+   "bd": "phong",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1480,6 +1490,7 @@
    ],
    "diff": "4–5: 4 mảnh vuông. 5–6: 9 mảnh vuông.",
    "note": "",
+   "bd": "san",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1550,6 +1561,7 @@
    ],
    "diff": "4–5: 4 mảnh, có tranh mờ làm mẫu. 5–6: 9 mảnh, không có tranh mẫu.",
    "note": "",
+   "bd": "cay-cao",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1620,6 +1632,7 @@
    ],
    "diff": "4–5: mê cung 4×3. 5–6: 6×5 và nhặt 3 hạt đậu trước khi về nhà.",
    "note": "",
+   "bd": "L001-BG-02",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1681,6 +1694,7 @@
    ],
    "diff": "4–5: nét cơ bản (thẳng, ngang, cong), có mẫu và hỗ trợ. 5–6: chữ o, ô, ơ, thêm bước tự tô với độ chính xác cao hơn.",
    "note": "Dữ liệu nét chữ là bản nháp, cần chuyên môn tiểu học kiểm tra điểm bắt đầu và chiều nét trước khi dùng thật.",
+   "bd": "phong",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1747,6 +1761,7 @@
    ],
    "diff": "4–5: chủ đề gợi ý mặt trời. 5–6: chủ đề tự chọn, cần nhiều nét hơn.",
    "note": "",
+   "bd": "hien",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1836,6 +1851,7 @@
    ],
    "diff": "4–5: tô tự do, tô ít nhất nửa tranh. 5–6: tô theo số, phải đúng màu từng vùng.",
    "note": "",
+   "bd": "vuon-gio",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -1964,6 +1980,7 @@
    ],
    "diff": "4–5: đếm 1–5. 5–6: đếm 6–10.",
    "note": "",
+   "bd": "vuon",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2056,6 +2073,7 @@
    ],
    "diff": "4–5: 4 bước. 5–6: 5 bước, thêm bước xắn tay áo.",
    "note": "Hình đôi tay đổi màu là hình vẽ mã tạm; bản chính cần ảnh vẽ tay từng trạng thái (bẩn, ướt, có bọt, sạch).",
+   "bd": "bep",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2175,6 +2193,7 @@
    ],
    "diff": "4–5: 3 vật quen thuộc. 5–6: 5 vật, có vật dễ đoán nhầm (khúc gỗ to vẫn nổi).",
    "note": "Dự đoán không chấm đúng sai. Lời giải thích khoa học cần chuyên môn kiểm duyệt.",
+   "bd": "bo-ao",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2312,6 +2331,7 @@
    ],
    "diff": "4–5: làm quen từng nhạc cụ trước, chọn 1 trong 2. 5–6: chọn 1 trong 4, không làm quen trước.",
    "note": "Âm nhạc cụ đang tổng hợp bằng trình duyệt; bản chính nên thu âm nhạc cụ thật.",
+   "bd": "san",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2389,6 +2409,7 @@
    ],
    "diff": "4–5: 2–3 tiếng, chỉ cần đúng số tiếng, có chấm nhìn. 5–6: có nghỉ, phải đúng nhịp ngắn dài, ẩn chấm.",
    "note": "",
+   "bd": "L001-BG-05",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2461,6 +2482,7 @@
    ],
    "diff": "4–5: nhận ra cảm xúc (có đáp án) rồi chọn cách làm. 5–6: thêm câu hỏi vì sao bạn buồn và một lượt thứ hai.",
    "note": "Câu hỏi cảm xúc có đáp án; câu hỏi cách làm là lựa chọn mở, mọi lựa chọn đều được Lu đón nhận và giải thích.",
+   "bd": "phong",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2673,6 +2695,7 @@
    ],
    "diff": "4–5: một lựa chọn, hai kết thúc. 5–6: thêm câu đoán và câu hỏi hiểu chuyện.",
    "note": "",
+   "bd": "mua",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2886,6 +2909,7 @@
    ],
    "diff": "4–5: dán ít nhất 3 hình. 5–6: dán ít nhất 5 hình, nhiều lựa chọn hơn.",
    "note": "",
+   "bd": "vuon-gio",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -2956,6 +2980,7 @@
    ],
    "diff": "4–5: một vòng tròn. 5–6: hình tam giác và hai nét, cần nhiều nét hơn.",
    "note": "Hoạt động mở: không chấm đúng sai, Lu đón nhận mọi ý tưởng.",
+   "bd": "L001-BG-01",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3054,6 +3079,7 @@
    ],
    "diff": "4–5: tìm 3 đồ vật màu đỏ. 5–6: tìm 3 đồ vật hình tròn và xếp từ nhỏ đến lớn.",
    "note": "Hoạt động ngoài màn hình chỉ ghi đã tham gia; bố mẹ xác nhận.",
+   "bd": "nha-sang",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3109,6 +3135,7 @@
    ],
    "diff": "4–5: 4 bộ phận, hỏi 2 câu. 5–6: 6 bộ phận kèm từ tiếng Anh, hỏi 4 câu.",
    "note": "",
+   "bd": "L001-BG-02",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3246,6 +3273,7 @@
    ],
    "diff": "4–5: 2 điểm khác. 5–6: 4 điểm khác.",
    "note": "",
+   "bd": "san",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3445,6 +3473,7 @@
    ],
    "diff": "4–5: 3 vật, mất 1. 5–6: 5 vật, mất 2.",
    "note": "",
+   "bd": "phong",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3528,6 +3557,7 @@
    ],
    "diff": "4–5: chuỗi 2–3, 3 bông hoa. 5–6: chuỗi 3–5, 4 bông hoa.",
    "note": "",
+   "bd": "vuon",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3632,6 +3662,7 @@
    ],
    "diff": "4–5: quy luật AB, AAB. 5–6: ABC, ABB, AABB, hình khác nhau cả màu và dạng.",
    "note": "",
+   "bd": "hien",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3737,6 +3768,7 @@
    ],
    "diff": "4–5: 2 manh mối, 3 hình. 5–6: 3 manh mối, 5 hình.",
    "note": "",
+   "bd": "bo-ao",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -3985,6 +4017,7 @@
    ],
    "diff": "4–5: thêm và bớt trong phạm vi 5. 5–6: gộp và tách trong phạm vi 10.",
    "note": "",
+   "bd": "bep",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4105,6 +4138,7 @@
    ],
    "diff": "4–5: số 1, 2, 3 có mẫu và hỗ trợ. 5–6: số 5, 8, 9 thêm bước tự tô.",
    "note": "Dữ liệu nét số là bản nháp, cần chuyên môn kiểm tra.",
+   "bd": "phong",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4168,6 +4202,7 @@
    ],
    "diff": "4–5: 3 con vật quen thuộc. 5–6: 5 con vật, có từ dài hơn.",
    "note": "",
+   "bd": "san",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4255,6 +4290,7 @@
    ],
    "diff": "4–5: in và on. 5–6: in, on, under, nghe hai câu liền nhau.",
    "note": "",
+   "bd": "nha-sang",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
@@ -4356,6 +4392,7 @@
    ],
    "diff": "4–5: 2–5 vật, xem 2,5 giây. 5–6: 11–20 trên khung mười, xem 3,5 giây.",
    "note": "",
+   "bd": "L001-BG-04",
    "status": "ready_for_review",
    "version": "1.0.0",
    "levels": {
