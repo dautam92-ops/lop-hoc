@@ -1,5 +1,7 @@
 import json,sys,re
-vi=json.load(open('/home/user/lop-hoc/audio/vi_clips.json'))
+import glob
+vi={}
+for fn in sorted(glob.glob('/home/user/lop-hoc/audio/vi_clips*.json')): vi.update(json.load(open(fn)))
 for f in sys.argv[1:]:
     h=open(f,encoding='utf8').read()
     i=h.index('const CLIPS=')+len('const CLIPS=')
