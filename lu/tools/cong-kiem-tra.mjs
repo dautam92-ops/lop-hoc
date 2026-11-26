@@ -2,7 +2,7 @@
 // Chạy: node tools/cong-kiem-tra.mjs L001   (thoát mã 1 nếu có mục đỏ)
 // Mỗi lỗi đã gặp phải có ít nhất một mục ở đây (xem SO-LOI.md).
 import { danhGia } from './do-to-giua.mjs';
-import { kiemCauTruc, kiemOn } from './kiem-cau-truc.mjs';
+import { kiemCauTruc, kiemOn, kiemNangLuc } from './kiem-cau-truc.mjs';
 import { readdir } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import { readFile, access } from 'node:fs/promises';
@@ -33,6 +33,8 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
   check('Cấu trúc như L001: 10–12 bài nhỏ, 3–4 bài tập mỗi bài, đủ 6 nhóm kỹ năng', !ct.length, ct.slice(0, 3).join('; '));
   const ot = pkg ? kiemOn(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
   check('Ôn chữ/số: mỗi lượt ôn một cách học mới, từ L004 có thẻ ôn', !ot.length, ot.slice(0, 3).join('; '));
+  const nl = pkg ? kiemNangLuc(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
+  check('Năng lực: ≥ 8 mỗi buổi, có tưởng tượng và sáng tạo, 5 buổi đủ 18', !nl.length, nl.slice(0, 3).join('; '));
 }
 
 // 2. Giọng đọc: mọi câu đều có tệp, tệp tồn tại
