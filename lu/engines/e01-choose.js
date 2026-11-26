@@ -68,6 +68,19 @@ export async function mount(ctx, act, variant) {
   for (let r = 0; r < variant.rounds.length; r++) { await round(ctx, act, variant.rounds[r], r === 0); ctx.tick?.(); }
 }
 
+// Chọn đáp án để hoàn thiện hình: đáp án tự bay từ ô chọn vào ô trống trong tranh (tam 26/11 19:57, quy tắc 34)
+function bayVao(ctx, btn, dich) {
+  dich.dataset.filled = '1';
+  const src = btn.querySelector('.sym') || btn.firstElementChild || btn;
+  const dat = () => { if (src.classList.contains('sym') && dich.classList.contains('sym')) { dich.innerHTML = src.innerHTML; dich.classList.remove('q'); } else dich.innerHTML = src.outerHTML; dich.classList.add('da-ghep'); };
+  if (ctx.fast) return dat();
+  const a = src.getBoundingClientRect(), z = dich.getBoundingClientRect();
+  const g = src.cloneNode(true); g.classList.add('bay'); Object.assign(g.style, { position: 'fixed', left: a.left + 'px', top: a.top + 'px', width: a.width + 'px', height: a.height + 'px', margin: 0, zIndex: 60, pointerEvents: 'none', transformOrigin: '0 0', transition: 'transform .6s cubic-bezier(.3,.7,.3,1)' });
+  (btn.closest('.lu-lesson') || document.body).appendChild(g); g.getBoundingClientRect();
+  g.style.transform = `translate(${z.left - a.left}px, ${z.top - a.top}px) scale(${z.width / a.width}, ${z.height / a.height})`;
+  setTimeout(() => { dat(); g.remove(); }, 620);
+}
+
 function round(ctx, act, R, first) {
   const { ui, voice } = ctx; let tries = 0, hints = 0;
   return new Promise(done => {
@@ -104,6 +117,7 @@ function round(ctx, act, R, first) {
       // Câu tình huống EQ: mọi lựa chọn đều được đáp lại tôn trọng, không chấm đúng sai (S01-R07)
       if (R._any) { b.classList.add('right'); ctx.record({ skill_id: act.skill_id, kind: 'participation', choice: i, correct: true, first_try: true, tries: 1, hints: 0 }); voice.say([opts[i].say, opts[i].reply || R._any.ok].filter(Boolean)).then(done); return; }
       if (i === ans) {
+        const dich = ui.stage.querySelector('.story [data-dich], .story .sym.q'); if (dich) bayVao(ctx, b, dich);
         b.classList.add('right');
         ctx.record({ skill_id: act.skill_id, correct: true, first_try: tries === 0, tries: tries + 1, hints });
         (en ? voice.speak(okKeys(i)) : voice.say(okKeys(i))).then(done);

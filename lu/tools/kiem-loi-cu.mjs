@@ -39,6 +39,16 @@ export async function kiemLoiCu(page) {
     // Hình nghèo nàn (tam 26/11 19:04): đồ vật, con vật, cảnh trên màn phải là ảnh vẽ tay; hình vẽ mã chỉ cho hình học, hình có tham số, hoặc đang chờ vẽ
     const ma = await page.evaluate(cho => [...new Set([...document.querySelectorAll('.stage svg[data-art]')].filter(x => x.getBoundingClientRect().width > 0).map(x => x.dataset.art))].filter(k => !/^hinh-/.test(k) && !cho.includes(k)), CHO_ANH);
     r.checks.hinhVeTay = !ma.length; if (ma.length) errs.push(`Hình nghèo nàn: ${ma.join(', ')} còn là hình vẽ mã, cần ảnh vẽ tay (thêm vào tools/lab/anh-con-thieu.json để vẽ trên máy 24H)`);
+    // Lấy vật từ nguồn (tam 26/11 20:03 "Đĩa táo của Lu"): giỏ/túi/hộp phải chứa đúng vật, to ngang đĩa, lấy ra thì vật trong nguồn giảm
+    const ng = await page.evaluate(async () => { const s = document.querySelector('.stage .tr-src'); if (!s || s.disabled) return null; const pl = document.querySelector('.stage .tr-plate');
+      const vis = () => [...s.querySelectorAll('.tr-src-in > *')].filter(x => x.getBoundingClientRect().width > 8 && getComputedStyle(x).visibility !== 'hidden' && getComputedStyle(x).opacity !== '0').length;
+      const S = s.getBoundingClientRect(), P = pl.getBoundingClientRect(); const n0 = vis(), p0 = pl.querySelectorAll('.tr-it').length;
+      for (let i = 0; i < 60 && document.querySelector('.lu-root')?.classList.contains('busy'); i++) await new Promise(r => setTimeout(r, 50));
+      s.click(); await new Promise(r => setTimeout(r, 450)); return { n0, n1: vis(), p0, p1: pl.querySelectorAll('.tr-it').length, h: S.height, ph: P.height }; });
+    if (ng) { const e = [];
+      if (!ng.n0) e.push('giỏ trống, không có vật để lấy'); else if (ng.p1 > ng.p0 && ng.n1 !== ng.n0 - 1) e.push(`lấy ra một vật mà số vật trong giỏ không giảm (${ng.n0} → ${ng.n1})`);
+      if (ng.h < ng.ph * .8) e.push(`giỏ quá bé (${Math.round(ng.h)}px, đĩa ${Math.round(ng.ph)}px)`);
+      r.checks.nguonCoVat = !e.length; for (const x of e) errs.push('Lấy vật từ giỏ: ' + x); }
   return { checks: r.checks, errs };
 }
 
@@ -65,3 +75,14 @@ export async function kiemGio(page) {
   });
   return m === null ? null : { ok: !m.length, errs: m.map(x => 'Xếp vào giỏ: ' + x) };
 }
+
+// Chọn đáp án để hoàn thiện hình (tam 26/11 19:57 "Nửa kia của hình"): chọn đúng thì đáp án tự bay vào ô trống.
+// Ô trống trong tranh: [data-dich] hoặc .sym.q. Gọi dichCaiDat(page) một lần sau khi mở bài, dichLoi(page) để lấy lỗi.
+export async function dichCaiDat(page) {
+  await page.evaluate(() => { if (window.__dichObs) return; window.__dichLoi = [];
+    window.__dichObs = new MutationObserver(ms => { for (const m of ms) { const b = m.target; if (!(b instanceof Element) || !b.matches('.answers .opt.right') || m.oldValue?.includes('right') || b.closest('[data-any]')) continue;
+      const left = [...document.querySelectorAll('.stage .story .sym.q, .stage .story [data-dich]')].filter(x => !x.dataset.filled);
+      if (left.length) window.__dichLoi.push(document.querySelector('.scene .title')?.innerText || '?'); } });
+    window.__dichObs.observe(document.body, { subtree: true, attributes: true, attributeFilter: ['class'], attributeOldValue: true }); });
+}
+export async function dichLoi(page) { const l = await page.evaluate(() => [...new Set(window.__dichLoi || [])]); return l.map(t => `Chọn đúng mà đáp án không bay vào ô trống của hình ("${t}")`); }

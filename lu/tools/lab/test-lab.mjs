@@ -8,7 +8,7 @@
 import { createRequire } from 'node:module';
 import { serve } from '../serve.mjs';
 import { doToGiua, danhGia } from '../do-to-giua.mjs';
-import { kiemLoiCu, kiemGio } from '../kiem-loi-cu.mjs';
+import { kiemLoiCu, kiemGio, dichCaiDat, dichLoi } from '../kiem-loi-cu.mjs';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 const port = 5900 + Math.floor(Math.random() * 90); const srv = await serve(port);
@@ -37,6 +37,10 @@ for (const s of D.samples) {
       r.checks.toGiua = !tg.length; for (const x of tg) errs.push('Quy tắc 33: ' + x);
       { const k = await kiemLoiCu(page); Object.assign(r.checks, k.checks); errs.push(...k.errs); }
       if (shots) await page.screenshot({ path: new URL(`${s.id}_${age}_${dev}.png`, OUT).pathname });
+      // Quy tắc 36 (tam 26/11 20:00 "Listen and touch"): mọi bài mở đầu bằng câu hướng dẫn bé cần làm gì, không chỉ đọc một từ
+      { const sp = await page.evaluate(() => window.__labTest.spoken.map(x => x.k).filter(k => !k.startsWith('__')));
+        const n = sp.join(' ').trim().split(/\s+/).filter(Boolean).length; r.checks.loiMoDau = n >= 5;
+        if (n < 5) errs.push(`Quy tắc 36: bài không có câu mở đầu hướng dẫn (Lu chỉ nói: "${sp.join(' | ')}")`); }
       // ---- thử sai trước
       const w = await page.evaluate(async () => {
         const T = window.__labTest; const n0 = T.spoken.length, e0 = T.events.length, f0 = (T.sfx || []).length;
@@ -59,6 +63,7 @@ for (const s of D.samples) {
         if (s.engine === 'E05') { r.checks.lat_sai_im_lang = !w.spoken.length; if (w.spoken.length) errs.push('Lật sai mà Lu vẫn nói: ' + w.spoken.join(' | ')); }
       } else r.checks.sai_khong_khen = 'không có thao tác sai (hoạt động mở hoặc tham gia)';
       // ---- làm đúng đến hết
+      await dichCaiDat(page);
       let steps = 0;
       while (steps++ < 120) {
         const st = await page.evaluate(async () => {
@@ -73,6 +78,7 @@ for (const s of D.samples) {
         if (s.engine === 'E05' && st.spoken && !st.done) { const bad = st.spoken.filter(k => k !== '__dung'); if (bad.length && !(await page.evaluate(() => window.__labTest.done))) { errs.push('Lật đúng mà Lu vẫn nói: ' + bad.join(' | ')); r.checks.lat_dung_chi_ting = false; } }
         await page.waitForTimeout(30);
       }
+      { const d = await dichLoi(page); r.checks.dapAnVaoO = !d.length; errs.push(...d); }
       const T = await page.evaluate(() => ({ done: window.__labTest.done, events: window.__labTest.events.length, err: window.__labTest.error }));
       r.checks.choi_het = T.done; if (!T.done) errs.push('Không chơi được tới cuối');
       r.checks.ghi_ket_qua = T.events > 0; if (!T.events) errs.push('Không ghi kết quả');
@@ -108,6 +114,19 @@ for (const [id, sel, cov] of [['MT-07', '.wh-grid', '.wh-grid.cov'], ['MX-03', '
   const ok = r.seen.join(',') === '3,2,1' && r.big >= (dev === 'phone' ? 64 : 90) && r.mid <= .08 && r.during && !r.after && r.covered;
   if (!ok) { fail++; errs.push('Ghi nhớ: cần đếm ngược 3, 2, 1 to giữa màn rồi mới úp tranh: ' + JSON.stringify(r)); }
   rows.push({ id, age: '4-5', dev, checks: { demNguoc: ok }, errs, ok }); console.log(`${ok ? 'ĐẠT ' : 'LỖI '} ${id} ${dev} đếm ngược${errs.length ? '\n    ' + errs.join('\n    ') : ''}`);
+  await page.close();
+}
+// ---- Đáp án bay vào ô trống, tốc độ thật (tam 26/11 19:57): sau khi chọn đúng, ô trống hiện đúng hình đáp án
+for (const dev of ['ipad', 'phone']) {
+  if (only.length && !only.includes('MT-05')) continue;
+  const page = await b.newPage(DEV[dev]); const errs = [];
+  await page.goto(`${BASE}?s=MT-05&age=4-5&seed=7&auto=1&tts=0&idle=600000`);
+  await page.waitForFunction(() => window.__labTest?.current?.length, null, { timeout: 15000 });
+  const want = await page.evaluate(() => [...window.__labTest.current[0].querySelectorAll('.sym i')].map(i => i.classList.contains('on') ? 1 : 0).join(''));
+  await page.evaluate(() => window.__labCmd('right')); await page.waitForTimeout(1000);
+  const got = await page.evaluate(() => { const d = document.querySelector('.story .sym.da-ghep'); return d ? [...d.querySelectorAll('i')].map(i => i.classList.contains('on') ? 1 : 0).join('') : null; });
+  const ok = !!want && got === want; if (!ok) { fail++; errs.push(`Nửa kia của hình: chọn đúng mà ô trống không hiện đáp án (cần ${want}, thấy ${got})`); }
+  rows.push({ id: 'MT-05', age: '4-5', dev, checks: { dapAnBayVao: ok }, errs, ok }); console.log(`${ok ? 'ĐẠT ' : 'LỖI '} MT-05 ${dev} đáp án bay vào ô${errs.length ? '\n    ' + errs.join('\n    ') : ''}`);
   await page.close();
 }
 await b.close(); srv.close();

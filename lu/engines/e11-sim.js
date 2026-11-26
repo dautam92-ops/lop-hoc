@@ -143,7 +143,7 @@ function tray(ctx, act, R, first) {
     let phase = 'act', wrong = 0;
     const plate = n => `<div class="tr-plate">${Array.from({ length: n }, (_, i) => `<button class="tr-it" data-i="${i}">${vis(obj)}</button>`).join('')}</div>`;
     let body = '';
-    if (t.type === 'them') body = `<div class="tray-sc">${plate(t.start)}<button class="tr-src" aria-label="lấy thêm">${vis(t.src || act.src || 'art:gio')}<b>+</b></button></div>`;
+    if (t.type === 'them') body = `<div class="tray-sc">${plate(t.start)}<button class="tr-src" aria-label="lấy thêm"><span class="tr-src-gio">${vis(t.src || act.src || 'art:gio')}</span><span class="tr-src-in">${Array.from({ length: Math.min(t.add + 1, 6) }, () => `<span class="tr-sv">${vis(obj)}</span>`).join('')}</span><b>+</b></button></div>`;
     if (t.type === 'bot') body = `<div class="tray-sc">${plate(t.start)}</div>`;
     if (t.type === 'gop') body = `<div class="tray-sc two"><div class="tr-plate a">${groupHTML(obj, t.a)}</div><div class="tr-plate b">${groupHTML(obj, t.b)}</div><button class="tr-join big-btn alt">Gộp lại</button></div>`;
     if (t.type === 'tach') body = `<div class="tray-sc two"><div class="tr-plate a">${Array.from({ length: t.a }, () => `<span class="tr-it fixed">${vis(obj)}</span>`).join('')}<i>${esc(t.la || '')}</i></div><div class="tr-plate b cover"><span class="tr-cover">?</span><i>${esc(t.lb || '')}</i></div></div>`;
@@ -162,7 +162,7 @@ function tray(ctx, act, R, first) {
     };
     if (t.type === 'them') {
       const src = sc.querySelector('.tr-src'), pl = sc.querySelector('.tr-plate'); ctx.test.mark(src);
-      src.onclick = () => { if (voice.busy || phase !== 'act' || moved >= t.add) return; moved++; count++; pl.insertAdjacentHTML('beforeend', `<span class="tr-it new">${vis(obj)}</span>`); playSound('cham');
+      src.onclick = () => { if (voice.busy || phase !== 'act' || moved >= t.add) return; moved++; count++; const sv = [...src.querySelectorAll('.tr-src-in > .tr-sv')].pop(); sv?.remove(); pl.insertAdjacentHTML('beforeend', `<span class="tr-it new">${vis(obj)}</span>`); playSound('cham');
         if (moved >= t.add) { src.disabled = true; askNumber(); } };
       setAuto(ctx, async () => { while (phase === 'act') { src.click(); await sleep(ctx, 150); } }, null);
     } else if (t.type === 'bot') {
