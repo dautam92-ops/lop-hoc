@@ -1,7 +1,7 @@
 {
  "format": "lu-art-prompts",
  "version": "PM10-1",
- "ghi_chu": "Ảnh cho 10 bài mẫu hoàn chỉnh đầu tiên (Phòng mẫu). Bối cảnh: slot = tên cảnh (thay nền vẽ mã). Đồ vật: slot art:<tên> (thay hình vẽ mã). Chạy trên máy tam, ảnh chỉ hiện sau khi tam duyệt.",
+ "ghi_chu": "Ảnh cho 10 bài mẫu hoàn chỉnh đầu tiên (Phòng mẫu). Bối cảnh: slot = tên cảnh (thay nền vẽ mã). Đồ vật: slot art:<tên> (thay hình vẽ mã). Chạy trên máy tam, ảnh chỉ hiện sau khi tam duyệt. Đồ vật dùng style_do_vat (bỏ \"natural expression\": mô hình vẽ thêm mặt người vào giọt nước, mũ, sỏi).",
  "bai": [
   "CC-01",
   "CC-03",
@@ -63,10 +63,11 @@
    "id": "PM10-BG-bep",
    "slot": "bep",
    "vi": "Bếp nhỏ của nhà Lu",
-   "prompt": "a small warm cottage kitchen, wooden counter along the bottom, a simple sink with tap, round window, a few fruits, empty wall in the center, wide landscape, no characters",
+   "prompt": "inside a small warm cottage kitchen, wooden counter standing on the floor along the bottom, a simple sink with tap, round window, wide landscape, no characters",
    "tach_nen": false,
    "width": 1344,
-   "height": 768
+   "height": 768,
+   "prompt_goc": "a small warm cottage kitchen, wooden counter along the bottom, a simple sink with tap, round window, a few fruits, empty wall in the center, wide landscape, no characters"
   },
   {
    "id": "PM10-BG-bo-ao",
@@ -81,8 +82,9 @@
    "id": "PM10-OB-ao",
    "slot": "art:ao",
    "vi": "Chiếc áo trẻ em",
-   "prompt": "a small red child t-shirt, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a small red child t-shirt laid flat, no person, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "a small red child t-shirt, isolated on plain white background"
   },
   {
    "id": "PM10-OB-ao-nuoc",
@@ -158,8 +160,9 @@
    "id": "PM10-OB-dong-xu",
    "slot": "art:dong-xu",
    "vi": "Đồng xu",
-   "prompt": "one golden coin, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "one golden coin with a star shape embossed, no numbers, no letters, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "one golden coin, isolated on plain white background"
   },
   {
    "id": "PM10-OB-ech",
@@ -186,8 +189,9 @@
    "id": "PM10-OB-giot-nuoc",
    "slot": "art:giot-nuoc",
    "vi": "Giọt nước",
-   "prompt": "one blue water drop, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "one simple blue water drop shape, no face, no person, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "one blue water drop, isolated on plain white background"
   },
   {
    "id": "PM10-OB-hoa",
@@ -235,8 +239,9 @@
    "id": "PM10-OB-mu-dau-bep",
    "slot": "art:mu-dau-bep",
    "vi": "Mũ đầu bếp",
-   "prompt": "a white chef hat, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a white chef hat on its own, no person, no head, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "a white chef hat, isolated on plain white background"
   },
   {
    "id": "PM10-OB-nha",
@@ -270,8 +275,9 @@
    "id": "PM10-OB-soi",
    "slot": "art:soi",
    "vi": "Viên sỏi",
-   "prompt": "one smooth grey pebble, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "one smooth grey pebble stone, no face, isolated on plain white background",
+   "tach_nen": true,
+   "prompt_goc": "one smooth grey pebble, isolated on plain white background"
   },
   {
    "id": "PM10-OB-tao",
@@ -308,5 +314,6 @@
    "prompt": "a bar of soap with bubbles, isolated on plain white background",
    "tach_nen": true
   }
- ]
+ ],
+ "style_do_vat": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, simple clean composition, not too detailed, for kids aged 4 to 6, plain object without face or eyes"
 }
