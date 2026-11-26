@@ -1,0 +1,579 @@
+{
+ "format": "lu-voice-todo",
+ "lesson": "PHONG-MAU",
+ "at": "2026-11-26T07:27:02.195Z",
+ "lines": [
+  {
+   "text": "Bé thử chạm vào chỗ đang sáng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đi theo lối không có tường nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có mấy tấm thẻ chữ. Lu gọi tên chữ nào, bé chạm vào chữ đó nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ o.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đây là chữ o. Chữ o tròn như quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ o tròn xoe như quả trứng đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ a.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đây là chữ a.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ a có một vòng tròn và một nét thẳng bên phải.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ e.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, đây là chữ e.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ e có một nét ngang ở giữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ba chữ o, ô, ơ trông gần giống nhau. Bé nhìn kỹ cái mũ và cái râu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ ô.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ ô đội mũ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ ô có cái mũ trên đầu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ ơ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ ơ có râu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ ơ có cái râu nhỏ bên phải.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ o không có mũ, không có râu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ o tròn xoe, không có mũ, không có râu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm vào chữ c.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi, chữ c hở một bên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chữ c giống chữ o bị hở một bên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi luống có một cọc ghi số. Bé kéo rổ cà rốt về đúng cọc nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình làm thêm một lượt nữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm lại số vật rồi tìm cọc có số giống vậy nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rổ nào cũng về đúng cọc rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này số lớn hơn. Bé đếm thật kỹ rồi kéo về đúng cọc nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu kể chuyện trồng đậu. Bé xếp tranh theo đúng thứ tự nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Câu chuyện đã xếp xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chuyện gì xảy ra trước tiên?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé kể lại giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đầu tiên, Lu gieo hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi hạt nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cuối cùng, cây ra quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu có hai câu chuyện. Bé xếp tranh theo đúng thứ tự nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hai câu chuyện đã xếp xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Câu chuyện thứ hai nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu tưới nước mỗi ngày.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt nảy mầm xanh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây lớn lên và ra quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú gà bắt đầu từ đâu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng là vòng đời của gà rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đầu tiên là quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trứng nở ra gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con lớn lên thành gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé lật hai thẻ. Hai thẻ giống nhau là được một đôi nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Đôi nào cũng tìm ra rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này hai thẻ của một đôi không giống hệt nhau mà có liên quan với nhau, như con gà và quả trứng. Bé lật và nhớ thật kỹ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong vườn đậu có mấy bạn nhỏ đang trốn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm thấy hết các bạn rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn kỹ dưới các bụi cỏ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm chú ốc sên nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "A, chú ốc sên đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm bạn bướm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn bướm đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm chú ếch nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú ếch đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong vườn đậu có nhiều bạn nhỏ đang trốn kỹ lắm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm bạn ong nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn ong đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm chú chim nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú chim đây rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh vườn đậu bị rơi ra thành mảnh. Bé kéo từng mảnh vào đúng chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn tranh mờ phía sau để tìm chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh vườn đậu đã ghép xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh bị rơi ra thành chín mảnh. Bé kéo từng mảnh vào đúng chỗ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn màu và đường nét ở mép mảnh nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tranh đã ghép xong!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bầu trời ở trên, mặt đất ở dưới đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu muốn về nhà. Bé kéo Lu đi theo lối trống nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ở đây có tường rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu về tới nhà rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên đường về, Lu muốn nhặt ba hạt đậu. Bé dẫn Lu nhặt đủ rồi về nhà nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn trước đường đi rồi mới kéo nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu nhặt đủ hạt và về tới nhà rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhặt được một hạt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lu còn thiếu hạt đậu. Bé nhặt đủ rồi mới về nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm từng quả táo và đếm cùng Lu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm từng quả, mỗi quả đếm một tiếng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong rổ có mấy quả táo?",
+   "lang": "vi"
+  },
+  {
+   "text": "năm",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần này nhiều táo hơn. Bé chạm từng quả và đếm thật chậm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "sáu",
+   "lang": "vi"
+  },
+  {
+   "text": "bảy",
+   "lang": "vi"
+  },
+  {
+   "text": "tám",
+   "lang": "vi"
+  },
+  {
+   "text": "chín",
+   "lang": "vi"
+  },
+  {
+   "text": "mười",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu bẩn rồi. Bé giúp Lu rửa tay nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu sạch thơm rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chưa đến bước đó đâu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mở vòi, làm ướt hai bàn tay.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đầu tiên, bé chạm vào thứ gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Xoa xà phòng thật đều, kẽ ngón tay nữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tiếp theo là gì nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Xả nước cho sạch hết bọt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi mình làm gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lau khô tay bằng khăn sạch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bước cuối cùng là gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu bẩn rồi. Bé giúp Lu rửa tay đúng các bước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tay Lu sạch thơm rồi! Bé nhớ rửa tay trước khi ăn nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Xắn tay áo lên cho khỏi ướt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trước khi rửa tay, mình làm gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tiếp theo là gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Xoa xà phòng lòng bàn tay, mu bàn tay, kẽ ngón tay.",
+   "lang": "vi"
+  },
+  {
+   "text": "Rồi sao nữa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay mình làm nhà khoa học nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm thí nghiệm giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giờ bé thả vào chậu nước xem nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Kết quả giống điều bé đoán.",
+   "lang": "vi"
+  },
+  {
+   "text": "Kết quả khác điều bé đoán. Nhà khoa học cũng hay gặp như vậy đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chìm",
+   "lang": "vi"
+  },
+  {
+   "text": "Nổi",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem chiếc lá sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chiếc lá nhẹ và mỏng nên nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, chiếc lá nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem viên sỏi sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Viên sỏi nặng so với độ lớn của nó nên chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, viên sỏi chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem khúc gỗ sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Gỗ nhẹ hơn nước nên khúc gỗ nổi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, khúc gỗ nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem chiếc chìa khóa sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chìa khóa làm bằng kim loại, nặng nên chìm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, chiếc chìa khóa chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem quả bóng sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong quả bóng có không khí nên bóng nổi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, quả bóng nổi trên mặt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán xem đồng xu sẽ chìm hay nổi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đồng xu bằng kim loại, nặng nên chìm xuống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn kìa, đồng xu chìm xuống đáy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay mình làm nhà khoa học. Bé đoán trước, rồi thả vào nước để xem kết quả nhé.",
+   "lang": "vi"
+  }
+ ]
+}
