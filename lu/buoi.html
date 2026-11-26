@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lu – Tất cả buổi học</title>
+<link rel="stylesheet" href="ui/lu-ds.css">
+<link rel="stylesheet" href="ui/nha.css">
+</head>
+<body class="nha-body">
+<div class="ds">
+  <header class="ds-dau">
+    <a class="rbtn" id="ve" href="index.html" aria-label="Về nhà"></a>
+    <div class="tieu-de"><b id="ten-cd"></b><small id="phu-cd"></small></div>
+    <nav class="chuong" id="chuong" aria-label="Chủ đề"></nav>
+  </header>
+  <main class="ds-luoi" id="luoi" aria-label="Các buổi học"></main>
+</div>
+<script type="module">
+import { taiDuLieu, moAmThanh, SVG, chauCay, SINH_VAT } from './core/nha.js';
+const D = await taiDuLieu(); const { cfg, voice } = D; const $ = id => document.getElementById(id);
+const qs = D.p.toString(); $('ve').href = 'index.html' + (qs ? '?' + qs : ''); $('ve').innerHTML = SVG.ve;
+const luImg = cfg.lu.tuoi || cfg.lu.khen;
+const SV = { 8: 'ong', 15: 'buom', 23: 'oc' }; // tối đa 3 con vật nhỏ cho sinh động, cố định vị trí
+let cdHien = (D.homNay ? D.homNay.chuDe : 10);
+try { const h = +location.hash.replace(/\D/g, ''); if (h >= 1 && h <= D.chuDe.length) cdHien = h; } catch {}
+const coGoi = {};
+async function ve() {
+  const cd = D.chuDe[cdHien - 1];
+  $('ten-cd').textContent = cd.ten; $('phu-cd').textContent = `Chủ đề ${cd.so} · buổi ${cd.buoi[0].so} đến ${cd.buoi.at(-1).so}`;
+  $('chuong').innerHTML = D.chuDe.map(c => {
+    const xong = c.buoi.every(b => D.daXong(b.id)); const dang = c.so === cdHien;
+    return `<button class="${dang ? 'dang' : xong ? 'xong' : ''}" data-cd="${c.so}" aria-label="Chủ đề ${c.so}" ${dang ? 'aria-current="true"' : ''}>${c.so}</button>`;
+  }).join('');
+  // buổi mở được: kiểm tra đã có gói bài chưa
+  await Promise.all(cd.buoi.filter(b => D.moDuoc(b) && !(b.id in coGoi)).map(async b => { coGoi[b.id] = await D.goi(b.id); }));
+  const o = cd.buoi.map((b, i) => {
+    const xong = D.daXong(b.id), dang = D.homNay && b.id === D.homNay.id, mo = D.moDuoc(b), g = coGoi[b.id];
+    const loai = xong ? ['cay1', 'cay2', 'cay3'][Math.min(2, Math.floor((cd.buoi.filter(x => D.daXong(x.id)).length - cd.buoi.filter((x, j) => j <= i && D.daXong(x.id)).length) / 2))] : dang ? 'hat' : 'trong';
+    const sv = !xong && !dang && SV[i] ? SINH_VAT[SV[i]] : '';
+    const ruot = `${sv}${chauCay(loai)}${dang ? `<img class="lu-ngoi" src="${luImg}" alt="">` : ''}<b>${b.so}</b>`;
+    if (mo && g) return `<a class="buoi ${xong ? 'xong' : ''} ${dang ? 'dang' : ''}" href="${D.linkBuoi(b, g.__nhap)}" aria-label="Buổi ${b.so}">${ruot}</a>`;
+    if (mo) return `<div class="buoi cho ${dang ? 'dang' : ''}" role="button" tabindex="0" data-loi="sap_co" aria-label="Buổi ${b.so}">${ruot}</div>`;
+    return `<div class="buoi khoa" role="button" tabindex="0" data-loi="buoi_khoa" aria-label="Buổi ${b.so}, chưa mở">${ruot}</div>`;
+  });
+  const n = matchMedia('(max-aspect-ratio: 1/1)').matches ? 3 : 6; let h = '';
+  for (let i = 0; i < o.length; i += n) h += `<div class="ke">${o.slice(i, i + n).join('')}</div>`;
+  $('luoi').innerHTML = h;
+  window.__luBuoi = { chuDe: cdHien, ready: true };
+}
+$('chuong').addEventListener('click', e => { const t = e.target.closest('button[data-cd]'); if (!t) return; cdHien = +t.dataset.cd; try { history.replaceState(null, '', '#cd' + cdHien); } catch {} ve(); });
+$('luoi').addEventListener('click', e => { const t = e.target.closest('[data-loi]'); if (t) { voice.stop(); voice.say(cfg.loi[t.dataset.loi]); } });
+$('luoi').addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.dataset?.loi) { e.preventDefault(); e.target.click(); } });
+moAmThanh(voice, () => setTimeout(() => { if (!voice.busy) voice.say(cfg.loi.chon_buoi); }, 50));
+await ve();
+</script>
+</body>
+</html>

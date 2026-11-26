@@ -56,7 +56,7 @@ export async function runLesson(root, pkg, opts = {}) {
     const resume = storage && opts.resume !== false ? storage.getSession('resume:' + pkg.lesson_id) : null;
     ui.stage.innerHTML = `<div class="scene start">${luArt('vay-tay')}<h1 class="title">${esc(pkg.title)}</h1>
       <div class="row2">${resume ? `<button class="big-btn go-resume">Học tiếp</button>` : ''}<button class="big-btn go${resume ? ' alt' : ''}">${resume ? 'Học lại từ đầu' : 'Bắt đầu'}</button></div></div>
-      ${opts.onExit ? `<button class="corner-btn exit" aria-label="Về bản đồ"><svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>` : ''}
+      ${opts.onExit ? `<button class="corner-btn exit" aria-label="Về nhà"><svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>` : ''}
       ${opts.hideParent ? '' : `<div class="row2"><button class="big-btn alt hold parent-btn">Dành cho bố mẹ (giữ 2 giây)<span class="bar"></span></button></div>`}`;
     ui.stage.querySelector('.go').onclick = () => { voice.unlock(); if (storage) storage.setSession('resume:' + pkg.lesson_id, null); play(); };
     const gr = ui.stage.querySelector('.go-resume'); if (gr) gr.onclick = () => { voice.unlock(); play(resume); };
@@ -157,7 +157,7 @@ export async function runLesson(root, pkg, opts = {}) {
       <div class="stars">${[0, 1, 2].map(i => `<span style="animation-delay:${200 + i * 220}ms">${STAR}</span>`).join('')}</div>
       ${rw ? `<div class="reward"><div class="rw-art">${rw.art || ''}</div><div class="rw-t">${esc(rw.title)}</div></div>` : ''}
       <div class="cap"></div>
-      <div class="row2">${opts.onExit ? `<button class="big-btn to-map">Về bản đồ</button>` : ''}<button class="big-btn alt again">Chơi lại</button></div>
+      <div class="row2">${opts.onExit ? `<button class="big-btn to-map">Về nhà</button>` : ''}<button class="big-btn alt again">Chơi lại</button></div>
       ${opts.hideParent ? '' : `<button class="link-btn hold parent-btn">Bố mẹ giữ 2 giây để xem kết quả<span class="bar"></span></button>`}</div>`;
     voice.caption = ui.stage.querySelector('.cap');
     ui.stage.querySelector('.again').onclick = () => { if (!voice.busy) start(); };

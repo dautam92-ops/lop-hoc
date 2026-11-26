@@ -19,7 +19,7 @@ jobs:
           node-version: 22
       - run: npm install --no-save playwright@1.49.1
       - run: npx playwright install --with-deps chromium
-      - name: Cong kiem tra bai 1
+      - name: Cong kiem tra bai 1 (gom ca man nha va danh sach buoi)
         run: node tools/cong-kiem-tra.mjs L001
       # Mọi lỗi tam đã báo có phép thử trong Phòng mẫu (SO-LOI.md); PR nào làm lỗi cũ quay lại sẽ bị chặn (tam 26/11 18:40)
       - name: Phong mau - noi dung
