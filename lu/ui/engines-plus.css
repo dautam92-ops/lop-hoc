@@ -438,12 +438,16 @@
 .lu-lesson .story .sym.da-ghep, .lu-lesson .story [data-dich].da-ghep { animation: lu-cdn-pop .35s ease-out; box-shadow: 0 0 0 4px #b5cf6b; }
 .sym.bay { background: #fff; border-radius: 6px; box-shadow: 0 10px 24px rgba(107,82,50,.25); }
 
-/* ---- Giỏ lấy vật (tam 26/11 20:03 "Đĩa táo của Lu"): giỏ to ngang đĩa, có sẵn vật bên trong, lấy ra thì vơi dần. Quy tắc 37 */
-.lu-lesson .tr-src { width: 200px; height: 200px; padding: 0; display: grid; place-items: center; }
-.lu-lesson .tr-src .tr-src-gio { position: absolute; inset: 6% 4% 2%; display: grid; place-items: end center; }
-.lu-lesson .tr-src .tr-src-gio .lu-art { width: 100%; height: 100%; object-fit: contain; }
-.lu-lesson .tr-src .tr-src-in { position: absolute; left: 14%; right: 14%; top: 24%; display: flex; flex-wrap: wrap-reverse; justify-content: center; gap: 0 2px; z-index: 1; }
-.lu-lesson .tr-src .tr-sv { width: 46px; height: 46px; margin-bottom: -12px; }
-.lu-lesson .tr-src .tr-sv .lu-art { width: 100%; height: 100%; }
-.lu-lesson .tr-src b { z-index: 2; }
-@media (max-width: 600px) { .lu-lesson .tr-src { width: 160px; height: 160px; } .lu-lesson .tr-src .tr-sv { width: 34px; height: 34px; margin-bottom: -9px; } }
+/* ---- Rổ lấy vật (tam 26/11 20:03 + 20:23 "giỏ táo phải thiết kế lại"): rổ tre đan to ngang đĩa, táo nằm TRONG lòng rổ
+   (miệng rổ phía sau, thân rổ phía trước che nửa dưới quả), lấy ra thì vơi dần. Quy tắc 37 */
+.lu-lesson .tr-src.ro { --w: 290px; position: relative; width: var(--w); height: calc(var(--w) * .66); padding: 0; border: 0; background: none; cursor: pointer; }
+.lu-lesson .tr-src.ro .ro-sau { position: absolute; left: 3%; right: 3%; top: 22%; height: 30%; border-radius: 50%; background: radial-gradient(ellipse at 50% 60%, #7a5326 0 45%, #9c7038 75%); border: 5px solid #c99a55; box-sizing: border-box; }
+.lu-lesson .tr-src.ro .tr-src-in { position: absolute; left: 12%; right: 12%; bottom: 55%; display: flex; flex-wrap: wrap-reverse; justify-content: center; gap: 0 2px; z-index: 1; }
+.lu-lesson .tr-src.ro .tr-sv { width: calc(var(--w) * .24); height: calc(var(--w) * .24); margin-top: calc(var(--w) * -.1); filter: drop-shadow(0 2px 1px rgba(90,58,20,.25)); }
+.lu-lesson .tr-src.ro .tr-sv .lu-art { width: 100%; height: 100%; }
+.lu-lesson .tr-src.ro .ro-truoc { position: absolute; left: 3%; right: 3%; top: 37%; bottom: 4%; z-index: 2; border-radius: 0 0 48% 48% / 0 0 70% 70%; border-top: 6px solid #d9ab62;
+  background: repeating-linear-gradient(60deg, rgba(255,255,255,.0) 0 9px, rgba(122,83,38,.28) 9px 11px), repeating-linear-gradient(-60deg, rgba(255,255,255,.0) 0 9px, rgba(122,83,38,.28) 9px 11px), linear-gradient(#e2b56c, #b98840);
+  box-shadow: inset 0 -10px 18px rgba(90,58,20,.25), 0 10px 0 -4px rgba(107,82,50,.15); }
+.lu-lesson .tr-src.ro b { position: absolute; right: -6px; top: 4%; z-index: 3; }
+.lu-lesson .tr-src.ro:disabled { cursor: default; }
+@media (max-width: 600px) { .lu-lesson .tr-src.ro { --w: 260px; } }
