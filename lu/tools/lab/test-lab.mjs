@@ -29,11 +29,20 @@ for (const s of D.samples) {
       const idle = () => page.waitForFunction(() => !document.querySelector('.lu-root')?.classList.contains('busy') && !window.__labVoiceBusy?.(), null, { timeout: 5000 }).catch(() => {});
       await page.waitForTimeout(150);
       // Không tràn màn hình: mọi nút bé cần chạm phải nằm trong khung nhìn, không phải cuộn (tam 26/11: 8 thẻ lật bị tràn iPad)
-      const over = await page.evaluate(() => { const b = [...document.querySelectorAll('.stage button, .stage .opt')].filter(x => x.offsetParent).map(x => x.getBoundingClientRect().bottom); return b.length ? Math.round(Math.max(...b) - innerHeight) : 0; });
+      const over = await page.evaluate(() => { const b = [...document.querySelectorAll('.stage button, .stage .opt, .stage .piece, .stage .card, .stage .shadow, .stage .cell-f')].filter(x => x.offsetParent).map(x => x.getBoundingClientRect().bottom); return b.length ? Math.round(Math.max(...b) - innerHeight) : 0; });
       r.checks.vuaManHinh = over <= 2; if (over > 2) errs.push(`nút tràn khỏi màn hình ${over}px`);
       // Quy tắc 33: nội dung bé học to và nằm giữa màn hình
       r.toGiua = await page.evaluate(doToGiua); const tg = danhGia(r.toGiua, dev);
       r.checks.toGiua = !tg.length; for (const x of tg) errs.push('Quy tắc 33: ' + x);
+      // Kéo thả: vật đang kéo giữ đúng cỡ ô, không phóng to (tam 26/11 18:17: táo, rau khổng lồ che màn)
+      const pc = await page.evaluate(() => { const p = [...document.querySelectorAll('.stage .piece')].find(x => x.offsetParent && !x.classList.contains('filled')); if (!p) return null; const r = p.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2, w: r.width, h: r.height }; });
+      if (pc) {
+        await page.mouse.move(pc.x, pc.y); await page.mouse.down(); await page.mouse.move(pc.x + 20, pc.y - 30, { steps: 4 });
+        const g = await page.evaluate(() => { const d = document.querySelector('.piece.drag'); if (!d) return null; const r = d.getBoundingClientRect(); const clip = getComputedStyle(d).overflow === 'hidden'; const big = Math.max(r.width, r.height, ...[...d.querySelectorAll('*')].map(x => { const q = x.getBoundingClientRect(); const w = clip ? Math.min(q.right, r.right) - Math.max(q.left, r.left) : q.width, h = clip ? Math.min(q.bottom, r.bottom) - Math.max(q.top, r.top) : q.height; return Math.max(w, h); })); return { w: r.width, big }; });
+        await page.mouse.move(pc.x, pc.y, { steps: 2 }); await page.mouse.up(); await page.waitForTimeout(80);
+        r.checks.keoGiuCo = !!g && g.big <= Math.max(pc.w, pc.h) * 1.25;
+        if (!g) errs.push('Kéo thả: không thấy vật đang kéo'); else if (!r.checks.keoGiuCo) errs.push(`Kéo thả: vật bị phóng to ${Math.round(g.big)}px khi ô chỉ ${Math.round(Math.max(pc.w, pc.h))}px`);
+      }
       if (shots) await page.screenshot({ path: new URL(`${s.id}_${age}_${dev}.png`, OUT).pathname });
       // ---- thử sai trước
       const w = await page.evaluate(async () => {

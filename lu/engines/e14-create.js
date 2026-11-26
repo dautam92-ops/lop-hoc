@@ -1,6 +1,7 @@
 // E14 – Sáng tạo tự do: không có đáp án duy nhất, không chấm đúng sai (chỉ ghi "đã tham gia").
-//   draw    : vẽ tự do bằng bút sáp trên giấy. Có thể có hình gợi ý ban đầu (hoàn thiện hình vẽ bằng trí tưởng tượng).
-//             Vẽ xong bé chọn "bé đã vẽ gì" để Lu khen đúng ý tưởng của bé.
+//   draw    : vẽ bằng bút sáp trên giấy. Có thể có hình vẽ sẵn (base, nét liền) và tranh nét đứt (trace) để bé tô theo.
+//             KHÔNG hỏi lại "bé đã vẽ gì" bằng vài hình có sẵn (tam 26/11 18:25: bé vẽ gì cũng được nên hỏi vậy không hợp;
+//             thay bằng tô theo nét đứt của tranh cho sẵn). Vẽ xong Lu khen chung một lần.
 //   sticker : trang trí khung cảnh bằng cách kéo hình dán vào tranh, đặt ở đâu cũng được.
 // Tranh của bé lưu trong "Tủ tranh" trên máy, không gửi đi đâu (S13).
 import { vis, esc, sleep, setAuto, svgPoint, saveArtwork, frameHTML, req } from './kit.js';
@@ -11,19 +12,19 @@ const CRAYONS = [['#e0705a', 'đỏ'], ['#f0a050', 'cam'], ['#f6c85f', 'vàng'],
 
 export function validate(act) {
   const e = req(act, ['mode', 'skill_id', 'title', 'done']);
-  if (act.mode === 'draw' && act.ideas && act.ideas.some(i => !i.say || !i.reply)) e.push(`${act.activity_id}: mỗi ý tưởng cần lời đọc và lời Lu đáp`);
+  if (act.mode === 'draw' && act.ideas) e.push(`${act.activity_id}: không hỏi lại "bé đã vẽ gì" bằng hình có sẵn (tam 26/11); dùng tranh nét đứt "trace" để bé tô theo`);
   if (act.mode === 'sticker') e.push(...req(act, ['stickers']));
   return e;
 }
 export const generate = () => ({ rounds: [{}] });
 export const verify = () => [];
-export const lines = act => [...(act.intro || []), act.done, act.ask, act.empty, act.more, ...(act.ideas || []).flatMap(i => [i.say, i.reply])].filter(Boolean);
+export const lines = act => [...(act.intro || []), act.done, act.empty, act.more].filter(Boolean);
 export async function mount(ctx, act) { await (act.mode === 'sticker' ? sticker : draw)(ctx, act); ctx.tick?.(); }
 
 function draw(ctx, act) {
   const { ui, voice } = ctx;
   return new Promise(done => {
-    ui.scene(act.title, `<div class="draw-pad"><svg class="dw-svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#fffdf6"/>${act.base ? `<g class="dw-base" fill="none" stroke="#6b5232" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">${act.base}</g>` : ''}<g class="dw-ink"></g></svg></div>`);
+    ui.scene(act.title, `<div class="draw-pad"><svg class="dw-svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#fffdf6"/>${act.trace ? `<g class="dw-trace" fill="none" stroke="#a8916a" stroke-width="6" stroke-dasharray="2 14" stroke-linecap="round" stroke-linejoin="round">${act.trace}</g>` : ''}${act.base ? `<g class="dw-base" fill="none" stroke="#6b5232" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">${act.base}</g>` : ''}<g class="dw-ink"></g></svg></div>`);
     const svg = ui.stage.querySelector('.dw-svg'), inkG = svg.querySelector('.dw-ink');
     let col = CRAYONS[0][0], width = 9, strokes = 0, cur = null, pts = [];
     const box = ui.answers('Bé chọn màu bút sáp', CRAYONS.map(([c, n], i) => `<button class="opt crayon${i === 0 ? ' on' : ''}" data-c="${c}" aria-label="màu ${n}" style="--c:${c}">${vis('art:but-sap:' + encodeURIComponent(c))}</button>`).join('') +
@@ -37,17 +38,6 @@ function draw(ctx, act) {
     const doneBtn = box.querySelector('.dw-done');
     const finish = async () => {
       saveArtwork('ve', svg.outerHTML);
-      if (act.ideas?.length) {
-        // Bé tự nói tên tác phẩm (chọn hình), Lu khen đúng ý tưởng của bé – không có đáp án sai
-        ui.answers(act.ask_label || 'Bé đã vẽ gì nào?', act.ideas.map((it, i) => `<button class="opt face idea" data-i="${i}" aria-label="${esc(it.say)}">${vis(it.e)}</button>`).join('')).classList.add('ideas');
-        box.remove();
-        const ib = ui.stage.querySelector('.ideas'); ctx.test.mark(ib.querySelector('.idea')); setAuto(ctx, () => ib.querySelector('.idea').click(), null);
-        voice.say([act.ask]);
-        ib.addEventListener('click', e => { const b = e.target.closest('.idea'); if (!b || voice.busy) return; const it = act.ideas[+b.dataset.i]; b.classList.add('chosen');
-          ctx.record({ skill_id: act.skill_id, kind: 'participation', correct: true, first_try: true, tries: 1, hints: 0, idea: it.say, strokes });
-          voice.say([it.say, it.reply, '__jingle', act.done]).then(done); });
-        return;
-      }
       ctx.record({ skill_id: act.skill_id, kind: 'participation', correct: true, first_try: true, tries: 1, hints: 0, strokes });
       voice.say(['__jingle', act.done]).then(done);
     };

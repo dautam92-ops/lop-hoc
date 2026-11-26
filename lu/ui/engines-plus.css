@@ -393,6 +393,14 @@
   .lu-lesson .stage:not(:has(.answers.tray, .crayon)) .scene { padding-inline: 12px; }
   .lu-lesson .stage:has(.crayon) { --vis-h: 200px; }
   .lu-lesson .piece.stk { width: 76px !important; height: 76px !important; }
+  /* Giỏ phân loại: ba giỏ một hàng, không xếp chồng dọc làm đồ vật bị đẩy khỏi màn (26/11) */
+  .lu-lesson .bins { flex-wrap: nowrap; gap: 8px; }
+  .lu-lesson .bin { flex: 1 1 0; min-width: 0; min-height: 120px; padding: 6px 4px; }
+  .lu-lesson .bin .lu-art, .lu-lesson .bin > img, .lu-lesson .bin > svg { width: 100%; max-width: 96px; height: auto; max-height: 72px; }
+  .lu-lesson .bin-h { font-size: 15px; text-align: center; }
+  .lu-lesson .pz-tray .pz-piece { width: calc((100vw - 100px) / 3); }
+  .lu-lesson .pz-tray { padding-inline: 6px; }
+  .lu-lesson .pz-tray { gap: 6px; }
   .lu-lesson .bal:has(.obj.art) { width: 54px; }
   .lu-lesson .balloons:has(.obj.art) { padding: 10px 16px 12px; }
 }

@@ -47,7 +47,8 @@ body{margin:0;background:linear-gradient(180deg,var(--sky) 0%,#eef8ff 55%,var(--
 .tray{min-height:110px}
 .piece{width:min(96px,24vw);height:min(96px,24vw);border-radius:20px;background:var(--paper);border:4px solid var(--line);display:grid;place-items:center;font-size:min(60px,14vw);cursor:grab;touch-action:none;box-shadow:0 4px 0 var(--line)}
 .piece.sel{border-color:var(--pick)}
-.piece.drag{position:fixed;z-index:50;pointer-events:none;box-shadow:0 10px 20px #0003}
+.piece.drag{position:fixed;z-index:50;pointer-events:none;box-shadow:0 10px 20px #0003;overflow:hidden;box-sizing:border-box;transform:scale(1.06)}
+.piece.drag img,.piece.drag svg,.piece.drag .lu-art{max-width:100%!important;max-height:100%!important;object-fit:contain}
 .piece.ghost{opacity:.25}
 .story{font-size:min(84px,20vw);line-height:1}
 .flower{width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,#ffe7f0 0 45%,#ffd1e2 46% 100%);display:grid;place-items:center;font-size:84px;transition:transform 3.5s ease-in-out}
