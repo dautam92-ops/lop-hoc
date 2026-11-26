@@ -50,7 +50,7 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
       wrongTried.add(last);
       for (let w = 0; w < 400 && await page.evaluate(() => !!document.querySelector('[data-busy]')); w++) await page.waitForTimeout(25);
       const tried = await page.evaluate(() => { const c = window.__luTest?.current || []; if (c.length !== 1 || !c[0].classList.contains('opt') || c[0].closest('[data-any]')) return false;
-        const o = [...c[0].parentElement.querySelectorAll('.opt')].find(x => x !== c[0]); if (!o) return false; window.__wrongEl = o; window.__evBefore = (window.__luTest.events || []).length; o.click(); return true; });
+        const o = [...c[0].parentElement.querySelectorAll('.opt')].find(x => x !== c[0] && x.innerHTML !== c[0].innerHTML && !x.classList.contains('right')); /* ô trông giống hệt đáp án (vd. nhiều hạt đậu cần tìm) là đáp án đúng, không phải chọn sai */ if (!o) return false; window.__wrongEl = o; window.__evBefore = (window.__luTest.events || []).length; o.click(); return true; });
       if (tried) { await page.waitForTimeout(150);
         const bad = await page.evaluate(() => window.__wrongEl.classList.contains('right') || (window.__luTest.events || []).slice(window.__evBefore).some(e => e.correct));
         if (bad) wrongOk.push(st.step + ' ' + st.t); else wrongChecked++; }
