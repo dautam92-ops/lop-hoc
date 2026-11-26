@@ -8,7 +8,7 @@ on:
 jobs:
   cong:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     defaults:
       run:
         working-directory: lu
@@ -21,3 +21,10 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: Cong kiem tra bai 1
         run: node tools/cong-kiem-tra.mjs L001
+      # Mọi lỗi tam đã báo có phép thử trong Phòng mẫu (SO-LOI.md); PR nào làm lỗi cũ quay lại sẽ bị chặn (tam 26/11 18:40)
+      - name: Phong mau - noi dung
+        if: always()
+        run: node tools/lab/check-samples.mjs
+      - name: Phong mau - choi that tren iPad va dien thoai
+        if: always()
+        run: node tools/lab/test-lab.mjs
