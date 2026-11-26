@@ -48,6 +48,8 @@ def G(ch):  # chữ cái hiển thị to trên thẻ
 SAMPLES = []
 
 # Nền theo nội dung từng bài (tam 26/11: cùng một nền thì bé nhanh chán). Mã L001-BG-xx = ảnh đã duyệt; còn lại là cảnh vẽ mã trong ui/scenes.js.
+# 10 bài hoàn chỉnh trước (tam 26/11 14:22): giọng Hoài My đủ + ảnh vẽ tay
+DOT1 = {'CC-01','CC-03','CC-07','CC-08','CC-09','CC-12','CC-13','CC-17','CC-18','CC-19'}
 BD = {'CC-01': 'phong', 'CC-02': 'L001-BG-05', 'CC-03': 'L001-BG-04', 'CC-04': 'L001-BG-01', 'CC-05': 'L001-BG-02', 'CC-06': 'nha-sang', 'CC-07': 'L001-BG-03', 'CC-08': 'hien', 'CC-09': 'vuon', 'CC-10': 'phong', 'CC-11': 'san', 'CC-12': 'cay-cao', 'CC-13': 'L001-BG-02', 'CC-14': 'phong', 'CC-15': 'hien', 'CC-16': 'vuon-gio', 'CC-17': 'vuon', 'CC-18': 'bep', 'CC-19': 'bo-ao', 'CC-20': 'san', 'CC-21': 'L001-BG-05', 'CC-22': 'phong', 'CC-23': 'mua', 'CC-24': 'vuon-gio', 'CC-25': 'L001-BG-01', 'CC-26': 'nha-sang', 'MX-01': 'L001-BG-02', 'MX-02': 'san', 'MX-03': 'phong', 'MX-04': 'vuon', 'MX-05': 'hien', 'MX-06': 'bo-ao', 'MX-07': 'bep', 'MX-08': 'phong', 'MX-09': 'san', 'MX-10': 'nha-sang', 'MX-11': 'L001-BG-04'}
 
 def S(id, title, *, cc=(), x=(), program, group, goal, engine, mode=None, l45, l56, methods=(), diff='', note=''):
@@ -58,7 +60,7 @@ def S(id, title, *, cc=(), x=(), program, group, goal, engine, mode=None, l45, l
         a.setdefault('title', title)
     SAMPLES.append(dict(id=id, title=title, cc=list(cc), x=list(x), program=program, group=group, goal=goal,
                         engine=engine, mode=mode, methods=list(methods), diff=diff, note=note,
-                        bd=BD[id], status='ready_for_review', version='1.0.0', levels={'4-5': l45, '5-6': l56}))
+                        bd=BD[id], dot=(1 if id in DOT1 else 0), status='ready_for_review', version='1.0.0', levels={'4-5': l45, '5-6': l56}))
 
 # ===================================================================== 26 cơ chế
 S('CC-01', 'Chữ nào Lu gọi?', cc=['CC-01'], x=[20], program='Chữ cái tiếng Việt', group='Tiếng Việt', engine='E01', mode='items',

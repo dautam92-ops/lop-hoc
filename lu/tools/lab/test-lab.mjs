@@ -12,7 +12,7 @@ import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 const port = 5900 + Math.floor(Math.random() * 90); const srv = await serve(port);
 const BASE = `http://127.0.0.1:${port}/lab/play.html`;
 const D = JSON.parse(readFileSync(new URL('../../content/lab/samples.json', import.meta.url)));
-const only = process.argv.slice(2).filter(a => !a.startsWith('--')); const shots = process.argv.includes('--shots');
+const only = process.argv.slice(2).filter(a => !a.startsWith('--')); const shots = process.argv.includes('--shots'); const ANH = process.argv.includes('--anh-cho') ? '&anh=cho' : '';
 const OUT = new URL('./out/', import.meta.url); mkdirSync(OUT, { recursive: true });
 const PRAISE = /__jingle|__dung|__ok|Bé giỏi|giỏi lắm|giỏi quá|Đúng rồi|Tuyệt|Chính xác|Yes!|Great|Well done/i;
 const DEV = { ipad: { viewport: { width: 1180, height: 820 } }, phone: { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true } };
@@ -21,12 +21,15 @@ for (const s of D.samples) {
   if (only.length && !only.includes(s.id)) continue;
   for (const age of Object.keys(s.levels)) for (const dev of ['ipad', 'phone']) {
     const r = { id: s.id, age, dev, checks: {} }; const errs = [];
-    const page = await b.newPage(DEV[dev]); page.on('pageerror', e => errs.push(e.message));
+    const page = await b.newPage(DEV[dev]); page.on('pageerror', e => errs.push(e.message)); page.on('response', res => { if (res.status() >= 400) errs.push(`tải lỗi ${res.status()} ${res.url().replace(/^.*\/lu\//, '')}`); });
     try {
-      await page.goto(`${BASE}?s=${s.id}&age=${age}&seed=7&fast=1&auto=1&tts=0&idle=600000`);
+      await page.goto(`${BASE}?s=${s.id}&age=${age}&seed=7&fast=1&auto=1&tts=0&idle=600000${ANH}`);
       await page.waitForFunction(() => window.__labTest && (window.__labTest.current.length || window.__labTest.right || window.__labTest.done), null, { timeout: 8000 });
       const idle = () => page.waitForFunction(() => !document.querySelector('.lu-root')?.classList.contains('busy') && !window.__labVoiceBusy?.(), null, { timeout: 5000 }).catch(() => {});
       await page.waitForTimeout(150);
+      // Không tràn màn hình: mọi nút bé cần chạm phải nằm trong khung nhìn, không phải cuộn (tam 26/11: 8 thẻ lật bị tràn iPad)
+      const over = await page.evaluate(() => { const b = [...document.querySelectorAll('.stage button, .stage .opt')].filter(x => x.offsetParent).map(x => x.getBoundingClientRect().bottom); return b.length ? Math.round(Math.max(...b) - innerHeight) : 0; });
+      r.checks.vuaManHinh = over <= 2; if (over > 2) errs.push(`nút tràn khỏi màn hình ${over}px`);
       if (shots && age === '4-5' || shots && dev === 'ipad') await page.screenshot({ path: new URL(`${s.id}_${age}_${dev}.png`, OUT).pathname });
       // ---- thử sai trước
       const w = await page.evaluate(async () => {

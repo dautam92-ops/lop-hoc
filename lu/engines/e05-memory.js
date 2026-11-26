@@ -32,6 +32,9 @@ export function mount(ctx, act, v) {
     ui.scene(act.title, '');
     const box = ui.answers(act.label || 'Chạm để lật thẻ', cards.map((x, i) => `<button class="opt card" data-i="${i}" aria-label="thẻ ${i + 1}"><span class="back" aria-hidden="true"></span><span class="front">${vis(x)}</span></button>`).join(''));
     const markNext = () => { const rest = [...box.querySelectorAll('.card:not(.right)')]; const a = rest[0]; if (!a) return; const b = rest.find(x => x !== a && keyOf(v, +x.dataset.i) === keyOf(v, +a.dataset.i)); ctx.test.mark([a, b]); };
+    // Bố cục thẻ cân đối, vừa một màn hình (iPad ngang và điện thoại dọc): 8 thẻ = 4×2 khi ngang, 3 hàng khi dọc
+    const n = cards.length, cl = n <= 6 ? n : Math.ceil(n / 2), cp = n <= 4 ? 2 : n <= 9 ? 3 : 4;
+    box.classList.add('mem'); box.style.cssText += `--cl:${cl};--rl:${Math.ceil(n / cl)};--cp:${cp};--rp:${Math.ceil(n / cp)}`;
     markNext();
     box.addEventListener('click', e => {
       const b = e.target.closest('.card'); if (!b || voice.busy || lock || b.classList.contains('up') || open.length >= 2) return;

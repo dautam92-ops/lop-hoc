@@ -239,3 +239,30 @@
 .lu-lesson .opt.ln-a.sel { border-color: var(--lu-sun-deep); }
 .lu-lesson .pz-full img.lu { object-fit: contain !important; }
 .lu-lesson .stage:has(.answers.tray) { --vis-h: max(150px, calc(100dvh - 580px)); }
+
+/* Lật thẻ (E05): lưới cân đối, thẻ co theo chiều cao màn hình để không tràn (tam 26/11: 8 thẻ bị tràn khỏi iPad) */
+.lu-lesson .answers.mem { display: grid; grid-template-columns: repeat(var(--c), var(--cs)); justify-content: center; gap: 10px; --c: var(--cl); --r: var(--rl);
+  --cs: max(56px, min(150px, calc((100dvh - 400px) / var(--r) - 10px), calc((100vw - 90px) / var(--c) - 10px))); }
+.lu-lesson .answers.mem .lbl { grid-column: 1 / -1; }
+.lu-lesson .answers.mem .opt.card { min-width: 0; min-height: 0; width: var(--cs); height: var(--cs); padding: 0; }
+@media (orientation: portrait) { .lu-lesson .answers.mem { --c: var(--cp); --r: var(--rp); } }
+.lu-lesson .stage:has(.answers.mem) .scene { flex: 0 0 auto; min-height: 0; padding-bottom: 24px; }
+.lu-lesson .stage:has(.answers.mem) { justify-content: flex-start; }
+
+/* Điện thoại dọc: thu gọn cảnh và đáp án để mọi chỗ cần chạm nằm trong một màn hình (vùng chạm vẫn ≥ 56px) */
+@media (orientation: portrait) and (max-width: 600px) {
+  .lu-lesson .balloons:has(.obj.art) { padding: 14px 20px 18px; gap: 6px 10px; max-width: 100%; }
+  .lu-lesson .bal:has(.obj.art) { width: 56px; }
+  .lu-lesson .answers .opt { min-width: 60px; min-height: 60px; }
+  .lu-lesson .answers .opt.wide { min-height: 60px; }
+  .lu-lesson .answers { gap: 8px; padding-top: 6px; padding-bottom: 8px; }
+  .lu-lesson .sim-lab { flex-wrap: nowrap; align-items: center; gap: 10px; }
+  .lu-lesson .tank { width: 52vw; }
+  .lu-lesson .sim-obj { width: 28vw; }
+  .lu-lesson .sim-steps { flex-wrap: nowrap; gap: 10px; }
+  .lu-lesson .st-main { width: 30vw; }
+  .lu-lesson .st-list { font-size: 14px; gap: 3px; }
+  .lu-lesson .st-list li span { width: 24px; height: 24px; }
+  .lu-lesson .opt.st-opt { min-width: 64px; min-height: 64px; }
+  .lu-lesson .opt.st-opt .lu-art { width: 56px; height: 56px; }
+}

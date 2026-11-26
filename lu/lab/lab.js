@@ -22,7 +22,7 @@ const tagSt = id => `<span class="tag st-${statusOf(id)}">${STATUS[statusOf(id)]
 
 /* ---------- Trạng thái trang ---------- */
 const P = new URLSearchParams(location.hash.slice(1));
-const st = { tab: P.get('tab') || 'cc', id: P.get('s') || null, age: P.get('age') || '4-5', dev: P.get('dev') || 'ipad', seed: Number(P.get('seed')) || 7, idle: 0 };
+const st = { tab: P.get('tab') || 'd1', id: P.get('s') || null, age: P.get('age') || '4-5', dev: P.get('dev') || 'ipad', seed: Number(P.get('seed')) || 7, idle: 0, anh: P.get('anh') || 'cho' };
 const saveHash = () => { const h = new URLSearchParams({ tab: st.tab, ...(st.id ? { s: st.id, age: st.age, dev: st.dev, seed: st.seed } : {}) }); history.replaceState(null, '', '#' + h); };
 
 /* ---------- Danh sách ---------- */
@@ -32,6 +32,7 @@ function renderList() {
   document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === st.tab));
   const F = $('#filters'), I = $('#items'); F.hidden = st.tab !== 'all';
   if (st.tab === 'cc') I.innerHTML = D.mechanics.map(m => { const s = D.samples.find(x => x.cc.includes(m.id)); return s ? card(s, `${m.id} ${m.name}`) : `<div class="item"><div class="k">${m.id}</div><div class="t">${esc(m.name)}</div><div class="m">Chưa có mẫu</div></div>`; }).join('');
+  if (st.tab === 'd1') I.innerHTML = D.samples.filter(s => s.dot === 1).map(s => card(s, `${s.cc.join(', ')} · 10 bài hoàn chỉnh`)).join('');
   if (st.tab === 'x30') I.innerHTML = D.x30.map(x => { const ss = D.samples.filter(s => s.x.includes(x.n)); return ss.map(s => card(s, `Mẫu ${x.n}. ${x.name}`)).join(''); }).join('');
   if (st.tab === 'all') {
     const v = id => $(id).value;
@@ -92,6 +93,7 @@ function renderDetail() {
     ${s.note ? `<div class="note">${esc(s.note)}</div>` : ''}
     <div class="bar"><span class="seg" id="age">${Object.keys(s.levels).map(a => `<button data-v="${a}" class="${a === st.age ? 'on' : ''}">${AGE[a]}</button>`).join('')}</span>
       <span class="seg" id="dev"><button data-v="ipad" class="${st.dev === 'ipad' ? 'on' : ''}">iPad</button><button data-v="phone" class="${st.dev === 'phone' ? 'on' : ''}">Điện thoại</button></span>
+      <span class="seg" id="anh" title="Ảnh vẽ tay mới chỉ dùng trong bài sau khi tam duyệt. Chọn 'Xem ảnh chờ duyệt' để xem trước ảnh trong bài."><button data-v="cho" class="${st.anh === 'cho' ? 'on' : ''}">Xem ảnh chờ duyệt</button><button data-v="duyet" class="${st.anh === 'duyet' ? 'on' : ''}">Chỉ ảnh đã duyệt</button></span>
       <label>Biến thể <input class="seed" id="seed" type="number" value="${st.seed}"></label><button class="btn" id="other">Biến thể khác</button></div>
     <div class="bar"><button class="btn" id="restart">Chơi lại</button><button class="btn ok" id="right">Thử đúng</button><button class="btn warn" id="wrong">Thử sai</button>
       <button class="btn" id="idle">Thử không trả lời</button><button class="btn" id="replay">Nghe lại</button><button class="btn" id="pause">Tạm dừng</button><button class="btn" id="skip">Bỏ qua câu</button></div>
@@ -114,6 +116,7 @@ function renderDetail() {
   load();
   // Điều khiển
   box.querySelectorAll('#age button').forEach(b => b.onclick = () => { st.age = b.dataset.v; renderDetail(); });
+  box.querySelectorAll('#anh button').forEach(b => b.onclick = () => { st.anh = b.dataset.v; renderDetail(); });
   box.querySelectorAll('#dev button').forEach(b => b.onclick = () => { st.dev = b.dataset.v; renderDetail(); });
   $('#seed').onchange = e => { st.seed = Number(e.target.value) || 1; st.idle = 0; load(); };
   $('#other').onclick = () => { st.seed = Math.floor(Math.random() * 99999) + 1; $('#seed').value = st.seed; st.idle = 0; load(); };
@@ -133,7 +136,7 @@ function renderDetail() {
 }
 function load(auto = false) {
   saveHash(); $('#log').innerHTML = '';
-  frame.src = `play.html?s=${encodeURIComponent(st.id)}&age=${st.age}&seed=${st.seed}${st.idle ? `&idle=${st.idle}` : ''}${auto ? '&auto=1' : ''}`;
+  frame.src = `play.html?s=${encodeURIComponent(st.id)}&age=${st.age}&seed=${st.seed}${st.idle ? `&idle=${st.idle}` : ''}${auto ? '&auto=1' : ''}${st.anh === 'cho' ? '&anh=cho' : ''}`;
 }
 const log = (cls, t) => { const l = $('#log'); if (!l) return; l.insertAdjacentHTML('beforeend', `<div class="${cls}">${esc(t)}</div>`); l.scrollTop = l.scrollHeight; };
 const SFX = { __jingle: '[âm báo đúng]', __dung: '[tiếng "ting"]', __boing: '[âm nhẹ: chưa đúng]', __ok: '[Excellent!]', __no: '[Oops!]' };
