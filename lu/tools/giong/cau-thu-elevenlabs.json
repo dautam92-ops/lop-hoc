@@ -1,0 +1,25 @@
+{
+ "ghi_chu": "10 câu thử ElevenLabs v3 (L001, quy tắc 43). 'text' là câu bé nghe, đúng như trong bài (tên tệp mp3 = sha1(text)[:12] giống Hoài My để thay thế dễ). 'v3' là câu gửi ElevenLabs, có chỉ dẫn cảm xúc trong ngoặc vuông (máy không đọc ra).",
+ "lines": [
+  {"text": "Bé giỏi quá! Từ nay bé nhớ rửa tay thật sạch trước khi ăn cơm nhé.",
+   "v3": "[excited] Bé giỏi quá! [warmly] Từ nay bé nhớ rửa tay thật sạch trước khi ăn cơm nhé."},
+  {"text": "Hoan hô bé! Giỏ này có ba hạt đậu.",
+   "v3": "[cheerfully] Hoan hô bé! [happy] Giỏ này có ba hạt đậu."},
+  {"text": "Ôi, bé tinh mắt quá! Bé đoán đúng hết các cái bóng rồi!",
+   "v3": "[amazed] Ôi, bé tinh mắt quá! [laughs softly] Bé đoán đúng hết các cái bóng rồi!"},
+  {"text": "Bé nhớ hết chỗ rồi! Bé giỏi quá đi thôi!",
+   "v3": "[excited] Bé nhớ hết chỗ rồi! [delighted] Bé giỏi quá đi thôi!"},
+  {"text": "Trí nhớ của bé tuyệt vời quá! Lu phục bé luôn!",
+   "v3": "[impressed] Trí nhớ của bé tuyệt vời quá! [playfully] Lu phục bé luôn!"},
+  {"text": "Bé nhớ lời bà giỏi quá! Người lớn dặn gì, bé nhớ làm theo nhé.",
+   "v3": "[happy] Bé nhớ lời bà giỏi quá! [gently] Người lớn dặn gì, bé nhớ làm theo nhé."},
+  {"text": "Cảm ơn bé, Lu thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé.",
+   "v3": "[relieved] Cảm ơn bé, Lu thấy dễ chịu hơn rồi! [softly] Khi lo lắng, bé cũng hít thở chậm như vậy nhé."},
+  {"text": "Tuyệt quá, chúng mình cùng nhau khám phá nhé.",
+   "v3": "[excited] Tuyệt quá, chúng mình cùng nhau khám phá nhé."},
+  {"text": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé.",
+   "v3": "[gently] Không sao, có Lu ở đây rồi. [warmly] Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."},
+  {"text": "Bé đếm lại nhé.",
+   "v3": "[encouraging] Bé đếm lại nhé."}
+ ]
+}
