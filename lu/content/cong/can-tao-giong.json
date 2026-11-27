@@ -1,0 +1,2899 @@
+{
+ "format": "lu-voice-todo",
+ "lesson": "cong-so-dem",
+ "at": "2026-11-26T13:39:02.015Z",
+ "lines": [
+  {
+   "text": "Bé tìm đĩa có ba chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm lại từng đĩa xem.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm từng hình và đếm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy giọt nước?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy chú gà con?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con gà mái?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con ếch?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy bánh xà phòng?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có một con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy mầm đậu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy ngôi nhà?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy bình tưới?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy chiếc áo?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có một bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy chiếc chìa khóa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con ong?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy quả trứng?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy cái khăn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy viên sỏi?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có một bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có một chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy củ cà rốt?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy chiếc lá?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có một cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có một cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy cái chảo?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có một khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có hai mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con ốc sên?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy quả táo?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy khúc gỗ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có ba chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có một bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm rồi tìm cọc có số giống vậy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé ghép đúng hết rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số bánh xà phòng bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhìn số trên cọc rồi đếm lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con ốc sên bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số mầm đậu bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con ong bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số cái chảo bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số ngôi nhà bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con gà mái bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số chú gà con bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con mèo bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số đồng xu bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số hạt đậu bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số bình tưới bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con ếch bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả đậu bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số khúc gỗ bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con bướm bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả táo bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số chiếc chìa khóa bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả bóng bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số viên sỏi bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con chim bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số ba, ba chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số giọt nước bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số cây rau bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số một, một cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số củ cà rốt bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số hai, hai củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít con ốc sên hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba con ốc sên, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm từng đĩa rồi so nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều bánh xà phòng hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn bánh xà phòng, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều con ốc sên hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con ốc sên, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít quả trứng hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai quả trứng, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều quả đậu hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn quả đậu, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít con ếch hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con ếch, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm quả đậu, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít chiếc áo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một chiếc áo, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít viên sỏi hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai viên sỏi, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít chiếc lá hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai chiếc lá, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều con gà mái hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con gà mái, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con ốc sên, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều mầm đậu hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm mầm đậu, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít chú gà con hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một chú gà con, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều con bướm hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm con bướm, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một chiếc lá, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba viên sỏi, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều con mèo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con mèo, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít con mèo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một con mèo, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều cái chảo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm cái chảo, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một quả trứng, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều đồng xu hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm đồng xu, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít bình tưới hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai bình tưới, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con mèo, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm con gà mái, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều chiếc lá hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm chiếc lá, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít con chim hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba con chim, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều chiếc áo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm chiếc áo, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít cái khăn hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một cái khăn, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều khúc gỗ hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm khúc gỗ, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít củ cà rốt hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai củ cà rốt, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều quả táo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm quả táo, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều giọt nước hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm giọt nước, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít con gà mái hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một con gà mái, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn mầm đậu, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít chiếc chìa khóa hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một chiếc chìa khóa, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm con mèo, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít ngôi nhà hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một ngôi nhà, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít khúc gỗ hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một khúc gỗ, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều chiếc chìa khóa hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm chiếc chìa khóa, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều cái khăn hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm cái khăn, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít con bướm hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một con bướm, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít bông hoa hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một bông hoa, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều hạt đậu hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn hạt đậu, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai con chim, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều con cá hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con cá, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít mầm đậu hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có một mầm đậu, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều củ cà rốt hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm củ cà rốt, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có nhiều con ong hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con ong, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba quả trứng, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít đồng xu hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai đồng xu, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm con cá, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít cái chảo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có hai cái chảo, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba chiếc lá, nhiều hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đĩa nào có ít quả táo hơn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có ba quả táo, ít hơn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy quả bóng?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy quả đậu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy cây rau?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy đồng xu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy bông hoa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con bướm?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con mèo?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con chim?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có năm ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có năm ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bốn khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bốn khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số bông hoa bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả trứng bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số chiếc lá bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con cá bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bốn, bốn chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số năm, năm bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy con cá?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy hạt đậu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có sáu con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có sáu con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có sáu cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có bảy viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có bảy viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bảy con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con bướm bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm đĩa của Lu, rồi đếm từng đĩa nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số viên sỏi bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số củ cà rốt bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con chim bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số mầm đậu bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con cá bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả bóng bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả đậu bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số hạt đậu bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số ngôi nhà bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con mèo bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con ốc sên bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bốn con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả trứng bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bốn quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số chiếc áo bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con ong bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số đồng xu bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số bánh xà phòng bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số bông hoa bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số khúc gỗ bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số cái khăn bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bốn cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số chú gà con bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số quả táo bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số giọt nước bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số chiếc lá bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số chiếc chìa khóa bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con ếch bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số bình tưới bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bốn ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có bảy chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có sáu mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số con gà mái bằng đĩa của Lu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có năm con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có ba quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có hai cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hai đĩa đều có một chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có số cái khăn bằng số trên cọc.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số sáu, sáu chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bảy, bảy hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bảy, bảy cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số sáu, sáu cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số sáu, sáu đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bảy, bảy bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số sáu, sáu chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số sáu, sáu hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bảy, bảy con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bảy, bảy cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số bảy, bảy đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số sáu, sáu cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số sáu, sáu con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số tám, tám mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có mười cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có mười cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười quả trứng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có mười chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có mười chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có mười cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có mười cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có mười giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có mười giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám chiếc áo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có mười con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có mười con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có mười quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có mười quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám bình tưới.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có mười chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có mười chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có tám ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có chín con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có chín con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm đĩa có tám cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đĩa này có tám cái chảo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có chín con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có mười viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín con cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười con gà mái.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười củ cà rốt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín con ong.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười đồng xu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười quả bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười con mèo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín khúc gỗ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín cây rau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín chiếc chìa khóa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười ngôi nhà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín giọt nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín chú gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín viên sỏi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín con ếch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười bông hoa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười con chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín cái khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười bánh xà phòng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số mười, mười mầm đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Số chín, chín con ốc sên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé luyện xong một lượt!",
+   "lang": "vi"
+  },
+  {
+   "text": "Hôm nay bé luyện nhiều rồi. Mình nghỉ mắt một chút nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chọn một phòng để luyện nhé.",
+   "lang": "vi"
+  }
+ ]
+}

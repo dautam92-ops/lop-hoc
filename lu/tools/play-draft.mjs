@@ -1,6 +1,7 @@
 // Chạy trọn một buổi học nháp nhiều chặng (D42) trên trình duyệt thật, chụp mỗi chặng, đo hình minh họa.
 // Chạy: node tools/play-draft.mjs L001   → reports/draft-L001/*.png, reports/draft-L001.json
 import { doToGiua } from './do-to-giua.mjs';
+import { doMan } from './do-man.mjs';
 import { kiemLoiCu, kiemGio } from './kiem-loi-cu.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -30,16 +31,7 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
     const key = st.step + '|' + st.t;
     if (st.n && key !== last) {
       last = key; await page.waitForTimeout(200);
-      const m = await page.evaluate(() => {
-        const vw = innerWidth, vh = innerHeight, A = vw * vh;
-        const vis = r => Math.max(0, Math.min(r.right, vw) - Math.max(r.left, 0)) * Math.max(0, Math.min(r.bottom, vh) - Math.max(r.top, 0));
-        const bd = document.querySelector('.app.has-bd'); const real = bd && !bd.classList.contains('bd-tam');
-        const bdArea = bd ? vis(document.querySelector('.backdrop').getBoundingClientRect()) : 0;
-        const ui = [...document.querySelectorAll('.top, .answers .lbl, .big-btn, .scene .title, .cap')].reduce((s, x) => s + vis(x.getBoundingClientRect()), 0);
-        const taps = [...document.querySelectorAll('.stage .opt, .stage .piece, .stage .cell, .stage .bal, .stage .card, .stage .prop, .stage .big-btn')].map(x => x.getBoundingClientRect()).filter(r => r.width);
-        return { illusPct: Math.round(100 * Math.max(0, bdArea - ui) / A), backdrop: !!bd, realBackdrop: !!real, minTap: taps.length ? Math.round(Math.min(...taps.map(r => Math.min(r.width, r.height)))) : 0,
-          emoji: ((document.body.innerText || '').match(/\p{Extended_Pictographic}/gu) || []).length };
-      });
+      const m = await page.evaluate(doMan);
       m.toGiua = await page.evaluate(doToGiua);
       m.loiCu = (await kiemLoiCu(page)).errs;
       const file = `${String(k++).padStart(2, '0')}-${vp}.png`; await page.screenshot({ path: path.join(OUT, file) });

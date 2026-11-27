@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lu – Cổng luyện tập</title>
+<link rel="stylesheet" href="ui/lu-ds.css">
+<link rel="stylesheet" href="core/lu-core.css">
+<link rel="stylesheet" href="ui/lesson.css">
+<link rel="stylesheet" href="ui/engines-plus.css">
+<link rel="stylesheet" href="ui/cong.css">
+</head>
+<body class="lu-paper-bg">
+<div class="lu-lesson"><div id="lu" class="lu-root lesson-root"></div></div>
+<script type="module">
+// Cổng luyện tập: cong.html[?cong=so-dem][&phong=R01][&mo=1][&fast=1][&seed=1][&ns=lu-thu-online]
+// mo=1: mở mọi phòng (bố mẹ, người duyệt). ns mặc định trùng bài 1 trên mạng để phòng mở theo buổi bé đã học.
+import { runCong } from './core/cong.js';
+import { LocalStorageAdapter } from './core/storage.js';
+import { setLuArt } from './core/lu-core.js';
+import { setSceneAssets } from './ui/scenes.js';
+import { setVisAssets } from './ui/art.js';
+const chars = await (await fetch('registry/characters.json')).json(); const LU = {};
+for (const g of ['bieu_cam', 'tu_the', 'goc_nhin']) for (const [k, v] of Object.entries(chars.LU[g] || {})) LU[k] ??= v.webp;
+setLuArt(expr => `<img class="lu" src="${LU[expr] || LU.vui}" alt="" draggable="false">`);
+const areg = await (await fetch('registry/assets.json')).json(); const ok = areg.assets.filter(a => a.trang_thai === 'da_duyet');
+setSceneAssets(Object.fromEntries(ok.filter(a => a.slot).map(a => [a.slot, a.path])));
+setVisAssets(Object.fromEntries(ok.flatMap(a => [[a.asset_id, a.path], ...(String(a.slot || '').startsWith('art:') ? [[a.slot, a.path]] : [])])));
+const p = new URLSearchParams(location.search);
+const audio = await (await fetch('content/audio/registry.json')).json();
+const storage = new LocalStorageAdapter(p.get('ns') || 'lu-thu-online');
+window.__luStorage = storage;
+window.__luApp = await runCong(document.getElementById('lu'), {
+  clips: audio.clips, audioBase: 'content/audio/', storage, fast: p.get('fast') === '1', seed: p.has('seed') ? Number(p.get('seed')) : undefined,
+  moHet: p.get('mo') === '1', cong: p.get('cong'), phong: p.get('phong') });
+</script>
+</body>
+</html>

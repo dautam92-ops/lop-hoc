@@ -1,0 +1,19 @@
+{
+ "format": "lu-cong-danh-sach", "version": 1,
+ "ghi_chu": "12 cổng luyện tập bên cạnh lộ trình 300 buổi (tam duyệt 26/11 20:35). Thay cho 12 sân chơi Khám phá P01–P12. Hình cổng là ảnh vẽ tay đã duyệt dùng tạm, sẽ thay hình cổng riêng.",
+ "luot": { "so_bai": 8, "luot_moi_ngay": 3, "khong_lap_ngay": 30 },
+ "cong": [
+  { "id": "chu-cai", "ten": "Chữ cái", "chu": "a", "nhanh": ["CC", "AM", "VT"], "nang_luc": ["NL03", "NL16"], "trang_thai": "sap-mo", "thay": ["P06"] },
+  { "id": "so-dem", "ten": "Số và đếm", "hinh": "art:tao*3", "nhanh": ["DEM", "SO", "SS"], "nang_luc": ["NL02"], "trang_thai": "mo", "kho": "content/cong/so-dem.json", "thay": ["P05"] },
+  { "id": "toan-tu-duy", "ten": "Toán tư duy", "hinh": "art:dong-xu*2", "nhanh": ["TG", "HINH", "DO", "TGIAN", "TIEN", "STAT"], "nang_luc": ["NL02", "NL18"], "trang_thai": "sap-mo", "thay": ["P02", "P05"] },
+  { "id": "logic", "ten": "Logic", "hinh": "art:chia-khoa", "nhanh": ["LG", "CD", "QH", "NQ", "GQ", "VDg"], "nang_luc": ["NL01", "NL05", "NL10", "NL18"], "trang_thai": "sap-mo", "thay": ["P03"] },
+  { "id": "khong-gian", "ten": "Không gian", "hinh": "art:nha", "nhanh": ["KG"], "nang_luc": ["NL06", "NL13", "NL16"], "trang_thai": "sap-mo", "thay": ["P03"] },
+  { "id": "tri-nho", "ten": "Trí nhớ", "hinh": "art:trung", "nhanh": ["TN", "GN", "CY", "TT"], "nang_luc": ["NL07", "NL08", "NL09"], "trang_thai": "sap-mo", "thay": ["P07"] },
+  { "id": "tham-tu", "ten": "Thám tử quan sát", "hinh": "art:oc", "nhanh": ["QS"], "nang_luc": ["NL04"], "trang_thai": "sap-mo", "thay": ["P08"] },
+  { "id": "tuong-tuong", "ten": "Trí tưởng tượng", "hinh": "art:buom", "nhanh": ["TTg", "ST", "AN"], "nang_luc": ["NL11", "NL12", "NL14", "NL15"], "trang_thai": "sap-mo", "thay": ["P10", "P12"] },
+  { "id": "tu-ngu", "ten": "Từ ngữ, kể chuyện", "hinh": "art:meo", "nhanh": ["NG", "TU"], "nang_luc": ["NL03"], "trang_thai": "sap-mo", "thay": ["P06"] },
+  { "id": "cam-xuc", "ten": "Cảm xúc", "hinh": "face:vui", "nhanh": ["CX", "XH", "AT"], "nang_luc": [], "trang_thai": "sap-mo", "thay": ["P04", "P11"] },
+  { "id": "tieng-anh", "ten": "Tiếng Anh", "chu": "ABC", "nhanh": ["EN"], "nang_luc": [], "trang_thai": "sap-mo", "thay": ["P01"] },
+  { "id": "kham-pha", "ten": "Khám phá", "hinh": "art:mam-dau", "nhanh": ["KH", "TG"], "nang_luc": ["NL10"], "trang_thai": "sap-mo", "thay": ["P09"] }
+ ]
+}
