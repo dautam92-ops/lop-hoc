@@ -177,7 +177,7 @@
      "rounds": 2,
      "layout": "roi",
      "bg": "asset:BC-0004",
-     "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
+     "no": "Không sao đâu! Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
      "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"
     },
     {
@@ -191,7 +191,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
        "ok": "Giỏi quá! Đó là cái giỏ.",
-       "no": "Bé nhìn kỹ: bóng có quai cầm.",
+       "no": "Cố lên bé ơi! Bé nhìn kỹ: bóng có quai cầm.",
        "opts": [
         {
          "e": "art:la"
@@ -210,7 +210,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
        "ok": "Hoan hô bé! Đó là chiếc lá.",
-       "no": "Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.",
+       "no": "Cố lên bé ơi! Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.",
        "opts": [
         {
          "e": "art:la"
@@ -290,7 +290,7 @@
       "art:meo": 1.35,
       "art:trung": 0.7
      },
-     "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
+     "no": "Bé làm được mà! Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
      "done": "Tuyệt vời! Bé tìm ra hết các chú gà con rồi!"
     },
     {
@@ -304,7 +304,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 1,
        "ok": "Đúng rồi! Đó là chú mèo.",
-       "no": "Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.",
+       "no": "Mình cùng xem lại nào! Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.",
        "opts": [
         {
          "e": "art:ga"
@@ -323,7 +323,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
        "ok": "Tuyệt vời! Đó là con bướm.",
-       "no": "Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.",
+       "no": "Không sao đâu! Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.",
        "opts": [
         {
          "e": "art:ong"
@@ -399,7 +399,7 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
+     "no": "Cố lên bé ơi! Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
      "done": "Hoan hô! Hạt nào cũng về đúng cọc rồi!"
     },
     {
@@ -428,7 +428,7 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé đếm số quả táo trước nhé.",
+     "no": "Cố lên bé ơi! Bé đếm số quả táo trước nhé.",
      "done": "Bé giỏi quá! Quả táo nào cũng về đúng cọc!"
     },
     {
@@ -442,7 +442,7 @@
        "q": "Bé tìm ô có một hạt đậu.",
        "a": 0,
        "ok": "Chính xác! Ô này có một hạt đậu.",
-       "no": "Bé đếm từng hạt xem.",
+       "no": "Bé làm được mà! Bé đếm từng hạt xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -463,7 +463,7 @@
        "q": "Bé tìm ô có hai hạt đậu.",
        "a": 1,
        "ok": "Bé giỏi quá! Ô này có hai hạt đậu.",
-       "no": "Bé đếm từng hạt xem.",
+       "no": "Mình cùng xem lại nào! Bé đếm từng hạt xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -539,7 +539,7 @@
       "ba"
      ],
      "ok": "Bé giỏi lắm! Có {word} chú gà con.",
-     "no": "Bé chạm đếm lại từng chú nhé.",
+     "no": "Không sao đâu! Bé chạm đếm lại từng chú nhé.",
      "hint_glow": false
     },
     {
@@ -555,7 +555,7 @@
      "max": 3,
      "groups": 3,
      "rounds": 1,
-     "no": "Bé đếm số trứng trong từng ổ xem.",
+     "no": "Cố lên bé ơi! Bé đếm số trứng trong từng ổ xem.",
      "ok": "Một quả, hai quả, ba quả. Bé xếp đúng rồi!"
     }
    ],
@@ -597,7 +597,7 @@
        "q": "Gió thổi, hạt đậu lăn ra khỏi cái gì?",
        "a": 0,
        "ok": "Giỏi quá! Hạt lăn ra khỏi túi.",
-       "no": "Bé nghe lại nhé: hạt lăn ra khỏi túi.",
+       "no": "Cố lên bé ơi! Bé nghe lại nhé: hạt lăn ra khỏi túi.",
        "opts": [
         {
          "e": "art:tui"
@@ -615,7 +615,7 @@
        "q": "Hạt đậu lăn tới gần con vật nào?",
        "a": 1,
        "ok": "Hoan hô bé! Hạt lăn tới chỗ gà con.",
-       "no": "Hạt lăn tới chỗ bạn gà con đấy.",
+       "no": "Bé làm được mà! Hạt lăn tới chỗ bạn gà con đấy.",
        "opts": [
         {
          "e": "art:meo"
@@ -776,7 +776,7 @@
        "q": "Thứ nào không phải con vật?",
        "a": 2,
        "ok": "Đúng rồi! Quả táo không phải con vật.",
-       "no": "Gà, mèo, cá đều là con vật. Còn thứ nào khác?",
+       "no": "Mình cùng xem lại nào! Gà, mèo, cá đều là con vật. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:ga"
@@ -797,7 +797,7 @@
        "q": "Thứ nào không ăn được?",
        "a": 3,
        "ok": "Tuyệt vời! Viên sỏi không ăn được.",
-       "no": "Táo, cà rốt, rau đều ăn được. Bé tìm thứ khác nhé.",
+       "no": "Không sao đâu! Táo, cà rốt, rau đều ăn được. Bé tìm thứ khác nhé.",
        "opts": [
         {
          "e": "art:tao"
@@ -818,7 +818,7 @@
        "q": "Thứ nào không bay được?",
        "a": 1,
        "ok": "Chính xác! Con ốc không bay được.",
-       "no": "Chim, ong, bướm đều bay được. Còn bạn nào?",
+       "no": "Bé thử lại nào! Chim, ong, bướm đều bay được. Còn bạn nào?",
        "opts": [
         {
          "e": "art:chim"
@@ -881,7 +881,7 @@
        "q": "Hạt đậu lăn vào chỗ ướt. Hạt cần gì để nảy mầm?",
        "a": 0,
        "ok": "Bé giỏi quá! Hạt cần nước để nảy mầm.",
-       "no": "Hạt cần nước. Bé tìm giọt nước nhé.",
+       "no": "Cố lên bé ơi! Hạt cần nước. Bé tìm giọt nước nhé.",
        "opts": [
         {
          "e": "art:giot-nuoc"
@@ -899,7 +899,7 @@
        "q": "Gà con thấy hạt đậu. Gà con sẽ làm gì?",
        "a": 1,
        "ok": "Giỏi quá! Gà con mổ hạt để ăn.",
-       "no": "Gà con thích ăn hạt đấy.",
+       "no": "Bé làm được mà! Gà con thích ăn hạt đấy.",
        "opts": [
         {
          "e": "art:ga-con-ngu"
@@ -920,7 +920,7 @@
        "q": "Hạt nằm trong đất ẩm. Hạt nhú ra gì trước?",
        "a": 2,
        "ok": "Hoan hô bé! Hạt nhú ra mầm đậu trước.",
-       "no": "Hạt trong đất ẩm sẽ nảy mầm trước.",
+       "no": "Mình cùng xem lại nào! Hạt trong đất ẩm sẽ nảy mầm trước.",
        "opts": [
         {
          "e": "art:qua-dau"
@@ -1255,7 +1255,7 @@
        "q": "Hạt đậu nên cất vào đâu?",
        "a": 0,
        "ok": "Đúng rồi! Hạt đậu cất vào túi.",
-       "no": "Hạt nhỏ, cất vào túi là gọn nhất.",
+       "no": "Không sao đâu! Hạt nhỏ, cất vào túi là gọn nhất.",
        "opts": [
         {
          "e": "art:tui"
@@ -1273,7 +1273,7 @@
        "q": "Tưới xong rồi. Lu cất bình tưới ở đâu?",
        "a": 1,
        "ok": "Tuyệt vời! Bình tưới để cạnh vòi nước.",
-       "no": "Bình tưới để gần vòi nước cho dễ lấy.",
+       "no": "Bé thử lại nào! Bình tưới để gần vòi nước cho dễ lấy.",
        "opts": [
         {
          "e": "art:ao-nuoc"

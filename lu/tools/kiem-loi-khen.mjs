@@ -1,15 +1,19 @@
 // Quy tắc 43 (tam 27/11 12:53): lời khen theo giọng cô giáo mầm non: cổ vũ, dễ thương, đa dạng,
 // nói rõ bé vừa làm được gì và, khi hợp, gắn với thói quen tốt ("Từ nay bé nhớ rửa tay thật sạch trước khi ăn cơm nhé").
 // Phép thử: (1) mỗi lời kết thúc bài (done) có từ khen/cổ vũ; (2) không hai bài trong buổi dùng y hệt một lời kết;
-// (3) lời khen khi đúng (ok) không lặp một câu mở đầu quá 40% số câu; (4) gọi trẻ là "bé" (lint đã chặn "con").
+// (3) lời khen khi đúng (ok) không lặp một câu mở đầu quá 40% số câu; (4) gọi trẻ là "bé" (lint đã chặn "con");
+// (5) lời khi bé chọn sai (no) mở đầu bằng câu động viên ngắn ("Không sao đâu!", "Bé thử lại nào!"…), trừ thẻ lật E05 (sai thì im lặng).
+const DONG_VIEN = /^(Không sao đâu|Bé thử lại nào|Cố lên bé ơi|Bé làm được mà|Mình cùng xem lại nào|Gần đúng rồi|Suýt đúng rồi)!/;
 const KHEN = /(giỏi|tuyệt|hoan hô|tài|tinh mắt|khéo|cảm ơn|đẹp quá|phục|xuất sắc|chính xác|đúng rồi)/i;
 export function kiemLoiKhen(pkg) {
-  const loi = [], done = [], ok = [];
+  const loi = [], done = [], ok = [], no = [];
   const walk = (o, w) => {
     if (Array.isArray(o)) return o.forEach(x => walk(x, w));
     if (!o || typeof o !== 'object') return;
     const id = o.activity_id || w;
+    if (o.engine === 'E05') return;
     if (typeof o.done === 'string') done.push([id, o.done]);
+    if (typeof o.no === 'string' && o.no) no.push([id, o.no]);
     if (typeof o.ok === 'string' && !o.any && !/^(Yes|Great|Good|Well|Excellent)/.test(o.ok)) ok.push(o.ok);
     for (const [k, v] of Object.entries(o)) if (k !== 'checkin') walk(v, id);
   };
@@ -19,5 +23,6 @@ export function kiemLoiKhen(pkg) {
   for (const [t, n] of Object.entries(dem)) if (n > 1) loi.push(`lời kết "${t}" lặp ${n} lần trong buổi; mỗi bài một lời khen riêng (quy tắc 43)`);
   const mo = {}; for (const t of ok) { const m = t.split(/[!.]/)[0]; mo[m] = (mo[m] || 0) + 1; }
   for (const [m, n] of Object.entries(mo)) if (ok.length >= 5 && n / ok.length > 0.4) loi.push(`lời khen mở đầu "${m}!" dùng ${n}/${ok.length} lần, nhàm chán; đổi cách khen (quy tắc 43)`);
+  for (const [id, t] of no) if (!DONG_VIEN.test(t)) loi.push(`${id}: lời khi bé chọn sai "${t}" chưa có câu động viên mở đầu (quy tắc 43)`);
   return loi;
 }

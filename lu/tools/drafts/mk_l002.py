@@ -181,5 +181,8 @@ pkg.update({
 })
 for k in L1:
     if k not in pkg: pkg[k] = L1[k]
+import sys; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from dong_vien import them_dong_vien
+them_dong_vien(pkg)
 json.dump(pkg, open(os.path.join(ROOT, "content/drafts/L002.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("L002:", len(S), "bài nhỏ,", N[0], "hoạt động")

@@ -183,7 +183,7 @@
       "ba"
      ],
      "ok": "Bé giỏi lắm! Trên khay có {word} hạt đậu.",
-     "no": "Bé đếm lại nhé.",
+     "no": "Không sao đâu! Bé đếm lại nhé.",
      "hint_glow": false
     },
     {
@@ -197,7 +197,7 @@
        "q": "Bé tìm giỏ có hai hạt đậu.",
        "a": 1,
        "ok": "Giỏi quá! Giỏ này có hai hạt đậu.",
-       "no": "Bé đếm từng hạt trong giỏ xem.",
+       "no": "Cố lên bé ơi! Bé đếm từng hạt trong giỏ xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -218,7 +218,7 @@
        "q": "Bé tìm giỏ có ba hạt đậu.",
        "a": 2,
        "ok": "Hoan hô bé! Giỏ này có ba hạt đậu.",
-       "no": "Bé đếm từng hạt trong giỏ xem.",
+       "no": "Cố lên bé ơi! Bé đếm từng hạt trong giỏ xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -298,7 +298,7 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
+     "no": "Bé làm được mà! Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
      "done": "Bé khéo tay quá! Ba luống đậu đã gieo xong!"
     },
     {
@@ -327,7 +327,7 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé chạm đếm từng hạt trước nhé.",
+     "no": "Mình cùng xem lại nào! Bé chạm đếm từng hạt trước nhé.",
      "done": "Tuyệt vời! Hàng thứ hai cũng gieo xong rồi!"
     },
     {
@@ -343,7 +343,7 @@
      "max": 3,
      "groups": 3,
      "rounds": 1,
-     "no": "Bé đếm số hạt trong từng giỏ xem.",
+     "no": "Không sao đâu! Bé đếm số hạt trong từng giỏ xem.",
      "ok": "Một hạt, hai hạt, ba hạt. Giỏ đã xếp từ ít đến nhiều."
     },
     {
@@ -369,7 +369,7 @@
       "ba"
      ],
      "ok": "Bé giỏi lắm! Có {word} chú chim.",
-     "no": "Bé chạm đếm lại từng chú nhé.",
+     "no": "Cố lên bé ơi! Bé chạm đếm lại từng chú nhé.",
      "hint_glow": false
     }
    ],
@@ -413,7 +413,7 @@
        "q": "Bà để lại cho Lu cái gì?",
        "a": 0,
        "ok": "Đúng rồi! Bà để lại một túi hạt đậu.",
-       "no": "Bé nghe lại nhé: bà để lại một túi hạt đậu.",
+       "no": "Cố lên bé ơi! Bé nghe lại nhé: bà để lại một túi hạt đậu.",
        "opts": [
         {
          "e": "art:tui"
@@ -431,7 +431,7 @@
        "q": "Bà dặn Lu tưới hạt bằng gì?",
        "a": 1,
        "ok": "Tuyệt vời! Lu tưới hạt bằng bình tưới.",
-       "no": "Bà dặn Lu dùng bình tưới đấy.",
+       "no": "Bé làm được mà! Bà dặn Lu dùng bình tưới đấy.",
        "opts": [
         {
          "e": "art:gio"
@@ -449,7 +449,7 @@
        "q": "Bà dặn Lu gieo hạt vào đâu?",
        "a": 2,
        "ok": "Chính xác! Hạt đậu gieo xuống đất.",
-       "no": "Hạt đậu nằm trong đất mới mọc được.",
+       "no": "Mình cùng xem lại nào! Hạt đậu nằm trong đất mới mọc được.",
        "opts": [
         {
          "e": "art:ao-nuoc"
@@ -554,7 +554,7 @@
        "q": "Hạt đậu nằm ở đâu trên cây?",
        "a": 0,
        "ok": "Bé giỏi quá! Hạt đậu nằm trong quả đậu.",
-       "no": "Bé nhớ lại: hạt nằm trong quả đậu xanh.",
+       "no": "Không sao đâu! Bé nhớ lại: hạt nằm trong quả đậu xanh.",
        "opts": [
         {
          "e": "art:qua-dau"
@@ -572,7 +572,7 @@
        "q": "Đất khô quá. Lu mang gì ra để hạt lớn được?",
        "a": 0,
        "ok": "Giỏi quá! Lu tưới nước, đất ẩm, hạt sẽ nảy mầm.",
-       "no": "Hạt cần nước. Bé tìm thứ đựng nước nhé.",
+       "no": "Bé thử lại nào! Hạt cần nước. Bé tìm thứ đựng nước nhé.",
        "opts": [
         {
          "e": "art:binh-tuoi"
@@ -590,7 +590,7 @@
        "q": "Thứ nào cho mầm cây ánh nắng?",
        "a": 1,
        "ok": "Hoan hô bé! Mặt trời cho mầm ánh nắng.",
-       "no": "Cây non cần ánh nắng. Bé tìm hình có nắng nhé.",
+       "no": "Cố lên bé ơi! Cây non cần ánh nắng. Bé tìm hình có nắng nhé.",
        "opts": [
         {
          "e": "art:mat-trang"
@@ -651,7 +651,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 1,
        "ok": "Đúng rồi! Đó là cái bình tưới.",
-       "no": "Bé nhìn kỹ: bóng có vòi dài để tưới cây.",
+       "no": "Bé làm được mà! Bé nhìn kỹ: bóng có vòi dài để tưới cây.",
        "opts": [
         {
          "e": "art:gio"
@@ -670,7 +670,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
        "ok": "Tuyệt vời! Đó là quả đậu.",
-       "no": "Bé nhìn kỹ: bóng dài và cong như quả đậu.",
+       "no": "Mình cùng xem lại nào! Bé nhìn kỹ: bóng dài và cong như quả đậu.",
        "opts": [
         {
          "e": "art:qua-dau"
@@ -689,7 +689,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
        "ok": "Chính xác! Đó là chú chim.",
-       "no": "Bé nhìn kỹ: bóng có cánh và cái mỏ nhỏ.",
+       "no": "Không sao đâu! Bé nhìn kỹ: bóng có cánh và cái mỏ nhỏ.",
        "opts": [
         {
          "e": "art:tho"
@@ -708,7 +708,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
        "ok": "Bé giỏi quá! Đó là bông hoa.",
-       "no": "Bé nhìn kỹ: bóng có nhiều cánh tròn.",
+       "no": "Cố lên bé ơi! Bé nhìn kỹ: bóng có nhiều cánh tròn.",
        "opts": [
         {
          "e": "art:hoa"
@@ -781,7 +781,7 @@
      "max": 3,
      "cells": 9,
      "rounds": 2,
-     "no": "Đó không phải hạt đậu. Hạt đậu màu vàng nâu.",
+     "no": "Cố lên bé ơi! Đó không phải hạt đậu. Hạt đậu màu vàng nâu.",
      "done": "Hoan hô! Bé nhặt đủ hạt đậu, không sót hạt nào!",
      "layout": "roi",
      "bg": "asset:BC-0004"
@@ -811,7 +811,7 @@
      "max": 3,
      "cells": 8,
      "rounds": 2,
-     "no": "Mầm đậu có thân xanh nhú lên từ hạt.",
+     "no": "Bé làm được mà! Mầm đậu có thân xanh nhú lên từ hạt.",
      "done": "Hết chỗ trốn rồi! Bé tìm ra đủ mầm đậu, tài quá!",
      "evidence": "tiep-xuc",
      "layout": "roi",
@@ -1183,7 +1183,7 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé nhớ lại nhé: làm ướt tay, xoa xà phòng, rồi lau khô bằng khăn.",
+     "no": "Mình cùng xem lại nào! Bé nhớ lại nhé: làm ướt tay, xoa xà phòng, rồi lau khô bằng khăn.",
      "done": "Bé giỏi quá! Từ nay bé nhớ rửa tay thật sạch trước khi ăn cơm nhé."
     },
     {
@@ -1288,7 +1288,7 @@
        "q": "Thứ nào không phải của cây đậu?",
        "a": 3,
        "ok": "Giỏi quá! Quả bóng bay không phải của cây đậu.",
-       "no": "Hạt, mầm, quả đều từ cây đậu. Còn thứ nào khác?",
+       "no": "Không sao đâu! Hạt, mầm, quả đều từ cây đậu. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:hat-dau"
@@ -1309,7 +1309,7 @@
        "q": "Thứ nào không mọc lên được?",
        "a": 2,
        "ok": "Hoan hô bé! Viên sỏi không mọc được.",
-       "no": "Lá, hoa, mầm đều mọc lên. Bé tìm thứ không mọc nhé.",
+       "no": "Bé thử lại nào! Lá, hoa, mầm đều mọc lên. Bé tìm thứ không mọc nhé.",
        "opts": [
         {
          "e": "art:la"
@@ -1330,7 +1330,7 @@
        "q": "Thứ nào không dùng để chăm cây?",
        "a": 1,
        "ok": "Đúng rồi! Chiếc áo không dùng để chăm cây.",
-       "no": "Bình tưới, vòi nước, nước đều giúp cây. Còn thứ nào khác?",
+       "no": "Cố lên bé ơi! Bình tưới, vòi nước, nước đều giúp cây. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:binh-tuoi"
@@ -1351,7 +1351,7 @@
        "q": "Thứ nào không ăn được?",
        "a": 0,
        "ok": "Tuyệt vời! Chong chóng không ăn được.",
-       "no": "Quả táo, củ cà rốt, quả đậu đều ăn được. Còn thứ nào khác?",
+       "no": "Bé làm được mà! Quả táo, củ cà rốt, quả đậu đều ăn được. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:chong-chong"
