@@ -2966,6 +2966,31 @@
    "dung_o": [],
    "slot": "art:xa-phong",
    "ngay_duyet": "2026-11-26"
+  },
+  {
+   "asset_id": "DV-0042",
+   "version": 1,
+   "path": "assets/do-vat/DV-0042_ro-tre_v01.webp",
+   "mo_ta": "ro tre (rong, mau nuoc)",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 699,
+    "h": 469
+   },
+   "bytes": 93024,
+   "sha256": "cc341d96cd8318dd1f47bfc4eb172be8226f38e9a1fc050268ca7365beb0af5e",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "PM31-OB-ro-tre_s25.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-26",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "PM31-OB-ro-tre seed 25; Z-Image Turbo (ComfyUI local), Apache-2.0; nen trong suot BiRefNet (MIT); ro hai lop o bai Dia tao (MX-07)",
+   "dung_o": [
+    "lab:MX-07"
+   ],
+   "slot": "art:ro-tre",
+   "ngay_duyet": "2026-11-27"
   }
  ]
 }

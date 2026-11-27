@@ -440,8 +440,8 @@
 
 /* ---- Rổ lấy vật (tam 26/11 20:03 + 20:23 "giỏ táo phải thiết kế lại"): rổ tre đan to ngang đĩa, táo nằm TRONG lòng rổ
    (miệng rổ phía sau, thân rổ phía trước che nửa dưới quả), lấy ra thì vơi dần. Quy tắc 37 */
-.lu-lesson .tr-src.ro { --w: 290px; --ro: url(../assets/cho-duyet/ro-tre/ro-tre-s25-cat.webp); position: relative; width: var(--w); height: calc(var(--w) * .671); padding: 0; border: 0; background: none; cursor: pointer; }
-/* Rổ tre vẽ tay màu nước PM31-OB-ro-tre (bản s25, chờ tam duyệt). Hai lớp cùng một ảnh: lớp sau là cả rổ,
+.lu-lesson .tr-src.ro { --w: 290px; --ro: url(../assets/do-vat/DV-0042_ro-tre_v01.webp); position: relative; width: var(--w); height: calc(var(--w) * .671); padding: 0; border: 0; background: none; cursor: pointer; }
+/* Rổ tre vẽ tay màu nước PM31-OB-ro-tre (bản s25, tam duyệt 27/11, DV-0042). Hai lớp cùng một ảnh: lớp sau là cả rổ,
    lớp trước chỉ giữ thân rổ dưới mép trong của miệng (clip-path nửa dưới hình bầu dục) để che nửa dưới quả táo. */
 .lu-lesson .tr-src.ro .ro-sau, .lu-lesson .tr-src.ro .ro-truoc { position: absolute; inset: 0; background: var(--ro) center / 100% 100% no-repeat; }
 .lu-lesson .tr-src.ro .ro-sau { filter: drop-shadow(0 6px 5px rgba(90,58,20,.22)); }
