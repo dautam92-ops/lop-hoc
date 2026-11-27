@@ -22,7 +22,10 @@ def opt(name, default=None):
 def key():
     k = os.environ.get('ELEVENLABS_API_KEY')
     f = os.path.join(HERE, 'elevenlabs-key.txt')
-    if not k and os.path.exists(f): k = open(f, encoding='utf8').read().strip()
+    if not k and os.path.isdir(f):  # lỡ tạo thành thư mục: lấy tệp .txt đầu tiên bên trong
+        t = sorted(x for x in os.listdir(f) if x.lower().endswith('.txt'))
+        if t: f = os.path.join(f, t[0])
+    if not k and os.path.isfile(f): k = open(f, encoding='utf-8-sig').read().strip()
     if not k: sys.exit('Chưa có khóa API. Dán khóa vào ' + f)
     return k
 
