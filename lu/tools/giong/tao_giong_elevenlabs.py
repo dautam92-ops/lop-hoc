@@ -4,7 +4,7 @@
 # 1) tam tự tạo tài khoản ElevenLabs, lấy khóa API (Profile → API Keys), dán vào tệp
 #    elevenlabs-key.txt đặt cạnh tệp này (hoặc biến môi trường ELEVENLABS_API_KEY). Không đưa tệp khóa lên GitHub.
 # 2) python tao_giong_elevenlabs.py --tim-giong            (chỉ liệt kê giọng nữ tiếng Việt trong thư viện, không tốn lượt)
-# 3) python tao_giong_elevenlabs.py --chay [--giong id1,id2,id3] [--hoaimy <thư-mục-mp3-Hoài-My>] [--cau cau-thu-elevenlabs.json]
+# 3) python tao_giong_elevenlabs.py --chay [--mo-hinh eleven_v3,<mã v4>] [--giong id1,id2,id3] [--hoaimy <thư-mục-mp3-Hoài-My>] [--cau cau-thu-elevenlabs.json]
 #    Không có --giong thì tự chọn 3 giọng nữ tiếng Việt được dùng nhiều nhất.
 #    Trước khi gọi, in số ký tự sẽ tốn và số lượt còn lại; vượt thì dừng, không mua thêm.
 # Kết quả: thư mục so-sanh-giong/ gồm index.html (bảng nghe so sánh) và các mp3, mỗi giọng một thư mục con.
@@ -14,7 +14,7 @@ import hashlib, html, json, os, shutil, sys, urllib.request, urllib.parse, urlli
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 API = 'https://api.elevenlabs.io'
-MODEL = 'eleven_v3'
+MODEL = 'eleven_v3'  # --mo-hinh eleven_v3,<mã v4> để so nhiều mô hình; --xem-mo-hinh liệt kê mã mô hình
 
 def opt(name, default=None):
     return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
@@ -56,6 +56,11 @@ if '--tim-giong' in sys.argv:
         print(f"{v['voice_id']}  {v.get('name')}  | tuổi: {v.get('age')} | {v.get('accent') or ''} | {(v.get('description') or '')[:80]}")
     sys.exit()
 
+if '--xem-mo-hinh' in sys.argv:
+    for m in call('GET', '/v1/models'):
+        print(m.get('model_id'), '|', m.get('name'), '| tiếng Việt' if any(l.get('language_id') == 'vi' for l in m.get('languages', [])) else '')
+    sys.exit()
+
 if '--chay' not in sys.argv: sys.exit('Thêm --tim-giong hoặc --chay. Xem hướng dẫn ở đầu tệp.')
 
 lines = json.load(open(opt('--cau', os.path.join(HERE, 'cau-thu-elevenlabs.json')), encoding='utf8'))['lines']
@@ -65,7 +70,8 @@ else:
     giong = tim_giong(3)
     if not giong: sys.exit('Không tìm thấy giọng nữ tiếng Việt trong thư viện. Chạy --tim-giong rồi chọn bằng --giong.')
 
-can = sum(len(l.get('v3', l['text'])) for l in lines) * len(giong)
+MODELS = opt('--mo-hinh', MODEL).split(',')
+can = sum(len(l.get('v3', l['text'])) for l in lines) * len(giong) * len(MODELS)
 con, tier = so_luot_con()
 print(f'Gói: {tier}. Sẽ dùng khoảng {can} ký tự cho {len(lines)} câu × {len(giong)} giọng. Còn {con} ký tự.')
 if can > con: sys.exit('Không đủ lượt. Dừng, không tạo (không tự mua thêm).')
@@ -79,12 +85,16 @@ for g in giong:
         r = call('POST', f"/v1/voices/add/{g['public_owner_id']}/{g['voice_id']}", {'new_name': 'Lu thu - ' + (g.get('name') or '')[:30]})
         g['voice_id'] = r.get('voice_id', g['voice_id'])
 
-for i, g in enumerate(giong):
-    d = os.path.join(OUT, f'giong-{i+1}'); os.makedirs(d, exist_ok=True)
+COLS = []
+for mh in MODELS:
+  for i, g in enumerate(giong):
+    c = f'giong-{i+1}' + ('' if len(MODELS) == 1 else '-' + mh)
+    COLS.append((c, f'Giọng {i+1}: {g.get("name") or ""}' + ('' if len(MODELS) == 1 else f' ({mh})')))
+    d = os.path.join(OUT, c); os.makedirs(d, exist_ok=True)
     for l in lines:
         f = os.path.join(d, ten_tep(l['text']))
         if os.path.exists(f) and os.path.getsize(f) > 500: continue
-        body = {'text': l.get('v3', l['text']), 'model_id': MODEL, 'language_code': 'vi',
+        body = {'text': l.get('v3', l['text']), 'model_id': mh, 'language_code': 'vi',
                 'voice_settings': {'stability': 0.5, 'similarity_boost': 0.75}}
         audio = call('POST', f"/v1/text-to-speech/{g['voice_id']}?output_format=mp3_44100_128", body, raw=True)
         open(f, 'wb').write(audio); print('OK', g.get('name'), '|', l['text'][:50])
@@ -96,8 +106,8 @@ if hm:
         s = os.path.join(hm, ten_tep(l['text']))
         if os.path.exists(s): shutil.copy(s, d)
 
-cols = (['hoai-my'] if hm else []) + [f'giong-{i+1}' for i in range(len(giong))]
-names = (['Hoài My (hiện tại)'] if hm else []) + [f'Giọng {i+1}: {html.escape(g.get("name") or "")}' for i, g in enumerate(giong)]
+cols = (['hoai-my'] if hm else []) + [c for c, _ in COLS]
+names = (['Hoài My (hiện tại)'] if hm else []) + [html.escape(n) for _, n in COLS]
 rows = []
 for n, l in enumerate(lines, 1):
     tds = []
