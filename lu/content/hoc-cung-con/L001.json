@@ -1,0 +1,19 @@
+{
+  "lesson_id": "L001",
+  "ghi_chu": "Mẫu học cùng con (quy tắc Q4, tam duyệt hướng 27/11). Lời cho bố mẹ gọi trẻ là con; lời Mono gọi trẻ là bé.",
+  "dan_bo_me": {
+    "hom_nay": "Con tập đếm từ 1 đến 3: chạm vào từng vật, đếm một tiếng.",
+    "chuan_bi": "Để sẵn 3 hạt đậu to hoặc 3 chiếc thìa cạnh máy.",
+    "ngoi_canh": "Ngồi cạnh con ở bài đầu và lúc Mono mời bố mẹ. Bận thì con vẫn tự học được."
+  },
+  "moi_bo_me": [
+    { "sau_bai": 0, "loai": "chi-cho", "loi": "Bé đếm cho bố mẹ nghe: một, hai, ba!", "goi_y": "Đặt 3 hạt đậu trước mặt con, để con chạm từng hạt và đếm to." },
+    { "sau_bai": 3, "loai": "do-bo-me", "loi": "Bé đố bố mẹ: cây cần gì để lớn?", "goi_y": "Cố tình trả lời sai một ý, ví dụ cây cần kẹo, để con sửa cho bố mẹ." },
+    { "sau_bai": 8, "loai": "ke", "loi": "Bé kể bố mẹ nghe: lúc nào bé phải chờ?", "goi_y": "Nghe con kể hết, rồi kể một lần bố mẹ cũng phải chờ." }
+  ],
+  "cuoi_buoi": {
+    "loi": "Mono tắt máy đây. Bé cùng bố mẹ chia hạt đậu nhé!",
+    "ten": "Chia hạt đậu cho gấu bông",
+    "phut": 5
+  }
+}
