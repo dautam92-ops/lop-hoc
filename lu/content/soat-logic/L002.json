@@ -1,7 +1,7 @@
 {
  "doi_tuong": "L002",
  "tep": "content/drafts/L002.json",
- "ma_bam": "0063d2ec1b3a713a99ee729f1aaa20673c835913",
+ "ma_bam": "c60b4274c1384f72930eca759bd0c86f98e70c15",
  "ngay": "2026-11-27",
  "nguoi_soat": "agent soát logic",
  "quy_tac_da_soat": [
@@ -32,19 +32,19 @@
  },
  "canh_bao_da_xet": [
   {
-   "canh_bao": "CẢNH BÁO L002-B24: \"Tưới xong rồi. Lu cất bình tưới ở đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thuc-vat); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
-   "ket_luan": "Không phải lỗi LG01: cả ba đáp án (ao nước, vòi nước, cái cây) đều thuộc bối cảnh tưới vườn: cây là thứ vừa được tưới, vòi nước là chỗ lấy nước, ao là chỗ có nước trong vườn. Khác nhóm kho kiến thức nhưng cùng vai \"chỗ có thể để bình\", nên cùng loại theo LG02. Ao nước (thả bình xuống ao) và cái cây (bỏ bình lại gốc cây, chưa cất) đều sai rõ với trẻ; lỗi LG03 cũ (ngôi nhà) đã được sửa."
+   "canh_bao": "CẢNH BÁO L002-B24: \"Tưới xong rồi. Mono cất bình tưới ở đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thuc-vat); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
+   "ket_luan": "Không phải lỗi LG01: ao nước, vòi nước, cái cây đều thuộc bối cảnh tưới vườn và cùng vai \"chỗ có thể để bình\" (LG02). Ao nước (thả bình xuống ao) và cái cây (bỏ bình lại gốc cây, chưa cất) sai rõ với trẻ; chỉ vòi nước đúng. Đổi tên Lu thành Mono không đổi logic."
   }
  ],
  "loi": [
   {
    "ma": "LG03",
    "o": "L002-B24 câu 2",
-   "cau": "Bình tưới xong rồi. Lu cất bình ở đâu?",
+   "cau": "Bình tưới xong rồi. Mono cất bình ở đâu?",
    "mo_ta": "Đáp án đúng là vòi nước, nhưng cất bình tưới vào trong nhà (art:nha) cũng là cách cất gọn đúng ngoài đời; nhiều nhà cất bình tưới trong nhà hoặc trong kho. Đây là quy ước của bài, không phải kiến thức, nên trẻ chọn ngôi nhà một cách hợp lý mà vẫn bị chấm sai. Câu chữ \"Bình tưới xong rồi\" cũng sai nghĩa (người tưới chứ không phải bình tưới).",
-   "sua": "Sửa câu thành \"Lu tưới cây xong rồi. Lu cất bình tưới ở đâu?\" và thay art:nha bằng một chỗ rõ ràng là sai, cùng bối cảnh vườn, ví dụ art:ao-nuoc (thả xuống ao) hoặc art:bui-co (vứt vào bụi cỏ). Giữ art:voi-nuoc là đáp án đúng, giữ lời ok và no.",
+   "sua": "Sửa câu thành \"Mono tưới cây xong rồi. Mono cất bình tưới ở đâu?\" và thay art:nha bằng một chỗ rõ ràng là sai, cùng bối cảnh vườn, ví dụ art:ao-nuoc (thả xuống ao) hoặc art:bui-co (vứt vào bụi cỏ). Giữ art:voi-nuoc là đáp án đúng, giữ lời ok và no.",
    "trang_thai": "da_sua",
-   "kiem_lai": "Đã sửa: câu thành \"Tưới xong rồi. Lu cất bình tưới ở đâu?\", art:nha thay bằng art:ao-nuoc; đáp án ao nước, vòi nước, cái cây; vòi nước vẫn đúng, lời ok và no khớp. Không còn đáp án sai nào cũng đúng."
+   "kiem_lai": "Đã sửa: câu thành \"Tưới xong rồi. Mono cất bình tưới ở đâu?\", art:nha thay bằng art:ao-nuoc; đáp án ao nước, vòi nước, cái cây; vòi nước vẫn đúng, lời ok và no khớp. Không còn đáp án sai nào cũng đúng."
   },
   {
    "ma": "LG03",
@@ -135,9 +135,26 @@
    "sua": "Đổi q thành \"Gà con thấy hạt đậu. Gà con sẽ làm gì?\", ok thành \"Đúng rồi! Gà con mổ hạt để ăn.\", no thành \"Gà con thích ăn hạt đấy.\"",
    "trang_thai": "da_sua",
    "kiem_lai": "Đã sửa: q \"Gà con thấy hạt đậu. Gà con sẽ làm gì?\", ok \"Đúng rồi! Gà con mổ hạt để ăn.\", no \"Gà con thích ăn hạt đấy.\"; tên gọi khớp bốn ảnh gà con và các màn khác."
+  },
+  {
+   "ma": "LG09",
+   "o": "L002-B01",
+   "cau": "Bé chạm vào từng hạt đậu nhé. (layout roi, cảnh luống đất BC-0004)",
+   "mo_ta": "Bản mới đặt vật rải rác trên cảnh thật, có cỡ theo tỉ lệ (B03 đã khai \"co\"), nhưng B01 không khai \"co\" nên hạt đậu, viên sỏi, chiếc lá, bông hoa đều vẽ cùng một cỡ (ô 26%, scale 1). Trên cùng một luống đất, hạt đậu to bằng bông hoa và chiếc lá là sai tương quan kích thước (kho ghi art:hat-dau \"nho\": true). Bài lại dạy đây là hạt nhỏ lẫn trong vườn.",
+   "sua": "Thêm \"co\" cho B01 trong mk_l002.py, ví dụ {\"art:hat-dau\": 0.7, \"art:soi\": 0.8, \"art:la\": 1.2, \"art:hoa\": 1.3}: hạt đậu và sỏi nhỏ hơn rõ so với lá và hoa. Vùng chạm vẫn là nút 26% (scale chỉ áp vào ảnh) nên hạt nhỏ vẫn chạm được.",
+   "trang_thai": "mo"
+  },
+  {
+   "ma": "LG20",
+   "o": "L002 intro (và các màn gọi Mono)",
+   "cau": "Chào bé! Hôm nay bé là Mono.",
+   "mo_ta": "Câu mở đầu nói bé chính là Mono, nhưng ngay sau và suốt bài Mono là một nhân vật khác bé: \"Túi hạt đậu của Mono bị đổ\", \"Bé tìm giúp Mono nhé\", \"Bé nghe Mono kể nhé\", \"Bé tìm thấy hết hạt cho Mono. Mono thấy thế nào?\", \"Thở cùng Mono\", \"Nói theo Mono\". Bé vừa là Mono vừa giúp Mono, mâu thuẫn vai trong bài; trẻ 4–6 tuổi không biết mình là ai trong chuyện. (Lỗi có từ bản \"bé là Lu\", lần soát trước chưa ghi; L001 cũng có câu này.)",
+   "sua": "Đổi câu đầu intro thành \"Chào bé! Mình là Mono.\" (Mono tự giới thiệu, bé là người giúp), giữ các câu sau. Sửa tương tự ở L001.",
+   "trang_thai": "mo"
   }
  ],
  "ghi_chu_cap_nhat": [
-  "27/11/2026: chỉ đổi tên nhân vật Lu thành Mono theo tam, không đổi nội dung, đáp án hay logic; giữ kết quả soát."
+  "27/11/2026: chỉ đổi tên nhân vật Lu thành Mono theo tam, không đổi nội dung, đáp án hay logic; giữ kết quả soát.",
+  "27/11/2026 (soát lại, mã băm mới): xét đổi tên Lu thành Mono, bài tìm vật layout roi (xoay, cỡ theo tỉ lệ), câu động viên mở đầu lời no. B03 xoay 0 cho con vật (đứng đúng trọng lực), cỡ mèo 1.35, trứng 0.7, đúng tương quan. Cảnh BC-0004 cắt bỏ phần trời nên vật rải rác đều nằm trên đất/cỏ. Các câu động viên (\"Không sao đâu!\", \"Bé thử lại nào!\"...) không đổi nghĩa gợi ý, không mâu thuẫn đáp án (LG19). Lỗi cũ vẫn da_sua. Thêm 2 lỗi mở: LG09 B01, LG20 intro."
  ]
 }

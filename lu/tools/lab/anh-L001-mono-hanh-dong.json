@@ -1,5 +1,7 @@
 {
  "format": "lu-art-prompts",
+ "trang_thai": "da_ve",
+ "trang_thai_ghi_chu": "tam vẽ bằng ChatGPT 27/11 16:00 (DV-0047..0050), đã duyệt.",
  "version": "L001-MONO-HD-1",
  "ghi_chu": "Ảnh hành động L001-B24 \"Quả đậu trên cao\" với nhân vật Mono (thay Lu 27/11). tam 27/11 14:53: ảnh con của bài học vẽ bằng Qwen-Image trên máy 24H (không ChatGPT); Qwen không nhận ảnh mẫu nên câu mô tả tả kỹ Mono và bà theo registry/characters.json (MN-0005, NV-0003). Đang vẽ ở Documents\\lu-L001-lu-hanh-dong\\mono\\, chờ tam chọn. Quy tắc 42. tam 27/11 15:50: mỗi ảnh chỉ vẽ 2 phương án; câu mô tả gọn, tả điều muốn có, không liệt kê thứ cấm. tam 27/11 15:50: đáp án sai đổi từ nhảy sang TRÈO (cảm giác nguy hiểm rõ hơn).",
  "style": "soft 3D clay-like children's book illustration, gently glossy, warm vivid colors, rounded shapes, simple clean background, for kids aged 4 to 6",
