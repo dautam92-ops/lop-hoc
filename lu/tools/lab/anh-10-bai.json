@@ -1,5 +1,7 @@
 {
  "format": "lu-art-prompts",
+ "trang_thai": "da_ve",
+ "trang_thai_ghi_chu": "Đã vẽ và đăng ký vào kho (BC, DV). Giữ làm hồ sơ câu mô tả.",
  "version": "PM10-1",
  "ghi_chu": "Ảnh cho 10 bài mẫu hoàn chỉnh đầu tiên (Phòng mẫu). Bối cảnh: slot = tên cảnh (thay nền vẽ mã). Đồ vật: slot art:<tên> (thay hình vẽ mã). Chạy trên máy tam, ảnh chỉ hiện sau khi tam duyệt. Đồ vật dùng style_do_vat (bỏ \"natural expression\": mô hình vẽ thêm mặt người vào giọt nước, mũ, sỏi). Kiểu vẽ: mục có \"kieu\": \"style\" (con vật) dùng style; mục khác dùng style_do_vat (soát logic 27/11).",
  "bai": [

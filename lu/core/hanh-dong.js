@@ -13,7 +13,12 @@ export const HANH_DONG = {
   'art:ga-con-ngu': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'nằm ngủ' },
   'art:ga-con-chay': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'chạy' },
   'art:ga-con-uong-nuoc': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'uống nước' },
-  // L001-B24 (quy tắc 42): Lu vẽ bằng Qwen-Image trên máy 24H, chờ tam duyệt
+  // L001-B24 (quy tắc 42): Mono (thay Lu 27/11) vẽ bằng Qwen-Image trên máy 24H (tam 27/11 14:53), chờ tam duyệt
+  'art:mono-nhay-voi-qua': { chu_the: 'mono', goi: ['mono'], hanh_dong: 'nhảy với quả đậu trên giàn cao' },
+  'art:mono-nho-ba-hai-qua': { chu_the: 'mono', goi: ['mono'], hanh_dong: 'nhờ bà hái quả đậu trên cao' },
+  'art:mono-nhay-lay-mu': { chu_the: 'mono', goi: ['mono'], hanh_dong: 'nhảy lấy mũ trên nóc chuồng gà' },
+  'art:mono-nho-ba-lay-mu': { chu_the: 'mono', goi: ['mono'], hanh_dong: 'nhờ bà lấy mũ trên nóc chuồng gà' },
+  // Bản Lu cũ (bỏ 27/11, giữ để đọc tệp cũ): Lu vẽ bằng Qwen-Image trên máy 24H, chờ tam duyệt
   'art:lu-nhay-voi-qua': { chu_the: 'lu', goi: ['lu'], hanh_dong: 'nhảy với quả đậu trên giàn cao' },
   'art:lu-nho-ba-hai-qua': { chu_the: 'lu', goi: ['lu'], hanh_dong: 'nhờ bà hái quả đậu trên cao' },
   'art:lu-nhay-lay-mu': { chu_the: 'lu', goi: ['lu'], hanh_dong: 'nhảy lấy mũ trên nóc chuồng gà' },

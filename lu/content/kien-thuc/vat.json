@@ -899,6 +899,60 @@
     "hat"
    ],
    "chu_the": "lu"
+  },
+  "mono": {
+   "ten": "Mono",
+   "nhom": "nhan-vat",
+   "en": [
+    "mono",
+    "explorer boy"
+   ],
+   "an_duoc": false
+  },
+  "ba": {
+   "ten": "bà",
+   "nhom": "nhan-vat",
+   "en": [
+    "grandma",
+    "grandmother"
+   ],
+   "an_duoc": false
+  },
+  "mono-nhay-voi-qua": {
+   "ten": "Mono nhảy với quả đậu",
+   "nhom": "hanh-dong",
+   "en": [
+    "jump",
+    "bean pod"
+   ],
+   "chu_the": "mono"
+  },
+  "mono-nho-ba-hai-qua": {
+   "ten": "Mono nhờ bà hái quả đậu",
+   "nhom": "hanh-dong",
+   "en": [
+    "grandma",
+    "bean pod"
+   ],
+   "chu_the": "mono"
+  },
+  "mono-nhay-lay-mu": {
+   "ten": "Mono nhảy lấy mũ",
+   "nhom": "hanh-dong",
+   "en": [
+    "jump",
+    "hat"
+   ],
+   "chu_the": "mono"
+  },
+  "mono-nho-ba-lay-mu": {
+   "ten": "Mono nhờ bà lấy mũ",
+   "nhom": "hanh-dong",
+   "en": [
+    "grandma",
+    "hat"
+   ],
+   "chu_the": "mono"
   }
  }
 }

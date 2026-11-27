@@ -54,4 +54,7 @@ for (const x of kiemHanhDong(D.samples)) { hinhLoi++; console.log('LỖI ' + x);
 for (const x of kiemBai({ lesson_id: 'lab', samples: D.samples }).loi) { hinhLoi++; console.log('LỖI logic ' + x); }
 for (const f of readdirSync(new URL('./', import.meta.url)).filter(f => /^anh-.*\.json$/.test(f)))
   for (const x of kiemAnh(JSON.parse(readFileSync(new URL('./' + f, import.meta.url)))).loi) { hinhLoi++; console.log(`LỖI logic ảnh ${f}: ${x}`); }
+// Quy tắc 45 (tam 27/11 15:40): ảnh đồ vật, con vật vẽ một lần rồi dùng lại; tệp câu mô tả chờ vẽ không được trùng ảnh trong kho.
+{ const { kiemDungLai, docTepAnh, khoAnh } = await import('../kiem-dung-lai.mjs');
+  for (const x of kiemDungLai(await docTepAnh(), await khoAnh(), JSON.parse(readFileSync(new URL('../../content/kien-thuc/vat.json', import.meta.url))).vat)) { hinhLoi++; console.log('LỖI ' + x); } }
 console.log(`${n - bad}/${n} hoạt động đạt.`); if (hinhLoi) console.log(`${hinhLoi} hình nghèo nàn chưa được theo dõi.`); process.exit(bad || hinhLoi ? 1 : 0);

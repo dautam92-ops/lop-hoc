@@ -1,5 +1,7 @@
 {
  "format": "lu-art-prompts",
+ "trang_thai": "bo",
+ "trang_thai_ghi_chu": "Bỏ 27/11: nhân vật Lu đổi thành Mono; thay bằng anh-L001-mono-hanh-dong.json.",
  "version": "L001-LU-HD-1",
  "ghi_chu": "Ảnh hành động của Lu cho L001-B24 \"Quả đậu trên cao\" (tam 27/11 12:50: câu \"Lu nên làm gì?\" phải có ảnh vẽ đúng việc làm, không dùng ảnh tư thế Lu). Vẽ bằng Qwen-Image trên máy 24H; nếu có Qwen-Image-Edit thì dùng ảnh mẫu assets/lu/tu-the/LU-0044 (Lu) và assets/nhan-vat-phu/NV-0001 (bà) để giữ đúng nhân vật. Chỉ dùng sau khi tam duyệt. Quy tắc 42. Soát logic lần 1 (27/11): sửa 5 lỗi (nét mặt ảnh sai, mặt đất và bóng, tỉ lệ Lu và bà, chiều cao chuồng như nhau, một động tác mỗi ảnh).",
  "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, vivid warm colors, simple clean composition, simple round frame, not too detailed, for kids aged 4 to 6",

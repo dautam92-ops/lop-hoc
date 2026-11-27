@@ -55,6 +55,12 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
   const lk = kiemLoiKhen(JSON.parse(await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8')));
   check('Lời khen cổ vũ, đa dạng, không lặp (quy tắc 43)', !lk.length, lk.slice(0, 3).join('; ')); }
 
+// 1e. Dùng lại ảnh (quy tắc 45, tam 27/11 15:40): không vẽ mới ảnh đồ vật, con vật đã có trong kho
+{ const { kiemDungLai, docTepAnh, khoAnh } = await import('./kiem-dung-lai.mjs');
+  const KB = JSON.parse(await readFile(path.join(ROOT, 'content/kien-thuc/vat.json'), 'utf8')).vat;
+  const dl = kiemDungLai(await docTepAnh(), await khoAnh(), KB);
+  check('Không vẽ trùng ảnh đã có trong kho (quy tắc 45)', !dl.length, dl.slice(0, 3).join('; ')); }
+
 // 2. Giọng đọc: mọi câu đều có tệp, tệp tồn tại
 const vl = run(['tools/voice-lines-bai.mjs', id]);
 const can = +(vl.match(/cần tạo (\d+)/) || [, 99])[1];
