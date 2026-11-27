@@ -487,3 +487,16 @@
   .lu-lesson .answers.anh-to:has(> .opt:nth-of-type(3)) { --n: 3; --fs: min(calc((100vw - 120px) / 3), var(--fs-max, 300px), 300px); }
   .lu-lesson .answers.anh-to:has(> .opt:nth-of-type(4)) { --n: 4; --fs: min(calc((100vw - 140px) / 4), var(--fs-max, 260px), 260px); }
 }
+
+/* Tay tì khi vẽ (tam 27/11 22:57): màn có vùng vẽ/tô thì cả màn không cuộn, không phóng to, không hiện kính lúp hay menu khi tì tay lâu,
+   để tay tì ngoài vùng vẽ không cắt ngang nét đang vẽ. Xử lý chạm: engines/kit.js motNgon. Phép thử: tools/kiem-tay-ti.mjs */
+.lu-root:has([data-vung-ve]), .lu-root:has([data-vung-ve]) * { touch-action: none; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+/* Vùng vẽ/tô to hết mức để tay bé đặt trên vùng vẽ chứ không tì ra ngoài: thanh bút gọn một hàng thấp, nhường chiều cao cho vùng vẽ */
+.lu-lesson .stage:has([data-vung-ve]) { --vis-h: max(220px, calc(100dvh - 420px)); }
+.lu-lesson .stage:has([data-vung-ve]) .answers > .opt.dw-undo { --s: 64px; min-width: 76px; min-height: 64px; width: auto; height: auto; }
+.lu-lesson .stage:has([data-vung-ve]) .answers > .opt.crayon, .lu-lesson .stage:has([data-vung-ve]) .answers > .opt.dw-undo { align-self: center; }
+.lu-lesson .stage:has([data-vung-ve]) .answers > .big-btn { min-height: 72px; align-self: center; }
+.lu-lesson .stage:has([data-vung-ve]) .tr-svg { width: min(100%, 560px, calc((100dvh - 285px) * .77)); }
+.lu-lesson .stage:has([data-vung-ve]) .color-pic { width: min(100%, 620px, var(--vis-h)); }
+.lu-lesson .stage:has([data-vung-ve]) .draw-pad { width: min(100%, 900px, calc(var(--vis-h) * 4 / 3)); }
+@media (max-width: 600px) { .lu-lesson .stage:has([data-vung-ve]) { --vis-h: max(220px, calc(100dvh - 420px)); } }

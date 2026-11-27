@@ -17,7 +17,7 @@ export async function doToGiua() {
   const ok = r => r.width > 4 && r.height > 4 && r.bottom > 0 && r.top < vh;
   const shown = el => { for (let x = el; x && x !== document.body; x = x.parentElement) { const s = getComputedStyle(x); if (s.visibility === 'hidden' || s.display === 'none') return false; } return true; };
   const TILE = '.stage .opt, .stage .card, .stage .piece, .stage .cell-f, .stage .shadow, .stage .prop';
-  const els = [...document.querySelectorAll(TILE)].filter(e => !e.closest('.lbl') && !e.classList.contains('crayon') && shown(e)).filter(e => ok(e.getBoundingClientRect()));
+  const els = [...document.querySelectorAll(TILE)].filter(e => !e.closest('.lbl') && !e.classList.contains('crayon') && !e.classList.contains('dw-undo') /* dụng cụ vẽ, không phải nội dung học (quy tắc 47: thanh bút gọn để vùng vẽ to) */ && shown(e)).filter(e => ok(e.getBoundingClientRect()));
   const tiles = els.map(e => e.getBoundingClientRect());
   // mảnh ghép tranh có hình dạng theo tranh gốc (dẹt), nên đo cạnh dài
   const side = (e, r) => e.classList.contains('pz-piece') ? Math.max(r.width, r.height) : Math.min(r.width, r.height);
