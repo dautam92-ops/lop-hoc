@@ -1,0 +1,105 @@
+{
+  "doi_tuong": "L002",
+  "tep": "content/drafts/L002.json",
+  "ma_bam": "f6b0a70f88c65842ddd5f8e75d74511268bcfa67",
+  "ngay": "2026-11-27",
+  "nguoi_soat": "agent soát logic",
+  "quy_tac_da_soat": [
+    "LG01",
+    "LG02",
+    "LG03",
+    "LG04",
+    "LG05",
+    "LG06",
+    "LG07",
+    "LG08",
+    "LG09",
+    "LG10",
+    "LG11",
+    "LG12",
+    "LG13",
+    "LG14",
+    "LG15",
+    "LG16",
+    "LG17",
+    "LG18",
+    "LG19",
+    "LG20"
+  ],
+  "may_soat": {
+    "loi": 0,
+    "canh_bao": 1
+  },
+  "canh_bao_da_xet": [
+    {
+      "canh_bao": "CẢNH BÁO L002-B24: \"Bình tưới xong rồi. Lu cất bình ở đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thuc-vat); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
+      "ket_luan": "Không phải lỗi LG01: cả ba đáp án đều liên quan việc tưới cây (ngôi nhà là chỗ cất đồ, vòi nước là chỗ lấy nước, cái cây là thứ vừa được tưới), và đều là chỗ có thể đặt bình. Nhưng câu này có lỗi LG03 riêng (ngôi nhà cũng là chỗ cất đúng), đã ghi trong danh sách lỗi."
+    }
+  ],
+  "loi": [
+    {
+      "ma": "LG03",
+      "o": "L002-B24 câu 2",
+      "cau": "Bình tưới xong rồi. Lu cất bình ở đâu?",
+      "mo_ta": "Đáp án đúng là vòi nước, nhưng cất bình tưới vào trong nhà (art:nha) cũng là cách cất gọn đúng ngoài đời; nhiều nhà cất bình tưới trong nhà hoặc trong kho. Đây là quy ước của bài, không phải kiến thức, nên trẻ chọn ngôi nhà một cách hợp lý mà vẫn bị chấm sai. Câu chữ \"Bình tưới xong rồi\" cũng sai nghĩa (người tưới chứ không phải bình tưới).",
+      "sua": "Sửa câu thành \"Lu tưới cây xong rồi. Lu cất bình tưới ở đâu?\" và thay art:nha bằng một chỗ rõ ràng là sai, cùng bối cảnh vườn, ví dụ art:ao-nuoc (thả xuống ao) hoặc art:bui-co (vứt vào bụi cỏ). Giữ art:voi-nuoc là đáp án đúng, giữ lời ok và no.",
+      "trang_thai": "mo"
+    },
+    {
+      "ma": "LG03",
+      "o": "L002-B16 câu 3",
+      "cau": "Hạt đậu nằm trong đất lâu ngày. Hạt sẽ thành gì?",
+      "mo_ta": "Chữ \"lâu ngày\" làm cả ba đáp án đều đúng theo thời gian: hạt nảy mầm, mầm lớn thành cây, cây ra hoa rồi ra quả đậu (LG10). Trẻ chọn bông hoa hay quả đậu là có lý mà vẫn bị chấm sai. Ngoài ra hạt cần nước mới nảy mầm (bài vừa dạy ở câu 1), nhưng câu này chỉ nói nằm trong đất.",
+      "sua": "Hỏi bước ngay sau hạt: \"Hạt đậu nằm trong đất ẩm vài ngày. Đầu tiên hạt nhú ra cái gì?\" Giữ art:mam-dau là đáp án đúng. Đổi lời ok thành \"Đúng rồi! Hạt nhú ra mầm đậu trước. Mầm lớn lên mới ra hoa, ra quả.\"",
+      "trang_thai": "mo"
+    },
+    {
+      "ma": "LG19",
+      "o": "L002-B04 câu 2",
+      "cau": "Cái bóng này là của ảnh nào dưới đây?",
+      "mo_ta": "Gợi ý \"bóng có hai cánh to\" cũng đúng với con chim (bóng chim xòe hai cánh to) và một phần với con ong (hai cánh), nên gợi ý không giúp trẻ phân biệt, có thể kéo trẻ sang con chim. Về sinh học, con bướm có bốn cánh (hai đôi), nói \"hai cánh\" là chưa đúng (LG07).",
+      "sua": "Đổi lời no thành \"Bé nhìn kỹ: bóng có bốn cánh xòe hai bên, trên đầu có hai cái râu.\" Lời ok giữ nguyên.",
+      "trang_thai": "mo"
+    },
+    {
+      "ma": "LG19",
+      "o": "L002-B02 câu 2",
+      "cau": "Cái bóng này là của ảnh nào dưới đây?",
+      "mo_ta": "Gợi ý \"bóng dài, có cuống nhỏ\" cũng khớp với bóng củ cà rốt (art:ca-rot: dài, đầu có cuống lá), nên gợi ý không phân biệt được lá với cà rốt và có thể dẫn trẻ chọn sai. Lời ok gọi \"cái lá\" trong khi kho kiến thức và câu khác gọi \"chiếc lá\" (LG12).",
+      "sua": "Đổi lời no thành \"Bé nhìn kỹ: bóng mỏng, hai đầu thon, có một cái cuống nhỏ ở dưới.\", hoặc thay art:ca-rot bằng vật có bóng tròn khác hẳn (ví dụ art:bong). Đổi lời ok thành \"Đúng rồi! Đó là chiếc lá.\"",
+      "trang_thai": "mo"
+    },
+    {
+      "ma": "LG06",
+      "o": "L002-B03",
+      "cau": "Bé chạm vào từng chú gà con nhé.",
+      "mo_ta": "Máy E06 vẽ mọi ô cùng một cỡ (cell-f, ảnh 84% ô), nên gà con và gà mẹ (art:ga) hiện to bằng nhau. Điều khác nhau chính giữa hai con là cỡ, nhưng hình không cho thấy cỡ; lời no \"Gà con nhỏ, lông vàng\" nói điều trẻ không thấy được trên màn. Lỗi tương tự nhẹ hơn ở L002-B01: lời no \"Hạt đậu nhỏ\" trong khi hạt đậu hiện to bằng bông hoa.",
+      "sua": "B03: thay art:ga trong distractors bằng con vật khác hẳn dáng gà con (ví dụ art:vit hoặc art:tho), hoặc giữ gà mẹ nhưng đổi lời no chỉ dựa vào điều nhìn thấy: \"Đó chưa phải gà con. Gà con lông vàng, không có mào đỏ.\" (câu mô tả ảnh art:ga phải có mào đỏ). B01: đổi lời no thành \"Đó chưa phải hạt đậu. Hạt đậu tròn, màu vàng nâu.\"",
+      "trang_thai": "mo"
+    },
+    {
+      "ma": "LG05",
+      "o": "L002-B07 câu 1 và câu 2",
+      "cau": "Bé tìm giỏ có một hạt đậu. / Bé tìm giỏ có hai hạt đậu.",
+      "mo_ta": "Lời nói \"giỏ\" nhưng kiểu ô \"plate\" chỉ vẽ nhóm hạt đậu trong nút, không có cái giỏ nào (common.js: groupHTML trong button.opt.plate). Lời ok \"Giỏ này có một hạt đậu\" cũng chỉ vào một thứ không có trên hình. Tên bài \"Giỏ nào đúng?\" cũng vậy.",
+      "sua": "Đổi lời thành nhóm hạt: q \"Bé tìm ô có một hạt đậu.\", ok \"Đúng rồi! Ô này có một hạt đậu.\", no \"Bé đếm từng hạt xem.\", tên bài \"Ô nào đúng?\" (tương tự cho câu hai hạt). Hoặc vẽ thật cái giỏ (art:gio) làm nền mỗi ô rồi mới giữ chữ \"giỏ\".",
+      "trang_thai": "mo"
+    },
+    {
+      "ma": "LG20",
+      "o": "L002 chặng 3 (B05, B06, B07)",
+      "cau": "Tên chặng: \"Mỗi chậu một hạt\"",
+      "mo_ta": "Tên chặng nói mỗi chậu một hạt, nhưng nội dung không có chậu nào và không phải một hạt: lời dẫn \"Mỗi cọc số cần đúng số hạt\", trẻ kéo nhóm 1, 2, 3 hạt (và cả táo) về cọc số, rồi tìm giỏ có 1 hoặc 2 hạt. Tên chặng mâu thuẫn với điều bài dạy (ghép số lượng với số).",
+      "sua": "Đổi title chặng thành \"Hạt về đúng cọc số\" (hoặc \"Đếm hạt, ghép số\").",
+      "trang_thai": "mo"
+    },
+    {
+      "ma": "LG11",
+      "o": "L002-B21",
+      "cau": "Bé cuộn tròn như hạt đậu, lăn nhẹ một vòng, rồi đứng lên vươn cao.",
+      "mo_ta": "\"Cuộn tròn rồi lăn một vòng\" dễ được trẻ hiểu là lộn nhào qua đầu; trẻ 4–6 tuổi tự lộn trên sàn cứng hoặc gần góc bàn ghế có thể đau cổ, va đầu. Lời dẫn không nói lăn ngang, không nói chỗ an toàn.",
+      "sua": "Đổi task thành \"Bé nằm xuống thảm, cuộn tròn như hạt đậu, lăn ngang một vòng thật nhẹ, rồi đứng lên vươn cao.\" và thêm vào intro \"Bé tìm chỗ rộng, có thảm, xa bàn ghế nhé.\"",
+      "trang_thai": "mo"
+    }
+  ]
+}

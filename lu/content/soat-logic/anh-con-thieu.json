@@ -1,0 +1,45 @@
+{
+ "doi_tuong": "anh-con-thieu",
+ "tep": "tools/lab/anh-con-thieu.json",
+ "ma_bam": "dc225d5b98adbedfe2698dc5527e75ad063f7656",
+ "ngay": "2026-11-27",
+ "nguoi_soat": "agent soát logic",
+ "quy_tac_da_soat": ["LG01", "LG02", "LG03", "LG04", "LG05", "LG06", "LG07", "LG08", "LG09", "LG10", "LG11", "LG12", "LG13", "LG14", "LG15", "LG16", "LG17", "LG18", "LG19", "LG20"],
+ "may_soat": { "loi": 0, "canh_bao": 0 },
+ "canh_bao_da_xet": [],
+ "ghi_chu": "Đã soát 39 mục (style hoặc style_do_vat + prompt), đối chiếu vai của từng ảnh trong content/lab/samples.json, content/drafts/L001.json và engines (E02 ghép cặp, E06 tìm đồ ẩn và vật biến mất, E11 đặt đồ, xếp giỏ, E12 trống). LG01–LG04, LG14, LG19 không áp dụng vì tệp chỉ có câu mô tả ảnh, không có câu hỏi. LG13: các số trong câu mô tả ('two fluffy white clouds' ở bau-troi, 'two wooden drumsticks' ở trong, 'pair of sneakers' ở giay) không thuộc ảnh dùng để đếm, không phải lỗi. LG08: bóng bay có dây, nước nằm trong cốc, chậu cây, chuồng gà đều có điểm tựa hoặc lơ lửng đúng tính chất thật. LG11: kéo vẽ loại an toàn đầu tròn, búa và vòi cứu hỏa chỉ là ảnh đồ vật để ghép nghề, không dạy trẻ dùng. LG16: mọi đồ vật đều có 'only the object, no animals, no people' qua style_do_vat; chuồng gà không vẽ gà. Bụi cỏ có vài bông hoa nhỏ, dùng làm tấm che ở E06 mà đáp án ở đó là con vật, nên không gây hai đáp án. Các lỗi của chính bài mẫu (vd giỏ 'Dưới nước' cho vịt và ếch là hai loài sống cả trên cạn lẫn dưới nước, LG03) nằm ngoài tệp này, cần soát riêng ở samples.json.",
+ "loi": [
+  {
+   "ma": "LG15",
+   "o": "PM31-OB-tho, PM31-OB-vit (cả tệp)",
+   "cau": "style / style_do_vat + \"a cute small white rabbit ...\" / \"a cute small yellow duck ...\"",
+   "mo_ta": "Tệp không ghi mục nào dùng style, mục nào dùng style_do_vat. Mọi mục đều mang mã -OB- như đồ vật. Nếu công cụ vẽ ghép style_do_vat cho thỏ và vịt thì câu mô tả thật thành 'a cute small white rabbit ... plain object without face or eyes, only the object, no animals, no people': lệnh tự mâu thuẫn, dễ ra con thỏ, con vịt không mắt không mặt hoặc không ra con vật. Như vậy ảnh không vẽ đúng vật.",
+   "sua": "Ghi rõ kiểu vẽ ở từng mục, vd thêm \"kieu\": \"style\" cho PM31-OB-tho và PM31-OB-vit và \"kieu\": \"style_do_vat\" cho các mục còn lại, hoặc đổi mã thành PM31-NV-tho, PM31-NV-vit. Có thể thay cách khác là xác nhận bằng văn bản rằng công cụ vẽ trên máy 24H chọn style theo nhóm 'con-vat' trong kho kiến thức.",
+   "trang_thai": "mo"
+  },
+  {
+   "ma": "LG15",
+   "o": "PM31-OB-vit",
+   "cau": "a cute small yellow duck standing, side view, gentle friendly animal, isolated on plain white background",
+   "mo_ta": "Ảnh vịt dùng trong bài xếp giỏ 'Con vật này sống ở đâu?' với đáp án 'Dưới nước', nhưng câu mô tả vẽ vịt đứng trên cạn nên ảnh không thể hiện vai đáp án. Ngoài ra 'small yellow duck' vẽ ra giống vịt con lông vàng, rất dễ lẫn với gà con 'fluffy yellow chick' (PM10-OB-ga-con), một ảnh nhìn nhỏ trên ô thì trẻ không phân biệt được (LG06, LG17).",
+   "sua": "Đổi thành: \"a white duck with an orange flat beak and orange webbed feet, swimming on a small round patch of blue water, side view, gentle friendly animal, isolated on plain white background\" (lông trắng, mỏ dẹt và chân màu cam để khác hẳn gà con).",
+   "trang_thai": "mo"
+  },
+  {
+   "ma": "LG17",
+   "o": "PM31-OB-toc",
+   "cau": "a small tuft of brown child hair with a soft wave, no face, no person, isolated on plain white background",
+   "mo_ta": "Ảnh tóc là đích ghép cặp 'lược để chải tóc' (E02, LAB-CC-04). Một nhúm tóc rời, không có đầu, là vật trẻ 4–6 tuổi không nhận ra trên ô nhỏ: trông như vệt màu, cọng cỏ hoặc lông thú. Một nhúm tóc tách khỏi người cũng khó vẽ cho rõ (LG18). Tóc màu nâu cũng không quen với trẻ Việt Nam (LG12).",
+   "sua": "Đổi thành: \"the back of a small child's head with neat short black hair, seen from behind, no face visible, only the head, isolated on plain white background\" và dùng style (không dùng style_do_vat vì có 'no people'). Nếu phải giữ ảnh không người thì dùng: \"a black hair ponytail tied with a red hair band\".",
+   "trang_thai": "mo"
+  },
+  {
+   "ma": "LG17",
+   "o": "PM31-OB-ly",
+   "cau": "a clear glass of water, isolated on plain white background",
+   "mo_ta": "Cốc thủy tinh trong suốt trên nền trắng, sau khi tách nền (tach_nen: true) thì gần như không còn hình. Trên ô nhỏ ở bài 'Vật nào biến mất?' (MX-03) và 'Đặt cái cốc ở bên phải hộp' (CC-10) trẻ khó nhận ra là cái cốc. Tên cũng lệch: mục ghi 'Cái ly', còn kho kiến thức và lời đọc trong bài là 'cái cốc' (LG20).",
+   "sua": "Đổi thành: \"a small light blue child cup with a little water inside, isolated on plain white background\" và sửa vi thành \"Cái cốc\" cho khớp kho kiến thức và lời đọc.",
+   "trang_thai": "mo"
+  }
+ ]
+}

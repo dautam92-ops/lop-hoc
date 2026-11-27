@@ -3,7 +3,7 @@
  "version": "PM31-1",
  "ghi_chu": "Ảnh vẽ tay còn thiếu trong Phòng mẫu (tam 26/11 19:04: \"Trên trời và trên cạn hình ảnh quá nghèo nàn\" — hình vẽ mã là lỗi). Mỗi mục đang hiện tạm bằng hình vẽ mã; chạy trên máy 24H như PM10, ảnh chỉ hiện sau khi tam duyệt, rồi gỡ mục khỏi danh sách. Phép thử: check-samples.mjs và kiem-loi-cu.mjs chặn mọi hình vẽ mã không có trong danh sách này. Gồm cả hình engine tự dùng (nhạc cụ E-âm thanh) và bài 1 (mặt trăng, chong chóng).",
  "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, natural expression, simple clean composition, not too detailed, for kids aged 4 to 6",
- "style_do_vat": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, simple clean composition, not too detailed, for kids aged 4 to 6, plain object without face or eyes",
+ "style_do_vat": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, simple clean composition, not too detailed, for kids aged 4 to 6, plain object without face or eyes, only the object, no animals, no people",
  "negative": "3d render, cgi, plastic, glossy, shiny, photorealistic, photo, anime, text, letters, watermark, signature, logo, extra limbs, extra fingers, deformed, cluttered background, harsh shadows, neon colors, scary",
  "seeds": [
   22,
