@@ -1,0 +1,19 @@
+{
+  "lesson_id": "L002",
+  "ghi_chu": "Mẫu học cùng con (quy tắc Q4). Lời cho bố mẹ gọi trẻ là con; lời Mono gọi trẻ là bé.",
+  "dan_bo_me": {
+    "hom_nay": "Con tập quan sát kỹ: tìm vật nhỏ lẫn trong tranh và nhận ra vật qua cái bóng.",
+    "chuan_bi": "Chọn sẵn 3 món đồ chơi nhỏ để giấu cho con tìm khi học xong.",
+    "ngoi_canh": "Ngồi cạnh con lúc Mono mời bố mẹ là đủ. Bận thì con vẫn tự học được."
+  },
+  "moi_bo_me": [
+    { "sau_bai": 1, "loai": "chi-cho", "loi": "Bé chỉ cho bố mẹ: bạn nào trốn giỏi nhất?", "goi_y": "Hỏi con vì sao bạn ấy khó tìm: màu giống lá hay nấp sau cây." },
+    { "sau_bai": 3, "loai": "lam-cung", "loi": "Bé cùng bố mẹ vỗ tay đếm gà con nào!", "goi_y": "Vỗ tay cùng con, mỗi chú gà một cái, đếm thành tiếng." },
+    { "sau_bai": 8, "loai": "hoi", "loi": "Bé hỏi bố mẹ: hôm nay bố mẹ thấy thế nào?", "goi_y": "Kể thật một cảm xúc của bố mẹ hôm nay, kèm một lý do ngắn." }
+  ],
+  "cuoi_buoi": {
+    "loi": "Mono tắt máy đây. Bé nhờ bố mẹ giấu đồ chơi nhé!",
+    "ten": "Ai giấu đồ chơi?",
+    "phut": 5
+  }
+}

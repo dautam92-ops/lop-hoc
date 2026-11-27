@@ -12,6 +12,9 @@ const id = (process.argv[2] || 'L001').replace(/[^\w-]/g, '');
 const audio = await J('content/audio/registry.json');
 const p = normalizeLesson(await J(`content/drafts/${id}.json`));
 const L = new Set();
+// Học cùng con (Q4): lời Mono mời bố mẹ và lời cuối buổi tắt máy cũng cần giọng
+const H = p.hoc_cung_con || await J(`content/hoc-cung-con/${id}.json`).catch(() => null);
+[...(H?.moi_bo_me || []).map(m => m.loi), H?.cuoi_buoi?.loi].forEach(t => t && L.add(t));
 [...(p.intro || []), ...(p.end || []), p.checkin?.q, ...(p.checkin?.opts || []).map(o => o.reply), /* quy tắc 40: không đọc đáp án hỏi cảm xúc */
  p.hub?.q, p.hub?.again, ...(p.stages || []).map(st => st.done), ...(p.stages || []).flatMap(st => st.intro || []), ...END_PRAISE, ...OK_VI].forEach(t => t && L.add(t));
 for (const a of p.activities) { ENGINES[a.engine].lines(a).forEach(t => L.add(t)); if (a.story) a.story.forEach(t => L.add(t)); if (a.after) L.add(a.after);

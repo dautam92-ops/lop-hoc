@@ -473,3 +473,17 @@
   .lu-lesson .roi-vuon .roi-it { width: 16%; }
   .lu-lesson .roi-vuon .roi-gio { width: 11%; }
 }
+
+/* Ảnh đáp án vẽ tay to tối đa (tam 27/11 16:38 "Ảnh ko vừa ô, quá bé", 16:42 "đáp án ảnh hiển thị to tối đa").
+   Khung đáp án gồm 2–4 ảnh vẽ tay được core gắn lớp "anh-to" và đo chỗ trống thật (--fs-max) để ô to hết cỡ mà không tràn.
+   Dọc: 2 cột (3–4 đáp án thành 2 hàng). Ngang: một hàng. Ảnh phủ kín ô. */
+.lu-lesson .answers.anh-to { display: grid; justify-content: center; align-content: center; gap: 10px;
+  --n: 2; --fs: min(calc((100vw - 64px) / 2), var(--fs-max, 380px), 380px); grid-template-columns: repeat(var(--n), var(--fs)); }
+.lu-lesson .answers.anh-to > .lbl { grid-column: 1 / -1; }
+.lu-lesson .answers.anh-to > .opt.face { width: var(--fs); height: var(--fs); min-width: 0; min-height: 0; margin: 0; padding: 5px; }
+.lu-lesson .answers.anh-to > .opt.face > img.lu-art.asset { width: 100%; height: 100%; object-fit: contain; border-radius: 14px; }
+@media (orientation: landscape) {
+  .lu-lesson .answers.anh-to { --fs: min(var(--fs-max, 340px), 340px); }
+  .lu-lesson .answers.anh-to:has(> .opt:nth-of-type(3)) { --n: 3; --fs: min(calc((100vw - 120px) / 3), var(--fs-max, 300px), 300px); }
+  .lu-lesson .answers.anh-to:has(> .opt:nth-of-type(4)) { --n: 4; --fs: min(calc((100vw - 140px) / 4), var(--fs-max, 260px), 260px); }
+}

@@ -52,13 +52,20 @@ export async function runLesson(root, pkg, opts = {}) {
   const skillCls = Object.fromEntries(pkg.skills.map(s => [s.skill_id, s.cls || 'G']));
   const child_id = opts.child_id || 'be-1';
 
+  const H = pkg.hoc_cung_con || null; let danDaDoc = false;
   const start = () => {
     ui.setStep(-1); T.done = false; setBd(pkg.stages?.[0]?.backdrop || pkg.backdrop || null);
     const resume = storage && opts.resume !== false ? storage.getSession('resume:' + pkg.lesson_id) : null;
-    ui.stage.innerHTML = `<div class="scene start">${luArt('vay-tay')}<h1 class="title">${esc(pkg.title)}</h1>
+    const D = H?.dan_bo_me;
+    // Dặn bố mẹ (Q4.1): thẻ chữ, không đọc to, bấm "Đã đọc" để gấp lại; không chặn nút Bắt đầu.
+    const danBoMe = D && !danDaDoc ? `<div class="hcc-dan" role="note"><h2>Dặn bố mẹ</h2><dl>
+      <dt>Hôm nay con học</dt><dd>${esc(D.hom_nay)}</dd><dt>Chuẩn bị</dt><dd>${esc(D.chuan_bi)}</dd><dt>Ngồi cạnh con</dt><dd>${esc(D.ngoi_canh)}</dd></dl>
+      <button class="mini hcc-ok">Đã đọc</button></div>` : '';
+    ui.stage.innerHTML = `<div class="scene start">${danBoMe}${luArt('vay-tay')}<h1 class="title">${esc(pkg.title)}</h1>
       <div class="row2">${resume ? `<button class="big-btn go-resume">Học tiếp</button>` : ''}<button class="big-btn go${resume ? ' alt' : ''}">${resume ? 'Học lại từ đầu' : 'Bắt đầu'}</button></div></div>
       ${opts.onExit ? `<button class="corner-btn exit" aria-label="Về nhà"><svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>` : ''}
       ${opts.hideParent ? '' : `<div class="row2"><button class="big-btn alt hold parent-btn">Dành cho bố mẹ (giữ 2 giây)<span class="bar"></span></button></div>`}`;
+    const hok = ui.stage.querySelector('.hcc-ok'); if (hok) hok.onclick = () => { danDaDoc = true; hok.closest('.hcc-dan').remove(); };
     ui.stage.querySelector('.go').onclick = () => { voice.unlock(); if (storage) storage.setSession('resume:' + pkg.lesson_id, null); play(); };
     const gr = ui.stage.querySelector('.go-resume'); if (gr) gr.onclick = () => { voice.unlock(); play(resume); };
     const ex = ui.stage.querySelector('.exit'); if (ex) ex.onclick = () => { voice.stop(); opts.onExit(); };
@@ -95,7 +102,7 @@ export async function runLesson(root, pkg, opts = {}) {
     if (pkg.layout === 'hub') {
       // Buổi học dạng nhiều bài nhỏ (D46, chị tam 26/11 02:32): bé tự chọn từng bài nhỏ trên trang buổi học, học xong quay lại,
       // có thể nghỉ và học tiếp đúng chỗ (V4 I02). Đủ các bài thì sang màn kết thúc.
-      const done = new Set(resume?.done || []);
+      const done = new Set(resume?.done || []), daMoi = new Set(resume?.done || []);
       const save = () => storage && storage.setSession('resume:' + pkg.lesson_id, { hub: true, done: [...done], seed, session_id: session.session_id, at: Date.now() });
       let firstHub = !resume;
       while (done.size < pkg.stages.length) {
@@ -109,6 +116,8 @@ export async function runLesson(root, pkg, opts = {}) {
         for (const k of ks) await runAct(k);
         done.add(pick); save();
         await stageDone(pkg.stages[pick], done.size, pkg.stages.length);
+        const moi = (H?.moi_bo_me || []).find(m => m.sau_bai === pick);
+        if (moi && !daMoi.has(pick)) { daMoi.add(pick); await moiBoMe(moi); }
       }
     } else {
       for (let k = resume?.k || 0; k < pkg.activities.length; k++) {
@@ -150,22 +159,37 @@ export async function runLesson(root, pkg, opts = {}) {
     voice.say([st.done || END_PRAISE[n % END_PRAISE.length]]).then(resolve);
   });
 
+  // Mono mời bố mẹ (Q4.2): Mono đọc lời mời, chữ nhỏ gợi ý cho bố mẹ, nút Tiếp to bấm được ngay (không chặn bé, không trừ sao).
+  const moiBoMe = m => new Promise(resolve => {
+    ui.setStep(-1);
+    ui.stage.innerHTML = `<div class="scene hcc-moi">${luArt('chi-tay')}<h1 class="title">${esc(m.loi)}</h1><div class="cap"></div>
+      ${m.goi_y ? `<p class="hcc-goi-y"><b>Gợi ý cho bố mẹ:</b> ${esc(m.goi_y)}</p>` : ''}
+      <div class="row2"><button class="big-btn hcc-tiep">Tiếp</button></div></div>`;
+    voice.caption = ui.stage.querySelector('.cap');
+    const b = ui.stage.querySelector('.hcc-tiep');
+    b.onclick = () => { voice.stop(); resolve(); };
+    T.current = [b]; voice.say([m.loi]);
+  });
+
   const end = session => {
     ui.setStep(stepNames.length - 1); setBd(pkg.end_backdrop || pkg.stages?.at(-1)?.backdrop || null);
     const praise = END_PRAISE[(storage ? Object.keys(storage.d?.kv || {}).filter(k => k.startsWith('done:')).length : 0) % END_PRAISE.length];
     const rw = opts.reward;
+    // Cuối buổi tắt máy (Q4.3): Mono mời tắt máy, hiện hoạt động ngoài đời; không mời học tiếp hay chơi lại.
+    const C = H?.cuoi_buoi, choi = C && pkg.parent?.play?.cach_choi ? pkg.parent.play : null;
     ui.stage.innerHTML = `<div class="scene finish"><div class="burst" aria-hidden="true"></div>${luArt('an-mung')}<h1 class="title">${esc(praise)}</h1>
       <div class="stars">${[0, 1, 2].map(i => `<span style="animation-delay:${200 + i * 220}ms">${STAR}</span>`).join('')}</div>
       ${rw ? `<div class="reward"><div class="rw-art">${rw.art || ''}</div><div class="rw-t">${esc(rw.title)}</div></div>` : ''}
       <div class="cap"></div>
-      <div class="row2">${opts.onExit ? `<button class="big-btn to-map">Về nhà</button>` : ''}<button class="big-btn alt again">Chơi lại</button></div>
+      ${C ? `<div class="hcc-cuoi">${luArt('vay-tay')}<div><div class="hcc-ten">${esc(C.ten)}</div><div class="hcc-phut">Cùng bố mẹ · ${esc(C.phut)} phút</div>${choi ? `<p>${esc(choi.cach_choi)}</p>${choi.an_toan ? `<p class="hcc-at">An toàn: ${esc(choi.an_toan)}</p>` : ''}` : ''}</div></div>` : ''}
+      <div class="row2">${opts.onExit ? `<button class="big-btn to-map">Về nhà</button>` : ''}${C ? '' : `<button class="big-btn alt again">Chơi lại</button>`}</div>
       ${opts.hideParent ? '' : `<button class="link-btn hold parent-btn">Bố mẹ giữ 2 giây để xem kết quả<span class="bar"></span></button>`}</div>`;
     voice.caption = ui.stage.querySelector('.cap');
-    ui.stage.querySelector('.again').onclick = () => { if (!voice.busy) start(); };
+    const ag = ui.stage.querySelector('.again'); if (ag) ag.onclick = () => { if (!voice.busy) start(); };
     const tm = ui.stage.querySelector('.to-map'); if (tm) tm.onclick = () => { voice.stop(); opts.onExit(session); };
     if (!opts.hideParent) holdButton(ui.stage.querySelector('.parent-btn'), () => report(session), fast);
     if (opts.onFinish) opts.onFinish(session);
-    voice.say(pkg.end || []).then(() => { T.done = true; T.current = []; });
+    voice.say([...(pkg.end || []), ...(C?.loi ? [C.loi] : [])]).then(() => { T.done = true; T.current = []; });
   };
 
   // Báo cáo bố mẹ: mức vững tính từ toàn bộ sự kiện (S10), quan sát của bố mẹ hiển thị RIÊNG (S10-R04)

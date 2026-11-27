@@ -1,8 +1,24 @@
 {
  "format": "lu-voice-todo",
  "lesson": "L002",
- "at": "2026-11-27T09:19:54.563Z",
+ "at": "2026-11-27T10:29:28.194Z",
  "lines": [
+  {
+   "text": "Bé chỉ cho bố mẹ: bạn nào trốn giỏi nhất?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé cùng bố mẹ vỗ tay đếm gà con nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hỏi bố mẹ: hôm nay bố mẹ thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono tắt máy đây. Bé nhờ bố mẹ giấu đồ chơi nhé!",
+   "lang": "vi"
+  },
   {
    "text": "Chào bé! Mình là Mono.",
    "lang": "vi"

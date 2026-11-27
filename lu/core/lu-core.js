@@ -111,6 +111,22 @@ export const LU_SVG = `<svg class="lu" viewBox="0 0 160 150" role="img" aria-lab
 // Ảnh Lu theo ngữ cảnh: app gắn hàm trả về <img> từ Character Registry; mặc định dùng hình cũ để engine chạy độc lập.
 const luArtHook = { fn: null };
 export function setLuArt(fn) { luArtHook.fn = fn; setVisLu(fn); }
+// Ảnh đáp án to tối đa (tam 27/11 16:42): đo chỗ trống thật từ hàng ô đầu tới đáy màn, đặt --fs-max để ô ảnh vừa khít, không tràn.
+function vuaAnhDapAn(d) {
+  const os = [...d.querySelectorAll(':scope > .opt.face')];
+  if (os.length < 2 || os.length > 4 || !os.every(o => o.querySelector(':scope > img.lu-art.asset'))) return;
+  d.classList.add('anh-to');
+  const fit = () => {
+    if (!d.isConnected) return removeEventListener('resize', fit);
+    const n = +getComputedStyle(d).getPropertyValue('--n') || 2, rows = Math.ceil(os.length / n), h = os[0].getBoundingClientRect().height;
+    // Đáy thấp nhất của khung đáp án và mọi thứ nằm sau nó (nút Nghe lại, Xong…) phải nằm trong màn.
+    const sau = [d]; for (let x = d.nextElementSibling; x; x = x.nextElementSibling) if (x.offsetParent) sau.push(x);
+    const day = Math.max(...sau.map(x => x.getBoundingClientRect().bottom)), du = innerHeight - 8 - day;
+    d.style.setProperty('--fs-max', Math.max(72, Math.floor(h + du / rows)) + 'px');
+  };
+  requestAnimationFrame(() => { fit(); requestAnimationFrame(fit); });
+  addEventListener('resize', fit);
+}
 export const luArt = (expr = 'vui') => (luArtHook.fn ? luArtHook.fn(expr) : LU_SVG);
 
 const IC_PAUSE = '<svg class="lu-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6v12M15 6v12"/></svg>';
@@ -132,7 +148,7 @@ export function createUI(root, voice, opts = {}) {
   ui.setSteps = names => { ui.steps = names; };
   ui.setStep = n => { q('.steps').innerHTML = ui.steps.map((s, i) => `<i class="${i < n ? 'done' : i === n ? 'now' : ''}" title="${esc(s)}"></i>`).join(''); };
   ui.scene = (title, inner = '') => { const guide = luArtHook.fn && !/class="lu[ "]/.test(inner) ? `<div class="guide" aria-hidden="true">${luArtHook.fn(ui.guide || 'chi-tay')}</div>` : ''; ui.stage.innerHTML = `<div class="scene">${guide}<h1 class="title">${esc(title)}</h1>${inner}<div class="cap"></div></div>`; voice.caption = ui.stage.querySelector('.cap'); return ui.stage.querySelector('.scene'); };
-  ui.answers = (label, html) => { const d = document.createElement('div'); d.className = 'answers'; d.innerHTML = (label ? `<div class="lbl">${esc(label)}</div>` : '') + html; ui.stage.appendChild(d); return d; };
+  ui.answers = (label, html) => { const d = document.createElement('div'); d.className = 'answers'; d.innerHTML = (label ? `<div class="lbl">${esc(label)}</div>` : '') + html; ui.stage.appendChild(d); vuaAnhDapAn(d); return d; };
   // Bối cảnh L1–L2 phía sau cả màn (S04-R15). html rỗng thì bỏ nền.
   ui.setBackdrop = (k, html, real) => { const b = q('.backdrop'), a = q('.app'); if (b.dataset.k === (k || '')) return; b.dataset.k = k || ''; b.innerHTML = html || ''; a.classList.toggle('has-bd', !!html); a.classList.toggle('bd-tam', !!html && !real); };
   ui.shake = el => { el.classList.add('shake'); setTimeout(() => el.classList.remove('shake'), 450); };
