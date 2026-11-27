@@ -48,8 +48,15 @@ export const ART = {
   sao: (c = '#f6c85f') => wrap(wc(`<path d="M50 8l11 24 26 3-19 18 5 26-23-13-23 13 5-26L13 35l26-3z" fill="${c}"/>`) + pen(`<path d="M50 8l11 24 26 3-19 18 5 26-23-13-23 13 5-26L13 35l26-3z"/>`), 'ngôi sao'),
   tao: () => wrap(shadow(50, 92, 24) + wc(`<path d="M50 30c-8-8-30-8-32 14-2 22 14 42 26 42 4 0 4-2 6-2s2 2 6 2c12 0 28-20 26-42-2-22-24-22-32-14z" fill="#d9604c"/><ellipse cx="34" cy="46" rx="5" ry="9" fill="#fff" opacity=".4"/><path d="M52 26c4-10 12-14 20-12-2 8-10 12-20 12z" fill="#8fae3e"/>`) +
     pen(`<path d="M50 30c-8-8-30-8-32 14-2 22 14 42 26 42 4 0 4-2 6-2s2 2 6 2c12 0 28-20 26-42-2-22-24-22-32-14z"/><path d="M50 30c0-6-1-12-4-16"/><path d="M52 26c4-10 12-14 20-12-2 8-10 12-20 12z"/>`), 'quả táo'),
-  'chau-cay': () => wrap(shadow(50, 94, 24) + wc(`<path d="M28 60h44l-6 30H34z" fill="#c9825a"/><rect x="24" y="54" width="52" height="10" rx="4" fill="#b06e4b"/><path d="M50 54V32" stroke="#7da23a" stroke-width="4"/><path d="M50 36c-12 0-18-8-18-16 12 0 18 6 18 16zM50 32c10 0 16-8 16-16-11 0-16 6-16 16z" fill="#8fae3e"/>`) +
+  // art:chau-cay:trong = chậu chỉ có đất, chưa có cây (soát logic 27/11: chậu để gieo/trồng không được có cây sẵn)
+  'chau-cay': (t) => t === 'trong'
+    ? wrap(shadow(50, 94, 24) + wc(`<path d="M28 60h44l-6 30H34z" fill="#c9825a"/><rect x="24" y="54" width="52" height="10" rx="4" fill="#b06e4b"/><path d="M27 55c6-7 40-7 46 0z" fill="#6f4a2f"/><circle cx="40" cy="52" r="1.6" fill="#8a5e3b"/><circle cx="58" cy="51" r="1.4" fill="#8a5e3b"/>`) +
+      pen(`<path d="M28 64h44l-6 26H34z"/><rect x="24" y="54" width="52" height="10" rx="4"/>`), 'chậu đất')
+    : wrap(shadow(50, 94, 24) + wc(`<path d="M28 60h44l-6 30H34z" fill="#c9825a"/><rect x="24" y="54" width="52" height="10" rx="4" fill="#b06e4b"/><path d="M50 54V32" stroke="#7da23a" stroke-width="4"/><path d="M50 36c-12 0-18-8-18-16 12 0 18 6 18 16zM50 32c10 0 16-8 16-16-11 0-16 6-16 16z" fill="#8fae3e"/>`) +
     pen(`<path d="M28 64h44l-6 26H34z"/><rect x="24" y="54" width="52" height="10" rx="4"/><path d="M50 54V32"/>`), 'chậu cây'),
+  // Luống đất (đất nâu để gieo hạt, không cây): vẽ mã tạm, chờ vẽ tay trên máy 24H (anh-con-thieu.json)
+  'luong-dat': () => wrap(shadow(50, 90, 40) + wc(`<path d="M8 82c6-22 22-30 42-30s36 8 42 30z" fill="#8f6644"/><path d="M18 74c10-6 54-6 64 0" stroke="#6f4a2f" stroke-width="3" fill="none"/><path d="M24 64c8-5 44-5 52 0" stroke="#6f4a2f" stroke-width="3" fill="none"/><circle cx="34" cy="70" r="2" fill="#a9713f"/><circle cx="62" cy="68" r="1.8" fill="#a9713f"/><circle cx="50" cy="60" r="1.6" fill="#a9713f"/>`) +
+    pen(`<path d="M8 82c6-22 22-30 42-30s36 8 42 30z"/>`), 'luống đất'),
   nen: () => wrap(shadow(50, 92, 18) + wc(`<rect x="38" y="44" width="24" height="44" rx="4" fill="#f6e6c6"/><path d="M50 14c-8 10-8 18 0 24 8-6 8-14 0-24z" fill="#f6c85f"/><path d="M50 22c-4 6-4 10 0 14 4-4 4-8 0-14z" fill="#e2a94b"/>`) +
     pen(`<rect x="38" y="44" width="24" height="44" rx="4"/><path d="M50 38v6"/><path d="M50 14c-8 10-8 18 0 24 8-6 8-14 0-24z"/>`), 'ngọn nến'),
   // Đồ vật cho buổi L001 bản 12 chặng (nền tạm vẽ bằng mã, thay bằng ảnh Asset Registry khi đã duyệt)

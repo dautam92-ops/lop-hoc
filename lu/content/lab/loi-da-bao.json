@@ -145,6 +145,14 @@
    "age": "4-5",
    "dev": "phone",
    "sua": "Chỉ đọc câu hỏi; chọn Vui thì \"Tuyệt quá, chúng mình cùng nhau khám phá nhé.\", mặt khác thì \"Không sao, có Lu ở đây rồi…\"; quy tắc 40"
+  },
+  {
+   "ngay": "27/11",
+   "loi": "Lỗi vô lý lọt tới lúc vẽ ảnh: \"Chú gà sẽ làm gì?\" có đáp án chìa khóa, áo; không có bước soát tính hợp lý trước khi vẽ",
+   "s": "L002",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Bộ quy tắc logic LG01–LG20 (QUY-TAC-LOGIC.md), kho kiến thức, máy soát tools/kiem-logic.mjs, agent soát logic có biên bản; cổng chặn khi thiếu; quy tắc 41"
   }
  ]
 }

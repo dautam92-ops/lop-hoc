@@ -1,0 +1,140 @@
+{
+  "doi_tuong": "L002",
+  "tep": "content/drafts/L002.json",
+  "ma_bam": "2424c75d24c818b0750c9d836ce039a96d1ce3ce",
+  "ngay": "2026-11-27",
+  "nguoi_soat": "agent soát logic",
+  "quy_tac_da_soat": [
+    "LG01",
+    "LG02",
+    "LG03",
+    "LG04",
+    "LG05",
+    "LG06",
+    "LG07",
+    "LG08",
+    "LG09",
+    "LG10",
+    "LG11",
+    "LG12",
+    "LG13",
+    "LG14",
+    "LG15",
+    "LG16",
+    "LG17",
+    "LG18",
+    "LG19",
+    "LG20"
+  ],
+  "may_soat": {
+    "loi": 0,
+    "canh_bao": 1
+  },
+  "canh_bao_da_xet": [
+    {
+      "canh_bao": "CẢNH BÁO L002-B24: \"Tưới xong rồi. Lu cất bình tưới ở đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thuc-vat); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
+      "ket_luan": "Không phải lỗi LG01: cả ba đáp án (ao nước, vòi nước, cái cây) đều thuộc bối cảnh tưới vườn: cây là thứ vừa được tưới, vòi nước là chỗ lấy nước, ao là chỗ có nước trong vườn. Khác nhóm kho kiến thức nhưng cùng vai \"chỗ có thể để bình\", nên cùng loại theo LG02. Ao nước (thả bình xuống ao) và cái cây (bỏ bình lại gốc cây, chưa cất) đều sai rõ với trẻ; lỗi LG03 cũ (ngôi nhà) đã được sửa."
+    }
+  ],
+  "loi": [
+    {
+      "ma": "LG03",
+      "o": "L002-B24 câu 2",
+      "cau": "Bình tưới xong rồi. Lu cất bình ở đâu?",
+      "mo_ta": "Đáp án đúng là vòi nước, nhưng cất bình tưới vào trong nhà (art:nha) cũng là cách cất gọn đúng ngoài đời; nhiều nhà cất bình tưới trong nhà hoặc trong kho. Đây là quy ước của bài, không phải kiến thức, nên trẻ chọn ngôi nhà một cách hợp lý mà vẫn bị chấm sai. Câu chữ \"Bình tưới xong rồi\" cũng sai nghĩa (người tưới chứ không phải bình tưới).",
+      "sua": "Sửa câu thành \"Lu tưới cây xong rồi. Lu cất bình tưới ở đâu?\" và thay art:nha bằng một chỗ rõ ràng là sai, cùng bối cảnh vườn, ví dụ art:ao-nuoc (thả xuống ao) hoặc art:bui-co (vứt vào bụi cỏ). Giữ art:voi-nuoc là đáp án đúng, giữ lời ok và no.",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: câu thành \"Tưới xong rồi. Lu cất bình tưới ở đâu?\", art:nha thay bằng art:ao-nuoc; đáp án ao nước, vòi nước, cái cây; vòi nước vẫn đúng, lời ok và no khớp. Không còn đáp án sai nào cũng đúng."
+    },
+    {
+      "ma": "LG03",
+      "o": "L002-B16 câu 3",
+      "cau": "Hạt đậu nằm trong đất lâu ngày. Hạt sẽ thành gì?",
+      "mo_ta": "Chữ \"lâu ngày\" làm cả ba đáp án đều đúng theo thời gian: hạt nảy mầm, mầm lớn thành cây, cây ra hoa rồi ra quả đậu (LG10). Trẻ chọn bông hoa hay quả đậu là có lý mà vẫn bị chấm sai. Ngoài ra hạt cần nước mới nảy mầm (bài vừa dạy ở câu 1), nhưng câu này chỉ nói nằm trong đất.",
+      "sua": "Hỏi bước ngay sau hạt: \"Hạt đậu nằm trong đất ẩm vài ngày. Đầu tiên hạt nhú ra cái gì?\" Giữ art:mam-dau là đáp án đúng. Đổi lời ok thành \"Đúng rồi! Hạt nhú ra mầm đậu trước. Mầm lớn lên mới ra hoa, ra quả.\"",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: câu thành \"Hạt nằm trong đất ẩm. Hạt nhú ra gì trước?\", có chữ \"ẩm\" và \"trước\" nên chỉ mầm đậu đúng; quả đậu, bông hoa là bước sau, sai rõ. Lời ok \"Hạt nhú ra mầm đậu trước.\" khớp."
+    },
+    {
+      "ma": "LG19",
+      "o": "L002-B04 câu 2",
+      "cau": "Cái bóng này là của ảnh nào dưới đây?",
+      "mo_ta": "Gợi ý \"bóng có hai cánh to\" cũng đúng với con chim (bóng chim xòe hai cánh to) và một phần với con ong (hai cánh), nên gợi ý không giúp trẻ phân biệt, có thể kéo trẻ sang con chim. Về sinh học, con bướm có bốn cánh (hai đôi), nói \"hai cánh\" là chưa đúng (LG07).",
+      "sua": "Đổi lời no thành \"Bé nhìn kỹ: bóng có bốn cánh xòe hai bên, trên đầu có hai cái râu.\" Lời ok giữ nguyên.",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: lời no thành \"Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.\", bỏ chữ \"hai cánh to\" sai sinh học; chi tiết \"hai cái râu\" loại được con chim (ảnh chim không có râu), cánh xòe hai bên khác ảnh ong cánh dựng nhỏ."
+    },
+    {
+      "ma": "LG19",
+      "o": "L002-B02 câu 2",
+      "cau": "Cái bóng này là của ảnh nào dưới đây?",
+      "mo_ta": "Gợi ý \"bóng dài, có cuống nhỏ\" cũng khớp với bóng củ cà rốt (art:ca-rot: dài, đầu có cuống lá), nên gợi ý không phân biệt được lá với cà rốt và có thể dẫn trẻ chọn sai. Lời ok gọi \"cái lá\" trong khi kho kiến thức và câu khác gọi \"chiếc lá\" (LG12).",
+      "sua": "Đổi lời no thành \"Bé nhìn kỹ: bóng mỏng, hai đầu thon, có một cái cuống nhỏ ở dưới.\", hoặc thay art:ca-rot bằng vật có bóng tròn khác hẳn (ví dụ art:bong). Đổi lời ok thành \"Đúng rồi! Đó là chiếc lá.\"",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Phần đã sửa: art:ca-rot thay bằng art:bong (bóng tròn, khác hẳn), lời ok thành \"Đó là chiếc lá.\", lời no thành \"bóng mỏng, hai đầu thon, có cuống nhỏ\". Phần gợi ý gây nhầm với cà rốt đã hết. Lỗi mới do bản sửa (ảnh art:la-cay là chùm lá chứ không phải một chiếc lá) ghi riêng thành lỗi LG05 mới cùng câu."
+    },
+    {
+      "ma": "LG06",
+      "o": "L002-B03",
+      "cau": "Bé chạm vào từng chú gà con nhé.",
+      "mo_ta": "Máy E06 vẽ mọi ô cùng một cỡ (cell-f, ảnh 84% ô), nên gà con và gà mẹ (art:ga) hiện to bằng nhau. Điều khác nhau chính giữa hai con là cỡ, nhưng hình không cho thấy cỡ; lời no \"Gà con nhỏ, lông vàng\" nói điều trẻ không thấy được trên màn. Lỗi tương tự nhẹ hơn ở L002-B01: lời no \"Hạt đậu nhỏ\" trong khi hạt đậu hiện to bằng bông hoa.",
+      "sua": "B03: thay art:ga trong distractors bằng con vật khác hẳn dáng gà con (ví dụ art:vit hoặc art:tho), hoặc giữ gà mẹ nhưng đổi lời no chỉ dựa vào điều nhìn thấy: \"Đó chưa phải gà con. Gà con lông vàng, không có mào đỏ.\" (câu mô tả ảnh art:ga phải có mào đỏ). B01: đổi lời no thành \"Đó chưa phải hạt đậu. Hạt đậu tròn, màu vàng nâu.\"",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: B03 bỏ art:ga khỏi distractors, còn mèo, chim, trứng, khác hẳn dáng gà con; lời no \"Gà con lông vàng, có mỏ nhỏ\" đúng với ảnh (chim lông xanh). B01 bỏ chữ \"nhỏ\" khỏi lời no. Riêng lời no mới của B01 (\"Hạt đậu tròn\") tạo lỗi mới, ghi riêng."
+    },
+    {
+      "ma": "LG05",
+      "o": "L002-B07 câu 1 và câu 2",
+      "cau": "Bé tìm giỏ có một hạt đậu. / Bé tìm giỏ có hai hạt đậu.",
+      "mo_ta": "Lời nói \"giỏ\" nhưng kiểu ô \"plate\" chỉ vẽ nhóm hạt đậu trong nút, không có cái giỏ nào (common.js: groupHTML trong button.opt.plate). Lời ok \"Giỏ này có một hạt đậu\" cũng chỉ vào một thứ không có trên hình. Tên bài \"Giỏ nào đúng?\" cũng vậy.",
+      "sua": "Đổi lời thành nhóm hạt: q \"Bé tìm ô có một hạt đậu.\", ok \"Đúng rồi! Ô này có một hạt đậu.\", no \"Bé đếm từng hạt xem.\", tên bài \"Ô nào đúng?\" (tương tự cho câu hai hạt). Hoặc vẽ thật cái giỏ (art:gio) làm nền mỗi ô rồi mới giữ chữ \"giỏ\".",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: q, ok đổi \"giỏ\" thành \"ô\" (\"Bé tìm ô có một hạt đậu.\", \"Ô này có một hạt đậu.\"), no \"Bé đếm từng hạt xem.\", tên bài \"Ô nào đúng?\". thiet_ke.bai_tap chặng 3 cũng đã đổi thành \"Ô một hạt\", \"Ô hai hạt\"."
+    },
+    {
+      "ma": "LG20",
+      "o": "L002 chặng 3 (B05, B06, B07)",
+      "cau": "Tên chặng: \"Mỗi chậu một hạt\"",
+      "mo_ta": "Tên chặng nói mỗi chậu một hạt, nhưng nội dung không có chậu nào và không phải một hạt: lời dẫn \"Mỗi cọc số cần đúng số hạt\", trẻ kéo nhóm 1, 2, 3 hạt (và cả táo) về cọc số, rồi tìm giỏ có 1 hoặc 2 hạt. Tên chặng mâu thuẫn với điều bài dạy (ghép số lượng với số).",
+      "sua": "Đổi title chặng thành \"Hạt về đúng cọc số\" (hoặc \"Đếm hạt, ghép số\").",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: tên chặng thành \"Hạt về đúng cọc số\", khớp lời dẫn \"Mỗi cọc số cần đúng số hạt\" và nội dung ghép nhóm 1–3 vật với số."
+    },
+    {
+      "ma": "LG11",
+      "o": "L002-B21",
+      "cau": "Bé cuộn tròn như hạt đậu, lăn nhẹ một vòng, rồi đứng lên vươn cao.",
+      "mo_ta": "\"Cuộn tròn rồi lăn một vòng\" dễ được trẻ hiểu là lộn nhào qua đầu; trẻ 4–6 tuổi tự lộn trên sàn cứng hoặc gần góc bàn ghế có thể đau cổ, va đầu. Lời dẫn không nói lăn ngang, không nói chỗ an toàn.",
+      "sua": "Đổi task thành \"Bé nằm xuống thảm, cuộn tròn như hạt đậu, lăn ngang một vòng thật nhẹ, rồi đứng lên vươn cao.\" và thêm vào intro \"Bé tìm chỗ rộng, có thảm, xa bàn ghế nhé.\"",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: intro \"Bé tìm chỗ rộng có thảm, xa bàn ghế nhé.\", task \"Bé nằm xuống thảm, cuộn tròn như hạt đậu, lăn ngang thật nhẹ, rồi đứng lên vươn cao.\" Không còn hiểu thành lộn nhào."
+    },
+    {
+      "ma": "LG19",
+      "o": "L002-B01",
+      "cau": "Bé chạm vào từng hạt đậu nhé.",
+      "mo_ta": "Lỗi mới do bản sửa: lời no \"Đó chưa phải hạt đậu. Hạt đậu tròn, màu vàng nâu.\" nói hạt đậu tròn, nhưng ảnh art:hat-dau đã duyệt (DV-0001) là hạt dài, thắt ở giữa, màu nâu; trong các ô nhiễu thì viên sỏi (art:soi, DV-0036) mới là vật tròn. Trẻ nghe \"tròn\" dễ chạm vào viên sỏi, gợi ý dẫn sai hướng.",
+      "sua": "Đổi lời no thành \"Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.\" (không dùng chữ \"tròn\"; màu nâu tách khỏi sỏi xám, lá xanh, hoa hồng).",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: lời no thành \"Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.\", khớp ảnh DV-0001 (hạt dài, nâu); không còn chữ \"tròn\" dẫn sang viên sỏi xám."
+    },
+    {
+      "ma": "LG05",
+      "o": "L002-B02 câu 2",
+      "cau": "Cái bóng này là của ảnh nào dưới đây?",
+      "mo_ta": "Ảnh art:la-cay đã duyệt (DV-0029, mô tả \"Chùm lá cây\") là một cành có bảy lá, nên cái bóng hiện ra là bóng cả cành lá. Lời ok \"Đó là chiếc lá.\" và lời no \"bóng mỏng, hai đầu thon, có cuống nhỏ\" tả một chiếc lá, không khớp hình bóng trẻ đang nhìn. Kho kiến thức cũng ghi tên art:la-cay là \"chiếc lá\", lệch với ảnh.",
+      "sua": "Cách 1 (gọn nhất): thay art:la-cay bằng art:la (ảnh một chiếc lá, DV-0028) ở cả show và opts[0] của câu 2; giữ ok, no. Cách 2: giữ art:la-cay, đổi ok thành \"Đúng rồi! Đó là cành lá.\" và no thành \"Bé nhìn kỹ: bóng có nhiều lá nhỏ mọc trên một cành.\", và sửa tên art:la-cay trong kho kiến thức thành \"cành lá\".",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: show và đáp án đúng dùng art:la (DV-0028, một chiếc lá có cuống), khớp lời ok \"Đó là chiếc lá.\" và lời no; bóng lá có cuống khác hẳn bóng quả bóng tròn và con ốc. art:la cũng là đáp án sai ở câu 1, không mâu thuẫn."
+    },
+    {
+      "ma": "LG20",
+      "o": "L002-B16 câu 2",
+      "cau": "Chú gà thấy hạt đậu. Chú gà sẽ làm gì?",
+      "mo_ta": "Câu hỏi và lời ok gọi \"chú gà\", nhưng cả bốn ảnh đều là gà con (art:ga-con-*). Trong bài, gà và gà con là hai con khác nhau: B12 có thẻ gà (art:ga, gà mái) và thẻ gà con thành hai đôi riêng, B10 gọi \"gà con\". Cùng một con vật đổi tên giữa các màn, trẻ nghe \"chú gà\" mà thấy gà con.",
+      "sua": "Đổi q thành \"Gà con thấy hạt đậu. Gà con sẽ làm gì?\", ok thành \"Đúng rồi! Gà con mổ hạt để ăn.\", no thành \"Gà con thích ăn hạt đấy.\"",
+      "trang_thai": "da_sua",
+      "kiem_lai": "Đã sửa: q \"Gà con thấy hạt đậu. Gà con sẽ làm gì?\", ok \"Đúng rồi! Gà con mổ hạt để ăn.\", no \"Gà con thích ăn hạt đấy.\"; tên gọi khớp bốn ảnh gà con và các màn khác."
+    }
+  ]
+}

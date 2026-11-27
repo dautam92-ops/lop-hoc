@@ -1,9 +1,9 @@
 {
  "format": "lu-art-prompts",
  "version": "PM31-1",
- "ghi_chu": "Ảnh vẽ tay còn thiếu trong Phòng mẫu (tam 26/11 19:04: \"Trên trời và trên cạn hình ảnh quá nghèo nàn\" — hình vẽ mã là lỗi). Mỗi mục đang hiện tạm bằng hình vẽ mã; chạy trên máy 24H như PM10, ảnh chỉ hiện sau khi tam duyệt, rồi gỡ mục khỏi danh sách. Phép thử: check-samples.mjs và kiem-loi-cu.mjs chặn mọi hình vẽ mã không có trong danh sách này. Gồm cả hình engine tự dùng (nhạc cụ E-âm thanh) và bài 1 (mặt trăng, chong chóng).",
+ "ghi_chu": "Ảnh vẽ tay còn thiếu trong Phòng mẫu (tam 26/11 19:04: \"Trên trời và trên cạn hình ảnh quá nghèo nàn\" — hình vẽ mã là lỗi). Mỗi mục đang hiện tạm bằng hình vẽ mã; chạy trên máy 24H như PM10, ảnh chỉ hiện sau khi tam duyệt, rồi gỡ mục khỏi danh sách. Phép thử: check-samples.mjs và kiem-loi-cu.mjs chặn mọi hình vẽ mã không có trong danh sách này. Gồm cả hình engine tự dùng (nhạc cụ E-âm thanh) và bài 1 (mặt trăng, chong chóng). Kiểu vẽ: mục có \"kieu\": \"style\" (con vật) dùng style; mục khác dùng style_do_vat (soát logic 27/11).",
  "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, natural expression, simple clean composition, not too detailed, for kids aged 4 to 6",
- "style_do_vat": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, simple clean composition, not too detailed, for kids aged 4 to 6, plain object without face or eyes",
+ "style_do_vat": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, simple clean composition, not too detailed, for kids aged 4 to 6, plain object without face or eyes, only the object, no animals, no people",
  "negative": "3d render, cgi, plastic, glossy, shiny, photorealistic, photo, anime, text, letters, watermark, signature, logo, extra limbs, extra fingers, deformed, cluttered background, harsh shadows, neon colors, scary",
  "seeds": [
   22,
@@ -31,14 +31,16 @@
    "slot": "art:tho",
    "vi": "Bạn thỏ",
    "prompt": "a cute small white rabbit with long ears sitting on the grass, side view, gentle friendly animal, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM31-OB-vit",
    "slot": "art:vit",
    "vi": "Con vịt",
-   "prompt": "a cute small yellow duck standing, side view, gentle friendly animal, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a cute small white duck with an orange beak and orange feet, swimming in a small round puddle of blue water, side view, gentle friendly animal, isolated on plain white background",
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM31-OB-may",
@@ -100,7 +102,7 @@
    "id": "PM31-OB-toc",
    "slot": "art:toc",
    "vi": "Mái tóc",
-   "prompt": "a small tuft of brown child hair with a soft wave, no face, no person, isolated on plain white background",
+   "prompt": "a black ponytail of child hair tied with a small red hair band, no face, no person, isolated on plain white background",
    "tach_nen": true
   },
   {
@@ -225,8 +227,8 @@
   {
    "id": "PM31-OB-ly",
    "slot": "art:ly",
-   "vi": "Cái ly",
-   "prompt": "a clear glass of water, isolated on plain white background",
+   "vi": "Cái cốc",
+   "prompt": "a light blue plastic child cup with a little water inside, isolated on plain white background",
    "tach_nen": true
   },
   {
@@ -283,6 +285,13 @@
    "slot": "art:chong-chong",
    "vi": "Chong chóng",
    "prompt": "a colorful paper pinwheel on a wooden stick, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "L001-OB-luong-dat",
+   "slot": "art:luong-dat",
+   "vi": "Luống đất để gieo hạt (L001, soát logic 27/11)",
+   "prompt": "a small mound of soft brown garden soil with two shallow furrows, no plants, no grass, isolated on plain white background",
    "tach_nen": true
   }
  ]

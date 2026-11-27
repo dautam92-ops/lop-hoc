@@ -37,6 +37,19 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
   check('Năng lực: ≥ 8 mỗi buổi, có tưởng tượng và sáng tạo, 5 buổi đủ 18', !nl.length, nl.slice(0, 3).join('; '));
 }
 
+// 1c. Soát logic (QUY-TAC-LOGIC.md, tam 27/11 11:06): đáp án liên quan, cùng loại, đúng khoa học, vật lý, trình tự, số lượng.
+//     Máy soát bằng kho kiến thức + biên bản agent soát logic khớp đúng bản bài hiện tại, không còn lỗi mở.
+{
+  const { kiemBai, kiemBienBan } = await import('./kiem-logic.mjs');
+  const src = await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8');
+  const lg = kiemBai(JSON.parse(src));
+  check('Không có điều vô lý (máy soát logic LG01–LG20)', !lg.loi.length, lg.loi.length ? lg.loi.slice(0, 3).join('; ') : `${lg.canh.length} cảnh báo cho agent`);
+  const tt = run(['tools/kiem-logic/tu-thu.mjs']);
+  check('Máy soát logic bắt đủ mọi mẫu lỗi đã biết', /BẮT ĐỦ/.test(tt), tt.trim().slice(0, 200));
+  const bb = await kiemBienBan(id, src);
+  check('Agent soát logic đã duyệt đúng bản bài này, 0 lỗi mở', !bb.length, bb.join('; '));
+}
+
 // 2. Giọng đọc: mọi câu đều có tệp, tệp tồn tại
 const vl = run(['tools/voice-lines-bai.mjs', id]);
 const can = +(vl.match(/cần tạo (\d+)/) || [, 99])[1];

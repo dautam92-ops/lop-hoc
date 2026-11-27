@@ -1,0 +1,858 @@
+{
+ "format": "lu-kien-thuc",
+ "version": "1",
+ "ghi_chu": "Kho kiến thức cho máy soát logic (QUY-TAC-LOGIC.md). Mỗi slot: tên, nhóm, từ tiếng Anh phải có trong câu mô tả ảnh, thuộc tính khoa học. Thêm slot mới vào bài thì phải thêm ở đây trước (cổng chặn).",
+ "nhom": {
+  "con-vat": "con vật",
+  "thuc-vat": "cây cối, hạt",
+  "do-an": "đồ ăn",
+  "do-vat": "đồ vật",
+  "thien-nhien": "thiên nhiên",
+  "noi-chon": "nơi ở, chỗ chứa",
+  "co-the": "cơ thể",
+  "hanh-dong": "hành động",
+  "canh": "cảnh nền"
+ },
+ "vat": {
+  "ga": {
+   "ten": "con gà",
+   "nhom": "con-vat",
+   "en": [
+    "chicken",
+    "hen",
+    "rooster"
+   ],
+   "bay": false,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "hạt",
+    "giun",
+    "thóc",
+    "rau"
+   ],
+   "chan": 2,
+   "an_duoc": false
+  },
+  "ga-con": {
+   "ten": "gà con",
+   "nhom": "con-vat",
+   "en": [
+    "chick"
+   ],
+   "bay": false,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "hạt",
+    "giun",
+    "thóc"
+   ],
+   "chan": 2,
+   "an_duoc": false
+  },
+  "meo": {
+   "ten": "con mèo",
+   "nhom": "con-vat",
+   "en": [
+    "cat",
+    "kitten"
+   ],
+   "bay": false,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "cá",
+    "thịt"
+   ],
+   "chan": 4,
+   "an_duoc": false
+  },
+  "ca": {
+   "ten": "con cá",
+   "nhom": "con-vat",
+   "en": [
+    "fish"
+   ],
+   "bay": false,
+   "boi": true,
+   "song_o": "nuoc",
+   "an": [
+    "bọ",
+    "rong"
+   ],
+   "chan": 0,
+   "an_duoc": false
+  },
+  "ech": {
+   "ten": "con ếch",
+   "nhom": "con-vat",
+   "en": [
+    "frog"
+   ],
+   "bay": false,
+   "boi": true,
+   "song_o": "ca-hai",
+   "an": [
+    "muỗi",
+    "côn trùng"
+   ],
+   "chan": 4,
+   "an_duoc": false
+  },
+  "chim": {
+   "ten": "con chim",
+   "nhom": "con-vat",
+   "en": [
+    "bird"
+   ],
+   "bay": true,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "hạt",
+    "sâu"
+   ],
+   "chan": 2,
+   "an_duoc": false
+  },
+  "ong": {
+   "ten": "con ong",
+   "nhom": "con-vat",
+   "en": [
+    "bee"
+   ],
+   "bay": true,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "mật hoa"
+   ],
+   "chan": 6,
+   "an_duoc": false
+  },
+  "buom": {
+   "ten": "con bướm",
+   "nhom": "con-vat",
+   "en": [
+    "butterfly"
+   ],
+   "bay": true,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "mật hoa"
+   ],
+   "chan": 6,
+   "an_duoc": false
+  },
+  "oc": {
+   "ten": "con ốc",
+   "nhom": "con-vat",
+   "en": [
+    "snail"
+   ],
+   "bay": false,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "lá"
+   ],
+   "chan": 0,
+   "an_duoc": false
+  },
+  "tho": {
+   "ten": "con thỏ",
+   "nhom": "con-vat",
+   "en": [
+    "rabbit",
+    "bunny"
+   ],
+   "bay": false,
+   "boi": false,
+   "song_o": "can",
+   "an": [
+    "cà rốt",
+    "rau",
+    "cỏ"
+   ],
+   "chan": 4,
+   "an_duoc": false
+  },
+  "vit": {
+   "ten": "con vịt",
+   "nhom": "con-vat",
+   "en": [
+    "duck"
+   ],
+   "bay": false,
+   "boi": true,
+   "song_o": "ca-hai",
+   "an": [
+    "thóc",
+    "ốc",
+    "rau"
+   ],
+   "chan": 2,
+   "an_duoc": false
+  },
+  "ga-con-mo-dau": {
+   "ten": "gà con mổ hạt đậu",
+   "nhom": "hanh-dong",
+   "en": [
+    "chick",
+    "peck"
+   ],
+   "chu_the": "ga-con"
+  },
+  "ga-con-ngu": {
+   "ten": "gà con ngủ",
+   "nhom": "hanh-dong",
+   "en": [
+    "chick",
+    "sleep"
+   ],
+   "chu_the": "ga-con"
+  },
+  "ga-con-chay": {
+   "ten": "gà con chạy",
+   "nhom": "hanh-dong",
+   "en": [
+    "chick",
+    "run"
+   ],
+   "chu_the": "ga-con"
+  },
+  "ga-con-uong-nuoc": {
+   "ten": "gà con uống nước",
+   "nhom": "hanh-dong",
+   "en": [
+    "chick",
+    "drink"
+   ],
+   "chu_the": "ga-con"
+  },
+  "tao": {
+   "ten": "quả táo",
+   "nhom": "do-an",
+   "en": [
+    "apple"
+   ],
+   "an_duoc": true,
+   "noi": true
+  },
+  "ca-rot": {
+   "ten": "củ cà rốt",
+   "nhom": "do-an",
+   "en": [
+    "carrot"
+   ],
+   "an_duoc": true
+  },
+  "rau": {
+   "ten": "rau",
+   "nhom": "do-an",
+   "en": [
+    "vegetable",
+    "lettuce",
+    "greens"
+   ],
+   "an_duoc": true
+  },
+  "banh-mi": {
+   "ten": "bánh mì",
+   "nhom": "do-an",
+   "en": [
+    "bread"
+   ],
+   "an_duoc": true
+  },
+  "keo": {
+   "ten": "cái kéo",
+   "nhom": "do-vat",
+   "en": [
+    "scissors"
+   ],
+   "an_duoc": false,
+   "nguy_hiem": "sắc, cần người lớn"
+  },
+  "trung": {
+   "ten": "quả trứng",
+   "nhom": "do-an",
+   "en": [
+    "egg"
+   ],
+   "an_duoc": true
+  },
+  "qua-dau": {
+   "ten": "quả đậu",
+   "nhom": "do-an",
+   "en": [
+    "bean pod",
+    "pea pod"
+   ],
+   "an_duoc": true,
+   "giai_doan_cay": 4
+  },
+  "hat-dau": {
+   "ten": "hạt đậu",
+   "nhom": "thuc-vat",
+   "en": [
+    "bean"
+   ],
+   "an_duoc": true,
+   "giai_doan_cay": 0,
+   "nho": true
+  },
+  "mam-dau": {
+   "ten": "mầm đậu",
+   "nhom": "thuc-vat",
+   "en": [
+    "sprout",
+    "seedling"
+   ],
+   "giai_doan_cay": 1
+  },
+  "cay": {
+   "ten": "cái cây",
+   "nhom": "thuc-vat",
+   "en": [
+    "tree",
+    "plant"
+   ],
+   "giai_doan_cay": 2
+  },
+  "hoa": {
+   "ten": "bông hoa",
+   "nhom": "thuc-vat",
+   "en": [
+    "flower"
+   ],
+   "giai_doan_cay": 3
+  },
+  "la": {
+   "ten": "chiếc lá",
+   "nhom": "thuc-vat",
+   "en": [
+    "leaf",
+    "leaves"
+   ],
+   "noi": true
+  },
+  "la-cay": {
+   "ten": "chiếc lá",
+   "nhom": "thuc-vat",
+   "en": [
+    "leaf",
+    "leaves"
+   ],
+   "noi": true
+  },
+  "bui-co": {
+   "ten": "bụi cỏ",
+   "nhom": "thuc-vat",
+   "en": [
+    "grass",
+    "bush"
+   ]
+  },
+  "chau-cay": {
+   "ten": "chậu cây",
+   "nhom": "thuc-vat",
+   "en": [
+    "potted plant",
+    "flower pot"
+   ]
+  },
+  "khuc-go": {
+   "ten": "khúc gỗ",
+   "nhom": "thien-nhien",
+   "en": [
+    "log",
+    "wood"
+   ],
+   "noi": true,
+   "an_duoc": false
+  },
+  "soi": {
+   "ten": "viên sỏi",
+   "nhom": "thien-nhien",
+   "en": [
+    "pebble",
+    "stone"
+   ],
+   "noi": false,
+   "an_duoc": false
+  },
+  "giot-nuoc": {
+   "ten": "giọt nước",
+   "nhom": "thien-nhien",
+   "en": [
+    "water drop"
+   ],
+   "an_duoc": false
+  },
+  "ao-nuoc": {
+   "ten": "ao nước",
+   "nhom": "noi-chon",
+   "en": [
+    "pond"
+   ]
+  },
+  "mat-troi": {
+   "ten": "mặt trời",
+   "nhom": "thien-nhien",
+   "en": [
+    "sun"
+   ],
+   "bau_troi": true
+  },
+  "mat-trang": {
+   "ten": "mặt trăng",
+   "nhom": "thien-nhien",
+   "en": [
+    "moon"
+   ],
+   "bau_troi": true,
+   "ban_dem": true
+  },
+  "sao": {
+   "ten": "ngôi sao",
+   "nhom": "thien-nhien",
+   "en": [
+    "star"
+   ],
+   "bau_troi": true,
+   "ban_dem": true
+  },
+  "may": {
+   "ten": "đám mây",
+   "nhom": "thien-nhien",
+   "en": [
+    "cloud"
+   ],
+   "bau_troi": true
+  },
+  "mua": {
+   "ten": "cơn mưa",
+   "nhom": "thien-nhien",
+   "en": [
+    "rain"
+   ],
+   "bau_troi": true
+  },
+  "cau-vong": {
+   "ten": "cầu vồng",
+   "nhom": "thien-nhien",
+   "en": [
+    "rainbow"
+   ],
+   "bau_troi": true
+  },
+  "bau-troi": {
+   "ten": "bầu trời",
+   "nhom": "thien-nhien",
+   "en": [
+    "sky"
+   ]
+  },
+  "mat-dat": {
+   "ten": "mặt đất (trên cạn)",
+   "nhom": "thien-nhien",
+   "en": [
+    "ground",
+    "grassy"
+   ]
+  },
+  "gio": {
+   "ten": "cái giỏ",
+   "nhom": "do-vat",
+   "en": [
+    "basket"
+   ],
+   "an_duoc": false
+  },
+  "ro-tre": {
+   "ten": "rổ tre",
+   "nhom": "do-vat",
+   "en": [
+    "bamboo basket"
+   ],
+   "an_duoc": false
+  },
+  "tui": {
+   "ten": "cái túi",
+   "nhom": "do-vat",
+   "en": [
+    "bag",
+    "pouch",
+    "sack"
+   ],
+   "an_duoc": false
+  },
+  "chao": {
+   "ten": "cái chảo",
+   "nhom": "do-vat",
+   "en": [
+    "pan"
+   ],
+   "an_duoc": false
+  },
+  "ao": {
+   "ten": "cái áo",
+   "nhom": "do-vat",
+   "en": [
+    "shirt"
+   ],
+   "an_duoc": false
+  },
+  "chia-khoa": {
+   "ten": "chìa khóa",
+   "nhom": "do-vat",
+   "en": [
+    "key"
+   ],
+   "an_duoc": false,
+   "noi": false
+  },
+  "dong-xu": {
+   "ten": "đồng xu",
+   "nhom": "do-vat",
+   "en": [
+    "coin"
+   ],
+   "an_duoc": false,
+   "noi": false,
+   "nguy_hiem": "nuốt"
+  },
+  "khan": {
+   "ten": "cái khăn",
+   "nhom": "do-vat",
+   "en": [
+    "towel"
+   ],
+   "an_duoc": false
+  },
+  "binh-tuoi": {
+   "ten": "bình tưới",
+   "nhom": "do-vat",
+   "en": [
+    "watering can"
+   ],
+   "an_duoc": false
+  },
+  "voi-nuoc": {
+   "ten": "vòi nước",
+   "nhom": "do-vat",
+   "en": [
+    "faucet",
+    "tap"
+   ],
+   "an_duoc": false
+  },
+  "xa-phong": {
+   "ten": "xà phòng",
+   "nhom": "do-vat",
+   "en": [
+    "soap"
+   ],
+   "an_duoc": false
+  },
+  "mu-dau-bep": {
+   "ten": "mũ đầu bếp",
+   "nhom": "do-vat",
+   "en": [
+    "chef hat"
+   ],
+   "an_duoc": false
+  },
+  "mu-tho-xay": {
+   "ten": "mũ thợ xây",
+   "nhom": "do-vat",
+   "en": [
+    "hard hat"
+   ],
+   "an_duoc": false
+  },
+  "mu-cuu-hoa": {
+   "ten": "mũ cứu hỏa",
+   "nhom": "do-vat",
+   "en": [
+    "firefighter helmet"
+   ],
+   "an_duoc": false
+  },
+  "voi-cuu-hoa": {
+   "ten": "vòi cứu hỏa",
+   "nhom": "do-vat",
+   "en": [
+    "fire hose"
+   ],
+   "an_duoc": false
+  },
+  "mu": {
+   "ten": "cái mũ",
+   "nhom": "do-vat",
+   "en": [
+    "hat"
+   ],
+   "an_duoc": false
+  },
+  "bong": {
+   "ten": "quả bóng",
+   "nhom": "do-vat",
+   "en": [
+    "ball"
+   ],
+   "an_duoc": false,
+   "noi": true
+  },
+  "bong-bay": {
+   "ten": "bóng bay",
+   "nhom": "do-vat",
+   "en": [
+    "balloon"
+   ],
+   "an_duoc": false,
+   "bay": true
+  },
+  "chong-chong": {
+   "ten": "chong chóng",
+   "nhom": "do-vat",
+   "en": [
+    "pinwheel"
+   ],
+   "an_duoc": false
+  },
+  "ban-chai": {
+   "ten": "bàn chải",
+   "nhom": "do-vat",
+   "en": [
+    "toothbrush"
+   ],
+   "an_duoc": false
+  },
+  "luoc": {
+   "ten": "cái lược",
+   "nhom": "do-vat",
+   "en": [
+    "comb"
+   ],
+   "an_duoc": false
+  },
+  "o": {
+   "ten": "cái ô",
+   "nhom": "do-vat",
+   "en": [
+    "umbrella"
+   ],
+   "an_duoc": false
+  },
+  "giay-to": {
+   "ten": "tờ giấy",
+   "nhom": "do-vat",
+   "en": [
+    "paper"
+   ],
+   "an_duoc": false,
+   "noi": true
+  },
+  "giay": {
+   "ten": "đôi giày",
+   "nhom": "do-vat",
+   "en": [
+    "shoes",
+    "sneakers"
+   ],
+   "an_duoc": false
+  },
+  "thia": {
+   "ten": "cái thìa",
+   "nhom": "do-vat",
+   "en": [
+    "spoon"
+   ],
+   "an_duoc": false
+  },
+  "bat-com": {
+   "ten": "bát cơm",
+   "nhom": "do-an",
+   "en": [
+    "rice bowl",
+    "bowl of",
+    "rice"
+   ],
+   "an_duoc": true
+  },
+  "bua": {
+   "ten": "cái búa",
+   "nhom": "do-vat",
+   "en": [
+    "hammer"
+   ],
+   "an_duoc": false,
+   "nguy_hiem": "người lớn dùng"
+  },
+  "hop": {
+   "ten": "cái hộp",
+   "nhom": "do-vat",
+   "en": [
+    "box"
+   ],
+   "an_duoc": false
+  },
+  "sach": {
+   "ten": "quyển sách",
+   "nhom": "do-vat",
+   "en": [
+    "book"
+   ],
+   "an_duoc": false
+  },
+  "ly": {
+   "ten": "cái cốc",
+   "nhom": "do-vat",
+   "en": [
+    "cup",
+    "glass"
+   ],
+   "an_duoc": false
+  },
+  "trong": {
+   "ten": "cái trống",
+   "nhom": "do-vat",
+   "en": [
+    "drum"
+   ],
+   "an_duoc": false,
+   "am_thanh": true
+  },
+  "chuong": {
+   "ten": "cái chuông",
+   "nhom": "do-vat",
+   "en": [
+    "bell"
+   ],
+   "an_duoc": false,
+   "am_thanh": true
+  },
+  "dan": {
+   "ten": "cây đàn",
+   "nhom": "do-vat",
+   "en": [
+    "xylophone",
+    "guitar",
+    "instrument"
+   ],
+   "an_duoc": false,
+   "am_thanh": true
+  },
+  "xac-xo": {
+   "ten": "cái xắc xô",
+   "nhom": "do-vat",
+   "en": [
+    "tambourine"
+   ],
+   "an_duoc": false,
+   "am_thanh": true
+  },
+  "to-ong": {
+   "ten": "tổ ong",
+   "nhom": "noi-chon",
+   "en": [
+    "beehive"
+   ],
+   "nha_cua": "ong"
+  },
+  "nha": {
+   "ten": "ngôi nhà",
+   "nhom": "noi-chon",
+   "en": [
+    "house",
+    "cottage",
+    "home"
+   ]
+  },
+  "nha-ga": {
+   "ten": "chuồng gà",
+   "nhom": "noi-chon",
+   "en": [
+    "chicken coop"
+   ],
+   "nha_cua": "ga"
+  },
+  "ban-tay": {
+   "ten": "bàn tay",
+   "nhom": "co-the",
+   "en": [
+    "hand"
+   ]
+  },
+  "rang": {
+   "ten": "răng",
+   "nhom": "co-the",
+   "en": [
+    "teeth",
+    "tooth"
+   ]
+  },
+  "toc": {
+   "ten": "mái tóc",
+   "nhom": "co-the",
+   "en": [
+    "hair"
+   ]
+  },
+  "bep": {
+   "ten": "nhà bếp",
+   "nhom": "canh",
+   "en": [
+    "kitchen"
+   ]
+  },
+  "phong": {
+   "ten": "phòng chơi",
+   "nhom": "canh",
+   "en": [
+    "playroom"
+   ]
+  },
+  "vuon": {
+   "ten": "khu vườn",
+   "nhom": "canh",
+   "en": [
+    "garden"
+   ]
+  },
+  "hien": {
+   "ten": "hiên nhà",
+   "nhom": "canh",
+   "en": [
+    "porch"
+   ]
+  },
+  "cay-cao": {
+   "ten": "cây cao",
+   "nhom": "canh",
+   "en": [
+    "tall tree"
+   ]
+  },
+  "bo-ao": {
+   "ten": "bờ ao",
+   "nhom": "canh",
+   "en": [
+    "pond bank"
+   ]
+  },
+  "luong-dat": {
+   "ten": "luống đất",
+   "nhom": "thien-nhien",
+   "en": [
+    "soil",
+    "furrow"
+   ],
+   "an_duoc": false
+  }
+ }
+}

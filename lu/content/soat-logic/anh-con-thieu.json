@@ -1,0 +1,50 @@
+{
+ "doi_tuong": "anh-con-thieu",
+ "tep": "tools/lab/anh-con-thieu.json",
+ "ma_bam": "a71f1d4911981b14a0e69ff4a6ef83364e5f7d84",
+ "ngay": "2026-11-27",
+ "nguoi_soat": "agent soát logic",
+ "lan_soat": 2,
+ "quy_tac_da_soat": ["LG01", "LG02", "LG03", "LG04", "LG05", "LG06", "LG07", "LG08", "LG09", "LG10", "LG11", "LG12", "LG13", "LG14", "LG15", "LG16", "LG17", "LG18", "LG19", "LG20"],
+ "may_soat": { "loi": 0, "canh_bao": 0 },
+ "canh_bao_da_xet": [],
+ "ghi_chu": "Soát lại sau khi sửa theo biên bản lần 1 (mã băm cũ dc225d5b98adbedfe2698dc5527e75ad063f7656). Đã soát cả 40 mục, gồm mục mới L001-OB-luong-dat. Máy soát: 0 lỗi, 0 cảnh báo (máy đã kiểm con vật phải có \"kieu\": \"style\" và đồ vật, thiên nhiên phải có câu 'no animals/no people'). Mục mới art:luong-dat: dùng ở L001-B07 câu 'Bà dặn Lu gieo hạt vào đâu?' (đáp án đúng, cạnh ao nước và cái giỏ) và L001-B09 (chạm nghe 'Đất'). Câu mô tả 'a small mound of soft brown garden soil with two shallow furrows, no plants, no grass' vẽ đúng đất trống để gieo, không có cây hay cỏ nên không lẫn với mat-dat, bui-co hay chau-cay, đất nằm trên nền có điểm tựa (LG08), khớp kho kiến thức (nhóm thiên nhiên, từ 'soil', 'furrow') và lời 'Hạt nằm trong đất' (LG07, LG19 ở bài). 'two shallow furrows' không phải số lượng cần đếm (LG13). Có xét và không ghi lỗi: bàn tay (art:ban-tay) dùng style_do_vat có 'no people' nhưng câu mô tả ghi 'only the hand', vẫn vẽ được một bàn tay, không mâu thuẫn đến mức sai vật; tóc buộc 'no face, no person' khớp style_do_vat. Lưu ý: công cụ vẽ chạy trên máy 24H không nằm trong thư mục này, nên việc đọc trường \"kieu\" dựa vào quy ước ghi ở ghi_chu của tệp câu mô tả; người chạy vẽ cần chọn style cho mục có \"kieu\": \"style\".",
+ "loi": [
+  {
+   "ma": "LG15",
+   "o": "PM31-OB-tho, PM31-OB-vit (cả tệp)",
+   "cau": "style / style_do_vat + \"a cute small white rabbit ...\" / \"a cute small yellow duck ...\"",
+   "mo_ta": "Tệp không ghi mục nào dùng style, mục nào dùng style_do_vat. Nếu công cụ vẽ ghép style_do_vat cho thỏ và vịt thì câu mô tả thành 'no animals', ảnh không vẽ đúng vật.",
+   "sua": "Ghi rõ kiểu vẽ ở từng mục, vd thêm \"kieu\": \"style\" cho PM31-OB-tho và PM31-OB-vit.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "PM31-OB-tho và PM31-OB-vit đã có \"kieu\": \"style\"; ghi_chu của tệp ghi quy ước 'mục có kieu style (con vật) dùng style, mục khác dùng style_do_vat'. Máy soát kiểm luật này (kiem-logic.mjs dòng 129) và báo 0 lỗi. Không còn mục con vật nào khác trong tệp."
+  },
+  {
+   "ma": "LG15",
+   "o": "PM31-OB-vit",
+   "cau": "a cute small yellow duck standing, side view, gentle friendly animal, isolated on plain white background",
+   "mo_ta": "Vịt đứng trên cạn không thể hiện vai đáp án 'Dưới nước'; vịt con lông vàng dễ lẫn với gà con (LG06, LG17).",
+   "sua": "Vẽ vịt trắng, mỏ và chân màu cam, đang bơi trên một mảng nước xanh nhỏ.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Câu mô tả mới: 'a cute small white duck with an orange beak and orange feet, swimming in a small round puddle of blue water, side view'. Lông trắng, mỏ cam khác hẳn gà con lông vàng; vịt đang bơi trong nước khớp vai 'Dưới nước' và kho kiến thức (boi: true). Nước nằm thành vũng phẳng, có điểm tựa (LG08)."
+  },
+  {
+   "ma": "LG17",
+   "o": "PM31-OB-toc",
+   "cau": "a small tuft of brown child hair with a soft wave, no face, no person, isolated on plain white background",
+   "mo_ta": "Nhúm tóc rời màu nâu trẻ không nhận ra trên ô nhỏ, khó vẽ rõ (LG18), màu nâu không quen trẻ Việt (LG12).",
+   "sua": "Dùng 'a black hair ponytail tied with a red hair band' nếu giữ ảnh không người.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Câu mô tả mới: 'a black ponytail of child hair tied with a small red hair band, no face, no person'. Đúng phương án đề xuất: tóc đen quen với trẻ Việt, dây buộc đỏ cho hình dáng rõ một búi tóc, nhận ra được là tóc để ghép với cái lược; không người nên khớp style_do_vat."
+  },
+  {
+   "ma": "LG17",
+   "o": "PM31-OB-ly",
+   "cau": "a clear glass of water, isolated on plain white background",
+   "mo_ta": "Cốc thủy tinh trong suốt gần như mất hình sau khi tách nền; tên 'Cái ly' lệch với 'cái cốc' trong kho kiến thức và lời đọc (LG20).",
+   "sua": "Đổi thành 'a small light blue child cup with a little water inside' và sửa vi thành 'Cái cốc'.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Câu mô tả mới: 'a light blue plastic child cup with a little water inside'; vi đã là 'Cái cốc'. Cốc nhựa màu xanh không trong suốt, còn rõ hình sau tách nền; tên khớp kho kiến thức (art:ly = cái cốc). Nước nằm trong cốc (LG08)."
+  }
+ ]
+}

@@ -1,0 +1,248 @@
+{
+ "ghi_chu": "Mẫu câu SAI cố ý để chứng minh máy soát logic bắt được (tools/kiem-logic/tu-thu.mjs). Mỗi lỗi mới tam báo về logic thì thêm một mẫu ở đây.",
+ "mau": [
+  {
+   "ma": "LG01",
+   "vi": "Lỗi gốc 27/11: gà con sẽ làm gì, đáp án sai là đồ vật",
+   "q": "Chú gà thấy hạt đậu. Chú gà sẽ làm gì?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:ga-con"
+    },
+    {
+     "e": "art:chia-khoa"
+    },
+    {
+     "e": "art:ao"
+    }
+   ]
+  },
+  {
+   "ma": "LG02",
+   "vi": "Hỏi con vật mà có đồ vật",
+   "q": "Con vật nào sống ở ao?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:ca"
+    },
+    {
+     "e": "art:chao"
+    },
+    {
+     "e": "art:meo"
+    }
+   ]
+  },
+  {
+   "ma": "LG03",
+   "vi": "Hai đáp án cùng đúng: chim và ong đều bay được",
+   "q": "Bạn nào bay được?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:chim"
+    },
+    {
+     "e": "art:ong"
+    },
+    {
+     "e": "art:oc"
+    }
+   ]
+  },
+  {
+   "ma": "LG03",
+   "vi": "Hai ô giống hệt nhau",
+   "q": "Bé tìm quả táo.",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:tao"
+    },
+    {
+     "e": "art:tao"
+    },
+    {
+     "e": "art:ca-rot"
+    }
+   ]
+  },
+  {
+   "ma": "LG07",
+   "vi": "Sinh học sai: mèo ăn cà rốt",
+   "q": "Chú mèo thích ăn gì?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:ca-rot"
+    },
+    {
+     "e": "art:soi"
+    },
+    {
+     "e": "art:khan"
+    }
+   ]
+  },
+  {
+   "ma": "LG07",
+   "vi": "Đáp án đúng không đúng sự thật: ốc bay được",
+   "q": "Bạn nào bay được?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:oc"
+    },
+    {
+     "e": "art:ca"
+    },
+    {
+     "e": "art:meo"
+    }
+   ]
+  },
+  {
+   "ma": "LG08",
+   "vi": "Vật lý sai: sỏi nổi",
+   "q": "Thứ nào nổi trên mặt nước?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:soi"
+    },
+    {
+     "e": "art:chia-khoa"
+    },
+    {
+     "e": "art:dong-xu"
+    }
+   ]
+  },
+  {
+   "ma": "LG08",
+   "vi": "Vật lý sai: lá chìm",
+   "q": "Thứ nào bị chìm?",
+   "a": 1,
+   "opts": [
+    {
+     "e": "art:soi"
+    },
+    {
+     "e": "art:la"
+    },
+    {
+     "e": "art:khuc-go"
+    }
+   ]
+  },
+  {
+   "ma": "LG10",
+   "vi": "Trình tự sai: hạt thành ngay quả",
+   "q": "Hạt đậu nằm trong đất. Hạt sẽ thành gì?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:qua-dau"
+    },
+    {
+     "e": "art:mam-dau"
+    },
+    {
+     "e": "art:soi"
+    }
+   ]
+  },
+  {
+   "ma": "LG14",
+   "vi": "Số lượng lệch: hỏi hai hạt, đáp án có ba",
+   "q": "Bé tìm giỏ có hai hạt đậu.",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:hat-dau",
+     "n": 3
+    },
+    {
+     "e": "art:hat-dau",
+     "n": 2
+    },
+    {
+     "e": "art:hat-dau",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "ma": "LG07",
+   "vi": "Hỏi thứ không ăn được nhưng đáp án ăn được",
+   "q": "Thứ nào không ăn được?",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:tao"
+    },
+    {
+     "e": "art:soi"
+    },
+    {
+     "e": "art:rau"
+    }
+   ]
+  },
+  {
+   "ma": "KB",
+   "vi": "Ảnh chưa có trong kho kiến thức",
+   "q": "Bé tìm con khủng long.",
+   "a": 0,
+   "opts": [
+    {
+     "e": "art:khung-long"
+    },
+    {
+     "e": "art:meo"
+    },
+    {
+     "e": "art:ga"
+    }
+   ]
+  }
+ ],
+ "anh_sai": {
+  "style_do_vat": "children's picture book illustration, only the object, no animals",
+  "items": [
+   {
+    "ma": "LG13",
+    "id": "SAI-dem",
+    "slot": "art:hat-dau",
+    "prompt": "three shiny beans on white background, only the object, no animals"
+   },
+   {
+    "ma": "LG15",
+    "id": "SAI-vat",
+    "slot": "art:keo",
+    "prompt": "a colorful wrapped candy, only the object, no animals"
+   },
+   {
+    "ma": "LG16",
+    "id": "SAI-them-vat",
+    "slot": "art:tao",
+    "prompt": "a red apple on white background",
+    "kieu": "style"
+   },
+   {
+    "ma": "LG15",
+    "id": "SAI-hanh-dong",
+    "slot": "art:ga-con-ngu",
+    "prompt": "a small bird sleeping in a nest"
+   },
+   {
+    "ma": "LG15",
+    "id": "SAI-kieu-con-vat",
+    "slot": "art:vit",
+    "prompt": "a white duck swimming in a puddle"
+   }
+  ]
+ }
+}
