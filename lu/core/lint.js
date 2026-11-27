@@ -1,4 +1,7 @@
 import { normalizeLesson, estimateMinutes } from './session.js';
+import { kiemHanhDong } from './hanh-dong.js';
+import { kiemTimBong } from './tim-bong.js';
+import { kiemCheckin } from './checkin.js';
 // Quality Gate tự động cho một gói bài (LU_PRODUCT_QUALITY_STANDARD mục 13). Chạy được cả trong trình duyệt và Node.
 // errors: chặn duyệt và xuất bản. warnings: người duyệt xem lại.
 export const FORBID = ['ngốc', 'phạt', 'thông minh', 'IQ', 'EQ', 'giỏi hơn bạn', 'thua', 'kém cỏi'];
@@ -65,6 +68,12 @@ export function lintLesson(pkg, skills = null) {
     if (!pkg.stages.some(st => st.way === 'van-dong')) errors.push('Buổi thiếu chặng vận động (S02-R02)');
     pkg.stages.forEach((st, i) => { if (!st.backdrop) warnings.push(`Chặng ${i + 1} chưa có bối cảnh (S04-R13)`); });
   }
+  // Quy tắc 38 (tam 27/11): hỏi hành động thì đáp án là ảnh hành động của chính nhân vật được hỏi
+  errors.push(...kiemHanhDong(activities));
+  // Quy tắc 39 (tam 27/11): bài tìm bóng hiện ảnh bóng to giữa màn, hỏi "Cái bóng này là của ảnh nào dưới đây?"
+  errors.push(...kiemTimBong(activities));
+  // Quy tắc 40 (tam 27/11): hỏi cảm xúc đầu buổi chỉ đọc câu hỏi, Lu đáp theo mặt bé chọn
+  errors.push(...kiemCheckin(pkg.checkin));
   // Hình phải có trong kho và đã duyệt
   walk(pkg, (s) => { if (s.startsWith('asset:')) warnings.push(`Kiểm tra tài nguyên ${s.slice(6)} đã duyệt trong Asset Registry`); });
   return { errors: [...new Set(errors)], warnings: [...new Set(warnings)] };

@@ -49,6 +49,15 @@ check('Tệp giọng đọc có đủ trên đĩa', miss.length === 0, miss.leng
 const assets = JSON.parse(await readFile(path.join(ROOT, 'registry/assets.json'), 'utf8')).assets;
 const aMiss = []; for (const a of assets.filter(a => a.trang_thai === 'da_duyet')) { try { await access(path.join(ROOT, a.path)); } catch { aMiss.push(a.asset_id); } }
 check('Ảnh đã duyệt có đủ tệp', aMiss.length === 0, aMiss.join(', '));
+// Mọi đồ vật/con vật/hành động trong bài phải có ảnh vẽ tay ĐÃ DUYỆT (tam 27/11: ảnh gà con mổ hạt đậu chưa vẽ thì chưa được lên mạng).
+{ const duyet = new Set(assets.filter(a => a.trang_thai === 'da_duyet' && a.slot).map(a => a.slot)); const dung = new Set();
+  const di = o => { if (typeof o === 'string') { const m = o.match(/^art:([a-z0-9-]+)(:.*)?$/); if (m && !m[2] && !/^hinh-/.test(m[1])) dung.add('art:' + m[1]); /* art:x:tham-so (cọc số, màu) là hình có tham số, vẽ bằng mã */ } else if (o && typeof o === 'object') Object.values(o).forEach(di); };
+  di(JSON.parse(await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8')));
+  // Hình đang chờ vẽ trong danh sách theo dõi chung (tools/lab/anh-con-thieu.json) được tạm dùng hình vẽ mã như Phòng mẫu;
+  // hình mới cho bài (vd ảnh hành động) phải vẽ và duyệt xong mới lên mạng.
+  let cho = new Set(); try { cho = new Set(JSON.parse(await readFile(path.join(ROOT, 'tools/lab/anh-con-thieu.json'), 'utf8')).items.map(i => i.slot)); } catch {}
+  const chua = [...dung].filter(x => !duyet.has(x) && !cho.has(x));
+  check('Mọi hình trong bài là ảnh vẽ tay đã duyệt', chua.length === 0, chua.length ? 'chờ vẽ/duyệt: ' + chua.join(', ') : `${dung.size} hình`); }
 
 // 3b. Quy tắc lật thẻ (tam 26/11): sai chỉ úp lại, im lặng; đúng một đôi chỉ âm báo; xong cả bài mới khen.
 const e05 = await readFile(path.join(ROOT, 'engines/e05-memory.js'), 'utf8');

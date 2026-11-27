@@ -15,6 +15,7 @@ def items(skill, title, its, mechanic, lu="suy-nghi", **kw):
     a = {"activity_id": aid(), "engine": "E01", "mode": "items", "skill_id": skill, "title": title, "items": its, "order": "fixed",
          "scene": "lu", "lu": lu, "mechanic": mechanic}
     a.update(kw); return a
+BONG = "Cái bóng này là của ảnh nào dưới đây?"  # quy tắc 39 (tam 27/11)
 def q(text, a, ok, no, *opts, **kw):
     return {"q": text, "a": a, "ok": ok, "no": no, "opts": [{"e": e} for e in opts], "style": kw.pop("style", "face"), **kw}
 WAY = ["quan-sat-tranh", "tim-vat", "keo-tha", "cham-dem", "ke-chuyen", "tri-nho", "phan-loai", "kham-pha", "tinh-huong-eq", "nghe-chon", "van-dong", "ky-nang-song"]
@@ -29,9 +30,9 @@ S.append(st("Hạt đậu lăn đi đâu?", "art:hat-dau*3", ["QS"], ("L001-BG-0
      "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:hat-dau", "name": "hạt đậu"}], "distractors": ["art:la", "art:soi", "art:hoa"],
      "min": 2, "max": 3, "cells": 9, "rounds": 2, "no": "Đó chưa phải hạt đậu. Hạt đậu nhỏ, màu vàng nâu.", "done": "Bé tìm thấy đủ hạt đậu rồi!"},
     items("TD.QS.01", "Hạt đậu nấp sau gì?", [
-        q("Cái bóng này là của gì?", 2, "Đúng rồi! Đó là cái giỏ.", "Bé nhìn kỹ: bóng có quai cầm.", "art:la", "art:tao", "art:gio", show="art:gio"),
-        q("Cái bóng này là của gì?", 0, "Đúng rồi! Đó là cái lá.", "Bé nhìn kỹ: bóng dài, có cuống nhỏ.", "art:la-cay", "art:ca-rot", "art:oc", show="art:la-cay")],
-        "M10", lu="chi-tay")],
+        q(BONG, 2, "Đúng rồi! Đó là cái giỏ.", "Bé nhìn kỹ: bóng có quai cầm.", "art:la", "art:tao", "art:gio", show="art:gio"),
+        q(BONG, 0, "Đúng rồi! Đó là cái lá.", "Bé nhìn kỹ: bóng dài, có cuống nhỏ.", "art:la-cay", "art:ca-rot", "art:oc", show="art:la-cay")],
+        "M10", lu="chi-tay", scene="story", shadow=True)],
     {"kien_thuc": "Quan sát kỹ để tìm vật nhỏ lẫn trong tranh; nhận ra vật qua hình bóng.", "bai_tap": ["Tìm hạt đậu lần 1", "Tìm hạt đậu lần 2", "Bóng cái giỏ", "Bóng chiếc lá"],
      "bang_chung": "TD.QS.01 có chấm: đúng ngay lần đầu, số lần thử."}, "Bé tinh mắt quá!"))
 # 2 ─ Trọng tâm mức tiếp theo: ít gợi ý hơn, vật mới
@@ -40,9 +41,9 @@ S.append(st("Ai trốn trong vườn?", "art:ga-con", ["CY"], ("vuon", "vuon"), 
      "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:ga-con", "name": "chú gà con"}], "distractors": ["art:ga", "art:chim", "art:trung"],
      "min": 2, "max": 3, "cells": 9, "rounds": 1, "no": "Đó chưa phải gà con. Gà con nhỏ, lông vàng.", "done": "Bé tìm ra hết gà con rồi!"},
     items("TD.QS.01", "Bóng của bạn nào?", [
-        q("Cái bóng này là của ai?", 1, "Đúng rồi! Đó là chú mèo.", "Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.", "art:ga", "art:meo", "art:ech", show="art:meo"),
-        q("Cái bóng này là của ai?", 2, "Đúng rồi! Đó là con bướm.", "Bé nhìn kỹ: bóng có hai cánh to.", "art:ong", "art:chim", "art:buom", show="art:buom")],
-        "M10", lu="to-mo")],
+        q(BONG, 1, "Đúng rồi! Đó là chú mèo.", "Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.", "art:ga", "art:meo", "art:ech", show="art:meo"),
+        q(BONG, 2, "Đúng rồi! Đó là con bướm.", "Bé nhìn kỹ: bóng có hai cánh to.", "art:ong", "art:chim", "art:buom", show="art:buom")],
+        "M10", lu="to-mo", scene="story", shadow=True)],
     {"kien_thuc": "Tìm vật giống nhau giữa vật gần giống; nhận ra con vật qua bóng.", "bai_tap": ["Tìm gà con", "Bóng chú mèo", "Bóng con bướm"],
      "bang_chung": "TD.QS.01 có chấm, mức ít gợi ý."}, "Không bạn nào trốn được bé!"))
 # 3 ─ Toán: số 1, 2, 3 — tương ứng một đối một, hiểu số lượng
@@ -104,7 +105,7 @@ S.append(st("Thứ nào khác nhóm?", "art:soi", ["TD"], ("phong", "phong"), "L
 S.append(st("Hạt đậu gặp gì?", "art:giot-nuoc", ["KT", "NT"], ("L001-BG-03", "vuon"), "Hạt đậu lăn đi gặp nhiều thứ. Bé đoán xem nhé.", [
     items("KP.KH.01", "Bé đoán xem", [
         q("Hạt đậu lăn vào chỗ ướt. Hạt cần gì để nảy mầm?", 0, "Đúng rồi! Hạt cần nước để nảy mầm.", "Hạt cần nước. Bé tìm giọt nước nhé.", "art:giot-nuoc", "art:soi", "art:khan"),
-        q("Chú gà thấy hạt đậu. Chú gà sẽ làm gì?", 1, "Đúng rồi! Chú gà mổ hạt để ăn.", "Chú gà thích ăn hạt đấy.", "art:ao", "art:ga-con", "art:chia-khoa"),
+        q("Chú gà thấy hạt đậu. Chú gà sẽ làm gì?", 1, "Đúng rồi! Chú gà mổ hạt để ăn.", "Chú gà thích ăn hạt đấy.", "art:ga-con-ngu", "art:ga-con-mo-dau", "art:ga-con-uong-nuoc"),
         q("Hạt đậu nằm trong đất lâu ngày. Hạt sẽ thành gì?", 2, "Đúng rồi! Hạt nảy thành mầm đậu.", "Hạt trong đất sẽ nảy mầm.", "art:qua-dau", "art:hoa", "art:mam-dau")],
         "M53", lu="kham-pha", evidence=TX)],
     {"kien_thuc": "Dự đoán điều xảy ra với hạt đậu (nhân quả đơn giản).", "bai_tap": ["Hạt cần nước", "Gà con ăn hạt", "Hạt nảy mầm"], "bang_chung": "Tiếp xúc KP.KH.01."}, "Bé đoán giỏi quá!", lu="kham-pha"))

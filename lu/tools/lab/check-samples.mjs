@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { ENGINES } from '../../engines/index.js';
 import { makeRng } from '../../core/lu-core.js';
 import { SCENE_KINDS } from '../../ui/scenes.js';
+import { kiemHanhDong } from '../../core/hanh-dong.js';
 const D = JSON.parse(readFileSync(new URL('../../content/lab/samples.json', import.meta.url)));
 let bad = 0, n = 0, hinhLoi = 0;
 for (const s of D.samples) for (const [age, act] of Object.entries(s.levels)) {
@@ -45,4 +46,6 @@ console.log(`Nền: ${nb} loại cho ${bds.length} bài.`);
     const hd = [...(l.intro || []), l.listen, l.look, l.your_turn, l.again, ...(l.tasks || []).map(t => t.act)].filter(x => typeof x === 'string');
     for (const q of qs) if (wc(q) > 10) { hinhLoi++; console.log(`LỖI quy tắc 34 ${s.id} ${age}: câu hỏi dài ${wc(q)} từ (≤ 10): ${q}`); }
     for (const x of hd) if (wc(x) > lim) { hinhLoi++; console.log(`LỖI quy tắc 34 ${s.id} ${age}: lời dẫn dài ${wc(x)} từ (≤ ${lim}): ${x}`); } } }
+// Quy tắc 38 (tam 27/11 "Bé đoán xem" L002): câu hỏi hành động thì mọi ảnh đáp án là hành động của chính nhân vật được hỏi.
+for (const x of kiemHanhDong(D.samples)) { hinhLoi++; console.log('LỖI ' + x); }
 console.log(`${n - bad}/${n} hoạt động đạt.`); if (hinhLoi) console.log(`${hinhLoi} hình nghèo nàn chưa được theo dõi.`); process.exit(bad || hinhLoi ? 1 : 0);
