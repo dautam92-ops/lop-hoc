@@ -1215,12 +1215,12 @@
        "ok": "Mình cùng nghĩ nhé.",
        "opts": [
         {
-         "e": "lu:nhay",
-         "say": "Mono nhảy thật cao để với.",
-         "reply": "Nhảy không tới mà dễ ngã. Mono đi gọi bà giúp nhé."
+         "e": "art:mono-treo-gian-dau",
+         "say": "Mono trèo lên giàn để hái.",
+         "reply": "Trèo cao dễ ngã lắm. Mono đi gọi bà giúp nhé."
         },
         {
-         "e": "lu:chi-tay",
+         "e": "art:mono-nho-ba-hai-qua",
          "say": "Mono nhờ bà hái giúp.",
          "reply": "Đúng là cách an toàn. Ở chỗ cao, mình nhờ người lớn giúp."
         }
@@ -1233,12 +1233,12 @@
        "ok": "Mình cùng nghĩ nhé.",
        "opts": [
         {
-         "e": "lu:nhay",
-         "say": "Mono nhảy lên lấy mũ.",
-         "reply": "Nóc chuồng cao lắm, nhảy dễ ngã. Mono nhờ bà lấy giúp nhé."
+         "e": "art:mono-treo-lay-mu",
+         "say": "Mono trèo lên mái lấy mũ.",
+         "reply": "Mái chuồng cao lắm, trèo dễ ngã. Mono nhờ bà lấy giúp nhé."
         },
         {
-         "e": "lu:chi-tay",
+         "e": "art:mono-nho-ba-lay-mu",
          "say": "Mono gọi bà lấy giúp.",
          "reply": "Mono nhờ bà là an toàn rồi. Bà lấy mũ xuống cho Mono."
         }
