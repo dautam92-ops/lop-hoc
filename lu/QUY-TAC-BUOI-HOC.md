@@ -26,3 +26,18 @@ Phép thử: `kiemOn`, mục cổng "Ôn chữ/số: mỗi lượt ôn một cá
 - Từ L002: mỗi buổi rèn ít nhất 8 năng lực, luôn có NL11 tưởng tượng và NL12 sáng tạo; 5 buổi liền nhau phủ đủ 18 năng lực.
 
 Phép thử: `kiemNangLuc`, mục cổng "Năng lực: ≥ 8 mỗi buổi".
+
+## Q4. Học cùng con (tam duyệt hướng 27/11/2026)
+Điểm bán của sản phẩm: bố mẹ và bé cùng học 20 phút mỗi ngày, có sẵn bài và cách dạy. Mọi buổi có phần "Học cùng con", ghi ở `content/hoc-cung-con/<id>.json` (hoặc trường `hoc_cung_con` khi đã lồng vào bài). Mẫu: L001, L002.
+
+1. **Dặn bố mẹ trước buổi** (`dan_bo_me`, hiện trên thẻ chữ trước khi bé bấm Bắt đầu, không đọc to, bấm qua được):
+   `hom_nay` hôm nay con học gì; `chuan_bi` đồ cần để sẵn (đồ có trong nhà); `ngoi_canh` lúc nào nên ngồi cạnh con. Mỗi dòng ≤ 25 từ, lời cho bố mẹ gọi trẻ là "con".
+2. **Mono mời bố mẹ** (`moi_bo_me`, 3–4 lời mỗi buổi, hiện sau khi bé xong bài nhỏ `sau_bai` (số thứ tự từ 0)):
+   - Mono đọc to `loi` (≤ 12 từ, gọi "bé", phải nhắc "bố mẹ"); dưới đó chữ nhỏ `goi_y` (≤ 20 từ) cho bố mẹ biết làm gì.
+   - Kiểu: `chi-cho` (bé chỉ/đếm cho bố mẹ), `hoi` (bé hỏi bố mẹ), `do-bo-me` (bé đố bố mẹ, bố mẹ cố tình sai để bé sửa), `ke` (bé kể), `lam-cung` (cùng vỗ tay, cùng làm động tác). Mỗi buổi ít nhất 2 kiểu.
+   - Rải đều: hai lời mời cách nhau ít nhất 2 bài nhỏ; không lặp lời của buổi trước.
+   - **Không chặn bé**: luôn có nút Tiếp to; bố mẹ bận thì bé tự bấm đi tiếp, không trừ sao, không nhắc lại.
+3. **Cuối buổi tắt máy** (`cuoi_buoi`): Mono nói `loi` (≤ 12 từ, có "tắt máy"), rồi hiện hoạt động ngoài đời làm cùng bố mẹ `ten`, `phut` (1–10 phút, trùng với `parent.play`). Không gợi ý học tiếp buổi sau hay vào cổng luyện ngay sau đó.
+
+Lời Mono ở mục 2 và 3 cần giọng đọc như mọi câu khác.
+Phép thử: `tools/kiem-hoc-cung-con.mjs` (`kiemHocCungCon`), mục cổng "Học cùng con".

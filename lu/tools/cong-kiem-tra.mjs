@@ -37,6 +37,15 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
   check('Năng lực: ≥ 8 mỗi buổi, có tưởng tượng và sáng tạo, 5 buổi đủ 18', !nl.length, nl.slice(0, 3).join('; '));
 }
 
+// 1b2. Học cùng con (Q4, tam duyệt hướng 27/11): dặn bố mẹ, 3–4 lời Mono mời bố mẹ, cuối buổi tắt máy làm cùng bố mẹ.
+{
+  const { kiemHocCungCon, docHocCungCon } = await import('./kiem-hoc-cung-con.mjs');
+  const pkg = JSON.parse(await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8'));
+  const truoc = 'L' + String(+id.replace(/\D/g, '') - 1).padStart(3, '0');
+  const hc = kiemHocCungCon(pkg, await docHocCungCon(id, pkg), await docHocCungCon(truoc));
+  check('Học cùng con: dặn bố mẹ, Mono mời bố mẹ, cuối buổi tắt máy', !hc.length, hc.slice(0, 3).join('; '));
+}
+
 // 1c. Soát logic (QUY-TAC-LOGIC.md, tam 27/11 11:06): đáp án liên quan, cùng loại, đúng khoa học, vật lý, trình tự, số lượng.
 //     Máy soát bằng kho kiến thức + biên bản agent soát logic khớp đúng bản bài hiện tại, không còn lỗi mở.
 {
