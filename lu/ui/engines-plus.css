@@ -543,3 +543,29 @@
 .lu-lesson .sim-card { display: flex; align-items: center; gap: 14px; font: 800 clamp(24px, 4.5vw, 36px) var(--lu-font-display); color: var(--lu-ink); background: #fffaf0; border: 3px solid #d9c79f; border-radius: 22px; padding: 12px 20px; max-width: 92%; }
 .lu-lesson .sim-pic { width: 90px; height: 90px; display: grid; place-items: center; }
 .lu-lesson .sim-pic .lu-art, .lu-lesson .sim-pic svg, .lu-lesson .sim-pic img { width: 100%; height: 100%; }
+/* Ảnh đáp án vẽ tay to tối đa (tam 27/11 16:38 "Ảnh ko vừa ô, quá bé", 16:42 "đáp án ảnh hiển thị to tối đa").
+   Khung đáp án gồm 2–4 ảnh vẽ tay được core gắn lớp "anh-to" và đo chỗ trống thật (--fs-max) để ô to hết cỡ mà không tràn.
+   Dọc: 2 cột (3–4 đáp án thành 2 hàng). Ngang: một hàng. Ảnh phủ kín ô. */
+.lu-lesson .answers.anh-to { display: grid; justify-content: center; align-content: center; gap: 10px;
+  --n: 2; --fs: min(calc((100vw - 64px) / 2), var(--fs-max, 380px), 380px); grid-template-columns: repeat(var(--n), var(--fs)); }
+.lu-lesson .answers.anh-to > .lbl { grid-column: 1 / -1; }
+.lu-lesson .answers.anh-to > .opt.face { width: var(--fs); height: var(--fs); min-width: 0; min-height: 0; margin: 0; padding: 5px; }
+.lu-lesson .answers.anh-to > .opt.face > img.lu-art.asset { width: 100%; height: 100%; object-fit: contain; border-radius: 14px; }
+@media (orientation: landscape) {
+  .lu-lesson .answers.anh-to { --fs: min(var(--fs-max, 340px), 340px); }
+  .lu-lesson .answers.anh-to:has(> .opt:nth-of-type(3)) { --n: 3; --fs: min(calc((100vw - 120px) / 3), var(--fs-max, 300px), 300px); }
+  .lu-lesson .answers.anh-to:has(> .opt:nth-of-type(4)) { --n: 4; --fs: min(calc((100vw - 140px) / 4), var(--fs-max, 260px), 260px); }
+}
+
+/* Tay tì khi vẽ (tam 27/11 22:57): màn có vùng vẽ/tô thì cả màn không cuộn, không phóng to, không hiện kính lúp hay menu khi tì tay lâu,
+   để tay tì ngoài vùng vẽ không cắt ngang nét đang vẽ. Xử lý chạm: engines/kit.js motNgon. Phép thử: tools/kiem-tay-ti.mjs */
+.lu-root:has([data-vung-ve]), .lu-root:has([data-vung-ve]) * { touch-action: none; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+/* Vùng vẽ/tô to hết mức để tay bé đặt trên vùng vẽ chứ không tì ra ngoài: thanh bút gọn một hàng thấp, nhường chiều cao cho vùng vẽ */
+.lu-lesson .stage:has([data-vung-ve]) { --vis-h: max(220px, calc(100dvh - 420px)); }
+.lu-lesson .stage:has([data-vung-ve]) .answers > .opt.dw-undo { --s: 64px; min-width: 76px; min-height: 64px; width: auto; height: auto; }
+.lu-lesson .stage:has([data-vung-ve]) .answers > .opt.crayon, .lu-lesson .stage:has([data-vung-ve]) .answers > .opt.dw-undo { align-self: center; }
+.lu-lesson .stage:has([data-vung-ve]) .answers > .big-btn { min-height: 72px; align-self: center; }
+.lu-lesson .stage:has([data-vung-ve]) .tr-svg { width: min(100%, 560px, calc((100dvh - 285px) * .77)); }
+.lu-lesson .stage:has([data-vung-ve]) .color-pic { width: min(100%, 620px, var(--vis-h)); }
+.lu-lesson .stage:has([data-vung-ve]) .draw-pad { width: min(100%, 900px, calc(var(--vis-h) * 4 / 3)); }
+@media (max-width: 600px) { .lu-lesson .stage:has([data-vung-ve]) { --vis-h: max(220px, calc(100dvh - 420px)); } }

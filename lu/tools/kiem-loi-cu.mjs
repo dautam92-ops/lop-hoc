@@ -6,6 +6,11 @@ import { readFileSync } from 'node:fs';
 const CHO_ANH = (() => { try { return JSON.parse(readFileSync(new URL('./lab/anh-con-thieu.json', import.meta.url))).items.map(i => i.slot.replace(/^art:/, '')); } catch { return []; } })();
 export async function kiemLoiCu(page) {
   const r = { checks: {} }, errs = [];
+    // Ảnh đáp án vẽ tay phải phủ gần kín ô (tam 27/11 16:38: "Ảnh ko vừa ô, quá bé"): ảnh rộng ≥ 85% ô đáp án
+    const anhNho = await page.evaluate(() => [...document.querySelectorAll('.answers.anh-to .opt.face > img.lu-art.asset')].filter(i => i.offsetParent).map(i => { const o = i.parentElement.getBoundingClientRect(), r = i.getBoundingClientRect(); return Math.round(100 * Math.min(r.width / o.width, r.height / o.height)); }).filter(x => x < 85));
+    const anhTran = await page.evaluate(() => [...document.querySelectorAll('.answers.anh-to .opt.face')].filter(o => o.offsetParent).some(o => { const b = o.getBoundingClientRect(); return b.bottom > innerHeight + 1 || b.right > innerWidth + 1 || b.left < -1; }));
+    if (anhTran) errs.push('ô đáp án ảnh tràn ra ngoài màn hình');
+    r.checks.anhVuaO = !anhNho.length; if (anhNho.length) errs.push(`ảnh đáp án chỉ chiếm ${Math.min(...anhNho)}% ô, cần ≥ 85% (ảnh phải vừa ô)`);
     // Kéo thả: vật đang kéo giữ đúng cỡ ô, không phóng to (tam 26/11 18:17: táo, rau khổng lồ che màn)
     const pc = await page.evaluate(() => { const p = [...document.querySelectorAll('.stage .piece')].find(x => x.offsetParent && !x.classList.contains('filled')); if (!p) return null; const r = p.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2, w: r.width, h: r.height }; });
     if (pc) {

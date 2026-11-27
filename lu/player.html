@@ -43,6 +43,8 @@ if (p.get('demo')) {
   // ?draft=L001: bản nháp chưa xuất bản (content/drafts), chỉ để xem trước trên máy
   const draft = p.get('draft'); const id = (draft || p.get('lesson') || 'MAU-001').replace(/[^\w-]/g, '');
   const pkg = await (await fetch(new URL(`${draft ? 'drafts' : 'lessons'}/${id}.json`, base))).json();
+  // Học cùng con (quy tắc Q4): dặn bố mẹ, Mono mời bố mẹ, cuối buổi tắt máy. Thiếu tệp thì buổi chạy như cũ.
+  if (!pkg.hoc_cung_con) { try { const r = await fetch(new URL(`hoc-cung-con/${id}.json`, base)); if (r.ok) pkg.hoc_cung_con = await r.json(); } catch {} }
   // Mở từ màn nhà (&nha=1): có nút về nhà ở góc và cuối buổi
   const onExit = p.get('nha') ? () => { location.href = 'index.html' + (p.get('ns') ? '?ns=' + encodeURIComponent(p.get('ns')) : ''); } : undefined;
   // Câu chưa có tệp giọng Hoài My: bản nháp giáo trình mới (?tts=1, hoặc mã có -MOI) đọc tạm bằng giọng tiếng Việt của máy

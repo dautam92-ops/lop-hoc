@@ -3,7 +3,7 @@
 //           "mau" (Lu tô mẫu, bé xem), "ho-tro" (đường chấm + mũi tên + chấm bắt đầu, dung sai rộng), "doc-lap" (chỉ còn đường mờ, dung sai hẹp).
 //           Chỉ kiểm tra bé đi đúng điểm bắt đầu, đúng chiều, không lệch khỏi đường quá xa. KHÔNG chấm chữ viết tay (ghi "đã tham gia").
 //   color : tô màu tranh theo vùng. "tu-do": tô màu nào cũng đẹp. "theo-so" (5–6 tuổi): mỗi vùng có số, số ứng với một màu.
-import { vis, esc, sleep, setAuto, svgPoint, saveArtwork, req } from './kit.js';
+import { vis, esc, sleep, setAuto, svgPoint, saveArtwork, req, motNgon } from './kit.js';
 import { GLYPHS } from '../core/strokes.js';
 import { COLOR_PICTURES } from '../ui/art-lab.js';
 
@@ -78,7 +78,8 @@ function doStroke(ctx, act, s, k, ph, tol, ink, uiG) {
     let idx = 0, drawn = [], active = false, resets = 0, lastWarn = 0;
     const startEl = uiG.querySelector('.tr-start');
     ctx.test.mark([startEl]);
-    const finish = () => { active = false; svg.onpointerdown = svg.onpointermove = svg.onpointerup = null; pl.classList.add('ok'); uiG.querySelectorAll('.tr-arrow').forEach(a => a.remove()); res(resets); };
+    let tat = false; // tay tì: chỉ một ngón vẽ, chạm khác bỏ qua (kit.js motNgon)
+    const finish = () => { active = false; tat = true; pl.classList.add('ok'); uiG.querySelectorAll('.tr-arrow').forEach(a => a.remove()); res(resets); };
     const reset = why => { resets++; drawn = []; idx = 0; active = false; pl.setAttribute('points', ''); if (Date.now() - lastWarn > 2500) { lastWarn = Date.now(); voice.say(['__boing', why === 'start' ? (act.start_here || 'Bé bắt đầu từ chấm xanh số ' + (k + 1) + ' nhé.') : (act.redo || 'Mình tô lại nét này nhé, đi theo đường chấm.')]); } };
     const feed = (x, y) => {
       const p = [x, y];
@@ -89,11 +90,17 @@ function doStroke(ctx, act, s, k, ph, tol, ink, uiG) {
       drawn.push(p); pl.setAttribute('points', drawn.map(q => q.join(',')).join(' '));
       if (idx >= pts.length - 1) finish();
     };
-    svg.onpointerdown = e => { if (voice.busy) return; e.preventDefault(); const q = svgPoint(svg, e.clientX, e.clientY);
-      if (s.dot) { if (dist([q.x, q.y], pts[0]) <= tol) { drawn = [[q.x, q.y], [q.x + .1, q.y + .1]]; pl.setAttribute('points', drawn.map(p => p.join(',')).join(' ')); return finish(); } return reset('start'); }
-      if (dist([q.x, q.y], pts[0]) > tol * 1.4) return reset('start'); active = true; svg.setPointerCapture?.(e.pointerId); drawn = []; idx = 0; feed(q.x, q.y); };
-    svg.onpointermove = e => { if (!active) return; const q = svgPoint(svg, e.clientX, e.clientY); feed(q.x, q.y); };
-    svg.onpointerup = () => { if (!active) return; active = false; if (idx < pts.length - 1) reset('off'); };
+    motNgon(svg, {
+      isBusy: () => voice.busy || tat || svg.__net !== pl,
+      onStart: (cx, cy) => { const q = svgPoint(svg, cx, cy);
+        if (s.dot) { if (dist([q.x, q.y], pts[0]) <= tol) { drawn = [[q.x, q.y], [q.x + .1, q.y + .1]]; pl.setAttribute('points', drawn.map(p => p.join(',')).join(' ')); finish(); return false; } reset('start'); return false; }
+        if (dist([q.x, q.y], pts[0]) > tol * 1.4) { reset('start'); return false; } active = true; drawn = []; idx = 0; feed(q.x, q.y); },
+      onMove: (cx, cy) => { if (!active) return; const q = svgPoint(svg, cx, cy); feed(q.x, q.y); },
+      onEnd: () => { if (!active) return; active = false; if (idx < pts.length - 1) reset('off'); },
+      // nét bị hủy vì chuyển sang ngón khác hay trình duyệt hủy chạm: xóa im lặng, không báo sai
+      onCancel: () => { if (tat) return; active = false; drawn = []; idx = 0; pl.setAttribute('points', ''); },
+    });
+    svg.__net = pl;
     // Phòng mẫu: tô đúng theo đường (dùng chính dữ liệu nét) hoặc bắt đầu sai chỗ
     setAuto(ctx, async () => { active = true; drawn = []; idx = 0; for (let i = 0; i < pts.length && active; i += 2) { feed(pts[i][0] + .8, pts[i][1] - .8); await sleep(ctx, 12); } if (active) feed(...pts.at(-1)); },
       () => reset('start'));
@@ -117,7 +124,12 @@ function color(ctx, act) {
       if (byNum && pal[i].n !== n) { wrong++; ui.shake(box.querySelector(`[data-i="${i}"]`)); const want = pal.find(p => p.n === n); voice.say(['__boing', (act.wrong_color || 'Vùng số {n} tô màu {c} nhé.').replace('{n}', n).replace('{c}', want?.name || '')]); return; }
       r.style.fill = pal[i].c; r.classList.add('done'); filled.set(r.dataset.r, pal[i].name);
     };
-    svg.addEventListener('click', e => { const r = e.target.closest('.cl-r'); if (!r || voice.busy) return; paint(r, cur); });
+    // Tay tì (tam 27/11 22:57): chạm bằng một ngón mới tô; lòng bàn tay tì lên tranh không tô; đang tì tay ngón khác vẫn tô được (kit.js motNgon)
+    let vungCham = null;
+    motNgon(svg, { isBusy: () => voice.busy,
+      onStart: (cx, cy) => { vungCham = document.elementFromPoint(cx, cy)?.closest?.('.cl-r') || null; },
+      onEnd: (cx, cy, e, moved) => { const r = vungCham; vungCham = null; if (r && moved < 24 && !voice.busy) paint(r, cur); },
+      onCancel: () => { vungCham = null; } });
     const doneBtn = box.querySelector('.cl-done');
     const need = act.min_regions || Math.ceil(P.regions.length * .5);
     doneBtn.onclick = () => {

@@ -9,6 +9,7 @@ import { createRequire } from 'node:module';
 import { serve } from '../serve.mjs';
 import { doToGiua, danhGia } from '../do-to-giua.mjs';
 import { kiemLoiCu, kiemGio, dichCaiDat, dichLoi } from '../kiem-loi-cu.mjs';
+import { chayTayTi } from '../kiem-tay-ti.mjs';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 const port = 5900 + Math.floor(Math.random() * 90); const srv = await serve(port);
@@ -128,6 +129,11 @@ for (const dev of ['ipad', 'phone']) {
   const ok = !!want && got === want; if (!ok) { fail++; errs.push(`Nửa kia của hình: chọn đúng mà ô trống không hiện đáp án (cần ${want}, thấy ${got})`); }
   rows.push({ id: 'MT-05', age: '4-5', dev, checks: { dapAnBayVao: ok }, errs, ok }); console.log(`${ok ? 'ĐẠT ' : 'LỖI '} MT-05 ${dev} đáp án bay vào ô${errs.length ? '\n    ' + errs.join('\n    ') : ''}`);
   await page.close();
+}
+// ---- Tay tì khi vẽ (tam 27/11 22:57): cảm ứng nhiều điểm thật, lòng bàn tay tì trong/ngoài vùng vẽ không làm đứt nét, không tô, không bấm nút
+for (const t of await chayTayTi({ base: BASE, samples: D.samples, chromium, only })) {
+  const ok = !t.errs.length; if (!ok) fail++;
+  rows.push({ id: t.id, age: '-', dev: t.dev, checks: { tayTi: ok }, errs: t.errs, ok }); console.log(`${ok ? 'ĐẠT ' : 'LỖI '} ${t.id} ${t.dev} tay tì khi vẽ${ok ? '' : '\n    ' + t.errs.join('\n    ')}`);
 }
 await b.close(); srv.close();
 writeFileSync(new URL('ket-qua.json', OUT), JSON.stringify({ at: new Date().toISOString(), total: rows.length, fail, rows }, null, 1));
