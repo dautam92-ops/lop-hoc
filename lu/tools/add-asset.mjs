@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REG = path.join(ROOT, 'registry/assets.json');
 const A = path.join(ROOT, 'assets');
-const PREFIX = { lu: 'LU', 'thuong-hieu': 'TH', 'ban-do': 'BD', 'boi-canh': 'BC', 'nhan-vat-phu': 'NV', 'do-vat': 'DV', 'bieu-tuong': 'BT', 'giao-dien': 'GD' };
+const PREFIX = { mono: 'MN', lu: 'LU', 'thuong-hieu': 'TH', 'ban-do': 'BD', 'boi-canh': 'BC', 'nhan-vat-phu': 'NV', 'do-vat': 'DV', 'bieu-tuong': 'BT', 'giao-dien': 'GD' };
 const NGUON = { 'chatgpt-image': 'ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán', comfyui: 'ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình', 'tu-ve': 'Tự vẽ / tự làm (SVG, CSS)', khac: 'Nguồn khác – phải ghi bằng chứng giấy phép' };
 const EXT = new Set(['.png', '.jpg', '.jpeg', '.webp', '.svg', '.json', '.mp3']);
 

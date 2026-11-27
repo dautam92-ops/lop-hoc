@@ -20,7 +20,7 @@ import { setSceneAssets } from './ui/scenes.js';
 import { setVisAssets } from './ui/art.js';
 // Ảnh Lu chính thức từ Character Registry (như app của bé), không dùng hình vẽ tạm
 const chars = await (await fetch('registry/characters.json')).json(); const LU = {};
-for (const g of ['bieu_cam', 'tu_the', 'goc_nhin']) for (const [k, v] of Object.entries(chars.LU[g] || {})) LU[k] ??= v.webp;
+for (const g of ['bieu_cam', 'tu_the', 'goc_nhin']) for (const [k, v] of Object.entries(chars[chars.nhan_vat_chinh || 'LU'][g] || {})) LU[k] ??= v.webp;
 setLuArt(expr => `<img class="lu" src="${LU[expr] || LU.vui}" alt="" draggable="false">`);
 // Ảnh đã duyệt trong Asset Registry: bối cảnh theo slot (mã manifest), đồ vật theo asset_id (S08-R08)
 const areg = await (await fetch('registry/assets.json')).json(); const ok = areg.assets.filter(a => a.trang_thai === 'da_duyet');
