@@ -3060,6 +3060,29 @@
    "dung_o": [],
    "slot": "art:ga-con-chay",
    "ngay_duyet": "2026-11-27"
+  },
+  {
+   "asset_id": "DV-0046",
+   "version": 1,
+   "path": "assets/do-vat/DV-0046_ga-con-uong-nuoc_v01.webp",
+   "mo_ta": "Gà con uống nước",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 769,
+    "h": 543
+   },
+   "bytes": 41968,
+   "sha256": "fe3e02d0d9143ba1a1a8a07e140d42f977826adc29e5e86051df6e56ac5cbcec",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "ga-uong.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "Qwen-Image Q4 GGUF + Lightning 8 bước (ComfyUI local), seed 23; tách nền theo màu trắng; tam chọn 27/11 10:47 làm đáp án thứ 4",
+   "dung_o": [],
+   "slot": "art:ga-con-uong-nuoc",
+   "ngay_duyet": "2026-11-27"
   }
  ]
 }

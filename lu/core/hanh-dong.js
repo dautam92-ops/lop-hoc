@@ -10,6 +10,7 @@ export const HANH_DONG = {
   'art:ga-con-mo-dau': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'mổ hạt đậu dưới đất' },
   'art:ga-con-ngu': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'nằm ngủ' },
   'art:ga-con-chay': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'chạy' },
+  'art:ga-con-uong-nuoc': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'uống nước' },
 };
 
 export const HOI_HANH_DONG = /(^|[^\p{L}])(làm gì|đang làm|sẽ làm|làm sao|làm thế nào)([^\p{L}]|$)/iu;
