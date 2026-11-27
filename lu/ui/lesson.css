@@ -190,3 +190,8 @@ body { background: var(--lu-cream); }
 /* Có thẻ dặn bố mẹ: thu nhỏ Mono để màn bắt đầu không tràn trên điện thoại */
 .lu-lesson .scene.start:has(.hcc-dan) { gap: 10px; }
 .lu-lesson .scene.start:has(.hcc-dan) img.lu { width: min(150px, 34vw, 18dvh); }
+.lu-lesson .scene.hcc-moi .cap { display: none; }
+.lu-lesson .hcc-goi-y { background: rgba(255, 251, 240, .94); border-radius: var(--r-md, 14px); padding: 8px 14px; }
+.lu-lesson .finish:has(.hcc-cuoi) img.lu { width: min(160px, 36vw, 20dvh); }
+.lu-lesson .finish:has(.hcc-cuoi) { gap: 10px; }
+@media (max-width: 560px) { .lu-lesson .hcc-cuoi > img.lu, .lu-lesson .hcc-cuoi > svg.lu { display: none; } .lu-lesson .hcc-cuoi { padding: 10px 14px; } }
