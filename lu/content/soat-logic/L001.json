@@ -1,7 +1,7 @@
 {
  "doi_tuong": "L001",
  "tep": "content/drafts/L001.json",
- "ma_bam": "20d6fdd91db764da29333c96b0bacc7daf2d0c04",
+ "ma_bam": "2c91171b2d7b536c1d78beaf471721042a20296a",
  "ngay": "2026-11-27",
  "nguoi_soat": "agent soát logic",
  "quy_tac_da_soat": [
@@ -225,11 +225,21 @@
    "sua": "Thêm \"co\" như L002-B03 để chỉnh cỡ theo đời thật: B12 \"co\": {\"art:hat-dau\": 0.55, \"art:soi\": 0.7} (lá giữ 1); B13 \"co\": {\"art:hat-dau\": 0.5, \"art:hoa\": 1.15}. Ô chạm vẫn giữ 26% nên bé vẫn chạm dễ. Xem lại trên máy cho hạt vẫn nhận ra được.",
    "trang_thai": "da_sua",
    "kiem_lai": "Đã sửa: B12 \"co\": {\"art:hat-dau\": 0.6, \"art:soi\": 0.75}, B13 \"co\": {\"art:hat-dau\": 0.6, \"art:hoa\": 1.15}. Xem ảnh chụp reports/draft-L001/27-phone.png, 28-phone.png, 27-ipad.png, 28-ipad.png: hạt đậu nay nhỏ hơn rõ so với chiếc lá, nhỏ hơn viên sỏi một chút, không còn to hơn mầm kèm ụ đất; hạt vẫn nhận ra được (hình hạt đậu vàng nâu, rõ trên nền đất và cỏ), ô chạm không đổi. Máy soát 0 lỗi."
+  },
+  {
+   "ma": "LG20",
+   "o": "L001 intro câu 1",
+   "cau": "Chào bé! Hôm nay bé là Mono.",
+   "mo_ta": "Câu mở đầu cho bé đóng vai Mono, nhưng cả bài nói với bé như một người khác Mono: \"Bé nhớ giúp Mono nhé\" (màn Bà dặn Mono điều gì), \"Bé cùng Mono khám phá\" (checkin), \"Bé nghe cùng Mono\", \"Nói theo Mono\", \"Mono phục bé luôn\". Bé vừa là Mono vừa giúp Mono: mâu thuẫn vai (cùng lỗi đã ghi ở L002).",
+   "sua": "Đổi câu mở đầu thành \"Chào bé! Mình là Mono.\"",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: intro câu 1 là \"Chào bé! Mình là Mono.\" Mono tự giới thiệu, bé là bạn đồng hành; khớp mọi câu \"bé giúp Mono\", \"bé cùng Mono\" trong bài. Không còn chỗ nào nói bé là Mono. Máy soát 0 lỗi."
   }
  ],
  "ghi_chu_cap_nhat": [
   "27/11/2026: chỉ đổi tên nhân vật Lu thành Mono theo tam, không đổi nội dung, đáp án hay logic; giữ kết quả soát.",
   "27/11/2026 soát lại toàn bài sau các thay đổi: Lu đổi tên Mono (không còn chỗ gọi Lu, tên Mono thống nhất mọi màn, LG20 đạt); B12/B13 dùng layout roi trên cảnh luống đất (lời dẫn \"Hạt đậu rơi vào chỗ có sỏi và lá\" khớp cảnh; vật nằm trên đất, không lơ lửng; còn lỗi cỡ vật LG09 ghi ở trên); lời \"no\" có câu động viên mở đầu (đã đối chiếu từng câu: phần gợi ý sau câu động viên vẫn đúng sự thật, đúng hướng, LG19 đạt); B24 dùng ảnh hành động riêng DV-0047..0050 (xem lỗi LG05 B24). Các lỗi cũ da_sua giữ nguyên lịch sử, chữ \"Lu\" trong đó là tên cũ.",
-  "27/11/2026 soát lại sau khi sửa LG09 (thêm co ở B12, B13): ma_bam mới, 0 lỗi mở."
+  "27/11/2026 soát lại sau khi sửa LG09 (thêm co ở B12, B13): ma_bam mới, 0 lỗi mở.",
+  "27/11/2026 soát lại sau khi tam đổi câu mở đầu thành \"Chào bé! Mình là Mono.\": ghi LG20 da_sua, ma_bam mới, 0 lỗi mở."
  ]
 }

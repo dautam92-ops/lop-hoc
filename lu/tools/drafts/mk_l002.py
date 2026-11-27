@@ -173,7 +173,7 @@ pkg.update({
                {"skill_id": "EQ.CX.02", "name": "Thở cho bình tĩnh (tiếp xúc)", "cls": "GT"}, {"skill_id": "EN.EN.04", "name": "One, two, three (ôn)", "cls": "G"},
                {"skill_id": "KP.VD.01", "name": "Vận động theo hướng dẫn", "cls": "T"}, {"skill_id": "KP.ST.D01", "name": "Tưởng tượng, trang trí (tiếp xúc)", "cls": "T"},
                {"skill_id": "KS.SX.01", "name": "Cất đồ đúng chỗ (tiếp xúc)", "cls": "T"}, {"skill_id": "KS.NN.01", "name": "Giữ góc chơi gọn gàng (tiếp xúc)", "cls": "T"}],
-    "intro": ["Chào bé! Hôm nay bé là Mono.", "Sáng nay gió thổi mạnh quá.", "Túi hạt đậu của Mono bị đổ, hạt lăn khắp vườn.", "Mình cùng đi tìm hạt đậu nào!"],
+    "intro": ["Chào bé! Mình là Mono.", "Sáng nay gió thổi mạnh quá.", "Túi hạt đậu của Mono bị đổ, hạt lăn khắp vườn.", "Mình cùng đi tìm hạt đậu nào!"],
     "hub": {"q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Mono gợi ý.", "again": "Bé chọn bài tiếp theo nhé.",
             "backdrop": {"id": "L001-BG-03", "kind": "vuon"}},
     "stages": S,

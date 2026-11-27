@@ -1,7 +1,7 @@
 {
  "doi_tuong": "L002",
  "tep": "content/drafts/L002.json",
- "ma_bam": "c5bc12c7b159c859dc1291455ce237750af877a0",
+ "ma_bam": "e62a29578a234be77389241a11c2d95e9d1b1c89",
  "ngay": "2026-11-27",
  "nguoi_soat": "agent soát logic",
  "quy_tac_da_soat": [
@@ -151,13 +151,15 @@
    "cau": "Chào bé! Hôm nay bé là Mono.",
    "mo_ta": "Câu mở đầu nói bé chính là Mono, nhưng ngay sau và suốt bài Mono là một nhân vật khác bé: \"Túi hạt đậu của Mono bị đổ\", \"Bé tìm giúp Mono nhé\", \"Bé nghe Mono kể nhé\", \"Bé tìm thấy hết hạt cho Mono. Mono thấy thế nào?\", \"Thở cùng Mono\", \"Nói theo Mono\". Bé vừa là Mono vừa giúp Mono, mâu thuẫn vai trong bài; trẻ 4–6 tuổi không biết mình là ai trong chuyện. (Lỗi có từ bản \"bé là Lu\", lần soát trước chưa ghi; L001 cũng có câu này.)",
    "sua": "Đổi câu đầu intro thành \"Chào bé! Mình là Mono.\" (Mono tự giới thiệu, bé là người giúp), giữ các câu sau. Sửa tương tự ở L001.",
-   "trang_thai": "mo",
-   "ghi_chu": "chờ tam quyết: giữ (bé hóa thân) hay đổi"
+   "trang_thai": "da_sua",
+   "ghi_chu": "tam đã quyết: đổi câu mở đầu.",
+   "kiem_lai": "Đã sửa: intro thành \"Chào bé! Mình là Mono.\" Mono tự giới thiệu, bé là người giúp; khớp \"Túi hạt đậu của Mono bị đổ\", \"Bé tìm giúp Mono\", \"Thở cùng Mono\"... Không còn mâu thuẫn vai."
   }
  ],
  "ghi_chu_cap_nhat": [
   "27/11/2026: chỉ đổi tên nhân vật Lu thành Mono theo tam, không đổi nội dung, đáp án hay logic; giữ kết quả soát.",
   "27/11/2026 (soát lại, mã băm mới): xét đổi tên Lu thành Mono, bài tìm vật layout roi (xoay, cỡ theo tỉ lệ), câu động viên mở đầu lời no. B03 xoay 0 cho con vật (đứng đúng trọng lực), cỡ mèo 1.35, trứng 0.7, đúng tương quan. Cảnh BC-0004 cắt bỏ phần trời nên vật rải rác đều nằm trên đất/cỏ. Các câu động viên (\"Không sao đâu!\", \"Bé thử lại nào!\"...) không đổi nghĩa gợi ý, không mâu thuẫn đáp án (LG19). Lỗi cũ vẫn da_sua. Thêm 2 lỗi mở: LG09 B01, LG20 intro.",
-  "27/11/2026 (soát lại lần 2, mã băm mới): chỉ đổi \"co\" của B01; máy soát 0 lỗi, 1 cảnh báo (như trên). LG09 B01 sang da_sua. LG20 intro giữ mo, chờ tam quyết."
+  "27/11/2026 (soát lại lần 2, mã băm mới): chỉ đổi \"co\" của B01; máy soát 0 lỗi, 1 cảnh báo (như trên). LG09 B01 sang da_sua. LG20 intro giữ mo, chờ tam quyết.",
+  "27/11/2026 (soát lại lần 3, mã băm mới): intro đổi thành \"Chào bé! Mình là Mono.\" theo tam; máy soát 0 lỗi, 1 cảnh báo (B24, đã xét). LG20 sang da_sua. 0 lỗi mở."
  ]
 }

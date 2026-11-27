@@ -1,6 +1,335 @@
 {
  "format": "lu-voice-todo",
  "lesson": "L002",
- "at": "2026-11-27T05:00:16.562Z",
- "lines": []
+ "at": "2026-11-27T09:19:54.563Z",
+ "lines": [
+  {
+   "text": "Chào bé! Mình là Mono.",
+   "lang": "vi"
+  },
+  {
+   "text": "Túi hạt đậu của Mono bị đổ, hạt lăn khắp vườn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Mono gợi ý.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ôi, bé tinh mắt quá! Hạt đậu trốn kỹ mà bé vẫn tìm ra!",
+   "lang": "vi"
+  },
+  {
+   "text": "Không bạn nào trốn được bé! Bé giỏi quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé ghép số giỏi quá! Đếm đúng rồi mới ghép, bé nhớ nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm giỏi quá! Mỗi bạn một tiếng đếm, đúng rồi đấy!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe chuyện giỏi quá! Bé nhớ hết hạt đậu đi đâu rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ giỏi quá! Mình chơi thêm lượt nữa nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé suy nghĩ giỏi quá! Bé nhìn ra ngay thứ nào khác nhóm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đoán giỏi quá! Bé hiểu hạt đậu cần gì để lớn rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Cảm ơn bé đã hiểu Mono! Khi bạn buồn, bé hỏi thăm bạn như vậy nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hoan hô bé! Bé nhớ tiếng Anh giỏi quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Ôi, vườn đậu của bé đẹp quá! Bé tưởng tượng hay lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Từ nay chơi xong, bé nhớ cất đồ gọn gàng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Mono nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mỗi cọc số cần đúng số hạt. Bé giúp Mono nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con chạy ra sân. Bé đếm cùng Mono nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe Mono kể nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono có mấy câu đố. Bé tìm thứ khác nhóm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng nghĩ về cảm xúc của Mono nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao đâu! Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Đó là cái giỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cố lên bé ơi! Bé nhìn kỹ: bóng có quai cầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hoan hô bé! Đó là chiếc lá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cố lên bé ơi! Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm được mà! Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Bé tìm ra hết các chú gà con rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng xem lại nào! Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Đó là con bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao đâu! Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cố lên bé ơi! Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hoan hô! Hạt nào cũng về đúng cọc rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Cố lên bé ơi! Bé đếm số quả táo trước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Quả táo nào cũng về đúng cọc!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Ô này có một hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm được mà! Bé đếm từng hạt xem.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Ô này có hai hạt đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng xem lại nào! Bé đếm từng hạt xem.",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao đâu! Bé chạm đếm lại từng chú nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cố lên bé ơi! Bé đếm số trứng trong từng ổ xem.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Hạt lăn ra khỏi túi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cố lên bé ơi! Bé nghe lại nhé: hạt lăn ra khỏi túi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hoan hô bé! Hạt lăn tới chỗ gà con.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm được mà! Hạt lăn tới chỗ bạn gà con đấy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trí nhớ của bé tuyệt vời quá! Mono phục bé luôn!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Bốn đôi thẻ mà bé tìm ra hết!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ hết chỗ rồi! Bé giỏi quá đi thôi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng xem lại nào! Gà, mèo, cá đều là con vật. Còn thứ nào khác?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Viên sỏi không ăn được.",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao đâu! Táo, cà rốt, rau đều ăn được. Bé tìm thứ khác nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Con ốc không bay được.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Chim, ong, bướm đều bay được. Còn bạn nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Hạt cần nước để nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cố lên bé ơi! Hạt cần nước. Bé tìm giọt nước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Gà con mổ hạt để ăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm được mà! Gà con thích ăn hạt đấy.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hoan hô bé! Hạt nhú ra mầm đậu trước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng xem lại nào! Hạt trong đất ẩm sẽ nảy mầm trước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt đậu lăn mất. Mono có thể thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Cảm ơn bé đã nghĩ cùng Mono.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono thấy buồn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono thấy lo lắng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono thấy bình thường.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono bình tĩnh đi tìm từng hạt.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tìm thấy hết hạt cho Mono. Mono thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hiểu Mono quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono thấy vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono vui vì có bé giúp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono thấy ngạc nhiên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cảm ơn bé, Mono thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé muốn thì nói theo Mono nhé. Không nói cũng không sao.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Mono?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono ơi, cho mình uống nước nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono ơi, giữ mình cẩn thận nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono sẽ giữ hạt thật cẩn thận.",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao đâu! Hạt nhỏ, cất vào túi là gọn nhất.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tưới xong rồi. Mono cất bình tưới ở đâu?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Bình tưới để cạnh vòi nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bình tưới để gần vòi nước cho dễ lấy.",
+   "lang": "vi"
+  }
+ ]
 }
