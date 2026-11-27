@@ -110,7 +110,7 @@ export async function taiDuLieu() {
   let congs = (congRaw && (congRaw.cong || congRaw.cổng || congRaw.gates || (Array.isArray(congRaw) ? congRaw : null))) || CONG_MAC_DINH;
   congs = congs.map(c => ({ id: c.id, ten: c.ten || c.name || c.id, hinh: c.hinh || c.icon || '', hinh_tam: c.hinh_tam, trang_thai: c.trang_thai || c.status || 'sap-mo' }));
   const voice = createVoice({ clips: audio.clips, base: 'content/audio/', fast, tts: fast ? null : makeTts() });
-  const luKid = chars?.LU?.bieu_cam?.vui?.webp || cfg.lu.vay;
+  const luKid = chars?.[chars?.nhan_vat_chinh || 'LU']?.bieu_cam?.vui?.webp || cfg.lu.vay;
   // Gói bài có sẵn chưa (bản nháp hoặc đã xuất bản)
   const goi = async id => { const t = ds.goi[id]; if (!t) return null; const x = await jOr(`content/${t}/${id}.json`, null); return x && { ...x, __nhap: t === 'drafts' }; };
   const linkBuoi = (b, nhap = true) => `player.html?${nhap ? 'draft' : 'lesson'}=${b.id}&ns=${encodeURIComponent(ns)}&nha=1`;

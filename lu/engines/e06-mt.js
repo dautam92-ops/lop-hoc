@@ -90,7 +90,7 @@ function copy(ctx, act, R, first) {
     const grid = (cls, fill_) => `<div class="mt-grid ${cls}" style="--n:${act.size}">${[...Array(N).keys()].map(c => fill_(c)).join('')}</div>`;
     const model = grid('mt-model', c => `<span class="mt-c${want.has(c) ? ' on' : ''}" style="${want.has(c) ? `--k:${act.colors[want.get(c)]}` : ''}"></span>`);
     const mine = grid('mt-mine', c => `<button class="mt-c" data-c="${c}" aria-label="ô ${c + 1}"></button>`);
-    ui.scene(act.title, `<div class="mt-copy"><div class="mt-side"><b>Mẫu của Lu</b>${model}</div><div class="mt-side"><b>Bé xếp</b>${mine}</div></div>`);
+    ui.scene(act.title, `<div class="mt-copy"><div class="mt-side"><b>Mẫu của Mono</b>${model}</div><div class="mt-side"><b>Bé xếp</b>${mine}</div></div>`);
     const G = ui.stage.querySelector('.mt-mine'); const cell = c => G.querySelector(`.mt-c[data-c="${c}"]`);
     const multi = act.colors.length > 1;
     const box = multi ? ui.answers(act.pick || 'Bé chọn màu rồi chạm ô', act.colors.map((c, i) => `<button class="opt mt-pal${i === 0 ? ' sel' : ''}" data-k="${i}" style="--k:${c}" aria-label="${esc(act.color_names[i])}"><i></i></button>`).join('')) : null;

@@ -2,7 +2,7 @@
 // Bé chọn Vui: Lu nói CHECKIN_VUI. Chọn mặt khác: Lu nói CHECKIN_KHAC. Áp dụng cho mọi buổi.
 export const CHECKIN_Q = 'Hôm nay bé thấy thế nào?';
 export const CHECKIN_VUI = 'Tuyệt quá, chúng mình cùng nhau khám phá nhé.';
-export const CHECKIN_KHAC = 'Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé.';
+export const CHECKIN_KHAC = 'Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé.';
 export const checkinReply = o => (o.e === 'face:vui' ? CHECKIN_VUI : CHECKIN_KHAC);
 export function kiemCheckin(c) {
   if (!c) return [];

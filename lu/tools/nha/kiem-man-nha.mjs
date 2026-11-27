@@ -21,7 +21,7 @@ const dai = Object.entries(cfg.loi).filter(([, s]) => tu(s) > 10);
 check('Lời Lu ngắn, mỗi câu tối đa 10 từ (quy tắc 34)', !dai.length, dai.map(([k, s]) => `${k}: ${tu(s)} từ`).join('; '));
 const assets = (await rd('registry/assets.json')).assets.filter(a => a.trang_thai === 'da_duyet');
 const duyet = new Set(assets.map(a => a.path));
-const lu = await rd('registry/characters.json'); for (const g of Object.values(lu.LU)) if (g && typeof g === 'object') for (const v of Object.values(g)) if (v?.webp) duyet.add(v.webp);
+const lu = await rd('registry/characters.json'); for (const g of Object.values(lu[lu.nhan_vat_chinh || 'LU'])) if (g && typeof g === 'object') for (const v of Object.values(g)) if (v?.webp) duyet.add(v.webp);
 const anhCfg = [cfg.nen_mac_dinh, ...cfg.chu_de.map(c => c.nen), ...Object.values(cfg.lu)];
 const chuaDuyet = anhCfg.filter(a => !duyet.has(a));
 check('Ảnh nền và ảnh Lu trên màn nhà là ảnh vẽ tay đã duyệt', !chuaDuyet.length, chuaDuyet.join(', '));

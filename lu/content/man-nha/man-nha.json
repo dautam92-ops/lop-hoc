@@ -1,7 +1,7 @@
 {
   "format": "lu-man-nha",
   "version": 1,
-  "ghi_chu": "Màn nhà mới (tam duyệt 26/11/2026 20:51): bỏ bản đồ, màn nhà = buổi hôm nay + 12 cổng. Lời Lu mỗi câu tối đa 10 từ (quy tắc 34). Ảnh nền chương chưa vẽ thì dùng ảnh đã duyệt gần nhất, xem anh-can-ve.json.",
+  "ghi_chu": "Màn nhà mới (tam duyệt 26/11/2026 20:51): bỏ bản đồ, màn nhà = buổi hôm nay + 12 cổng. Lời Mono mỗi câu tối đa 10 từ (quy tắc 34). Ảnh nền chương chưa vẽ thì dùng ảnh đã duyệt gần nhất, xem anh-can-ve.json.",
   "ns": "lu-thu-online",
   "nen_mac_dinh": "assets/boi-canh/BC-0009_cay-dau-leo-cao-ben-doi_v01.webp",
   "chu_de": [
@@ -11,10 +11,10 @@
     }
   ],
   "lu": {
-    "chi": "assets/lu/xuat-ban/LU-0049_lu-tu-the-chi-tay-512_v01.webp",
-    "khen": "assets/lu/xuat-ban/LU-0063_lu-tu-the-khen-512_v01.webp",
-    "vay": "assets/lu/xuat-ban/LU-0039_lu-tu-the-vay-tay-512_v01.webp",
-    "tuoi": "assets/lu/xuat-ban/LU-0063_lu-tu-the-khen-512_v01.webp"
+    "chi": "assets/mono/xuat-ban/MN-0050_mono-tu-the-chi-tay-512_v01.webp",
+    "khen": "assets/mono/xuat-ban/MN-0064_mono-tu-the-khen-512_v01.webp",
+    "vay": "assets/mono/xuat-ban/MN-0040_mono-tu-the-vay-tay-512_v01.webp",
+    "tuoi": "assets/mono/xuat-ban/MN-0064_mono-tu-the-khen-512_v01.webp"
   },
   "loi": {
     "hoc_tiep": "Bé học tiếp nào!",

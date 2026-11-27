@@ -12,17 +12,17 @@
    {
     "e": "face:binh-tinh",
     "t": "Bình thường",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:buon",
     "t": "Buồn",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:so",
     "t": "Lo lắng",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    }
   ]
  },
@@ -123,13 +123,13 @@
   }
  ],
  "intro": [
-  "Chào bé! Hôm nay bé là Lu.",
+  "Chào bé! Hôm nay bé là Mono.",
   "Sáng nay gió thổi mạnh quá.",
-  "Túi hạt đậu của Lu bị đổ, hạt lăn khắp vườn.",
+  "Túi hạt đậu của Mono bị đổ, hạt lăn khắp vườn.",
   "Mình cùng đi tìm hạt đậu nào!"
  ],
  "hub": {
-  "q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Lu gợi ý.",
+  "q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Mono gợi ý.",
   "again": "Bé chọn bài tiếp theo nhé.",
   "backdrop": {
    "id": "L001-BG-03",
@@ -149,7 +149,7 @@
     "kind": "vuon"
    },
    "intro": [
-    "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Lu nhé."
+    "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Mono nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -369,7 +369,7 @@
     "kind": "luong"
    },
    "intro": [
-    "Mỗi cọc số cần đúng số hạt. Bé giúp Lu nhé."
+    "Mỗi cọc số cần đúng số hạt. Bé giúp Mono nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -512,7 +512,7 @@
     "kind": "san"
    },
    "intro": [
-    "Gà con chạy ra sân. Bé đếm cùng Lu nhé."
+    "Gà con chạy ra sân. Bé đếm cùng Mono nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -582,7 +582,7 @@
     "kind": "hien"
    },
    "intro": [
-    "Bé nghe Lu kể nhé."
+    "Bé nghe Mono kể nhé."
    ],
    "lu": "vui-mung",
    "activities": [
@@ -696,7 +696,7 @@
       "art:ga"
      ],
      "pairs": 3,
-     "done": "Trí nhớ của bé tuyệt vời quá! Lu phục bé luôn!",
+     "done": "Trí nhớ của bé tuyệt vời quá! Mono phục bé luôn!",
      "evidence": "tiep-xuc"
     },
     {
@@ -761,7 +761,7 @@
     "kind": "phong"
    },
    "intro": [
-    "Lu có mấy câu đố. Bé tìm thứ khác nhóm nhé."
+    "Mono có mấy câu đố. Bé tìm thứ khác nhóm nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -954,7 +954,7 @@
    "done": "Bé đoán giỏi quá! Bé hiểu hạt đậu cần gì để lớn rồi!"
   },
   {
-   "title": "Lu thấy thế nào?",
+   "title": "Mono thấy thế nào?",
    "icon": "face:vui",
    "nhom": [
     "EQ"
@@ -965,7 +965,7 @@
     "kind": "vuon"
    },
    "intro": [
-    "Mình cùng nghĩ về cảm xúc của Lu nhé."
+    "Mình cùng nghĩ về cảm xúc của Mono nhé."
    ],
    "lu": "suy-nghi",
    "activities": [
@@ -974,45 +974,45 @@
      "engine": "E01",
      "mode": "items",
      "skill_id": "EQ.CX.01",
-     "title": "Gương mặt của Lu",
+     "title": "Gương mặt của Mono",
      "items": [
       {
-       "q": "Hạt đậu lăn mất. Lu có thể thấy thế nào?",
+       "q": "Hạt đậu lăn mất. Mono có thể thấy thế nào?",
        "any": true,
        "style": "face",
-       "ok": "Cảm ơn bé đã nghĩ cùng Lu.",
+       "ok": "Cảm ơn bé đã nghĩ cùng Mono.",
        "opts": [
         {
          "e": "face:buon",
-         "say": "Lu thấy buồn.",
+         "say": "Mono thấy buồn.",
          "reply": "Ừ, mất hạt thì buồn. Mình cùng đi tìm nhé."
         },
         {
          "e": "face:so",
-         "say": "Lu thấy lo lắng.",
+         "say": "Mono thấy lo lắng.",
          "reply": "Lo lắng là khi mình sợ không tìm thấy."
         },
         {
          "e": "face:binh-tinh",
-         "say": "Lu thấy bình thường.",
-         "reply": "Lu bình tĩnh đi tìm từng hạt."
+         "say": "Mono thấy bình thường.",
+         "reply": "Mono bình tĩnh đi tìm từng hạt."
         }
        ]
       },
       {
-       "q": "Bé tìm thấy hết hạt cho Lu. Lu thấy thế nào?",
+       "q": "Bé tìm thấy hết hạt cho Mono. Mono thấy thế nào?",
        "any": true,
        "style": "face",
-       "ok": "Bé hiểu Lu quá!",
+       "ok": "Bé hiểu Mono quá!",
        "opts": [
         {
          "e": "face:vui",
-         "say": "Lu thấy vui.",
-         "reply": "Lu vui vì có bé giúp."
+         "say": "Mono thấy vui.",
+         "reply": "Mono vui vì có bé giúp."
         },
         {
          "e": "face:ngac-nhien",
-         "say": "Lu thấy ngạc nhiên.",
+         "say": "Mono thấy ngạc nhiên.",
          "reply": "Ồ, bé tìm nhanh quá!"
         }
        ]
@@ -1031,11 +1031,11 @@
      "mode": "breath",
      "skill_id": "EQ.CX.02",
      "evidence": "tiep-xuc",
-     "title": "Thở cùng Lu",
+     "title": "Thở cùng Mono",
      "times": 2,
      "inn": "Hít vào thật chậm, như ngửi một bông hoa.",
      "out": "Thở ra từ từ, như thổi một ngọn nến.",
-     "done": "Cảm ơn bé, Lu thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé."
+     "done": "Cảm ơn bé, Mono thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé."
     }
    ],
    "thiet_ke": {
@@ -1043,11 +1043,11 @@
     "bai_tap": [
      "Hạt lăn mất",
      "Tìm thấy hạt",
-     "Thở cùng Lu"
+     "Thở cùng Mono"
     ],
     "bang_chung": "Tiếp xúc EQ.CX.01, EQ.CX.02."
    },
-   "done": "Cảm ơn bé đã hiểu Lu! Khi bạn buồn, bé hỏi thăm bạn như vậy nhé."
+   "done": "Cảm ơn bé đã hiểu Mono! Khi bạn buồn, bé hỏi thăm bạn như vậy nhé."
   },
   {
    "title": "One, two, three",
@@ -1099,11 +1099,11 @@
      "mode": "say",
      "skill_id": "EN.EN.04",
      "evidence": "tiep-xuc",
-     "title": "Nói theo Lu",
+     "title": "Nói theo Mono",
      "luSays": "One, two, three!",
      "word": "One, two, three!",
      "intro": [
-      "Bé muốn thì nói theo Lu nhé. Không nói cũng không sao."
+      "Bé muốn thì nói theo Mono nhé. Không nói cũng không sao."
      ]
     }
    ],
@@ -1160,14 +1160,14 @@
      "title": "Nếu hạt đậu biết nói",
      "items": [
       {
-       "q": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Lu?",
+       "q": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Mono?",
        "any": true,
        "style": "face",
        "ok": "Bé tưởng tượng hay quá!",
        "opts": [
         {
          "e": "art:giot-nuoc",
-         "say": "Lu ơi, cho mình uống nước nhé.",
+         "say": "Mono ơi, cho mình uống nước nhé.",
          "reply": "Hạt đậu khát nước rồi."
         },
         {
@@ -1177,8 +1177,8 @@
         },
         {
          "e": "art:ga-con",
-         "say": "Lu ơi, giữ mình cẩn thận nhé.",
-         "reply": "Lu sẽ giữ hạt thật cẩn thận."
+         "say": "Mono ơi, giữ mình cẩn thận nhé.",
+         "reply": "Mono sẽ giữ hạt thật cẩn thận."
         }
        ]
       }
@@ -1270,7 +1270,7 @@
        "style": "face"
       },
       {
-       "q": "Tưới xong rồi. Lu cất bình tưới ở đâu?",
+       "q": "Tưới xong rồi. Mono cất bình tưới ở đâu?",
        "a": 1,
        "ok": "Tuyệt vời! Bình tưới để cạnh vòi nước.",
        "no": "Bé thử lại nào! Bình tưới để gần vòi nước cho dễ lấy.",

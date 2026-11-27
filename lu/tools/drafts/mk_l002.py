@@ -25,7 +25,7 @@ def st(title, icon, nhom, bd, intro, acts, tk, done, lu="vay-tay"):
 
 S = []
 # 1 ─ Trọng tâm: tìm hạt đậu lăn trong vườn (có chấm)
-S.append(st("Hạt đậu lăn đi đâu?", "art:hat-dau*3", ["QS"], ("L001-BG-03", "vuon"), "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Lu nhé.", [
+S.append(st("Hạt đậu lăn đi đâu?", "art:hat-dau*3", ["QS"], ("L001-BG-03", "vuon"), "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Mono nhé.", [
     {"activity_id": aid(), "engine": "E06", "mechanic": "M26", "skill_id": "TD.QS.01", "title": "Hạt đậu trốn trong vườn",
      "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:hat-dau", "name": "hạt đậu"}], "distractors": ["art:la", "art:soi", "art:hoa"],
      "min": 2, "max": 3, "cells": 9, "rounds": 2, "layout": "roi", "bg": "asset:BC-0004", "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.", "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"},
@@ -47,7 +47,7 @@ S.append(st("Ai trốn trong vườn?", "art:ga-con", ["CY"], ("vuon", "vuon"), 
     {"kien_thuc": "Tìm vật giống nhau giữa vật gần giống; nhận ra con vật qua bóng.", "bai_tap": ["Tìm gà con", "Bóng chú mèo", "Bóng con bướm"],
      "bang_chung": "TD.QS.01 có chấm, mức ít gợi ý."}, "Không bạn nào trốn được bé! Bé giỏi quá!"))
 # 3 ─ Toán: số 1, 2, 3 — tương ứng một đối một, hiểu số lượng
-S.append(st("Hạt về đúng cọc số", "art:coc:3", ["TO"], ("L001-BG-04", "luong"), "Mỗi cọc số cần đúng số hạt. Bé giúp Lu nhé.", [
+S.append(st("Hạt về đúng cọc số", "art:coc:3", ["TO"], ("L001-BG-04", "luong"), "Mỗi cọc số cần đúng số hạt. Bé giúp Mono nhé.", [
     {"activity_id": aid(), "engine": "E02", "mechanic": "M03", "target_style": "pair", "skill_id": "TO.DEM.01", "title": "Hạt về đúng cọc",
      "intro": [], "label": "Kéo hạt về đúng cọc", "sets": [[{"piece": "art:hat-dau*2", "target": "art:coc:2"}, {"piece": "art:hat-dau*3", "target": "art:coc:3"}, {"piece": "art:hat-dau*1", "target": "art:coc:1"}]],
      "rounds": 1, "no": "Bé đếm số hạt, rồi tìm cọc có số giống vậy.", "done": "Hoan hô! Hạt nào cũng về đúng cọc rồi!"},
@@ -65,7 +65,7 @@ for it in S[2]["activities"][2]["items"]:
 S[2]["activities"][2]["items"][0]["opts"] = [{"e": "art:hat-dau", "n": 1}, {"e": "art:hat-dau", "n": 2}, {"e": "art:hat-dau", "n": 3}]
 S[2]["activities"][2]["items"][1]["opts"] = [{"e": "art:hat-dau", "n": 3}, {"e": "art:hat-dau", "n": 2}, {"e": "art:hat-dau", "n": 1}]
 # 4 ─ Ôn đếm (TO.DEM.01) bằng cách học khác L001
-S.append(st("Đếm cùng gà con", "art:ga-con*2", ["TO"], ("L001-BG-02", "san"), "Gà con chạy ra sân. Bé đếm cùng Lu nhé.", [
+S.append(st("Đếm cùng gà con", "art:ga-con*2", ["TO"], ("L001-BG-02", "san"), "Gà con chạy ra sân. Bé đếm cùng Mono nhé.", [
     {"activity_id": aid(), "engine": "E01", "mechanic": "M01", "mode": "count", "skill_id": "TO.DEM.01", "title": "Có mấy chú gà con?",
      "hint": "Bé chạm từng chú, mỗi chú đếm một tiếng.", "q": "Có mấy chú gà con trên sân?", "object": "art:ga-con", "pool": [1, 2, 3], "max": 3, "rounds": 2,
      "words": ["một", "hai", "ba"], "ok": "Bé giỏi lắm! Có {word} chú gà con.", "no": "Bé chạm đếm lại từng chú nhé.", "hint_glow": False},
@@ -74,7 +74,7 @@ S.append(st("Đếm cùng gà con", "art:ga-con*2", ["TO"], ("L001-BG-02", "san"
      "no": "Bé đếm số trứng trong từng ổ xem.", "ok": "Một quả, hai quả, ba quả. Bé xếp đúng rồi!"}],
     {"kien_thuc": "Ôn đếm 1–3 với vật mới; so sánh ít, nhiều.", "bai_tap": ["Đếm gà lần 1", "Đếm gà lần 2", "Xếp ổ trứng"], "bang_chung": "TO.DEM.01 ôn."}, "Bé đếm giỏi quá! Mỗi bạn một tiếng đếm, đúng rồi đấy!"))
 # 5 ─ Tiếng Việt: nghe chuyện hạt đậu lăn, vỗ tay theo tiếng
-S.append(st("Hạt đậu lăn tới đâu?", "art:tui", ["TV"], ("hien", "hien"), "Bé nghe Lu kể nhé.", [
+S.append(st("Hạt đậu lăn tới đâu?", "art:tui", ["TV"], ("hien", "hien"), "Bé nghe Mono kể nhé.", [
     items("TV.NG.01", "Bé nhớ chuyện", [
         q("Gió thổi, hạt đậu lăn ra khỏi cái gì?", 0, "Giỏi quá! Hạt lăn ra khỏi túi.", "Bé nghe lại nhé: hạt lăn ra khỏi túi.", "art:tui", "art:nha", "art:chao"),
         q("Hạt đậu lăn tới gần con vật nào?", 1, "Hoan hô bé! Hạt lăn tới chỗ gà con.", "Hạt lăn tới chỗ bạn gà con đấy.", "art:meo", "art:ga-con", "art:ca")],
@@ -87,14 +87,14 @@ S.append(st("Hạt đậu lăn tới đâu?", "art:tui", ["TV"], ("hien", "hien"
 # 6 ─ Tư duy: lật thẻ nhớ chỗ
 S.append(st("Lật thẻ tìm đôi", "art:la", ["GN"], ("L001-BG-05", "hien"), "Bé lật hai thẻ, tìm hai thẻ giống nhau nhé.", [
     {"activity_id": aid(), "engine": "E05", "mechanic": "M21", "skill_id": "TD.TN.01", "title": "Ba đôi thẻ", "intro": [],
-     "pool": ["art:ga-con", "art:trung", "art:ga"], "pairs": 3, "done": "Trí nhớ của bé tuyệt vời quá! Lu phục bé luôn!", "evidence": TX},
+     "pool": ["art:ga-con", "art:trung", "art:ga"], "pairs": 3, "done": "Trí nhớ của bé tuyệt vời quá! Mono phục bé luôn!", "evidence": TX},
     {"activity_id": aid(), "engine": "E05", "mechanic": "M21", "skill_id": "TD.TN.01", "title": "Bốn đôi thẻ", "intro": ["Thêm một đôi nữa nhé."],
      "pool": ["art:tao", "art:ca-rot", "art:rau", "art:hat-dau"], "pairs": 4, "done": "Bé giỏi quá! Bốn đôi thẻ mà bé tìm ra hết!", "evidence": TX},
     {"activity_id": aid(), "engine": "E05", "mechanic": "M21", "skill_id": "TD.TN.01", "title": "Thẻ bạn nhỏ", "intro": ["Lượt cuối rồi. Bé nhớ chỗ nhé."],
      "pool": ["art:buom", "art:ong", "art:oc", "art:ech"], "pairs": 4, "done": "Bé nhớ hết chỗ rồi! Bé giỏi quá đi thôi!", "evidence": TX}],
     {"kien_thuc": "Nhớ vị trí thẻ đã lật.", "bai_tap": ["3 đôi", "4 đôi", "4 đôi vật mới"], "bang_chung": "Tiếp xúc TD.TN.01."}, "Bé nhớ giỏi quá! Mình chơi thêm lượt nữa nào!"))
 # 7 ─ Tư duy logic: thứ nào khác nhóm
-S.append(st("Thứ nào khác nhóm?", "art:soi", ["TD"], ("phong", "phong"), "Lu có mấy câu đố. Bé tìm thứ khác nhóm nhé.", [
+S.append(st("Thứ nào khác nhóm?", "art:soi", ["TD"], ("phong", "phong"), "Mono có mấy câu đố. Bé tìm thứ khác nhóm nhé.", [
     items("TD.LG.04", "Thứ nào không giống?", [
         q("Thứ nào không phải con vật?", 2, "Đúng rồi! Quả táo không phải con vật.", "Gà, mèo, cá đều là con vật. Còn thứ nào khác?", "art:ga", "art:meo", "art:tao", "art:ca"),
         q("Thứ nào không ăn được?", 3, "Tuyệt vời! Viên sỏi không ăn được.", "Táo, cà rốt, rau đều ăn được. Bé tìm thứ khác nhé.", "art:tao", "art:ca-rot", "art:rau", "art:soi"),
@@ -110,35 +110,35 @@ S.append(st("Hạt đậu gặp gì?", "art:giot-nuoc", ["KT", "NT"], ("L001-BG-
         "M53", lu="kham-pha", evidence=TX)],
     {"kien_thuc": "Dự đoán điều xảy ra với hạt đậu (nhân quả đơn giản).", "bai_tap": ["Hạt cần nước", "Gà con ăn hạt", "Hạt nảy mầm"], "bang_chung": "Tiếp xúc KP.KH.01."}, "Bé đoán giỏi quá! Bé hiểu hạt đậu cần gì để lớn rồi!", lu="kham-pha"))
 # 9 ─ Cảm xúc
-S.append(st("Lu thấy thế nào?", "face:vui", ["EQ"], ("L001-BG-03", "vuon"), "Mình cùng nghĩ về cảm xúc của Lu nhé.", [
-    items("EQ.CX.01", "Gương mặt của Lu", [
-        {"q": "Hạt đậu lăn mất. Lu có thể thấy thế nào?", "any": True, "style": "face", "ok": "Cảm ơn bé đã nghĩ cùng Lu.", "opts": [
-            {"e": "face:buon", "say": "Lu thấy buồn.", "reply": "Ừ, mất hạt thì buồn. Mình cùng đi tìm nhé."},
-            {"e": "face:so", "say": "Lu thấy lo lắng.", "reply": "Lo lắng là khi mình sợ không tìm thấy."},
-            {"e": "face:binh-tinh", "say": "Lu thấy bình thường.", "reply": "Lu bình tĩnh đi tìm từng hạt."}]},
-        {"q": "Bé tìm thấy hết hạt cho Lu. Lu thấy thế nào?", "any": True, "style": "face", "ok": "Bé hiểu Lu quá!", "opts": [
-            {"e": "face:vui", "say": "Lu thấy vui.", "reply": "Lu vui vì có bé giúp."},
-            {"e": "face:ngac-nhien", "say": "Lu thấy ngạc nhiên.", "reply": "Ồ, bé tìm nhanh quá!"}]}],
+S.append(st("Mono thấy thế nào?", "face:vui", ["EQ"], ("L001-BG-03", "vuon"), "Mình cùng nghĩ về cảm xúc của Mono nhé.", [
+    items("EQ.CX.01", "Gương mặt của Mono", [
+        {"q": "Hạt đậu lăn mất. Mono có thể thấy thế nào?", "any": True, "style": "face", "ok": "Cảm ơn bé đã nghĩ cùng Mono.", "opts": [
+            {"e": "face:buon", "say": "Mono thấy buồn.", "reply": "Ừ, mất hạt thì buồn. Mình cùng đi tìm nhé."},
+            {"e": "face:so", "say": "Mono thấy lo lắng.", "reply": "Lo lắng là khi mình sợ không tìm thấy."},
+            {"e": "face:binh-tinh", "say": "Mono thấy bình thường.", "reply": "Mono bình tĩnh đi tìm từng hạt."}]},
+        {"q": "Bé tìm thấy hết hạt cho Mono. Mono thấy thế nào?", "any": True, "style": "face", "ok": "Bé hiểu Mono quá!", "opts": [
+            {"e": "face:vui", "say": "Mono thấy vui.", "reply": "Mono vui vì có bé giúp."},
+            {"e": "face:ngac-nhien", "say": "Mono thấy ngạc nhiên.", "reply": "Ồ, bé tìm nhanh quá!"}]}],
         "M49", lu="suy-nghi", evidence=TX),
-    {"activity_id": aid(), "engine": "E15", "mechanic": "M51", "mode": "breath", "skill_id": "EQ.CX.02", "evidence": TX, "title": "Thở cùng Lu",
-     "times": 2, "inn": "Hít vào thật chậm, như ngửi một bông hoa.", "out": "Thở ra từ từ, như thổi một ngọn nến.", "done": "Cảm ơn bé, Lu thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé."}],
-    {"kien_thuc": "Gọi tên buồn, lo, vui qua tình huống; thở chậm cho bình tĩnh.", "bai_tap": ["Hạt lăn mất", "Tìm thấy hạt", "Thở cùng Lu"], "bang_chung": "Tiếp xúc EQ.CX.01, EQ.CX.02."}, "Cảm ơn bé đã hiểu Lu! Khi bạn buồn, bé hỏi thăm bạn như vậy nhé.", lu="suy-nghi"))
+    {"activity_id": aid(), "engine": "E15", "mechanic": "M51", "mode": "breath", "skill_id": "EQ.CX.02", "evidence": TX, "title": "Thở cùng Mono",
+     "times": 2, "inn": "Hít vào thật chậm, như ngửi một bông hoa.", "out": "Thở ra từ từ, như thổi một ngọn nến.", "done": "Cảm ơn bé, Mono thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé."}],
+    {"kien_thuc": "Gọi tên buồn, lo, vui qua tình huống; thở chậm cho bình tĩnh.", "bai_tap": ["Hạt lăn mất", "Tìm thấy hạt", "Thở cùng Mono"], "bang_chung": "Tiếp xúc EQ.CX.01, EQ.CX.02."}, "Cảm ơn bé đã hiểu Mono! Khi bạn buồn, bé hỏi thăm bạn như vậy nhé.", lu="suy-nghi"))
 # 10 ─ Tiếng Anh: ôn one, two, three
 S.append(st("One, two, three", "art:hat-dau*2", ["EN"], ("L001-BG-02", "san"), "Mình ôn đếm bằng tiếng Anh nhé.", [
     {"activity_id": aid(), "engine": "E01", "mechanic": "M44", "mode": "listen", "skill_id": "EN.EN.04", "evidence": TX, "title": "Listen and touch", "rounds": 3,
      "words": [{"w": "One.", "e": "art:hat-dau*1", "ok": "Yes! One!"}, {"w": "Two.", "e": "art:hat-dau*2", "ok": "Yes! Two!"}, {"w": "Three.", "e": "art:hat-dau*3", "ok": "Yes! Three!"}]},
-    {"activity_id": aid(), "engine": "E15", "mechanic": "M45", "mode": "say", "skill_id": "EN.EN.04", "evidence": TX, "title": "Nói theo Lu",
-     "luSays": "One, two, three!", "word": "One, two, three!", "intro": ["Bé muốn thì nói theo Lu nhé. Không nói cũng không sao."]}],
+    {"activity_id": aid(), "engine": "E15", "mechanic": "M45", "mode": "say", "skill_id": "EN.EN.04", "evidence": TX, "title": "Nói theo Mono",
+     "luSays": "One, two, three!", "word": "One, two, three!", "intro": ["Bé muốn thì nói theo Mono nhé. Không nói cũng không sao."]}],
     {"kien_thuc": "Ôn one, two, three.", "bai_tap": ["Nghe chạm 1", "Nghe chạm 2", "Nghe chạm 3", "Nói theo"], "bang_chung": "Tiếp xúc EN.EN.04; không chấm phát âm."}, "Hoan hô bé! Bé nhớ tiếng Anh giỏi quá!"))
 # 11 ─ Sáng tạo, vận động, việc ở nhà
 S.append(st("Vườn đậu của bé", "art:hoa", ["TTg", "ST"], ("cay-cao", "cay-cao"), "Mình cùng tưởng tượng nhé.", [
     {"activity_id": aid(), "engine": "E15", "mechanic": "M56", "mode": "do", "skill_id": "KP.VD.01", "title": "Lăn như hạt đậu", "lu": "dang-tay",
      "intro": ["Bé tìm chỗ rộng có thảm, xa bàn ghế nhé."], "task": "Bé nằm xuống thảm, cuộn tròn như hạt đậu, lăn ngang thật nhẹ, rồi đứng lên vươn cao.", "button": "Xong rồi!", "seconds": 35, "evidence": TX},
     items("KP.ST.D01", "Nếu hạt đậu biết nói", [
-        {"q": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Lu?", "any": True, "style": "face", "ok": "Bé tưởng tượng hay quá!", "opts": [
-            {"e": "art:giot-nuoc", "say": "Lu ơi, cho mình uống nước nhé.", "reply": "Hạt đậu khát nước rồi."},
+        {"q": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Mono?", "any": True, "style": "face", "ok": "Bé tưởng tượng hay quá!", "opts": [
+            {"e": "art:giot-nuoc", "say": "Mono ơi, cho mình uống nước nhé.", "reply": "Hạt đậu khát nước rồi."},
             {"e": "art:mam-dau", "say": "Mình sắp nảy mầm rồi.", "reply": "Mầm đậu sắp nhú lên đấy."},
-            {"e": "art:ga-con", "say": "Lu ơi, giữ mình cẩn thận nhé.", "reply": "Lu sẽ giữ hạt thật cẩn thận."}]}],
+            {"e": "art:ga-con", "say": "Mono ơi, giữ mình cẩn thận nhé.", "reply": "Mono sẽ giữ hạt thật cẩn thận."}]}],
         "M33", lu="to-mo", evidence=TX),
     {"activity_id": aid(), "engine": "E00", "mechanic": "M54", "title": "Trang trí vườn đậu", "lu": "an-mung", "tap": True, "skill_id": "KP.ST.D01",
      "story": ["Vườn đậu cần thêm một người bạn. Bé chọn một bạn nhé."],
@@ -151,7 +151,7 @@ S.append(st("Vườn đậu của bé", "art:hoa", ["TTg", "ST"], ("cay-cao", "c
 S.append(st("Cất hạt gọn gàng", "art:tui", ["KS"], ("phong", "phong"), "Tìm đủ hạt rồi. Mình cất đồ gọn gàng nhé.", [
     items("KS.SX.01", "Cất đồ đúng chỗ", [
         q("Hạt đậu nên cất vào đâu?", 0, "Đúng rồi! Hạt đậu cất vào túi.", "Hạt nhỏ, cất vào túi là gọn nhất.", "art:tui", "art:chao", "art:ao-nuoc"),
-        q("Tưới xong rồi. Lu cất bình tưới ở đâu?", 1, "Tuyệt vời! Bình tưới để cạnh vòi nước.", "Bình tưới để gần vòi nước cho dễ lấy.", "art:ao-nuoc", "art:voi-nuoc", "art:cay")],
+        q("Tưới xong rồi. Mono cất bình tưới ở đâu?", 1, "Tuyệt vời! Bình tưới để cạnh vòi nước.", "Bình tưới để gần vòi nước cho dễ lấy.", "art:ao-nuoc", "art:voi-nuoc", "art:cay")],
         "M18", lu="chi-tay", evidence=TX),
     {"activity_id": aid(), "engine": "E15", "mechanic": "M58", "mode": "do", "skill_id": "KS.NN.01", "title": "Bé dọn góc chơi", "lu": "dang-tay",
      "task": "Bé nhặt ba món đồ chơi gần bé, cất vào hộp. Xong thì bấm nút nhé.", "button": "Dọn xong rồi!", "seconds": 40, "evidence": TX}],
@@ -173,8 +173,8 @@ pkg.update({
                {"skill_id": "EQ.CX.02", "name": "Thở cho bình tĩnh (tiếp xúc)", "cls": "GT"}, {"skill_id": "EN.EN.04", "name": "One, two, three (ôn)", "cls": "G"},
                {"skill_id": "KP.VD.01", "name": "Vận động theo hướng dẫn", "cls": "T"}, {"skill_id": "KP.ST.D01", "name": "Tưởng tượng, trang trí (tiếp xúc)", "cls": "T"},
                {"skill_id": "KS.SX.01", "name": "Cất đồ đúng chỗ (tiếp xúc)", "cls": "T"}, {"skill_id": "KS.NN.01", "name": "Giữ góc chơi gọn gàng (tiếp xúc)", "cls": "T"}],
-    "intro": ["Chào bé! Hôm nay bé là Lu.", "Sáng nay gió thổi mạnh quá.", "Túi hạt đậu của Lu bị đổ, hạt lăn khắp vườn.", "Mình cùng đi tìm hạt đậu nào!"],
-    "hub": {"q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Lu gợi ý.", "again": "Bé chọn bài tiếp theo nhé.",
+    "intro": ["Chào bé! Hôm nay bé là Mono.", "Sáng nay gió thổi mạnh quá.", "Túi hạt đậu của Mono bị đổ, hạt lăn khắp vườn.", "Mình cùng đi tìm hạt đậu nào!"],
+    "hub": {"q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Mono gợi ý.", "again": "Bé chọn bài tiếp theo nhé.",
             "backdrop": {"id": "L001-BG-03", "kind": "vuon"}},
     "stages": S,
     "end": ["Hôm nay bé đã tìm hạt đậu, đếm gà con và ôn ba từ tiếng Anh.", "Ở nhà, bé nhờ bố mẹ giấu đồ chơi rồi đi tìm nhé."],
