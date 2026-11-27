@@ -15,5 +15,7 @@ import * as E12 from './e12-sound.js';
 import * as E13 from './e13-trace.js';
 import * as E14 from './e14-create.js';
 import * as E15 from './e15-follow.js';
+import * as E16 from './e16-code.js';
+import * as E17 from './e17-quick.js';
 
-export const ENGINES = { E00, E01, E02, E03, E04, E05, E06, E07, E08, E10, E11, E12, E13, E14, E15 };
+export const ENGINES = { E00, E01, E02, E03, E04, E05, E06, E07, E08, E10, E11, E12, E13, E14, E15, E16, E17 };

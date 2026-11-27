@@ -31,9 +31,11 @@ export function validateLesson(pkg) {
 export function variantOf(act, seed, k) { const E = ENGINES[act.engine]; return E.generate(act, makeRng(subSeed(seed, k))); }
 
 // Số bài tập của một hoạt động: mỗi lượt là một bài tập; truyện kể (E00 không chạm) không tính.
-const ROUNDED = new Set(['E01', 'E02', 'E03', 'E04', 'E06']);
+const ROUNDED = new Set(['E01', 'E02', 'E03', 'E04', 'E06', 'E16']);
 export function exCount(act, variant) {
   if (act.engine === 'E00') return act.explore || act.tap ? 1 : 0;
+  if (act.engine === 'E17') return ENGINES.E17.rounds(act);
+  if (act.engine === 'E16') return variant?.rounds?.length ?? Math.min(act.rounds || 99, act.puzzles.length);
   if (ROUNDED.has(act.engine)) return variant?.rounds?.length ?? (act.mode === 'items' ? Math.min(act.rounds || 99, act.items.length) : act.mode === 'listen' ? (act.rounds || act.words.length) : (act.rounds || (act.engine === 'E01' && act.mode === 'count' ? 3 : 1)));
   return 1;
 }
@@ -43,7 +45,7 @@ export async function runLesson(root, pkg, opts = {}) {
   const fast = !!opts.fast, mode = opts.mode || 'adventure', storage = opts.storage;
   const errs = validateLesson(pkg); if (errs.length) { root.innerHTML = `<pre class="err">${esc(errs.join('\n'))}</pre>`; throw new Error(errs.join('; ')); }
   const missing = new Set();
-  const voice = createVoice({ clips: opts.clips || {}, base: opts.audioBase || '', fast, onMissing: k => missing.add(k) });
+  const voice = createVoice({ clips: opts.clips || {}, base: opts.audioBase || '', fast, tts: opts.tts || null, onMissing: k => missing.add(k) });
   const ui = createUI(root, voice);
   const stepNames = ['Chào', ...[...new Set(pkg.activities.map(a => a.step))], 'Xong'];
   const setBd = bd => { if (!bd) return ui.setBackdrop('', ''); const r = sceneHTML(bd.id, bd.kind); ui.setBackdrop(bd.id, r.html, r.real); };
@@ -129,14 +131,19 @@ export async function runLesson(root, pkg, opts = {}) {
   const hub = (pkg, done, first) => new Promise(resolve => {
     ui.setStep(-1); setBd(pkg.hub?.backdrop || pkg.stages[0].backdrop);
     const next = pkg.stages.findIndex((st, i) => !done.has(i));
-    const cards = pkg.stages.map((st, i) => `<button class="hub-card${done.has(i) ? ' done' : ''}${i === next ? ' next' : ''}" data-i="${i}" aria-label="${esc(st.title)}">
+    const card = (st, i) => `<button class="hub-card${done.has(i) ? ' done' : ''}${i === next ? ' next' : ''}${st.kind ? ' k-' + st.kind : ''}" data-i="${i}" aria-label="${esc(st.title)}">
       <span class="hc-art">${vis(String(st.icon || 'art:sao').replace(/\*\d+$/, ''))}</span><span class="hc-t">${esc(st.title)}</span>
       <span class="hc-tags">${(st.nhom || []).slice(0, 2).map(c => `<i>${esc(NHOM_TEN[c] || c)}</i>`).join('')}</span>
       <span class="hc-n">${stageCount(st)} bài tập</span>
-      ${done.has(i) ? `<span class="hc-star">${STAR}</span>` : ''}</button>`).join('');
+      ${st.kind === 'vang' ? '<span class="hc-gold">Thử thách vàng</span>' : ''}${done.has(i) ? `<span class="hc-star">${STAR}</span>` : ''}</button>`;
+    // Buổi 2 hiệp (phương án 27/11): thẻ chia nhóm Hiệp 1, Giờ nghỉ, Hiệp 2; buổi cũ không có "hiep" thì một lưới như trước
+    const HIEP = { 1: 'Hiệp 1', nghi: 'Giờ nghỉ vận động', 2: 'Hiệp 2' };
+    const groups = pkg.stages.some(st => st.hiep) ? [1, 'nghi', 2].map(h => [h, pkg.stages.map((st, i) => [st, i]).filter(([st]) => String(st.kind === 'nghi' ? 'nghi' : st.hiep) === String(h))]).filter(([, l]) => l.length) : null;
+    const cards = groups ? groups.map(([h, l]) => `<div class="hub-sec"><div class="hub-sec-t">${HIEP[h]}</div><div class="hub-grid">${l.map(([st, i]) => card(st, i)).join('')}</div></div>`).join('') : `<div class="hub-grid">${pkg.stages.map(card).join('')}</div>`;
+    const nv = pkg.nhiem_vu; const nvHTML = nv ? `<div class="hub-nv"><span class="nv-art">${vis(nv.e)}</span><span>${esc(nv.ten)}: <b>${nv.co}/${nv.tong}</b></span></div>` : '';
     ui.stage.innerHTML = `<div class="scene hub"><div class="hub-head">${luArt('chi-tay')}<div><h1 class="title">${esc(pkg.title)}</h1>
-      <div class="hub-prog">Bé đã học ${done.size}/${pkg.stages.length} bài</div></div></div>
-      <div class="hub-grid">${cards}</div><div class="cap"></div>
+      <div class="hub-prog">Bé đã học ${done.size}/${pkg.stages.length} bài</div>${nvHTML}</div></div>
+      ${cards}<div class="cap"></div>
       <div class="row2"><button class="big-btn alt pause-btn">Nghỉ, lát học tiếp</button></div></div>`;
     voice.caption = ui.stage.querySelector('.cap');
     const say = first ? pkg.hub?.q : pkg.hub?.again; if (say) voice.say([say]);
@@ -153,7 +160,7 @@ export async function runLesson(root, pkg, opts = {}) {
   const end = session => {
     ui.setStep(stepNames.length - 1); setBd(pkg.end_backdrop || pkg.stages?.at(-1)?.backdrop || null);
     const praise = END_PRAISE[(storage ? Object.keys(storage.d?.kv || {}).filter(k => k.startsWith('done:')).length : 0) % END_PRAISE.length];
-    const rw = opts.reward;
+    const rw = opts.reward || (pkg.reward && { title: pkg.reward.title, art: (pkg.reward.e || []).map(e => `<span class="rw-one">${vis(e)}</span>`).join('') });
     ui.stage.innerHTML = `<div class="scene finish"><div class="burst" aria-hidden="true"></div>${luArt('an-mung')}<h1 class="title">${esc(praise)}</h1>
       <div class="stars">${[0, 1, 2].map(i => `<span style="animation-delay:${200 + i * 220}ms">${STAR}</span>`).join('')}</div>
       ${rw ? `<div class="reward"><div class="rw-art">${rw.art || ''}</div><div class="rw-t">${esc(rw.title)}</div></div>` : ''}

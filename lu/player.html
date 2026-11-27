@@ -45,7 +45,11 @@ if (p.get('demo')) {
   const pkg = await (await fetch(new URL(`${draft ? 'drafts' : 'lessons'}/${id}.json`, base))).json();
   // Mở từ màn nhà (&nha=1): có nút về nhà ở góc và cuối buổi
   const onExit = p.get('nha') ? () => { location.href = 'index.html' + (p.get('ns') ? '?ns=' + encodeURIComponent(p.get('ns')) : ''); } : undefined;
-  window.__luApp = await runLesson(root, pkg, { clips: audio.clips, audioBase: 'content/audio/', fast, mode, storage, seed, onExit });
+  // Câu chưa có tệp giọng Hoài My: bản nháp giáo trình mới (?tts=1, hoặc mã có -MOI) đọc tạm bằng giọng tiếng Việt của máy
+  const ttsOn = !fast && 'speechSynthesis' in window && (p.get('tts') === '1' || /-MOI$/.test(id)) && p.get('tts') !== '0';
+  const tts = ttsOn && { ok: () => true, unlock: () => { try { speechSynthesis.speak(new SpeechSynthesisUtterance('')); } catch {} }, cancel: () => speechSynthesis.cancel(),
+    speak: t => new Promise(res => { const u = new SpeechSynthesisUtterance(t); u.lang = /^[A-Z][a-z]*[,.!?]?( [A-Za-z]+[,.!?]?)*$/.test(t) && !/[à-ỹđ]/i.test(t) ? 'en-US' : 'vi-VN'; const v = speechSynthesis.getVoices().find(x => x.lang?.toLowerCase().startsWith(u.lang.slice(0, 2))); if (v) u.voice = v; u.rate = .95; u.onend = u.onerror = () => res(); speechSynthesis.speak(u); }) };
+  window.__luApp = await runLesson(root, pkg, { clips: audio.clips, audioBase: 'content/audio/', fast, mode, storage, seed, onExit, tts });
 }
 window.__luStorage = storage;
 </script>

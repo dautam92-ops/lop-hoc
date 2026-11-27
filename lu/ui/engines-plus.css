@@ -473,3 +473,73 @@
   .lu-lesson .roi-vuon .roi-it { width: 16%; }
   .lu-lesson .roi-vuon .roi-gio { width: 11%; }
 }
+
+/* ===== Giáo trình mới 27/11: buổi 2 hiệp, thẻ thử thách vàng, nhiệm vụ vùng ===== */
+.hub-sec { align-self: stretch; display: flex; flex-direction: column; gap: 8px; }
+.hub-sec-t { font: 800 18px var(--lu-font-display); color: var(--lu-ink-soft); padding-left: 4px; }
+.hub-card.k-vang { background: linear-gradient(160deg, #fff6d6, #fde7a6); border-color: #e7ad16; box-shadow: 0 5px 0 #c98f0c; }
+.hub-card.k-nghi { background: #eef6fb; border-color: #9cc6dc; box-shadow: 0 5px 0 #9cc6dc; }
+.hub-card .hc-gold { font: 800 12px var(--lu-font-body); color: #fff; background: #d99a2b; border-radius: 99px; padding: 2px 10px; }
+.hub-nv { display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; font: 700 16px var(--lu-font-body); color: var(--lu-ink); background: #fff6d6; border: 2px solid #f0d58a; border-radius: 99px; padding: 3px 12px 3px 4px; }
+.hub-nv .nv-art { width: 34px; height: 34px; display: grid; place-items: center; }
+.hub-nv .nv-art .lu-art, .hub-nv .nv-art svg { width: 100%; height: 100%; }
+.lu-lesson .reward .rw-art { display: flex; gap: 14px; justify-content: center; }
+.lu-lesson .reward .rw-one { width: clamp(90px, 22vw, 150px); aspect-ratio: 1; display: grid; place-items: center; background: #fffaf0; border: 4px solid #f0d58a; border-radius: 24px; padding: 8px; animation: lu-pop .5s both; }
+.lu-lesson .reward .rw-one .lu-art, .lu-lesson .reward .rw-one svg { width: 100%; height: 100%; }
+.lu-lesson .flash .grp-box.scat { position: relative; display: block; width: 100%; height: 100%; }
+
+/* E16 Lập trình mũi tên: bảng lưới to ở giữa, chuỗi lệnh ngay dưới, bàn mũi tên trong khu đáp án */
+.lu-lesson .code-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+.lu-lesson .cd-board { position: relative; display: grid; grid-template-columns: repeat(var(--c), 1fr); width: min(94%, 640px, calc((100dvh - 380px) * var(--c) / var(--r))); min-width: 240px; aspect-ratio: var(--c) / var(--r); border: 4px solid #7fa64a; border-radius: 22px; overflow: hidden; background: #e9f2d4; }
+.lu-lesson .cd-cell { border: 1px solid #cfe0aa; background: #eef6dc; }
+.lu-lesson .cd-cell.alt { background: #e3eecb; }
+.lu-lesson .cd-thing, .lu-lesson .cd-mono { position: absolute; width: calc(84% / var(--c)); aspect-ratio: 1; transform: translate(-50%, -50%); display: grid; place-items: center; pointer-events: none; }
+.lu-lesson .cd-thing .lu-art, .lu-lesson .cd-thing svg, .lu-lesson .cd-mono img, .lu-lesson .cd-mono svg { width: 100%; height: 100%; object-fit: contain; }
+.lu-lesson .cd-mono { z-index: 3; transition: left .4s ease, top .4s ease; width: calc(96% / var(--c)); }
+.lu-lesson .cd-water { width: calc(90% / var(--c)); border-radius: 46% 54% 50% 50%; background: radial-gradient(circle at 40% 35%, #cfeaf5, #7fbfdc 70%); border: 3px solid #5d9fbf; }
+.lu-lesson .cd-goal { animation: cd-glow 1.6s ease-in-out infinite; }
+.lu-lesson .cd-goal.got, .lu-lesson .cd-item.got { animation: lu-pop .4s both; opacity: 0; transition: opacity .4s .3s; }
+@keyframes cd-glow { 50% { filter: drop-shadow(0 0 10px #f6c85f); transform: translate(-50%, -50%) scale(1.08); } }
+.lu-lesson .cd-prog { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.lu-lesson .cd-slot { width: clamp(46px, 9vw, 64px); aspect-ratio: 1; border-radius: 14px; border: 3px dashed #c9b88f; background: #fffaf0; display: grid; place-items: center; }
+.lu-lesson .cd-slot.full { border-style: solid; border-color: #b08a3c; }
+.lu-lesson .cd-slot.now { border-color: var(--lu-leaf); background: #f1f6df; transform: scale(1.1); }
+.lu-lesson .cd-slot.bad { border-color: #e07a5f; background: #fdeee9; }
+.lu-lesson .cd-slot svg { width: 82%; height: 82%; }
+.lu-lesson .cd-pad { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.lu-lesson .cd-arrow svg { width: 70px; height: 70px; }
+.lu-lesson .cd-act { display: flex; gap: 14px; justify-content: center; margin-top: 10px; }
+.lu-lesson .cd-act .big-btn { min-width: 130px; }
+.lu-lesson .cd-act .cd-run:disabled { opacity: .45; }
+
+/* E17 Trò nhanh */
+.lu-lesson .cups { position: relative; width: min(94%, 620px); height: clamp(200px, 34vh, 300px); }
+.lu-lesson .cup-slot { position: absolute; bottom: 4%; width: calc(80% / var(--n)); height: 86%; transform: translateX(-50%); transition: left var(--sp, .7s) ease-in-out; background: none; border: 0; padding: 0; cursor: pointer; }
+.lu-lesson .cup-obj { position: absolute; left: 50%; bottom: 2%; width: 46%; transform: translateX(-50%); }
+.lu-lesson .cup-obj .lu-art, .lu-lesson .cup-obj svg { width: 100%; height: auto; }
+.lu-lesson .cup { position: absolute; left: 0; right: 0; bottom: 0; height: 78%; display: grid; place-items: end center; transition: transform .45s ease; }
+.lu-lesson .cup .lu-art, .lu-lesson .cup svg { width: 100%; height: 100%; object-fit: contain; transform: rotate(180deg); }
+.lu-lesson .cup-slot.up .cup { transform: translateY(-58%); }
+.lu-lesson .cup-slot.hint .cup { filter: drop-shadow(0 0 12px #f6c85f); }
+.lu-lesson .tap-bar { width: min(90%, 560px); height: 16px; border-radius: 99px; background: #f1e6cc; overflow: hidden; border: 2px solid #d9c79f; }
+.lu-lesson .tap-bar i { display: block; height: 100%; width: 100%; background: linear-gradient(90deg, #8fae3e, #f6c85f); }
+.lu-lesson .tap-grid { display: grid; grid-template-columns: repeat(min(var(--n), 3), 1fr); gap: 14px; justify-items: center; }
+.lu-lesson .tap-grid .opt { min-width: clamp(110px, 24vw, 170px); min-height: clamp(110px, 24vw, 170px); }
+.lu-lesson .tap-grid .opt .lu-art { width: 82%; height: 82%; }
+.lu-lesson .cmp { display: flex; gap: clamp(14px, 4vw, 40px); justify-content: center; width: 100%; }
+.lu-lesson .cmp-plate { position: relative; width: min(42vw, 280px); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #fffdf7 60%, #efe2c4); border: 4px solid #d9c79f; box-shadow: 0 6px 0 #d9c79f; padding: 10%; cursor: pointer; }
+.lu-lesson .cmp-plate .cmp-in, .lu-lesson .cmp-plate .grp-box { display: block; width: 100%; height: 100%; position: relative; }
+.lu-lesson .cmp-plate .fl-cover { position: absolute; inset: 0; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle, #fffaf0, #efe2c4); font: 800 64px var(--lu-font-display); color: var(--lu-ink-soft); opacity: 0; transition: opacity .3s; }
+.lu-lesson .cmp-plate.hid .fl-cover { opacity: 1; }
+.lu-lesson .cmp-plate.right { border-color: var(--lu-leaf); box-shadow: 0 6px 0 var(--lu-leaf-deep); }
+.lu-lesson .cmp-plate.hint { filter: drop-shadow(0 0 12px #f6c85f); }
+.lu-lesson .frz, .lu-lesson .sim { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.lu-lesson .frz-mono, .lu-lesson .sim-mono { width: clamp(150px, 30vh, 260px); }
+.lu-lesson .frz-mono img, .lu-lesson .sim-mono img { width: 100%; height: auto; }
+.lu-lesson .frz.dance .frz-mono { animation: frz-bop .5s ease-in-out infinite alternate; }
+@keyframes frz-bop { from { transform: rotate(-8deg) translateY(0); } to { transform: rotate(8deg) translateY(-14px); } }
+.lu-lesson .frz-say { font: 800 clamp(34px, 7vw, 60px) var(--lu-font-display); color: #c0533b; min-height: 1.2em; }
+.lu-lesson .frz-btn { font-size: 24px; min-width: 260px; min-height: 80px; }
+.lu-lesson .sim-card { display: flex; align-items: center; gap: 14px; font: 800 clamp(24px, 4.5vw, 36px) var(--lu-font-display); color: var(--lu-ink); background: #fffaf0; border: 3px solid #d9c79f; border-radius: 22px; padding: 12px 20px; max-width: 92%; }
+.lu-lesson .sim-pic { width: 90px; height: 90px; display: grid; place-items: center; }
+.lu-lesson .sim-pic .lu-art, .lu-lesson .sim-pic svg, .lu-lesson .sim-pic img { width: 100%; height: 100%; }

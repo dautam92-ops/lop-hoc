@@ -13,13 +13,16 @@ export function validate(act) {
   if (act.mode === 'clue') { e.push(...req(act, ['puzzles', 'done'])); (act.puzzles || []).forEach((p, k) => { const left = p.opts.filter(o => p.clues.every(c => fits(o, c)));
     if (left.length !== 1) e.push(`${act.activity_id} câu ${k + 1}: các manh mối phải để lại đúng MỘT hình (đang còn ${left.length})`);
     let rest = p.opts; p.clues.forEach((c, j) => { const nx = rest.filter(o => fits(o, c)); if (nx.length === rest.length) e.push(`${act.activity_id} câu ${k + 1}: manh mối ${j + 1} không loại được hình nào`); rest = nx; }); }); }
-  if (act.mode === 'flash') { e.push(...req(act, ['objs', 'pool', 'q', 'ok', 'no', 'words'])); if (Math.max(...(act.pool || [0])) > (act.words || []).length) e.push(`${act.activity_id}: thiếu chữ đọc số`); }
+  if (act.mode === 'flash') { e.push(...req(act, ['objs', 'pool', 'q', 'ok', 'no', 'words'])); if (act.scatter && Math.max(...(act.pool || [0])) > 12) e.push(`${act.activity_id}: xếp lộn xộn tối đa 12 vật`); if (Math.max(...(act.pool || [0])) > (act.words || []).length) e.push(`${act.activity_id}: thiếu chữ đọc số`); }
   return e;
 }
 export function generate(act, rng) {
   if (act.mode === 'clue') return { rounds: rng.sample(act.puzzles.map((p, i) => i), act.rounds || act.puzzles.length).map(i => ({ i, order: rng.shuffle(act.puzzles[i].opts.map((o, j) => j)) })) };
-  return { rounds: rng.sample(act.pool, act.rounds || 3).map(n => { const s = new Set([n]); for (const d of rng.shuffle([-1, 1, -2, 2])) { if (s.size >= 3) break; if (n + d >= 1 && n + d <= Math.max(...act.pool) + 1) s.add(n + d); } return { n, obj: rng.pick(act.objs), opts: [...s].sort((a, b) => a - b) }; }) };
+  return { rounds: rng.sample(act.pool, act.rounds || 3).map(n => { const s = new Set([n]); for (const d of rng.shuffle([-1, 1, -2, 2])) { if (s.size >= 3) break; if (n + d >= 1 && n + d <= Math.max(...act.pool) + 1) s.add(n + d); } return { n, obj: rng.pick(act.objs), opts: [...s].sort((a, b) => a - b), ...(act.scatter ? { pos: scatterPos(n, rng) } : {}) }; }) };
 }
+// Xếp lộn xộn (cấp 3 trở lên của "Nhìn nhanh đếm nhanh"): chọn n ô ngẫu nhiên trong lưới 4×3, lệch nhẹ, không chồng lên nhau
+function scatterPos(n, rng) { const cells = rng.sample(Array.from({ length: 12 }, (_, i) => i), n); return cells.map(c => [12.5 + (c % 4) * 25 + rng.int(-5, 5), 17 + Math.floor(c / 4) * 33 + rng.int(-5, 5)]); }
+const scatterHTML = (obj, pos) => `<span class="grp-box scat" role="img" aria-label="${pos.length}">${pos.map(([x, y]) => `<span class="grp-it" style="left:${x}%;top:${y}%;width:21%;height:28%">${vis(obj)}</span>`).join('')}</span>`;
 export function verify(act, v) {
   const e = [];
   if (act.mode === 'flash') v.rounds.forEach((r, k) => { if (!r.opts.includes(r.n)) e.push(`${act.activity_id} vòng ${k + 1}: đáp án không có trong lựa chọn`); if (r.n > 10 && !act.ten_frame) e.push(`${act.activity_id}: số lớn hơn 10 cần khung mười`); });
@@ -60,7 +63,7 @@ function clue(ctx, act, R, first) {
 function flash(ctx, act, R, first) {
   const { ui, voice } = ctx; let wrong = 0;
   return new Promise(done => {
-    const pic = act.ten_frame ? vis(`art:khung10:${R.n}`) : groupHTML(R.obj, R.n);
+    const pic = act.ten_frame ? vis(`art:khung10:${R.n}`) : R.pos ? scatterHTML(R.obj, R.pos) : groupHTML(R.obj, R.n);
     ui.scene(act.title, `<div class="flash"><div class="fl-pic">${pic}</div><div class="fl-cover"><span>?</span></div></div>`);
     const F = ui.stage.querySelector('.flash');
     const show = async () => { F.classList.remove('hid'); await sleep(ctx, act.show_ms || 2000); F.classList.add('hid'); };

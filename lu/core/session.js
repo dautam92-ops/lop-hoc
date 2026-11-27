@@ -32,6 +32,8 @@ function rawSeconds(act) {
     case 'E05': { const p = act.pairs || 4; sec += p * 12 + say(act.done) + 6; break; }
     case 'E06': sec += r * (say(act.q) + (act.max || 3) * 7 + say(act.done) + 4); break;
     case 'E15': sec += act.mode === 'breath' ? (act.times || 2) * (say(act.inn) + say(act.out) + 3) + say(act.done) : act.mode === 'say' ? say(act.luSays) * 2 + 14 : say(act.task) + (act.seconds || 45); break;
+    case 'E16': sec += (act.puzzles || []).slice(0, act.rounds || 99).reduce((x, p) => x + 22 + p.max * 5, 0) + say(act.q); break;
+    case 'E17': sec += act.mode === 'freeze' ? (act.stops || 4) * 9 + 10 : act.mode === 'simon' ? (act.cmds || []).length * 8 : act.mode === 'compare' ? Math.min(act.rounds || 99, (act.pairs || []).length) * 12 : (act.levels || []).reduce((x, l) => x + (act.mode === 'cups' ? 8 + l.swaps * 1.2 : 9 + (l.seq || 1) * 3), 0); break;
     default: sec += 30;
   }
   return sec;
