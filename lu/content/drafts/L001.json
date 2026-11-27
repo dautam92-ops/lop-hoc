@@ -782,7 +782,9 @@
      "cells": 9,
      "rounds": 2,
      "no": "Đó không phải hạt đậu. Hạt đậu màu vàng nâu.",
-     "done": "Hoan hô! Bé nhặt đủ hạt đậu, không sót hạt nào!"
+     "done": "Hoan hô! Bé nhặt đủ hạt đậu, không sót hạt nào!",
+     "layout": "roi",
+     "bg": "asset:BC-0004"
     },
     {
      "activity_id": "L001-B13",
@@ -811,7 +813,10 @@
      "rounds": 2,
      "no": "Mầm đậu có thân xanh nhú lên từ hạt.",
      "done": "Hết chỗ trốn rồi! Bé tìm ra đủ mầm đậu, tài quá!",
-     "evidence": "tiep-xuc"
+     "evidence": "tiep-xuc",
+     "layout": "roi",
+     "bg": "asset:BC-0004",
+     "xoay": 0
     }
    ],
    "thiet_ke": {

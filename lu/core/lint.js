@@ -72,6 +72,8 @@ export function lintLesson(pkg, skills = null) {
   errors.push(...kiemHanhDong(activities));
   // Quy tắc 39 (tam 27/11): bài tìm bóng hiện ảnh bóng to giữa màn, hỏi "Cái bóng này là của ảnh nào dưới đây?"
   errors.push(...kiemTimBong(activities));
+  // Quy tắc 44 (tam 27/11 13:03): bài tìm vật đặt vật rải rác trên cảnh thật, không xếp ô thẻ
+  activities.forEach(a => { if (a.engine === 'E06' && !a.mode && a.layout !== 'roi') errors.push(`${a.activity_id || a.title}: bài tìm vật phải đặt vật rải rác trên cảnh vườn (layout "roi", bg), không xếp ô thẻ (quy tắc 44)`); });
   // Quy tắc 40 (tam 27/11): hỏi cảm xúc đầu buổi chỉ đọc câu hỏi, Lu đáp theo mặt bé chọn
   errors.push(...kiemCheckin(pkg.checkin));
   // Hình phải có trong kho và đã duyệt

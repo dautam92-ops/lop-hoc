@@ -175,6 +175,8 @@
      "max": 3,
      "cells": 9,
      "rounds": 2,
+     "layout": "roi",
+     "bg": "asset:BC-0004",
      "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
      "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"
     },
@@ -281,6 +283,13 @@
      "max": 3,
      "cells": 9,
      "rounds": 1,
+     "layout": "roi",
+     "bg": "asset:BC-0004",
+     "xoay": 0,
+     "co": {
+      "art:meo": 1.35,
+      "art:trung": 0.7
+     },
      "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
      "done": "Tuyệt vời! Bé tìm ra hết các chú gà con rồi!"
     },

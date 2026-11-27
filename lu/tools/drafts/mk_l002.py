@@ -28,7 +28,7 @@ S = []
 S.append(st("Hạt đậu lăn đi đâu?", "art:hat-dau*3", ["QS"], ("L001-BG-03", "vuon"), "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Lu nhé.", [
     {"activity_id": aid(), "engine": "E06", "mechanic": "M26", "skill_id": "TD.QS.01", "title": "Hạt đậu trốn trong vườn",
      "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:hat-dau", "name": "hạt đậu"}], "distractors": ["art:la", "art:soi", "art:hoa"],
-     "min": 2, "max": 3, "cells": 9, "rounds": 2, "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.", "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"},
+     "min": 2, "max": 3, "cells": 9, "rounds": 2, "layout": "roi", "bg": "asset:BC-0004", "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.", "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"},
     items("TD.QS.01", "Hạt đậu nấp sau gì?", [
         q(BONG, 2, "Giỏi quá! Đó là cái giỏ.", "Bé nhìn kỹ: bóng có quai cầm.", "art:la", "art:tao", "art:gio", show="art:gio"),
         q(BONG, 0, "Hoan hô bé! Đó là chiếc lá.", "Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.", "art:la", "art:bong", "art:oc", show="art:la")],
@@ -39,7 +39,7 @@ S.append(st("Hạt đậu lăn đi đâu?", "art:hat-dau*3", ["QS"], ("L001-BG-0
 S.append(st("Ai trốn trong vườn?", "art:ga-con", ["CY"], ("vuon", "vuon"), "Các bạn nhỏ cũng trốn trong vườn. Bé tìm nhé.", [
     {"activity_id": aid(), "engine": "E06", "mechanic": "M26", "skill_id": "TD.QS.01", "title": "Tìm gà con",
      "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:ga-con", "name": "chú gà con"}], "distractors": ["art:meo", "art:chim", "art:trung"],
-     "min": 2, "max": 3, "cells": 9, "rounds": 1, "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.", "done": "Tuyệt vời! Bé tìm ra hết các chú gà con rồi!"},
+     "min": 2, "max": 3, "cells": 9, "rounds": 1, "layout": "roi", "bg": "asset:BC-0004", "xoay": 0, "co": {"art:meo": 1.35, "art:trung": 0.7}, "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.", "done": "Tuyệt vời! Bé tìm ra hết các chú gà con rồi!"},
     items("TD.QS.01", "Bóng của bạn nào?", [
         q(BONG, 1, "Đúng rồi! Đó là chú mèo.", "Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.", "art:ga", "art:meo", "art:ech", show="art:meo"),
         q(BONG, 2, "Tuyệt vời! Đó là con bướm.", "Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.", "art:ong", "art:chim", "art:buom", show="art:buom")],
