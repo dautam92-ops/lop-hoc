@@ -50,6 +50,7 @@ export function createVoice({ clips = {}, base = '', fast = false, onMissing = (
     const timer = ms => { clearTimeout(tm); tm = setTimeout(go, ms); };
     const s = src(k);
     cur = { skip: go, pause: () => clearTimeout(tm), resume: () => timer(400) };
+    const cho = k.match(/^__cho(\d+)$/); if (cho) return timer(fast ? 5 : +cho[1] * 1000); /* chờ bé nói theo (tam 28/11) */
     if (fast || !audio) return timer(5);
     if (s) {
       audio.onended = go; audio.onerror = go; audio.src = s;

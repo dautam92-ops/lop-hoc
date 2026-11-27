@@ -228,7 +228,7 @@
     "kind": "san"
    },
    "intro": [
-    "Mình học tên quả bằng tiếng Anh nhé!"
+    "Mình học tên ba loại quả nhé!"
    ],
    "activities": [
     {
@@ -241,7 +241,14 @@
      "rounds": 3,
      "items": [
       {
-       "q": "Quả táo đây! Bé nói theo rồi chạm nhé!",
+       "q": [
+        "Quả táo, tiếng Anh là",
+        "Apple!",
+        "Bé nói theo nào!",
+        "__sang",
+        "Apple",
+        "__cho3"
+       ],
        "opts": [
         {
          "e": "art:tao"
@@ -254,10 +261,17 @@
        ],
        "no": "",
        "word": "Apple",
-       "word_times": 2
+       "word_times": 0
       },
       {
-       "q": "Quả chuối đây! Bé nói theo rồi chạm nhé!",
+       "q": [
+        "Quả chuối, tiếng Anh là",
+        "Banana!",
+        "Bé nói theo nào!",
+        "__sang",
+        "Banana",
+        "__cho3"
+       ],
        "opts": [
         {
          "e": "art:chuoi"
@@ -270,10 +284,17 @@
        ],
        "no": "",
        "word": "Banana",
-       "word_times": 2
+       "word_times": 0
       },
       {
-       "q": "Quả cam đây! Bé nói theo rồi chạm nhé!",
+       "q": [
+        "Quả cam, tiếng Anh là",
+        "Orange!",
+        "Bé nói theo nào!",
+        "__sang",
+        "Orange",
+        "__cho3"
+       ],
        "opts": [
         {
          "e": "art:cam"
@@ -286,7 +307,7 @@
        ],
        "no": "",
        "word": "Orange",
-       "word_times": 2
+       "word_times": 0
       }
      ]
     }

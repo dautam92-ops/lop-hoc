@@ -1,7 +1,7 @@
 {
  "doi_tuong": "M001",
  "tep": "content/drafts/M001.json",
- "ma_bam": "863cbbcec4b07682f7b39fffebd6ed16c92c6005",
+ "ma_bam": "a3880d2078790c9648fc13112d872929f7e1fd46",
  "ngay": "2026-11-27",
  "nguoi_soat": "agent soát logic",
  "lan_soat": 1,
@@ -45,7 +45,7 @@
    "ket_luan": "Không phải lỗi LG01: ba tranh là ba lý do có thể xảy ra (gió thổi bay hạt, được quà, ăn bánh); chỉ gió thổi bay hạt khớp mở đầu buổi. Được quà và ăn bánh là chuyện vui, sai rõ với câu \"vì sao buồn\"."
   }
  ],
- "ghi_chu": "Soát cả 16 hoạt động. Lỗi tìm thấy đã sửa trong tools/mono/m001.py rồi dựng lại bài; biên bản này khớp bản đã sửa. Đã xét, không ghi lỗi: bài 1 và thử thách vàng đếm 1–3 hạt, số lượng do mã dựng (LG13, LG14), vật gây nhiễu (lá, sỏi) không phải hạt; hạt đậu đỏ, xanh, vàng có thật ngoài đời (đậu đỏ, đậu xanh, đậu nành) (LG07); truyện hạt đậu bay qua mái nhà trong gió là truyện kể, hạt nhỏ nhẹ, không dạy điều sai (LG08); vận động gà, vịt, ếch đúng dáng con vật, không nguy hiểm (LG11); bài cất đồ theo bóng: mỗi bóng đúng hình một vật (LG05); khăn, bánh mì, giày là đáp án sai rõ (LG03, LG04). Ảnh Goodbye là Mono quay lưng đứng, không phải đang bước đi: đủ cho bé phân biệt với Mono vẫy tay chào; nếu sếp muốn đúng kịch bản (Mono đeo túi đi về, vẫy tay) thì vẽ thêm một ảnh hành động. Cập nhật mã băm sau khi chỉ đổi lời kết bài 3 cho có lời khen (quy tắc 43), không đổi nội dung câu hỏi, đáp án. 28/11: soát lại bài 5 (Hello, Mono!) sau khi tách từ tiếng Anh thành câu riêng và thêm chữ to: đáp án, tranh giữ nguyên; lời khen, gợi ý mới đúng sự thật (LG19), không lỗi mới. 28/11 07:00: bài 5 đổi thành học từ Apple, banana, orange theo kịch bản bản 3: mỗi màn một quả, ảnh quả là đáp án duy nhất (màn học từ, không chấm sai), chữ tiếng Anh to, giọng bản xứ đọc 2 lần. Soát: tên quả đúng (LG12), từ tiếng Anh đúng nghĩa, lời khen tiếng Việt đúng sự thật (LG19), ba quả vào giỏ của bà khớp câu chuyện (LG20). Không lỗi.",
+ "ghi_chu": "Soát cả 16 hoạt động. Lỗi tìm thấy đã sửa trong tools/mono/m001.py rồi dựng lại bài; biên bản này khớp bản đã sửa. Đã xét, không ghi lỗi: bài 1 và thử thách vàng đếm 1–3 hạt, số lượng do mã dựng (LG13, LG14), vật gây nhiễu (lá, sỏi) không phải hạt; hạt đậu đỏ, xanh, vàng có thật ngoài đời (đậu đỏ, đậu xanh, đậu nành) (LG07); truyện hạt đậu bay qua mái nhà trong gió là truyện kể, hạt nhỏ nhẹ, không dạy điều sai (LG08); vận động gà, vịt, ếch đúng dáng con vật, không nguy hiểm (LG11); bài cất đồ theo bóng: mỗi bóng đúng hình một vật (LG05); khăn, bánh mì, giày là đáp án sai rõ (LG03, LG04). Ảnh Goodbye là Mono quay lưng đứng, không phải đang bước đi: đủ cho bé phân biệt với Mono vẫy tay chào; nếu sếp muốn đúng kịch bản (Mono đeo túi đi về, vẫy tay) thì vẽ thêm một ảnh hành động. Cập nhật mã băm sau khi chỉ đổi lời kết bài 3 cho có lời khen (quy tắc 43), không đổi nội dung câu hỏi, đáp án. 28/11: soát lại bài 5 (Hello, Mono!) sau khi tách từ tiếng Anh thành câu riêng và thêm chữ to: đáp án, tranh giữ nguyên; lời khen, gợi ý mới đúng sự thật (LG19), không lỗi mới. 28/11 07:00: bài 5 đổi thành học từ Apple, banana, orange theo kịch bản bản 3: mỗi màn một quả, ảnh quả là đáp án duy nhất (màn học từ, không chấm sai), chữ tiếng Anh to, giọng bản xứ đọc 2 lần. Soát: tên quả đúng (LG12), từ tiếng Anh đúng nghĩa, lời khen tiếng Việt đúng sự thật (LG19), ba quả vào giỏ của bà khớp câu chuyện (LG20). Không lỗi. 28/11 07:05: bài 5 đổi thứ tự lời theo kịch bản bản 4 (từ tiếng Anh là tiếng cuối trước khi bé nói theo). Đáp án, ảnh giữ nguyên; không lỗi mới.",
  "loi": [
   {
    "ma": "LG07",

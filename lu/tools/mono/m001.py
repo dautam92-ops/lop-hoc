@@ -22,11 +22,11 @@ stages = [
    A(4, "E14", "KP.ST.01", "Thêm lá cho túi", mode="sticker", bg="art:tui", keep=True, stickers=["art:la", "art:hoa", "art:sao"], min=1,
    intro=["Bé dán thêm lá xanh nhé!"], done="Túi đẹp quá! Cảm ơn bé, bà treo túi lên móc rồi.")]),
  dict(title="Apple, banana, orange", hiep=1, icon="art:tao", nhom=["EN", "CY"], way="hoc-tu", backdrop={"id": "L001-BG-02", "kind": "san"},
-  intro=["Mình học tên quả bằng tiếng Anh nhé!"],
+  intro=["Mình học tên ba loại quả nhé!"],
   activities=[A(5, "E01", "EN.EN.01", "Apple, banana, orange", mode="items", order="fixed", rounds=3, items=[
-   it("Quả táo đây! Bé nói theo rồi chạm nhé!", ["art:tao"], 0, ["Apple!", "Bé nói hay quá!"], "", word="Apple", word_times=2),
-   it("Quả chuối đây! Bé nói theo rồi chạm nhé!", ["art:chuoi"], 0, ["Banana!", "Giỏi quá! Bé nhớ cả quả chuối rồi."], "", word="Banana", word_times=2),
-   it("Quả cam đây! Bé nói theo rồi chạm nhé!", ["art:cam"], 0, ["Orange!", "Tuyệt vời! Ba quả vào giỏ của bà rồi."], "", word="Orange", word_times=2)])]),
+   it(["Quả táo, tiếng Anh là", "Apple!", "Bé nói theo nào!", "__sang", "Apple", "__cho3"], ["art:tao"], 0, ["Apple!", "Bé nói hay quá!"], "", word="Apple", word_times=0),
+   it(["Quả chuối, tiếng Anh là", "Banana!", "Bé nói theo nào!", "__sang", "Banana", "__cho3"], ["art:chuoi"], 0, ["Banana!", "Giỏi quá! Bé nhớ cả quả chuối rồi."], "", word="Banana", word_times=0),
+   it(["Quả cam, tiếng Anh là", "Orange!", "Bé nói theo nào!", "__sang", "Orange", "__cho3"], ["art:cam"], 0, ["Orange!", "Tuyệt vời! Ba quả vào giỏ của bà rồi."], "", word="Orange", word_times=0)])]),
  dict(title="Chuyện hạt đậu nhỏ", hiep=1, icon="art:hat-dau", nhom=["TV", "GN", "NT"], way="nghe-truyen", backdrop={"id": "L001-BG-02", "kind": "san"},
   intro=["Bé nghe Mono kể chuyện nhé.", "Hạt đậu nhỏ nằm trong túi của bà.", "Gió thổi vù vù.", "Hạt đậu bay qua mái nhà.", "Hạt đậu rơi xuống gốc cây."],
   activities=[A(6, "E01", "TV.NG.01", "Chuyện hạt đậu nhỏ", mode="items", order="fixed", rounds=3, items=[

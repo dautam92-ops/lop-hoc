@@ -13,7 +13,7 @@ AUD = os.path.join(ROOT, 'content', 'audio')
 todo = json.load(open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(AUD, 'can-tao.json'), encoding='utf8'))['lines']  # tùy chọn: đường dẫn danh sách khác (vd content/lab/can-tao-giong.json)
 reg_path = os.path.join(AUD, 'registry.json')
 reg = json.load(open(reg_path, encoding='utf8'))
-VOICE = {'vi': ('vi-VN-HoaiMyNeural', '-5%'), 'en': ('en-US-AnaNeural', '-10%')}
+VOICE = {'vi': ('vi-VN-HoaiMyNeural', '-5%'), 'en': ('en-US-AnaNeural', '-10%'), 'en-cham': ('en-US-AnaNeural', '-40%')}  # en-cham: từ đọc chậm để bé nói theo
 LIC = 'CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)'
 
 async def one(text, lang):

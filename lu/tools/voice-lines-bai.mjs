@@ -21,7 +21,9 @@ for (const a of p.activities) { ENGINES[a.engine].lines(a).forEach(t => L.add(t)
   (a.props || []).forEach(x => { x.say && L.add(x.say); x.en && L.add(x.en); }); if (a.done) L.add(a.done); }
 const all = [...L].filter(t => t && !t.startsWith('__') && !t.includes('${') && !t.includes('{'));
 const need = all.filter(t => !audio.clips[t]);
+// Từ tiếng Anh đọc chậm để bé nói theo (màn học từ: câu đúng bằng trường word, không dấu câu) → giọng bản xứ chậm
+const CHAM = new Set(p.activities.flatMap(a => (a.items || []).filter(it => it.word).map(it => it.word)));
 const VI = /[àáảãạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđ]/i;
-const out = { format: 'lu-voice-todo', lesson: id, at: new Date().toISOString(), lines: need.map(t => ({ text: t, lang: VI.test(t) || /^(Vui|Buồn|Mệt)$/.test(t) ? 'vi' : 'en' })) };
+const out = { format: 'lu-voice-todo', lesson: id, at: new Date().toISOString(), lines: need.map(t => ({ text: t, lang: VI.test(t) || /^(Vui|Buồn|Mệt)$/.test(t) ? 'vi' : CHAM.has(t) ? 'en-cham' : 'en' })) };
 await writeFile(path.join(ROOT, 'content/audio/can-tao.json'), JSON.stringify(out, null, 1));
 console.log(`${id}: ${all.length} câu, đã có giọng ${all.length - need.length}, cần tạo ${need.length} → content/audio/can-tao.json`);

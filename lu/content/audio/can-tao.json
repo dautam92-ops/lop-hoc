@@ -1,18 +1,18 @@
 {
  "format": "lu-voice-todo",
  "lesson": "M001",
- "at": "2026-11-27T23:48:45.019Z",
+ "at": "2026-11-27T23:55:53.881Z",
  "lines": [
   {
-   "text": "Mình học tên quả bằng tiếng Anh nhé!",
+   "text": "Mình học tên ba loại quả nhé!",
    "lang": "vi"
   },
   {
    "text": "Apple",
-   "lang": "en"
+   "lang": "en-cham"
   },
   {
-   "text": "Quả táo đây! Bé nói theo rồi chạm nhé!",
+   "text": "Quả táo, tiếng Anh là",
    "lang": "vi"
   },
   {
@@ -20,15 +20,19 @@
    "lang": "en"
   },
   {
+   "text": "Bé nói theo nào!",
+   "lang": "vi"
+  },
+  {
    "text": "Bé nói hay quá!",
    "lang": "vi"
   },
   {
    "text": "Banana",
-   "lang": "en"
+   "lang": "en-cham"
   },
   {
-   "text": "Quả chuối đây! Bé nói theo rồi chạm nhé!",
+   "text": "Quả chuối, tiếng Anh là",
    "lang": "vi"
   },
   {
@@ -41,10 +45,10 @@
   },
   {
    "text": "Orange",
-   "lang": "en"
+   "lang": "en-cham"
   },
   {
-   "text": "Quả cam đây! Bé nói theo rồi chạm nhé!",
+   "text": "Quả cam, tiếng Anh là",
    "lang": "vi"
   },
   {

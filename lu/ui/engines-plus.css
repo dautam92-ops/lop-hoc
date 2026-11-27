@@ -580,3 +580,4 @@
 .lu-lesson .answers > .opt.hoc-tu > :first-child { width: min(260px, 54vw) !important; height: min(260px, 54vw) !important; }
 .lu-lesson .answers > .opt.hoc-tu .en-word { font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 800; font-size: clamp(48px, 11vw, 100px); line-height: 1; color: #2f6db5; max-width: 100%; overflow-wrap: anywhere; }
 @media (orientation: portrait) and (max-width: 600px) { .lu-lesson .answers > .opt.hoc-tu { width: min(300px, 76vw) !important; } }
+.lu-lesson .en-word.sang { color: #e0702a; transform: scale(1.08); transition: transform .25s, color .25s; text-shadow: 0 0 18px rgba(255, 210, 90, .9); }

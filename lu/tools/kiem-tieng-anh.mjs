@@ -29,6 +29,15 @@ export async function kiemTiengAnh(id) {
     if (VI.test(t) && en.length) loi.push(`${at}: câu "${t}" trộn tiếng Anh (${[...new Set(en)].join(', ')}) vào câu tiếng Việt; tách từ tiếng Anh thành câu riêng đọc giọng bản địa`);
     else if (!VI.test(t) && en.length && reg.clips[t] && !/^en-/.test(voice[t] || '')) loi.push(`${at}: câu tiếng Anh "${t}" đang đọc bằng giọng ${voice[t] || 'không rõ'}, cần giọng tiếng Anh bản địa`);
   }
+  // (4) Bé nói theo (tam 28/11 06:53 "Mono nói quả chuối đây bằng tiếng Việt thì bé sao bắt chước nói banana được"):
+  //     câu cuối bé nghe trước khi tới lượt nói theo phải là chính từ tiếng Anh, giọng bản xứ.
+  const items = (pkg.stages || []).flatMap(st => st.activities).flatMap(a => (a.items || []).map((it, k) => [a.activity_id + ' câu ' + (k + 1), it]));
+  for (const [at, it] of items) {
+    const q = [...Array(it.word ? (it.word_times ?? 1) : 0).fill(it.word), ...[].concat(it.q || [])].filter(t => t && !t.startsWith('__'));
+    if (!q.some(t => /nói theo/i.test(t))) continue;
+    const cuoi = q[q.length - 1];
+    if (VI.test(cuoi) || !(cuoi.toLowerCase().match(/[a-z]+/g) || []).some(w => LEX.has(w) || w === String(it.word || '').toLowerCase())) loi.push(`${at}: bé được mời nói theo nhưng câu cuối bé nghe là "${cuoi}", phải là từ tiếng Anh do giọng bản xứ đọc`);
+  }
   return loi;
 }
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
