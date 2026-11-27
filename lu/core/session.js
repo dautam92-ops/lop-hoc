@@ -24,6 +24,7 @@ function rawSeconds(act) {
     case 'E01':
       if (act.mode === 'count') sec += say(act.hint) + r * (say(act.q) + say(act.ok) + 16);
       else if (act.mode === 'listen') sec += r * (4 + 8);
+      else if (act.mode === 'flash') sec += (act.levels || Array(r).fill({ ms: 3000 })).reduce((x, l) => x + (l.ms || 3000) / 1000 + say(l.look) + say(l.q || act.q) + say(act.ok) + 8, 0);
       else { const its = (act.items || []).slice(0, act.rounds || act.items.length); sec += its.reduce((s, it) => s + say(it.q) + say(it.ok) + (it.opts || []).reduce((x, o) => x + say(o.say) * 0.6 + say(o.reply) * 0.5, 0) + 9, 0); }
       break;
     case 'E02': { const n = (act.sets?.[0] || []).length || 3; sec += r * (n * 9 + say(act.done) + 3); break; }

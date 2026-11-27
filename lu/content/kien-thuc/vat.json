@@ -305,6 +305,7 @@
    "giai_doan_cay": 0,
    "nho": true
   },
+  "cay-dau": {"ten": "cây đậu", "nhom": "thuc-vat", "en": ["bean plant"], "giai_doan_cay": 2},
   "mam-dau": {
    "ten": "mầm đậu",
    "nhom": "thuc-vat",

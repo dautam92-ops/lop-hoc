@@ -386,6 +386,8 @@
   .lu-lesson .answers:has(> .opt:nth-of-type(5)) > .opt:not(.crayon) { --o: min(104px, calc((100vw - 92px) / 3)); }
   /* chỉ 2–3 đáp án: luôn ô to hai cột */
   .lu-lesson .stage .answers:not(:has(> .opt:nth-of-type(4))) > .opt:not(.crayon) { --o: min(132px, calc((100vw - 84px) / 2)) !important; }
+  /* chỉ 2 đáp án và không có hình đề (vd. Hello/Goodbye với hình Mono cả người): ô cao hơn để nội dung học đủ to (quy tắc 33) */
+  .lu-lesson .stage:not(:has(.scene > :not(.title):not(.cap):not(.guide):not(.bd-note):not(:empty))) .answers:not(:has(> .opt:nth-of-type(3))) > .opt:not(.crayon):not(.wide) { height: calc(var(--o) * 1.4); }
   .lu-lesson .answers > .opt:not(.wide):not(.face):not(.card):not(.plate):not(.crayon) { font-size: 64px; }
   .lu-lesson .answers > .opt .glyph { font-size: min(84px, calc(var(--o) * .6)); }
   .lu-lesson .answers > .opt.wide { min-height: 88px; }

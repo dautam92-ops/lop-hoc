@@ -1,0 +1,19 @@
+{
+  "lesson_id": "M001",
+  "ghi_chu": "Học cùng con buổi 1 giáo trình Mono (quy tắc Q4). Lời cho bố mẹ gọi trẻ là con; lời Mono gọi trẻ là bé.",
+  "dan_bo_me": {
+    "hom_nay": "Con tập nhìn nhanh và đếm 1 đến 3 vật, nghe chuyện ngắn, chào bằng tiếng Anh.",
+    "chuan_bi": "Để sẵn 3 cái thìa cho hoạt động cuối buổi.",
+    "ngoi_canh": "Ngồi cạnh con lúc Mono mời bố mẹ là đủ. Bận thì con vẫn tự học được."
+  },
+  "moi_bo_me": [
+    { "sau_bai": 0, "loai": "do-bo-me", "loi": "Bé giơ ngón tay, đố bố mẹ có mấy ngón!", "goi_y": "Con giơ 1 đến 3 ngón rồi giấu nhanh, bố mẹ đoán. Sau đó đổi vai." },
+    { "sau_bai": 3, "loai": "ke", "loi": "Bé kể bố mẹ nghe: hạt đậu bay đi đâu?", "goi_y": "Nghe con kể hết, hỏi thêm: rồi sao nữa? Không sửa lời con kể." },
+    { "sau_bai": 7, "loai": "hoi", "loi": "Bé hỏi bố mẹ: khi nào bố mẹ buồn?", "goi_y": "Kể thật một lần bố mẹ buồn và điều đã giúp bố mẹ vui lại." }
+  ],
+  "cuoi_buoi": {
+    "loi": "Mình tắt máy nhé! Bé cùng bố mẹ đếm ba cái thìa!",
+    "ten": "Đếm thìa cùng bố mẹ",
+    "phut": 5
+  }
+}

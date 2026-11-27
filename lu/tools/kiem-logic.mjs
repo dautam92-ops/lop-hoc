@@ -158,7 +158,7 @@ export async function kiemBienBan(ten, noiDung) {
 
 async function slotsDem() {
   const { readdir } = await import('node:fs/promises'); const s = new Set();
-  for (const f of (await readdir(path.join(ROOT, 'content/drafts'))).filter(f => /^L\d+\.json$/.test(f))) {
+  for (const f of (await readdir(path.join(ROOT, 'content/drafts'))).filter(f => /^[LM]\d+\.json$/.test(f))) {
     const di = o => { if (Array.isArray(o)) o.forEach(di); else if (o && typeof o === 'object') { if (o.n !== undefined && slotOf(o)) s.add(slotOf(o)); const m = typeof o.e === 'string' && o.e.match(/^art:([a-z0-9-]+)\*\d+/); if (m) s.add(m[1]); Object.values(o).forEach(di); } else if (typeof o === 'string') { const m = o.match(/^art:([a-z0-9-]+)\*\d+/); if (m) s.add(m[1]); } };
     di(JSON.parse(await readFile(path.join(ROOT, 'content/drafts', f), 'utf8')));
   }

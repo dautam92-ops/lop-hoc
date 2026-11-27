@@ -135,7 +135,7 @@
       }
      ],
      "ok": "Đúng rồi! Có {word} hạt. Bé tinh mắt quá!",
-     "no": "Mình nhìn lại nhé! Bé bấm Xem lại."
+     "no": "Không sao đâu! Mình nhìn lại nhé, bé bấm Xem lại."
     }
    ]
   },
@@ -160,18 +160,57 @@
      "activity_id": "M001-B02",
      "engine": "E14",
      "skill_id": "KP.ST.01",
-     "title": "Túi hạt mới cho bà",
+     "title": "Dán hạt cầu vồng",
      "mode": "sticker",
      "bg": "art:tui",
      "stickers": [
-      "art:hat-dau",
-      "art:hoa",
-      "art:sao",
-      "art:la",
-      "art:buom"
+      "art:hat-dau:do",
+      "art:hat-dau:xanh",
+      "art:hat-dau:vang"
      ],
      "min": 3,
-     "done": "Túi đẹp quá! Bà treo túi lên móc rồi."
+     "intro": [
+      "Bé dán hạt màu lên túi nhé!"
+     ],
+     "done": "Nhiều hạt màu ghê! Đẹp quá!"
+    },
+    {
+     "activity_id": "M001-B03",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Dán hoa và sao",
+     "mode": "sticker",
+     "bg": "art:tui",
+     "keep": true,
+     "stickers": [
+      "art:hoa",
+      "art:sao",
+      "art:buom"
+     ],
+     "min": 2,
+     "intro": [
+      "Thêm hoa, thêm sao nào!"
+     ],
+     "done": "Bé dán khéo quá! Túi có hoa, có sao rồi."
+    },
+    {
+     "activity_id": "M001-B04",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Thêm lá cho túi",
+     "mode": "sticker",
+     "bg": "art:tui",
+     "keep": true,
+     "stickers": [
+      "art:la",
+      "art:hoa",
+      "art:sao"
+     ],
+     "min": 1,
+     "intro": [
+      "Bé dán thêm lá xanh nhé!"
+     ],
+     "done": "Túi đẹp quá! Cảm ơn bé, bà treo túi lên móc rồi."
     }
    ]
   },
@@ -194,7 +233,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B03",
+     "activity_id": "M001-B05",
      "engine": "E01",
      "skill_id": "EN.EN.01",
      "title": "Hello, Mono!",
@@ -210,26 +249,26 @@
          "e": "lu:vay-tay"
         },
         {
-         "e": "lu:di-bo"
+         "e": "lu:sau"
         }
        ],
        "a": 0,
        "ok": "Good job! Mono vẫy tay chào bé.",
-       "no": "Hello là chào khi gặp nhau."
+       "no": "Bé thử lại nào! Hello là chào khi gặp nhau."
       },
       {
        "q": "Goodbye! Tranh nào Mono nói Goodbye?",
        "opts": [
         {
-         "e": "lu:vay-tay"
+         "e": "lu:sau"
         },
         {
-         "e": "lu:di-bo"
+         "e": "lu:vay-tay"
         }
        ],
-       "a": 1,
-       "ok": "Good job! Mono đi về nhà.",
-       "no": "Goodbye là chào khi ra về."
+       "a": 0,
+       "ok": "Good job! Mono quay lưng đi về nhà.",
+       "no": "Bé thử lại nào! Goodbye là chào khi ra về."
       },
       {
        "q": "Gà con chạy tới. Bé chào gà con nào!",
@@ -246,7 +285,7 @@
        ],
        "a": 0,
        "ok": "Hello! Bé chào hay quá!",
-       "no": "Gà con nào đang chạy tới nhỉ?"
+       "no": "Bé thử lại nào! Gà con nào đang chạy tới nhỉ?"
       }
      ]
     }
@@ -275,7 +314,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B04",
+     "activity_id": "M001-B06",
      "engine": "E01",
      "skill_id": "TV.NG.01",
      "title": "Chuyện hạt đậu nhỏ",
@@ -297,8 +336,8 @@
         }
        ],
        "a": 0,
-       "ok": "Đúng rồi! Hạt nằm trong túi của bà.",
-       "no": "Hạt đậu nằm trong túi của bà."
+       "ok": "Bé nhớ giỏi quá! Hạt nằm trong túi của bà.",
+       "no": "Mình cùng xem lại nào! Hạt đậu nằm trong túi của bà."
       },
       {
        "q": "Cái gì thổi hạt đậu bay đi?",
@@ -314,8 +353,8 @@
         }
        ],
        "a": 0,
-       "ok": "Đúng rồi! Gió thổi vù vù.",
-       "no": "Gió thổi vù vù đó bé."
+       "ok": "Chính xác! Gió thổi vù vù.",
+       "no": "Bé thử lại nào! Cái gì thổi vù vù nhỉ?"
       },
       {
        "q": "Cuối cùng hạt đậu rơi ở đâu?",
@@ -331,8 +370,8 @@
         }
        ],
        "a": 2,
-       "ok": "Đúng rồi! Hạt rơi xuống gốc cây.",
-       "no": "Hạt chỉ bay qua mái nhà thôi."
+       "ok": "Bé nghe chuyện giỏi lắm! Hạt rơi xuống gốc cây.",
+       "no": "Gần đúng rồi! Hạt bay qua mái nhà, rồi rơi xuống đâu nhỉ?"
       }
      ]
     }
@@ -355,7 +394,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B05",
+     "activity_id": "M001-B07",
      "engine": "E15",
      "skill_id": "KP.VD.01",
      "title": "Gà vỗ cánh",
@@ -367,7 +406,7 @@
      "evidence": "tiep-xuc"
     },
     {
-     "activity_id": "M001-B06",
+     "activity_id": "M001-B08",
      "engine": "E15",
      "skill_id": "KP.VD.01",
      "title": "Vịt lạch bạch",
@@ -379,7 +418,7 @@
      "evidence": "tiep-xuc"
     },
     {
-     "activity_id": "M001-B07",
+     "activity_id": "M001-B09",
      "engine": "E15",
      "skill_id": "KP.VD.01",
      "title": "Ếch nhảy",
@@ -410,7 +449,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B08",
+     "activity_id": "M001-B10",
      "engine": "E03",
      "skill_id": "TD.LG.01",
      "title": "Xếp hạt theo màu",
@@ -456,11 +495,11 @@
      ],
      "per_round": 4,
      "rounds": 1,
-     "no": "Hạt đỏ vào giỏ đỏ nhé.",
+     "no": "Bé thử lại nào! Hạt đỏ vào giỏ đỏ nhé.",
      "done": "Bé xếp giỏi lắm, hạt nào cũng đúng giỏ!"
     },
     {
-     "activity_id": "M001-B09",
+     "activity_id": "M001-B11",
      "engine": "E03",
      "skill_id": "TD.LG.01",
      "title": "Xếp tiếp nào",
@@ -509,11 +548,11 @@
      "intro": [
       "Còn nhiều hạt quá! Bé xếp tiếp nhé!"
      ],
-     "no": "Hạt xanh vào giỏ xanh nhé.",
+     "no": "Bé thử lại nào! Hạt xanh vào giỏ xanh nhé.",
      "done": "Hoan hô bé, sáu hạt về đúng giỏ rồi!"
     },
     {
-     "activity_id": "M001-B10",
+     "activity_id": "M001-B12",
      "engine": "E03",
      "skill_id": "TD.LG.01",
      "title": "Thêm giỏ vàng",
@@ -568,7 +607,7 @@
      "intro": [
       "Có thêm giỏ vàng rồi! Bé xếp nhé!"
      ],
-     "no": "Bé nhìn màu của hạt nhé.",
+     "no": "Bé thử lại nào! Bé nhìn màu của hạt nhé.",
      "done": "Bé giỏi quá, ba giỏ đều đúng màu!"
     }
    ]
@@ -592,7 +631,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B11",
+     "activity_id": "M001-B13",
      "engine": "E01",
      "skill_id": "KP.KH.01",
      "title": "Hạt đậu cần gì để lớn?",
@@ -615,7 +654,7 @@
        ],
        "a": 0,
        "ok": "Đúng rồi! Có nước, hạt nứt vỏ.",
-       "no": "Hạt đậu không ăn bánh mì đâu!",
+       "no": "Bé thử lại nào! Hạt đậu khát nước mà.",
        "show": "art:hat-dau"
       },
       {
@@ -632,23 +671,23 @@
         }
        ],
        "a": 0,
-       "ok": "Đúng rồi! Có nắng, mầm nhú lên.",
-       "no": "Cây cần ánh nắng đó bé.",
+       "ok": "Giỏi quá! Có ông mặt trời, mầm lớn nhanh.",
+       "no": "Bé thử lại nào! Mầm cây cần ánh nắng đó.",
        "show": "art:mam-dau"
       },
       {
        "q": "Có nước, có nắng. Cây sẽ thế nào?",
        "opts": [
         {
-         "e": "art:mam-dau"
+         "e": "art:cay-dau"
         },
         {
          "e": "art:hat-dau"
         }
        ],
        "a": 0,
-       "ok": "Bé đoán đúng rồi! Cây lớn lên.",
-       "no": "Có nước và nắng, cây sẽ lớn.",
+       "ok": "Bé đoán đúng rồi! Cây đậu lớn lên.",
+       "no": "Gần đúng rồi! Có nước và nắng, cây sẽ lớn.",
        "show": [
         "art:binh-tuoi",
         "art:mat-troi"
@@ -676,7 +715,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B12",
+     "activity_id": "M001-B14",
      "engine": "E01",
      "skill_id": "EQ.CX.01",
      "title": "Mono vui hay buồn?",
@@ -696,15 +735,15 @@
         }
        ],
        "a": 1,
-       "ok": "Đúng rồi! Mono đang buồn.",
-       "no": "Nhìn miệng Mono nhé.",
+       "ok": "Tinh ý quá! Mono đang buồn.",
+       "no": "Mình cùng xem lại nào! Nhìn miệng Mono nhé.",
        "show": "lu:buon"
       },
       {
        "q": "Vì sao Mono buồn nhỉ?",
        "opts": [
         {
-         "e": "art:tui"
+         "e": "art:gio-thoi"
         },
         {
          "e": "art:qua-tang"
@@ -714,8 +753,8 @@
         }
        ],
        "a": 0,
-       "ok": "Đúng rồi! Túi hạt bay mất rồi.",
-       "no": "Túi hạt của bà bay mất đó.",
+       "ok": "Bé hiểu Mono quá! Gió thổi bay hạt giống rồi.",
+       "no": "Bé thử lại nào! Hạt giống của bà đâu rồi nhỉ?",
        "show": "lu:buon"
       },
       {
@@ -730,7 +769,7 @@
        ],
        "a": 0,
        "ok": "Có bé giúp, Mono vui lắm!",
-       "no": "Nhìn miệng Mono nhé.",
+       "no": "Mình cùng xem lại nào! Nhìn miệng Mono nhé.",
        "show": [
         "lu:vui",
         "art:hat-dau"
@@ -758,7 +797,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B13",
+     "activity_id": "M001-B15",
      "engine": "E02",
      "skill_id": "KS.SX.01",
      "title": "Cất túi hạt đúng chỗ",
@@ -781,8 +820,8 @@
       ]
      ],
      "again": "Cất tiếp đồ khác nào!",
-     "no": "Bé nhìn hình cái bóng nhé.",
-     "done": "Gọn thế này, gió không thổi bay nữa!"
+     "no": "Bé thử lại nào! Bé nhìn hình cái bóng nhé.",
+     "done": "Bé cất khéo quá! Gió không thổi bay được nữa."
     }
    ]
   },
@@ -806,7 +845,7 @@
    ],
    "activities": [
     {
-     "activity_id": "M001-B14",
+     "activity_id": "M001-B16",
      "engine": "E01",
      "skill_id": "TO.DEM.01",
      "title": "Thử thách vàng",
@@ -858,8 +897,8 @@
        "distract": "art:la"
       }
      ],
-     "ok": "Đúng rồi! Có {word} hạt!",
-     "no": "Suýt nữa thôi! Bé bấm Xem lại nhé."
+     "ok": "Xuất sắc! Đúng {word} hạt!",
+     "no": "Suýt đúng rồi! Bé bấm Xem lại nhé."
     }
    ]
   }
@@ -867,7 +906,6 @@
  "end": [
   "Bé tìm được hạt cầu vồng đầu tiên rồi!",
   "Quà của bé đây: thẻ Gà con!",
-  "Bé cùng bố mẹ đếm ba cái thìa nhé!",
   "Ơ kìa, hạt đậu kia lăn đi đâu thế?"
  ],
  "reward": {

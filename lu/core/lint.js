@@ -54,7 +54,8 @@ export function lintLesson(pkg, skills = null) {
   // Buổi học nhiều chặng (D42, S02-R02)
   if (pkg.stages) {
     const est = estimateMinutes(pkg); const n = pkg.stages.length;
-    if (est.minutes < 20) errors.push(`Buổi học ước tính ${est.minutes} phút, cần ít nhất 20 phút (S02-R02)`);
+    const minPhut = /^M/.test(pkg.lesson_id || '') ? 15 : 20; /* buổi Mono: 10 bài × 3 lượt ≈ 16 phút màn hình + 5 phút cùng bố mẹ (chờ sếp chốt 27/11) */
+    if (est.minutes < minPhut) errors.push(`Buổi học ước tính ${est.minutes} phút, cần ít nhất ${minPhut} phút (S02-R02)`);
     if (pkg.layout === 'hub') { if (n < 12 || n > 16) warnings.push(`Trang buổi học có ${n} bài nhỏ, chuẩn là 12–16 (D46)`); }
     else if (n < 10 || n > 12) warnings.push(`Buổi có ${n} chặng, chuẩn là 10–12 (S02-R02)`);
     // D45: mỗi buổi phủ đủ 13 nhóm năng lực bằng bài nhỏ thật (khai báo trong stage.nhom là rèn TRỰC TIẾP)

@@ -1,0 +1,91 @@
+{
+ "doi_tuong": "M001",
+ "tep": "content/drafts/M001.json",
+ "ma_bam": "b50ecf67cb57820a66feaa888d14f1c5c7cf23ef",
+ "ngay": "2026-11-27",
+ "nguoi_soat": "agent soát logic",
+ "lan_soat": 1,
+ "quy_tac_da_soat": [
+  "LG01",
+  "LG02",
+  "LG03",
+  "LG04",
+  "LG05",
+  "LG06",
+  "LG07",
+  "LG08",
+  "LG09",
+  "LG10",
+  "LG11",
+  "LG12",
+  "LG13",
+  "LG14",
+  "LG15",
+  "LG16",
+  "LG17",
+  "LG18",
+  "LG19",
+  "LG20"
+ ],
+ "may_soat": {
+  "loi": 0,
+  "canh_bao": 3
+ },
+ "canh_bao_da_xet": [
+  {
+   "canh_bao": "CẢNH BÁO M001-B13: \"Hạt đậu khát nước. Bé đưa gì?\": lời khen \"Đúng rồi! Có nước, hạt nứt vỏ.\" không nhắc bình tưới; agent xem lời khen có đúng sự thật không (LG19)",
+   "ket_luan": "Không phải lỗi LG19: câu hỏi nói rõ \"khát nước\", đáp án là bình tưới (đồ đựng nước); lời khen nói kết quả \"có nước, hạt nứt vỏ\", đúng sự thật (hạt hút nước thì trương và nứt vỏ)."
+  },
+  {
+   "canh_bao": "CẢNH BÁO M001-B13: \"Hạt cần gì nữa để lớn?\": đáp án thuộc 3 nhóm (thien-nhien, do-vat, do-an); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
+   "ket_luan": "Không phải lỗi LG01: mặt trời, cái khăn, bánh mì đều là thứ bé có thể \"đưa cho cây\"; khăn và bánh mì sai rõ với trẻ (cây không cần khăn, không ăn bánh). Chỉ ánh nắng đúng (LG03). Lời khen đã sửa nhắc \"ông mặt trời\"."
+  },
+  {
+   "canh_bao": "CẢNH BÁO M001-B14: \"Vì sao Mono buồn nhỉ?\": đáp án thuộc 3 nhóm (thien-nhien, do-vat, do-an); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
+   "ket_luan": "Không phải lỗi LG01: ba tranh là ba lý do có thể xảy ra (gió thổi bay hạt, được quà, ăn bánh); chỉ gió thổi bay hạt khớp mở đầu buổi. Được quà và ăn bánh là chuyện vui, sai rõ với câu \"vì sao buồn\"."
+  }
+ ],
+ "ghi_chu": "Soát cả 16 hoạt động. Lỗi tìm thấy đã sửa trong tools/mono/m001.py rồi dựng lại bài; biên bản này khớp bản đã sửa. Đã xét, không ghi lỗi: bài 1 và thử thách vàng đếm 1–3 hạt, số lượng do mã dựng (LG13, LG14), vật gây nhiễu (lá, sỏi) không phải hạt; hạt đậu đỏ, xanh, vàng có thật ngoài đời (đậu đỏ, đậu xanh, đậu nành) (LG07); truyện hạt đậu bay qua mái nhà trong gió là truyện kể, hạt nhỏ nhẹ, không dạy điều sai (LG08); vận động gà, vịt, ếch đúng dáng con vật, không nguy hiểm (LG11); bài cất đồ theo bóng: mỗi bóng đúng hình một vật (LG05); khăn, bánh mì, giày là đáp án sai rõ (LG03, LG04). Ảnh Goodbye là Mono quay lưng đứng, không phải đang bước đi: đủ cho bé phân biệt với Mono vẫy tay chào; nếu sếp muốn đúng kịch bản (Mono đeo túi đi về, vẫy tay) thì vẽ thêm một ảnh hành động. Cập nhật mã băm sau khi chỉ đổi lời kết bài 3 cho có lời khen (quy tắc 43), không đổi nội dung câu hỏi, đáp án.",
+ "loi": [
+  {
+   "ma": "LG07",
+   "o": "M001-B13 câu 2 (trước là B11)",
+   "cau": "Hạt cần gì nữa để lớn?",
+   "mo_ta": "Lời khen cũ \"Có nắng, mầm nhú lên\" sai khoa học: hạt nảy mầm nhờ nước và hơi ấm, không cần nắng; nắng giúp mầm đã nhú lớn lên.",
+   "sua": "Lời khen: \"Giỏi quá! Có ông mặt trời, mầm lớn nhanh.\" (ảnh hiện là mầm đậu đã nhú).",
+   "trang_thai": "da_sua"
+  },
+  {
+   "ma": "LG03",
+   "o": "M001-B13 câu 3",
+   "cau": "Có nước, có nắng. Cây sẽ thế nào?",
+   "mo_ta": "Đáp án cũ mầm đậu và hạt đậu: mầm đậu đã hiện ở câu 2, nên \"cây lớn lên\" mà đáp án vẫn là mầm thì chưa rõ; bé dễ lưỡng lự.",
+   "sua": "Đáp án đúng đổi thành cây đậu cao (ảnh DV-0008 có sẵn trong kho, gắn slot art:cay-dau), đáp án sai giữ hạt đậu nằm im. Lời khen \"Cây đậu lớn lên.\"",
+   "trang_thai": "da_sua"
+  },
+  {
+   "ma": "LG03",
+   "o": "M001-B05 câu 1–2 (trước là B03)",
+   "cau": "Hello / Goodbye! Tranh nào Mono nói …?",
+   "mo_ta": "Hai tranh cũ là Mono vẫy tay và Mono đi bộ (mặt hướng về bé). Vẫy tay cũng là chào Goodbye, còn tranh đi bộ không cho thấy Mono đang ra về, nên câu Goodbye có thể đúng cả hai tranh (LG05).",
+   "sua": "Goodbye dùng ảnh Mono quay lưng (góc nhìn sau, MN-0012 có sẵn, không vẽ mới); Hello giữ Mono vẫy tay mặt hướng về bé. Câu 2 đổi chỗ trái phải như kịch bản.",
+   "trang_thai": "da_sua"
+  },
+  {
+   "ma": "LG19",
+   "o": "M001-B06 câu 3 (trước là B04)",
+   "cau": "Cuối cùng hạt đậu rơi ở đâu?",
+   "mo_ta": "Lời gợi ý khi sai \"Hạt chỉ bay qua mái nhà thôi\" chỉ đúng khi bé chọn mái nhà; bé chọn bờ ao thì gợi ý lạc hướng.",
+   "sua": "\"Gần đúng rồi! Hạt bay qua mái nhà, rồi rơi xuống đâu nhỉ?\" dùng được cho mọi lựa chọn sai.",
+   "trang_thai": "da_sua"
+  },
+  {
+   "ma": "LG20",
+   "o": "M001-B14 câu 2 (trước là B12)",
+   "cau": "Vì sao Mono buồn nhỉ?",
+   "mo_ta": "Đáp án cũ là cái túi, lời khen \"Túi hạt bay mất rồi\". Mở đầu buổi và truyện bài 4 nói gió thổi bay HẠT, túi vẫn còn; tranh cái túi nguyên vẹn không cho thấy điều gì mất.",
+   "sua": "Đáp án đúng là tranh gió thổi bay hạt đậu (art:gio-thoi, dùng chung với bài 4), lời khen \"Gió thổi bay hạt giống rồi.\" Câu mô tả ảnh gió thổi sửa để có hạt đậu bay trong gió.",
+   "trang_thai": "da_sua"
+  }
+ ]
+}

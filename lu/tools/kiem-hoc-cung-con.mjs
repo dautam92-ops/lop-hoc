@@ -52,7 +52,7 @@ export function kiemHocCungCon(pkg, h, hTruoc) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const id = process.argv[2] || 'L001';
   const pkg = JSON.parse(await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8'));
-  const truoc = 'L' + String(+id.slice(1) - 1).padStart(3, '0');
+  const truoc = id[0] + String(+id.slice(1) - 1).padStart(3, '0');
   const loi = kiemHocCungCon(pkg, await docHocCungCon(id, pkg), await docHocCungCon(truoc));
   console.log(loi.length ? loi.join('\n') : `${id}: học cùng con đạt`);
   process.exit(loi.length ? 1 : 0);

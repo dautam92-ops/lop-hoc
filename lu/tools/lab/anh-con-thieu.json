@@ -297,15 +297,15 @@
   {
    "id": "M001-OB-gio-thoi",
    "slot": "art:gio-thoi",
-   "vi": "Gió thổi (đáp án \"Cái gì thổi hạt đậu bay đi?\", buổi M001)",
-   "prompt": "soft swirling wind lines with a few green leaves flying, vignette shape, isolated on plain white background",
+   "vi": "Gió thổi bay hạt đậu (đáp án \"Cái gì thổi hạt đậu bay đi?\" và \"Vì sao Mono buồn?\", buổi M001)",
+   "prompt": "soft swirling wind lines blowing a few small brown beans and green leaves through the air, only wind, beans and leaves, no animal, no people, vignette shape, isolated on plain white background",
    "tach_nen": true
   },
   {
    "id": "M001-OB-qua-tang",
    "slot": "art:qua-tang",
    "vi": "Hộp quà có nơ (đáp án sai \"Mono được quà\", buổi M001)",
-   "prompt": "a small gift box wrapped in yellow paper with a red ribbon bow, isolated on plain white background",
+   "prompt": "a small gift box wrapped in yellow paper with a red ribbon bow, only the object, no animal, no people, isolated on plain white background",
    "tach_nen": true
   }
  ]

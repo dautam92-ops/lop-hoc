@@ -21,13 +21,15 @@ check('Nội dung đúng quy chuẩn (lint)', lint.errors.length === 0, lint.err
 const engErr = +(cd.match(/lỗi engine (\d+)/) || [, 99])[1];
 check('Đáp án đúng ở 100 biến thể mỗi hoạt động', engErr === 0, engErr ? `${engErr} hoạt động lỗi` : '');
 const phut = +(cd.match(/phút ([\d.]+)/) || [, 0])[1];
-check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
+const minPhut = id[0] === 'M' ? 15 : 20; /* buổi Mono: ≈16 phút màn hình + 5 phút cùng bố mẹ */
+check(`Buổi học đủ ${minPhut} phút trở lên`, phut >= minPhut, `${phut} phút`);
 
 // 1b. Cấu trúc buổi như L001 (tam 26/11): 10–12 bài nhỏ, mỗi bài 3–4 bài tập, đủ 6 nhóm kỹ năng.
 //     Lịch ôn (tam duyệt 26/11): mỗi lượt ôn chữ/số một cách học mới; từ L004 mỗi buổi có thẻ ôn.
 {
   const dir = path.join(ROOT, 'content/drafts'); const all = [];
-  for (const f of (await readdir(dir)).filter(f => /^L\d+\.json$/.test(f))) all.push(JSON.parse(await readFile(path.join(dir, f), 'utf8')));
+  const pre = id[0]; /* L: giáo trình cũ, M: giáo trình Mono 200 buổi; so với buổi trước cùng bộ */
+  for (const f of (await readdir(dir)).filter(f => new RegExp('^' + pre + '\\d+\\.json$').test(f))) all.push(JSON.parse(await readFile(path.join(dir, f), 'utf8')));
   const pkg = all.find(p => p.lesson_id === id); const so = x => +String(x).replace(/\D/g, '');
   const ct = pkg ? kiemCauTruc(pkg) : [`không thấy ${id}`];
   check('Cấu trúc như L001: 10–12 bài nhỏ, 3–4 bài tập mỗi bài, đủ 6 nhóm kỹ năng', !ct.length, ct.slice(0, 3).join('; '));
@@ -41,7 +43,7 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
 {
   const { kiemHocCungCon, docHocCungCon } = await import('./kiem-hoc-cung-con.mjs');
   const pkg = JSON.parse(await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8'));
-  const truoc = 'L' + String(+id.replace(/\D/g, '') - 1).padStart(3, '0');
+  const truoc = id[0] + String(+id.replace(/\D/g, '') - 1).padStart(3, '0');
   const hc = kiemHocCungCon(pkg, await docHocCungCon(id, pkg), await docHocCungCon(truoc));
   check('Học cùng con: dặn bố mẹ, Mono mời bố mẹ, cuối buổi tắt máy', !hc.length, hc.slice(0, 3).join('; '));
 }

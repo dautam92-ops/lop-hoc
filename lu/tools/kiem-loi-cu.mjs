@@ -67,7 +67,7 @@ export async function kiemGio(page) {
     for (const b of W.querySelectorAll('.bin')) {
       const B = b.getBoundingClientRect(); const lab = b.querySelector('.bin-h')?.innerText.trim();
       for (const h of b.querySelectorAll('.bin-h img, .bin-h svg, .bin-h .lu-art')) { const R = h.getBoundingClientRect(); if (Math.max(R.width, R.height) > Math.min(96, B.height * .3)) e.push(`hình đầu giỏ "${lab}" quá to ${Math.round(Math.max(R.width, R.height))}px`); }
-      const rs = [...b.querySelectorAll('.bin-in > span')].map(s => s.getBoundingClientRect());
+      const rs = [...b.querySelectorAll('.bin-in > span')].filter(s => !s.getAnimations().some(x => x.playState === 'running')).map(s => s.getBoundingClientRect()); /* bỏ qua vật đang nảy vào giỏ (hiệu ứng phóng từ nhỏ), đo khi đã nằm yên */
       rs.forEach((R, i) => {
         if (Math.min(R.width, R.height) < 28) e.push(`vật trong giỏ "${lab}" bị mất (cỡ ${Math.round(R.width)}×${Math.round(R.height)}px)`);
         else if (Math.max(R.width, R.height) > Math.min(120, B.width * .6)) e.push(`vật trong giỏ "${lab}" quá to ${Math.round(Math.max(R.width, R.height))}px`);

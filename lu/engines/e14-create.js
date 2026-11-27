@@ -56,11 +56,13 @@ function draw(ctx, act) {
 }
 const UNDO = `<svg viewBox="0 0 24 24" class="lu-ic" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7L4 12l5 5"/><path d="M4 12h10a6 6 0 0 1 0 12h-2" transform="translate(0 -6)"/></svg>`;
 
+// keep: true = giữ hình bé đã dán ở bài tập sticker trước (cùng một bức tranh qua nhiều bài tập)
+let lastDrop = '';
 function sticker(ctx, act) {
   const { ui, voice } = ctx; let placed = 0, sel = null;
   return new Promise(done => {
     ui.scene(act.title, `<div class="stk-scene">${frameHTML({ bg: act.bg })}<div class="stk-drop"></div></div>`);
-    const sc = ui.stage.querySelector('.stk-scene'), drop = sc.querySelector('.stk-drop');
+    const sc = ui.stage.querySelector('.stk-scene'), drop = sc.querySelector('.stk-drop'); drop.innerHTML = act.keep ? lastDrop : '';
     const tray = ui.answers('Kéo hình dán vào tranh', act.stickers.map((s, i) => `<div class="piece stk" data-i="${i}">${vis(s)}</div>`).join('') + `<button class="big-btn stk-done">Xong rồi</button>`); tray.classList.add('tray');
     const put = (p, x, y) => { const r = drop.getBoundingClientRect(); const px = Math.max(4, Math.min(96, (x - r.left) / r.width * 100)), py = Math.max(6, Math.min(96, (y - r.top) / r.height * 100));
       drop.insertAdjacentHTML('beforeend', `<span class="stk-on" style="left:${px}%;top:${py}%">${vis(act.stickers[+p.dataset.i])}</span>`); placed++; };
@@ -69,8 +71,9 @@ function sticker(ctx, act) {
     document.addEventListener('pointerup', e => { const g = document.querySelector('.piece.drag'); if (!g) return; const el = document.elementsFromPoint(e.clientX, e.clientY).find(x => x === drop); if (el) { const src = tray.querySelector('.stk.ghost'); if (src) put(src, e.clientX, e.clientY); } }, true);
     drop.onclick = e => { if (voice.busy || !sel) return; put(sel, e.clientX, e.clientY); };
     const doneBtn = tray.querySelector('.stk-done');
-    doneBtn.onclick = () => { if (voice.busy) return; if (placed < (act.min || 3)) return voice.say([act.more || 'Bé dán thêm vài hình nữa nhé.']);
-      saveArtwork('dan-hinh', sc.innerHTML); ctx.record({ skill_id: act.skill_id, kind: 'participation', correct: true, first_try: true, tries: 1, hints: 0, placed }); voice.say(['__jingle', act.done]).then(done); };
+    doneBtn.onclick = () => { if (voice.busy) return; if (placed < (act.min || 3) && ctx.fast) { const r = drop.getBoundingClientRect(); for (let i = placed; i < (act.min || 3); i++) put(tray.querySelectorAll('.stk')[i % act.stickers.length], r.left + r.width * (.2 + .25 * i), r.top + r.height * .5); } /* chạy thử tự động: tự dán đủ hình */
+      if (placed < (act.min || 3)) return voice.say([act.more || 'Bé dán thêm vài hình nữa nhé.']);
+      lastDrop = drop.innerHTML; saveArtwork('dan-hinh', sc.innerHTML); ctx.record({ skill_id: act.skill_id, kind: 'participation', correct: true, first_try: true, tries: 1, hints: 0, placed }); voice.say(['__jingle', act.done]).then(done); };
     ctx.test.mark([doneBtn]);
     setAuto(ctx, async () => { const r = drop.getBoundingClientRect(); for (let i = 0; i < Math.max(act.min || 3, 3); i++) { put(tray.querySelectorAll('.stk')[i % act.stickers.length], r.left + r.width * (.2 + .25 * i), r.top + r.height * (.4 + .1 * (i % 2))); await sleep(ctx, 80); } doneBtn.click(); }, () => doneBtn.click());
     voice.say(act.intro || []);
