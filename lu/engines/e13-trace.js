@@ -51,7 +51,7 @@ function traceGlyph(ctx, act, g, first) {
       const tol = ph === 'doc-lap' ? (act.tol_alone || 9) : (act.tol || 13);
       guides.innerHTML = S.map(s => `<path d="${s.d}" class="tr-guide ${ph}"/>`).join('');
       ink.innerHTML = '';
-      if (ph === 'mau') { await voice.say([act.watch || 'Bé xem Lu tô mẫu nhé.']); for (const s of S) await demoStroke(ctx, s, ink, uiG, voice); await sleep(ctx, 400); continue; }
+      if (ph === 'mau') { await voice.say([act.watch || 'Bé xem Mono tô mẫu nhé.']); for (const s of S) await demoStroke(ctx, s, ink, uiG, voice); await sleep(ctx, 400); continue; }
       await voice.say([ph === 'doc-lap' ? (act.alone || 'Giờ bé tự tô nhé.') : (act.your_turn || 'Đến lượt bé tô theo đường chấm nhé.')]);
       for (let k = 0; k < S.length; k++) resets += await doStroke(ctx, act, S[k], k, ph, tol, ink, uiG);
       uiG.innerHTML = '';

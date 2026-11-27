@@ -153,6 +153,30 @@
    "age": "4-5",
    "dev": "phone",
    "sua": "Bộ quy tắc logic LG01–LG20 (QUY-TAC-LOGIC.md), kho kiến thức, máy soát tools/kiem-logic.mjs, agent soát logic có biên bản; cổng chặn khi thiếu; quy tắc 41"
+  },
+  {
+   "ngay": "27/11",
+   "loi": "\"Lu nên làm gì?\" (L001 Quả đậu trên cao): hai đáp án chỉ là ảnh Lu nhảy và Lu chỉ tay kèm lời đọc; bé không hình dung được việc làm",
+   "s": "L001",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Vẽ ảnh hành động thật bằng Qwen (Lu nhảy với quả, bà hái giúp, Lu nhảy lấy mũ, bà lấy mũ giúp); ảnh tư thế kèm lời đọc không còn được miễn; quy tắc 42"
+  },
+  {
+   "ngay": "27/11",
+   "loi": "Lời khen nhàm chán, ít cổ vũ (vd \"Tay Lu sạch rồi!\"); 16 câu khen mở đầu \"Đúng rồi!\"",
+   "s": "L001",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Giọng cô giáo mầm non: khen việc bé làm, gắn thói quen tốt (\"Bé giỏi quá! Từ nay bé nhớ rửa tay thật sạch trước khi ăn cơm nhé.\"), đa dạng câu mở đầu; quy tắc 43"
+  },
+  {
+   "ngay": "27/11",
+   "loi": "Bài tìm hạt đậu xếp vật trong 9 ô thẻ, không trực quan",
+   "s": "L002",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Vật rải rác trên cảnh luống đất như hạt đậu đổ ra vườn (layout roi); quy tắc 44"
   }
  ]
 }

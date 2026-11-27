@@ -115,7 +115,7 @@ function place(ctx, act, R, first) {
     ui.scene(act.title, `<div class="place-sc"><div class="pl-anchor">${vis(act.anchor)}</div>${Object.entries(ZONES).map(([z, [x, y, w, h]]) => `<div class="pl-zone" data-z="${z}" style="left:${x - w / 2}%;top:${y - h / 2}%;width:${w}%;height:${h}%"></div>`).join('')}</div>`);
     const sc = ui.stage.querySelector('.place-sc');
     const pieces = [...new Set(tasks.map(t => t.e).concat(act.extra || []))];
-    const tray = ui.answers(act.label || 'Kéo đồ vật vào đúng chỗ Lu nói', pieces.map(e => `<div class="piece pl-piece" data-e="${esc(e)}">${vis(e)}</div>`).join('')); tray.classList.add('tray');
+    const tray = ui.answers(act.label || 'Kéo đồ vật vào đúng chỗ Mono nói', pieces.map(e => `<div class="piece pl-piece" data-e="${esc(e)}">${vis(e)}</div>`).join('')); tray.classList.add('tray');
     const mark = () => { const t = tasks[k]; if (t) ctx.test.mark([tray.querySelector(`.pl-piece[data-e="${CSS.escape(t.e)}"]`), sc.querySelector(`.pl-zone[data-z="${t.zone}"]`)]); };
     const say = () => tasks.length > 1 && act.both ? [act.both, ...tasks.map(t => t.say)] : [tasks[k].say];
     const drop = (p, z) => {

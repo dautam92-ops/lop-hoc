@@ -1,7 +1,369 @@
 {
+ "nhan_vat_chinh": "MONO",
+ "MONO": {
+  "ten": "Mono",
+  "vai_tro": "nhân vật chính duy nhất (tam chốt 27/11/2026, thay Lu, trước đó tạm gọi Miko; bán cả quốc tế, bỏ nhân vật phụ bà và gà con)",
+  "chi_hinh_tinh": true,
+  "phong_cach": "ChatGPT Image; tam tự vẽ và gửi 27/11",
+  "khung_chuan": "PNG nền trong suốt: góc nhìn 1024×1024, biểu cảm (nửa người, sát đáy), tư thế 512×512; chân chạm đường đáy 95%, căn giữa; bản xuất bản WebP 512×512",
+  "golden_reference": [
+   "MN-0001",
+   "MN-0002",
+   "MN-0003",
+   "MN-0004",
+   "MN-0067"
+  ],
+  "goc_nhin": {
+   "truoc": {
+    "asset_id": "MN-0005",
+    "png": "assets/mono/golden-reference/MN-0005_mono-goc-nhin-truoc_v01.png",
+    "webp_id": "MN-0006",
+    "webp": "assets/mono/xuat-ban/MN-0006_mono-goc-nhin-truoc-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0001"
+   },
+   "nghieng": {
+    "asset_id": "MN-0007",
+    "png": "assets/mono/golden-reference/MN-0007_mono-goc-nhin-nghieng_v01.png",
+    "webp_id": "MN-0008",
+    "webp": "assets/mono/xuat-ban/MN-0008_mono-goc-nhin-nghieng-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0001"
+   },
+   "ben": {
+    "asset_id": "MN-0009",
+    "png": "assets/mono/golden-reference/MN-0009_mono-goc-nhin-ben_v01.png",
+    "webp_id": "MN-0010",
+    "webp": "assets/mono/xuat-ban/MN-0010_mono-goc-nhin-ben-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0001"
+   },
+   "sau": {
+    "asset_id": "MN-0011",
+    "png": "assets/mono/golden-reference/MN-0011_mono-goc-nhin-sau_v01.png",
+    "webp_id": "MN-0012",
+    "webp": "assets/mono/xuat-ban/MN-0012_mono-goc-nhin-sau-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0001"
+   }
+  },
+  "bieu_cam": {
+   "vui": {
+    "asset_id": "MN-0013",
+    "png": "assets/mono/bieu-cam/MN-0013_mono-bieu-cam-vui_v01.png",
+    "webp_id": "MN-0014",
+    "webp": "assets/mono/xuat-ban/MN-0014_mono-bieu-cam-vui-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "buon": {
+    "asset_id": "MN-0015",
+    "png": "assets/mono/bieu-cam/MN-0015_mono-bieu-cam-buon_v01.png",
+    "webp_id": "MN-0016",
+    "webp": "assets/mono/xuat-ban/MN-0016_mono-bieu-cam-buon-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "to-mo": {
+    "asset_id": "MN-0017",
+    "png": "assets/mono/bieu-cam/MN-0017_mono-bieu-cam-to-mo_v01.png",
+    "webp_id": "MN-0018",
+    "webp": "assets/mono/xuat-ban/MN-0018_mono-bieu-cam-to-mo-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "suy-nghi": {
+    "asset_id": "MN-0019",
+    "png": "assets/mono/bieu-cam/MN-0019_mono-bieu-cam-suy-nghi_v01.png",
+    "webp_id": "MN-0020",
+    "webp": "assets/mono/xuat-ban/MN-0020_mono-bieu-cam-suy-nghi-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "ngac-nhien": {
+    "asset_id": "MN-0021",
+    "png": "assets/mono/bieu-cam/MN-0021_mono-bieu-cam-ngac-nhien_v01.png",
+    "webp_id": "MN-0022",
+    "webp": "assets/mono/xuat-ban/MN-0022_mono-bieu-cam-ngac-nhien-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "tu-tin": {
+    "asset_id": "MN-0023",
+    "png": "assets/mono/bieu-cam/MN-0023_mono-bieu-cam-tu-tin_v01.png",
+    "webp_id": "MN-0024",
+    "webp": "assets/mono/xuat-ban/MN-0024_mono-bieu-cam-tu-tin-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "phan-khich": {
+    "asset_id": "MN-0025",
+    "png": "assets/mono/bieu-cam/MN-0025_mono-bieu-cam-phan-khich_v01.png",
+    "webp_id": "MN-0026",
+    "webp": "assets/mono/xuat-ban/MN-0026_mono-bieu-cam-phan-khich-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "lo-lang": {
+    "asset_id": "MN-0027",
+    "png": "assets/mono/bieu-cam/MN-0027_mono-bieu-cam-lo-lang_v01.png",
+    "webp_id": "MN-0028",
+    "webp": "assets/mono/xuat-ban/MN-0028_mono-bieu-cam-lo-lang-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "buon-ngu": {
+    "asset_id": "MN-0029",
+    "png": "assets/mono/bieu-cam/MN-0029_mono-bieu-cam-buon-ngu_v01.png",
+    "webp_id": "MN-0030",
+    "webp": "assets/mono/xuat-ban/MN-0030_mono-bieu-cam-buon-ngu-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "tu-hao": {
+    "asset_id": "MN-0031",
+    "png": "assets/mono/bieu-cam/MN-0031_mono-bieu-cam-tu-hao_v01.png",
+    "webp_id": "MN-0032",
+    "webp": "assets/mono/xuat-ban/MN-0032_mono-bieu-cam-tu-hao-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "cuoi-lon": {
+    "asset_id": "MN-0033",
+    "png": "assets/mono/bieu-cam/MN-0033_mono-bieu-cam-cuoi-lon_v01.png",
+    "webp_id": "MN-0034",
+    "webp": "assets/mono/xuat-ban/MN-0034_mono-bieu-cam-cuoi-lon-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   },
+   "binh-tinh": {
+    "asset_id": "MN-0035",
+    "png": "assets/mono/bieu-cam/MN-0035_mono-bieu-cam-binh-tinh_v01.png",
+    "webp_id": "MN-0036",
+    "webp": "assets/mono/xuat-ban/MN-0036_mono-bieu-cam-binh-tinh-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0002"
+   }
+  },
+  "tu_the": {
+   "dung": {
+    "asset_id": "MN-0037",
+    "png": "assets/mono/tu-the/MN-0037_mono-tu-the-dung_v01.png",
+    "webp_id": "MN-0038",
+    "webp": "assets/mono/xuat-ban/MN-0038_mono-tu-the-dung-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "vay-tay": {
+    "asset_id": "MN-0039",
+    "png": "assets/mono/tu-the/MN-0039_mono-tu-the-vay-tay_v01.png",
+    "webp_id": "MN-0040",
+    "webp": "assets/mono/xuat-ban/MN-0040_mono-tu-the-vay-tay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "ngoi": {
+    "asset_id": "MN-0041",
+    "png": "assets/mono/tu-the/MN-0041_mono-tu-the-ngoi_v01.png",
+    "webp_id": "MN-0042",
+    "webp": "assets/mono/xuat-ban/MN-0042_mono-tu-the-ngoi-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "di-bo": {
+    "asset_id": "MN-0043",
+    "png": "assets/mono/tu-the/MN-0043_mono-tu-the-di-bo_v01.png",
+    "webp_id": "MN-0044",
+    "webp": "assets/mono/xuat-ban/MN-0044_mono-tu-the-di-bo-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "nhay": {
+    "asset_id": "MN-0045",
+    "png": "assets/mono/tu-the/MN-0045_mono-tu-the-nhay_v01.png",
+    "webp_id": "MN-0046",
+    "webp": "assets/mono/xuat-ban/MN-0046_mono-tu-the-nhay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "doc-sach": {
+    "asset_id": "MN-0047",
+    "png": "assets/mono/tu-the/MN-0047_mono-tu-the-doc-sach_v01.png",
+    "webp_id": "MN-0048",
+    "webp": "assets/mono/xuat-ban/MN-0048_mono-tu-the-doc-sach-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "chi-tay": {
+    "asset_id": "MN-0049",
+    "png": "assets/mono/tu-the/MN-0049_mono-tu-the-chi-tay_v01.png",
+    "webp_id": "MN-0050",
+    "webp": "assets/mono/xuat-ban/MN-0050_mono-tu-the-chi-tay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "vui-mung": {
+    "asset_id": "MN-0051",
+    "png": "assets/mono/tu-the/MN-0051_mono-tu-the-vui-mung_v01.png",
+    "webp_id": "MN-0052",
+    "webp": "assets/mono/xuat-ban/MN-0052_mono-tu-the-vui-mung-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0003"
+   },
+   "an-mung": {
+    "asset_id": "MN-0053",
+    "png": "assets/mono/tu-the/MN-0053_mono-tu-the-an-mung_v01.png",
+    "webp_id": "MN-0054",
+    "webp": "assets/mono/xuat-ban/MN-0054_mono-tu-the-an-mung-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0004"
+   },
+   "suy-nghi": {
+    "asset_id": "MN-0055",
+    "png": "assets/mono/tu-the/MN-0055_mono-tu-the-suy-nghi_v01.png",
+    "webp_id": "MN-0056",
+    "webp": "assets/mono/xuat-ban/MN-0056_mono-tu-the-suy-nghi-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0004"
+   },
+   "nhin-xa": {
+    "asset_id": "MN-0057",
+    "png": "assets/mono/tu-the/MN-0057_mono-tu-the-nhin-xa_v01.png",
+    "webp_id": "MN-0058",
+    "webp": "assets/mono/xuat-ban/MN-0058_mono-tu-the-nhin-xa-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0004"
+   },
+   "kham-pha": {
+    "asset_id": "MN-0059",
+    "png": "assets/mono/tu-the/MN-0059_mono-tu-the-kham-pha_v01.png",
+    "webp_id": "MN-0060",
+    "webp": "assets/mono/xuat-ban/MN-0060_mono-tu-the-kham-pha-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0004"
+   },
+   "ngu": {
+    "asset_id": "MN-0061",
+    "png": "assets/mono/tu-the/MN-0061_mono-tu-the-ngu_v01.png",
+    "webp_id": "MN-0062",
+    "webp": "assets/mono/xuat-ban/MN-0062_mono-tu-the-ngu-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0004"
+   },
+   "khen": {
+    "asset_id": "MN-0063",
+    "png": "assets/mono/tu-the/MN-0063_mono-tu-the-khen_v01.png",
+    "webp_id": "MN-0064",
+    "webp": "assets/mono/xuat-ban/MN-0064_mono-tu-the-khen-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0004"
+   },
+   "dang-tay": {
+    "asset_id": "MN-0065",
+    "png": "assets/mono/tu-the/MN-0065_mono-tu-the-dang-tay_v01.png",
+    "webp_id": "MN-0066",
+    "webp": "assets/mono/xuat-ban/MN-0066_mono-tu-the-dang-tay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0004"
+   }
+  },
+  "trang_phuc": {
+   "tham-hiem": {
+    "asset_id": "MN-0068",
+    "png": "assets/mono/trang-phuc/MN-0068_mono-trang-phuc-tham-hiem_v01.png",
+    "webp_id": "MN-0069",
+    "webp": "assets/mono/xuat-ban/MN-0069_mono-trang-phuc-tham-hiem-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "nha-khoa-hoc": {
+    "asset_id": "MN-0070",
+    "png": "assets/mono/trang-phuc/MN-0070_mono-trang-phuc-nha-khoa-hoc_v01.png",
+    "webp_id": "MN-0071",
+    "webp": "assets/mono/xuat-ban/MN-0071_mono-trang-phuc-nha-khoa-hoc-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "hoa-si": {
+    "asset_id": "MN-0072",
+    "png": "assets/mono/trang-phuc/MN-0072_mono-trang-phuc-hoa-si_v01.png",
+    "webp_id": "MN-0073",
+    "webp": "assets/mono/xuat-ban/MN-0073_mono-trang-phuc-hoa-si-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "lam-vuon": {
+    "asset_id": "MN-0074",
+    "png": "assets/mono/trang-phuc/MN-0074_mono-trang-phuc-lam-vuon_v01.png",
+    "webp_id": "MN-0075",
+    "webp": "assets/mono/xuat-ban/MN-0075_mono-trang-phuc-lam-vuon-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "phi-hanh-gia": {
+    "asset_id": "MN-0076",
+    "png": "assets/mono/trang-phuc/MN-0076_mono-trang-phuc-phi-hanh-gia_v01.png",
+    "webp_id": "MN-0077",
+    "webp": "assets/mono/xuat-ban/MN-0077_mono-trang-phuc-phi-hanh-gia-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "di-mua": {
+    "asset_id": "MN-0078",
+    "png": "assets/mono/trang-phuc/MN-0078_mono-trang-phuc-di-mua_v01.png",
+    "webp_id": "MN-0079",
+    "webp": "assets/mono/xuat-ban/MN-0079_mono-trang-phuc-di-mua-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   }
+  },
+  "can_co": {
+   "goc_nhin": 4,
+   "bieu_cam": 12,
+   "tu_the": 15,
+   "trang_phuc": 6
+  }
+ },
  "LU": {
   "ten": "Lu",
-  "vai_tro": "nhân vật thương hiệu duy nhất (D26)",
+  "vai_tro": "ĐÃ THAY bằng Mono (27/11/2026). Giữ lại để tra cứu, không dùng trong bài mới.",
   "chi_hinh_tinh": true,
   "khung_chuan": "PNG nền trong suốt: góc nhìn 1024×1024, biểu cảm, tư thế, trang phục 512×512; chân chạm đường đáy 95%, căn giữa; không phóng to quá 15%; bản xuất bản WebP 512×512",
   "golden_reference": [
@@ -395,5 +757,324 @@
    "tu_the": 15,
    "trang_phuc": 6
   }
+ },
+ "BA": {
+  "ten": "Bà của Mono",
+  "vai_tro": "nhân vật phụ (tam giữ lại 27/11, tự vẽ bằng ChatGPT); trung tính quốc tế",
+  "golden_reference": [
+   "NV-0002",
+   "NV-0011",
+   "NV-0028",
+   "NV-0071"
+  ],
+  "goc_nhin": {
+   "truoc": {
+    "asset_id": "NV-0003",
+    "png": "assets/nhan-vat-phu/ba/NV-0003_ba-goc-nhin-truoc_v01.png",
+    "webp_id": "NV-0004",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0004_ba-goc-nhin-truoc-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0002"
+   },
+   "nghieng": {
+    "asset_id": "NV-0005",
+    "png": "assets/nhan-vat-phu/ba/NV-0005_ba-goc-nhin-nghieng_v01.png",
+    "webp_id": "NV-0006",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0006_ba-goc-nhin-nghieng-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0002"
+   },
+   "ben": {
+    "asset_id": "NV-0007",
+    "png": "assets/nhan-vat-phu/ba/NV-0007_ba-goc-nhin-ben_v01.png",
+    "webp_id": "NV-0008",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0008_ba-goc-nhin-ben-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0002"
+   },
+   "sau": {
+    "asset_id": "NV-0009",
+    "png": "assets/nhan-vat-phu/ba/NV-0009_ba-goc-nhin-sau_v01.png",
+    "webp_id": "NV-0010",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0010_ba-goc-nhin-sau-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0002"
+   }
+  },
+  "bieu_cam": {
+   "mim-cuoi": {
+    "asset_id": "NV-0029",
+    "png": "assets/nhan-vat-phu/ba/NV-0029_ba-bieu-cam-mim-cuoi_v01.png",
+    "webp_id": "NV-0030",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0030_ba-bieu-cam-mim-cuoi-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0028"
+   },
+   "cuoi-vui": {
+    "asset_id": "NV-0031",
+    "png": "assets/nhan-vat-phu/ba/NV-0031_ba-bieu-cam-cuoi-vui_v01.png",
+    "webp_id": "NV-0032",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0032_ba-bieu-cam-cuoi-vui-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0028"
+   },
+   "ngac-nhien": {
+    "asset_id": "NV-0033",
+    "png": "assets/nhan-vat-phu/ba/NV-0033_ba-bieu-cam-ngac-nhien_v01.png",
+    "webp_id": "NV-0034",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0034_ba-bieu-cam-ngac-nhien-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0028"
+   },
+   "suy-nghi": {
+    "asset_id": "NV-0035",
+    "png": "assets/nhan-vat-phu/ba/NV-0035_ba-bieu-cam-suy-nghi_v01.png",
+    "webp_id": "NV-0036",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0036_ba-bieu-cam-suy-nghi-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0028"
+   },
+   "lo-lang": {
+    "asset_id": "NV-0037",
+    "png": "assets/nhan-vat-phu/ba/NV-0037_ba-bieu-cam-lo-lang_v01.png",
+    "webp_id": "NV-0038",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0038_ba-bieu-cam-lo-lang-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0028"
+   },
+   "tu-hao": {
+    "asset_id": "NV-0039",
+    "png": "assets/nhan-vat-phu/ba/NV-0039_ba-bieu-cam-tu-hao_v01.png",
+    "webp_id": "NV-0040",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0040_ba-bieu-cam-tu-hao-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0028"
+   }
+  },
+  "tu_the": {
+   "vay-tay": {
+    "asset_id": "NV-0012",
+    "png": "assets/nhan-vat-phu/ba/NV-0012_ba-tu-the-vay-tay_v01.png",
+    "webp_id": "NV-0013",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0013_ba-tu-the-vay-tay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   },
+   "chi-tay": {
+    "asset_id": "NV-0014",
+    "png": "assets/nhan-vat-phu/ba/NV-0014_ba-tu-the-chi-tay_v01.png",
+    "webp_id": "NV-0015",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0015_ba-tu-the-chi-tay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   },
+   "ke-chuyen": {
+    "asset_id": "NV-0016",
+    "png": "assets/nhan-vat-phu/ba/NV-0016_ba-tu-the-ke-chuyen_v01.png",
+    "webp_id": "NV-0017",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0017_ba-tu-the-ke-chuyen-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   },
+   "di-cho": {
+    "asset_id": "NV-0018",
+    "png": "assets/nhan-vat-phu/ba/NV-0018_ba-tu-the-di-cho_v01.png",
+    "webp_id": "NV-0019",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0019_ba-tu-the-di-cho-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   },
+   "tuoi-cay": {
+    "asset_id": "NV-0020",
+    "png": "assets/nhan-vat-phu/ba/NV-0020_ba-tu-the-tuoi-cay_v01.png",
+    "webp_id": "NV-0021",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0021_ba-tu-the-tuoi-cay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   },
+   "dua-tui-hat": {
+    "asset_id": "NV-0022",
+    "png": "assets/nhan-vat-phu/ba/NV-0022_ba-tu-the-dua-tui-hat_v01.png",
+    "webp_id": "NV-0023",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0023_ba-tu-the-dua-tui-hat-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   },
+   "dang-tay": {
+    "asset_id": "NV-0024",
+    "png": "assets/nhan-vat-phu/ba/NV-0024_ba-tu-the-dang-tay_v01.png",
+    "webp_id": "NV-0025",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0025_ba-tu-the-dang-tay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   },
+   "khen": {
+    "asset_id": "NV-0026",
+    "png": "assets/nhan-vat-phu/ba/NV-0026_ba-tu-the-khen_v01.png",
+    "webp_id": "NV-0027",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0027_ba-tu-the-khen-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0011"
+   }
+  }
+ },
+ "GA_CON": {
+  "ten": "Gà con",
+  "vai_tro": "nhân vật phụ, bạn của Mono (tam giữ lại 27/11)",
+  "golden_reference": [
+   "NV-0041",
+   "NV-0054",
+   "NV-0071"
+  ],
+  "goc_nhin": {},
+  "bieu_cam": {
+   "vui": {
+    "asset_id": "NV-0042",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0042_ga-con-bieu-cam-vui_v01.png",
+    "webp_id": "NV-0043",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0043_ga-con-bieu-cam-vui-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0041"
+   },
+   "buon": {
+    "asset_id": "NV-0044",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0044_ga-con-bieu-cam-buon_v01.png",
+    "webp_id": "NV-0045",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0045_ga-con-bieu-cam-buon-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0041"
+   },
+   "ngac-nhien": {
+    "asset_id": "NV-0046",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0046_ga-con-bieu-cam-ngac-nhien_v01.png",
+    "webp_id": "NV-0047",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0047_ga-con-bieu-cam-ngac-nhien-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0041"
+   },
+   "to-mo": {
+    "asset_id": "NV-0048",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0048_ga-con-bieu-cam-to-mo_v01.png",
+    "webp_id": "NV-0049",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0049_ga-con-bieu-cam-to-mo-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0041"
+   },
+   "so": {
+    "asset_id": "NV-0050",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0050_ga-con-bieu-cam-so_v01.png",
+    "webp_id": "NV-0051",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0051_ga-con-bieu-cam-so-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0041"
+   },
+   "cuoi-lon": {
+    "asset_id": "NV-0052",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0052_ga-con-bieu-cam-cuoi-lon_v01.png",
+    "webp_id": "NV-0053",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0053_ga-con-bieu-cam-cuoi-lon-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0041"
+   }
+  },
+  "tu_the": {
+   "mo-thoc": {
+    "asset_id": "NV-0055",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0055_ga-con-tu-the-mo-thoc_v01.png",
+    "webp_id": "NV-0056",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0056_ga-con-tu-the-mo-thoc-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   },
+   "uong-nuoc": {
+    "asset_id": "NV-0057",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0057_ga-con-tu-the-uong-nuoc_v01.png",
+    "webp_id": "NV-0058",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0058_ga-con-tu-the-uong-nuoc-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   },
+   "chay": {
+    "asset_id": "NV-0059",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0059_ga-con-tu-the-chay_v01.png",
+    "webp_id": "NV-0060",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0060_ga-con-tu-the-chay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   },
+   "vo-canh-nhay": {
+    "asset_id": "NV-0061",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0061_ga-con-tu-the-vo-canh-nhay_v01.png",
+    "webp_id": "NV-0062",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0062_ga-con-tu-the-vo-canh-nhay-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   },
+   "ngu": {
+    "asset_id": "NV-0063",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0063_ga-con-tu-the-ngu_v01.png",
+    "webp_id": "NV-0064",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0064_ga-con-tu-the-ngu-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   },
+   "ngoi-o": {
+    "asset_id": "NV-0065",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0065_ga-con-tu-the-ngoi-o_v01.png",
+    "webp_id": "NV-0066",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0066_ga-con-tu-the-ngoi-o-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   },
+   "keu-to": {
+    "asset_id": "NV-0067",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0067_ga-con-tu-the-keu-to_v01.png",
+    "webp_id": "NV-0068",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0068_ga-con-tu-the-keu-to-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   },
+   "vay-canh": {
+    "asset_id": "NV-0069",
+    "png": "assets/nhan-vat-phu/ga-con/NV-0069_ga-con-tu-the-vay-canh_v01.png",
+    "webp_id": "NV-0070",
+    "webp": "assets/nhan-vat-phu/xuat-ban/NV-0070_ga-con-tu-the-vay-canh-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "NV-0054"
+   }
+  },
+  "ghi_chu": "Chưa có bảng 4 góc nhìn gà con."
  }
 }

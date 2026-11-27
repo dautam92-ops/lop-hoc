@@ -34,7 +34,7 @@ export async function mount(ctx, act, v) {
     T.onclick = e => { const g = e.target.closest('.part'); if (!g || voice.busy) return; const p = P.find(x => x.id === g.dataset.part); if (!p) return; seen.add(p.id); on(p.id);
       voice.say([p.say, p.en].filter(Boolean)).then(() => { mark(); if (!left().length) { T.onclick = null; res(); } }); };
     setAuto(ctx, async () => { for (const p of left()) { partEl(p.id).dispatchEvent(new MouseEvent('click', { bubbles: true })); await sleep(ctx, 80); while (voice.busy) await sleep(ctx, 60); } }, null);
-    mark(); voice.say([act.explore || 'Bé chạm vào từng chỗ đang sáng để nghe Lu kể nhé.']);
+    mark(); voice.say([act.explore || 'Bé chạm vào từng chỗ đang sáng để nghe Mono kể nhé.']);
   });
   ctx.record({ skill_id: act.skill_id, kind: 'participation', correct: true, first_try: true, tries: 1, hints: 0, phase: 'kham-pha' }); ctx.tick?.();
   // 6: bé thực hành – Lu hỏi, bé chạm đúng bộ phận

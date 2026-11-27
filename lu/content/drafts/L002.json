@@ -12,17 +12,17 @@
    {
     "e": "face:binh-tinh",
     "t": "Bình thường",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:buon",
     "t": "Buồn",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:so",
     "t": "Lo lắng",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    }
   ]
  },
@@ -123,13 +123,13 @@
   }
  ],
  "intro": [
-  "Chào bé! Hôm nay bé là Lu.",
+  "Chào bé! Mình là Mono.",
   "Sáng nay gió thổi mạnh quá.",
-  "Túi hạt đậu của Lu bị đổ, hạt lăn khắp vườn.",
+  "Túi hạt đậu của Mono bị đổ, hạt lăn khắp vườn.",
   "Mình cùng đi tìm hạt đậu nào!"
  ],
  "hub": {
-  "q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Lu gợi ý.",
+  "q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Mono gợi ý.",
   "again": "Bé chọn bài tiếp theo nhé.",
   "backdrop": {
    "id": "L001-BG-03",
@@ -149,7 +149,7 @@
     "kind": "vuon"
    },
    "intro": [
-    "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Lu nhé."
+    "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Mono nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -175,8 +175,16 @@
      "max": 3,
      "cells": 9,
      "rounds": 2,
-     "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
-     "done": "Bé tìm thấy đủ hạt đậu rồi!"
+     "layout": "roi",
+     "bg": "asset:BC-0004",
+     "co": {
+      "art:hat-dau": 0.6,
+      "art:soi": 0.8,
+      "art:la": 1.2,
+      "art:hoa": 1.3
+     },
+     "no": "Không sao đâu! Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
+     "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"
     },
     {
      "activity_id": "L002-B02",
@@ -188,8 +196,8 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
-       "ok": "Đúng rồi! Đó là cái giỏ.",
-       "no": "Bé nhìn kỹ: bóng có quai cầm.",
+       "ok": "Giỏi quá! Đó là cái giỏ.",
+       "no": "Cố lên bé ơi! Bé nhìn kỹ: bóng có quai cầm.",
        "opts": [
         {
          "e": "art:la"
@@ -207,8 +215,8 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
-       "ok": "Đúng rồi! Đó là chiếc lá.",
-       "no": "Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.",
+       "ok": "Hoan hô bé! Đó là chiếc lá.",
+       "no": "Cố lên bé ơi! Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.",
        "opts": [
         {
          "e": "art:la"
@@ -241,7 +249,7 @@
     ],
     "bang_chung": "TD.QS.01 có chấm: đúng ngay lần đầu, số lần thử."
    },
-   "done": "Bé tinh mắt quá!"
+   "done": "Ôi, bé tinh mắt quá! Hạt đậu trốn kỹ mà bé vẫn tìm ra!"
   },
   {
    "title": "Ai trốn trong vườn?",
@@ -281,8 +289,15 @@
      "max": 3,
      "cells": 9,
      "rounds": 1,
-     "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
-     "done": "Bé tìm ra hết gà con rồi!"
+     "layout": "roi",
+     "bg": "asset:BC-0004",
+     "xoay": 0,
+     "co": {
+      "art:meo": 1.35,
+      "art:trung": 0.7
+     },
+     "no": "Bé làm được mà! Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
+     "done": "Tuyệt vời! Bé tìm ra hết các chú gà con rồi!"
     },
     {
      "activity_id": "L002-B04",
@@ -295,7 +310,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 1,
        "ok": "Đúng rồi! Đó là chú mèo.",
-       "no": "Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.",
+       "no": "Mình cùng xem lại nào! Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.",
        "opts": [
         {
          "e": "art:ga"
@@ -313,8 +328,8 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
-       "ok": "Đúng rồi! Đó là con bướm.",
-       "no": "Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.",
+       "ok": "Tuyệt vời! Đó là con bướm.",
+       "no": "Không sao đâu! Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.",
        "opts": [
         {
          "e": "art:ong"
@@ -346,7 +361,7 @@
     ],
     "bang_chung": "TD.QS.01 có chấm, mức ít gợi ý."
    },
-   "done": "Không bạn nào trốn được bé!"
+   "done": "Không bạn nào trốn được bé! Bé giỏi quá!"
   },
   {
    "title": "Hạt về đúng cọc số",
@@ -360,7 +375,7 @@
     "kind": "luong"
    },
    "intro": [
-    "Mỗi cọc số cần đúng số hạt. Bé giúp Lu nhé."
+    "Mỗi cọc số cần đúng số hạt. Bé giúp Mono nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -390,8 +405,8 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
-     "done": "Hạt nào cũng về đúng cọc rồi!"
+     "no": "Cố lên bé ơi! Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
+     "done": "Hoan hô! Hạt nào cũng về đúng cọc rồi!"
     },
     {
      "activity_id": "L002-B06",
@@ -419,8 +434,8 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé đếm số quả táo trước nhé.",
-     "done": "Táo đã về đúng cọc!"
+     "no": "Cố lên bé ơi! Bé đếm số quả táo trước nhé.",
+     "done": "Bé giỏi quá! Quả táo nào cũng về đúng cọc!"
     },
     {
      "activity_id": "L002-B07",
@@ -432,8 +447,8 @@
       {
        "q": "Bé tìm ô có một hạt đậu.",
        "a": 0,
-       "ok": "Đúng rồi! Ô này có một hạt đậu.",
-       "no": "Bé đếm từng hạt xem.",
+       "ok": "Chính xác! Ô này có một hạt đậu.",
+       "no": "Bé làm được mà! Bé đếm từng hạt xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -453,8 +468,8 @@
       {
        "q": "Bé tìm ô có hai hạt đậu.",
        "a": 1,
-       "ok": "Đúng rồi! Ô này có hai hạt đậu.",
-       "no": "Bé đếm từng hạt xem.",
+       "ok": "Bé giỏi quá! Ô này có hai hạt đậu.",
+       "no": "Mình cùng xem lại nào! Bé đếm từng hạt xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -489,7 +504,7 @@
     ],
     "bang_chung": "TO.DEM.01 có chấm."
    },
-   "done": "Bé ghép số giỏi quá!"
+   "done": "Bé ghép số giỏi quá! Đếm đúng rồi mới ghép, bé nhớ nhé!"
   },
   {
    "title": "Đếm cùng gà con",
@@ -503,7 +518,7 @@
     "kind": "san"
    },
    "intro": [
-    "Gà con chạy ra sân. Bé đếm cùng Lu nhé."
+    "Gà con chạy ra sân. Bé đếm cùng Mono nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -530,7 +545,7 @@
       "ba"
      ],
      "ok": "Bé giỏi lắm! Có {word} chú gà con.",
-     "no": "Bé chạm đếm lại từng chú nhé.",
+     "no": "Không sao đâu! Bé chạm đếm lại từng chú nhé.",
      "hint_glow": false
     },
     {
@@ -546,7 +561,7 @@
      "max": 3,
      "groups": 3,
      "rounds": 1,
-     "no": "Bé đếm số trứng trong từng ổ xem.",
+     "no": "Cố lên bé ơi! Bé đếm số trứng trong từng ổ xem.",
      "ok": "Một quả, hai quả, ba quả. Bé xếp đúng rồi!"
     }
    ],
@@ -559,7 +574,7 @@
     ],
     "bang_chung": "TO.DEM.01 ôn."
    },
-   "done": "Bé đếm giỏi quá!"
+   "done": "Bé đếm giỏi quá! Mỗi bạn một tiếng đếm, đúng rồi đấy!"
   },
   {
    "title": "Hạt đậu lăn tới đâu?",
@@ -573,7 +588,7 @@
     "kind": "hien"
    },
    "intro": [
-    "Bé nghe Lu kể nhé."
+    "Bé nghe Mono kể nhé."
    ],
    "lu": "vui-mung",
    "activities": [
@@ -587,8 +602,8 @@
       {
        "q": "Gió thổi, hạt đậu lăn ra khỏi cái gì?",
        "a": 0,
-       "ok": "Đúng rồi! Hạt lăn ra khỏi túi.",
-       "no": "Bé nghe lại nhé: hạt lăn ra khỏi túi.",
+       "ok": "Giỏi quá! Hạt lăn ra khỏi túi.",
+       "no": "Cố lên bé ơi! Bé nghe lại nhé: hạt lăn ra khỏi túi.",
        "opts": [
         {
          "e": "art:tui"
@@ -605,8 +620,8 @@
       {
        "q": "Hạt đậu lăn tới gần con vật nào?",
        "a": 1,
-       "ok": "Đúng rồi! Hạt lăn tới chỗ gà con.",
-       "no": "Hạt lăn tới chỗ bạn gà con đấy.",
+       "ok": "Hoan hô bé! Hạt lăn tới chỗ gà con.",
+       "no": "Bé làm được mà! Hạt lăn tới chỗ bạn gà con đấy.",
        "opts": [
         {
          "e": "art:meo"
@@ -656,7 +671,7 @@
     ],
     "bang_chung": "Tiếp xúc TV.NG.01, TV.AM.01."
    },
-   "done": "Bé nghe chuyện giỏi lắm!"
+   "done": "Bé nghe chuyện giỏi quá! Bé nhớ hết hạt đậu đi đâu rồi!"
   },
   {
    "title": "Lật thẻ tìm đôi",
@@ -687,7 +702,7 @@
       "art:ga"
      ],
      "pairs": 3,
-     "done": "Bé nhớ chỗ các thẻ giỏi lắm!",
+     "done": "Trí nhớ của bé tuyệt vời quá! Mono phục bé luôn!",
      "evidence": "tiep-xuc"
     },
     {
@@ -706,7 +721,7 @@
       "art:hat-dau"
      ],
      "pairs": 4,
-     "done": "Bé giỏi lắm!",
+     "done": "Bé giỏi quá! Bốn đôi thẻ mà bé tìm ra hết!",
      "evidence": "tiep-xuc"
     },
     {
@@ -725,7 +740,7 @@
       "art:ech"
      ],
      "pairs": 4,
-     "done": "Bé nhớ chỗ giỏi quá!",
+     "done": "Bé nhớ hết chỗ rồi! Bé giỏi quá đi thôi!",
      "evidence": "tiep-xuc"
     }
    ],
@@ -738,7 +753,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.TN.01."
    },
-   "done": "Bé nhớ chỗ các thẻ giỏi lắm!"
+   "done": "Bé nhớ giỏi quá! Mình chơi thêm lượt nữa nào!"
   },
   {
    "title": "Thứ nào khác nhóm?",
@@ -752,7 +767,7 @@
     "kind": "phong"
    },
    "intro": [
-    "Lu có mấy câu đố. Bé tìm thứ khác nhóm nhé."
+    "Mono có mấy câu đố. Bé tìm thứ khác nhóm nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -767,7 +782,7 @@
        "q": "Thứ nào không phải con vật?",
        "a": 2,
        "ok": "Đúng rồi! Quả táo không phải con vật.",
-       "no": "Gà, mèo, cá đều là con vật. Còn thứ nào khác?",
+       "no": "Mình cùng xem lại nào! Gà, mèo, cá đều là con vật. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:ga"
@@ -787,8 +802,8 @@
       {
        "q": "Thứ nào không ăn được?",
        "a": 3,
-       "ok": "Đúng rồi! Viên sỏi không ăn được.",
-       "no": "Táo, cà rốt, rau đều ăn được. Bé tìm thứ khác nhé.",
+       "ok": "Tuyệt vời! Viên sỏi không ăn được.",
+       "no": "Không sao đâu! Táo, cà rốt, rau đều ăn được. Bé tìm thứ khác nhé.",
        "opts": [
         {
          "e": "art:tao"
@@ -808,8 +823,8 @@
       {
        "q": "Thứ nào không bay được?",
        "a": 1,
-       "ok": "Đúng rồi! Con ốc không bay được.",
-       "no": "Chim, ong, bướm đều bay được. Còn bạn nào?",
+       "ok": "Chính xác! Con ốc không bay được.",
+       "no": "Bé thử lại nào! Chim, ong, bướm đều bay được. Còn bạn nào?",
        "opts": [
         {
          "e": "art:chim"
@@ -842,7 +857,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.LG.04."
    },
-   "done": "Bé suy nghĩ giỏi quá!"
+   "done": "Bé suy nghĩ giỏi quá! Bé nhìn ra ngay thứ nào khác nhóm."
   },
   {
    "title": "Hạt đậu gặp gì?",
@@ -871,8 +886,8 @@
       {
        "q": "Hạt đậu lăn vào chỗ ướt. Hạt cần gì để nảy mầm?",
        "a": 0,
-       "ok": "Đúng rồi! Hạt cần nước để nảy mầm.",
-       "no": "Hạt cần nước. Bé tìm giọt nước nhé.",
+       "ok": "Bé giỏi quá! Hạt cần nước để nảy mầm.",
+       "no": "Cố lên bé ơi! Hạt cần nước. Bé tìm giọt nước nhé.",
        "opts": [
         {
          "e": "art:giot-nuoc"
@@ -889,8 +904,8 @@
       {
        "q": "Gà con thấy hạt đậu. Gà con sẽ làm gì?",
        "a": 1,
-       "ok": "Đúng rồi! Gà con mổ hạt để ăn.",
-       "no": "Gà con thích ăn hạt đấy.",
+       "ok": "Giỏi quá! Gà con mổ hạt để ăn.",
+       "no": "Bé làm được mà! Gà con thích ăn hạt đấy.",
        "opts": [
         {
          "e": "art:ga-con-ngu"
@@ -910,8 +925,8 @@
       {
        "q": "Hạt nằm trong đất ẩm. Hạt nhú ra gì trước?",
        "a": 2,
-       "ok": "Đúng rồi! Hạt nhú ra mầm đậu trước.",
-       "no": "Hạt trong đất ẩm sẽ nảy mầm trước.",
+       "ok": "Hoan hô bé! Hạt nhú ra mầm đậu trước.",
+       "no": "Mình cùng xem lại nào! Hạt trong đất ẩm sẽ nảy mầm trước.",
        "opts": [
         {
          "e": "art:qua-dau"
@@ -942,10 +957,10 @@
     ],
     "bang_chung": "Tiếp xúc KP.KH.01."
    },
-   "done": "Bé đoán giỏi quá!"
+   "done": "Bé đoán giỏi quá! Bé hiểu hạt đậu cần gì để lớn rồi!"
   },
   {
-   "title": "Lu thấy thế nào?",
+   "title": "Mono thấy thế nào?",
    "icon": "face:vui",
    "nhom": [
     "EQ"
@@ -956,7 +971,7 @@
     "kind": "vuon"
    },
    "intro": [
-    "Mình cùng nghĩ về cảm xúc của Lu nhé."
+    "Mình cùng nghĩ về cảm xúc của Mono nhé."
    ],
    "lu": "suy-nghi",
    "activities": [
@@ -965,45 +980,45 @@
      "engine": "E01",
      "mode": "items",
      "skill_id": "EQ.CX.01",
-     "title": "Gương mặt của Lu",
+     "title": "Gương mặt của Mono",
      "items": [
       {
-       "q": "Hạt đậu lăn mất. Lu có thể thấy thế nào?",
+       "q": "Hạt đậu lăn mất. Mono có thể thấy thế nào?",
        "any": true,
        "style": "face",
-       "ok": "Cảm ơn bé đã nghĩ cùng Lu.",
+       "ok": "Cảm ơn bé đã nghĩ cùng Mono.",
        "opts": [
         {
          "e": "face:buon",
-         "say": "Lu thấy buồn.",
+         "say": "Mono thấy buồn.",
          "reply": "Ừ, mất hạt thì buồn. Mình cùng đi tìm nhé."
         },
         {
          "e": "face:so",
-         "say": "Lu thấy lo lắng.",
+         "say": "Mono thấy lo lắng.",
          "reply": "Lo lắng là khi mình sợ không tìm thấy."
         },
         {
          "e": "face:binh-tinh",
-         "say": "Lu thấy bình thường.",
-         "reply": "Lu bình tĩnh đi tìm từng hạt."
+         "say": "Mono thấy bình thường.",
+         "reply": "Mono bình tĩnh đi tìm từng hạt."
         }
        ]
       },
       {
-       "q": "Bé tìm thấy hết hạt cho Lu. Lu thấy thế nào?",
+       "q": "Bé tìm thấy hết hạt cho Mono. Mono thấy thế nào?",
        "any": true,
        "style": "face",
-       "ok": "Bé hiểu Lu quá!",
+       "ok": "Bé hiểu Mono quá!",
        "opts": [
         {
          "e": "face:vui",
-         "say": "Lu thấy vui.",
-         "reply": "Lu vui vì có bé giúp."
+         "say": "Mono thấy vui.",
+         "reply": "Mono vui vì có bé giúp."
         },
         {
          "e": "face:ngac-nhien",
-         "say": "Lu thấy ngạc nhiên.",
+         "say": "Mono thấy ngạc nhiên.",
          "reply": "Ồ, bé tìm nhanh quá!"
         }
        ]
@@ -1022,11 +1037,11 @@
      "mode": "breath",
      "skill_id": "EQ.CX.02",
      "evidence": "tiep-xuc",
-     "title": "Thở cùng Lu",
+     "title": "Thở cùng Mono",
      "times": 2,
      "inn": "Hít vào thật chậm, như ngửi một bông hoa.",
      "out": "Thở ra từ từ, như thổi một ngọn nến.",
-     "done": "Lu thấy dễ chịu hơn rồi."
+     "done": "Cảm ơn bé, Mono thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé."
     }
    ],
    "thiet_ke": {
@@ -1034,11 +1049,11 @@
     "bai_tap": [
      "Hạt lăn mất",
      "Tìm thấy hạt",
-     "Thở cùng Lu"
+     "Thở cùng Mono"
     ],
     "bang_chung": "Tiếp xúc EQ.CX.01, EQ.CX.02."
    },
-   "done": "Bé hiểu cảm xúc của Lu rồi!"
+   "done": "Cảm ơn bé đã hiểu Mono! Khi bạn buồn, bé hỏi thăm bạn như vậy nhé."
   },
   {
    "title": "One, two, three",
@@ -1090,11 +1105,11 @@
      "mode": "say",
      "skill_id": "EN.EN.04",
      "evidence": "tiep-xuc",
-     "title": "Nói theo Lu",
+     "title": "Nói theo Mono",
      "luSays": "One, two, three!",
      "word": "One, two, three!",
      "intro": [
-      "Bé muốn thì nói theo Lu nhé. Không nói cũng không sao."
+      "Bé muốn thì nói theo Mono nhé. Không nói cũng không sao."
      ]
     }
    ],
@@ -1108,7 +1123,7 @@
     ],
     "bang_chung": "Tiếp xúc EN.EN.04; không chấm phát âm."
    },
-   "done": "Bé nhớ tiếng Anh giỏi quá!"
+   "done": "Hoan hô bé! Bé nhớ tiếng Anh giỏi quá!"
   },
   {
    "title": "Vườn đậu của bé",
@@ -1151,14 +1166,14 @@
      "title": "Nếu hạt đậu biết nói",
      "items": [
       {
-       "q": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Lu?",
+       "q": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Mono?",
        "any": true,
        "style": "face",
        "ok": "Bé tưởng tượng hay quá!",
        "opts": [
         {
          "e": "art:giot-nuoc",
-         "say": "Lu ơi, cho mình uống nước nhé.",
+         "say": "Mono ơi, cho mình uống nước nhé.",
          "reply": "Hạt đậu khát nước rồi."
         },
         {
@@ -1168,8 +1183,8 @@
         },
         {
          "e": "art:ga-con",
-         "say": "Lu ơi, giữ mình cẩn thận nhé.",
-         "reply": "Lu sẽ giữ hạt thật cẩn thận."
+         "say": "Mono ơi, giữ mình cẩn thận nhé.",
+         "reply": "Mono sẽ giữ hạt thật cẩn thận."
         }
        ]
       }
@@ -1217,7 +1232,7 @@
     ],
     "bang_chung": "Tiếp xúc KP.VD.01, KP.ST.D01."
    },
-   "done": "Vườn đậu của bé đẹp quá!"
+   "done": "Ôi, vườn đậu của bé đẹp quá! Bé tưởng tượng hay lắm!"
   },
   {
    "title": "Cất hạt gọn gàng",
@@ -1246,7 +1261,7 @@
        "q": "Hạt đậu nên cất vào đâu?",
        "a": 0,
        "ok": "Đúng rồi! Hạt đậu cất vào túi.",
-       "no": "Hạt nhỏ, cất vào túi là gọn nhất.",
+       "no": "Không sao đâu! Hạt nhỏ, cất vào túi là gọn nhất.",
        "opts": [
         {
          "e": "art:tui"
@@ -1261,10 +1276,10 @@
        "style": "face"
       },
       {
-       "q": "Tưới xong rồi. Lu cất bình tưới ở đâu?",
+       "q": "Tưới xong rồi. Mono cất bình tưới ở đâu?",
        "a": 1,
-       "ok": "Đúng rồi! Bình tưới để cạnh vòi nước.",
-       "no": "Bình tưới để gần vòi nước cho dễ lấy.",
+       "ok": "Tuyệt vời! Bình tưới để cạnh vòi nước.",
+       "no": "Bé thử lại nào! Bình tưới để gần vòi nước cho dễ lấy.",
        "opts": [
         {
          "e": "art:ao-nuoc"
@@ -1308,7 +1323,7 @@
     ],
     "bang_chung": "Tiếp xúc KS.SX.01, KS.NN.01."
    },
-   "done": "Nhà Lu gọn gàng quá!"
+   "done": "Bé giỏi quá! Từ nay chơi xong, bé nhớ cất đồ gọn gàng nhé."
   }
  ],
  "end": [

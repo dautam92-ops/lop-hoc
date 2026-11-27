@@ -19,7 +19,7 @@ Máy soát những gì đo được bằng kho kiến thức (`content/kien-thuc
 - **LG02 Cùng loại:** đáp án sai cùng loại với đáp án đúng: hỏi hành động thì toàn hành động, hỏi con vật thì toàn con vật, hỏi đồ ăn thì toàn đồ ăn. Trừ bài "thứ nào khác nhóm" (M19), nơi một vật khác nhóm là chủ ý.
 - **LG03 Đúng một đáp án:** chỉ một đáp án đúng theo kiến thức thật. Đáp án sai phải sai rõ với trẻ 4–6 tuổi, không sai "tùy cách hiểu" (vd hỏi "cái gì bay được" mà có cả chim và ong).
 - **LG04 Sai nhưng hợp lý:** đáp án sai vẫn là điều có thể xảy ra trong thế giới thật (gà con ngủ, gà con chạy), để bé phải suy nghĩ, không vô nghĩa. Không cầu kì: chọn thứ dễ vẽ.
-- **LG05 Hình khớp lời:** hình hiện ra phải đúng thứ lời nói (hỏi bóng thì hiện bóng, hỏi hành động thì hình đang làm hành động, hỏi số lượng thì đúng số vật).
+- **LG05 Hình khớp lời:** hình hiện ra phải đúng thứ lời nói (hỏi bóng thì hiện bóng, hỏi hành động thì hình đang làm hành động, hỏi số lượng thì đúng số vật). Câu hỏi "… nên làm gì?" có đáp án bằng ảnh thì mỗi ảnh phải VẼ ĐÚNG việc làm đó (Lu đang nhảy với quả đậu, bà đang hái giúp), không dùng ảnh tư thế chung của Lu kèm lời đọc. Không sửa lời cho khớp ảnh sai: phải vẽ ảnh đúng (tam 27/11 12:50, quy tắc 42).
 - **LG06 Câu hỏi trả lời được bằng hình:** bé không biết đọc, nên mọi đáp án phải phân biệt được chỉ bằng hình và giọng đọc.
 
 ### B. Khoa học và đời sống
@@ -36,7 +36,7 @@ Máy soát những gì đo được bằng kho kiến thức (`content/kien-thuc
 
 ### D. Ảnh (câu mô tả trước khi vẽ)
 - **LG15 Đúng vai:** ảnh đáp án đúng thể hiện rõ điều được hỏi (gà con đang mổ hạt: mỏ chạm hạt). Ảnh đáp án sai thể hiện hành động hay vật khác, cùng nhân vật khi hỏi về nhân vật.
-- **LG16 Không thêm thứ lạ:** ảnh đồ vật chỉ có vật đó (ghi "only the object, no animal, no people"); ảnh con vật không thêm con vật khác. Khung tròn đơn giản và mặt cười được phép (tam 27/11), nhưng không có nhiều hình người quanh vật ở ảnh đáp án.
+- **LG16 Không thêm thứ lạ:** (tam 27/11 15:49: với ảnh hành động hay cảnh, thêm chi tiết nền như con gà, cây, hoa là CHẤP NHẬN được, miễn hành động chính của nhân vật rõ ràng và chi tiết thêm không làm bé hiểu sai đáp án; chỉ loại ảnh khi hành động chính sai hoặc thứ thêm vào gây nhầm.) ảnh đồ vật chỉ có vật đó (ghi "only the object, no animal, no people"); ảnh con vật không thêm con vật khác. Khung tròn đơn giản và mặt cười được phép (tam 27/11), nhưng không có nhiều hình người quanh vật ở ảnh đáp án.
 - **LG17 Một ý một ảnh:** mỗi ảnh một hành động hoặc một vật chính, nhìn nhỏ trên ô đáp án vẫn nhận ra.
 - **LG18 Tư thế làm được:** hành động phải vẽ được rõ ràng; nếu hai lần vẽ không ra (vd mỏ nhúng nước), đổi hành động dễ vẽ thay vì giữ ảnh sai.
 

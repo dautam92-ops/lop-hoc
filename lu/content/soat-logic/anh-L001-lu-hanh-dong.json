@@ -1,0 +1,101 @@
+{
+ "doi_tuong": "anh-L001-lu-hanh-dong",
+ "tep": "tools/lab/anh-L001-lu-hanh-dong.json",
+ "ma_bam": "0a698931ada8dccafc99ef5be9ba2b1ef38c8a88",
+ "ngay": "2026-11-27",
+ "nguoi_soat": "agent soát logic",
+ "lan_soat": 3,
+ "quy_tac_da_soat": [
+  "LG01",
+  "LG02",
+  "LG03",
+  "LG04",
+  "LG05",
+  "LG06",
+  "LG07",
+  "LG08",
+  "LG09",
+  "LG10",
+  "LG11",
+  "LG12",
+  "LG13",
+  "LG14",
+  "LG15",
+  "LG16",
+  "LG17",
+  "LG18",
+  "LG19",
+  "LG20"
+ ],
+ "may_soat": {
+  "loi": 0,
+  "canh_bao": 2
+ },
+ "canh_bao_da_xet": [
+  {
+   "canh_bao": "CẢNH BÁO L001-LU-nhay-lay-mu: câu mô tả có con gà; agent xem có phải thêm nhân vật lạ không (LG16)",
+   "ket_luan": "không phải lỗi vì chữ 'chicken' chỉ nằm trong 'chicken coop' (chuồng gà, đúng bối cảnh câu hỏi) và câu mô tả đã ghi 'no chickens, no other characters'. Có thể thêm 'chicken' vào negative cho chắc, không bắt buộc."
+  },
+  {
+   "canh_bao": "CẢNH BÁO L001-LU-nho-ba-lay-mu: câu mô tả có con gà; agent xem có phải thêm nhân vật lạ không (LG16)",
+   "ket_luan": "không phải lỗi vì 'chicken' chỉ nằm trong 'chicken coop' và câu mô tả đã ghi 'no chickens'. Bà là nhân vật của câu hỏi (đáp án 'nhờ bà'), không phải nhân vật lạ."
+  }
+ ],
+ "ghi_chu": "Lần 3: soát lại sau khi sửa lỗi LG16 (mã băm lần 2 b0e86928a298056ce927e23011bc6ec255464f06). Máy soát: 0 lỗi, 2 cảnh báo (như cũ, đã xét). Tỉ lệ thống nhất: Lu cao tới thắt lưng bà, tức bà cao khoảng gấp đôi Lu, mép mái chuồng cao khoảng gấp đôi Lu, nên bà giơ tay là với tới, Lu nhảy thì không tới. Trường vi của L001-LU-nho-ba-lay-mu đã khớp câu mô tả. Lưu ý: trường mới negative_them chỉ có tác dụng nếu công cụ vẽ trên máy 24H ghép nó vào negative; người chạy vẽ cần ghép tay nếu công cụ chưa đọc trường này. ---- Lần 2: soát lại sau khi sửa theo biên bản lần 1 (mã băm cũ 3012c59ba81b1542b547d35208d55a858a5f9eb9). Máy soát lại: 0 lỗi, 2 cảnh báo (như lần 1, đã xét). Áo bà đã đổi thành \"brown blouse with diagonal buttons\", khớp ảnh mẫu NV-0001. Lưu ý không tính lỗi: trường \"vi\" của L001-LU-nho-ba-lay-mu vẫn ghi \"đưa cho Lu\" trong khi prompt nay chỉ vẽ bà cầm mũ ở mép mái; nên sửa \"vi\" cho khớp (vd \"Bà với tay cầm chiếc mũ ở mép mái chuồng gà, Lu đứng dưới đất giơ tay chờ đón\"). Ngoài phạm vi tệp: L001-B24 trong content/drafts/L001.json vẫn dùng lu:nhay / lu:chi-tay, cần đổi sang bốn slot art:lu-* sau khi vẽ (LG05). ---- Ghi chú lần 1: Đã so mô tả với ảnh mẫu LU-0044 (Lu: mũ trùm xanh lông, hai lá non, kính phi công nâu, mặt kem má hồng, khăn vàng, áo gi-lê be có túi, ba lô nâu móc ngôi sao vàng: khớp) và NV-0001 (bà: tóc bạc búi thấp, áo nâu, quần nâu sẫm: khớp; áo trong ảnh mẫu là áo cánh cài cúc chéo, chữ 'ao ba ba' có thể ra áo cài giữa, nên ưu tiên dùng ảnh mẫu khi vẽ, không tính lỗi). Đạt: mỗi câu có hai ảnh phân biệt rõ bằng hình (ảnh sai chỉ có Lu nhảy một mình, ảnh đúng có bà đang lấy giúp), đúng LG05 (vẽ đúng việc làm, không dùng ảnh tư thế chung), LG02 (cả hai đều là hành động của Lu), LG03 (chỉ 'nhờ bà' là cách an toàn), LG16 (không thêm nhân vật lạ, negative có 'ladder, chair, falling' tránh vẽ trèo hay ngã), LG08 (mũ rơm nhẹ bị gió thổi lên nóc chuồng là có thể xảy ra; mũ nằm trên mái, có điểm tựa), LG13 (không có số lượng cần đếm). Ngoài phạm vi tệp này: L001-B24 trong content/drafts/L001.json vẫn dùng 'e': 'lu:nhay' / 'lu:chi-tay' (ảnh tư thế chung), cần đổi sang art:lu-nhay-voi-qua, art:lu-nho-ba-hai-qua, art:lu-nhay-lay-mu, art:lu-nho-ba-lay-mu sau khi vẽ (LG05) — sẽ bị bắt khi soát bài L001.",
+ "loi": [
+  {
+   "ma": "LG11",
+   "o": "L001-LU-nhay-voi-qua, L001-LU-nhay-lay-mu",
+   "cau": "jumping up with both arms stretched toward ... (không ghi nét mặt)",
+   "mo_ta": "Ảnh đáp án sai không ghi nét mặt. Ảnh mẫu LU-0044 là Lu nhảy cười toe rất vui; nếu vẽ theo mẫu, việc 'nhảy với chỗ cao' trông hấp dẫn, khuyến khích bé bắt chước, ngược với lời 'nhảy không tới mà dễ ngã'.",
+   "sua": "Thêm vào cả hai câu: 'Lu looks frustrated and unsure, mouth small and tight, not smiling, not laughing, a small hop only' (bỏ 'jumping up' cao, đổi thành 'doing a small hop on tiptoe'); giữ 'not falling' trong negative để không vẽ cảnh nguy hiểm quá mức.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Hai mục đã có \"doing a small hop on tiptoe\" và \"Lu looks frustrated and unsure, not smiling, not laughing\"; negative vẫn có \"falling\". Ảnh sai không còn vẻ vui hấp dẫn, cũng không nguy hiểm quá mức."
+  },
+  {
+   "ma": "LG08",
+   "o": "L001-LU-nhay-voi-qua, L001-LU-nhay-lay-mu",
+   "cau": "jumping up ... side view (mục mũ không có mặt đất; mục quả chỉ ghi 'garden ground below')",
+   "mo_ta": "Lu đang nhảy mà không có dấu hiệu mặt đất ngay dưới chân thì AI dễ vẽ Lu lơ lửng giữa không trung như đang bay, nhất là ảnh mũ không nhắc mặt đất. Bé có thể hiểu là Lu bay lên được.",
+   "sua": "Thêm: 'Lu's feet only a little above the ground, a small shadow on the ground right under Lu, clear ground line' cho cả hai mục; mục mũ thêm 'farmyard ground below'.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Hai mục đã có \"Lu's feet only a little above the ground, a small shadow on the ground right under Lu, clear ground line\" và mặt đất (\"garden ground below\" / \"farmyard ground below\"). Lu có điểm tựa rõ, không lơ lửng."
+  },
+  {
+   "ma": "LG09",
+   "o": "L001-LU-nho-ba-hai-qua, L001-LU-nho-ba-lay-mu",
+   "cau": "a kind Vietnamese grandmother ... Lu ... standing safely on the ground beside her",
+   "mo_ta": "Không ghi tương quan kích thước Lu và bà. AI dễ vẽ Lu to ngang bà; khi đó Lu cũng tự với tới, ảnh không còn lý do phải nhờ bà và mâu thuẫn với ảnh sai (Lu nhảy không tới).",
+   "sua": "Thêm vào cả hai mục: 'Lu is much smaller than grandmother, the top of Lu's head only reaches her waist'.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Hai mục đã có \"Lu is much smaller than the grandmother, the top of Lu's head only reaches her waist\"; cả hai ghi \"standing on the ground\"."
+  },
+  {
+   "ma": "LG09",
+   "o": "L001-LU-nhay-lay-mu, L001-LU-nho-ba-lay-mu",
+   "cau": "a wooden chicken coop (không ghi độ cao)",
+   "mo_ta": "Không ghi độ cao chuồng gà. Chuồng gà thường thấp, AI có thể vẽ mái ngang tầm Lu (Lu với tới, đáp án 'nhảy' thành đúng) hoặc cao quá tầm bà (bà không với tới mà không có thang). Hai ảnh cùng câu cũng có thể vẽ chuồng cao thấp khác nhau (LG20).",
+   "sua": "Ghi giống nhau ở cả hai mục: 'a tall wooden chicken coop on short stilts, its roof edge about twice Lu's height and just within reach of the grandmother's raised hand'.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Hai mục ghi y hệt \"a tall wooden chicken coop on short stilts, its roof edge about twice Lu's height\"; mái cao hơn tầm tay Lu và vừa tầm tay bà. Riêng cụm \"just within reach of the grandmother's raised hand\" trong mục Lu nhảy sinh lỗi mới LG16 (xem lỗi dưới)."
+  },
+  {
+   "ma": "LG17",
+   "o": "L001-LU-nho-ba-lay-mu",
+   "cau": "reaching up and taking a small straw hat from the roof ..., handing the hat down to Lu",
+   "mo_ta": "Một ảnh ghép hai động tác cùng lúc (với lên lấy mũ trên mái và đưa mũ xuống cho Lu); AI dễ vẽ tay rối, mũ lơ lửng giữa mái và tay, hoặc hai cái mũ (LG18).",
+   "sua": "Chọn một khoảnh khắc: 'grandmother standing on the ground, reaching up with one hand and holding the straw hat at the edge of the coop roof, Lu standing on the ground beside her looking up with open hands, ready to catch'. Bỏ 'handing the hat down to Lu'.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Câu mô tả chỉ còn một động tác: bà đứng dưới đất, một tay cầm mũ ở mép mái; Lu đứng dưới đất ngửa tay chờ. Đã bỏ \"handing the hat down to Lu\"."
+  },
+  {
+   "ma": "LG16",
+   "o": "L001-LU-nhay-lay-mu",
+   "cau": "its roof edge about twice Lu's height and just within reach of the grandmother's raised hand ... only Lu and the coop, no other characters",
+   "mo_ta": "Ảnh đáp án sai chỉ được có Lu, nhưng câu mô tả nhắc \"the grandmother's raised hand\". AI đọc chữ thì dễ vẽ thêm bà hoặc một bàn tay giơ lên. Khi đó ảnh sai trông giống ảnh đúng \"nhờ bà\", bé không phân biệt được hai đáp án (LG06).",
+   "sua": "Ở mục này bỏ cụm \"and just within reach of the grandmother's raised hand\", chỉ giữ \"a tall wooden chicken coop on short stilts, its roof edge about twice Lu's height\" (giữ nguyên cụm về bà ở mục L001-LU-nho-ba-lay-mu). Có thể thêm \"grandmother, adult, hand\" vào negative riêng cho mục này.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Mục L001-LU-nhay-lay-mu đã bỏ cụm về bà, chỉ còn \"its roof edge about twice Lu's height\", vẫn có \"only Lu and the coop, no chickens, no other characters\" và thêm negative_them \"grandmother, adult, person, hand of another person\". Ảnh sai chỉ có Lu, phân biệt rõ với ảnh đúng có bà. Chiều cao chuồng vẫn ghi như nhau ở hai mục."
+  }
+ ]
+}

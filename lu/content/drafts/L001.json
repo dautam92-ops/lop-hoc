@@ -16,17 +16,17 @@
    {
     "e": "face:binh-tinh",
     "t": "Bình thường",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:buon",
     "t": "Buồn",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:so",
     "t": "Lo lắng",
-    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
+    "reply": "Không sao, có Mono ở đây rồi. Bé cùng Mono khám phá nhiều thứ mới mẻ nhé."
    }
   ]
  },
@@ -128,13 +128,13 @@
   }
  ],
  "intro": [
-  "Chào bé! Hôm nay bé là Lu.",
-  "Sáng nay bà đi chợ sớm, để lại cho Lu một túi hạt đậu và một bình tưới.",
-  "Bà dặn: Lu gieo hạt xuống đất, rồi tưới nước cho hạt nhé.",
+  "Chào bé! Mình là Mono.",
+  "Sáng nay bà đi chợ sớm, để lại cho Mono một túi hạt đậu và một bình tưới.",
+  "Bà dặn: Mono gieo hạt xuống đất, rồi tưới nước cho hạt nhé.",
   "Mình cùng trồng những hạt đậu đầu tiên nào!"
  ],
  "hub": {
-  "q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Lu gợi ý.",
+  "q": "Đây là các bài học nhỏ hôm nay. Bé chọn một bài để học nhé. Bài có viền vàng là bài Mono gợi ý.",
   "again": "Bé chọn bài tiếp theo nhé.",
   "backdrop": {
    "id": "L001-BG-02",
@@ -143,7 +143,7 @@
  },
  "stages": [
   {
-   "title": "Đếm hạt cùng Lu",
+   "title": "Đếm hạt cùng Mono",
    "icon": "art:hat-dau*3",
    "nhom": [
     "TO"
@@ -163,9 +163,9 @@
      "mechanic": "M01",
      "mode": "count",
      "skill_id": "TO.DEM.01",
-     "title": "Lu đếm, bé đếm",
+     "title": "Mono đếm, bé đếm",
      "intro": [
-      "Lu đếm trước: một, hai, ba. Ba hạt đậu! Giờ đến lượt bé."
+      "Mono đếm trước: một, hai, ba. Ba hạt đậu! Giờ đến lượt bé."
      ],
      "hint": "Bé chạm từng hạt, mỗi hạt đếm một tiếng.",
      "q": "Trên khay có mấy hạt đậu?",
@@ -183,7 +183,7 @@
       "ba"
      ],
      "ok": "Bé giỏi lắm! Trên khay có {word} hạt đậu.",
-     "no": "Bé đếm lại nhé.",
+     "no": "Không sao đâu! Bé đếm lại nhé.",
      "hint_glow": false
     },
     {
@@ -196,8 +196,8 @@
       {
        "q": "Bé tìm giỏ có hai hạt đậu.",
        "a": 1,
-       "ok": "Đúng rồi! Giỏ này có hai hạt đậu.",
-       "no": "Bé đếm từng hạt trong giỏ xem.",
+       "ok": "Giỏi quá! Giỏ này có hai hạt đậu.",
+       "no": "Cố lên bé ơi! Bé đếm từng hạt trong giỏ xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -217,8 +217,8 @@
       {
        "q": "Bé tìm giỏ có ba hạt đậu.",
        "a": 2,
-       "ok": "Đúng rồi! Giỏ này có ba hạt đậu.",
-       "no": "Bé đếm từng hạt trong giỏ xem.",
+       "ok": "Hoan hô bé! Giỏ này có ba hạt đậu.",
+       "no": "Cố lên bé ơi! Bé đếm từng hạt trong giỏ xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -246,14 +246,14 @@
    "thiet_ke": {
     "kien_thuc": "Đếm 1–3 vật, mỗi vật một tiếng; tiếng cuối là số lượng.",
     "bai_tap": [
-     "Đếm hạt trên khay (Lu làm mẫu)",
+     "Đếm hạt trên khay (Mono làm mẫu)",
      "Đếm hạt lần 2",
      "Chọn giỏ 2 hạt",
      "Chọn giỏ 3 hạt"
     ],
     "bang_chung": "TO.DEM.01 có chấm: đúng ngay lần đầu, số lần thử, gợi ý."
    },
-   "done": "Bé đếm được từng hạt đậu rồi!",
+   "done": "Bé đếm giỏi quá! Mỗi hạt một tiếng đếm, bé nhớ nhé!",
    "way": "cham-dem"
   },
   {
@@ -298,8 +298,8 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
-     "done": "Ba luống đã gieo xong rồi!"
+     "no": "Bé làm được mà! Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
+     "done": "Bé khéo tay quá! Ba luống đậu đã gieo xong!"
     },
     {
      "activity_id": "L001-B04",
@@ -327,8 +327,8 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé chạm đếm từng hạt trước nhé.",
-     "done": "Hàng thứ hai đã gieo xong!"
+     "no": "Mình cùng xem lại nào! Bé chạm đếm từng hạt trước nhé.",
+     "done": "Tuyệt vời! Hàng thứ hai cũng gieo xong rồi!"
     },
     {
      "activity_id": "L001-B05",
@@ -343,7 +343,7 @@
      "max": 3,
      "groups": 3,
      "rounds": 1,
-     "no": "Bé đếm số hạt trong từng giỏ xem.",
+     "no": "Không sao đâu! Bé đếm số hạt trong từng giỏ xem.",
      "ok": "Một hạt, hai hạt, ba hạt. Giỏ đã xếp từ ít đến nhiều."
     },
     {
@@ -369,7 +369,7 @@
       "ba"
      ],
      "ok": "Bé giỏi lắm! Có {word} chú chim.",
-     "no": "Bé chạm đếm lại từng chú nhé.",
+     "no": "Cố lên bé ơi! Bé chạm đếm lại từng chú nhé.",
      "hint_glow": false
     }
    ],
@@ -383,11 +383,11 @@
     ],
     "bang_chung": "TO.DEM.01 có chấm."
    },
-   "done": "Các luống đã gieo xong rồi!",
+   "done": "Hoan hô bé! Các luống đậu đã gieo xong hết rồi!",
    "way": "keo-tha"
   },
   {
-   "title": "Bà dặn Lu điều gì?",
+   "title": "Bà dặn Mono điều gì?",
    "icon": "art:tui",
    "nhom": [
     "TV",
@@ -398,7 +398,7 @@
     "kind": "nha-sang"
    },
    "intro": [
-    "Lúc sáng bà dặn Lu mấy điều. Bé nhớ giúp Lu nhé."
+    "Lúc sáng bà dặn Mono mấy điều. Bé nhớ giúp Mono nhé."
    ],
    "lu": "vui-mung",
    "activities": [
@@ -410,10 +410,10 @@
      "title": "Bé nhớ lời bà",
      "items": [
       {
-       "q": "Bà để lại cho Lu cái gì?",
+       "q": "Bà để lại cho Mono cái gì?",
        "a": 0,
        "ok": "Đúng rồi! Bà để lại một túi hạt đậu.",
-       "no": "Bé nghe lại nhé: bà để lại một túi hạt đậu.",
+       "no": "Cố lên bé ơi! Bé nghe lại nhé: bà để lại một túi hạt đậu.",
        "opts": [
         {
          "e": "art:tui"
@@ -428,10 +428,10 @@
        "style": "face"
       },
       {
-       "q": "Bà dặn Lu tưới hạt bằng gì?",
+       "q": "Bà dặn Mono tưới hạt bằng gì?",
        "a": 1,
-       "ok": "Đúng rồi! Lu tưới hạt bằng bình tưới.",
-       "no": "Bà dặn Lu dùng bình tưới đấy.",
+       "ok": "Tuyệt vời! Mono tưới hạt bằng bình tưới.",
+       "no": "Bé làm được mà! Bà dặn Mono dùng bình tưới đấy.",
        "opts": [
         {
          "e": "art:gio"
@@ -446,10 +446,10 @@
        "style": "face"
       },
       {
-       "q": "Bà dặn Lu gieo hạt vào đâu?",
+       "q": "Bà dặn Mono gieo hạt vào đâu?",
        "a": 2,
-       "ok": "Đúng rồi! Hạt đậu gieo xuống đất.",
-       "no": "Hạt đậu nằm trong đất mới mọc được.",
+       "ok": "Chính xác! Hạt đậu gieo xuống đất.",
+       "no": "Mình cùng xem lại nào! Hạt đậu nằm trong đất mới mọc được.",
        "opts": [
         {
          "e": "art:ao-nuoc"
@@ -496,7 +496,7 @@
     ],
     "bang_chung": "Tiếp xúc TV.NG.01, TV.AM.01."
    },
-   "done": "Bé nhớ lời bà dặn rồi!",
+   "done": "Bé nhớ lời bà giỏi quá! Người lớn dặn gì, bé nhớ làm theo nhé.",
    "way": "ke-chuyen"
   },
   {
@@ -548,13 +548,13 @@
      "engine": "E01",
      "mode": "items",
      "skill_id": "KP.KH.01",
-     "title": "Lu nên làm gì?",
+     "title": "Mono nên làm gì?",
      "items": [
       {
        "q": "Hạt đậu nằm ở đâu trên cây?",
        "a": 0,
-       "ok": "Đúng rồi! Hạt đậu nằm trong quả đậu.",
-       "no": "Bé nhớ lại: hạt nằm trong quả đậu xanh.",
+       "ok": "Bé giỏi quá! Hạt đậu nằm trong quả đậu.",
+       "no": "Không sao đâu! Bé nhớ lại: hạt nằm trong quả đậu xanh.",
        "opts": [
         {
          "e": "art:qua-dau"
@@ -569,10 +569,10 @@
        "style": "face"
       },
       {
-       "q": "Đất khô quá. Lu mang gì ra để hạt lớn được?",
+       "q": "Đất khô quá. Mono mang gì ra để hạt lớn được?",
        "a": 0,
-       "ok": "Đúng rồi! Lu tưới nước, đất ẩm, hạt sẽ nảy mầm.",
-       "no": "Hạt cần nước. Bé tìm thứ đựng nước nhé.",
+       "ok": "Giỏi quá! Mono tưới nước, đất ẩm, hạt sẽ nảy mầm.",
+       "no": "Bé thử lại nào! Hạt cần nước. Bé tìm thứ đựng nước nhé.",
        "opts": [
         {
          "e": "art:binh-tuoi"
@@ -589,8 +589,8 @@
       {
        "q": "Thứ nào cho mầm cây ánh nắng?",
        "a": 1,
-       "ok": "Đúng rồi! Mặt trời cho mầm ánh nắng.",
-       "no": "Cây non cần ánh nắng. Bé tìm hình có nắng nhé.",
+       "ok": "Hoan hô bé! Mặt trời cho mầm ánh nắng.",
+       "no": "Cố lên bé ơi! Cây non cần ánh nắng. Bé tìm hình có nắng nhé.",
        "opts": [
         {
          "e": "art:mat-trang"
@@ -622,7 +622,7 @@
     ],
     "bang_chung": "Tiếp xúc KP.KH.01."
    },
-   "done": "Bé biết hạt cần nước, nắng và đất rồi!",
+   "done": "Bé giỏi quá! Hạt cần nước, nắng và đất để lớn đấy.",
    "way": "kham-pha"
   },
   {
@@ -651,7 +651,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 1,
        "ok": "Đúng rồi! Đó là cái bình tưới.",
-       "no": "Bé nhìn kỹ: bóng có vòi dài để tưới cây.",
+       "no": "Bé làm được mà! Bé nhìn kỹ: bóng có vòi dài để tưới cây.",
        "opts": [
         {
          "e": "art:gio"
@@ -669,8 +669,8 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
-       "ok": "Đúng rồi! Đó là quả đậu.",
-       "no": "Bé nhìn kỹ: bóng dài và cong như quả đậu.",
+       "ok": "Tuyệt vời! Đó là quả đậu.",
+       "no": "Mình cùng xem lại nào! Bé nhìn kỹ: bóng dài và cong như quả đậu.",
        "opts": [
         {
          "e": "art:qua-dau"
@@ -688,8 +688,8 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
-       "ok": "Đúng rồi! Đó là chú chim.",
-       "no": "Bé nhìn kỹ: bóng có cánh và cái mỏ nhỏ.",
+       "ok": "Chính xác! Đó là chú chim.",
+       "no": "Không sao đâu! Bé nhìn kỹ: bóng có cánh và cái mỏ nhỏ.",
        "opts": [
         {
          "e": "art:tho"
@@ -707,8 +707,8 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
-       "ok": "Đúng rồi! Đó là bông hoa.",
-       "no": "Bé nhìn kỹ: bóng có nhiều cánh tròn.",
+       "ok": "Bé giỏi quá! Đó là bông hoa.",
+       "no": "Cố lên bé ơi! Bé nhìn kỹ: bóng có nhiều cánh tròn.",
        "opts": [
         {
          "e": "art:hoa"
@@ -740,7 +740,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.QS.01."
    },
-   "done": "Bé tinh mắt lắm, đoán đúng các cái bóng!",
+   "done": "Ôi, bé tinh mắt quá! Bé đoán đúng hết các cái bóng rồi!",
    "way": "quan-sat-tranh"
   },
   {
@@ -781,8 +781,14 @@
      "max": 3,
      "cells": 9,
      "rounds": 2,
-     "no": "Đó không phải hạt đậu. Hạt đậu màu vàng nâu.",
-     "done": "Bé nhặt đủ hạt đậu rồi!"
+     "no": "Cố lên bé ơi! Đó không phải hạt đậu. Hạt đậu màu vàng nâu.",
+     "done": "Hoan hô! Bé nhặt đủ hạt đậu, không sót hạt nào!",
+     "layout": "roi",
+     "bg": "asset:BC-0004",
+     "co": {
+      "art:hat-dau": 0.6,
+      "art:soi": 0.75
+     }
     },
     {
      "activity_id": "L001-B13",
@@ -809,9 +815,16 @@
      "max": 3,
      "cells": 8,
      "rounds": 2,
-     "no": "Mầm đậu có thân xanh nhú lên từ hạt.",
-     "done": "Hết chỗ trốn rồi! Bé tìm ra đủ các mầm đậu.",
-     "evidence": "tiep-xuc"
+     "no": "Bé làm được mà! Mầm đậu có thân xanh nhú lên từ hạt.",
+     "done": "Hết chỗ trốn rồi! Bé tìm ra đủ mầm đậu, tài quá!",
+     "evidence": "tiep-xuc",
+     "layout": "roi",
+     "bg": "asset:BC-0004",
+     "xoay": 0,
+     "co": {
+      "art:hat-dau": 0.6,
+      "art:hoa": 1.15
+     }
     }
    ],
    "thiet_ke": {
@@ -824,7 +837,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.TT.01; không đo thời gian (V4 B03)."
    },
-   "done": "Bé chú ý giỏi lắm!",
+   "done": "Bé chú ý giỏi quá! Nhìn thật kỹ là bé tìm ra ngay.",
    "way": "tim-vat"
   },
   {
@@ -856,7 +869,7 @@
      ],
      "pairs": 3,
      "no": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
-     "done": "Bé nhớ chỗ các thẻ giỏi lắm!",
+     "done": "Bé nhớ giỏi quá! Mình chơi thêm lượt nữa nào!",
      "evidence": "tiep-xuc"
     },
     {
@@ -876,7 +889,7 @@
      ],
      "pairs": 4,
      "no": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
-     "done": "Bé giỏi lắm!",
+     "done": "Bé giỏi quá! Bốn đôi thẻ mà bé tìm ra hết!",
      "evidence": "tiep-xuc"
     },
     {
@@ -896,7 +909,7 @@
      ],
      "pairs": 4,
      "no": "Hai thẻ này chưa giống nhau. Bé nhớ chỗ của chúng nhé.",
-     "done": "Bé nhớ chỗ giỏi quá!",
+     "done": "Bé nhớ hết chỗ rồi! Bé giỏi quá đi thôi!",
      "evidence": "tiep-xuc"
     }
    ],
@@ -909,7 +922,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.TN.01: số lượt lật."
    },
-   "done": "Bé nhớ chỗ các thẻ giỏi lắm!",
+   "done": "Trí nhớ của bé tuyệt vời quá! Mono phục bé luôn!",
    "way": "tri-nho"
   },
   {
@@ -923,7 +936,7 @@
     "kind": "san"
    },
    "intro": [
-    "Giờ Lu học đếm bằng tiếng Anh. Bé nghe cùng Lu nhé."
+    "Giờ Mono học đếm bằng tiếng Anh. Bé nghe cùng Mono nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -990,11 +1003,11 @@
      "mode": "say",
      "skill_id": "EN.EN.04",
      "evidence": "tiep-xuc",
-     "title": "Nói theo Lu",
+     "title": "Nói theo Mono",
      "luSays": "One, two, three!",
      "word": "One, two, three!",
      "intro": [
-      "Bé muốn thì nói theo Lu nhé. Không nói cũng không sao."
+      "Bé muốn thì nói theo Mono nhé. Không nói cũng không sao."
      ]
     }
    ],
@@ -1008,11 +1021,11 @@
     ],
     "bang_chung": "Tiếp xúc EN.EN.04; không ghi âm, không chấm phát âm."
    },
-   "done": "Bé nghe được ba từ tiếng Anh rồi!",
+   "done": "Hoan hô bé! Bé đã nghe được ba từ tiếng Anh rồi!",
    "way": "nghe-chon"
   },
   {
-   "title": "Lu chờ mầm mọc",
+   "title": "Mono chờ mầm mọc",
    "icon": "face:binh-tinh",
    "nhom": [
     "EQ"
@@ -1022,7 +1035,7 @@
     "kind": "vuon"
    },
    "intro": [
-    "Gieo hạt xong, Lu phải chờ mầm mọc. Mình cùng nghĩ về cảm xúc của Lu nhé."
+    "Gieo hạt xong, Mono phải chờ mầm mọc. Mình cùng nghĩ về cảm xúc của Mono nhé."
    ],
    "lu": "suy-nghi",
    "activities": [
@@ -1031,73 +1044,73 @@
      "engine": "E01",
      "mode": "items",
      "skill_id": "EQ.CX.01",
-     "title": "Lu thấy thế nào?",
+     "title": "Mono thấy thế nào?",
      "items": [
       {
-       "q": "Lu chờ cả buổi mà chưa thấy mầm. Lu có thể thấy thế nào?",
+       "q": "Mono chờ cả buổi mà chưa thấy mầm. Mono có thể thấy thế nào?",
        "any": true,
        "style": "face",
-       "ok": "Cảm ơn bé đã nghĩ cùng Lu.",
+       "ok": "Cảm ơn bé đã nghĩ cùng Mono.",
        "opts": [
         {
          "e": "face:buon",
-         "say": "Lu thấy buồn.",
+         "say": "Mono thấy buồn.",
          "reply": "Ừ, chờ lâu thì có thể buồn. Hạt cần vài ngày mới nảy mầm."
         },
         {
          "e": "face:gian",
-         "say": "Lu thấy bực.",
+         "say": "Mono thấy bực.",
          "reply": "Bực là khi mình muốn nhanh mà phải chờ."
         },
         {
          "e": "face:vui",
-         "say": "Lu vẫn thấy vui.",
-         "reply": "Lu vui vì đã gieo hạt xong. Ngày mai mình lại ra xem."
+         "say": "Mono vẫn thấy vui.",
+         "reply": "Mono vui vì đã gieo hạt xong. Ngày mai mình lại ra xem."
         }
        ]
       },
       {
-       "q": "Mấy hôm sau, mầm đậu nhú lên rồi! Lu có thể thấy thế nào?",
+       "q": "Mấy hôm sau, mầm đậu nhú lên rồi! Mono có thể thấy thế nào?",
        "any": true,
        "style": "face",
-       "ok": "Bé hiểu Lu quá!",
+       "ok": "Bé hiểu Mono quá!",
        "opts": [
         {
          "e": "face:vui",
-         "say": "Lu thấy vui.",
-         "reply": "Lu vui quá, chờ mấy hôm mầm đã mọc."
+         "say": "Mono thấy vui.",
+         "reply": "Mono vui quá, chờ mấy hôm mầm đã mọc."
         },
         {
          "e": "face:ngac-nhien",
-         "say": "Lu thấy ngạc nhiên.",
+         "say": "Mono thấy ngạc nhiên.",
          "reply": "Ồ, hôm qua chưa có, hôm nay đã có mầm."
         },
         {
          "e": "face:binh-tinh",
-         "say": "Lu thấy nhẹ nhõm.",
-         "reply": "Lu chờ được rồi, giờ Lu thấy dễ chịu."
+         "say": "Mono thấy nhẹ nhõm.",
+         "reply": "Mono chờ được rồi, giờ Mono thấy dễ chịu."
         }
        ]
       },
       {
-       "q": "Gió to làm đổ chậu mầm. Lu có thể thấy thế nào?",
+       "q": "Gió to làm đổ chậu mầm. Mono có thể thấy thế nào?",
        "any": true,
        "style": "face",
-       "ok": "Lu thấy vui vì bé hỏi thăm Lu.",
+       "ok": "Mono thấy vui vì bé hỏi thăm Mono.",
        "opts": [
         {
          "e": "face:buon",
-         "say": "Lu thấy buồn.",
-         "reply": "Ừ, buồn là bình thường. Lu và bà dựng chậu lên nhé."
+         "say": "Mono thấy buồn.",
+         "reply": "Ừ, buồn là bình thường. Mono và bà dựng chậu lên nhé."
         },
         {
          "e": "face:so",
-         "say": "Lu thấy lo.",
-         "reply": "Lu lo mầm bị gãy. Mình cùng xem mầm còn khỏe không."
+         "say": "Mono thấy lo.",
+         "reply": "Mono lo mầm bị gãy. Mình cùng xem mầm còn khỏe không."
         },
         {
          "e": "face:gian",
-         "say": "Lu thấy bực.",
+         "say": "Mono thấy bực.",
          "reply": "Bực thì mình hít thở chậm trước đã."
         }
        ]
@@ -1114,11 +1127,11 @@
      "mode": "breath",
      "skill_id": "EQ.CX.02",
      "evidence": "tiep-xuc",
-     "title": "Thở cùng Lu",
+     "title": "Thở cùng Mono",
      "times": 2,
      "inn": "Hít vào thật chậm, như ngửi một bông hoa.",
      "out": "Thở ra từ từ, như thổi một ngọn nến.",
-     "done": "Lu thấy dễ chịu hơn rồi."
+     "done": "Cảm ơn bé, Mono thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé."
     }
    ],
    "thiet_ke": {
@@ -1127,15 +1140,15 @@
      "Chờ mầm",
      "Mầm mọc",
      "Chậu bị đổ",
-     "Thở cùng Lu"
+     "Thở cùng Mono"
     ],
     "bang_chung": "Lựa chọn của bé, không đúng sai (V4 F02)."
    },
-   "done": "Bé đã cùng Lu bình tĩnh chờ mầm!",
+   "done": "Bé chờ cùng Mono giỏi quá! Chờ thêm vài hôm, mầm sẽ lớn thôi.",
    "way": "tinh-huong-eq"
   },
   {
-   "title": "Lu tự chăm sóc mình",
+   "title": "Mono tự chăm sóc mình",
    "icon": "art:xa-phong",
    "nhom": [
     "KS"
@@ -1145,7 +1158,7 @@
     "kind": "hien"
    },
    "intro": [
-    "Tay Lu dính đầy đất. Mình rửa tay rồi mới ăn nhé."
+    "Tay Mono dính đầy đất. Mình rửa tay rồi mới ăn nhé."
    ],
    "lu": "vay-tay",
    "activities": [
@@ -1178,8 +1191,8 @@
       ]
      ],
      "rounds": 1,
-     "no": "Bé nhớ lại nhé: làm ướt tay, xoa xà phòng, rồi lau khô bằng khăn.",
-     "done": "Tay Lu sạch rồi!"
+     "no": "Mình cùng xem lại nào! Bé nhớ lại nhé: làm ướt tay, xoa xà phòng, rồi lau khô bằng khăn.",
+     "done": "Bé giỏi quá! Từ nay bé nhớ rửa tay thật sạch trước khi ăn cơm nhé."
     },
     {
      "activity_id": "L001-B23",
@@ -1187,7 +1200,7 @@
      "mode": "do",
      "skill_id": "EQ.AT.D02",
      "evidence": "tiep-xuc",
-     "title": "Xoa tay cùng Lu",
+     "title": "Xoa tay cùng Mono",
      "lu": "dang-tay",
      "task": "Bé xoa hai bàn tay vào nhau như đang rửa tay. Mình đếm đến năm: một, hai, ba, bốn, năm.",
      "button": "Xong rồi!",
@@ -1204,38 +1217,38 @@
      "intro": [],
      "items": [
       {
-       "q": "Quả đậu trên giàn cao, Lu không với tới. Lu nên làm gì?",
+       "q": "Quả đậu trên giàn cao, Mono không với tới. Mono nên làm gì?",
        "any": true,
        "style": "face",
        "ok": "Mình cùng nghĩ nhé.",
        "opts": [
         {
-         "e": "lu:nhay",
-         "say": "Lu nhảy thật cao để với.",
-         "reply": "Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé."
+         "e": "art:mono-treo-gian-dau",
+         "say": "Mono trèo lên giàn để hái.",
+         "reply": "Trèo cao dễ ngã lắm. Mono đi gọi bà giúp nhé."
         },
         {
-         "e": "lu:chi-tay",
-         "say": "Lu nhờ bà hái giúp.",
+         "e": "art:mono-nho-ba-hai-qua",
+         "say": "Mono nhờ bà hái giúp.",
          "reply": "Đúng là cách an toàn. Ở chỗ cao, mình nhờ người lớn giúp."
         }
        ]
       },
       {
-       "q": "Chiếc mũ của Lu bay lên nóc chuồng gà. Lu nên làm gì?",
+       "q": "Chiếc mũ của Mono bay lên nóc chuồng gà. Mono nên làm gì?",
        "any": true,
        "style": "face",
        "ok": "Mình cùng nghĩ nhé.",
        "opts": [
         {
-         "e": "lu:nhay",
-         "say": "Lu nhảy lên lấy mũ.",
-         "reply": "Nóc chuồng cao lắm, nhảy dễ ngã. Lu nhờ bà lấy giúp nhé."
+         "e": "art:mono-treo-lay-mu",
+         "say": "Mono trèo lên mái lấy mũ.",
+         "reply": "Mái chuồng cao lắm, trèo dễ ngã. Mono nhờ bà lấy giúp nhé."
         },
         {
-         "e": "lu:chi-tay",
-         "say": "Lu gọi bà lấy giúp.",
-         "reply": "Lu nhờ bà là an toàn rồi. Bà lấy mũ xuống cho Lu."
+         "e": "art:mono-nho-ba-lay-mu",
+         "say": "Mono gọi bà lấy giúp.",
+         "reply": "Mono nhờ bà là an toàn rồi. Bà lấy mũ xuống cho Mono."
         }
        ]
       }
@@ -1248,13 +1261,13 @@
     "kien_thuc": "Ba bước rửa tay; ở chỗ cao thì nhờ người lớn.",
     "bai_tap": [
      "Xếp ba bước rửa tay",
-     "Xoa tay cùng Lu",
+     "Xoa tay cùng Mono",
      "Quả đậu trên cao",
      "Mũ bay lên nóc chuồng"
     ],
     "bang_chung": "Tiếp xúc EQ.AT.D02, EQ.AT.08."
    },
-   "done": "Bé biết cách giữ tay sạch và an toàn rồi!",
+   "done": "Bé giỏi quá! Từ nay bé nhớ giữ tay sạch và chơi thật an toàn nhé.",
    "way": "ky-nang-song"
   },
   {
@@ -1268,7 +1281,7 @@
     "kind": "hien"
    },
    "intro": [
-    "Lu có mấy câu đố. Bé tìm thứ không cùng nhóm nhé."
+    "Mono có mấy câu đố. Bé tìm thứ không cùng nhóm nhé."
    ],
    "lu": "suy-nghi",
    "activities": [
@@ -1282,8 +1295,8 @@
       {
        "q": "Thứ nào không phải của cây đậu?",
        "a": 3,
-       "ok": "Đúng rồi! Quả bóng bay không phải của cây đậu.",
-       "no": "Hạt, mầm, quả đều từ cây đậu. Còn thứ nào khác?",
+       "ok": "Giỏi quá! Quả bóng bay không phải của cây đậu.",
+       "no": "Không sao đâu! Hạt, mầm, quả đều từ cây đậu. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:hat-dau"
@@ -1303,8 +1316,8 @@
       {
        "q": "Thứ nào không mọc lên được?",
        "a": 2,
-       "ok": "Đúng rồi! Viên sỏi không mọc được.",
-       "no": "Lá, hoa, mầm đều mọc lên. Bé tìm thứ không mọc nhé.",
+       "ok": "Hoan hô bé! Viên sỏi không mọc được.",
+       "no": "Bé thử lại nào! Lá, hoa, mầm đều mọc lên. Bé tìm thứ không mọc nhé.",
        "opts": [
         {
          "e": "art:la"
@@ -1325,7 +1338,7 @@
        "q": "Thứ nào không dùng để chăm cây?",
        "a": 1,
        "ok": "Đúng rồi! Chiếc áo không dùng để chăm cây.",
-       "no": "Bình tưới, vòi nước, nước đều giúp cây. Còn thứ nào khác?",
+       "no": "Cố lên bé ơi! Bình tưới, vòi nước, nước đều giúp cây. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:binh-tuoi"
@@ -1345,8 +1358,8 @@
       {
        "q": "Thứ nào không ăn được?",
        "a": 0,
-       "ok": "Đúng rồi! Chong chóng không ăn được.",
-       "no": "Quả táo, củ cà rốt, quả đậu đều ăn được. Còn thứ nào khác?",
+       "ok": "Tuyệt vời! Chong chóng không ăn được.",
+       "no": "Bé làm được mà! Quả táo, củ cà rốt, quả đậu đều ăn được. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:chong-chong"
@@ -1381,7 +1394,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.LG.04."
    },
-   "done": "Bé suy nghĩ giỏi lắm!",
+   "done": "Bé suy nghĩ giỏi quá! Bé nhìn ra ngay thứ nào khác nhóm.",
    "way": "phan-loai"
   },
   {
@@ -1442,7 +1455,7 @@
         {
          "e": "art:chim",
          "say": "Một chú chim đậu trên ngọn cây.",
-         "reply": "Chú chim chào Lu rồi bay quanh cây đậu."
+         "reply": "Chú chim chào Mono rồi bay quanh cây đậu."
         }
        ]
       }
@@ -1481,11 +1494,11 @@
     {
      "activity_id": "L001-B29",
      "engine": "E00",
-     "title": "Mầm đậu trước nhà Lu",
+     "title": "Mầm đậu trước nhà Mono",
      "lu": "an-mung",
      "tap": true,
      "story": [
-      "Mầm đậu đầu tiên đã lớn trước nhà Lu.",
+      "Mầm đậu đầu tiên đã lớn trước nhà Mono.",
       "Bé chạm vào chậu đất để trồng mầm đậu nhé."
      ],
      "props": [
@@ -1507,7 +1520,7 @@
     ],
     "bang_chung": "Lựa chọn của bé, không chấm (V4 B06)."
    },
-   "done": "Khu vườn trong mơ của bé đẹp quá!",
+   "done": "Ôi, khu vườn trong mơ của bé đẹp quá! Bé tưởng tượng hay lắm!",
    "way": "van-dong"
   }
  ],

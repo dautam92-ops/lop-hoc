@@ -1,5 +1,7 @@
 {
  "format": "lu-art-prompts",
+ "trang_thai": "da_ve",
+ "trang_thai_ghi_chu": "Đã vẽ và đăng ký vào kho.",
  "version": "L002-HD-1",
  "ghi_chu": "Ảnh hành động cho bài \"Bé đoán xem\" L002 (tam 27/11 10:03: cần ảnh gà con đang mổ hạt đậu dưới đất; 2 đáp án sai cũng phải là hành động của gà con). Vẽ trên máy 24H bằng ComfyUI như PM10, cùng phong cách gà con DV-0023, chỉ dùng sau khi tam duyệt. Quy tắc 38, core/hanh-dong.js. ĐÃ DUYỆT 27/11 10:29: mổ hạt s23 = DV-0043 (tách nền theo màu trắng để giữ đất và hạt), ngủ s23 = DV-0044, chạy s25 = DV-0045.",
  "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, natural expression, simple clean composition, not too detailed, for kids aged 4 to 6",

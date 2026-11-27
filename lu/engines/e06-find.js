@@ -19,7 +19,13 @@ export function generate(act, rng) {
   for (const t of ts) {
     const k = rng.int(act.min || 2, act.max || 4); const cells = act.cells || 9;
     const others = Array.from({ length: cells - k }, () => rng.pick(act.distractors));
-    rounds.push({ t, grid: rng.shuffle([...Array(k).fill(act.targets[t].e), ...others]) });
+    const grid = rng.shuffle([...Array(k).fill(act.targets[t].e), ...others]);
+    // Cảnh "rơi vãi" (tam 27/11 13:03): vật nằm rải rác trên mặt đất vườn thay vì xếp ô.
+    // Vị trí do mã dựng: lưới 3 cột lệch ngẫu nhiên, mỗi vật một ô nên không chồng nhau; góc xoay ngẫu nhiên.
+    if (act.layout === 'roi') { const cols = 3, rows = Math.ceil(grid.length / cols);
+      const pos = grid.map((_, i) => ({ x: 18 + (i % cols) * 32 + rng.int(-7, 7), y: 15 + Math.floor(i / cols) * (70 / Math.max(1, rows - 1)) + rng.int(-4, 4), r: act.xoay === 0 ? 0 : rng.int(-(act.xoay || 35), act.xoay || 35) }));
+      rounds.push({ t, grid, pos }); }
+    else rounds.push({ t, grid });
   }
   return { rounds };
 }
@@ -38,7 +44,13 @@ function round(ctx, act, R, first) {
   const { ui, voice } = ctx; const target = act.targets[R.t].e; let left = R.grid.filter(x => x === target).length, wrong = 0;
   return new Promise(done => {
     ui.scene(act.title, '');
-    const box = ui.answers(act.label || 'Chạm vào hình cần tìm', `<div class="grid">${R.grid.map((x, i) => `<button class="opt cell-f" data-i="${i}" aria-label="ô ${i + 1}">${vis(x)}</button>`).join('')}</div>`);
+    const roi = act.layout === 'roi' && R.pos;
+    const cells = R.grid.map((x, i) => roi
+      ? `<button class="opt cell-f roi-it" data-i="${i}" aria-label="vật ${i + 1}" style="left:${R.pos[i].x}%;top:${R.pos[i].y}%;--rot:${R.pos[i].r}deg;--co:${(act.co || {})[x] || 1}">${vis(x)}</button>`
+      : `<button class="opt cell-f" data-i="${i}" aria-label="ô ${i + 1}">${vis(x)}</button>`).join('');
+    const box = roi
+      ? ui.answers('', `<div class="roi-vuon">${act.bg ? `<div class="roi-bg">${vis(act.bg)}</div>` : ''}${act.spill ? `<div class="roi-gio">${vis(act.spill)}</div>` : ''}${cells}</div>`)
+      : ui.answers(act.label || 'Chạm vào hình cần tìm', `<div class="grid">${cells}</div>`);
     const markNext = () => ctx.test.mark(box.querySelector(`.cell-f:not(.right)[data-i="${R.grid.findIndex((x, i) => x === target && !box.querySelector(`[data-i="${i}"]`).classList.contains('right'))}"]`));
     markNext();
     const q = fill(act.q, { name: act.targets[R.t].name });

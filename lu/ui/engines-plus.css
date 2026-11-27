@@ -453,3 +453,23 @@
 .lu-lesson .tr-src.ro b { position: absolute; right: -6px; top: 4%; z-index: 3; }
 .lu-lesson .tr-src.ro:disabled { cursor: default; }
 @media (max-width: 600px) { .lu-lesson .tr-src.ro { --w: 260px; } }
+
+/* E06 cảnh "rơi vãi" (tam 27/11 13:03): hạt đậu đổ ra vườn, bé chạm từng vật trên mặt đất thay vì ô thẻ */
+.lu-lesson .answers:has(.roi-vuon), .lu-lesson .app.has-bd .answers:has(.roi-vuon) { background: none; backdrop-filter: none; border: 0; box-shadow: none; padding: 0; width: 100%; max-width: none; }
+.lu-lesson .roi-vuon { position: relative; margin: 0 auto; width: min(100%, 640px, calc((100dvh - 300px) * 4 / 5)); aspect-ratio: 4 / 5; border-radius: var(--r-lg); overflow: hidden; border: 1.5px solid var(--lu-line); background: #8f6644; }
+.lu-lesson .roi-vuon .roi-bg, .lu-lesson .roi-vuon .roi-bg img, .lu-lesson .roi-vuon .roi-bg svg { position: absolute; inset: 0; width: 100% !important; height: 100% !important; max-width: none; max-height: none; object-fit: cover; object-position: 50% 100%; }
+/* ảnh nền chỉ lấy phần mặt đất: phóng to về phía dưới để bỏ dải trời (vật nằm trên đất, không lơ lửng: LG08) */
+.lu-lesson .roi-vuon .roi-bg img { transform: scale(1.3); transform-origin: 50% 88%; }
+.lu-lesson .roi-vuon .roi-gio { position: absolute; left: 3%; top: 1%; width: 22%; aspect-ratio: 1; transform: rotate(-70deg); pointer-events: none; filter: drop-shadow(0 4px 3px rgba(60, 40, 20, .35)); }
+.lu-lesson .roi-vuon .roi-gio > *, .lu-lesson .roi-vuon .roi-gio img { width: 100%; height: 100%; object-fit: contain; }
+.lu-lesson .roi-vuon .roi-it { position: absolute; width: 26%; aspect-ratio: 1; min-width: 0; min-height: 0; padding: 0; background: none; border: 0; box-shadow: none; border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(var(--rot, 0deg)); filter: drop-shadow(0 4px 2px rgba(60, 40, 20, .45)); transition: transform .25s, filter .25s; }
+/* vùng chạm to (≥72px điện thoại), hình vật nhỏ hơn cho giống hạt rơi thật */
+.lu-lesson .roi-vuon .roi-it { display: grid; place-items: center; }
+.lu-lesson .roi-vuon .roi-it .lu-art, .lu-lesson .roi-vuon .roi-it img { width: 90% !important; height: 90% !important; transform: scale(var(--co, 1)); max-width: none; max-height: none; object-fit: contain; }
+.lu-lesson .roi-vuon .roi-it.right { transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(1.12); filter: drop-shadow(0 0 8px #ffd76a) drop-shadow(0 0 3px #fff); background: rgba(255, 236, 160, .45); }
+@media (orientation: landscape) {
+  .lu-lesson .roi-vuon { width: min(100%, 980px, calc((100dvh - 310px) * 16 / 10)); aspect-ratio: 16 / 10; }
+  .lu-lesson .roi-vuon .roi-it { width: 16%; }
+  .lu-lesson .roi-vuon .roi-gio { width: 11%; }
+}

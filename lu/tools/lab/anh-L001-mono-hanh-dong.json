@@ -1,0 +1,51 @@
+{
+ "format": "lu-art-prompts",
+ "trang_thai": "da_ve",
+ "trang_thai_ghi_chu": "tam vẽ bằng ChatGPT 27/11 16:00 (DV-0047..0050), đã duyệt.",
+ "version": "L001-MONO-HD-1",
+ "ghi_chu": "Ảnh hành động L001-B24 \"Quả đậu trên cao\" với nhân vật Mono (thay Lu 27/11). tam 27/11 14:53: ảnh con của bài học vẽ bằng Qwen-Image trên máy 24H (không ChatGPT); Qwen không nhận ảnh mẫu nên câu mô tả tả kỹ Mono và bà theo registry/characters.json (MN-0005, NV-0003). Đang vẽ ở Documents\\lu-L001-lu-hanh-dong\\mono\\, chờ tam chọn. Quy tắc 42. tam 27/11 15:50: mỗi ảnh chỉ vẽ 2 phương án; câu mô tả gọn, tả điều muốn có, không liệt kê thứ cấm. tam 27/11 15:50: đáp án sai đổi từ nhảy sang TRÈO (cảm giác nguy hiểm rõ hơn).",
+ "style": "soft 3D clay-like children's book illustration, gently glossy, warm vivid colors, rounded shapes, simple clean background, for kids aged 4 to 6",
+ "negative": "text, letters, watermark, logo, extra limbs, extra fingers, deformed, cluttered background, scary, floating objects",
+ "seeds": [
+  22,
+  23
+ ],
+ "items": [
+  {
+   "id": "L001-MONO-treo-gian-dau",
+   "slot": "art:mono-treo-gian-dau",
+   "kieu": "style",
+   "vai": "đáp án sai (việc không nên làm)",
+   "cau": "Quả đậu trên giàn cao, Mono không với tới. Mono nên làm gì?",
+   "vi": "Mono trèo lên giàn đậu cao để hái quả (đáp án sai, việc nguy hiểm)",
+   "prompt": "Mono, a cute 5-year-old explorer boy with brown hair, rosy cheeks, a mustard-yellow wide-brimmed hat with goggles and a leaf, green neckerchief, orange-brown vest, brown shorts and brown boots climbing up a tall wooden bean trellis, hands gripping the poles and one boot on a crossbar, high above the ground, reaching for green bean pods at the top, nervous face"
+  },
+  {
+   "id": "L001-MONO-nho-ba-hai-qua",
+   "slot": "art:mono-nho-ba-hai-qua",
+   "kieu": "style",
+   "vai": "đáp án đúng",
+   "cau": "Quả đậu trên giàn cao, Mono không với tới. Mono nên làm gì?",
+   "vi": "Bà đứng trên đất hái chùm đậu ở đỉnh giàn, Mono đứng dưới giơ giỏ đỡ",
+   "prompt": "the same tall bean trellis; Grandma, a kind old woman with grey hair in a high bun, round brown glasses, an olive-green cardigan with brown buttons and a cream collar, a cream apron with two pockets, a brown skirt and brown shoes, much taller than Mono standing on the ground and reaching up with one hand to pick the bunch of green bean pods at the top; Mono, a cute 5-year-old explorer boy with brown hair, big brown eyes and rosy cheeks, wearing a wide-brimmed mustard-yellow hat with brown aviator goggles on the brim and a green leaf on the left side, a green neckerchief, a cream short-sleeve shirt, an orange-brown vest, brown shorts with a belt, cream socks, laced brown boots and a beige backpack standing on the grass beside her with both feet on the ground, holding up a small woven basket to catch the beans, both smiling"
+  },
+  {
+   "id": "L001-MONO-treo-lay-mu",
+   "slot": "art:mono-treo-lay-mu",
+   "kieu": "style",
+   "vai": "đáp án sai (việc không nên làm)",
+   "cau": "Chiếc mũ của Mono bay lên nóc chuồng gà. Mono nên làm gì?",
+   "vi": "Mono không đội mũ, trèo lên mái chuồng gà để lấy mũ (đáp án sai, việc nguy hiểm)",
+   "prompt": "Mono, a cute 5-year-old explorer boy with brown hair, rosy cheeks, no hat on his head, green neckerchief, orange-brown vest, brown shorts and brown boots climbing up the wall of a small wooden chicken coop toward its sloped roof, reaching for his mustard-yellow hat lying on the roof, nervous face"
+  },
+  {
+   "id": "L001-MONO-nho-ba-lay-mu",
+   "slot": "art:mono-nho-ba-lay-mu",
+   "kieu": "style",
+   "vai": "đáp án đúng",
+   "cau": "Chiếc mũ của Mono bay lên nóc chuồng gà. Mono nên làm gì?",
+   "vi": "Bà với tay lấy mũ ở mép mái, Mono đứng dưới chìa tay đón",
+   "prompt": "the same small wooden chicken coop with a sloped roof; Grandma, a kind old woman with grey hair in a high bun, round brown glasses, an olive-green cardigan with brown buttons and a cream collar, a cream apron with two pockets, a brown skirt and brown shoes, much taller than Mono standing on the ground and reaching up with one hand to take Mono's mustard-yellow wide-brimmed hat with goggles and a leaf from the edge of the roof; Mono, a cute 5-year-old explorer boy with brown hair, big brown eyes and rosy cheeks, with no hat on his head, wearing a green neckerchief, a cream short-sleeve shirt, an orange-brown vest, brown shorts with a belt, cream socks, laced brown boots and a beige backpack standing on the grass below with both feet on the ground, holding his hands out to take the hat back, smiling, only one hat"
+  }
+ ]
+}

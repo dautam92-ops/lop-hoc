@@ -1,0 +1,58 @@
+{
+ "format": "lu-art-prompts",
+ "trang_thai": "bo",
+ "trang_thai_ghi_chu": "Bỏ 27/11: nhân vật Lu đổi thành Mono; thay bằng anh-L001-mono-hanh-dong.json.",
+ "version": "L001-LU-HD-1",
+ "ghi_chu": "Ảnh hành động của Lu cho L001-B24 \"Quả đậu trên cao\" (tam 27/11 12:50: câu \"Lu nên làm gì?\" phải có ảnh vẽ đúng việc làm, không dùng ảnh tư thế Lu). Vẽ bằng Qwen-Image trên máy 24H; nếu có Qwen-Image-Edit thì dùng ảnh mẫu assets/lu/tu-the/LU-0044 (Lu) và assets/nhan-vat-phu/NV-0001 (bà) để giữ đúng nhân vật. Chỉ dùng sau khi tam duyệt. Quy tắc 42. Soát logic lần 1 (27/11): sửa 5 lỗi (nét mặt ảnh sai, mặt đất và bóng, tỉ lệ Lu và bà, chiều cao chuồng như nhau, một động tác mỗi ảnh).",
+ "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, vivid warm colors, simple clean composition, simple round frame, not too detailed, for kids aged 4 to 6",
+ "negative": "3d render, photorealistic, photo, anime, text, letters, watermark, logo, extra limbs, extra fingers, deformed, cluttered background, scary, ladder, chair, falling",
+ "seeds": [
+  22,
+  23,
+  24,
+  25
+ ],
+ "items": [
+  {
+   "id": "L001-LU-nhay-voi-qua",
+   "slot": "art:lu-nhay-voi-qua",
+   "kieu": "style",
+   "vai": "đáp án sai (việc không nên làm)",
+   "cau": "Quả đậu trên giàn cao, Lu không với tới. Lu nên làm gì?",
+   "vi": "Lu nhảy lên, giơ tay với chùm quả đậu trên giàn cao nhưng không tới",
+   "prompt": "Lu, a small cute chibi sprout character in a green fuzzy hooded suit with two light green leaves on top of the head, brown aviator goggles on the hood, cream face with rosy cheeks, yellow scarf, beige vest with pockets, small brown backpack with a yellow star charm, doing a small hop on tiptoe with both arms stretched toward a bunch of green bean pods hanging high on a bamboo bean trellis, the pods are far above Lu's hands, Lu looks frustrated and unsure, not smiling, not laughing, Lu's feet only a little above the ground, a small shadow on the ground right under Lu, clear ground line, garden ground below, side view, only Lu and the trellis, no other characters",
+   "tach_nen": false
+  },
+  {
+   "id": "L001-LU-nho-ba-hai-qua",
+   "slot": "art:lu-nho-ba-hai-qua",
+   "kieu": "style",
+   "vai": "đáp án đúng",
+   "cau": "Quả đậu trên giàn cao, Lu không với tới. Lu nên làm gì?",
+   "vi": "Bà đứng cạnh giàn đậu hái quả đậu trên cao, Lu đứng dưới đất chìa rổ đón",
+   "prompt": "a kind Vietnamese grandmother with grey hair in a low bun, brown blouse with diagonal buttons, dark brown trousers standing on the ground next to a bamboo bean trellis and picking a green bean pod from the top with her hand, Lu, a small cute chibi sprout character in a green fuzzy hooded suit with two light green leaves on top of the head, brown aviator goggles on the hood, cream face with rosy cheeks, yellow scarf, beige vest with pockets, small brown backpack with a yellow star charm standing safely on the ground beside her holding up a small bamboo basket, Lu is much smaller than the grandmother, the top of Lu's head only reaches her waist, both smiling, side view",
+   "tach_nen": false
+  },
+  {
+   "id": "L001-LU-nhay-lay-mu",
+   "slot": "art:lu-nhay-lay-mu",
+   "kieu": "style",
+   "vai": "đáp án sai (việc không nên làm)",
+   "cau": "Chiếc mũ của Lu bay lên nóc chuồng gà. Lu nên làm gì?",
+   "vi": "Lu nhảy lên, giơ tay với chiếc mũ trên nóc chuồng gà nhưng không tới",
+   "prompt": "Lu, a small cute chibi sprout character in a green fuzzy hooded suit with two light green leaves on top of the head, brown aviator goggles on the hood, cream face with rosy cheeks, yellow scarf, beige vest with pockets, small brown backpack with a yellow star charm, doing a small hop on tiptoe with arms stretched toward a small straw hat lying on the roof of a tall wooden chicken coop on short stilts, its roof edge about twice Lu's height, the hat is far above Lu's hands, Lu looks frustrated and unsure, not smiling, not laughing, Lu's feet only a little above the ground, a small shadow on the ground right under Lu, clear ground line, farmyard ground below, side view, only Lu and the coop, no chickens, no other characters",
+   "tach_nen": false,
+   "negative_them": "grandmother, adult, person, hand of another person"
+  },
+  {
+   "id": "L001-LU-nho-ba-lay-mu",
+   "slot": "art:lu-nho-ba-lay-mu",
+   "kieu": "style",
+   "vai": "đáp án đúng",
+   "cau": "Chiếc mũ của Lu bay lên nóc chuồng gà. Lu nên làm gì?",
+   "vi": "Bà đứng dưới đất với tay cầm chiếc mũ ở mép mái chuồng gà, Lu đứng cạnh ngước lên giơ tay chờ đón",
+   "prompt": "a kind Vietnamese grandmother with grey hair in a low bun, brown blouse with diagonal buttons, dark brown trousers standing on the ground, reaching up with one hand and holding a small straw hat at the edge of the roof of a tall wooden chicken coop on short stilts, its roof edge about twice Lu's height and just within reach of the grandmother's raised hand, Lu, a small cute chibi sprout character in a green fuzzy hooded suit with two light green leaves on top of the head, brown aviator goggles on the hood, cream face with rosy cheeks, yellow scarf, beige vest with pockets, small brown backpack with a yellow star charm standing on the ground beside her looking up with open hands, ready to catch, Lu is much smaller than the grandmother, the top of Lu's head only reaches her waist, both smiling, farmyard ground below, side view, no chickens",
+   "tach_nen": false
+  }
+ ]
+}

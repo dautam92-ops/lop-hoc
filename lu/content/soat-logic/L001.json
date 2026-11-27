@@ -1,221 +1,245 @@
 {
-  "doi_tuong": "L001",
-  "tep": "content/drafts/L001.json",
-  "ma_bam": "6da5e1d1c9739141c5feddc88e655bb045745d9d",
-  "ngay": "2026-11-27",
-  "nguoi_soat": "agent soát logic",
-  "quy_tac_da_soat": [
-    "LG01",
-    "LG02",
-    "LG03",
-    "LG04",
-    "LG05",
-    "LG06",
-    "LG07",
-    "LG08",
-    "LG09",
-    "LG10",
-    "LG11",
-    "LG12",
-    "LG13",
-    "LG14",
-    "LG15",
-    "LG16",
-    "LG17",
-    "LG18",
-    "LG19",
-    "LG20"
-  ],
-  "may_soat": {
-    "loi": 0,
-    "canh_bao": 1
+ "doi_tuong": "L001",
+ "tep": "content/drafts/L001.json",
+ "ma_bam": "2c91171b2d7b536c1d78beaf471721042a20296a",
+ "ngay": "2026-11-27",
+ "nguoi_soat": "agent soát logic",
+ "quy_tac_da_soat": [
+  "LG01",
+  "LG02",
+  "LG03",
+  "LG04",
+  "LG05",
+  "LG06",
+  "LG07",
+  "LG08",
+  "LG09",
+  "LG10",
+  "LG11",
+  "LG12",
+  "LG13",
+  "LG14",
+  "LG15",
+  "LG16",
+  "LG17",
+  "LG18",
+  "LG19",
+  "LG20"
+ ],
+ "may_soat": {
+  "loi": 0,
+  "canh_bao": 1
+ },
+ "canh_bao_da_xet": [
+  {
+   "canh_bao": "CẢNH BÁO L001-B07: \"Bà dặn Mono gieo hạt vào đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thien-nhien); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
+   "ket_luan": "Không phải lỗi: hỏi \"gieo hạt vào đâu\" nên ao nước (art:ao-nuoc), cái giỏ (art:gio) và luống đất (art:luong-dat) đều là chỗ có thể bỏ hạt vào, liên quan câu hỏi; khác nhóm trong kho chỉ do cách xếp nhóm. Hai đáp án sai có thật nhưng sai rõ (hạt trong ao, trong giỏ không mọc), đáp án đúng khớp lời \"gieo xuống đất\"."
+  }
+ ],
+ "loi": [
+  {
+   "ma": "LG05",
+   "o": "L001-B07 câu 3",
+   "cau": "Bà dặn Lu gieo hạt vào đâu?",
+   "mo_ta": "Đáp án đúng là art:chau-cay, mà ui/art.js vẽ một chậu đã có mầm cây mọc sẵn, không phải đất để gieo. Lời khen nói \"Hạt đậu gieo xuống đất\", lời dẫn nói bà dặn \"gieo hạt xuống đất\", màn 2 lại gieo vào luống. Hình không khớp lời và mâu thuẫn trong bài (LG20): bé nghe \"đất\" nhưng phải chọn hình chậu có cây.",
+   "sua": "Dùng hình đất/luống đất làm đáp án đúng. Lưu ý art:mat-dat hiện đang vẽ tạm bằng bụi cỏ (ART_TAM trong ui/art.js), nên cần vẽ hình mặt đất/luống đất thật trước (hoặc vẽ chậu đất trống không có cây). Đáp án sai: ao nước (art:ao-nuoc) và cái giỏ (art:gio).",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: đáp án đúng là art:luong-dat (ui/art.js vẽ luống đất nâu, không cây), khớp lời khen \"Hạt đậu gieo xuống đất\", lời dẫn và màn \"Gieo hạt vào luống\"."
   },
-  "canh_bao_da_xet": [
-    {
-      "canh_bao": "CẢNH BÁO L001-B07: \"Bà dặn Lu gieo hạt vào đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thien-nhien); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
-      "ket_luan": "Không phải lỗi: câu hỏi \"gieo hạt vào đâu\" nên ao nước (art:ao-nuoc), cái giỏ (art:gio) và luống đất (art:luong-dat) đều là chỗ có thể bỏ hạt vào, liên quan câu hỏi; khác nhóm trong kho chỉ do cách xếp nhóm. Hai đáp án sai có thật ngoài đời nhưng sai rõ (hạt trong ao, trong giỏ không mọc), đáp án đúng khớp lời \"gieo xuống đất\"."
-    }
-  ],
-  "loi": [
-    {
-      "ma": "LG05",
-      "o": "L001-B07 câu 3",
-      "cau": "Bà dặn Lu gieo hạt vào đâu?",
-      "mo_ta": "Đáp án đúng là art:chau-cay, mà ui/art.js vẽ một chậu đã có mầm cây mọc sẵn, không phải đất để gieo. Lời khen nói \"Hạt đậu gieo xuống đất\", lời dẫn nói bà dặn \"gieo hạt xuống đất\", màn 2 lại gieo vào luống. Hình không khớp lời và mâu thuẫn trong bài (LG20): bé nghe \"đất\" nhưng phải chọn hình chậu có cây.",
-      "sua": "Dùng hình đất/luống đất làm đáp án đúng. Lưu ý art:mat-dat hiện đang vẽ tạm bằng bụi cỏ (ART_TAM trong ui/art.js), nên cần vẽ hình mặt đất/luống đất thật trước (hoặc vẽ chậu đất trống không có cây). Đáp án sai: ao nước (art:ao-nuoc) và cái giỏ (art:gio).",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: đáp án đúng là art:luong-dat (ui/art.js vẽ luống đất nâu, không cây), khớp lời khen \"Hạt đậu gieo xuống đất\", lời dẫn và màn \"Gieo hạt vào luống\"."
-    },
-    {
-      "ma": "LG04",
-      "o": "L001-B07 câu 3",
-      "cau": "Bà dặn Lu gieo hạt vào đâu?",
-      "mo_ta": "Đáp án sai \"đám mây\" là chỗ không thể gieo hạt ngoài đời, vô nghĩa với câu hỏi, không buộc bé suy nghĩ.",
-      "sua": "Thay art:may bằng chỗ có thật nhưng sai, ví dụ ao nước (art:ao-nuoc): hạt rơi xuống ao thì không mọc thành cây đậu.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: art:may thay bằng art:ao-nuoc (ảnh vẽ tay DV-0010 đã duyệt), chỗ có thật nhưng hạt không mọc thành cây."
-    },
-    {
-      "ma": "LG01",
-      "o": "L001-B07 câu 2",
-      "cau": "Bà dặn Lu tưới hạt bằng gì?",
-      "mo_ta": "Hai đáp án sai là bóng bay và áo xanh, không liên quan gì đến việc tưới nước; đúng kiểu lỗi gốc (đồ vật ngẫu nhiên làm đáp án sai).",
-      "sua": "Thay bằng đồ vật trong vườn/nhà nhưng không tưới được: cái giỏ (art:gio, nước chảy qua kẽ) và cái khăn (art:khan). Tránh cái cốc (art:ly) vì cốc cũng tưới được (LG03).",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: đáp án sai là cái giỏ (art:gio) và cái khăn (art:khan, ảnh DV-0026 đã duyệt), đồ trong nhà nhưng không tưới được; không còn cốc gây LG03."
-    },
-    {
-      "ma": "LG05",
-      "o": "L001-B09",
-      "cau": "Chạm và nghe: \"Đất. Hạt nằm trong đất để mọc rễ.\"",
-      "mo_ta": "Hình art:chau-cay (chậu có cây mầm mọc sẵn) được đặt tên \"đất\" và đọc \"Đất\". Bé nhìn thấy chậu cây mà nghe chữ đất, lẫn lộn đất với chậu và cây.",
-      "sua": "Dùng hình đất/luống đất (cần vẽ art:mat-dat thật, hiện đang tạm bằng bụi cỏ) hoặc vẽ chậu chỉ có đất, không có cây.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: hình \"đất\" là art:luong-dat (đất nâu, không cây), khớp lời \"Đất. Hạt nằm trong đất để mọc rễ.\""
-    },
-    {
-      "ma": "LG01",
-      "o": "L001-B10 câu 2",
-      "cau": "Đất khô quá. Lu mang gì ra để hạt lớn được?",
-      "mo_ta": "Hai đáp án sai bóng bay và áo không liên quan đến đất khô hay tưới cây; lặp lại đúng cặp đồ vật ngẫu nhiên của B07 câu 2.",
-      "sua": "Thay bằng vật liên quan vườn/đất nhưng không cho nước: cái giỏ (art:gio) và cái ô (art:o, ô che làm đất càng khô).",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: đáp án sai là cái giỏ và viên sỏi, đều là đồ trong vườn nhưng không cho nước; lời gợi ý \"Bé tìm thứ đựng nước nhé\" đúng hướng."
-    },
-    {
-      "ma": "LG07",
-      "o": "L001-B10 câu 3",
-      "cau": "Trời tối rồi. Mầm cây chờ gì để lớn tiếp?",
-      "mo_ta": "Câu hỏi ngầm dạy rằng ban đêm mầm cây ngừng lớn, phải chờ trời sáng mới lớn tiếp. Ngoài đời cây vẫn lớn ban đêm (thân mầm thường dài ra nhiều nhất vào ban đêm); cây cần nắng để tự làm thức ăn chứ không ngừng lớn khi tối.",
-      "sua": "Đổi câu hỏi: \"Mầm cây cần ánh nắng. Thứ nào cho mầm cây ánh nắng?\" và lời khen \"Đúng rồi! Mặt trời cho mầm ánh nắng.\"",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: câu hỏi đổi thành \"Thứ nào cho mầm cây ánh nắng?\", lời khen \"Mặt trời cho mầm ánh nắng.\" Không còn ý cây ngừng lớn ban đêm. (Ghi chú nhỏ: thiet_ke.bai_tap còn chữ cũ \"Trời tối chờ gì\", không hiện cho bé, nên sửa cho đồng bộ.)"
-    },
-    {
-      "ma": "LG03",
-      "o": "L001-B10 câu 3",
-      "cau": "Trời tối rồi. Mầm cây chờ gì để lớn tiếp?",
-      "mo_ta": "Đáp án sai \"đám mây\" cũng hợp lý: mây mang mưa, mưa tưới nước cho mầm lớn (bài vừa dạy hạt cần nước). Bé chọn mây có lý do đúng nhưng bị chấm sai.",
-      "sua": "Thay art:may bằng ngôi sao (art:sao): mặt trăng và ngôi sao đều trên trời nhưng không cho nắng, chỉ mặt trời đúng.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: art:may thay bằng art:sao; mặt trăng và ngôi sao đều trên trời nhưng không cho nắng, chỉ mặt trời đúng."
-    },
-    {
-      "ma": "LG03",
-      "o": "L001-B11 câu 2",
-      "cau": "Cái bóng này là của ảnh nào dưới đây? (bóng quả đậu)",
-      "mo_ta": "Trong ui/art.js, quả đậu (M18 70C28 40 58 22 84 22…) và chiếc lá (M18 80C18 46 40 22 84 16…) có đường viền gần như cùng một hình bầu dục chéo, nhọn hai đầu. Khi tô đen thành bóng, các hạt tròn bên trong quả đậu biến mất, hai bóng gần như giống hệt; lời gợi ý \"dài và cong như quả đậu\" cũng đúng với lá. Bé không phân biệt được chỉ bằng hình (LG06).",
-      "sua": "Thay art:la bằng vật có bóng khác hẳn, ví dụ quả táo (art:tao, tròn) hoặc cái giỏ (art:gio). Giữ cà rốt.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: art:la thay bằng art:tao (bóng tròn), cà rốt có chùm lá ở đầu nên bóng khác quả đậu; bé phân biệt được bằng hình."
-    },
-    {
-      "ma": "LG08",
-      "o": "L001-B12 (lời dẫn màn \"Nhặt hạt, bỏ sỏi\")",
-      "cau": "Gió thổi sỏi lẫn vào hạt đậu rồi.",
-      "mo_ta": "Sỏi nặng, gió thường không thổi bay sỏi được; trái vật lý.",
-      "sua": "Đổi thành: \"Hạt đậu rơi xuống chỗ có sỏi và lá rồi. Bé chỉ nhặt hạt đậu thôi nhé.\"",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: lời dẫn màn đổi thành \"Hạt đậu rơi vào chỗ có sỏi và lá. Bé chỉ nhặt hạt đậu nhé.\", không còn gió thổi sỏi."
-    },
-    {
-      "ma": "LG19",
-      "o": "L001-B12",
-      "cau": "Bé chạm vào từng hạt đậu. Viên sỏi thì để lại nhé.",
-      "mo_ta": "Vật gây nhiễu gồm cả chiếc lá (art:la), nhưng lời \"no\" luôn nói \"Đó là viên sỏi màu xám\". Bé chạm vào lá sẽ nghe gọi lá là viên sỏi màu xám: sai sự thật. Câu hỏi cũng chỉ nhắc sỏi.",
-      "sua": "Hoặc bỏ art:la khỏi distractors (chỉ để sỏi), hoặc đổi lời \"no\" thành \"Đó không phải hạt đậu. Hạt đậu có màu vàng nâu.\" và câu hỏi thành \"Sỏi và lá thì để lại nhé.\"",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: lời \"no\" thành \"Đó không phải hạt đậu. Hạt đậu màu vàng nâu.\", câu hỏi nhắc \"Sỏi và lá thì để lại nhé\"; đúng với cả sỏi và lá."
-    },
-    {
-      "ma": "LG05",
-      "o": "L001-B20 câu 1",
-      "cau": "Lu tưới hạt cả buổi mà chưa thấy mầm. Lu có thể thấy thế nào?",
-      "mo_ta": "Lựa chọn \"Lu thấy sốt ruột\" dùng face:gian, mà ui/art.js đặt tên mặt này là \"tức giận\" (lông mày cau). Hình tức giận không khớp lời sốt ruột; câu 3 cũng dùng chính mặt này cho \"bực\", nên bé học sai tên cảm xúc.",
-      "sua": "Dùng mặt khác cho sốt ruột (cần vẽ mặt \"sốt ruột/chờ đợi\") hoặc đổi lựa chọn thành \"Lu thấy bực.\" với face:gian. Nên đổi luôn \"tưới hạt cả buổi\" thành \"chờ cả buổi\" (tưới cả buổi là tưới quá nhiều).",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: lựa chọn đổi thành \"Lu thấy bực.\" với face:gian (mặt cau mày khớp bực), và \"chờ cả buổi\" thay \"tưới cả buổi\"."
-    },
-    {
-      "ma": "LG10",
-      "o": "L001-B20 câu 2",
-      "cau": "Sáng nay mầm đậu nhú lên rồi! Lu có thể thấy thế nào?",
-      "mo_ta": "Lời dẫn bài nói \"Sáng nay bà đi chợ sớm, để lại hạt đậu\" và Lu gieo hạt hôm nay; câu này lại nói \"Sáng nay mầm đậu nhú lên\". Cùng một buổi sáng vừa gieo đã mọc là sai trình tự thời gian, trái với câu 1 \"Hạt cần vài ngày mới nảy mầm\".",
-      "sua": "Đổi thành: \"Mấy hôm sau, mầm đậu nhú lên rồi! Lu có thể thấy thế nào?\"",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: câu hỏi đổi thành \"Mấy hôm sau, mầm đậu nhú lên rồi!\", lời đáp \"chờ mấy hôm mầm đã mọc\"; khớp \"Hạt cần vài ngày mới nảy mầm\"."
-    },
-    {
-      "ma": "LG05",
-      "o": "L001-B22",
-      "cau": "Rửa tay ba bước (kéo hình vào số 1, 2, 3)",
-      "mo_ta": "Bước 3 \"tráng sạch, lau khô\" dùng hình bàn tay (art:ban-tay). Bàn tay không thể hiện tráng hay lau khô, và bàn tay cũng hợp với bước 1 (làm ướt tay), nên bé không có căn cứ bằng hình để đặt nó vào số 3 (LG06).",
-      "sua": "Dùng cái khăn (art:khan) cho bước 3 và đổi lời thành \"Bước ba: tráng sạch, lau khô bằng khăn\".",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: bước 3 dùng art:khan, lời dẫn và lời \"no\" nói \"lau khô bằng khăn\"; ba bước có ba hình khác nhau."
-    },
-    {
-      "ma": "LG06",
-      "o": "L001-B24 câu 1",
-      "cau": "Lu nên làm gì? Bé chọn một cách.",
-      "mo_ta": "Câu hỏi không nói tình huống: intro rỗng, lời dẫn màn nói về rửa tay; tình huống \"quả đậu trên cao\" chỉ có trong tiêu đề, bé không biết đọc nên không biết Lu đang gặp chuyện gì. Ngoài ra cây đậu thân mềm, không trèo lên được (LG08); hình lu:nhay (nhảy) không thể hiện trèo, lu:chi-tay không thể hiện nhờ bà (LG05).",
-      "sua": "Đổi câu hỏi: \"Quả đậu mọc trên giàn cao, Lu với không tới. Lu nên làm gì?\"; lựa chọn sai \"Lu kê ghế trèo lên giàn.\"; nếu có thì dùng hình Lu trèo và hình Lu cùng bà.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa phần chính: câu hỏi nói rõ tình huống \"Quả đậu trên giàn cao, Lu không với tới\", lựa chọn sai là \"kê ghế trèo lên giàn\" (trèo được thật). Phần hình (lu:nhay không thể hiện trèo) chưa sửa, tách thành lỗi LG05 mới ở L001-B24."
-    },
-    {
-      "ma": "LG08",
-      "o": "L001-B24 câu 2",
-      "cau": "Túi hạt đậu bị gió thổi lên nóc chuồng gà. Lu nên làm gì?",
-      "mo_ta": "Túi đầy hạt đậu khá nặng, gió không thổi bay lên nóc chuồng được; trái vật lý.",
-      "sua": "Đổi vật nhẹ: \"Chiếc mũ của Lu bị gió thổi lên nóc chuồng gà. Lu nên làm gì?\", sửa lời đáp tương ứng (\"Bà lấy mũ xuống cho Lu\").",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: đổi thành \"Chiếc mũ của Lu bay lên nóc chuồng gà\", lời đáp \"Bà lấy mũ xuống cho Lu\"; mũ nhẹ, gió thổi bay được. (Ghi chú nhỏ: thiet_ke.bai_tap còn chữ cũ \"Túi hạt trên nóc chuồng\", nên sửa cho đồng bộ.)"
-    },
-    {
-      "ma": "LG03",
-      "o": "L001-B25 câu 3",
-      "cau": "Thứ nào không dùng để chăm cây?",
-      "mo_ta": "Hình art:chau-cay vẽ chậu có cây mầm mọc sẵn, tức là một cái cây, không phải đồ dùng chăm cây. Bé có thể chọn nó với lý do hợp lý \"cây không phải đồ để chăm cây\", nhưng bị chấm sai. Lời \"no\" gọi nó là \"chậu\" trong khi hình là cây trong chậu.",
-      "sua": "Thay art:chau-cay bằng vòi nước (art:voi-nuoc) và sửa lời \"no\": \"Bình tưới, vòi nước, nước đều giúp cây. Còn thứ nào khác?\" (hoặc vẽ chậu đất trống).",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: art:chau-cay thay bằng art:voi-nuoc (ảnh DV-0040 đã duyệt), lời \"no\" \"Bình tưới, vòi nước, nước đều giúp cây.\" khớp hình; chỉ chiếc áo không dùng chăm cây."
-    },
-    {
-      "ma": "LG20",
-      "o": "L001-B27",
-      "cau": "Nếu cây đậu cao tới tận mây, Lu leo lên sẽ thấy gì? Bé chọn điều bé thích.",
-      "mo_ta": "B24 vừa dạy \"Trèo cao dễ ngã lắm… ở chỗ cao, mình nhờ người lớn\", câu này lại để Lu leo lên cây cao tới mây và khen \"Bé tưởng tượng hay quá!\". Mâu thuẫn với điều bài vừa dạy và khen việc trèo cao (LG11).",
-      "sua": "Đổi thành: \"Nếu cây đậu cao tới tận mây, chú chim bay lên ngọn cây sẽ thấy gì?\" hoặc \"Lu nhìn lên ngọn cây sẽ thấy gì?\" và sửa lựa chọn chim thành \"Lu thấy một chú chim đậu trên ngọn cây.\"",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: câu hỏi đổi thành \"Nếu cây đậu cao tới tận mây, ngọn cây có gì?\", không còn Lu leo lên; lựa chọn chim là \"Một chú chim đậu trên ngọn cây\"."
-    },
-    {
-      "ma": "LG05",
-      "o": "L001-B29",
-      "cau": "Bé chọn chậu để trồng mầm đậu nhé.",
-      "mo_ta": "Hình art:chau-cay là chậu đã có cây mầm, nên \"trồng mầm vào chậu\" mà chậu đã có cây. Lời yêu cầu \"chọn chậu\" nhưng chỉ có một chậu cùng với mầm đậu, và engine tap coi chạm bất kỳ hình nào (cả mầm đậu) là xong \"Mầm đậu có nhà mới rồi!\": lời không khớp việc bé làm.",
-      "sua": "Dùng 2–3 chậu trống khác màu (vẽ chậu chỉ có đất) và đổi lời \"Bé chọn một chậu bé thích để trồng mầm đậu nhé\"; bỏ art:mam-dau khỏi props hoặc hiện mầm ở cảnh, không làm lựa chọn.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: chỉ còn một hình art:chau-cay:trong (chậu chỉ có đất, tên \"chậu đất\"), lời \"Bé chạm vào chậu đất để trồng mầm đậu nhé\"; bỏ mầm đậu khỏi props nên chạm hình nào cũng đúng lời."
-    },
-    {
-      "ma": "LG20",
-      "o": "L001 parent.play",
-      "cau": "Chia kẹo cho gấu bông",
-      "mo_ta": "Trò chơi là chia kẹo, nhưng lời an toàn lại nói \"Hạt to, không cho vào miệng\": không khớp đồ dùng (kẹo là thứ để ăn, còn hạt không được nhắc trong cách chơi).",
-      "sua": "Đổi thành \"Chia hạt đậu cho gấu bông\" (giữ lời an toàn \"Dùng hạt to, không cho vào miệng\"), hoặc giữ kẹo và đổi lời an toàn cho hợp với kẹo.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: trò chơi đổi thành \"Chia hạt đậu cho gấu bông\", lời an toàn \"Dùng hạt to, bố mẹ ngồi cạnh, không cho vào miệng\" khớp đồ dùng."
-    },
-    {
-      "ma": "LG05",
-      "o": "L001-B24 câu 1 và câu 2",
-      "cau": "Quả đậu trên giàn cao, Lu không với tới. Lu nên làm gì? / Chiếc mũ của Lu bay lên nóc chuồng gà. Lu nên làm gì?",
-      "mo_ta": "Lựa chọn \"Lu kê ghế trèo lên giàn.\" và \"Lu leo lên nóc chuồng.\" đều dùng hình lu:nhay (tư thế Lu nhảy, registry/characters.json LU-0044). Hình nhảy không thể hiện kê ghế hay leo trèo, nên hình không khớp lời; bé nghe \"trèo/leo\" nhưng thấy Lu nhảy, dễ hiểu sai điều đang được dạy là nguy hiểm (trèo cao). Bộ tư thế Lu hiện không có tư thế trèo.",
-      "sua": "Vẽ thêm tư thế Lu trèo (vd lu:treo-ghe: Lu đứng trên ghế với tay lên cao) đưa vào tools/lab/anh-con-thieu.json và dùng cho cả hai lựa chọn trèo. Nếu chưa vẽ được, đổi lời cho khớp hình lu:nhay: câu 1 \"Lu nhảy thật cao để với.\" (lời đáp \"Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé.\"), câu 2 giữ ý leo nhưng phải có hình leo; không dùng hình nhảy cho lời leo trèo.",
-      "trang_thai": "da_sua",
-      "kiem_lai": "Đã sửa: lời lựa chọn đổi cho khớp hình lu:nhay: câu 1 \"Lu nhảy thật cao để với.\" (đáp \"Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé.\"), câu 2 \"Lu nhảy lên lấy mũ.\" (đáp \"Nóc chuồng cao lắm, nhảy dễ ngã. Lu nhờ bà lấy giúp nhé.\"). Hình và lời khớp nhau, lời đáp vẫn dạy nhờ người lớn ở chỗ cao, không khen việc nguy hiểm (LG11). thiet_ke.bai_tap B10 và B24 đã đồng bộ."
-    }
-  ]
+  {
+   "ma": "LG04",
+   "o": "L001-B07 câu 3",
+   "cau": "Bà dặn Lu gieo hạt vào đâu?",
+   "mo_ta": "Đáp án sai \"đám mây\" là chỗ không thể gieo hạt ngoài đời, vô nghĩa với câu hỏi, không buộc bé suy nghĩ.",
+   "sua": "Thay art:may bằng chỗ có thật nhưng sai, ví dụ ao nước (art:ao-nuoc): hạt rơi xuống ao thì không mọc thành cây đậu.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: art:may thay bằng art:ao-nuoc (ảnh vẽ tay DV-0010 đã duyệt), chỗ có thật nhưng hạt không mọc thành cây."
+  },
+  {
+   "ma": "LG01",
+   "o": "L001-B07 câu 2",
+   "cau": "Bà dặn Lu tưới hạt bằng gì?",
+   "mo_ta": "Hai đáp án sai là bóng bay và áo xanh, không liên quan gì đến việc tưới nước; đúng kiểu lỗi gốc (đồ vật ngẫu nhiên làm đáp án sai).",
+   "sua": "Thay bằng đồ vật trong vườn/nhà nhưng không tưới được: cái giỏ (art:gio, nước chảy qua kẽ) và cái khăn (art:khan). Tránh cái cốc (art:ly) vì cốc cũng tưới được (LG03).",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: đáp án sai là cái giỏ (art:gio) và cái khăn (art:khan, ảnh DV-0026 đã duyệt), đồ trong nhà nhưng không tưới được; không còn cốc gây LG03."
+  },
+  {
+   "ma": "LG05",
+   "o": "L001-B09",
+   "cau": "Chạm và nghe: \"Đất. Hạt nằm trong đất để mọc rễ.\"",
+   "mo_ta": "Hình art:chau-cay (chậu có cây mầm mọc sẵn) được đặt tên \"đất\" và đọc \"Đất\". Bé nhìn thấy chậu cây mà nghe chữ đất, lẫn lộn đất với chậu và cây.",
+   "sua": "Dùng hình đất/luống đất (cần vẽ art:mat-dat thật, hiện đang tạm bằng bụi cỏ) hoặc vẽ chậu chỉ có đất, không có cây.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: hình \"đất\" là art:luong-dat (đất nâu, không cây), khớp lời \"Đất. Hạt nằm trong đất để mọc rễ.\""
+  },
+  {
+   "ma": "LG01",
+   "o": "L001-B10 câu 2",
+   "cau": "Đất khô quá. Lu mang gì ra để hạt lớn được?",
+   "mo_ta": "Hai đáp án sai bóng bay và áo không liên quan đến đất khô hay tưới cây; lặp lại đúng cặp đồ vật ngẫu nhiên của B07 câu 2.",
+   "sua": "Thay bằng vật liên quan vườn/đất nhưng không cho nước: cái giỏ (art:gio) và cái ô (art:o, ô che làm đất càng khô).",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: đáp án sai là cái giỏ và viên sỏi, đều là đồ trong vườn nhưng không cho nước; lời gợi ý \"Bé tìm thứ đựng nước nhé\" đúng hướng."
+  },
+  {
+   "ma": "LG07",
+   "o": "L001-B10 câu 3",
+   "cau": "Trời tối rồi. Mầm cây chờ gì để lớn tiếp?",
+   "mo_ta": "Câu hỏi ngầm dạy rằng ban đêm mầm cây ngừng lớn, phải chờ trời sáng mới lớn tiếp. Ngoài đời cây vẫn lớn ban đêm (thân mầm thường dài ra nhiều nhất vào ban đêm); cây cần nắng để tự làm thức ăn chứ không ngừng lớn khi tối.",
+   "sua": "Đổi câu hỏi: \"Mầm cây cần ánh nắng. Thứ nào cho mầm cây ánh nắng?\" và lời khen \"Đúng rồi! Mặt trời cho mầm ánh nắng.\"",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: câu hỏi đổi thành \"Thứ nào cho mầm cây ánh nắng?\", lời khen \"Mặt trời cho mầm ánh nắng.\" Không còn ý cây ngừng lớn ban đêm. (Ghi chú nhỏ: thiet_ke.bai_tap còn chữ cũ \"Trời tối chờ gì\", không hiện cho bé, nên sửa cho đồng bộ.)"
+  },
+  {
+   "ma": "LG03",
+   "o": "L001-B10 câu 3",
+   "cau": "Trời tối rồi. Mầm cây chờ gì để lớn tiếp?",
+   "mo_ta": "Đáp án sai \"đám mây\" cũng hợp lý: mây mang mưa, mưa tưới nước cho mầm lớn (bài vừa dạy hạt cần nước). Bé chọn mây có lý do đúng nhưng bị chấm sai.",
+   "sua": "Thay art:may bằng ngôi sao (art:sao): mặt trăng và ngôi sao đều trên trời nhưng không cho nắng, chỉ mặt trời đúng.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: art:may thay bằng art:sao; mặt trăng và ngôi sao đều trên trời nhưng không cho nắng, chỉ mặt trời đúng."
+  },
+  {
+   "ma": "LG03",
+   "o": "L001-B11 câu 2",
+   "cau": "Cái bóng này là của ảnh nào dưới đây? (bóng quả đậu)",
+   "mo_ta": "Trong ui/art.js, quả đậu (M18 70C28 40 58 22 84 22…) và chiếc lá (M18 80C18 46 40 22 84 16…) có đường viền gần như cùng một hình bầu dục chéo, nhọn hai đầu. Khi tô đen thành bóng, các hạt tròn bên trong quả đậu biến mất, hai bóng gần như giống hệt; lời gợi ý \"dài và cong như quả đậu\" cũng đúng với lá. Bé không phân biệt được chỉ bằng hình (LG06).",
+   "sua": "Thay art:la bằng vật có bóng khác hẳn, ví dụ quả táo (art:tao, tròn) hoặc cái giỏ (art:gio). Giữ cà rốt.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: art:la thay bằng art:tao (bóng tròn), cà rốt có chùm lá ở đầu nên bóng khác quả đậu; bé phân biệt được bằng hình."
+  },
+  {
+   "ma": "LG08",
+   "o": "L001-B12 (lời dẫn màn \"Nhặt hạt, bỏ sỏi\")",
+   "cau": "Gió thổi sỏi lẫn vào hạt đậu rồi.",
+   "mo_ta": "Sỏi nặng, gió thường không thổi bay sỏi được; trái vật lý.",
+   "sua": "Đổi thành: \"Hạt đậu rơi xuống chỗ có sỏi và lá rồi. Bé chỉ nhặt hạt đậu thôi nhé.\"",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: lời dẫn màn đổi thành \"Hạt đậu rơi vào chỗ có sỏi và lá. Bé chỉ nhặt hạt đậu nhé.\", không còn gió thổi sỏi."
+  },
+  {
+   "ma": "LG19",
+   "o": "L001-B12",
+   "cau": "Bé chạm vào từng hạt đậu. Viên sỏi thì để lại nhé.",
+   "mo_ta": "Vật gây nhiễu gồm cả chiếc lá (art:la), nhưng lời \"no\" luôn nói \"Đó là viên sỏi màu xám\". Bé chạm vào lá sẽ nghe gọi lá là viên sỏi màu xám: sai sự thật. Câu hỏi cũng chỉ nhắc sỏi.",
+   "sua": "Hoặc bỏ art:la khỏi distractors (chỉ để sỏi), hoặc đổi lời \"no\" thành \"Đó không phải hạt đậu. Hạt đậu có màu vàng nâu.\" và câu hỏi thành \"Sỏi và lá thì để lại nhé.\"",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: lời \"no\" thành \"Đó không phải hạt đậu. Hạt đậu màu vàng nâu.\", câu hỏi nhắc \"Sỏi và lá thì để lại nhé\"; đúng với cả sỏi và lá."
+  },
+  {
+   "ma": "LG05",
+   "o": "L001-B20 câu 1",
+   "cau": "Lu tưới hạt cả buổi mà chưa thấy mầm. Lu có thể thấy thế nào?",
+   "mo_ta": "Lựa chọn \"Lu thấy sốt ruột\" dùng face:gian, mà ui/art.js đặt tên mặt này là \"tức giận\" (lông mày cau). Hình tức giận không khớp lời sốt ruột; câu 3 cũng dùng chính mặt này cho \"bực\", nên bé học sai tên cảm xúc.",
+   "sua": "Dùng mặt khác cho sốt ruột (cần vẽ mặt \"sốt ruột/chờ đợi\") hoặc đổi lựa chọn thành \"Lu thấy bực.\" với face:gian. Nên đổi luôn \"tưới hạt cả buổi\" thành \"chờ cả buổi\" (tưới cả buổi là tưới quá nhiều).",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: lựa chọn đổi thành \"Lu thấy bực.\" với face:gian (mặt cau mày khớp bực), và \"chờ cả buổi\" thay \"tưới cả buổi\"."
+  },
+  {
+   "ma": "LG10",
+   "o": "L001-B20 câu 2",
+   "cau": "Sáng nay mầm đậu nhú lên rồi! Lu có thể thấy thế nào?",
+   "mo_ta": "Lời dẫn bài nói \"Sáng nay bà đi chợ sớm, để lại hạt đậu\" và Lu gieo hạt hôm nay; câu này lại nói \"Sáng nay mầm đậu nhú lên\". Cùng một buổi sáng vừa gieo đã mọc là sai trình tự thời gian, trái với câu 1 \"Hạt cần vài ngày mới nảy mầm\".",
+   "sua": "Đổi thành: \"Mấy hôm sau, mầm đậu nhú lên rồi! Lu có thể thấy thế nào?\"",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: câu hỏi đổi thành \"Mấy hôm sau, mầm đậu nhú lên rồi!\", lời đáp \"chờ mấy hôm mầm đã mọc\"; khớp \"Hạt cần vài ngày mới nảy mầm\"."
+  },
+  {
+   "ma": "LG05",
+   "o": "L001-B22",
+   "cau": "Rửa tay ba bước (kéo hình vào số 1, 2, 3)",
+   "mo_ta": "Bước 3 \"tráng sạch, lau khô\" dùng hình bàn tay (art:ban-tay). Bàn tay không thể hiện tráng hay lau khô, và bàn tay cũng hợp với bước 1 (làm ướt tay), nên bé không có căn cứ bằng hình để đặt nó vào số 3 (LG06).",
+   "sua": "Dùng cái khăn (art:khan) cho bước 3 và đổi lời thành \"Bước ba: tráng sạch, lau khô bằng khăn\".",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: bước 3 dùng art:khan, lời dẫn và lời \"no\" nói \"lau khô bằng khăn\"; ba bước có ba hình khác nhau."
+  },
+  {
+   "ma": "LG06",
+   "o": "L001-B24 câu 1",
+   "cau": "Lu nên làm gì? Bé chọn một cách.",
+   "mo_ta": "Câu hỏi không nói tình huống: intro rỗng, lời dẫn màn nói về rửa tay; tình huống \"quả đậu trên cao\" chỉ có trong tiêu đề, bé không biết đọc nên không biết Lu đang gặp chuyện gì. Ngoài ra cây đậu thân mềm, không trèo lên được (LG08); hình lu:nhay (nhảy) không thể hiện trèo, lu:chi-tay không thể hiện nhờ bà (LG05).",
+   "sua": "Đổi câu hỏi: \"Quả đậu mọc trên giàn cao, Lu với không tới. Lu nên làm gì?\"; lựa chọn sai \"Lu kê ghế trèo lên giàn.\"; nếu có thì dùng hình Lu trèo và hình Lu cùng bà.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa phần chính: câu hỏi nói rõ tình huống \"Quả đậu trên giàn cao, Lu không với tới\", lựa chọn sai là \"kê ghế trèo lên giàn\" (trèo được thật). Phần hình (lu:nhay không thể hiện trèo) chưa sửa, tách thành lỗi LG05 mới ở L001-B24."
+  },
+  {
+   "ma": "LG08",
+   "o": "L001-B24 câu 2",
+   "cau": "Túi hạt đậu bị gió thổi lên nóc chuồng gà. Lu nên làm gì?",
+   "mo_ta": "Túi đầy hạt đậu khá nặng, gió không thổi bay lên nóc chuồng được; trái vật lý.",
+   "sua": "Đổi vật nhẹ: \"Chiếc mũ của Lu bị gió thổi lên nóc chuồng gà. Lu nên làm gì?\", sửa lời đáp tương ứng (\"Bà lấy mũ xuống cho Lu\").",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: đổi thành \"Chiếc mũ của Lu bay lên nóc chuồng gà\", lời đáp \"Bà lấy mũ xuống cho Lu\"; mũ nhẹ, gió thổi bay được. (Ghi chú nhỏ: thiet_ke.bai_tap còn chữ cũ \"Túi hạt trên nóc chuồng\", nên sửa cho đồng bộ.)"
+  },
+  {
+   "ma": "LG03",
+   "o": "L001-B25 câu 3",
+   "cau": "Thứ nào không dùng để chăm cây?",
+   "mo_ta": "Hình art:chau-cay vẽ chậu có cây mầm mọc sẵn, tức là một cái cây, không phải đồ dùng chăm cây. Bé có thể chọn nó với lý do hợp lý \"cây không phải đồ để chăm cây\", nhưng bị chấm sai. Lời \"no\" gọi nó là \"chậu\" trong khi hình là cây trong chậu.",
+   "sua": "Thay art:chau-cay bằng vòi nước (art:voi-nuoc) và sửa lời \"no\": \"Bình tưới, vòi nước, nước đều giúp cây. Còn thứ nào khác?\" (hoặc vẽ chậu đất trống).",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: art:chau-cay thay bằng art:voi-nuoc (ảnh DV-0040 đã duyệt), lời \"no\" \"Bình tưới, vòi nước, nước đều giúp cây.\" khớp hình; chỉ chiếc áo không dùng chăm cây."
+  },
+  {
+   "ma": "LG20",
+   "o": "L001-B27",
+   "cau": "Nếu cây đậu cao tới tận mây, Lu leo lên sẽ thấy gì? Bé chọn điều bé thích.",
+   "mo_ta": "B24 vừa dạy \"Trèo cao dễ ngã lắm… ở chỗ cao, mình nhờ người lớn\", câu này lại để Lu leo lên cây cao tới mây và khen \"Bé tưởng tượng hay quá!\". Mâu thuẫn với điều bài vừa dạy và khen việc trèo cao (LG11).",
+   "sua": "Đổi thành: \"Nếu cây đậu cao tới tận mây, chú chim bay lên ngọn cây sẽ thấy gì?\" hoặc \"Lu nhìn lên ngọn cây sẽ thấy gì?\" và sửa lựa chọn chim thành \"Lu thấy một chú chim đậu trên ngọn cây.\"",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: câu hỏi đổi thành \"Nếu cây đậu cao tới tận mây, ngọn cây có gì?\", không còn Lu leo lên; lựa chọn chim là \"Một chú chim đậu trên ngọn cây\"."
+  },
+  {
+   "ma": "LG05",
+   "o": "L001-B29",
+   "cau": "Bé chọn chậu để trồng mầm đậu nhé.",
+   "mo_ta": "Hình art:chau-cay là chậu đã có cây mầm, nên \"trồng mầm vào chậu\" mà chậu đã có cây. Lời yêu cầu \"chọn chậu\" nhưng chỉ có một chậu cùng với mầm đậu, và engine tap coi chạm bất kỳ hình nào (cả mầm đậu) là xong \"Mầm đậu có nhà mới rồi!\": lời không khớp việc bé làm.",
+   "sua": "Dùng 2–3 chậu trống khác màu (vẽ chậu chỉ có đất) và đổi lời \"Bé chọn một chậu bé thích để trồng mầm đậu nhé\"; bỏ art:mam-dau khỏi props hoặc hiện mầm ở cảnh, không làm lựa chọn.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: chỉ còn một hình art:chau-cay:trong (chậu chỉ có đất, tên \"chậu đất\"), lời \"Bé chạm vào chậu đất để trồng mầm đậu nhé\"; bỏ mầm đậu khỏi props nên chạm hình nào cũng đúng lời."
+  },
+  {
+   "ma": "LG20",
+   "o": "L001 parent.play",
+   "cau": "Chia kẹo cho gấu bông",
+   "mo_ta": "Trò chơi là chia kẹo, nhưng lời an toàn lại nói \"Hạt to, không cho vào miệng\": không khớp đồ dùng (kẹo là thứ để ăn, còn hạt không được nhắc trong cách chơi).",
+   "sua": "Đổi thành \"Chia hạt đậu cho gấu bông\" (giữ lời an toàn \"Dùng hạt to, không cho vào miệng\"), hoặc giữ kẹo và đổi lời an toàn cho hợp với kẹo.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: trò chơi đổi thành \"Chia hạt đậu cho gấu bông\", lời an toàn \"Dùng hạt to, bố mẹ ngồi cạnh, không cho vào miệng\" khớp đồ dùng."
+  },
+  {
+   "ma": "LG05",
+   "o": "L001-B24 câu 1 và câu 2",
+   "cau": "Quả đậu trên giàn cao, Lu không với tới. Lu nên làm gì? / Chiếc mũ của Lu bay lên nóc chuồng gà. Lu nên làm gì?",
+   "mo_ta": "Lựa chọn \"Lu kê ghế trèo lên giàn.\" và \"Lu leo lên nóc chuồng.\" đều dùng hình lu:nhay (tư thế Lu nhảy, registry/characters.json LU-0044). Hình nhảy không thể hiện kê ghế hay leo trèo, nên hình không khớp lời; bé nghe \"trèo/leo\" nhưng thấy Lu nhảy, dễ hiểu sai điều đang được dạy là nguy hiểm (trèo cao). Bộ tư thế Lu hiện không có tư thế trèo.",
+   "sua": "Vẽ thêm tư thế Lu trèo (vd lu:treo-ghe: Lu đứng trên ghế với tay lên cao) đưa vào tools/lab/anh-con-thieu.json và dùng cho cả hai lựa chọn trèo. Nếu chưa vẽ được, đổi lời cho khớp hình lu:nhay: câu 1 \"Lu nhảy thật cao để với.\" (lời đáp \"Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé.\"), câu 2 giữ ý leo nhưng phải có hình leo; không dùng hình nhảy cho lời leo trèo.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: lời lựa chọn đổi cho khớp hình lu:nhay: câu 1 \"Lu nhảy thật cao để với.\" (đáp \"Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé.\"), câu 2 \"Lu nhảy lên lấy mũ.\" (đáp \"Nóc chuồng cao lắm, nhảy dễ ngã. Lu nhờ bà lấy giúp nhé.\"). Hình và lời khớp nhau, lời đáp vẫn dạy nhờ người lớn ở chỗ cao, không khen việc nguy hiểm (LG11). thiet_ke.bai_tap B10 và B24 đã đồng bộ. Soát lại 27/11 (Mono): lựa chọn sai nay là \"Mono trèo lên giàn để hái.\" / \"Mono trèo lên mái lấy mũ.\" với ảnh vẽ riêng art:mono-treo-gian-dau (DV-0047, Mono bám giàn đậu, mặt lo) và art:mono-treo-lay-mu (DV-0049, Mono không mũ, trèo vách chuồng gà, mũ nằm trên mái); lựa chọn đúng \"Mono nhờ bà hái giúp.\" / \"Mono gọi bà lấy giúp.\" với art:mono-nho-ba-hai-qua (DV-0048, bà đứng đất hái chùm đậu, Mono cầm giỏ) và art:mono-nho-ba-lay-mu (DV-0050, bà với lấy mũ ở mép mái, Mono chìa tay). Mỗi ảnh vẽ đúng việc làm trong lời (quy tắc 42), lời đáp ở lựa chọn trèo nhắc nguy hiểm và chỉ cách nhờ bà, lời ok trung tính, không khen trèo (LG11). Lỗi này đóng hẳn."
+  },
+  {
+   "ma": "LG09",
+   "o": "L001-B12 và L001-B13 (layout roi)",
+   "cau": "Bé chạm vào từng hạt đậu. Sỏi và lá thì để lại nhé. / Bé chạm vào từng mầm đậu nhé.",
+   "mo_ta": "Bài tìm vật nay rải vật trên cảnh luống đất (asset:BC-0004), các vật đứng cạnh nhau trong một cảnh nhưng đều vẽ cùng cỡ (ô 26% bề ngang, không có \"co\"). Ảnh hạt đậu DV-0001 là hạt phóng to chiếm hết khung, nên trên cảnh hạt đậu to bằng chiếc lá (B12) và to bằng cả bông hoa, bằng cả mầm đậu kèm ụ đất (B13); hạt đậu còn to gần nửa bề ngang một luống đất. Kho kiến thức ghi hat-dau \"nho\": true. Sai tương quan to nhỏ khi đứng cạnh nhau; ở B13 hạt to hơn cả mầm mọc từ hạt.",
+   "sua": "Thêm \"co\" như L002-B03 để chỉnh cỡ theo đời thật: B12 \"co\": {\"art:hat-dau\": 0.55, \"art:soi\": 0.7} (lá giữ 1); B13 \"co\": {\"art:hat-dau\": 0.5, \"art:hoa\": 1.15}. Ô chạm vẫn giữ 26% nên bé vẫn chạm dễ. Xem lại trên máy cho hạt vẫn nhận ra được.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: B12 \"co\": {\"art:hat-dau\": 0.6, \"art:soi\": 0.75}, B13 \"co\": {\"art:hat-dau\": 0.6, \"art:hoa\": 1.15}. Xem ảnh chụp reports/draft-L001/27-phone.png, 28-phone.png, 27-ipad.png, 28-ipad.png: hạt đậu nay nhỏ hơn rõ so với chiếc lá, nhỏ hơn viên sỏi một chút, không còn to hơn mầm kèm ụ đất; hạt vẫn nhận ra được (hình hạt đậu vàng nâu, rõ trên nền đất và cỏ), ô chạm không đổi. Máy soát 0 lỗi."
+  },
+  {
+   "ma": "LG20",
+   "o": "L001 intro câu 1",
+   "cau": "Chào bé! Hôm nay bé là Mono.",
+   "mo_ta": "Câu mở đầu cho bé đóng vai Mono, nhưng cả bài nói với bé như một người khác Mono: \"Bé nhớ giúp Mono nhé\" (màn Bà dặn Mono điều gì), \"Bé cùng Mono khám phá\" (checkin), \"Bé nghe cùng Mono\", \"Nói theo Mono\", \"Mono phục bé luôn\". Bé vừa là Mono vừa giúp Mono: mâu thuẫn vai (cùng lỗi đã ghi ở L002).",
+   "sua": "Đổi câu mở đầu thành \"Chào bé! Mình là Mono.\"",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: intro câu 1 là \"Chào bé! Mình là Mono.\" Mono tự giới thiệu, bé là bạn đồng hành; khớp mọi câu \"bé giúp Mono\", \"bé cùng Mono\" trong bài. Không còn chỗ nào nói bé là Mono. Máy soát 0 lỗi."
+  }
+ ],
+ "ghi_chu_cap_nhat": [
+  "27/11/2026: chỉ đổi tên nhân vật Lu thành Mono theo tam, không đổi nội dung, đáp án hay logic; giữ kết quả soát.",
+  "27/11/2026 soát lại toàn bài sau các thay đổi: Lu đổi tên Mono (không còn chỗ gọi Lu, tên Mono thống nhất mọi màn, LG20 đạt); B12/B13 dùng layout roi trên cảnh luống đất (lời dẫn \"Hạt đậu rơi vào chỗ có sỏi và lá\" khớp cảnh; vật nằm trên đất, không lơ lửng; còn lỗi cỡ vật LG09 ghi ở trên); lời \"no\" có câu động viên mở đầu (đã đối chiếu từng câu: phần gợi ý sau câu động viên vẫn đúng sự thật, đúng hướng, LG19 đạt); B24 dùng ảnh hành động riêng DV-0047..0050 (xem lỗi LG05 B24). Các lỗi cũ da_sua giữ nguyên lịch sử, chữ \"Lu\" trong đó là tên cũ.",
+  "27/11/2026 soát lại sau khi sửa LG09 (thêm co ở B12, B13): ma_bam mới, 0 lỗi mở.",
+  "27/11/2026 soát lại sau khi tam đổi câu mở đầu thành \"Chào bé! Mình là Mono.\": ghi LG20 da_sua, ma_bam mới, 0 lỗi mở."
+ ]
 }
