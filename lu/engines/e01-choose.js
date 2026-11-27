@@ -57,7 +57,7 @@ export function verify(act, variant) {
 export function lines(act) {
   if (MORE.MORE.has(act.mode)) return MORE.lines(act);
   const L = [...(act.intro || [])];
-  if (act.mode === 'items') act.items.forEach(it => { L.push(it.q, it.ok, it.any ? null : (it.no || act.no)); it.opts.forEach(o => { o.say && L.push(o.say); o.reply && L.push(o.reply); }); if (textOpts(it.opts, it.style || act.style)) L.push(...LETTERS.slice(0, it.opts.length).map(letterLine), ...it.opts.map(optSay)); });
+  if (act.mode === 'items') act.items.forEach(it => { L.push(it.word, it.q, ...[].concat(it.ok), it.any ? null : (it.no || act.no)); it.opts.forEach(o => { o.say && L.push(o.say); o.reply && L.push(o.reply); }); if (textOpts(it.opts, it.style || act.style)) L.push(...LETTERS.slice(0, it.opts.length).map(letterLine), ...it.opts.map(optSay)); });
   if (act.mode === 'count') { L.push(act.hint, act.q, act.no, ...act.words); act.pool.forEach(n => L.push(fill(act.ok, { word: act.words[n - 1] }))); }
   if (act.mode === 'listen') act.words.forEach(w => L.push(w.w, w.ok));
   return L.filter(Boolean);
@@ -86,10 +86,10 @@ function round(ctx, act, R, first) {
   return new Promise(done => {
     let opts, order, ans, style, q, okKeys, noKeys, label;
     if (act.mode === 'items') {
-      const it = act.items[R.item]; opts = it.opts; order = R.order; ans = it.any ? -1 : it.a; R._any = it.any ? it : null; style = it.style || act.style || 'face'; q = [it.q];
-      okKeys = i => [opts[i].say, '__jingle', it.ok]; noKeys = i => [opts[i].say, '__boing', it.no || act.no];
+      const it = act.items[R.item]; opts = it.opts; order = R.order; ans = it.any ? -1 : it.a; R._any = it.any ? it : null; style = it.style || act.style || 'face'; q = [it.word, it.q].filter(Boolean); /* word: từ tiếng Anh đọc riêng bằng giọng bản địa, hiện chữ to (tam 28/11) */
+      okKeys = i => [opts[i].say, '__jingle', ...[].concat(it.ok)]; noKeys = i => [opts[i].say, '__boing', it.no || act.no];
       label = it.label || act.label || 'Bé chọn một đáp án';
-      ui.scene(it.title || act.title, act.scene === 'lu' ? luArt(it.lu || act.lu || 'to-mo') : `<div class="story${it.shadow || act.shadow ? ' bong-den' : ''}">${showHTML(it.show)}</div>`);
+      ui.scene(it.title || act.title, act.scene === 'lu' ? luArt(it.lu || act.lu || 'to-mo') : `<div class="story${it.shadow || act.shadow ? ' bong-den' : ''}">${it.word ? `<div class="en-word" lang="en">${esc(it.word)}</div>` : ''}${showHTML(it.show)}</div>`);
     } else if (act.mode === 'count') {
       opts = act.pool.map(v => ({ v })); order = opts.map((o, i) => i); ans = act.pool.indexOf(R.n); style = 'number'; q = [act.q];
       okKeys = () => ['__jingle', fill(act.ok, { word: act.words[R.n - 1] })]; noKeys = () => ['__boing', act.no, act.hint];

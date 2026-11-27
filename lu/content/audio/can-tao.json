@@ -1,410 +1,62 @@
 {
  "format": "lu-voice-todo",
  "lesson": "M001",
- "at": "2026-11-27T17:36:32.978Z",
+ "at": "2026-11-27T23:42:39.583Z",
  "lines": [
   {
-   "text": "Bé giơ ngón tay, đố bố mẹ có mấy ngón!",
+   "text": "Gặp nhau thì mình nói:",
    "lang": "vi"
   },
   {
-   "text": "Bé kể bố mẹ nghe: hạt đậu bay đi đâu?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé hỏi bố mẹ: khi nào bố mẹ buồn?",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình tắt máy nhé! Bé cùng bố mẹ đếm ba cái thìa!",
-   "lang": "vi"
-  },
-  {
-   "text": "Ôi! Gió thổi bay hết hạt giống của bà rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bà có hai mươi hạt cầu vồng. Bé giúp Mono tìm nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé tìm được hạt cầu vồng đầu tiên rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Quà của bé đây: thẻ Gà con!",
-   "lang": "vi"
-  },
-  {
-   "text": "Ơ kìa, hạt đậu kia lăn đi đâu thế?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé chọn bài để học nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt hiện một chút thôi. Bé nhìn nhanh nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình làm túi mới cho bà nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Gặp nhau thì nói Hello.",
-   "lang": "vi"
-  },
-  {
-   "text": "Ra về thì nói Goodbye.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nghe Mono kể chuyện nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu nhỏ nằm trong túi của bà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Gió thổi vù vù.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu bay qua mái nhà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu rơi xuống gốc cây.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình đứng dậy vận động nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt màu gì thì vào giỏ màu đó.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé đoán xem hạt đậu cần gì nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Nhìn mặt Mono, bé đoán xem.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cất đồ đúng chỗ thì không bị mất.",
-   "lang": "vi"
-  },
-  {
-   "text": "Thử thách vàng! Bé sẵn sàng chưa?",
-   "lang": "vi"
-  },
-  {
-   "text": "Có mấy hạt?",
-   "lang": "vi"
-  },
-  {
-   "text": "Không sao đâu! Mình nhìn lại nhé, bé bấm Xem lại.",
-   "lang": "vi"
-  },
-  {
-   "text": "Nhìn thật nhanh nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Lá sắp che rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhìn kỹ nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Nhanh hơn nữa đây!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Có một hạt. Bé tinh mắt quá!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Có hai hạt. Bé tinh mắt quá!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Có ba hạt. Bé tinh mắt quá!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé dán hạt màu lên túi nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Nhiều hạt màu ghê! Đẹp quá!",
-   "lang": "vi"
-  },
-  {
-   "text": "Thêm hoa, thêm sao nào!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé dán khéo quá! Túi có hoa, có sao rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé dán thêm lá xanh nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Túi đẹp quá! Cảm ơn bé, bà treo túi lên móc rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hello! Tranh nào Mono nói Hello?",
-   "lang": "vi"
-  },
-  {
-   "text": "Good job! Mono vẫy tay chào bé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Hello là chào khi gặp nhau.",
-   "lang": "vi"
-  },
-  {
-   "text": "Goodbye! Tranh nào Mono nói Goodbye?",
-   "lang": "vi"
-  },
-  {
-   "text": "Good job! Mono quay lưng đi về nhà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Goodbye là chào khi ra về.",
-   "lang": "vi"
+   "text": "Hello!",
+   "lang": "en"
   },
   {
-   "text": "Gà con chạy tới. Bé chào gà con nào!",
+   "text": "Ra về thì mình nói:",
    "lang": "vi"
   },
   {
-   "text": "Hello! Bé chào hay quá!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Gà con nào đang chạy tới nhỉ?",
-   "lang": "vi"
-  },
-  {
-   "text": "Lúc đầu hạt đậu nằm ở đâu?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nhớ giỏi quá! Hạt nằm trong túi của bà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình cùng xem lại nào! Hạt đậu nằm trong túi của bà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cái gì thổi hạt đậu bay đi?",
-   "lang": "vi"
-  },
-  {
-   "text": "Chính xác! Gió thổi vù vù.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Cái gì thổi vù vù nhỉ?",
-   "lang": "vi"
-  },
-  {
-   "text": "Cuối cùng hạt đậu rơi ở đâu?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé nghe chuyện giỏi lắm! Hạt rơi xuống gốc cây.",
-   "lang": "vi"
-  },
-  {
-   "text": "Gần đúng rồi! Hạt bay qua mái nhà, rồi rơi xuống đâu nhỉ?",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình vỗ cánh như gà nào! Một, hai, ba!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đi lạch bạch như vịt nào!",
-   "lang": "vi"
-  },
-  {
-   "text": "Ngồi xuống, bật nhảy như ếch!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Hạt đỏ vào giỏ đỏ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé xếp giỏi lắm, hạt nào cũng đúng giỏ!",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏ đỏ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏ xanh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Còn nhiều hạt quá! Bé xếp tiếp nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Hạt xanh vào giỏ xanh nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hoan hô bé, sáu hạt về đúng giỏ rồi!",
-   "lang": "vi"
-  },
-  {
-   "text": "Có thêm giỏ vàng rồi! Bé xếp nhé!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Bé nhìn màu của hạt nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé giỏi quá, ba giỏ đều đúng màu!",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏ vàng.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt đậu khát nước. Bé đưa gì?",
-   "lang": "vi"
-  },
-  {
-   "text": "Đúng rồi! Có nước, hạt nứt vỏ.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Hạt đậu khát nước mà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hạt cần gì nữa để lớn?",
-   "lang": "vi"
-  },
-  {
-   "text": "Giỏi quá! Có ông mặt trời, mầm lớn nhanh.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Mầm cây cần ánh nắng đó.",
-   "lang": "vi"
-  },
-  {
-   "text": "Có nước, có nắng. Cây sẽ thế nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé đoán đúng rồi! Cây đậu lớn lên.",
-   "lang": "vi"
-  },
-  {
-   "text": "Gần đúng rồi! Có nước và nắng, cây sẽ lớn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mono đang vui hay buồn?",
-   "lang": "vi"
-  },
-  {
-   "text": "Tinh ý quá! Mono đang buồn.",
-   "lang": "vi"
-  },
-  {
-   "text": "Mình cùng xem lại nào! Nhìn miệng Mono nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Vì sao Mono buồn nhỉ?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé hiểu Mono quá! Gió thổi bay hạt giống rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Hạt giống của bà đâu rồi nhỉ?",
-   "lang": "vi"
-  },
-  {
-   "text": "Bây giờ Mono thấy thế nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Có bé giúp, Mono vui lắm!",
-   "lang": "vi"
+   "text": "Goodbye!",
+   "lang": "en"
   },
   {
-   "text": "Cất tiếp đồ khác nào!",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Bé nhìn hình cái bóng nhé.",
-   "lang": "vi"
+   "text": "Hello",
+   "lang": "en"
   },
   {
-   "text": "Bé cất khéo quá! Gió không thổi bay được nữa.",
+   "text": "Bé chạm tranh Mono chào khi gặp nhau.",
    "lang": "vi"
   },
   {
-   "text": "Suýt đúng rồi! Bé bấm Xem lại nhé.",
+   "text": "Đúng rồi! Mono vẫy tay chào bé.",
    "lang": "vi"
   },
   {
-   "text": "Hạt nằm lộn xộn đó!",
+   "text": "Bé thử lại nào! Gặp nhau thì vẫy tay chào.",
    "lang": "vi"
   },
   {
-   "text": "Nhìn thật nhanh!",
-   "lang": "vi"
-  },
-  {
-   "text": "Đừng đếm viên sỏi nhé!",
-   "lang": "vi"
+   "text": "Goodbye",
+   "lang": "en"
   },
   {
-   "text": "Mấy hạt?",
+   "text": "Bé chạm tranh Mono chào khi ra về.",
    "lang": "vi"
   },
   {
-   "text": "Màn cuối đây!",
+   "text": "Giỏi quá! Mono quay lưng đi về nhà.",
    "lang": "vi"
   },
   {
-   "text": "Xuất sắc! Đúng hai hạt!",
+   "text": "Bé thử lại nào! Ra về thì quay lưng đi.",
    "lang": "vi"
   },
   {
-   "text": "Xuất sắc! Đúng ba hạt!",
-   "lang": "vi"
+   "text": "Hello, chick!",
+   "lang": "en"
   },
   {
-   "text": "Xuất sắc! Đúng một hạt!",
+   "text": "Bé chào hay quá!",
    "lang": "vi"
   }
  ]

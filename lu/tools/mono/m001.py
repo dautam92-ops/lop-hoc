@@ -22,11 +22,11 @@ stages = [
    A(4, "E14", "KP.ST.01", "Thêm lá cho túi", mode="sticker", bg="art:tui", keep=True, stickers=["art:la", "art:hoa", "art:sao"], min=1,
    intro=["Bé dán thêm lá xanh nhé!"], done="Túi đẹp quá! Cảm ơn bé, bà treo túi lên móc rồi.")]),
  dict(title="Hello, Mono!", hiep=1, icon="lu:vay-tay", nhom=["EN", "CY"], way="nghe-cham", backdrop={"id": "L001-BG-02", "kind": "san"},
-  intro=["Gặp nhau thì nói Hello.", "Ra về thì nói Goodbye."],
+  intro=["Gặp nhau thì mình nói:", "Hello!", "Ra về thì mình nói:", "Goodbye!"],
   activities=[A(5, "E01", "EN.EN.01", "Hello, Mono!", mode="items", order="fixed", style="face", rounds=3, items=[
-   it("Hello! Tranh nào Mono nói Hello?", ["lu:vay-tay", "lu:sau"], 0, "Good job! Mono vẫy tay chào bé.", "Bé thử lại nào! Hello là chào khi gặp nhau."),
-   it("Goodbye! Tranh nào Mono nói Goodbye?", ["lu:sau", "lu:vay-tay"], 0, "Good job! Mono quay lưng đi về nhà.", "Bé thử lại nào! Goodbye là chào khi ra về."),
-   it("Gà con chạy tới. Bé chào gà con nào!", ["art:ga-con-chay", "art:ga-con-ngu", "art:ga-con-mo-dau"], 0, "Hello! Bé chào hay quá!", "Bé thử lại nào! Gà con nào đang chạy tới nhỉ?")])]),
+   it("Bé chạm tranh Mono chào khi gặp nhau.", ["lu:vay-tay", "lu:sau"], 0, ["Hello!", "Đúng rồi! Mono vẫy tay chào bé."], "Bé thử lại nào! Gặp nhau thì vẫy tay chào.", word="Hello"),
+   it("Bé chạm tranh Mono chào khi ra về.", ["lu:sau", "lu:vay-tay"], 0, ["Goodbye!", "Giỏi quá! Mono quay lưng đi về nhà."], "Bé thử lại nào! Ra về thì quay lưng đi.", word="Goodbye"),
+   it("Gà con chạy tới. Bé chào gà con nào!", ["art:ga-con-chay", "art:ga-con-ngu", "art:ga-con-mo-dau"], 0, ["Hello, chick!", "Bé chào hay quá!"], "Bé thử lại nào! Gà con nào đang chạy tới nhỉ?", word="Hello")])]),
  dict(title="Chuyện hạt đậu nhỏ", hiep=1, icon="art:hat-dau", nhom=["TV", "GN", "NT"], way="nghe-truyen", backdrop={"id": "L001-BG-02", "kind": "san"},
   intro=["Bé nghe Mono kể chuyện nhé.", "Hạt đậu nhỏ nằm trong túi của bà.", "Gió thổi vù vù.", "Hạt đậu bay qua mái nhà.", "Hạt đậu rơi xuống gốc cây."],
   activities=[A(6, "E01", "TV.NG.01", "Chuyện hạt đậu nhỏ", mode="items", order="fixed", rounds=3, items=[

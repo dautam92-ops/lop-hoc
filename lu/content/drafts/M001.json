@@ -228,8 +228,10 @@
     "kind": "san"
    },
    "intro": [
-    "Gặp nhau thì nói Hello.",
-    "Ra về thì nói Goodbye."
+    "Gặp nhau thì mình nói:",
+    "Hello!",
+    "Ra về thì mình nói:",
+    "Goodbye!"
    ],
    "activities": [
     {
@@ -243,7 +245,7 @@
      "rounds": 3,
      "items": [
       {
-       "q": "Hello! Tranh nào Mono nói Hello?",
+       "q": "Bé chạm tranh Mono chào khi gặp nhau.",
        "opts": [
         {
          "e": "lu:vay-tay"
@@ -253,11 +255,15 @@
         }
        ],
        "a": 0,
-       "ok": "Good job! Mono vẫy tay chào bé.",
-       "no": "Bé thử lại nào! Hello là chào khi gặp nhau."
+       "ok": [
+        "Hello!",
+        "Đúng rồi! Mono vẫy tay chào bé."
+       ],
+       "no": "Bé thử lại nào! Gặp nhau thì vẫy tay chào.",
+       "word": "Hello"
       },
       {
-       "q": "Goodbye! Tranh nào Mono nói Goodbye?",
+       "q": "Bé chạm tranh Mono chào khi ra về.",
        "opts": [
         {
          "e": "lu:sau"
@@ -267,8 +273,12 @@
         }
        ],
        "a": 0,
-       "ok": "Good job! Mono quay lưng đi về nhà.",
-       "no": "Bé thử lại nào! Goodbye là chào khi ra về."
+       "ok": [
+        "Goodbye!",
+        "Giỏi quá! Mono quay lưng đi về nhà."
+       ],
+       "no": "Bé thử lại nào! Ra về thì quay lưng đi.",
+       "word": "Goodbye"
       },
       {
        "q": "Gà con chạy tới. Bé chào gà con nào!",
@@ -284,8 +294,12 @@
         }
        ],
        "a": 0,
-       "ok": "Hello! Bé chào hay quá!",
-       "no": "Bé thử lại nào! Gà con nào đang chạy tới nhỉ?"
+       "ok": [
+        "Hello, chick!",
+        "Bé chào hay quá!"
+       ],
+       "no": "Bé thử lại nào! Gà con nào đang chạy tới nhỉ?",
+       "word": "Hello"
       }
      ]
     }

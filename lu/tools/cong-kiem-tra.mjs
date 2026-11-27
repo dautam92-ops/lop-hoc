@@ -66,6 +66,11 @@ check(`Buổi học đủ ${minPhut} phút trở lên`, phut >= minPhut, `${phut
   const lk = kiemLoiKhen(JSON.parse(await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8')));
   check('Lời khen cổ vũ, đa dạng, không lặp (quy tắc 43)', !lk.length, lk.slice(0, 3).join('; ')); }
 
+// 1d2. Tiếng Anh giọng bản địa (tam 28/11 06:40): không trộn từ tiếng Anh vào câu tiếng Việt, câu tiếng Anh đọc giọng en-*.
+{ const { kiemTiengAnh } = await import('./kiem-tieng-anh.mjs');
+  const ta = await kiemTiengAnh(id);
+  check('Tiếng Anh đọc bằng giọng bản địa, không lẫn vào câu tiếng Việt', !ta.length, ta.slice(0, 3).join('; ')); }
+
 // 1e. Dùng lại ảnh (quy tắc 45, tam 27/11 15:40): không vẽ mới ảnh đồ vật, con vật đã có trong kho
 { const { kiemDungLai, docTepAnh, khoAnh } = await import('./kiem-dung-lai.mjs');
   const KB = JSON.parse(await readFile(path.join(ROOT, 'content/kien-thuc/vat.json'), 'utf8')).vat;

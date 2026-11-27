@@ -571,3 +571,6 @@
 .lu-lesson .stage:has([data-vung-ve]) .color-pic { width: min(100%, 620px, var(--vis-h)); }
 .lu-lesson .stage:has([data-vung-ve]) .draw-pad { width: min(100%, 900px, calc(var(--vis-h) * 4 / 3)); }
 @media (max-width: 600px) { .lu-lesson .stage:has([data-vung-ve]) { --vis-h: max(220px, calc(100dvh - 420px)); } }
+
+/* Từ tiếng Anh (tam 28/11): chữ thật to cùng ảnh, đọc bằng giọng bản địa */
+.lu-lesson .story .en-word { font-family: 'Baloo 2', var(--lu-font-head, system-ui), sans-serif; font-weight: 800; font-size: clamp(64px, 13vw, 132px); line-height: 1; color: #2f6db5; letter-spacing: .02em; text-shadow: 0 3px 0 rgba(255,255,255,.9); padding: 4px 0; }
