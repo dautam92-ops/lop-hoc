@@ -132,7 +132,7 @@ export function createUI(root, voice, opts = {}) {
   ui.setSteps = names => { ui.steps = names; };
   ui.setStep = n => { q('.steps').innerHTML = ui.steps.map((s, i) => `<i class="${i < n ? 'done' : i === n ? 'now' : ''}" title="${esc(s)}"></i>`).join(''); };
   ui.scene = (title, inner = '') => { const guide = luArtHook.fn && !/class="lu[ "]/.test(inner) ? `<div class="guide" aria-hidden="true">${luArtHook.fn(ui.guide || 'chi-tay')}</div>` : ''; ui.stage.innerHTML = `<div class="scene">${guide}<h1 class="title">${esc(title)}</h1>${inner}<div class="cap"></div></div>`; voice.caption = ui.stage.querySelector('.cap'); return ui.stage.querySelector('.scene'); };
-  ui.answers = (label, html) => { const d = document.createElement('div'); d.className = 'answers'; d.innerHTML = `<div class="lbl">${esc(label)}</div>` + html; ui.stage.appendChild(d); return d; };
+  ui.answers = (label, html) => { const d = document.createElement('div'); d.className = 'answers'; d.innerHTML = (label ? `<div class="lbl">${esc(label)}</div>` : '') + html; ui.stage.appendChild(d); return d; };
   // Bối cảnh L1–L2 phía sau cả màn (S04-R15). html rỗng thì bỏ nền.
   ui.setBackdrop = (k, html, real) => { const b = q('.backdrop'), a = q('.app'); if (b.dataset.k === (k || '')) return; b.dataset.k = k || ''; b.innerHTML = html || ''; a.classList.toggle('has-bd', !!html); a.classList.toggle('bd-tam', !!html && !real); };
   ui.shake = el => { el.classList.add('shake'); setTimeout(() => el.classList.remove('shake'), 450); };

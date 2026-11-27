@@ -121,6 +121,30 @@
    "age": "4-5",
    "dev": "ipad",
    "sua": "Rút gọn lời dẫn toàn Phòng mẫu; câu hỏi ≤ 10 từ, lời dẫn ≤ 12 từ; dừng tay thì Lu hỏi lại đúng câu hỏi"
+  },
+  {
+   "ngay": "27/11",
+   "loi": "Bé đoán xem (L002): hỏi \"Chú gà sẽ làm gì?\" nhưng đáp án là gà con đứng yên, chìa khóa, áo đỏ",
+   "s": "L002",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Ảnh đáp án là hành động của chính gà con: mổ hạt đậu (đúng), ngủ, uống nước; quy tắc 38"
+  },
+  {
+   "ngay": "27/11",
+   "loi": "Tìm bóng (L002): giữa màn chỉ có ảnh Lu, không hiện cái bóng",
+   "s": "L002",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Bóng to giữa màn, hỏi \"Cái bóng này là của ảnh nào dưới đây?\"; quy tắc 39"
+  },
+  {
+   "ngay": "27/11",
+   "loi": "Hôm nay bé thấy thế nào: Lu đọc từng đáp án, có câu \"Bé chọn một khuôn mặt\", chữ \"Buồn\" lạc giữa màn",
+   "s": "L002",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Chỉ đọc câu hỏi; chọn Vui thì \"Tuyệt quá, chúng mình cùng nhau khám phá nhé.\", mặt khác thì \"Không sao, có Lu ở đây rồi…\"; quy tắc 40"
   }
  ]
 }

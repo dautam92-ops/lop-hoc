@@ -6,28 +6,27 @@
  "age": "4–5 tuổi",
  "manifest": "manifests/L001.json",
  "checkin": {
-  "q": "Hôm nay bé thấy thế nào? Bé chọn một khuôn mặt.",
-  "thanks": "Cảm ơn bé đã kể.",
+  "q": "Hôm nay bé thấy thế nào?",
   "opts": [
    {
     "e": "face:vui",
     "t": "Vui",
-    "say": "Bé thấy vui."
+    "reply": "Tuyệt quá, chúng mình cùng nhau khám phá nhé."
    },
    {
     "e": "face:binh-tinh",
     "t": "Bình thường",
-    "say": "Bé thấy bình thường."
+    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:buon",
     "t": "Buồn",
-    "say": "Bé thấy buồn."
+    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:so",
     "t": "Lo lắng",
-    "say": "Bé thấy lo lắng."
+    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
    }
   ]
  },
@@ -649,7 +648,7 @@
      "title": "Cái bóng của gì?",
      "items": [
       {
-       "q": "Cái bóng này là của gì?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 1,
        "ok": "Đúng rồi! Đó là cái bình tưới.",
        "no": "Bé nhìn kỹ: bóng có vòi dài để tưới cây.",
@@ -668,7 +667,7 @@
        "style": "face"
       },
       {
-       "q": "Cái bóng này là của gì?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
        "ok": "Đúng rồi! Đó là quả đậu.",
        "no": "Bé nhìn kỹ: bóng dài và cong như quả đậu.",
@@ -687,7 +686,7 @@
        "style": "face"
       },
       {
-       "q": "Cái bóng này là của ai?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
        "ok": "Đúng rồi! Đó là chú chim.",
        "no": "Bé nhìn kỹ: bóng có cánh và cái mỏ nhỏ.",
@@ -706,7 +705,7 @@
        "style": "face"
       },
       {
-       "q": "Cái bóng này là của gì?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
        "ok": "Đúng rồi! Đó là bông hoa.",
        "no": "Bé nhìn kỹ: bóng có nhiều cánh tròn.",

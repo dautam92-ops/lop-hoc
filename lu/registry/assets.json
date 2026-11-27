@@ -2991,6 +2991,75 @@
    ],
    "slot": "art:ro-tre",
    "ngay_duyet": "2026-11-27"
+  },
+  {
+   "asset_id": "DV-0043",
+   "version": 1,
+   "path": "assets/do-vat/DV-0043_ga-con-mo-hat-dau_v01.webp",
+   "mo_ta": "Gà con mổ hạt đậu",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 1024,
+    "h": 819
+   },
+   "bytes": 93574,
+   "sha256": "7a0d293ee3a0cb519e11a1983e961183df9a43bb3458d6e00269b3c15a0f78ba",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "L002-HD-ga-con-mo-dau_s23.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "L002-HD-ga-con-mo-dau_s23; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền theo màu trắng; tam duyệt 27/11 10:29",
+   "dung_o": [],
+   "slot": "art:ga-con-mo-dau",
+   "ngay_duyet": "2026-11-27"
+  },
+  {
+   "asset_id": "DV-0044",
+   "version": 1,
+   "path": "assets/do-vat/DV-0044_ga-con-ngu_v01.webp",
+   "mo_ta": "Gà con ngủ",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 1024,
+    "h": 625
+   },
+   "bytes": 102850,
+   "sha256": "d1cb0860493ce8ec70020d0ca39e20bf195fe5439e2cecb93a8c0759f1c54ad5",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "L002-HD-ga-con-ngu_s23.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "L002-HD-ga-con-ngu_s23; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); tam duyệt 27/11 10:29",
+   "dung_o": [],
+   "slot": "art:ga-con-ngu",
+   "ngay_duyet": "2026-11-27"
+  },
+  {
+   "asset_id": "DV-0045",
+   "version": 1,
+   "path": "assets/do-vat/DV-0045_ga-con-chay_v01.webp",
+   "mo_ta": "Gà con chạy",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 874,
+    "h": 833
+   },
+   "bytes": 96094,
+   "sha256": "93df3c89bd532989e2c8bfe2c35da6744a78b468e1e13d86accb82a604335186",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "L002-HD-ga-con-chay_s25.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "L002-HD-ga-con-chay_s25; Z-Image Turbo (ComfyUI local), Apache-2.0; tách nền BiRefNet (MIT); tam duyệt 27/11 10:29",
+   "dung_o": [],
+   "slot": "art:ga-con-chay",
+   "ngay_duyet": "2026-11-27"
   }
  ]
 }

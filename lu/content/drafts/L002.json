@@ -2,28 +2,27 @@
  "format": "lu-lesson",
  "format_version": 2,
  "checkin": {
-  "q": "Hôm nay bé thấy thế nào? Bé chọn một khuôn mặt.",
-  "thanks": "Cảm ơn bé đã kể.",
+  "q": "Hôm nay bé thấy thế nào?",
   "opts": [
    {
     "e": "face:vui",
     "t": "Vui",
-    "say": "Bé thấy vui."
+    "reply": "Tuyệt quá, chúng mình cùng nhau khám phá nhé."
    },
    {
     "e": "face:binh-tinh",
     "t": "Bình thường",
-    "say": "Bé thấy bình thường."
+    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:buon",
     "t": "Buồn",
-    "say": "Bé thấy buồn."
+    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
    },
    {
     "e": "face:so",
     "t": "Lo lắng",
-    "say": "Bé thấy lo lắng."
+    "reply": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé."
    }
   ]
  },
@@ -187,7 +186,7 @@
      "title": "Hạt đậu nấp sau gì?",
      "items": [
       {
-       "q": "Cái bóng này là của gì?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
        "ok": "Đúng rồi! Đó là cái giỏ.",
        "no": "Bé nhìn kỹ: bóng có quai cầm.",
@@ -206,7 +205,7 @@
        "show": "art:gio"
       },
       {
-       "q": "Cái bóng này là của gì?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
        "ok": "Đúng rồi! Đó là cái lá.",
        "no": "Bé nhìn kỹ: bóng dài, có cuống nhỏ.",
@@ -226,9 +225,10 @@
       }
      ],
      "order": "fixed",
-     "scene": "lu",
+     "scene": "story",
      "lu": "chi-tay",
-     "mechanic": "M10"
+     "mechanic": "M10",
+     "shadow": true
     }
    ],
    "thiet_ke": {
@@ -292,7 +292,7 @@
      "title": "Bóng của bạn nào?",
      "items": [
       {
-       "q": "Cái bóng này là của ai?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 1,
        "ok": "Đúng rồi! Đó là chú mèo.",
        "no": "Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.",
@@ -311,7 +311,7 @@
        "show": "art:meo"
       },
       {
-       "q": "Cái bóng này là của ai?",
+       "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
        "ok": "Đúng rồi! Đó là con bướm.",
        "no": "Bé nhìn kỹ: bóng có hai cánh to.",
@@ -331,9 +331,10 @@
       }
      ],
      "order": "fixed",
-     "scene": "lu",
+     "scene": "story",
      "lu": "to-mo",
-     "mechanic": "M10"
+     "mechanic": "M10",
+     "shadow": true
     }
    ],
    "thiet_ke": {
@@ -892,13 +893,13 @@
        "no": "Chú gà thích ăn hạt đấy.",
        "opts": [
         {
-         "e": "art:ao"
+         "e": "art:ga-con-ngu"
         },
         {
-         "e": "art:ga-con"
+         "e": "art:ga-con-mo-dau"
         },
         {
-         "e": "art:chia-khoa"
+         "e": "art:ga-con-chay"
         }
        ],
        "style": "face"

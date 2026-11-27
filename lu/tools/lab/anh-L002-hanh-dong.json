@@ -1,0 +1,36 @@
+{
+ "format": "lu-art-prompts",
+ "version": "L002-HD-1",
+ "ghi_chu": "Ảnh hành động cho bài \"Bé đoán xem\" L002 (tam 27/11 10:03: cần ảnh gà con đang mổ hạt đậu dưới đất; 2 đáp án sai cũng phải là hành động của gà con). Vẽ trên máy 24H bằng ComfyUI như PM10, cùng phong cách gà con DV-0023, chỉ dùng sau khi tam duyệt. Quy tắc 38, core/hanh-dong.js. ĐÃ DUYỆT 27/11 10:29: mổ hạt s23 = DV-0043 (tách nền theo màu trắng để giữ đất và hạt), ngủ s23 = DV-0044, chạy s25 = DV-0045.",
+ "style": "children's picture book illustration, soft watercolor with colored pencil texture, hand-drawn on textured paper, rounded soft shapes, warm gentle colors, natural expression, simple clean composition, not too detailed, for kids aged 4 to 6",
+ "negative": "3d render, cgi, plastic, glossy, shiny, photorealistic, photo, anime, text, letters, watermark, signature, logo, extra limbs, extra fingers, deformed, cluttered background, harsh shadows, neon colors, scary",
+ "seeds": [
+  22,
+  23,
+  24,
+  25
+ ],
+ "items": [
+  {
+   "id": "L002-HD-ga-con-mo-dau",
+   "slot": "art:ga-con-mo-dau",
+   "vi": "Gà con đang mổ hạt đậu dưới đất (đáp án đúng)",
+   "prompt": "a fluffy yellow chick bending its head down and pecking at three small beige beans on a small patch of brown soil, side view, beak touching a bean, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "L002-HD-ga-con-ngu",
+   "slot": "art:ga-con-ngu",
+   "vi": "Gà con nằm ngủ (đáp án sai)",
+   "prompt": "a fluffy yellow chick sleeping peacefully curled up on a little patch of straw, eyes closed, head tucked, side view, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "L002-HD-ga-con-chay",
+   "slot": "art:ga-con-chay",
+   "vi": "Gà con chạy (đáp án sai; thay gà con uống nước vì 16 bản không vẽ được mỏ nhúng nước)",
+   "prompt": "a fluffy yellow chick running happily across a small patch of grass, legs mid-stride, wings slightly open, side view, isolated on plain white background",
+   "tach_nen": true
+  }
+ ]
+}

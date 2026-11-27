@@ -1,6 +1,7 @@
 // Chạy một gói bài (Hành trình) hoặc một hoạt động lẻ (Sân chơi, xem trước trong Admin).
 // Engine không biết mình đang ở chế độ nào; runner gắn chế độ, phiên, seed, phiên bản vào sự kiện.
 import { createVoice, createUI, makeRng, subSeed, newSeed, uid, esc, luArt, holdButton, CORE_VERSION } from './lu-core.js';
+import { CHECKIN_Q, checkinReply } from './checkin.js';
 import { vis, ART } from '../ui/art.js';
 
 // Lời khen xoay vòng, không lặp lại một câu (LU_PRODUCT_QUALITY_STANDARD mục 9)
@@ -204,13 +205,15 @@ export async function runLesson(root, pkg, opts = {}) {
 }
 
 function checkin(ui, voice, C, T) {
+  // tam 27/11 (quy tắc 40): chỉ đọc câu hỏi, không đọc đáp án, không nói "Bé chọn một khuôn mặt". Bé chạm mặt nào thì Lu đáp lời của mặt đó.
   return new Promise(done => {
-    ui.scene('Hôm nay bé thấy thế nào?', luArt('to-mo'));
-    const box = ui.answers('Bé chọn một khuôn mặt', C.opts.map((o, i) => `<button class="opt face" data-i="${i}" aria-label="Đáp án ${LETTERS[i]}: ${esc(o.t)}"><span class="opt-letter" aria-hidden="true">${LETTERS[i]}</span>${vis(o.e)}<small>${esc(o.t)}</small></button>`).join(''));
+    ui.scene(CHECKIN_Q, luArt('to-mo'));
+    const box = ui.answers('', C.opts.map((o, i) => `<button class="opt face" data-i="${i}" aria-label="${esc(o.t)}">${vis(o.e)}<small>${esc(o.t)}</small></button>`).join(''));
     T.current = [box.querySelector('.opt')];
-    box.addEventListener('click', e => { const b = e.target.closest('.opt'); if (!b || voice.busy) return; const o = C.opts[+b.dataset.i]; voice.say([o.say, C.thanks]).then(() => done(o.t)); });
-    // D43: đáp án có chữ → đọc "Đáp án A…" bằng tiếng Việt
-    voice.say([C.q, ...readOptLines(C.opts.map(o => ({ say: o.t })))]);
+    let chon = false;
+    box.addEventListener('click', e => { const b = e.target.closest('.opt'); if (!b || chon || voice.busy) return; chon = true; const o = C.opts[+b.dataset.i];
+      voice.say([o.reply || checkinReply(o)]).then(() => done(o.t)); });
+    voice.say([CHECKIN_Q]);
   });
 }
 
