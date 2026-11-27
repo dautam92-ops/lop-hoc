@@ -3,7 +3,9 @@
 // Sai đã gặp: "Chú gà thấy hạt đậu. Chú gà sẽ làm gì?" với đáp án gà con đứng yên, chìa khóa, áo đỏ.
 // Đúng: gà con mổ hạt đậu (đúng), gà con ngủ, gà con chạy (sai nhưng bé phải suy nghĩ).
 // Không cần cầu kì (tam 27/11 10:31): chỉ cần đáp án sai là hành động KHÁC của nhân vật, chọn hành động dễ vẽ.
-// Đáp án có chữ (say/label/t) tự mô tả hành động nên không cần ảnh hành động.
+// Quy tắc 42 (tam 27/11 12:50, L001 "Quả đậu trên cao"): câu "Lu nên làm gì?" mà hai đáp án chỉ là ảnh Lu đứng/nhảy
+// thì bé không hình dung được việc làm. Đáp án CÓ ẢNH thì ảnh phải vẽ đúng hành động, kể cả khi có lời đọc (say).
+// Chỉ đáp án KHÔNG có ảnh (chỉ chữ) mới được miễn. Ảnh tư thế chung của Lu (lu:nhay, lu:chi-tay…) không phải ảnh hành động.
 
 // Danh mục ảnh hành động: slot → nhân vật làm hành động (chu_the), tên gọi nhân vật trong câu hỏi, hành động.
 export const HANH_DONG = {
@@ -11,19 +13,26 @@ export const HANH_DONG = {
   'art:ga-con-ngu': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'nằm ngủ' },
   'art:ga-con-chay': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'chạy' },
   'art:ga-con-uong-nuoc': { chu_the: 'ga-con', goi: ['gà'], hanh_dong: 'uống nước' },
+  // L001-B24 (quy tắc 42): Lu vẽ bằng Qwen-Image trên máy 24H, chờ tam duyệt
+  'art:lu-nhay-voi-qua': { chu_the: 'lu', goi: ['lu'], hanh_dong: 'nhảy với quả đậu trên giàn cao' },
+  'art:lu-nho-ba-hai-qua': { chu_the: 'lu', goi: ['lu'], hanh_dong: 'nhờ bà hái quả đậu trên cao' },
+  'art:lu-nhay-lay-mu': { chu_the: 'lu', goi: ['lu'], hanh_dong: 'nhảy lấy mũ trên nóc chuồng gà' },
+  'art:lu-nho-ba-lay-mu': { chu_the: 'lu', goi: ['lu'], hanh_dong: 'nhờ bà lấy mũ trên nóc chuồng gà' },
 };
 
 export const HOI_HANH_DONG = /(^|[^\p{L}])(làm gì|đang làm|sẽ làm|làm sao|làm thế nào)([^\p{L}]|$)/iu;
 const coChu = o => o && typeof o === 'object' && ['say', 'label', 't', 'text'].some(k => typeof o[k] === 'string' && o[k].trim());
+// Đáp án được miễn ảnh hành động chỉ khi không có ảnh nào (chỉ chữ). Mặt cảm xúc (face:*) không dùng cho câu hỏi hành động.
+const chiChu = o => coChu(o) && !(typeof o.e === 'string' && o.e.trim());
 
 // Trả về danh sách lỗi cho một câu hỏi { q, opts: [{e}] }.
 export function kiemCauHanhDong(q, opts, where = '') {
   if (typeof q !== 'string' || !HOI_HANH_DONG.test(q) || !Array.isArray(opts) || !opts.length) return [];
-  if (opts.every(coChu)) return [];
+  if (opts.every(chiChu)) return [];
   const loi = [], at = where ? `${where}: ` : '';
   const hinh = opts.map(o => (typeof o === 'string' ? o : o?.e) || '');
-  const khong = hinh.filter((e, i) => !coChu(opts[i]) && !HANH_DONG[e]);
-  if (khong.length) loi.push(`${at}câu hỏi hành động "${q}" nhưng đáp án ${khong.join(', ')} không phải ảnh hành động (quy tắc 38, tam 27/11)`);
+  const khong = hinh.filter((e, i) => !chiChu(opts[i]) && !HANH_DONG[e]);
+  if (khong.length) loi.push(`${at}câu hỏi hành động "${q}" nhưng đáp án ${khong.join(', ')} không phải ảnh vẽ đúng hành động; bé không hình dung được việc làm (quy tắc 38, 42, tam 27/11)`);
   const chu = new Set(hinh.map(e => HANH_DONG[e]?.chu_the).filter(Boolean));
   if (chu.size > 1) loi.push(`${at}các đáp án của "${q}" là hành động của nhiều nhân vật khác nhau; đáp án sai phải là hành động khác của chính nhân vật được hỏi (quy tắc 38)`);
   for (const e of hinh) { const h = HANH_DONG[e]; if (h && !h.goi.some(g => q.toLowerCase().includes(g))) loi.push(`${at}đáp án ${e} là hành động của ${h.chu_the}, không phải nhân vật trong câu "${q}" (quy tắc 38)`); }

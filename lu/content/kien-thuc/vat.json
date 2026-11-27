@@ -11,7 +11,8 @@
   "noi-chon": "nơi ở, chỗ chứa",
   "co-the": "cơ thể",
   "hanh-dong": "hành động",
-  "canh": "cảnh nền"
+  "canh": "cảnh nền",
+  "nhan-vat": "nhân vật"
  },
  "vat": {
   "ga": {
@@ -853,6 +854,51 @@
     "furrow"
    ],
    "an_duoc": false
+  },
+  "lu": {
+   "ten": "Lu",
+   "nhom": "nhan-vat",
+   "en": [
+    "sprout character",
+    "lu "
+   ],
+   "an_duoc": false
+  },
+  "lu-nhay-voi-qua": {
+   "ten": "Lu nhảy với quả đậu",
+   "nhom": "hanh-dong",
+   "en": [
+    "jump",
+    "bean pod"
+   ],
+   "chu_the": "lu"
+  },
+  "lu-nho-ba-hai-qua": {
+   "ten": "Lu nhờ bà hái quả đậu",
+   "nhom": "hanh-dong",
+   "en": [
+    "grandma",
+    "bean pod"
+   ],
+   "chu_the": "lu"
+  },
+  "lu-nhay-lay-mu": {
+   "ten": "Lu nhảy lấy mũ",
+   "nhom": "hanh-dong",
+   "en": [
+    "jump",
+    "hat"
+   ],
+   "chu_the": "lu"
+  },
+  "lu-nho-ba-lay-mu": {
+   "ten": "Lu nhờ bà lấy mũ",
+   "nhom": "hanh-dong",
+   "en": [
+    "grandma",
+    "hat"
+   ],
+   "chu_the": "lu"
   }
  }
 }

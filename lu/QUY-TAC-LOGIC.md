@@ -19,7 +19,7 @@ Máy soát những gì đo được bằng kho kiến thức (`content/kien-thuc
 - **LG02 Cùng loại:** đáp án sai cùng loại với đáp án đúng: hỏi hành động thì toàn hành động, hỏi con vật thì toàn con vật, hỏi đồ ăn thì toàn đồ ăn. Trừ bài "thứ nào khác nhóm" (M19), nơi một vật khác nhóm là chủ ý.
 - **LG03 Đúng một đáp án:** chỉ một đáp án đúng theo kiến thức thật. Đáp án sai phải sai rõ với trẻ 4–6 tuổi, không sai "tùy cách hiểu" (vd hỏi "cái gì bay được" mà có cả chim và ong).
 - **LG04 Sai nhưng hợp lý:** đáp án sai vẫn là điều có thể xảy ra trong thế giới thật (gà con ngủ, gà con chạy), để bé phải suy nghĩ, không vô nghĩa. Không cầu kì: chọn thứ dễ vẽ.
-- **LG05 Hình khớp lời:** hình hiện ra phải đúng thứ lời nói (hỏi bóng thì hiện bóng, hỏi hành động thì hình đang làm hành động, hỏi số lượng thì đúng số vật).
+- **LG05 Hình khớp lời:** hình hiện ra phải đúng thứ lời nói (hỏi bóng thì hiện bóng, hỏi hành động thì hình đang làm hành động, hỏi số lượng thì đúng số vật). Câu hỏi "… nên làm gì?" có đáp án bằng ảnh thì mỗi ảnh phải VẼ ĐÚNG việc làm đó (Lu đang nhảy với quả đậu, bà đang hái giúp), không dùng ảnh tư thế chung của Lu kèm lời đọc. Không sửa lời cho khớp ảnh sai: phải vẽ ảnh đúng (tam 27/11 12:50, quy tắc 42).
 - **LG06 Câu hỏi trả lời được bằng hình:** bé không biết đọc, nên mọi đáp án phải phân biệt được chỉ bằng hình và giọng đọc.
 
 ### B. Khoa học và đời sống

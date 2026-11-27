@@ -50,6 +50,11 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
   check('Agent soát logic đã duyệt đúng bản bài này, 0 lỗi mở', !bb.length, bb.join('; '));
 }
 
+// 1d. Lời khen giọng cô giáo mầm non (quy tắc 43, tam 27/11 12:53)
+{ const { kiemLoiKhen } = await import('./kiem-loi-khen.mjs');
+  const lk = kiemLoiKhen(JSON.parse(await readFile(path.join(ROOT, 'content/drafts', id + '.json'), 'utf8')));
+  check('Lời khen cổ vũ, đa dạng, không lặp (quy tắc 43)', !lk.length, lk.slice(0, 3).join('; ')); }
+
 // 2. Giọng đọc: mọi câu đều có tệp, tệp tồn tại
 const vl = run(['tools/voice-lines-bai.mjs', id]);
 const can = +(vl.match(/cần tạo (\d+)/) || [, 99])[1];

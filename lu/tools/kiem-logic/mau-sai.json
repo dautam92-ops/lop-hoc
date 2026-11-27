@@ -207,6 +207,22 @@
      "e": "art:ga"
     }
    ]
+  },
+  {
+   "ma": "LG05",
+   "vi": "Lỗi 27/11 12:50: Lu nên làm gì, đáp án là ảnh tư thế Lu kèm lời đọc",
+   "q": "Quả đậu trên giàn cao. Lu nên làm gì?",
+   "any": true,
+   "opts": [
+    {
+     "e": "lu:nhay",
+     "say": "Lu nhảy thật cao để với."
+    },
+    {
+     "e": "lu:chi-tay",
+     "say": "Lu nhờ bà hái giúp."
+    }
+   ]
   }
  ],
  "anh_sai": {

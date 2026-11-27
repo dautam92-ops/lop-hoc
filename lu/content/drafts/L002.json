@@ -176,7 +176,7 @@
      "cells": 9,
      "rounds": 2,
      "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
-     "done": "Bé tìm thấy đủ hạt đậu rồi!"
+     "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"
     },
     {
      "activity_id": "L002-B02",
@@ -188,7 +188,7 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
-       "ok": "Đúng rồi! Đó là cái giỏ.",
+       "ok": "Giỏi quá! Đó là cái giỏ.",
        "no": "Bé nhìn kỹ: bóng có quai cầm.",
        "opts": [
         {
@@ -207,7 +207,7 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
-       "ok": "Đúng rồi! Đó là chiếc lá.",
+       "ok": "Hoan hô bé! Đó là chiếc lá.",
        "no": "Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.",
        "opts": [
         {
@@ -241,7 +241,7 @@
     ],
     "bang_chung": "TD.QS.01 có chấm: đúng ngay lần đầu, số lần thử."
    },
-   "done": "Bé tinh mắt quá!"
+   "done": "Ôi, bé tinh mắt quá! Hạt đậu trốn kỹ mà bé vẫn tìm ra!"
   },
   {
    "title": "Ai trốn trong vườn?",
@@ -282,7 +282,7 @@
      "cells": 9,
      "rounds": 1,
      "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
-     "done": "Bé tìm ra hết gà con rồi!"
+     "done": "Tuyệt vời! Bé tìm ra hết các chú gà con rồi!"
     },
     {
      "activity_id": "L002-B04",
@@ -313,7 +313,7 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
-       "ok": "Đúng rồi! Đó là con bướm.",
+       "ok": "Tuyệt vời! Đó là con bướm.",
        "no": "Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.",
        "opts": [
         {
@@ -346,7 +346,7 @@
     ],
     "bang_chung": "TD.QS.01 có chấm, mức ít gợi ý."
    },
-   "done": "Không bạn nào trốn được bé!"
+   "done": "Không bạn nào trốn được bé! Bé giỏi quá!"
   },
   {
    "title": "Hạt về đúng cọc số",
@@ -391,7 +391,7 @@
      ],
      "rounds": 1,
      "no": "Bé đếm số hạt, rồi tìm cọc có số giống vậy.",
-     "done": "Hạt nào cũng về đúng cọc rồi!"
+     "done": "Hoan hô! Hạt nào cũng về đúng cọc rồi!"
     },
     {
      "activity_id": "L002-B06",
@@ -420,7 +420,7 @@
      ],
      "rounds": 1,
      "no": "Bé đếm số quả táo trước nhé.",
-     "done": "Táo đã về đúng cọc!"
+     "done": "Bé giỏi quá! Quả táo nào cũng về đúng cọc!"
     },
     {
      "activity_id": "L002-B07",
@@ -432,7 +432,7 @@
       {
        "q": "Bé tìm ô có một hạt đậu.",
        "a": 0,
-       "ok": "Đúng rồi! Ô này có một hạt đậu.",
+       "ok": "Chính xác! Ô này có một hạt đậu.",
        "no": "Bé đếm từng hạt xem.",
        "opts": [
         {
@@ -453,7 +453,7 @@
       {
        "q": "Bé tìm ô có hai hạt đậu.",
        "a": 1,
-       "ok": "Đúng rồi! Ô này có hai hạt đậu.",
+       "ok": "Bé giỏi quá! Ô này có hai hạt đậu.",
        "no": "Bé đếm từng hạt xem.",
        "opts": [
         {
@@ -489,7 +489,7 @@
     ],
     "bang_chung": "TO.DEM.01 có chấm."
    },
-   "done": "Bé ghép số giỏi quá!"
+   "done": "Bé ghép số giỏi quá! Đếm đúng rồi mới ghép, bé nhớ nhé!"
   },
   {
    "title": "Đếm cùng gà con",
@@ -559,7 +559,7 @@
     ],
     "bang_chung": "TO.DEM.01 ôn."
    },
-   "done": "Bé đếm giỏi quá!"
+   "done": "Bé đếm giỏi quá! Mỗi bạn một tiếng đếm, đúng rồi đấy!"
   },
   {
    "title": "Hạt đậu lăn tới đâu?",
@@ -587,7 +587,7 @@
       {
        "q": "Gió thổi, hạt đậu lăn ra khỏi cái gì?",
        "a": 0,
-       "ok": "Đúng rồi! Hạt lăn ra khỏi túi.",
+       "ok": "Giỏi quá! Hạt lăn ra khỏi túi.",
        "no": "Bé nghe lại nhé: hạt lăn ra khỏi túi.",
        "opts": [
         {
@@ -605,7 +605,7 @@
       {
        "q": "Hạt đậu lăn tới gần con vật nào?",
        "a": 1,
-       "ok": "Đúng rồi! Hạt lăn tới chỗ gà con.",
+       "ok": "Hoan hô bé! Hạt lăn tới chỗ gà con.",
        "no": "Hạt lăn tới chỗ bạn gà con đấy.",
        "opts": [
         {
@@ -656,7 +656,7 @@
     ],
     "bang_chung": "Tiếp xúc TV.NG.01, TV.AM.01."
    },
-   "done": "Bé nghe chuyện giỏi lắm!"
+   "done": "Bé nghe chuyện giỏi quá! Bé nhớ hết hạt đậu đi đâu rồi!"
   },
   {
    "title": "Lật thẻ tìm đôi",
@@ -687,7 +687,7 @@
       "art:ga"
      ],
      "pairs": 3,
-     "done": "Bé nhớ chỗ các thẻ giỏi lắm!",
+     "done": "Trí nhớ của bé tuyệt vời quá! Lu phục bé luôn!",
      "evidence": "tiep-xuc"
     },
     {
@@ -706,7 +706,7 @@
       "art:hat-dau"
      ],
      "pairs": 4,
-     "done": "Bé giỏi lắm!",
+     "done": "Bé giỏi quá! Bốn đôi thẻ mà bé tìm ra hết!",
      "evidence": "tiep-xuc"
     },
     {
@@ -725,7 +725,7 @@
       "art:ech"
      ],
      "pairs": 4,
-     "done": "Bé nhớ chỗ giỏi quá!",
+     "done": "Bé nhớ hết chỗ rồi! Bé giỏi quá đi thôi!",
      "evidence": "tiep-xuc"
     }
    ],
@@ -738,7 +738,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.TN.01."
    },
-   "done": "Bé nhớ chỗ các thẻ giỏi lắm!"
+   "done": "Bé nhớ giỏi quá! Mình chơi thêm lượt nữa nào!"
   },
   {
    "title": "Thứ nào khác nhóm?",
@@ -787,7 +787,7 @@
       {
        "q": "Thứ nào không ăn được?",
        "a": 3,
-       "ok": "Đúng rồi! Viên sỏi không ăn được.",
+       "ok": "Tuyệt vời! Viên sỏi không ăn được.",
        "no": "Táo, cà rốt, rau đều ăn được. Bé tìm thứ khác nhé.",
        "opts": [
         {
@@ -808,7 +808,7 @@
       {
        "q": "Thứ nào không bay được?",
        "a": 1,
-       "ok": "Đúng rồi! Con ốc không bay được.",
+       "ok": "Chính xác! Con ốc không bay được.",
        "no": "Chim, ong, bướm đều bay được. Còn bạn nào?",
        "opts": [
         {
@@ -842,7 +842,7 @@
     ],
     "bang_chung": "Tiếp xúc TD.LG.04."
    },
-   "done": "Bé suy nghĩ giỏi quá!"
+   "done": "Bé suy nghĩ giỏi quá! Bé nhìn ra ngay thứ nào khác nhóm."
   },
   {
    "title": "Hạt đậu gặp gì?",
@@ -871,7 +871,7 @@
       {
        "q": "Hạt đậu lăn vào chỗ ướt. Hạt cần gì để nảy mầm?",
        "a": 0,
-       "ok": "Đúng rồi! Hạt cần nước để nảy mầm.",
+       "ok": "Bé giỏi quá! Hạt cần nước để nảy mầm.",
        "no": "Hạt cần nước. Bé tìm giọt nước nhé.",
        "opts": [
         {
@@ -889,7 +889,7 @@
       {
        "q": "Gà con thấy hạt đậu. Gà con sẽ làm gì?",
        "a": 1,
-       "ok": "Đúng rồi! Gà con mổ hạt để ăn.",
+       "ok": "Giỏi quá! Gà con mổ hạt để ăn.",
        "no": "Gà con thích ăn hạt đấy.",
        "opts": [
         {
@@ -910,7 +910,7 @@
       {
        "q": "Hạt nằm trong đất ẩm. Hạt nhú ra gì trước?",
        "a": 2,
-       "ok": "Đúng rồi! Hạt nhú ra mầm đậu trước.",
+       "ok": "Hoan hô bé! Hạt nhú ra mầm đậu trước.",
        "no": "Hạt trong đất ẩm sẽ nảy mầm trước.",
        "opts": [
         {
@@ -942,7 +942,7 @@
     ],
     "bang_chung": "Tiếp xúc KP.KH.01."
    },
-   "done": "Bé đoán giỏi quá!"
+   "done": "Bé đoán giỏi quá! Bé hiểu hạt đậu cần gì để lớn rồi!"
   },
   {
    "title": "Lu thấy thế nào?",
@@ -1026,7 +1026,7 @@
      "times": 2,
      "inn": "Hít vào thật chậm, như ngửi một bông hoa.",
      "out": "Thở ra từ từ, như thổi một ngọn nến.",
-     "done": "Lu thấy dễ chịu hơn rồi."
+     "done": "Cảm ơn bé, Lu thấy dễ chịu hơn rồi! Khi lo lắng, bé cũng hít thở chậm như vậy nhé."
     }
    ],
    "thiet_ke": {
@@ -1038,7 +1038,7 @@
     ],
     "bang_chung": "Tiếp xúc EQ.CX.01, EQ.CX.02."
    },
-   "done": "Bé hiểu cảm xúc của Lu rồi!"
+   "done": "Cảm ơn bé đã hiểu Lu! Khi bạn buồn, bé hỏi thăm bạn như vậy nhé."
   },
   {
    "title": "One, two, three",
@@ -1108,7 +1108,7 @@
     ],
     "bang_chung": "Tiếp xúc EN.EN.04; không chấm phát âm."
    },
-   "done": "Bé nhớ tiếng Anh giỏi quá!"
+   "done": "Hoan hô bé! Bé nhớ tiếng Anh giỏi quá!"
   },
   {
    "title": "Vườn đậu của bé",
@@ -1217,7 +1217,7 @@
     ],
     "bang_chung": "Tiếp xúc KP.VD.01, KP.ST.D01."
    },
-   "done": "Vườn đậu của bé đẹp quá!"
+   "done": "Ôi, vườn đậu của bé đẹp quá! Bé tưởng tượng hay lắm!"
   },
   {
    "title": "Cất hạt gọn gàng",
@@ -1263,7 +1263,7 @@
       {
        "q": "Tưới xong rồi. Lu cất bình tưới ở đâu?",
        "a": 1,
-       "ok": "Đúng rồi! Bình tưới để cạnh vòi nước.",
+       "ok": "Tuyệt vời! Bình tưới để cạnh vòi nước.",
        "no": "Bình tưới để gần vòi nước cho dễ lấy.",
        "opts": [
         {
@@ -1308,7 +1308,7 @@
     ],
     "bang_chung": "Tiếp xúc KS.SX.01, KS.NN.01."
    },
-   "done": "Nhà Lu gọn gàng quá!"
+   "done": "Bé giỏi quá! Từ nay chơi xong, bé nhớ cất đồ gọn gàng nhé."
   }
  ],
  "end": [

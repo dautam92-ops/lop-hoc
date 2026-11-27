@@ -8,6 +8,7 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { kiemCauHanhDong } from '../core/hanh-dong.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const KB = JSON.parse(await readFile(path.join(ROOT, 'content/kien-thuc/vat.json'), 'utf8')).vat;
@@ -44,6 +45,8 @@ export function kiemCau(it, where) {
   const at = `${where}: "${q}"`;
   const slots = opts.map(slotOf);
   for (const s of slots) if (s && !KB[s]) loi.push(`${at}: ảnh art:${s} chưa có trong kho kiến thức content/kien-thuc/vat.json (thêm tên, nhóm, thuộc tính trước khi dùng)`);
+  // LG05 + quy tắc 38, 42: câu hỏi hành động thì ảnh đáp án phải vẽ đúng hành động (kể cả câu chọn tự do any).
+  for (const x of kiemCauHanhDong(q, opts, where)) loi.push(x.replace(where + ': ', at + ': ') + ' (LG05)');
   if (it.any || opts.every(coChu)) return { loi, canh };
   const a = Number.isInteger(it.a) ? it.a : null;
   const dung = a !== null ? slots[a] : null;
