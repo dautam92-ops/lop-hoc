@@ -1,0 +1,40 @@
+<title>Ảnh chờ duyệt buổi 1</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Lưới thẻ: mỗi ảnh một thẻ, hai phương án A và B cạnh nhau trên nền kẻ ô (thấy phần trong suốt) */
+:root { --bg:#f6f3ec; --card:#fffdf8; --fg:#2f2a22; --muted:#7a6f5f; --line:#e4dccb; --accent:#5f8a2c; --chk:#ece6d8;
+  --f-head:"Baloo 2", "Be Vietnam Pro", system-ui, sans-serif; --f-body:"Be Vietnam Pro", system-ui, sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#1d1b17; --card:#26231e; --fg:#f1ebdf; --muted:#b5aa98; --line:#3a352c; --accent:#9cc464; --chk:#312d26; color-scheme:dark } }
+:root[data-theme="dark"] { --bg:#1d1b17; --card:#26231e; --fg:#f1ebdf; --muted:#b5aa98; --line:#3a352c; --accent:#9cc464; --chk:#312d26; color-scheme:dark }
+body { background:var(--bg); color:var(--fg); font-family:var(--f-body); padding-block:20px 40px; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width:1100px; margin:0 auto; display:grid; gap:20px; }
+h1 { font-family:var(--f-head); font-size:1.7rem; margin:0; text-wrap:balance; }
+.intro { color:var(--muted); line-height:1.5; margin:4px 0 0; max-width:65ch; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:16px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px; display:grid; gap:10px; min-width:0; }
+.card h2 { font-family:var(--f-head); font-size:1.2rem; margin:0; }
+.card p { margin:0; color:var(--muted); font-size:.9rem; line-height:1.45; }
+.pair { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+figure { margin:0; display:grid; gap:4px; }
+.img { aspect-ratio:1; border-radius:10px; background-color:var(--card); background-image:linear-gradient(45deg,var(--chk) 25%,transparent 25%,transparent 75%,var(--chk) 75%),linear-gradient(45deg,var(--chk) 25%,transparent 25%,transparent 75%,var(--chk) 75%); background-size:16px 16px; background-position:0 0,8px 8px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.img img { width:100%; height:100%; object-fit:contain; }
+figcaption { font-weight:700; text-align:center; color:var(--accent); }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Be+Vietnam+Pro:wght@400;600&display=swap">
+<main>
+<header><h1>Ảnh chờ duyệt buổi 1 (M001)</h1>
+<p class="intro">8 ảnh, mỗi ảnh 2 phương án A và B. Nền kẻ ô là phần trong suốt. Sếp nhắn tên ảnh và chữ A hoặc B (ví dụ "gió thổi A"), hoặc ghi ảnh nào cần vẽ lại.</p></header>
+<section class="grid" id="g"></section>
+</main>
+<script>
+const A = [
+ ['gio-thoi','Gió thổi','Câu "Cái gì thổi hạt đậu bay đi?" và "Vì sao Mono buồn?". Phải thấy hạt đậu bay trong gió.'],
+ ['qua-tang','Hộp quà','Đáp án sai "Mono được quà".'],
+ ['mua','Mưa','Đáp án sai "Cái gì thổi hạt đậu bay đi?".'],
+ ['mat-troi','Mặt trời','Đáp án đúng "Hạt cần gì nữa để lớn?".'],
+ ['sao','Ngôi sao','Hình dán trang trí túi hạt.'],
+ ['banh-mi','Bánh mì','Đáp án sai "Hạt đậu khát nước, bé đưa gì?".'],
+ ['giay','Đôi giày','Đáp án sai "Hạt đậu khát nước, bé đưa gì?".'],
+ ['mu','Cái mũ','Bài cất đồ đúng chỗ (kéo vào đúng bóng).']];
+document.getElementById('g').innerHTML = A.map(([s,t,d]) => `<article class="card"><h2>${t}</h2><p>${d}</p><div class="pair">${['a','b'].map(v => `<figure><div class="img"><img src="${s}_${v}.png" alt="${t} phương án ${v.toUpperCase()}" loading="lazy"></div><figcaption>${v.toUpperCase()}</figcaption></figure>`).join('')}</div></article>`).join('');
+</script>
