@@ -36,7 +36,7 @@ Máy soát những gì đo được bằng kho kiến thức (`content/kien-thuc
 
 ### D. Ảnh (câu mô tả trước khi vẽ)
 - **LG15 Đúng vai:** ảnh đáp án đúng thể hiện rõ điều được hỏi (gà con đang mổ hạt: mỏ chạm hạt). Ảnh đáp án sai thể hiện hành động hay vật khác, cùng nhân vật khi hỏi về nhân vật.
-- **LG16 Không thêm thứ lạ:** ảnh đồ vật chỉ có vật đó (ghi "only the object, no animal, no people"); ảnh con vật không thêm con vật khác. Khung tròn đơn giản và mặt cười được phép (tam 27/11), nhưng không có nhiều hình người quanh vật ở ảnh đáp án.
+- **LG16 Không thêm thứ lạ:** (tam 27/11 15:49: với ảnh hành động hay cảnh, thêm chi tiết nền như con gà, cây, hoa là CHẤP NHẬN được, miễn hành động chính của nhân vật rõ ràng và chi tiết thêm không làm bé hiểu sai đáp án; chỉ loại ảnh khi hành động chính sai hoặc thứ thêm vào gây nhầm.) ảnh đồ vật chỉ có vật đó (ghi "only the object, no animal, no people"); ảnh con vật không thêm con vật khác. Khung tròn đơn giản và mặt cười được phép (tam 27/11), nhưng không có nhiều hình người quanh vật ở ảnh đáp án.
 - **LG17 Một ý một ảnh:** mỗi ảnh một hành động hoặc một vật chính, nhìn nhỏ trên ô đáp án vẫn nhận ra.
 - **LG18 Tư thế làm được:** hành động phải vẽ được rõ ràng; nếu hai lần vẽ không ra (vd mỏ nhúng nước), đổi hành động dễ vẽ thay vì giữ ảnh sai.
 
