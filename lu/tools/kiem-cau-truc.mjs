@@ -64,7 +64,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const id = process.argv[2] || 'L001';
   const dir = path.join(ROOT, 'content/drafts');
   const all = [];
-  for (const f of (await readdir(dir)).filter(f => /^L\d+\.json$/.test(f))) all.push(JSON.parse(await readFile(path.join(dir, f), 'utf8')));
+  for (const f of (await readdir(dir)).filter(f => /^[LM]\d+\.json$/.test(f))) all.push(JSON.parse(await readFile(path.join(dir, f), 'utf8')));
   const pkg = all.find(p => p.lesson_id === id);
   if (!pkg) { console.log(JSON.stringify({ cau_truc: [`không thấy ${id}`], on_tap: [] })); process.exit(1); }
   const tr = all.filter(p => so(p.lesson_id) < so(id));

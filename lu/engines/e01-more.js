@@ -2,6 +2,8 @@
 //   clue  : suy luận từ manh mối. Lu nói từng manh mối, bé chạm để LOẠI các hình không khớp; còn lại một hình là đáp án.
 //           Đáp án chính xác theo cách dựng: mỗi hình có thuộc tính, mỗi manh mối là điều kiện; verify bảo đảm còn đúng một hình.
 //   flash : nhìn nhanh rồi chọn số lượng theo trí nhớ (cách học 45, tam khen hay). Có nút "Xem lại".
+//           levels (giáo trình Mono, kịch bản từng màn): mỗi màn cố định {n, ms, scatter, distract, look, q}, đáp án act.opts (vd [1,2,3]).
+//           distract: một vật gây nhiễu (vd lá, sỏi) đặt chung, KHÔNG được đếm.
 import { vis, esc, fill, sleep, setAuto, numBtn, req } from './kit.js';
 import { groupHTML } from '../ui/art.js';
 
@@ -13,25 +15,29 @@ export function validate(act) {
   if (act.mode === 'clue') { e.push(...req(act, ['puzzles', 'done'])); (act.puzzles || []).forEach((p, k) => { const left = p.opts.filter(o => p.clues.every(c => fits(o, c)));
     if (left.length !== 1) e.push(`${act.activity_id} câu ${k + 1}: các manh mối phải để lại đúng MỘT hình (đang còn ${left.length})`);
     let rest = p.opts; p.clues.forEach((c, j) => { const nx = rest.filter(o => fits(o, c)); if (nx.length === rest.length) e.push(`${act.activity_id} câu ${k + 1}: manh mối ${j + 1} không loại được hình nào`); rest = nx; }); }); }
-  if (act.mode === 'flash') { e.push(...req(act, ['objs', 'pool', 'q', 'ok', 'no', 'words'])); if (act.scatter && Math.max(...(act.pool || [0])) > 12) e.push(`${act.activity_id}: xếp lộn xộn tối đa 12 vật`); if (Math.max(...(act.pool || [0])) > (act.words || []).length) e.push(`${act.activity_id}: thiếu chữ đọc số`); }
+  if (act.mode === 'flash' && act.levels) { e.push(...req(act, ['objs', 'q', 'ok', 'no', 'words', 'opts'])); act.levels.forEach((L, k) => { if (!act.opts.includes(L.n)) e.push(`${act.activity_id} màn ${k + 1}: đáp án không có trong lựa chọn`); if ((L.ms || act.show_ms || 2000) < 1000) e.push(`${act.activity_id} màn ${k + 1}: hiện dưới 1 giây quá nhanh cho 4–6 tuổi`); }); }
+  else if (act.mode === 'flash') { e.push(...req(act, ['objs', 'pool', 'q', 'ok', 'no', 'words'])); if (act.scatter && Math.max(...(act.pool || [0])) > 12) e.push(`${act.activity_id}: xếp lộn xộn tối đa 12 vật`); if (Math.max(...(act.pool || [0])) > (act.words || []).length) e.push(`${act.activity_id}: thiếu chữ đọc số`); }
   return e;
 }
 export function generate(act, rng) {
   if (act.mode === 'clue') return { rounds: rng.sample(act.puzzles.map((p, i) => i), act.rounds || act.puzzles.length).map(i => ({ i, order: rng.shuffle(act.puzzles[i].opts.map((o, j) => j)) })) };
+  if (act.levels) return { rounds: act.levels.map((L, k) => ({ n: L.n, obj: act.objs[k % act.objs.length], opts: act.opts, ms: L.ms, look: L.look, q: L.q, distract: L.distract || null,
+    ...(L.scatter || L.distract ? { pos: scatterPos(L.n + (L.distract ? 1 : 0), rng) } : {}) })) };
   return { rounds: rng.sample(act.pool, act.rounds || 3).map(n => { const s = new Set([n]); for (const d of rng.shuffle([-1, 1, -2, 2])) { if (s.size >= 3) break; if (n + d >= 1 && n + d <= Math.max(...act.pool) + 1) s.add(n + d); } return { n, obj: rng.pick(act.objs), opts: [...s].sort((a, b) => a - b), ...(act.scatter ? { pos: scatterPos(n, rng) } : {}) }; }) };
 }
 // Xếp lộn xộn (cấp 3 trở lên của "Nhìn nhanh đếm nhanh"): chọn n ô ngẫu nhiên trong lưới 4×3, lệch nhẹ, không chồng lên nhau
 function scatterPos(n, rng) { const cells = rng.sample(Array.from({ length: 12 }, (_, i) => i), n); return cells.map(c => [12.5 + (c % 4) * 25 + rng.int(-5, 5), 17 + Math.floor(c / 4) * 33 + rng.int(-5, 5)]); }
-const scatterHTML = (obj, pos) => `<span class="grp-box scat" role="img" aria-label="${pos.length}">${pos.map(([x, y]) => `<span class="grp-it" style="left:${x}%;top:${y}%;width:21%;height:28%">${vis(obj)}</span>`).join('')}</span>`;
+// distract: vật gây nhiễu chiếm vị trí cuối, không tính vào số lượng (aria-label là số vật cần đếm)
+const scatterHTML = (obj, pos, distract) => `<span class="grp-box scat" role="img" aria-label="${pos.length - (distract ? 1 : 0)}">${pos.map(([x, y], i) => `<span class="grp-it${distract && i === pos.length - 1 ? ' nhieu' : ''}" style="left:${x}%;top:${y}%;width:21%;height:28%">${vis(distract && i === pos.length - 1 ? distract : obj)}</span>`).join('')}</span>`;
 export function verify(act, v) {
   const e = [];
   if (act.mode === 'flash') v.rounds.forEach((r, k) => { if (!r.opts.includes(r.n)) e.push(`${act.activity_id} vòng ${k + 1}: đáp án không có trong lựa chọn`); if (r.n > 10 && !act.ten_frame) e.push(`${act.activity_id}: số lớn hơn 10 cần khung mười`); });
   return e;
 }
 export function lines(act) {
-  const L = [...(act.intro || []), act.done, act.again, act.q, act.no, act.look];
+  const L = [...(act.intro || []), act.done, act.again, act.q, act.no, act.look, ...(act.levels || []).flatMap(x => [x.look, x.q])];
   if (act.mode === 'clue') act.puzzles.forEach(p => { L.push(p.q, p.ok, ...p.clues.map(c => c.say), ...p.opts.map(o => o.say)); });
-  if (act.mode === 'flash') act.pool.forEach(n => L.push(fill(act.ok, { word: act.words[n - 1] })));
+  if (act.mode === 'flash') (act.levels ? [...new Set(act.levels.map(x => x.n))] : act.pool).forEach(n => L.push(fill(act.ok, { word: act.words[n - 1] })));
   return L.filter(Boolean);
 }
 export async function mount(ctx, act, v) { for (let r = 0; r < v.rounds.length; r++) { await (act.mode === 'clue' ? clue : flash)(ctx, act, v.rounds[r], r === 0); ctx.tick?.(); } }
@@ -63,10 +69,10 @@ function clue(ctx, act, R, first) {
 function flash(ctx, act, R, first) {
   const { ui, voice } = ctx; let wrong = 0;
   return new Promise(done => {
-    const pic = act.ten_frame ? vis(`art:khung10:${R.n}`) : R.pos ? scatterHTML(R.obj, R.pos) : groupHTML(R.obj, R.n);
+    const pic = act.ten_frame ? vis(`art:khung10:${R.n}`) : R.pos ? scatterHTML(R.obj, R.pos, R.distract) : groupHTML(R.obj, R.n);
     ui.scene(act.title, `<div class="flash"><div class="fl-pic">${pic}</div><div class="fl-cover"><span>?</span></div></div>`);
     const F = ui.stage.querySelector('.flash');
-    const show = async () => { F.classList.remove('hid'); await sleep(ctx, act.show_ms || 2000); F.classList.add('hid'); };
+    const show = async () => { F.classList.remove('hid'); await sleep(ctx, R.ms || act.show_ms || 2000); F.classList.add('hid'); };
     const box = ui.answers('Bé chọn số', R.opts.map((v, i) => numBtn(v, i)).join('') + `<button class="big-btn alt fl-again">Xem lại</button>`);
     const ok = box.querySelector(`[data-i="${R.opts.indexOf(R.n)}"]`); ctx.test.mark(ok);
     box.querySelector('.fl-again').onclick = () => { if (!voice.busy) show(); };
@@ -74,6 +80,7 @@ function flash(ctx, act, R, first) {
       if (v === R.n) { b.classList.add('right'); F.classList.remove('hid'); ctx.record({ skill_id: act.skill_id, correct: true, first_try: wrong === 0, tries: wrong + 1, hints: 0 }); voice.say(['__jingle', fill(act.ok, { word: act.words[R.n - 1] })]).then(done); }
       else { wrong++; ui.shake(b); voice.say(['__boing', act.no]); if (wrong >= 2) ok.classList.add('hint'); } });
     setAuto(ctx, () => ok.click(), () => box.querySelector(`.num:not([data-i="${R.opts.indexOf(R.n)}"])`)?.click());
-    voice.say(first ? [...(act.intro || []), act.look].filter(Boolean) : [act.look].filter(Boolean)).then(show).then(() => voice.say([act.q]));
+    const look = R.look || act.look;
+    voice.say(first ? [...(act.intro || []), look].filter(Boolean) : [look].filter(Boolean)).then(show).then(() => voice.say([R.q || act.q]));
   });
 }

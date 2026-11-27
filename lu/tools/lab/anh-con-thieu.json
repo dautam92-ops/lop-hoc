@@ -293,6 +293,20 @@
    "vi": "Luống đất để gieo hạt (L001, soát logic 27/11)",
    "prompt": "a small mound of soft brown garden soil with two shallow furrows, no plants, no grass, isolated on plain white background",
    "tach_nen": true
+  },
+  {
+   "id": "M001-OB-gio-thoi",
+   "slot": "art:gio-thoi",
+   "vi": "Gió thổi (đáp án \"Cái gì thổi hạt đậu bay đi?\", buổi M001)",
+   "prompt": "soft swirling wind lines with a few green leaves flying, vignette shape, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M001-OB-qua-tang",
+   "slot": "art:qua-tang",
+   "vi": "Hộp quà có nơ (đáp án sai \"Mono được quà\", buổi M001)",
+   "prompt": "a small gift box wrapped in yellow paper with a red ribbon bow, isolated on plain white background",
+   "tach_nen": true
   }
  ]
 }

@@ -35,7 +35,8 @@ export const shadow = (cx = 50, cy = 90, rx = 26) => `<ellipse cx="${cx}" cy="${
 /* ---------- Đồ vật ---------- */
 const BEAN = 'M36 30c9-8 25-6 31 6 4 8 0 14-5 18-4 3-4 8 0 12 6 7 0 19-14 18-15-1-24-14-22-30 1-10 4-18 10-24z';
 export const ART = {
-  'hat-dau': () => wrap(shadow(50, 90, 22) + wc(`<path d="${BEAN}" fill="#d9b46a"/><path d="M40 34c6-4 14-4 18 1" stroke="#fff4d6" stroke-width="5" stroke-linecap="round" fill="none" opacity=".7"/>`) +
+  // hat-dau:do | xanh | vang: hạt màu cho trò xếp theo màu (giáo trình Mono M001); không tham số thì dùng ảnh vẽ tay đã duyệt
+  'hat-dau': (c) => wrap(shadow(50, 90, 22) + wc(`<path d="${BEAN}" fill="${({ do: '#d9534a', xanh: '#4f9d4a', vang: '#f2c230', 'xanh-duong': '#3d86ad' })[c] || '#d9b46a'}"/><path d="M40 34c6-4 14-4 18 1" stroke="#fff4d6" stroke-width="5" stroke-linecap="round" fill="none" opacity=".7"/>`) +
     pen(`<path d="${BEAN}"/><path d="M60 52c-5 2-7 6-5 10" stroke-width="1.8"/>`), 'hạt đậu'),
   'mam-dau': () => wrap(shadow(50, 92, 22) + wc(`<path d="M30 58c4-12 36-12 40 0 3 12-6 26-20 26S27 70 30 58z" fill="#d9b46a"/><path d="M50 56c0-10 0-18 1-24" stroke="#7da23a" stroke-width="5" fill="none"/>
     <path d="M51 34c-12-2-20-10-20-20 12 0 20 7 20 20z" fill="#a9c75a"/><path d="M51 34c10-3 18-12 18-22-12 1-18 9-18 22z" fill="#8fae3e"/>`) +
@@ -145,7 +146,7 @@ export function groupHTML(obj, n) {
 }
 let luFn = null, assetSrc = {};
 // Hình tạm cho slot mới khi chưa có ảnh vẽ tay (chờ máy 24H): bầu trời, mặt đất cho giỏ phân loại.
-const ART_TAM = { 'bau-troi': 'may', 'mat-dat': 'bui-co' };
+const ART_TAM = { 'bau-troi': 'may', 'mat-dat': 'bui-co', 'gio-thoi': 'may', 'qua-tang': 'hop' };
 export const setVisLu = f => { luFn = f; };
 export const setVisAssets = m => { assetSrc = m || {}; };
 export function vis(x) {

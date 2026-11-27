@@ -953,6 +953,22 @@
     "hat"
    ],
    "chu_the": "mono"
+  },
+  "gio-thoi": {
+   "ten": "gió thổi",
+   "nhom": "thien-nhien",
+   "en": [
+    "wind"
+   ],
+   "an_duoc": false
+  },
+  "qua-tang": {
+   "ten": "hộp quà",
+   "nhom": "do-vat",
+   "en": [
+    "gift"
+   ],
+   "an_duoc": false
   }
  }
 }
