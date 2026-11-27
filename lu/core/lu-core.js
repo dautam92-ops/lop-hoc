@@ -106,7 +106,7 @@ export function idleHelp(root, voice, { getTargets = () => [], delay = 9000, hin
 
 /* ---------- Khung màn hình: thanh chặng, cảnh học, khu đáp án tách riêng (S02-R07, S04-R08) ---------- */
 // Dự phòng khi chưa nạp ảnh Lu chính thức: mầm cây hai lá (không dùng hình chú chó cũ)
-export const LU_SVG = `<svg class="lu" viewBox="0 0 160 150" role="img" aria-label="Lu"><ellipse cx="80" cy="140" rx="40" ry="7" fill="#6b5232" opacity=".12"/><path d="M80 138V80" stroke="#6a8a2a" stroke-width="8" stroke-linecap="round"/><path d="M80 84C52 84 34 64 34 38c28 0 46 18 46 46z" fill="#a9c75a" stroke="#6b5232" stroke-width="3"/><path d="M80 84c26-3 44-24 44-50-28 3-44 22-44 50z" fill="#8fae3e" stroke="#6b5232" stroke-width="3"/></svg>`;
+export const LU_SVG = `<svg class="lu" viewBox="0 0 160 150" role="img" aria-label="Mono"><ellipse cx="80" cy="140" rx="40" ry="7" fill="#6b5232" opacity=".12"/><path d="M80 138V80" stroke="#6a8a2a" stroke-width="8" stroke-linecap="round"/><path d="M80 84C52 84 34 64 34 38c28 0 46 18 46 46z" fill="#a9c75a" stroke="#6b5232" stroke-width="3"/><path d="M80 84c26-3 44-24 44-50-28 3-44 22-44 50z" fill="#8fae3e" stroke="#6b5232" stroke-width="3"/></svg>`;
 
 // Ảnh Lu theo ngữ cảnh: app gắn hàm trả về <img> từ Character Registry; mặc định dùng hình cũ để engine chạy độc lập.
 const luArtHook = { fn: null };

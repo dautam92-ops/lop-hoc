@@ -4469,6 +4469,279 @@
    "trang_thai": "cho_duyet",
    "ghi_chu": "Bản xuất bản WebP 512 của MN-0065",
    "dung_o": []
+  },
+  {
+   "asset_id": "MN-0067",
+   "version": 1,
+   "path": "assets/mono/goc/MN-0067_mono-bang-trang-phuc_v01.png",
+   "mo_ta": "mono-bang-trang-phuc",
+   "loai": "png",
+   "kich_thuoc": {
+    "w": 1536,
+    "h": 1024
+   },
+   "bytes": 1759196,
+   "sha256": "aaf77c87bad460ef8f8f6680fa1e26b1166bd515e3da1b6a64fac8cb756c9878",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "12790.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Bảng 6 trang phục Mono (ChatGPT, tam gửi 27/11)",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0068",
+   "version": 1,
+   "path": "assets/mono/trang-phuc/MN-0068_mono-trang-phuc-tham-hiem_v01.png",
+   "mo_ta": "mono-trang-phuc-tham-hiem",
+   "loai": "png",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 205987,
+   "sha256": "e73d9900658355d20a1aff1d30a6fca1ca0a15dc9230145ebb57c4f687611374",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "tham-hiem.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Cắt từ MN-0067, xóa nền trắng",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0069",
+   "version": 1,
+   "path": "assets/mono/xuat-ban/MN-0069_mono-trang-phuc-tham-hiem-512_v01.webp",
+   "mo_ta": "mono-trang-phuc-tham-hiem-512",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 38522,
+   "sha256": "194384d5c22e9391fa113e0b2155097d5d148516014e37fbc544db13a8c370e5",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "tham-hiem.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Bản xuất bản WebP 512 của MN-0068",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0070",
+   "version": 1,
+   "path": "assets/mono/trang-phuc/MN-0070_mono-trang-phuc-nha-khoa-hoc_v01.png",
+   "mo_ta": "mono-trang-phuc-nha-khoa-hoc",
+   "loai": "png",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 209705,
+   "sha256": "1338fe9c623f8903ce6b6eb27b616cf6220b3d27ed0838248504b955a4e945cc",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "nha-khoa-hoc.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Cắt từ MN-0067, xóa nền trắng",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0071",
+   "version": 1,
+   "path": "assets/mono/xuat-ban/MN-0071_mono-trang-phuc-nha-khoa-hoc-512_v01.webp",
+   "mo_ta": "mono-trang-phuc-nha-khoa-hoc-512",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 38978,
+   "sha256": "e20a77fe00ac00fd753d4a521fa3daa965c0a3ba7a62a8e595428e70c4d6ce69",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "nha-khoa-hoc.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Bản xuất bản WebP 512 của MN-0070",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0072",
+   "version": 1,
+   "path": "assets/mono/trang-phuc/MN-0072_mono-trang-phuc-hoa-si_v01.png",
+   "mo_ta": "mono-trang-phuc-hoa-si",
+   "loai": "png",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 208129,
+   "sha256": "2bf86205360e488477a003d55a6f1544c147b845ad27a3d4af4c4af22737b82f",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "hoa-si.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Cắt từ MN-0067, xóa nền trắng",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0073",
+   "version": 1,
+   "path": "assets/mono/xuat-ban/MN-0073_mono-trang-phuc-hoa-si-512_v01.webp",
+   "mo_ta": "mono-trang-phuc-hoa-si-512",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 38000,
+   "sha256": "2c52bc9ca55880aaa9b09f0964c3f534786222405eb6a643bbeadcf8c5c82aa6",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "hoa-si.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Bản xuất bản WebP 512 của MN-0072",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0074",
+   "version": 1,
+   "path": "assets/mono/trang-phuc/MN-0074_mono-trang-phuc-lam-vuon_v01.png",
+   "mo_ta": "mono-trang-phuc-lam-vuon",
+   "loai": "png",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 206540,
+   "sha256": "10c401ca6550d0960fa955e5495b8677fccb3e717ab45a8a1e48f0e949b6d6d2",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "lam-vuon.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Cắt từ MN-0067, xóa nền trắng",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0075",
+   "version": 1,
+   "path": "assets/mono/xuat-ban/MN-0075_mono-trang-phuc-lam-vuon-512_v01.webp",
+   "mo_ta": "mono-trang-phuc-lam-vuon-512",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 37620,
+   "sha256": "6f8cd1a1e6239c8cadd54dc67f5a99f0b2784e280e972d8079e3cc7287fa041b",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "lam-vuon.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Bản xuất bản WebP 512 của MN-0074",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0076",
+   "version": 1,
+   "path": "assets/mono/trang-phuc/MN-0076_mono-trang-phuc-phi-hanh-gia_v01.png",
+   "mo_ta": "mono-trang-phuc-phi-hanh-gia",
+   "loai": "png",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 218138,
+   "sha256": "7b88d12aab601cb78d3611d62a38645c461286abff6d7e7b2defe5e93c98adb9",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "phi-hanh-gia.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Cắt từ MN-0067, xóa nền trắng",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0077",
+   "version": 1,
+   "path": "assets/mono/xuat-ban/MN-0077_mono-trang-phuc-phi-hanh-gia-512_v01.webp",
+   "mo_ta": "mono-trang-phuc-phi-hanh-gia-512",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 38952,
+   "sha256": "5b6f6b2250cc625ab1ab65cc620a43e73f158ce854f524e204e370dd413ec37c",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "phi-hanh-gia.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Bản xuất bản WebP 512 của MN-0076",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0078",
+   "version": 1,
+   "path": "assets/mono/trang-phuc/MN-0078_mono-trang-phuc-di-mua_v01.png",
+   "mo_ta": "mono-trang-phuc-di-mua",
+   "loai": "png",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 213483,
+   "sha256": "55f647528c700930d60093ce978b52a604c109a0b35650d152f85ed9831cf1d2",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "di-mua.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Cắt từ MN-0067, xóa nền trắng",
+   "dung_o": []
+  },
+  {
+   "asset_id": "MN-0079",
+   "version": 1,
+   "path": "assets/mono/xuat-ban/MN-0079_mono-trang-phuc-di-mua-512_v01.webp",
+   "mo_ta": "mono-trang-phuc-di-mua-512",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 512,
+    "h": 512
+   },
+   "bytes": 37296,
+   "sha256": "f1aa524e870dc611837555097433508c9f0599a472874872d152094d213c22ae",
+   "nguon": "chatgpt-image",
+   "giay_phep": "ChatGPT Image (OpenAI) – điều khoản: người dùng sở hữu đầu ra; kiểm tra lại trước khi bán",
+   "tep_goc": "di-mua.png",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-27",
+   "trang_thai": "cho_duyet",
+   "ghi_chu": "Bản xuất bản WebP 512 của MN-0078",
+   "dung_o": []
   }
  ]
 }

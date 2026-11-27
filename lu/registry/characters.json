@@ -10,7 +10,8 @@
    "MN-0001",
    "MN-0002",
    "MN-0003",
-   "MN-0004"
+   "MN-0004",
+   "MN-0067"
   ],
   "goc_nhin": {
    "truoc": {
@@ -297,7 +298,62 @@
     "nguon": "MN-0004"
    }
   },
-  "trang_phuc": {},
+  "trang_phuc": {
+   "tham-hiem": {
+    "asset_id": "MN-0068",
+    "png": "assets/mono/trang-phuc/MN-0068_mono-trang-phuc-tham-hiem_v01.png",
+    "webp_id": "MN-0069",
+    "webp": "assets/mono/xuat-ban/MN-0069_mono-trang-phuc-tham-hiem-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "nha-khoa-hoc": {
+    "asset_id": "MN-0070",
+    "png": "assets/mono/trang-phuc/MN-0070_mono-trang-phuc-nha-khoa-hoc_v01.png",
+    "webp_id": "MN-0071",
+    "webp": "assets/mono/xuat-ban/MN-0071_mono-trang-phuc-nha-khoa-hoc-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "hoa-si": {
+    "asset_id": "MN-0072",
+    "png": "assets/mono/trang-phuc/MN-0072_mono-trang-phuc-hoa-si_v01.png",
+    "webp_id": "MN-0073",
+    "webp": "assets/mono/xuat-ban/MN-0073_mono-trang-phuc-hoa-si-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "lam-vuon": {
+    "asset_id": "MN-0074",
+    "png": "assets/mono/trang-phuc/MN-0074_mono-trang-phuc-lam-vuon_v01.png",
+    "webp_id": "MN-0075",
+    "webp": "assets/mono/xuat-ban/MN-0075_mono-trang-phuc-lam-vuon-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "phi-hanh-gia": {
+    "asset_id": "MN-0076",
+    "png": "assets/mono/trang-phuc/MN-0076_mono-trang-phuc-phi-hanh-gia_v01.png",
+    "webp_id": "MN-0077",
+    "webp": "assets/mono/xuat-ban/MN-0077_mono-trang-phuc-phi-hanh-gia-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   },
+   "di-mua": {
+    "asset_id": "MN-0078",
+    "png": "assets/mono/trang-phuc/MN-0078_mono-trang-phuc-di-mua_v01.png",
+    "webp_id": "MN-0079",
+    "webp": "assets/mono/xuat-ban/MN-0079_mono-trang-phuc-di-mua-512_v01.webp",
+    "kiem_tra": "CHỜ TAM DUYỆT",
+    "ghi_chu": [],
+    "nguon": "MN-0067"
+   }
+  },
   "can_co": {
    "goc_nhin": 4,
    "bieu_cam": 12,
