@@ -574,3 +574,9 @@
 
 /* Từ tiếng Anh (tam 28/11): chữ thật to cùng ảnh, đọc bằng giọng bản địa */
 .lu-lesson .story .en-word { font-family: 'Baloo 2', var(--lu-font-head, system-ui), sans-serif; font-weight: 800; font-size: clamp(64px, 13vw, 132px); line-height: 1; color: #2f6db5; letter-spacing: .02em; text-shadow: 0 3px 0 rgba(255,255,255,.9); padding: 4px 0; }
+/* Màn học từ: ảnh to giữa màn, chữ tiếng Anh to ngay dưới ảnh */
+.lu-lesson .answers.hoc-tu > .lbl { display: none; }
+.lu-lesson .answers > .opt.hoc-tu { width: min(460px, 70vw) !important; height: auto !important; min-height: 0 !important; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 12px 8px !important; }
+.lu-lesson .answers > .opt.hoc-tu > :first-child { width: min(260px, 54vw) !important; height: min(260px, 54vw) !important; }
+.lu-lesson .answers > .opt.hoc-tu .en-word { font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 800; font-size: clamp(48px, 11vw, 100px); line-height: 1; color: #2f6db5; max-width: 100%; overflow-wrap: anywhere; }
+@media (orientation: portrait) and (max-width: 600px) { .lu-lesson .answers > .opt.hoc-tu { width: min(300px, 76vw) !important; } }

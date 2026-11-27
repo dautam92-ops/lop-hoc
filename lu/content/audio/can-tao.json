@@ -1,62 +1,58 @@
 {
  "format": "lu-voice-todo",
  "lesson": "M001",
- "at": "2026-11-27T23:42:39.583Z",
+ "at": "2026-11-27T23:48:45.019Z",
  "lines": [
   {
-   "text": "Gặp nhau thì mình nói:",
+   "text": "Mình học tên quả bằng tiếng Anh nhé!",
    "lang": "vi"
   },
   {
-   "text": "Hello!",
+   "text": "Apple",
    "lang": "en"
   },
   {
-   "text": "Ra về thì mình nói:",
+   "text": "Quả táo đây! Bé nói theo rồi chạm nhé!",
    "lang": "vi"
   },
   {
-   "text": "Goodbye!",
+   "text": "Apple!",
    "lang": "en"
   },
   {
-   "text": "Hello",
+   "text": "Bé nói hay quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Banana",
    "lang": "en"
   },
   {
-   "text": "Bé chạm tranh Mono chào khi gặp nhau.",
+   "text": "Quả chuối đây! Bé nói theo rồi chạm nhé!",
    "lang": "vi"
   },
   {
-   "text": "Đúng rồi! Mono vẫy tay chào bé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Gặp nhau thì vẫy tay chào.",
-   "lang": "vi"
-  },
-  {
-   "text": "Goodbye",
+   "text": "Banana!",
    "lang": "en"
   },
   {
-   "text": "Bé chạm tranh Mono chào khi ra về.",
+   "text": "Giỏi quá! Bé nhớ cả quả chuối rồi.",
    "lang": "vi"
   },
   {
-   "text": "Giỏi quá! Mono quay lưng đi về nhà.",
-   "lang": "vi"
-  },
-  {
-   "text": "Bé thử lại nào! Ra về thì quay lưng đi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Hello, chick!",
+   "text": "Orange",
    "lang": "en"
   },
   {
-   "text": "Bé chào hay quá!",
+   "text": "Quả cam đây! Bé nói theo rồi chạm nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Orange!",
+   "lang": "en"
+  },
+  {
+   "text": "Tuyệt vời! Ba quả vào giỏ của bà rồi.",
    "lang": "vi"
   }
  ]

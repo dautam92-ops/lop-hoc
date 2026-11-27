@@ -49,6 +49,11 @@ export const ART = {
   sao: (c = '#f6c85f') => wrap(wc(`<path d="M50 8l11 24 26 3-19 18 5 26-23-13-23 13 5-26L13 35l26-3z" fill="${c}"/>`) + pen(`<path d="M50 8l11 24 26 3-19 18 5 26-23-13-23 13 5-26L13 35l26-3z"/>`), 'ngôi sao'),
   tao: () => wrap(shadow(50, 92, 24) + wc(`<path d="M50 30c-8-8-30-8-32 14-2 22 14 42 26 42 4 0 4-2 6-2s2 2 6 2c12 0 28-20 26-42-2-22-24-22-32-14z" fill="#d9604c"/><ellipse cx="34" cy="46" rx="5" ry="9" fill="#fff" opacity=".4"/><path d="M52 26c4-10 12-14 20-12-2 8-10 12-20 12z" fill="#8fae3e"/>`) +
     pen(`<path d="M50 30c-8-8-30-8-32 14-2 22 14 42 26 42 4 0 4-2 6-2s2 2 6 2c12 0 28-20 26-42-2-22-24-22-32-14z"/><path d="M50 30c0-6-1-12-4-16"/><path d="M52 26c4-10 12-14 20-12-2 8-10 12-20 12z"/>`), 'quả táo'),
+  // Hình tạm chờ ảnh vẽ tay (M001 bài tiếng Anh, 28/11): quả chuối, quả cam
+  chuoi: () => wrap(shadow(50, 92, 26) + wc(`<path d="M18 30c4 30 26 50 64 46 4 0 6-4 2-6-30-2-46-18-54-42-2-4-12-4-12 2z" fill="#f2cf4a"/><path d="M22 34c8 20 24 34 50 38" stroke="#e0b52e" stroke-width="3" fill="none"/>`) +
+    pen(`<path d="M18 30c4 30 26 50 64 46 4 0 6-4 2-6-30-2-46-18-54-42-2-4-12-4-12 2z"/><path d="M18 30l-2-8 8 2"/>`), 'quả chuối'),
+  cam: () => wrap(shadow(50, 92, 26) + wc(`<circle cx="50" cy="54" r="32" fill="#f39a2e"/><circle cx="40" cy="44" r="6" fill="#fff" opacity=".35"/><path d="M52 22c6-8 16-10 22-6-4 8-14 10-22 6z" fill="#8fae3e"/>`) +
+    pen(`<circle cx="50" cy="54" r="32"/><path d="M50 22v-6"/><path d="M52 22c6-8 16-10 22-6-4 8-14 10-22 6z"/>`), 'quả cam'),
   // art:chau-cay:trong = chậu chỉ có đất, chưa có cây (soát logic 27/11: chậu để gieo/trồng không được có cây sẵn)
   'chau-cay': (t) => t === 'trong'
     ? wrap(shadow(50, 94, 24) + wc(`<path d="M28 60h44l-6 30H34z" fill="#c9825a"/><rect x="24" y="54" width="52" height="10" rx="4" fill="#b06e4b"/><path d="M27 55c6-7 40-7 46 0z" fill="#6f4a2f"/><circle cx="40" cy="52" r="1.6" fill="#8a5e3b"/><circle cx="58" cy="51" r="1.4" fill="#8a5e3b"/>`) +

@@ -215,91 +215,78 @@
    ]
   },
   {
-   "title": "Hello, Mono!",
+   "title": "Apple, banana, orange",
    "hiep": 1,
-   "icon": "lu:vay-tay",
+   "icon": "art:tao",
    "nhom": [
     "EN",
     "CY"
    ],
-   "way": "nghe-cham",
+   "way": "hoc-tu",
    "backdrop": {
     "id": "L001-BG-02",
     "kind": "san"
    },
    "intro": [
-    "Gặp nhau thì mình nói:",
-    "Hello!",
-    "Ra về thì mình nói:",
-    "Goodbye!"
+    "Mình học tên quả bằng tiếng Anh nhé!"
    ],
    "activities": [
     {
      "activity_id": "M001-B05",
      "engine": "E01",
      "skill_id": "EN.EN.01",
-     "title": "Hello, Mono!",
+     "title": "Apple, banana, orange",
      "mode": "items",
      "order": "fixed",
-     "style": "face",
      "rounds": 3,
      "items": [
       {
-       "q": "Bé chạm tranh Mono chào khi gặp nhau.",
+       "q": "Quả táo đây! Bé nói theo rồi chạm nhé!",
        "opts": [
         {
-         "e": "lu:vay-tay"
-        },
-        {
-         "e": "lu:sau"
+         "e": "art:tao"
         }
        ],
        "a": 0,
        "ok": [
-        "Hello!",
-        "Đúng rồi! Mono vẫy tay chào bé."
+        "Apple!",
+        "Bé nói hay quá!"
        ],
-       "no": "Bé thử lại nào! Gặp nhau thì vẫy tay chào.",
-       "word": "Hello"
+       "no": "",
+       "word": "Apple",
+       "word_times": 2
       },
       {
-       "q": "Bé chạm tranh Mono chào khi ra về.",
+       "q": "Quả chuối đây! Bé nói theo rồi chạm nhé!",
        "opts": [
         {
-         "e": "lu:sau"
-        },
-        {
-         "e": "lu:vay-tay"
+         "e": "art:chuoi"
         }
        ],
        "a": 0,
        "ok": [
-        "Goodbye!",
-        "Giỏi quá! Mono quay lưng đi về nhà."
+        "Banana!",
+        "Giỏi quá! Bé nhớ cả quả chuối rồi."
        ],
-       "no": "Bé thử lại nào! Ra về thì quay lưng đi.",
-       "word": "Goodbye"
+       "no": "",
+       "word": "Banana",
+       "word_times": 2
       },
       {
-       "q": "Gà con chạy tới. Bé chào gà con nào!",
+       "q": "Quả cam đây! Bé nói theo rồi chạm nhé!",
        "opts": [
         {
-         "e": "art:ga-con-chay"
-        },
-        {
-         "e": "art:ga-con-ngu"
-        },
-        {
-         "e": "art:ga-con-mo-dau"
+         "e": "art:cam"
         }
        ],
        "a": 0,
        "ok": [
-        "Hello, chick!",
-        "Bé chào hay quá!"
+        "Orange!",
+        "Tuyệt vời! Ba quả vào giỏ của bà rồi."
        ],
-       "no": "Bé thử lại nào! Gà con nào đang chạy tới nhỉ?",
-       "word": "Hello"
+       "no": "",
+       "word": "Orange",
+       "word_times": 2
       }
      ]
     }

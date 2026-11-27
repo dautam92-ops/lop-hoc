@@ -306,6 +306,8 @@
    "nho": true
   },
   "cay-dau": {"ten": "cây đậu", "nhom": "thuc-vat", "en": ["bean plant"], "giai_doan_cay": 2},
+  "chuoi": {"ten": "quả chuối", "nhom": "do-an", "en": ["banana"], "an_duoc": true},
+  "cam": {"ten": "quả cam", "nhom": "do-an", "en": ["orange"], "an_duoc": true},
   "mam-dau": {
    "ten": "mầm đậu",
    "nhom": "thuc-vat",

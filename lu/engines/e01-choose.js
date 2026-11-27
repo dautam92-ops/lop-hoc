@@ -12,7 +12,7 @@ export const id = 'E01', version = '1.0.0', name = 'Chạm chọn';
 export function validate(act) {
   if (MORE.MORE.has(act.mode)) return MORE.validate(act);
   const e = need(act, ['mode', 'skill_id', 'title']);
-  if (act.mode === 'items') { if (!act.items?.length) e.push(`${act.activity_id}: thiếu items`); act.items?.forEach((it, k) => e.push(...verifyChoice(it.opts, it.any ? 0 : it.a, `${act.activity_id} câu ${k + 1}`))); }
+  if (act.mode === 'items') { if (!act.items?.length) e.push(`${act.activity_id}: thiếu items`); act.items?.forEach((it, k) => e.push(...verifyChoice(it.opts, it.any ? 0 : it.a, `${act.activity_id} câu ${k + 1}`, !!it.word))); }
   if (act.mode === 'count') { e.push(...need(act, ['pool', 'words', 'q', 'ok', 'no'])); if (act.words && act.pool && Math.max(...act.pool) > act.words.length) e.push(`${act.activity_id}: thiếu chữ số đọc`); }
   if (act.mode === 'listen') { e.push(...need(act, ['words'])); if ((act.words || []).length < 2) e.push(`${act.activity_id}: cần ít nhất 2 từ`); }
   if (!['items', 'count', 'listen'].includes(act.mode)) e.push(`${act.activity_id}: mode không hợp lệ`);
@@ -45,7 +45,7 @@ export function verify(act, variant) {
   const e = [];
   variant.rounds.forEach((r, k) => {
     const where = `${act.activity_id} vòng ${k + 1}`;
-    if (act.mode === 'items') { const it = act.items[r.item]; e.push(...verifyChoice(it.opts, it.any ? 0 : it.a, where)); if (it.any && it.opts.some(o => !o.say || !(o.reply || it.ok))) e.push(`${where}: câu chọn tự do cần lời đọc và lời đáp cho từng lựa chọn`); if (new Set(r.order).size !== it.opts.length) e.push(`${where}: thứ tự đáp án hỏng`); }
+    if (act.mode === 'items') { const it = act.items[r.item]; e.push(...verifyChoice(it.opts, it.any ? 0 : it.a, where, !!it.word)); if (it.any && it.opts.some(o => !o.say || !(o.reply || it.ok))) e.push(`${where}: câu chọn tự do cần lời đọc và lời đáp cho từng lựa chọn`); if (new Set(r.order).size !== it.opts.length) e.push(`${where}: thứ tự đáp án hỏng`); }
     if (act.mode === 'count') { if (!act.pool.includes(r.n)) e.push(`${where}: số không có trong lựa chọn`); if (r.n < 1 || r.n > (act.max || 10)) e.push(`${where}: số ngoài phạm vi tuổi`); try { fill(act.ok, { word: act.words[r.n - 1] }); } catch (x) { e.push(`${where}: ${x.message}`); } }
     if (act.mode === 'listen') { if (!(r.target >= 0 && r.target < act.words.length)) e.push(`${where}: từ đích không có`); }
   });
@@ -86,10 +86,10 @@ function round(ctx, act, R, first) {
   return new Promise(done => {
     let opts, order, ans, style, q, okKeys, noKeys, label;
     if (act.mode === 'items') {
-      const it = act.items[R.item]; opts = it.opts; order = R.order; ans = it.any ? -1 : it.a; R._any = it.any ? it : null; style = it.style || act.style || 'face'; q = [it.word, it.q].filter(Boolean); /* word: từ tiếng Anh đọc riêng bằng giọng bản địa, hiện chữ to (tam 28/11) */
+      const it = act.items[R.item]; opts = it.opts; order = R.order; ans = it.any ? -1 : it.a; R._any = it.any ? it : null; style = it.style || act.style || 'face'; q = [...Array(it.word ? (it.word_times || 1) : 0).fill(it.word), it.q].filter(Boolean); /* word: từ tiếng Anh đọc riêng bằng giọng bản địa, hiện chữ to (tam 28/11) */
       okKeys = i => [opts[i].say, '__jingle', ...[].concat(it.ok)]; noKeys = i => [opts[i].say, '__boing', it.no || act.no];
       label = it.label || act.label || 'Bé chọn một đáp án';
-      ui.scene(it.title || act.title, act.scene === 'lu' ? luArt(it.lu || act.lu || 'to-mo') : `<div class="story${it.shadow || act.shadow ? ' bong-den' : ''}">${it.word ? `<div class="en-word" lang="en">${esc(it.word)}</div>` : ''}${showHTML(it.show)}</div>`);
+      ui.scene(it.title || act.title, act.scene === 'lu' ? luArt(it.lu || act.lu || 'to-mo') : `<div class="story${it.shadow || act.shadow ? ' bong-den' : ''}">${it.word && it.opts.length > 1 ? `<div class="en-word" lang="en">${esc(it.word)}</div>` : ''}${showHTML(it.show)}</div>`);
     } else if (act.mode === 'count') {
       opts = act.pool.map(v => ({ v })); order = opts.map((o, i) => i); ans = act.pool.indexOf(R.n); style = 'number'; q = [act.q];
       okKeys = () => ['__jingle', fill(act.ok, { word: act.words[R.n - 1] })]; noKeys = () => ['__boing', act.no, act.hint];
@@ -109,6 +109,8 @@ function round(ctx, act, R, first) {
     const readOpts = act.mode === 'items' && textOpts(opts, style);
     const box = ui.answers(label, order.map((i, k) => optHTML(opts[i], i, style, readOpts ? LETTERS[k] : '')).join(''));
     if (R._any) box.dataset.any = '1';
+    // Màn học từ (tam 28/11): một ảnh thật to, chữ tiếng Anh to ngay dưới ảnh, bé chạm vào ảnh để nghe lại và nói theo
+    if (act.mode === 'items' && act.items[R.item].word && opts.length === 1) { box.classList.add('hoc-tu'); const o = box.querySelector('.opt'); o.classList.add('hoc-tu'); o.insertAdjacentHTML('beforeend', `<span class="en-word" lang="en">${esc(act.items[R.item].word)}</span>`); }
     if (readOpts) q = [...q, ...readOptLines(order.map(i => opts[i]))];
     ctx.test.mark(box.querySelector(ans < 0 ? '.opt' : `[data-i="${ans}"]`));
     const en = act.mode === 'listen';

@@ -35,9 +35,10 @@ export function optHTML(o, i, style, letter = '') {
 }
 
 // Kiểm tra chung cho một vòng chọn đáp án (S09-R03)
-export function verifyChoice(opts, answerIdx, where) {
+export function verifyChoice(opts, answerIdx, where, motTu = false) {
   const errs = [];
-  if (!Array.isArray(opts) || opts.length < 2) errs.push(`${where}: cần ít nhất 2 phương án`);
+  /* motTu: màn học từ (E01 có word): một ảnh to để bé chạm nói theo, không chấm đúng sai (tam 28/11) */
+  if (!Array.isArray(opts) || opts.length < (motTu ? 1 : 2)) errs.push(`${where}: cần ít nhất 2 phương án`);
   else {
     if (!(answerIdx >= 0 && answerIdx < opts.length)) errs.push(`${where}: đáp án không nằm trong các phương án`);
     const keys = opts.map(o => JSON.stringify([o.e, o.t, o.v, o.c, o.w, o.n]));
