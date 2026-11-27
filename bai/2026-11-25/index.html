@@ -328,7 +328,7 @@ function topbar(title,backFn){return `<div class="top"><button class="back" id="
 function bindBack(fn){$('#bk').onclick=fn}
 
 /* Thư viện bài đã học: mỗi bài ở /lop-hoc/bai/<ngày>/, danh sách ở /lop-hoc/bai/. Không bao giờ ghi đè hay xóa bài cũ. */
-function libLinks(){if(!/github\.io$/.test(location.hostname))return'';const inArc=/\/bai\/\d{4}-\d{2}-\d{2}\/?/.test(location.pathname);
+function libLinks(){if(location.protocol==='file:')return'';const inArc=/\/bai\/\d{4}-\d{2}-\d{2}\/?/.test(location.pathname);
   return `<div class="libs"><a class="next alt" href="${inArc?'../':'bai/'}"><span class="emo">📚</span> Bài đã học</a>${inArc?'<a class="next" href="../../"><span class="emo">🏠</span> Bài hôm nay</a>':''}</div>`}
 function home(){
   const card=k=>{const K=LESSON.kids[k];const d=store.get(doneKey(k),[]).length;return `<button class="kid" style="background:${K.grad}" data-k="${k}"><div class="big emo">${K.icon}</div><h3>${K.title}</h3><span>${K.name} · ${d}/${K.acts.length} bài</span><div class="prog"><i style="width:${d/K.acts.length*100}%"></i></div></button>`};
