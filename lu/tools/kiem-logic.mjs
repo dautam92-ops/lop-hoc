@@ -125,12 +125,14 @@ export function kiemAnh(file, slotsDem = new Set()) {
     if (!p) { loi.push(`${at}: thiếu câu mô tả`); continue; }
     if (!k) { loi.push(`${at}: slot ${s} chưa có trong kho kiến thức (thêm vào content/kien-thuc/vat.json trước khi vẽ)`); continue; }
     if (k.nhom === 'canh') continue;
+    // Con vật phải vẽ bằng kiểu vẽ chung (style), không dùng kiểu đồ vật có "no animals" (soát logic 27/11, thỏ và vịt).
+    if (k.nhom === 'con-vat' && /no animals?/i.test(file.style_do_vat || '') && it.kieu !== 'style') loi.push(`${at}: ảnh con vật ${k.ten} chưa ghi "kieu": "style"; ghép kiểu đồ vật sẽ thành "không con vật" (LG15)`);
     if (!k.en.some(w => p.toLowerCase().includes(w))) loi.push(`${at}: câu mô tả không nhắc "${k.en[0]}" (${k.ten}), ảnh có thể vẽ sai vật (LG15)`);
     if (k.nhom === 'hanh-dong') { const ct = KB[k.chu_the]; if (ct && !ct.en.some(w => p.toLowerCase().includes(w))) loi.push(`${at}: ảnh hành động của ${ct.ten} nhưng câu mô tả không nhắc nhân vật (LG15)`); }
     const m = p.match(SO_EN);
     if (m && slotsDem.has(s)) loi.push(`${at}: câu mô tả ghi số lượng "${m[0]}" cho ảnh dùng để đếm; số lượng phải dựng bằng mã (LG13)`);
     else if (m) canh.push(`${at}: câu mô tả có số lượng "${m[0]}"; agent xác nhận ảnh không dùng để đếm (LG13)`);
-    if (['do-vat', 'do-an', 'thuc-vat', 'thien-nhien', 'noi-chon'].includes(k.nhom) && !/no animals?|no characters|no people|only the object|nothing else/i.test(p + ' ' + (file.style_do_vat || '')))
+    if (['do-vat', 'do-an', 'thuc-vat', 'thien-nhien', 'noi-chon'].includes(k.nhom) && !/no animals?|no characters|no people|only the object|nothing else/i.test(p + ' ' + ((it.kieu === 'style' ? file.style : file.style_do_vat) || '')))
       loi.push(`${at}: ảnh ${k.ten} chưa dặn "chỉ vẽ vật, không thêm con vật" (LG16, tam 27/11)`);
     const khac = Object.entries(KB).filter(([x, v]) => x !== s && x !== k.chu_the && v.nhom === 'con-vat' && v.en.some(w => new RegExp(`\\b${w}s?\\b`, 'i').test(k.en.reduce((t, x) => t.split(x).join(''), p.toLowerCase()).replace(/no animals?|no characters|no people/gi, ''))));
     if (khac.length && k.nhom !== 'con-vat') canh.push(`${at}: câu mô tả có ${khac.map(([, v]) => v.ten).join(', ')}; agent xem có phải thêm nhân vật lạ không (LG16)`);

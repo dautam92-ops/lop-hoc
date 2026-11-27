@@ -38,10 +38,10 @@
    "Lên cầu thang, hai bố con cùng đếm: một, hai, ba."
   ],
   "play": {
-   "ten": "Chia kẹo cho gấu bông",
+   "ten": "Chia hạt đậu cho gấu bông",
    "phut": 5,
    "cach_choi": "Bé chia đều cho mỗi gấu bông, đếm xem mỗi bạn được mấy.",
-   "an_toan": "Hạt to, không cho vào miệng."
+   "an_toan": "Dùng hạt to, bố mẹ ngồi cạnh, không cho vào miệng."
   }
  },
  "content_version": "L001-bainho-1",
@@ -434,13 +434,13 @@
        "no": "Bà dặn Lu dùng bình tưới đấy.",
        "opts": [
         {
-         "e": "art:bong-bay"
+         "e": "art:gio"
         },
         {
          "e": "art:binh-tuoi"
         },
         {
-         "e": "art:ao:%236aa6c8"
+         "e": "art:khan"
         }
        ],
        "style": "face"
@@ -452,13 +452,13 @@
        "no": "Hạt đậu nằm trong đất mới mọc được.",
        "opts": [
         {
-         "e": "art:may"
+         "e": "art:ao-nuoc"
         },
         {
-         "e": "art:nha"
+         "e": "art:gio"
         },
         {
-         "e": "art:chau-cay"
+         "e": "art:luong-dat"
         }
        ],
        "style": "face"
@@ -536,7 +536,7 @@
        "say": "Ánh nắng. Cây non cần nắng để lớn."
       },
       {
-       "e": "art:chau-cay",
+       "e": "art:luong-dat",
        "name": "đất",
        "say": "Đất. Hạt nằm trong đất để mọc rễ."
       }
@@ -578,18 +578,18 @@
          "e": "art:binh-tuoi"
         },
         {
-         "e": "art:bong-bay"
+         "e": "art:gio"
         },
         {
-         "e": "art:ao"
+         "e": "art:soi"
         }
        ],
        "style": "face"
       },
       {
-       "q": "Trời tối rồi. Mầm cây chờ gì để lớn tiếp?",
+       "q": "Thứ nào cho mầm cây ánh nắng?",
        "a": 1,
-       "ok": "Đúng rồi! Sáng mai có nắng, mầm sẽ lớn tiếp.",
+       "ok": "Đúng rồi! Mặt trời cho mầm ánh nắng.",
        "no": "Cây non cần ánh nắng. Bé tìm hình có nắng nhé.",
        "opts": [
         {
@@ -599,7 +599,7 @@
          "e": "art:mat-troi"
         },
         {
-         "e": "art:may"
+         "e": "art:sao"
         }
        ],
        "style": "face"
@@ -618,7 +618,7 @@
      "Chạm và nghe nước, nắng, đất",
      "Hạt nằm ở đâu",
      "Đất khô thì làm gì",
-     "Trời tối chờ gì"
+     "Thứ nào cho mầm ánh nắng"
     ],
     "bang_chung": "Tiếp xúc KP.KH.01."
    },
@@ -676,7 +676,7 @@
          "e": "art:qua-dau"
         },
         {
-         "e": "art:la"
+         "e": "art:tao"
         },
         {
          "e": "art:ca-rot"
@@ -754,7 +754,7 @@
     "kind": "luong"
    },
    "intro": [
-    "Gió thổi sỏi lẫn vào hạt đậu rồi. Bé chỉ nhặt hạt đậu thôi nhé."
+    "Hạt đậu rơi vào chỗ có sỏi và lá. Bé chỉ nhặt hạt đậu nhé."
    ],
    "lu": "chi-tay",
    "activities": [
@@ -765,7 +765,7 @@
      "skill_id": "TD.TT.01",
      "evidence": "tiep-xuc",
      "title": "Chỉ nhặt hạt đậu",
-     "q": "Bé chạm vào từng {name}. Viên sỏi thì để lại nhé.",
+     "q": "Bé chạm vào từng {name}. Sỏi và lá thì để lại nhé.",
      "targets": [
       {
        "e": "art:hat-dau",
@@ -781,7 +781,7 @@
      "max": 3,
      "cells": 9,
      "rounds": 2,
-     "no": "Đó là viên sỏi màu xám. Hạt đậu có màu vàng nâu.",
+     "no": "Đó không phải hạt đậu. Hạt đậu màu vàng nâu.",
      "done": "Bé nhặt đủ hạt đậu rồi!"
     },
     {
@@ -1034,7 +1034,7 @@
      "title": "Lu thấy thế nào?",
      "items": [
       {
-       "q": "Lu tưới hạt cả buổi mà chưa thấy mầm. Lu có thể thấy thế nào?",
+       "q": "Lu chờ cả buổi mà chưa thấy mầm. Lu có thể thấy thế nào?",
        "any": true,
        "style": "face",
        "ok": "Cảm ơn bé đã nghĩ cùng Lu.",
@@ -1046,8 +1046,8 @@
         },
         {
          "e": "face:gian",
-         "say": "Lu thấy sốt ruột.",
-         "reply": "Sốt ruột là khi mình muốn nhanh mà phải chờ."
+         "say": "Lu thấy bực.",
+         "reply": "Bực là khi mình muốn nhanh mà phải chờ."
         },
         {
          "e": "face:vui",
@@ -1057,7 +1057,7 @@
        ]
       },
       {
-       "q": "Sáng nay mầm đậu nhú lên rồi! Lu có thể thấy thế nào?",
+       "q": "Mấy hôm sau, mầm đậu nhú lên rồi! Lu có thể thấy thế nào?",
        "any": true,
        "style": "face",
        "ok": "Bé hiểu Lu quá!",
@@ -1158,7 +1158,7 @@
      "evidence": "tiep-xuc",
      "title": "Rửa tay ba bước",
      "intro": [
-      "Bước một: làm ướt tay. Bước hai: xoa xà phòng. Bước ba: tráng sạch, lau khô."
+      "Bước một: làm ướt tay. Bước hai: xoa xà phòng. Bước ba: tráng sạch, lau khô bằng khăn."
      ],
      "label": "Kéo từng bước vào đúng số",
      "sets": [
@@ -1172,13 +1172,13 @@
         "target": "art:coc:2"
        },
        {
-        "piece": "art:ban-tay",
+        "piece": "art:khan",
         "target": "art:coc:3"
        }
       ]
      ],
      "rounds": 1,
-     "no": "Bé nhớ lại nhé: làm ướt tay, xoa xà phòng, rồi tráng sạch.",
+     "no": "Bé nhớ lại nhé: làm ướt tay, xoa xà phòng, rồi lau khô bằng khăn.",
      "done": "Tay Lu sạch rồi!"
     },
     {
@@ -1204,15 +1204,15 @@
      "intro": [],
      "items": [
       {
-       "q": "Lu nên làm gì? Bé chọn một cách.",
+       "q": "Quả đậu trên giàn cao, Lu không với tới. Lu nên làm gì?",
        "any": true,
        "style": "face",
        "ok": "Mình cùng nghĩ nhé.",
        "opts": [
         {
          "e": "lu:nhay",
-         "say": "Lu tự trèo lên cây.",
-         "reply": "Trèo cao dễ ngã lắm. Lu đi gọi bà giúp nhé."
+         "say": "Lu nhảy thật cao để với.",
+         "reply": "Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé."
         },
         {
          "e": "lu:chi-tay",
@@ -1222,20 +1222,20 @@
        ]
       },
       {
-       "q": "Túi hạt đậu bị gió thổi lên nóc chuồng gà. Lu nên làm gì?",
+       "q": "Chiếc mũ của Lu bay lên nóc chuồng gà. Lu nên làm gì?",
        "any": true,
        "style": "face",
        "ok": "Mình cùng nghĩ nhé.",
        "opts": [
         {
          "e": "lu:nhay",
-         "say": "Lu leo lên nóc chuồng.",
-         "reply": "Nóc chuồng cao và trơn, dễ ngã lắm. Lu nhờ bà lấy giúp nhé."
+         "say": "Lu nhảy lên lấy mũ.",
+         "reply": "Nóc chuồng cao lắm, nhảy dễ ngã. Lu nhờ bà lấy giúp nhé."
         },
         {
          "e": "lu:chi-tay",
          "say": "Lu gọi bà lấy giúp.",
-         "reply": "Lu nhờ bà là an toàn rồi. Bà lấy túi xuống cho Lu."
+         "reply": "Lu nhờ bà là an toàn rồi. Bà lấy mũ xuống cho Lu."
         }
        ]
       }
@@ -1250,7 +1250,7 @@
      "Xếp ba bước rửa tay",
      "Xoa tay cùng Lu",
      "Quả đậu trên cao",
-     "Túi hạt trên nóc chuồng"
+     "Mũ bay lên nóc chuồng"
     ],
     "bang_chung": "Tiếp xúc EQ.AT.D02, EQ.AT.08."
    },
@@ -1325,7 +1325,7 @@
        "q": "Thứ nào không dùng để chăm cây?",
        "a": 1,
        "ok": "Đúng rồi! Chiếc áo không dùng để chăm cây.",
-       "no": "Bình tưới, chậu, nước đều giúp cây. Còn thứ nào khác?",
+       "no": "Bình tưới, vòi nước, nước đều giúp cây. Còn thứ nào khác?",
        "opts": [
         {
          "e": "art:binh-tuoi"
@@ -1334,7 +1334,7 @@
          "e": "art:ao"
         },
         {
-         "e": "art:chau-cay"
+         "e": "art:voi-nuoc"
         },
         {
          "e": "art:giot-nuoc"
@@ -1424,24 +1424,24 @@
      "title": "Nếu cây đậu cao tới mây",
      "items": [
       {
-       "q": "Nếu cây đậu cao tới tận mây, Lu leo lên sẽ thấy gì? Bé chọn điều bé thích.",
+       "q": "Nếu cây đậu cao tới tận mây, ngọn cây có gì? Bé chọn điều bé thích.",
        "any": true,
        "style": "face",
        "ok": "Bé tưởng tượng hay quá!",
        "opts": [
         {
          "e": "art:may",
-         "say": "Lu thấy những đám mây.",
+         "say": "Những đám mây trắng.",
          "reply": "Mây trắng bồng bềnh như bông."
         },
         {
          "e": "art:cau-vong",
-         "say": "Lu thấy cầu vồng.",
+         "say": "Một chiếc cầu vồng.",
          "reply": "Cầu vồng có nhiều màu quá."
         },
         {
          "e": "art:chim",
-         "say": "Lu gặp một chú chim.",
+         "say": "Một chú chim đậu trên ngọn cây.",
          "reply": "Chú chim chào Lu rồi bay quanh cây đậu."
         }
        ]
@@ -1486,16 +1486,12 @@
      "tap": true,
      "story": [
       "Mầm đậu đầu tiên đã lớn trước nhà Lu.",
-      "Bé chọn chậu để trồng mầm đậu nhé."
+      "Bé chạm vào chậu đất để trồng mầm đậu nhé."
      ],
      "props": [
       {
-       "e": "art:chau-cay",
-       "name": "chậu cây"
-      },
-      {
-       "e": "art:mam-dau",
-       "name": "mầm đậu"
+       "e": "art:chau-cay:trong",
+       "name": "chậu đất"
       }
      ],
      "after": "Mầm đậu có nhà mới rồi! Mai mình tưới nước cho mầm nhé."

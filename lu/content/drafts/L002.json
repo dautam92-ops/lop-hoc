@@ -45,7 +45,7 @@
    "an_toan": "Không giấu đồ nhỏ dễ nuốt, không giấu chỗ cao."
   }
  },
- "content_version": "L002-bainho-1",
+ "content_version": "L002-bainho-2",
  "review_status": "nhap",
  "title": "Hạt đậu lăn đi đâu",
  "minutes": 25,
@@ -175,7 +175,7 @@
      "max": 3,
      "cells": 9,
      "rounds": 2,
-     "no": "Đó chưa phải hạt đậu. Hạt đậu nhỏ, màu vàng nâu.",
+     "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
      "done": "Bé tìm thấy đủ hạt đậu rồi!"
     },
     {
@@ -207,21 +207,21 @@
       {
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 0,
-       "ok": "Đúng rồi! Đó là cái lá.",
-       "no": "Bé nhìn kỹ: bóng dài, có cuống nhỏ.",
+       "ok": "Đúng rồi! Đó là chiếc lá.",
+       "no": "Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.",
        "opts": [
         {
-         "e": "art:la-cay"
+         "e": "art:la"
         },
         {
-         "e": "art:ca-rot"
+         "e": "art:bong"
         },
         {
          "e": "art:oc"
         }
        ],
        "style": "face",
-       "show": "art:la-cay"
+       "show": "art:la"
       }
      ],
      "order": "fixed",
@@ -273,7 +273,7 @@
       }
      ],
      "distractors": [
-      "art:ga",
+      "art:meo",
       "art:chim",
       "art:trung"
      ],
@@ -281,7 +281,7 @@
      "max": 3,
      "cells": 9,
      "rounds": 1,
-     "no": "Đó chưa phải gà con. Gà con nhỏ, lông vàng.",
+     "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.",
      "done": "Bé tìm ra hết gà con rồi!"
     },
     {
@@ -314,7 +314,7 @@
        "q": "Cái bóng này là của ảnh nào dưới đây?",
        "a": 2,
        "ok": "Đúng rồi! Đó là con bướm.",
-       "no": "Bé nhìn kỹ: bóng có hai cánh to.",
+       "no": "Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.",
        "opts": [
         {
          "e": "art:ong"
@@ -349,7 +349,7 @@
    "done": "Không bạn nào trốn được bé!"
   },
   {
-   "title": "Mỗi chậu một hạt",
+   "title": "Hạt về đúng cọc số",
    "icon": "art:coc:3",
    "nhom": [
     "TO"
@@ -427,13 +427,13 @@
      "engine": "E01",
      "mode": "items",
      "skill_id": "TO.DEM.01",
-     "title": "Giỏ nào đúng?",
+     "title": "Ô nào đúng?",
      "items": [
       {
-       "q": "Bé tìm giỏ có một hạt đậu.",
+       "q": "Bé tìm ô có một hạt đậu.",
        "a": 0,
-       "ok": "Đúng rồi! Giỏ này có một hạt đậu.",
-       "no": "Bé đếm từng hạt trong giỏ xem.",
+       "ok": "Đúng rồi! Ô này có một hạt đậu.",
+       "no": "Bé đếm từng hạt xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -451,10 +451,10 @@
        "style": "plate"
       },
       {
-       "q": "Bé tìm giỏ có hai hạt đậu.",
+       "q": "Bé tìm ô có hai hạt đậu.",
        "a": 1,
-       "ok": "Đúng rồi! Giỏ này có hai hạt đậu.",
-       "no": "Bé đếm từng hạt trong giỏ xem.",
+       "ok": "Đúng rồi! Ô này có hai hạt đậu.",
+       "no": "Bé đếm từng hạt xem.",
        "opts": [
         {
          "e": "art:hat-dau",
@@ -484,8 +484,8 @@
     "bai_tap": [
      "Kéo hạt về cọc",
      "Kéo táo về cọc",
-     "Giỏ một hạt",
-     "Giỏ hai hạt"
+     "Ô một hạt",
+     "Ô hai hạt"
     ],
     "bang_chung": "TO.DEM.01 có chấm."
    },
@@ -887,10 +887,10 @@
        "style": "face"
       },
       {
-       "q": "Chú gà thấy hạt đậu. Chú gà sẽ làm gì?",
+       "q": "Gà con thấy hạt đậu. Gà con sẽ làm gì?",
        "a": 1,
-       "ok": "Đúng rồi! Chú gà mổ hạt để ăn.",
-       "no": "Chú gà thích ăn hạt đấy.",
+       "ok": "Đúng rồi! Gà con mổ hạt để ăn.",
+       "no": "Gà con thích ăn hạt đấy.",
        "opts": [
         {
          "e": "art:ga-con-ngu"
@@ -908,10 +908,10 @@
        "style": "face"
       },
       {
-       "q": "Hạt đậu nằm trong đất lâu ngày. Hạt sẽ thành gì?",
+       "q": "Hạt nằm trong đất ẩm. Hạt nhú ra gì trước?",
        "a": 2,
-       "ok": "Đúng rồi! Hạt nảy thành mầm đậu.",
-       "no": "Hạt trong đất sẽ nảy mầm.",
+       "ok": "Đúng rồi! Hạt nhú ra mầm đậu trước.",
+       "no": "Hạt trong đất ẩm sẽ nảy mầm trước.",
        "opts": [
         {
          "e": "art:qua-dau"
@@ -1136,9 +1136,9 @@
      "title": "Lăn như hạt đậu",
      "lu": "dang-tay",
      "intro": [
-      "Bé đứng dậy nào!"
+      "Bé tìm chỗ rộng có thảm, xa bàn ghế nhé."
      ],
-     "task": "Bé cuộn tròn như hạt đậu, lăn nhẹ một vòng, rồi đứng lên vươn cao.",
+     "task": "Bé nằm xuống thảm, cuộn tròn như hạt đậu, lăn ngang thật nhẹ, rồi đứng lên vươn cao.",
      "button": "Xong rồi!",
      "seconds": 35,
      "evidence": "tiep-xuc"
@@ -1261,13 +1261,13 @@
        "style": "face"
       },
       {
-       "q": "Bình tưới xong rồi. Lu cất bình ở đâu?",
+       "q": "Tưới xong rồi. Lu cất bình tưới ở đâu?",
        "a": 1,
        "ok": "Đúng rồi! Bình tưới để cạnh vòi nước.",
        "no": "Bình tưới để gần vòi nước cho dễ lấy.",
        "opts": [
         {
-         "e": "art:nha"
+         "e": "art:ao-nuoc"
         },
         {
          "e": "art:voi-nuoc"

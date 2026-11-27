@@ -13,7 +13,7 @@ const SKIP_KEYS = new Set(['activity_id', 'lesson_id', 'skill_id', 'engine', 'me
 const PRAISE_LABEL = /(con|bé)\s+(\S+\s+)?(ngoan|chăm|thông minh|tài)\s*(quá|thế|lắm)?([^\p{L}]|$)/iu;
 // S07-R02 (26/11/2026): lời nói với trẻ gọi "bé", không gọi "con". "con" đứng trước tên con vật/đồ vật vẫn hợp lệ.
 const CON_VERB = 'chạm|kéo|chọn|nghe|nói|làm|đếm|tìm|thấy|nhìn|thử|đi|ngồi|đứng|vươn|lắc|nhớ|muốn|có|đã|đang|sẽ|giúp|xem|lật|ghép|xếp|hít|thở|kể|cùng|ơi|nhé|học|quay|được|biết|hãy|ạ|ra|vào|đặt|nhảy|vỗ|giơ|hỏi|chơi|mở|so|chỉ|đọc|viết|vẽ|tô|gieo|thả|bấm|giữ|lên|xuống|là|thích|ôm';
-const CON_ADDR = new RegExp(`(^|[.!?:]\\s*)con\\s+(${CON_VERB})([^\\p{L}]|$)|(chào|cùng|của|cho|với|nhờ|mời|khen|giúp|cảm ơn|đợi|chờ|đón)\\s+con([^\\p{L}]|$)|(^|[^\\p{L}])con\\s+(${CON_VERB})([^\\p{L}]|$)`, 'iu');
+const CON_ADDR = new RegExp(`(^|[.!?:]\\s*)con\\s+(${CON_VERB})([^\\p{L}]|$)|(chào|cùng|của|cho|với|nhờ|mời|khen|giúp|cảm ơn|đợi|chờ|đón)\\s+con([^\\p{L}]|$)|(^|[^\\p{L}])(?<!(gà|vịt|mèo|chó|lợn|heo|bò|trâu|chim|cá|ếch|thỏ|ngựa|dê|voi|gấu|khỉ|ong|bướm|sâu|ốc)\\s)con\\s+(${CON_VERB})([^\\p{L}]|$)`, 'iu'); // "gà con sẽ…" là tên con vật, không phải gọi trẻ
 const SELF_TO = /(^|[^\p{L}])(tớ|cậu)([^\p{L}]|$)/iu;
 const EN_ACT = a => a.mode === 'listen' || a.mode === 'say' || /^EN\./.test(a.skill_id || '');
 

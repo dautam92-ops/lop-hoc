@@ -28,37 +28,37 @@ S = []
 S.append(st("Hạt đậu lăn đi đâu?", "art:hat-dau*3", ["QS"], ("L001-BG-03", "vuon"), "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Lu nhé.", [
     {"activity_id": aid(), "engine": "E06", "mechanic": "M26", "skill_id": "TD.QS.01", "title": "Hạt đậu trốn trong vườn",
      "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:hat-dau", "name": "hạt đậu"}], "distractors": ["art:la", "art:soi", "art:hoa"],
-     "min": 2, "max": 3, "cells": 9, "rounds": 2, "no": "Đó chưa phải hạt đậu. Hạt đậu nhỏ, màu vàng nâu.", "done": "Bé tìm thấy đủ hạt đậu rồi!"},
+     "min": 2, "max": 3, "cells": 9, "rounds": 2, "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.", "done": "Bé tìm thấy đủ hạt đậu rồi!"},
     items("TD.QS.01", "Hạt đậu nấp sau gì?", [
         q(BONG, 2, "Đúng rồi! Đó là cái giỏ.", "Bé nhìn kỹ: bóng có quai cầm.", "art:la", "art:tao", "art:gio", show="art:gio"),
-        q(BONG, 0, "Đúng rồi! Đó là cái lá.", "Bé nhìn kỹ: bóng dài, có cuống nhỏ.", "art:la-cay", "art:ca-rot", "art:oc", show="art:la-cay")],
+        q(BONG, 0, "Đúng rồi! Đó là chiếc lá.", "Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.", "art:la", "art:bong", "art:oc", show="art:la")],
         "M10", lu="chi-tay", scene="story", shadow=True)],
     {"kien_thuc": "Quan sát kỹ để tìm vật nhỏ lẫn trong tranh; nhận ra vật qua hình bóng.", "bai_tap": ["Tìm hạt đậu lần 1", "Tìm hạt đậu lần 2", "Bóng cái giỏ", "Bóng chiếc lá"],
      "bang_chung": "TD.QS.01 có chấm: đúng ngay lần đầu, số lần thử."}, "Bé tinh mắt quá!"))
 # 2 ─ Trọng tâm mức tiếp theo: ít gợi ý hơn, vật mới
 S.append(st("Ai trốn trong vườn?", "art:ga-con", ["CY"], ("vuon", "vuon"), "Các bạn nhỏ cũng trốn trong vườn. Bé tìm nhé.", [
     {"activity_id": aid(), "engine": "E06", "mechanic": "M26", "skill_id": "TD.QS.01", "title": "Tìm gà con",
-     "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:ga-con", "name": "chú gà con"}], "distractors": ["art:ga", "art:chim", "art:trung"],
-     "min": 2, "max": 3, "cells": 9, "rounds": 1, "no": "Đó chưa phải gà con. Gà con nhỏ, lông vàng.", "done": "Bé tìm ra hết gà con rồi!"},
+     "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:ga-con", "name": "chú gà con"}], "distractors": ["art:meo", "art:chim", "art:trung"],
+     "min": 2, "max": 3, "cells": 9, "rounds": 1, "no": "Đó chưa phải gà con. Gà con lông vàng, có mỏ nhỏ.", "done": "Bé tìm ra hết gà con rồi!"},
     items("TD.QS.01", "Bóng của bạn nào?", [
         q(BONG, 1, "Đúng rồi! Đó là chú mèo.", "Bé nhìn kỹ: bóng có tai nhọn và đuôi dài.", "art:ga", "art:meo", "art:ech", show="art:meo"),
-        q(BONG, 2, "Đúng rồi! Đó là con bướm.", "Bé nhìn kỹ: bóng có hai cánh to.", "art:ong", "art:chim", "art:buom", show="art:buom")],
+        q(BONG, 2, "Đúng rồi! Đó là con bướm.", "Bé nhìn kỹ: bóng có cánh xòe và hai cái râu.", "art:ong", "art:chim", "art:buom", show="art:buom")],
         "M10", lu="to-mo", scene="story", shadow=True)],
     {"kien_thuc": "Tìm vật giống nhau giữa vật gần giống; nhận ra con vật qua bóng.", "bai_tap": ["Tìm gà con", "Bóng chú mèo", "Bóng con bướm"],
      "bang_chung": "TD.QS.01 có chấm, mức ít gợi ý."}, "Không bạn nào trốn được bé!"))
 # 3 ─ Toán: số 1, 2, 3 — tương ứng một đối một, hiểu số lượng
-S.append(st("Mỗi chậu một hạt", "art:coc:3", ["TO"], ("L001-BG-04", "luong"), "Mỗi cọc số cần đúng số hạt. Bé giúp Lu nhé.", [
+S.append(st("Hạt về đúng cọc số", "art:coc:3", ["TO"], ("L001-BG-04", "luong"), "Mỗi cọc số cần đúng số hạt. Bé giúp Lu nhé.", [
     {"activity_id": aid(), "engine": "E02", "mechanic": "M03", "target_style": "pair", "skill_id": "TO.DEM.01", "title": "Hạt về đúng cọc",
      "intro": [], "label": "Kéo hạt về đúng cọc", "sets": [[{"piece": "art:hat-dau*2", "target": "art:coc:2"}, {"piece": "art:hat-dau*3", "target": "art:coc:3"}, {"piece": "art:hat-dau*1", "target": "art:coc:1"}]],
      "rounds": 1, "no": "Bé đếm số hạt, rồi tìm cọc có số giống vậy.", "done": "Hạt nào cũng về đúng cọc rồi!"},
     {"activity_id": aid(), "engine": "E02", "mechanic": "M03", "target_style": "pair", "skill_id": "TO.DEM.01", "title": "Quả táo về đúng cọc",
      "intro": [], "label": "Kéo táo về đúng cọc", "sets": [[{"piece": "art:tao*1", "target": "art:coc:1"}, {"piece": "art:tao*3", "target": "art:coc:3"}, {"piece": "art:tao*2", "target": "art:coc:2"}]],
      "rounds": 1, "no": "Bé đếm số quả táo trước nhé.", "done": "Táo đã về đúng cọc!"},
-    items("TO.DEM.01", "Giỏ nào đúng?", [
-        q("Bé tìm giỏ có một hạt đậu.", 0, "Đúng rồi! Giỏ này có một hạt đậu.", "Bé đếm từng hạt trong giỏ xem.", "art:hat-dau", "art:hat-dau", "art:hat-dau", style="plate"),
-        q("Bé tìm giỏ có hai hạt đậu.", 1, "Đúng rồi! Giỏ này có hai hạt đậu.", "Bé đếm từng hạt trong giỏ xem.", "art:hat-dau", "art:hat-dau", "art:hat-dau", style="plate")],
+    items("TO.DEM.01", "Ô nào đúng?", [
+        q("Bé tìm ô có một hạt đậu.", 0, "Đúng rồi! Ô này có một hạt đậu.", "Bé đếm từng hạt xem.", "art:hat-dau", "art:hat-dau", "art:hat-dau", style="plate"),
+        q("Bé tìm ô có hai hạt đậu.", 1, "Đúng rồi! Ô này có hai hạt đậu.", "Bé đếm từng hạt xem.", "art:hat-dau", "art:hat-dau", "art:hat-dau", style="plate")],
         "M02", lu="chi-tay", style="plate")],
-    {"kien_thuc": "Mỗi vật ứng với một tiếng đếm; ghép nhóm 1–3 vật với số.", "bai_tap": ["Kéo hạt về cọc", "Kéo táo về cọc", "Giỏ một hạt", "Giỏ hai hạt"],
+    {"kien_thuc": "Mỗi vật ứng với một tiếng đếm; ghép nhóm 1–3 vật với số.", "bai_tap": ["Kéo hạt về cọc", "Kéo táo về cọc", "Ô một hạt", "Ô hai hạt"],
      "bang_chung": "TO.DEM.01 có chấm."}, "Bé ghép số giỏi quá!"))
 for it in S[2]["activities"][2]["items"]:
     for k, o in enumerate(it["opts"]): o["n"] = [2, 1, 3][k] if it["a"] == 0 else [1, 2, 3][k]
@@ -105,8 +105,8 @@ S.append(st("Thứ nào khác nhóm?", "art:soi", ["TD"], ("phong", "phong"), "L
 S.append(st("Hạt đậu gặp gì?", "art:giot-nuoc", ["KT", "NT"], ("L001-BG-03", "vuon"), "Hạt đậu lăn đi gặp nhiều thứ. Bé đoán xem nhé.", [
     items("KP.KH.01", "Bé đoán xem", [
         q("Hạt đậu lăn vào chỗ ướt. Hạt cần gì để nảy mầm?", 0, "Đúng rồi! Hạt cần nước để nảy mầm.", "Hạt cần nước. Bé tìm giọt nước nhé.", "art:giot-nuoc", "art:soi", "art:khan"),
-        q("Chú gà thấy hạt đậu. Chú gà sẽ làm gì?", 1, "Đúng rồi! Chú gà mổ hạt để ăn.", "Chú gà thích ăn hạt đấy.", "art:ga-con-ngu", "art:ga-con-mo-dau", "art:ga-con-chay", "art:ga-con-uong-nuoc"),
-        q("Hạt đậu nằm trong đất lâu ngày. Hạt sẽ thành gì?", 2, "Đúng rồi! Hạt nảy thành mầm đậu.", "Hạt trong đất sẽ nảy mầm.", "art:qua-dau", "art:hoa", "art:mam-dau")],
+        q("Gà con thấy hạt đậu. Gà con sẽ làm gì?", 1, "Đúng rồi! Gà con mổ hạt để ăn.", "Gà con thích ăn hạt đấy.", "art:ga-con-ngu", "art:ga-con-mo-dau", "art:ga-con-chay", "art:ga-con-uong-nuoc"),
+        q("Hạt nằm trong đất ẩm. Hạt nhú ra gì trước?", 2, "Đúng rồi! Hạt nhú ra mầm đậu trước.", "Hạt trong đất ẩm sẽ nảy mầm trước.", "art:qua-dau", "art:hoa", "art:mam-dau")],
         "M53", lu="kham-pha", evidence=TX)],
     {"kien_thuc": "Dự đoán điều xảy ra với hạt đậu (nhân quả đơn giản).", "bai_tap": ["Hạt cần nước", "Gà con ăn hạt", "Hạt nảy mầm"], "bang_chung": "Tiếp xúc KP.KH.01."}, "Bé đoán giỏi quá!", lu="kham-pha"))
 # 9 ─ Cảm xúc
@@ -133,7 +133,7 @@ S.append(st("One, two, three", "art:hat-dau*2", ["EN"], ("L001-BG-02", "san"), "
 # 11 ─ Sáng tạo, vận động, việc ở nhà
 S.append(st("Vườn đậu của bé", "art:hoa", ["TTg", "ST"], ("cay-cao", "cay-cao"), "Mình cùng tưởng tượng nhé.", [
     {"activity_id": aid(), "engine": "E15", "mechanic": "M56", "mode": "do", "skill_id": "KP.VD.01", "title": "Lăn như hạt đậu", "lu": "dang-tay",
-     "intro": ["Bé đứng dậy nào!"], "task": "Bé cuộn tròn như hạt đậu, lăn nhẹ một vòng, rồi đứng lên vươn cao.", "button": "Xong rồi!", "seconds": 35, "evidence": TX},
+     "intro": ["Bé tìm chỗ rộng có thảm, xa bàn ghế nhé."], "task": "Bé nằm xuống thảm, cuộn tròn như hạt đậu, lăn ngang thật nhẹ, rồi đứng lên vươn cao.", "button": "Xong rồi!", "seconds": 35, "evidence": TX},
     items("KP.ST.D01", "Nếu hạt đậu biết nói", [
         {"q": "Nếu hạt đậu biết nói, hạt sẽ nói gì với Lu?", "any": True, "style": "face", "ok": "Bé tưởng tượng hay quá!", "opts": [
             {"e": "art:giot-nuoc", "say": "Lu ơi, cho mình uống nước nhé.", "reply": "Hạt đậu khát nước rồi."},
@@ -151,7 +151,7 @@ S.append(st("Vườn đậu của bé", "art:hoa", ["TTg", "ST"], ("cay-cao", "c
 S.append(st("Cất hạt gọn gàng", "art:tui", ["KS"], ("phong", "phong"), "Tìm đủ hạt rồi. Mình cất đồ gọn gàng nhé.", [
     items("KS.SX.01", "Cất đồ đúng chỗ", [
         q("Hạt đậu nên cất vào đâu?", 0, "Đúng rồi! Hạt đậu cất vào túi.", "Hạt nhỏ, cất vào túi là gọn nhất.", "art:tui", "art:chao", "art:ao-nuoc"),
-        q("Bình tưới xong rồi. Lu cất bình ở đâu?", 1, "Đúng rồi! Bình tưới để cạnh vòi nước.", "Bình tưới để gần vòi nước cho dễ lấy.", "art:nha", "art:voi-nuoc", "art:cay")],
+        q("Tưới xong rồi. Lu cất bình tưới ở đâu?", 1, "Đúng rồi! Bình tưới để cạnh vòi nước.", "Bình tưới để gần vòi nước cho dễ lấy.", "art:ao-nuoc", "art:voi-nuoc", "art:cay")],
         "M18", lu="chi-tay", evidence=TX),
     {"activity_id": aid(), "engine": "E15", "mechanic": "M58", "mode": "do", "skill_id": "KS.NN.01", "title": "Bé dọn góc chơi", "lu": "dang-tay",
      "task": "Bé nhặt ba món đồ chơi gần bé, cất vào hộp. Xong thì bấm nút nhé.", "button": "Dọn xong rồi!", "seconds": 40, "evidence": TX}],
@@ -164,7 +164,7 @@ pkg.update({
                "why": "Hỏi con: “Làm sao con tìm ra hạt đậu?” Con có thể nói màu, hình dạng. Bố mẹ không chấm đúng sai.",
                "tonight": ["Bố mẹ giấu một món đồ chơi trong phòng, con đi tìm.", "Bật đèn pin chiếu bóng bàn tay, con đoán là con vật gì."],
                "play": {"ten": "Ai giấu đồ chơi?", "phut": 5, "cach_choi": "Bố mẹ giấu 3 món đồ nhỏ trong phòng, con tìm và đếm đủ 3 món.", "an_toan": "Không giấu đồ nhỏ dễ nuốt, không giấu chỗ cao."}},
-    "content_version": "L002-bainho-1", "review_status": "nhap", "title": "Hạt đậu lăn đi đâu", "minutes": 25,
+    "content_version": "L002-bainho-2", "review_status": "nhap", "title": "Hạt đậu lăn đi đâu", "minutes": 25,
     "note": "Theo cấu trúc L001 và dàn ý đợt 1: 12 bài nhỏ, mỗi bài 3–4 bài tập, đủ 6 nhóm, ≥ 8 năng lực. Trọng tâm TD.QS.01 có chấm.",
     "skills": [{"skill_id": "TD.QS.01", "name": "Quan sát, tìm vật ẩn", "cls": "G"}, {"skill_id": "TO.DEM.01", "name": "Đếm nhóm 1–3 vật (ôn)", "cls": "G"},
                {"skill_id": "TV.NG.01", "name": "Nghe chuyện, nhớ chi tiết (tiếp xúc)", "cls": "G"}, {"skill_id": "TV.AM.01", "name": "Vỗ tay theo tiếng (tiếp xúc)", "cls": "G"},

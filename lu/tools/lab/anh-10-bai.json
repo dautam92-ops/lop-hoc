@@ -1,7 +1,7 @@
 {
  "format": "lu-art-prompts",
  "version": "PM10-1",
- "ghi_chu": "Ảnh cho 10 bài mẫu hoàn chỉnh đầu tiên (Phòng mẫu). Bối cảnh: slot = tên cảnh (thay nền vẽ mã). Đồ vật: slot art:<tên> (thay hình vẽ mã). Chạy trên máy tam, ảnh chỉ hiện sau khi tam duyệt. Đồ vật dùng style_do_vat (bỏ \"natural expression\": mô hình vẽ thêm mặt người vào giọt nước, mũ, sỏi).",
+ "ghi_chu": "Ảnh cho 10 bài mẫu hoàn chỉnh đầu tiên (Phòng mẫu). Bối cảnh: slot = tên cảnh (thay nền vẽ mã). Đồ vật: slot art:<tên> (thay hình vẽ mã). Chạy trên máy tam, ảnh chỉ hiện sau khi tam duyệt. Đồ vật dùng style_do_vat (bỏ \"natural expression\": mô hình vẽ thêm mặt người vào giọt nước, mũ, sỏi). Kiểu vẽ: mục có \"kieu\": \"style\" (con vật) dùng style; mục khác dùng style_do_vat (soát logic 27/11).",
  "bai": [
   "CC-01",
   "CC-03",
@@ -112,14 +112,16 @@
    "slot": "art:buom",
    "vi": "Con bướm",
    "prompt": "a yellow butterfly with open wings, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-ca",
    "slot": "art:ca",
    "vi": "Con cá",
    "prompt": "a small orange fish, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-ca-rot",
@@ -154,7 +156,8 @@
    "slot": "art:chim",
    "vi": "Con chim",
    "prompt": "a small blue bird, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-dong-xu",
@@ -169,21 +172,24 @@
    "slot": "art:ech",
    "vi": "Con ếch",
    "prompt": "a cute green frog sitting, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-ga",
    "slot": "art:ga",
    "vi": "Gà mái",
    "prompt": "a brown mother hen, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-ga-con",
    "slot": "art:ga-con",
    "vi": "Gà con",
    "prompt": "a fluffy yellow chick, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-giot-nuoc",
@@ -233,7 +239,8 @@
    "slot": "art:meo",
    "vi": "Con mèo",
    "prompt": "a cute orange cat sitting, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-mu-dau-bep",
@@ -255,14 +262,16 @@
    "slot": "art:oc",
    "vi": "Con ốc sên",
    "prompt": "a small snail with a spiral shell, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-ong",
    "slot": "art:ong",
    "vi": "Con ong",
    "prompt": "a cute bee, isolated on plain white background",
-   "tach_nen": true
+   "tach_nen": true,
+   "kieu": "style"
   },
   {
    "id": "PM10-OB-rau",

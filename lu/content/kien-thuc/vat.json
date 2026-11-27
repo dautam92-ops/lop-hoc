@@ -457,11 +457,11 @@
    ]
   },
   "mat-dat": {
-   "ten": "mặt đất",
+   "ten": "mặt đất (trên cạn)",
    "nhom": "thien-nhien",
    "en": [
     "ground",
-    "soil"
+    "grassy"
    ]
   },
   "gio": {
@@ -844,6 +844,15 @@
    "en": [
     "pond bank"
    ]
+  },
+  "luong-dat": {
+   "ten": "luống đất",
+   "nhom": "thien-nhien",
+   "en": [
+    "soil",
+    "furrow"
+   ],
+   "an_duoc": false
   }
  }
 }
