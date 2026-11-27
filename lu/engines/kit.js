@@ -66,6 +66,45 @@ export function pointerTrack(el, { onStart, onMove, onEnd, isBusy = () => false 
     el.addEventListener('pointermove', mv); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
   });
 }
+// Vẽ bằng MỘT ngón, chặn tay tì (tam 27/11 22:57: "bàn tay con nhỏ rất dễ tì vào màn hình, nét vẽ bị dừng, nhất là trên iPad").
+//  - Chỉ theo một ngón đang vẽ; chạm khác (tay tì) trong lúc vẽ bị bỏ qua, nét không đứt, không nhảy.
+//  - Vết chạm to (lòng bàn tay > TAY_TO px) không bao giờ vẽ, tô hay bấm nút.
+//  - Ngón đầu tiên đứng yên (tay đặt trước) mà có ngón mới chạm thì chuyển sang ngón mới.
+//  - Có bút (Apple Pencil) thì bỏ qua mọi chạm tay.
+//  - Trong lúc vẽ và ngay sau đó, chạm ra ngoài vùng vẽ không bấm được gì; màn có vùng vẽ không cuộn, không phóng to.
+// onStart(x, y, e) trả false để không nhận; onCancel() khi nét bị hủy (không phải lỗi của bé, không báo sai).
+export const TAY_TO = 40;
+let veDangChay = null, chanDen = 0;
+const vetTo = t => Math.max(t.radiusX || 0, t.radiusY || 0) * 2 > TAY_TO;
+if (typeof document !== 'undefined' && !globalThis.__luTayTi) {
+  globalThis.__luTayTi = true;
+  // Hủy hành vi mặc định của chạm (click, cuộn, kính lúp iOS) khi: vết chạm to trên màn có vùng vẽ, hoặc chạm ngoài vùng vẽ lúc đang vẽ
+  document.addEventListener('touchstart', e => {
+    const coVe = document.querySelector('[data-vung-ve]'); if (!coVe) return;
+    const dangVe = veDangChay || Date.now() < chanDen;
+    if ([...e.changedTouches].some(vetTo) || (dangVe && ![...e.changedTouches].every(t => t.target?.closest?.('[data-vung-ve]')))) { if (e.cancelable) e.preventDefault(); }
+  }, { capture: true, passive: false });
+  const chan = e => { if (!(veDangChay || Date.now() < chanDen)) return; if (e.target?.closest?.('[data-vung-ve]')) return; e.stopPropagation(); e.preventDefault(); };
+  document.addEventListener('click', chan, true);
+}
+export function motNgon(el, { onStart, onMove, onEnd, onCancel, isBusy = () => false }) {
+  el.setAttribute('data-vung-ve', ''); el.style.touchAction = 'none';
+  let id = null, pen = false, x0 = 0, y0 = 0, moved = 0;
+  const to = e => e.pointerType === 'touch' && Math.max(e.width || 0, e.height || 0) > TAY_TO;
+  const xong = () => { id = null; if (veDangChay === el) veDangChay = null; chanDen = Date.now() + 250; };
+  el.addEventListener('pointerdown', e => {
+    e.preventDefault();
+    if (e.pointerType === 'pen') pen = true; else if (pen && e.pointerType === 'touch') return;
+    if (to(e) || isBusy()) return;
+    if (id !== null) { if (moved < 10 && e.pointerType !== 'mouse') { const cu = id; xong(); el.releasePointerCapture?.(cu); onCancel?.(); } else return; }
+    if (onStart && onStart(e.clientX, e.clientY, e) === false) return;
+    id = e.pointerId; x0 = e.clientX; y0 = e.clientY; moved = 0; veDangChay = el; el.setPointerCapture?.(id);
+  });
+  el.addEventListener('pointermove', e => { if (e.pointerId !== id) return; moved = Math.max(moved, Math.hypot(e.clientX - x0, e.clientY - y0)); onMove && onMove(e.clientX, e.clientY, e); });
+  el.addEventListener('pointerup', e => { if (e.pointerId !== id) return; const m = moved; xong(); onEnd && onEnd(e.clientX, e.clientY, e, m); });
+  el.addEventListener('pointercancel', e => { if (e.pointerId !== id) return; xong(); onCancel && onCancel(); });
+  el.addEventListener('contextmenu', e => e.preventDefault());
+}
 // Đổi tọa độ client sang tọa độ viewBox của một SVG
 export function svgPoint(svg, x, y) { const p = svg.createSVGPoint(); p.x = x; p.y = y; const m = svg.getScreenCTM(); return m ? p.matrixTransform(m.inverse()) : { x, y }; }
 

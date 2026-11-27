@@ -4,7 +4,7 @@
 //             thay bằng tô theo nét đứt của tranh cho sẵn). Vẽ xong Lu khen chung một lần.
 //   sticker : trang trí khung cảnh bằng cách kéo hình dán vào tranh, đặt ở đâu cũng được.
 // Tranh của bé lưu trong "Tủ tranh" trên máy, không gửi đi đâu (S13).
-import { vis, esc, sleep, setAuto, svgPoint, saveArtwork, frameHTML, req } from './kit.js';
+import { vis, esc, sleep, setAuto, svgPoint, saveArtwork, frameHTML, req, motNgon } from './kit.js';
 import { dragOrTap } from '../core/lu-core.js';
 
 export const id = 'E14', version = '1.0.0', name = 'Xây dựng, trang trí tự do';
@@ -31,10 +31,14 @@ function draw(ctx, act) {
       `<button class="opt dw-undo" aria-label="xóa nét vừa vẽ">${UNDO}</button><button class="big-btn dw-done">Vẽ xong</button>`);
     box.addEventListener('click', e => { const b = e.target.closest('.crayon'); if (!b) return; box.querySelectorAll('.crayon').forEach(x => x.classList.remove('on')); b.classList.add('on'); col = b.dataset.c; });
     box.querySelector('.dw-undo').onclick = () => { inkG.lastElementChild?.remove(); strokes = inkG.children.length; };
-    svg.addEventListener('pointerdown', e => { if (voice.busy) return; e.preventDefault(); svg.setPointerCapture?.(e.pointerId); const q = svgPoint(svg, e.clientX, e.clientY); pts = [[q.x, q.y]];
-      cur = document.createElementNS('http://www.w3.org/2000/svg', 'polyline'); cur.setAttribute('class', 'dw-line'); cur.setAttribute('stroke', col); cur.setAttribute('stroke-width', width); cur.setAttribute('points', `${q.x},${q.y} ${q.x + .1},${q.y}`); inkG.appendChild(cur); });
-    svg.addEventListener('pointermove', e => { if (!cur) return; const q = svgPoint(svg, e.clientX, e.clientY); pts.push([q.x, q.y]); cur.setAttribute('points', pts.map(p => p.join(',')).join(' ')); });
-    const end = () => { if (cur) { strokes++; cur = null; } }; svg.addEventListener('pointerup', end); svg.addEventListener('pointercancel', end);
+    // Tay tì (tam 27/11 22:57): chỉ một ngón vẽ; tay tì trong hay ngoài vùng vẽ không làm đứt nét, không thêm nét lạ (kit.js motNgon)
+    motNgon(svg, { isBusy: () => voice.busy,
+      onStart: (cx, cy) => { const q = svgPoint(svg, cx, cy); pts = [[q.x, q.y]];
+        cur = document.createElementNS('http://www.w3.org/2000/svg', 'polyline'); cur.setAttribute('class', 'dw-line'); cur.setAttribute('stroke', col); cur.setAttribute('stroke-width', width); cur.setAttribute('points', `${q.x},${q.y} ${q.x + .1},${q.y}`); inkG.appendChild(cur); },
+      onMove: (cx, cy) => { if (!cur) return; const q = svgPoint(svg, cx, cy); pts.push([q.x, q.y]); cur.setAttribute('points', pts.map(p => p.join(',')).join(' ')); },
+      onEnd: () => { if (cur) { strokes++; cur = null; } },
+      // nét bỏ dở vì tay đặt trước rồi ngón khác vẽ: xóa nét chấm thừa; trình duyệt hủy chạm giữa chừng: giữ phần đã vẽ
+      onCancel: () => { if (!cur) return; if (pts.length < 3) cur.remove(); else strokes++; cur = null; } });
     const doneBtn = box.querySelector('.dw-done');
     const finish = async () => {
       saveArtwork('ve', svg.outerHTML);
