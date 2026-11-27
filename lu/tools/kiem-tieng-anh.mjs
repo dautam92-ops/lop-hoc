@@ -29,14 +29,18 @@ export async function kiemTiengAnh(id) {
     if (VI.test(t) && en.length) loi.push(`${at}: câu "${t}" trộn tiếng Anh (${[...new Set(en)].join(', ')}) vào câu tiếng Việt; tách từ tiếng Anh thành câu riêng đọc giọng bản địa`);
     else if (!VI.test(t) && en.length && reg.clips[t] && !/^en-/.test(voice[t] || '')) loi.push(`${at}: câu tiếng Anh "${t}" đang đọc bằng giọng ${voice[t] || 'không rõ'}, cần giọng tiếng Anh bản địa`);
   }
-  // (4) Bé nói theo (tam 28/11 06:53 "Mono nói quả chuối đây bằng tiếng Việt thì bé sao bắt chước nói banana được"):
-  //     câu cuối bé nghe trước khi tới lượt nói theo phải là chính từ tiếng Anh, giọng bản xứ.
+  // (4) Bé nói theo (tam 28/11): bé phải nghe từ tiếng Anh do giọng bản xứ đọc TRƯỚC lời mời (06:53 "Mono nói quả chuối đây bằng tiếng Việt
+  //     thì bé sao bắt chước nói banana được"), và lời mời "Bé nói theo nào!" là câu nói CUỐI, sau đó chỉ chờ bé nói (06:55 "khi nói bé nói theo
+  //     nào thì bé nói ngay, vấp phải câu nói chậm của máy").
   const items = (pkg.stages || []).flatMap(st => st.activities).flatMap(a => (a.items || []).map((it, k) => [a.activity_id + ' câu ' + (k + 1), it]));
+  const laTA = (t, w) => !VI.test(t) && (t.toLowerCase().match(/[a-z]+/g) || []).some(x => LEX.has(x) || x === String(w || '').toLowerCase());
   for (const [at, it] of items) {
-    const q = [...Array(it.word ? (it.word_times ?? 1) : 0).fill(it.word), ...[].concat(it.q || [])].filter(t => t && !t.startsWith('__'));
-    if (!q.some(t => /nói theo/i.test(t))) continue;
-    const cuoi = q[q.length - 1];
-    if (VI.test(cuoi) || !(cuoi.toLowerCase().match(/[a-z]+/g) || []).some(w => LEX.has(w) || w === String(it.word || '').toLowerCase())) loi.push(`${at}: bé được mời nói theo nhưng câu cuối bé nghe là "${cuoi}", phải là từ tiếng Anh do giọng bản xứ đọc`);
+    const q = [...Array(it.word ? (it.word_times ?? 1) : 0).fill(it.word), ...[].concat(it.q || [])].filter(Boolean);
+    const iMoi = q.findIndex(t => /nói theo/i.test(t)); if (iMoi < 0) continue;
+    const truoc = q.slice(0, iMoi).filter(t => !t.startsWith('__')), sau = q.slice(iMoi + 1);
+    if (!truoc.some(t => laTA(t, it.word))) loi.push(`${at}: bé được mời nói theo nhưng chưa nghe từ tiếng Anh nào trước lời mời`);
+    if (sau.some(t => !t.startsWith('__'))) loi.push(`${at}: sau lời mời nói theo còn câu "${sau.find(t => !t.startsWith('__'))}"; lời mời phải là câu cuối, rồi chờ bé nói`);
+    else if (!sau.some(t => /^__cho\d+$/.test(t))) loi.push(`${at}: sau lời mời nói theo phải chờ bé nói (vd "__cho3")`);
   }
   return loi;
 }
