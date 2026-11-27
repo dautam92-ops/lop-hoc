@@ -556,7 +556,11 @@
   "Lu bình tĩnh đi tìm từng hạt.": "30b737df5007.mp3",
   "Đúng rồi! Hạt đậu cất vào túi.": "cbbfe31231d1.mp3",
   "Đúng rồi! Bình tưới để cạnh vòi nước.": "25cafbd25154.mp3",
-  "Bình tưới để gần vòi nước cho dễ lấy.": "e0cdb3782106.mp3"
+  "Bình tưới để gần vòi nước cho dễ lấy.": "e0cdb3782106.mp3",
+  "Hôm nay bé thấy thế nào?": "94feeea55dbc.mp3",
+  "Tuyệt quá, chúng mình cùng nhau khám phá nhé.": "3c2b84224ded.mp3",
+  "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé.": "3a0843c4e861.mp3",
+  "Cái bóng này là của ảnh nào dưới đây?": "ffef03b64652.mp3"
  },
  "entries": [
   {
@@ -5550,6 +5554,42 @@
    "file": "e0cdb3782106.mp3",
    "lang": "vi",
    "bytes": 20448,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hôm nay bé thấy thế nào?",
+   "file": "94feeea55dbc.mp3",
+   "lang": "vi",
+   "bytes": 15264,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tuyệt quá, chúng mình cùng nhau khám phá nhé.",
+   "file": "3c2b84224ded.mp3",
+   "lang": "vi",
+   "bytes": 21312,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé.",
+   "file": "3a0843c4e861.mp3",
+   "lang": "vi",
+   "bytes": 39024,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Cái bóng này là của ảnh nào dưới đây?",
+   "file": "ffef03b64652.mp3",
+   "lang": "vi",
+   "bytes": 19296,
    "voice": "vi-VN-HoaiMyNeural",
    "provider": "edge-tts",
    "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"

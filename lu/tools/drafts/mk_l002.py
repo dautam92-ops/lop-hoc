@@ -105,7 +105,7 @@ S.append(st("Thứ nào khác nhóm?", "art:soi", ["TD"], ("phong", "phong"), "L
 S.append(st("Hạt đậu gặp gì?", "art:giot-nuoc", ["KT", "NT"], ("L001-BG-03", "vuon"), "Hạt đậu lăn đi gặp nhiều thứ. Bé đoán xem nhé.", [
     items("KP.KH.01", "Bé đoán xem", [
         q("Hạt đậu lăn vào chỗ ướt. Hạt cần gì để nảy mầm?", 0, "Đúng rồi! Hạt cần nước để nảy mầm.", "Hạt cần nước. Bé tìm giọt nước nhé.", "art:giot-nuoc", "art:soi", "art:khan"),
-        q("Chú gà thấy hạt đậu. Chú gà sẽ làm gì?", 1, "Đúng rồi! Chú gà mổ hạt để ăn.", "Chú gà thích ăn hạt đấy.", "art:ga-con-ngu", "art:ga-con-mo-dau", "art:ga-con-uong-nuoc"),
+        q("Chú gà thấy hạt đậu. Chú gà sẽ làm gì?", 1, "Đúng rồi! Chú gà mổ hạt để ăn.", "Chú gà thích ăn hạt đấy.", "art:ga-con-ngu", "art:ga-con-mo-dau", "art:ga-con-chay"),
         q("Hạt đậu nằm trong đất lâu ngày. Hạt sẽ thành gì?", 2, "Đúng rồi! Hạt nảy thành mầm đậu.", "Hạt trong đất sẽ nảy mầm.", "art:qua-dau", "art:hoa", "art:mam-dau")],
         "M53", lu="kham-pha", evidence=TX)],
     {"kien_thuc": "Dự đoán điều xảy ra với hạt đậu (nhân quả đơn giản).", "bai_tap": ["Hạt cần nước", "Gà con ăn hạt", "Hạt nảy mầm"], "bang_chung": "Tiếp xúc KP.KH.01."}, "Bé đoán giỏi quá!", lu="kham-pha"))

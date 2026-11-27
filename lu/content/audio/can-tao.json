@@ -1,23 +1,6 @@
 {
  "format": "lu-voice-todo",
- "lesson": "L001",
- "at": "2026-11-27T03:17:30.524Z",
- "lines": [
-  {
-   "text": "Hôm nay bé thấy thế nào?",
-   "lang": "vi"
-  },
-  {
-   "text": "Tuyệt quá, chúng mình cùng nhau khám phá nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Không sao, có Lu ở đây rồi. Bé cùng Lu khám phá nhiều thứ mới mẻ nhé.",
-   "lang": "vi"
-  },
-  {
-   "text": "Cái bóng này là của ảnh nào dưới đây?",
-   "lang": "vi"
-  }
- ]
+ "lesson": "L002",
+ "at": "2026-11-27T03:31:03.971Z",
+ "lines": []
 }
