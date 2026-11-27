@@ -3,6 +3,7 @@
   "ghi_chu": "Sinh bằng tools/nha/ds-goi.mjs, không sửa tay.",
   "cong": false,
   "goi": {
-    "L001": "drafts"
+    "L001": "drafts",
+    "L002": "drafts"
   }
 }
