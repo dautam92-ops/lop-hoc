@@ -1,7 +1,7 @@
 {
  "doi_tuong": "L001",
  "tep": "content/drafts/L001.json",
- "ma_bam": "20d3362e2e065fcbfe1dc477f73914fde7f5bbcf",
+ "ma_bam": "20d6fdd91db764da29333c96b0bacc7daf2d0c04",
  "ngay": "2026-11-27",
  "nguoi_soat": "agent soát logic",
  "quy_tac_da_soat": [
@@ -32,8 +32,8 @@
  },
  "canh_bao_da_xet": [
   {
-   "canh_bao": "CẢNH BÁO L001-B07: \"Bà dặn Lu gieo hạt vào đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thien-nhien); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
-   "ket_luan": "Không phải lỗi: câu hỏi \"gieo hạt vào đâu\" nên ao nước (art:ao-nuoc), cái giỏ (art:gio) và luống đất (art:luong-dat) đều là chỗ có thể bỏ hạt vào, liên quan câu hỏi; khác nhóm trong kho chỉ do cách xếp nhóm. Hai đáp án sai có thật ngoài đời nhưng sai rõ (hạt trong ao, trong giỏ không mọc), đáp án đúng khớp lời \"gieo xuống đất\"."
+   "canh_bao": "CẢNH BÁO L001-B07: \"Bà dặn Mono gieo hạt vào đâu?\": đáp án thuộc 3 nhóm (noi-chon, do-vat, thien-nhien); agent xem đáp án sai có liên quan câu hỏi không (LG01)",
+   "ket_luan": "Không phải lỗi: hỏi \"gieo hạt vào đâu\" nên ao nước (art:ao-nuoc), cái giỏ (art:gio) và luống đất (art:luong-dat) đều là chỗ có thể bỏ hạt vào, liên quan câu hỏi; khác nhóm trong kho chỉ do cách xếp nhóm. Hai đáp án sai có thật nhưng sai rõ (hạt trong ao, trong giỏ không mọc), đáp án đúng khớp lời \"gieo xuống đất\"."
   }
  ],
  "loi": [
@@ -215,10 +215,21 @@
    "mo_ta": "Lựa chọn \"Lu kê ghế trèo lên giàn.\" và \"Lu leo lên nóc chuồng.\" đều dùng hình lu:nhay (tư thế Lu nhảy, registry/characters.json LU-0044). Hình nhảy không thể hiện kê ghế hay leo trèo, nên hình không khớp lời; bé nghe \"trèo/leo\" nhưng thấy Lu nhảy, dễ hiểu sai điều đang được dạy là nguy hiểm (trèo cao). Bộ tư thế Lu hiện không có tư thế trèo.",
    "sua": "Vẽ thêm tư thế Lu trèo (vd lu:treo-ghe: Lu đứng trên ghế với tay lên cao) đưa vào tools/lab/anh-con-thieu.json và dùng cho cả hai lựa chọn trèo. Nếu chưa vẽ được, đổi lời cho khớp hình lu:nhay: câu 1 \"Lu nhảy thật cao để với.\" (lời đáp \"Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé.\"), câu 2 giữ ý leo nhưng phải có hình leo; không dùng hình nhảy cho lời leo trèo.",
    "trang_thai": "da_sua",
-   "kiem_lai": "Đã sửa: lời lựa chọn đổi cho khớp hình lu:nhay: câu 1 \"Lu nhảy thật cao để với.\" (đáp \"Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé.\"), câu 2 \"Lu nhảy lên lấy mũ.\" (đáp \"Nóc chuồng cao lắm, nhảy dễ ngã. Lu nhờ bà lấy giúp nhé.\"). Hình và lời khớp nhau, lời đáp vẫn dạy nhờ người lớn ở chỗ cao, không khen việc nguy hiểm (LG11). thiet_ke.bai_tap B10 và B24 đã đồng bộ."
+   "kiem_lai": "Đã sửa: lời lựa chọn đổi cho khớp hình lu:nhay: câu 1 \"Lu nhảy thật cao để với.\" (đáp \"Nhảy không tới mà dễ ngã. Lu đi gọi bà giúp nhé.\"), câu 2 \"Lu nhảy lên lấy mũ.\" (đáp \"Nóc chuồng cao lắm, nhảy dễ ngã. Lu nhờ bà lấy giúp nhé.\"). Hình và lời khớp nhau, lời đáp vẫn dạy nhờ người lớn ở chỗ cao, không khen việc nguy hiểm (LG11). thiet_ke.bai_tap B10 và B24 đã đồng bộ. Soát lại 27/11 (Mono): lựa chọn sai nay là \"Mono trèo lên giàn để hái.\" / \"Mono trèo lên mái lấy mũ.\" với ảnh vẽ riêng art:mono-treo-gian-dau (DV-0047, Mono bám giàn đậu, mặt lo) và art:mono-treo-lay-mu (DV-0049, Mono không mũ, trèo vách chuồng gà, mũ nằm trên mái); lựa chọn đúng \"Mono nhờ bà hái giúp.\" / \"Mono gọi bà lấy giúp.\" với art:mono-nho-ba-hai-qua (DV-0048, bà đứng đất hái chùm đậu, Mono cầm giỏ) và art:mono-nho-ba-lay-mu (DV-0050, bà với lấy mũ ở mép mái, Mono chìa tay). Mỗi ảnh vẽ đúng việc làm trong lời (quy tắc 42), lời đáp ở lựa chọn trèo nhắc nguy hiểm và chỉ cách nhờ bà, lời ok trung tính, không khen trèo (LG11). Lỗi này đóng hẳn."
+  },
+  {
+   "ma": "LG09",
+   "o": "L001-B12 và L001-B13 (layout roi)",
+   "cau": "Bé chạm vào từng hạt đậu. Sỏi và lá thì để lại nhé. / Bé chạm vào từng mầm đậu nhé.",
+   "mo_ta": "Bài tìm vật nay rải vật trên cảnh luống đất (asset:BC-0004), các vật đứng cạnh nhau trong một cảnh nhưng đều vẽ cùng cỡ (ô 26% bề ngang, không có \"co\"). Ảnh hạt đậu DV-0001 là hạt phóng to chiếm hết khung, nên trên cảnh hạt đậu to bằng chiếc lá (B12) và to bằng cả bông hoa, bằng cả mầm đậu kèm ụ đất (B13); hạt đậu còn to gần nửa bề ngang một luống đất. Kho kiến thức ghi hat-dau \"nho\": true. Sai tương quan to nhỏ khi đứng cạnh nhau; ở B13 hạt to hơn cả mầm mọc từ hạt.",
+   "sua": "Thêm \"co\" như L002-B03 để chỉnh cỡ theo đời thật: B12 \"co\": {\"art:hat-dau\": 0.55, \"art:soi\": 0.7} (lá giữ 1); B13 \"co\": {\"art:hat-dau\": 0.5, \"art:hoa\": 1.15}. Ô chạm vẫn giữ 26% nên bé vẫn chạm dễ. Xem lại trên máy cho hạt vẫn nhận ra được.",
+   "trang_thai": "da_sua",
+   "kiem_lai": "Đã sửa: B12 \"co\": {\"art:hat-dau\": 0.6, \"art:soi\": 0.75}, B13 \"co\": {\"art:hat-dau\": 0.6, \"art:hoa\": 1.15}. Xem ảnh chụp reports/draft-L001/27-phone.png, 28-phone.png, 27-ipad.png, 28-ipad.png: hạt đậu nay nhỏ hơn rõ so với chiếc lá, nhỏ hơn viên sỏi một chút, không còn to hơn mầm kèm ụ đất; hạt vẫn nhận ra được (hình hạt đậu vàng nâu, rõ trên nền đất và cỏ), ô chạm không đổi. Máy soát 0 lỗi."
   }
  ],
  "ghi_chu_cap_nhat": [
-  "27/11/2026: chỉ đổi tên nhân vật Lu thành Mono theo tam, không đổi nội dung, đáp án hay logic; giữ kết quả soát."
+  "27/11/2026: chỉ đổi tên nhân vật Lu thành Mono theo tam, không đổi nội dung, đáp án hay logic; giữ kết quả soát.",
+  "27/11/2026 soát lại toàn bài sau các thay đổi: Lu đổi tên Mono (không còn chỗ gọi Lu, tên Mono thống nhất mọi màn, LG20 đạt); B12/B13 dùng layout roi trên cảnh luống đất (lời dẫn \"Hạt đậu rơi vào chỗ có sỏi và lá\" khớp cảnh; vật nằm trên đất, không lơ lửng; còn lỗi cỡ vật LG09 ghi ở trên); lời \"no\" có câu động viên mở đầu (đã đối chiếu từng câu: phần gợi ý sau câu động viên vẫn đúng sự thật, đúng hướng, LG19 đạt); B24 dùng ảnh hành động riêng DV-0047..0050 (xem lỗi LG05 B24). Các lỗi cũ da_sua giữ nguyên lịch sử, chữ \"Lu\" trong đó là tên cũ.",
+  "27/11/2026 soát lại sau khi sửa LG09 (thêm co ở B12, B13): ma_bam mới, 0 lỗi mở."
  ]
 }

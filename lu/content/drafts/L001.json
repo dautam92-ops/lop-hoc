@@ -784,7 +784,11 @@
      "no": "Cố lên bé ơi! Đó không phải hạt đậu. Hạt đậu màu vàng nâu.",
      "done": "Hoan hô! Bé nhặt đủ hạt đậu, không sót hạt nào!",
      "layout": "roi",
-     "bg": "asset:BC-0004"
+     "bg": "asset:BC-0004",
+     "co": {
+      "art:hat-dau": 0.6,
+      "art:soi": 0.75
+     }
     },
     {
      "activity_id": "L001-B13",
@@ -816,7 +820,11 @@
      "evidence": "tiep-xuc",
      "layout": "roi",
      "bg": "asset:BC-0004",
-     "xoay": 0
+     "xoay": 0,
+     "co": {
+      "art:hat-dau": 0.6,
+      "art:hoa": 1.15
+     }
     }
    ],
    "thiet_ke": {

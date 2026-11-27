@@ -28,7 +28,7 @@ S = []
 S.append(st("Hạt đậu lăn đi đâu?", "art:hat-dau*3", ["QS"], ("L001-BG-03", "vuon"), "Gió thổi hạt đậu lăn khắp vườn. Bé tìm giúp Mono nhé.", [
     {"activity_id": aid(), "engine": "E06", "mechanic": "M26", "skill_id": "TD.QS.01", "title": "Hạt đậu trốn trong vườn",
      "q": "Bé chạm vào từng {name} nhé.", "targets": [{"e": "art:hat-dau", "name": "hạt đậu"}], "distractors": ["art:la", "art:soi", "art:hoa"],
-     "min": 2, "max": 3, "cells": 9, "rounds": 2, "layout": "roi", "bg": "asset:BC-0004", "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.", "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"},
+     "min": 2, "max": 3, "cells": 9, "rounds": 2, "layout": "roi", "bg": "asset:BC-0004", "co": {"art:hat-dau": 0.6, "art:soi": 0.8, "art:la": 1.2, "art:hoa": 1.3}, "no": "Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.", "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"},
     items("TD.QS.01", "Hạt đậu nấp sau gì?", [
         q(BONG, 2, "Giỏi quá! Đó là cái giỏ.", "Bé nhìn kỹ: bóng có quai cầm.", "art:la", "art:tao", "art:gio", show="art:gio"),
         q(BONG, 0, "Hoan hô bé! Đó là chiếc lá.", "Bé nhìn kỹ: bóng mỏng, hai đầu thon, có cuống nhỏ.", "art:la", "art:bong", "art:oc", show="art:la")],

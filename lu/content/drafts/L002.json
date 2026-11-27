@@ -177,6 +177,12 @@
      "rounds": 2,
      "layout": "roi",
      "bg": "asset:BC-0004",
+     "co": {
+      "art:hat-dau": 0.6,
+      "art:soi": 0.8,
+      "art:la": 1.2,
+      "art:hoa": 1.3
+     },
      "no": "Không sao đâu! Đó chưa phải hạt đậu. Hạt đậu màu nâu, dài dài, nhẵn bóng.",
      "done": "Hoan hô bé! Bé tìm thấy đủ hạt đậu rồi!"
     },
