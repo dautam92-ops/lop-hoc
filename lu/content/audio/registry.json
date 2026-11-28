@@ -703,7 +703,21 @@
   "Màn cuối đây!": "25ead58d0179.mp3",
   "Xuất sắc! Đúng hai hạt!": "050d8cbfa3d5.mp3",
   "Xuất sắc! Đúng ba hạt!": "2d5c9773cd8e.mp3",
-  "Xuất sắc! Đúng một hạt!": "d000d1f93ac5.mp3"
+  "Xuất sắc! Đúng một hạt!": "d000d1f93ac5.mp3",
+  "Mình học tên ba loại quả nhé!": "cd3e5d3196c8.mp3",
+  "Apple": "476432a3e85a.mp3",
+  "Quả táo, tiếng Anh là": "354307e009e8.mp3",
+  "Apple!": "85733abba394.mp3",
+  "Bé nói theo nào!": "8505b15d576a.mp3",
+  "Bé nói hay quá!": "a7c925ed3c52.mp3",
+  "Banana": "fc6fae10db2b.mp3",
+  "Quả chuối, tiếng Anh là": "8fd1638f7b5e.mp3",
+  "Banana!": "6ae979c1d6b1.mp3",
+  "Giỏi quá! Bé nhớ cả quả chuối rồi.": "c8dc9c07ee3e.mp3",
+  "Orange": "09fb6aaba794.mp3",
+  "Quả cam, tiếng Anh là": "a1439584f135.mp3",
+  "Orange!": "a50f60931115.mp3",
+  "Tuyệt vời! Ba quả vào giỏ của bà rồi.": "107524f3fffb.mp3"
  },
  "entries": [
   {
@@ -7020,6 +7034,132 @@
    "file": "d000d1f93ac5.mp3",
    "lang": "vi",
    "bytes": 19296,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mình học tên ba loại quả nhé!",
+   "file": "cd3e5d3196c8.mp3",
+   "lang": "vi",
+   "bytes": 17136,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Apple",
+   "file": "476432a3e85a.mp3",
+   "lang": "en-cham",
+   "bytes": 14688,
+   "voice": "en-US-AnaNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Quả táo, tiếng Anh là",
+   "file": "354307e009e8.mp3",
+   "lang": "vi",
+   "bytes": 16416,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Apple!",
+   "file": "85733abba394.mp3",
+   "lang": "en",
+   "bytes": 11232,
+   "voice": "en-US-AnaNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Bé nói theo nào!",
+   "file": "8505b15d576a.mp3",
+   "lang": "vi",
+   "bytes": 12672,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Bé nói hay quá!",
+   "file": "a7c925ed3c52.mp3",
+   "lang": "vi",
+   "bytes": 12384,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Banana",
+   "file": "fc6fae10db2b.mp3",
+   "lang": "en-cham",
+   "bytes": 16416,
+   "voice": "en-US-AnaNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Quả chuối, tiếng Anh là",
+   "file": "8fd1638f7b5e.mp3",
+   "lang": "vi",
+   "bytes": 16272,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Banana!",
+   "file": "6ae979c1d6b1.mp3",
+   "lang": "en",
+   "bytes": 11232,
+   "voice": "en-US-AnaNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giỏi quá! Bé nhớ cả quả chuối rồi.",
+   "file": "c8dc9c07ee3e.mp3",
+   "lang": "vi",
+   "bytes": 25200,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Orange",
+   "file": "09fb6aaba794.mp3",
+   "lang": "en-cham",
+   "bytes": 15552,
+   "voice": "en-US-AnaNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Quả cam, tiếng Anh là",
+   "file": "a1439584f135.mp3",
+   "lang": "vi",
+   "bytes": 16272,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Orange!",
+   "file": "a50f60931115.mp3",
+   "lang": "en",
+   "bytes": 11232,
+   "voice": "en-US-AnaNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tuyệt vời! Ba quả vào giỏ của bà rồi.",
+   "file": "107524f3fffb.mp3",
+   "lang": "vi",
+   "bytes": 26640,
    "voice": "vi-VN-HoaiMyNeural",
    "provider": "edge-tts",
    "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
