@@ -99,7 +99,10 @@ check('Ảnh đã duyệt có đủ tệp', aMiss.length === 0, aMiss.join(', ')
   // Hình đang chờ vẽ trong danh sách theo dõi chung (tools/lab/anh-con-thieu.json) được tạm dùng hình vẽ mã như Phòng mẫu;
   // hình mới cho bài (vd ảnh hành động) phải vẽ và duyệt xong mới lên mạng.
   let cho = new Set(); try { cho = new Set(JSON.parse(await readFile(path.join(ROOT, 'tools/lab/anh-con-thieu.json'), 'utf8')).items.map(i => i.slot)); } catch {}
-  const chua = [...dung].filter(x => !duyet.has(x) && !cho.has(x));
+  // tam 28/11 09:00 ("quả chuối vẽ sai" ở M001): danh sách chờ vẽ chỉ miễn cho Phòng mẫu. Buổi học gửi sếp xem hay lên mạng
+  // KHÔNG được còn hình vẽ mã tạm: mọi đồ vật, con vật trong buổi phải là ảnh vẽ tay đã duyệt (quy tắc 48).
+  const chua = [...dung].filter(x => !duyet.has(x));
+  if (chua.some(x => cho.has(x))) console.log('   Hình còn chờ vẽ tay (đang là hình vẽ mã tạm): ' + chua.filter(x => cho.has(x)).join(', '));
   check('Mọi hình trong bài là ảnh vẽ tay đã duyệt', chua.length === 0, chua.length ? 'chờ vẽ/duyệt: ' + chua.join(', ') : `${dung.size} hình`); }
 
 // 3b. Quy tắc lật thẻ (tam 26/11): sai chỉ úp lại, im lặng; đúng một đôi chỉ âm báo; xong cả bài mới khen.

@@ -592,3 +592,6 @@
 @media (max-width: 600px) { .lu-lesson .tap-grid { grid-template-columns: repeat(2, 1fr); } .lu-lesson .tap-grid .opt { min-width: 41vw; min-height: 41vw; } }
 /* Điện thoại dọc: hàng 3 ảnh minh họa (vd ba thuyền "bên cạnh, ở giữa") giữ trên một hàng, không xếp chồng đẩy ô đáp án ra ngoài màn (M050 28/11) */
 @media (orientation: portrait) and (max-width: 600px) { .lu-lesson .story:has(> .sv:nth-of-type(3)) { display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 2vw; } .lu-lesson .story:has(> .sv:nth-of-type(3)) > .sv { padding: 4px; } .lu-lesson .story:has(> .sv:nth-of-type(3)) > .sv .lu-art { width: 28vw; height: 28vw; } }
+/* Ảnh vẽ tay dáng cao (bóng bay có dây, 28/11) không được kéo giãn ô khay "Vật nào biến mất?": ô giữ vuông, ảnh co trọn trong ô */
+.lu-lesson .vn-it { min-width: 0; min-height: 0; overflow: hidden; }
+.lu-lesson .vn-it img.lu-art { object-fit: contain; min-height: 0; max-height: 100%; }
