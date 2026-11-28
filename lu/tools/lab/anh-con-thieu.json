@@ -27,55 +27,12 @@
    "tach_nen": true
   },
   {
-   "id": "PM31-OB-tho",
-   "slot": "art:tho",
-   "vi": "Bạn thỏ",
-   "prompt": "a cute small white rabbit with long ears sitting on the grass, side view, gentle friendly animal, isolated on plain white background",
-   "tach_nen": true,
-   "kieu": "style"
-  },
-  {
    "id": "PM31-OB-vit",
    "slot": "art:vit",
    "vi": "Con vịt",
    "prompt": "a cute small white duck with an orange beak and orange feet, swimming in a small round puddle of blue water, side view, gentle friendly animal, isolated on plain white background",
    "tach_nen": true,
    "kieu": "style"
-  },
-  {
-   "id": "PM31-OB-may",
-   "slot": "art:may",
-   "vi": "Đám mây",
-   "prompt": "a single fluffy white cloud with soft blue shading, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-mat-troi",
-   "slot": "art:mat-troi",
-   "vi": "Mặt trời",
-   "prompt": "a warm yellow sun with soft rounded rays, no face, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-cau-vong",
-   "slot": "art:cau-vong",
-   "vi": "Cầu vồng",
-   "prompt": "a soft pastel rainbow arc with small white clouds at both ends, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-sao",
-   "slot": "art:sao",
-   "vi": "Ngôi sao",
-   "prompt": "a single golden five-pointed star with rounded tips, no face, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-bong-bay",
-   "slot": "art:bong-bay",
-   "vi": "Quả bóng bay",
-   "prompt": "a single red balloon with a curly string, isolated on plain white background",
-   "tach_nen": true
   },
   {
    "id": "PM31-OB-ban-chai",
@@ -131,13 +88,6 @@
    "slot": "art:giay-to",
    "vi": "Tờ giấy",
    "prompt": "a sheet of white paper with a slightly curled corner, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-chau-cay",
-   "slot": "art:chau-cay",
-   "vi": "Chậu cây",
-   "prompt": "a small terracotta flower pot with a green seedling, isolated on plain white background",
    "tach_nen": true
   },
   {
@@ -271,27 +221,6 @@
    "slot": "art:xac-xo",
    "vi": "Cái xắc xô",
    "prompt": "a small wooden tambourine with little metal jingles, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-mat-trang",
-   "slot": "art:mat-trang",
-   "vi": "Mặt trăng",
-   "prompt": "a soft pale yellow crescent moon, no face, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-chong-chong",
-   "slot": "art:chong-chong",
-   "vi": "Chong chóng",
-   "prompt": "a colorful paper pinwheel on a wooden stick, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "L001-OB-luong-dat",
-   "slot": "art:luong-dat",
-   "vi": "Luống đất để gieo hạt (L001, soát logic 27/11)",
-   "prompt": "a small mound of soft brown garden soil with two shallow furrows, no plants, no grass, isolated on plain white background",
    "tach_nen": true
   }
  ]
