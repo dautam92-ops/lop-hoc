@@ -3,6 +3,7 @@
 // Mỗi lỗi đã gặp phải có ít nhất một mục ở đây (xem SO-LOI.md).
 import { danhGia } from './do-to-giua.mjs';
 import { kiemCauTruc, kiemOn, kiemNangLuc } from './kiem-cau-truc.mjs';
+import { kiemLapLuot } from './kiem-lap-luot.mjs';
 import { readdir } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import { readFile, access } from 'node:fs/promises';
@@ -33,6 +34,8 @@ check(`Buổi học đủ ${minPhut} phút trở lên`, phut >= minPhut, `${phut
   const pkg = all.find(p => p.lesson_id === id); const so = x => +String(x).replace(/\D/g, '');
   const ct = pkg ? kiemCauTruc(pkg) : [`không thấy ${id}`];
   check('Cấu trúc như L001: 10–12 bài nhỏ, 3–4 bài tập mỗi bài, đủ 6 nhóm kỹ năng', !ct.length, ct.slice(0, 3).join('; '));
+  // Quy tắc 49 (tam 28/11 21:47 "Đánh răng buổi tối" lặp một quy trình cả 3 lượt): mỗi lượt một nội dung khác
+  { const ll = pkg ? kiemLapLuot(pkg) : []; check('Mỗi lượt trong bài con là một nội dung khác (không lặp quy trình, không lượt giống hệt)', !ll.length, ll.slice(0, 3).join('; ')); }
   const ot = pkg ? kiemOn(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
   check('Ôn chữ/số: mỗi lượt ôn một cách học mới, từ L004 có thẻ ôn', !ot.length, ot.slice(0, 3).join('; '));
   const nl = pkg ? kiemNangLuc(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
