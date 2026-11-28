@@ -30,9 +30,10 @@
    "id": "PM31-OB-tho",
    "slot": "art:tho",
    "vi": "Bạn thỏ",
-   "prompt": "a cute small white rabbit with long ears sitting on the grass, side view, gentle friendly animal, isolated on plain white background",
+   "prompt": "a small white rabbit drawn true to life, realistic rabbit body and proportions, long upright ears, round fluffy tail, pink nose, sitting on a small patch of grass, side view, gentle, isolated on plain white background",
    "tach_nen": true,
-   "kieu": "style"
+   "kieu": "style",
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "PM31-OB-vit",
@@ -46,28 +47,31 @@
    "id": "PM31-OB-may",
    "slot": "art:may",
    "vi": "Đám mây",
-   "prompt": "a single fluffy white cloud with soft blue shading, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a single fluffy white cumulus cloud drawn true to life, puffy rounded top, flatter bottom, soft blue-grey shading underneath, no face, no rain, only the cloud, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "PM31-OB-cau-vong",
    "slot": "art:cau-vong",
    "vi": "Cầu vồng",
-   "prompt": "a soft pastel rainbow arc with small white clouds at both ends, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a rainbow drawn true to life, a smooth arc with colors in the correct order from outside: red, orange, yellow, green, blue, indigo, violet, small soft white clouds at both ends, only the rainbow, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "PM31-OB-bong-bay",
    "slot": "art:bong-bay",
    "vi": "Quả bóng bay",
-   "prompt": "a single red balloon with a curly string, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a single red rubber balloon drawn true to life, oval shape slightly narrower at the bottom, small tied knot, thin curly string hanging down, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "PM31-OB-ban-chai",
    "slot": "art:ban-chai",
-   "vi": "Bàn chải đánh răng",
-   "prompt": "a child toothbrush with blue handle and soft white bristles, isolated on plain white background",
+   "vi": "Bàn chải đánh răng (dùng ở M030 bài đánh răng)",
+   "prompt": "one child's toothbrush drawn true to life, small colorful plastic handle, soft white bristles with a pea-sized dab of toothpaste, only the object, no face, no animal, no people, isolated on plain white background",
    "tach_nen": true
   },
   {
@@ -116,8 +120,9 @@
    "id": "PM31-OB-chau-cay",
    "slot": "art:chau-cay",
    "vi": "Chậu cây",
-   "prompt": "a small terracotta flower pot with a green seedling, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a small terracotta flower pot drawn true to life with a thick rim and dark soil, a green seedling with small leaves growing from the soil, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "PM31-OB-thia",
@@ -235,22 +240,25 @@
    "id": "PM31-OB-mat-trang",
    "slot": "art:mat-trang",
    "vi": "Mặt trăng",
-   "prompt": "a soft pale yellow crescent moon, no face, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a pale yellow crescent moon drawn true to life, soft glow, faint crater shading, no face, only the moon, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "PM31-OB-chong-chong",
    "slot": "art:chong-chong",
    "vi": "Chong chóng",
-   "prompt": "a colorful paper pinwheel on a wooden stick, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a paper pinwheel drawn true to life, colorful folded paper blades curling around a center pin, mounted on a thin wooden stick, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "L001-OB-luong-dat",
    "slot": "art:luong-dat",
    "vi": "Luống đất để gieo hạt (L001, soát logic 27/11)",
-   "prompt": "a small mound of soft brown garden soil with two shallow furrows, no plants, no grass, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "a small raised bed of soft dark brown garden soil drawn true to life, loose crumbly texture, shallow furrows along the top, no plants, no grass, only the soil, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 17:40 sếp đồng ý vẽ tay 8 hình L001 (quy tắc 48, luồng báo lỗi)"
   },
   {
    "id": "M001-OB-gio-thoi",
@@ -275,6 +283,181 @@
    "prompt": "one round ripe orange fruit drawn true to life: realistic orange shape, dimpled peel texture, small stem with one small green leaf, natural orange color, only the object, no face, no animal, no people, isolated on plain white background",
    "tach_nen": true,
    "ve_lai": "28/11: soát cùng chuối, vẽ giống thật"
+  },
+  {
+   "id": "M020-OB-phao-hoa",
+   "slot": "art:phao-hoa",
+   "vi": "Một chùm pháo hoa trong khung trời đêm tròn (M020 trò đinh đếm nhanh, đếm được từng chùm)",
+   "prompt": "one colorful firework burst bursting inside a small round dark-blue night-sky circle, sparkling rays in red, yellow and green, only one burst, no city, no people, no animal, vignette circle, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M020-OB-den-long",
+   "slot": "art:den-long",
+   "vi": "Đèn lồng đỏ trơn để bé dán trang trí (M020 bài Đèn lồng, đồng thời đồ cất khi dọn lễ hội)",
+   "prompt": "one large round red paper lantern drawn true to life, plain smooth paper surface with no patterns, gold top cap with a short hanging string, small gold tassel at the bottom, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M030-OB-la-vang",
+   "slot": "art:la-vang",
+   "vi": "Một chiếc lá vàng (M030 đếm lá xanh bỏ qua lá vàng; lá già)",
+   "prompt": "yellow leaf: one yellow autumn leaf, same oval leaf shape as a common tree leaf, visible veins, slightly curled edge, natural golden yellow, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M030-OB-cay-la-vang",
+   "slot": "art:cay-la-vang",
+   "vi": "Cây lá vàng đang rụng (M030 bài cây rụng lá)",
+   "prompt": "tree with yellow leaves: one tree with golden yellow autumn leaves, a few yellow leaves falling through the air and some lying on the grass under the tree, sturdy brown trunk, drawn true to life, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M030-OB-rua",
+   "slot": "art:rua",
+   "vi": "Con rùa cạn (M030 đoán con vật: mai cứng, bò chậm)",
+   "prompt": "a small land tortoise drawn true to life, realistic tortoise body and proportions, high domed brown shell with hexagon pattern, four sturdy legs walking slowly, side view, gentle, isolated on plain white background",
+   "tach_nen": true,
+   "kieu": "style"
+  },
+  {
+   "id": "M030-OB-coc-nuoc",
+   "slot": "art:coc-nuoc",
+   "vi": "Cốc nước (M030 súc miệng, M050 tự rót nước)",
+   "prompt": "cup of water: one clear plastic child's cup filled with clean water, simple cylinder shape, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M030-OB-dat-rung",
+   "slot": "art:dat-rung",
+   "vi": "Bãi cỏ trống trong rừng để bé dán cây, thú (M030 thử thách vàng)",
+   "prompt": "a wide empty grassy forest clearing seen from the front, soft green grass, a few small pebbles, a gentle path, blue sky behind, no trees in the middle, no animal, no people, soft rounded vignette shape, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M030-BG-01",
+   "slot": "M030-BG-01",
+   "vi": "Nền: rừng cây cổ thụ (M030 Hội mê cung cây cổ thụ)",
+   "prompt": "children's picture book background, a peaceful forest with one huge old banyan tree in the middle with big twisting roots above the ground, soft sunlight through leaves, green grass and ferns, wide landscape 16:9, no animal, no people, no text",
+   "tach_nen": false,
+   "kieu": "nen",
+   "kich_thuoc": "1600x900"
+  },
+  {
+   "id": "M050-OB-cua",
+   "slot": "art:cua",
+   "vi": "Con cua (M050 cua bò đi mấy con, bạn cua vẫy càng)",
+   "prompt": "a small red crab drawn true to life, realistic crab body and proportions, two claws raised, eight legs, gentle, top-front view, isolated on plain white background",
+   "tach_nen": true,
+   "kieu": "style"
+  },
+  {
+   "id": "M050-OB-thuyen",
+   "slot": "art:thuyen",
+   "vi": "Thuyền gỗ nhỏ (M050 xếp thuyền to nhỏ vào bến)",
+   "prompt": "one small wooden rowing boat drawn true to life, side view facing right, light brown wooden planks, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M050-OB-thuyen-do",
+   "slot": "art:thuyen-do",
+   "vi": "Thuyền đỏ (M050 bên cạnh, ở giữa)",
+   "prompt": "red boat: one small wooden boat drawn true to life, side view facing right, hull painted bright red, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M050-OB-thuyen-vang",
+   "slot": "art:thuyen-vang",
+   "vi": "Thuyền vàng (M050 bên cạnh, ở giữa)",
+   "prompt": "yellow boat: one small wooden boat drawn true to life, side view facing right, hull painted bright yellow, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M050-OB-thuyen-xanh",
+   "slot": "art:thuyen-xanh",
+   "vi": "Thuyền xanh (M050 bên cạnh, ở giữa)",
+   "prompt": "blue boat: one small wooden boat drawn true to life, side view facing right, hull painted bright blue, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M050-OB-co-hoi",
+   "slot": "art:co-hoi",
+   "vi": "Lá cờ trơn để bé dán trang trí (M050 cờ hội)",
+   "prompt": "one large plain light yellow rectangular cloth flag on a short wooden pole, blank smooth cloth with no symbols, slightly waving, drawn true to life, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true
+  },
+  {
+   "id": "M050-OB-ga-con-ngap",
+   "slot": "art:ga-con-ngap",
+   "vi": "Gà con ngáp dài buồn ngủ (M050 gà muốn gì)",
+   "prompt": "yawning chick: the same baby chick as in the reference image, same colors and proportions, full body, no shadow, isolated on plain white background, the chick is yawning with its beak wide open and eyes half closed, sleepy",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn gà con NV-0043"
+  },
+  {
+   "id": "M050-OB-ga-con-im-lang",
+   "slot": "art:ga-con-im-lang",
+   "vi": "Gà con ngồi im lặng một mình (M050 gà muốn gì)",
+   "prompt": "quiet chick: the same baby chick as in the reference image, same colors and proportions, full body, no shadow, isolated on plain white background, the chick sits alone quietly, head slightly down, a little shy, calm face",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn gà con NV-0043"
+  },
+  {
+   "id": "M050-OB-mono-chi-mat",
+   "slot": "art:mono-chi-mat",
+   "vi": "Mono chỉ vào đôi mắt (M050 Eyes)",
+   "prompt": "mono pointing at eyes: the same character Mono as in the reference image, same face, colors and proportions, full body, no shadow under feet, isolated on plain white background, Mono points both index fingers at its own eyes, smiling",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn Mono MN-0006 (assets/mono/xuat-ban)"
+  },
+  {
+   "id": "M050-OB-mono-xoe-tay",
+   "slot": "art:mono-xoe-tay",
+   "vi": "Mono xòe hai bàn tay ra trước (M050 Hands)",
+   "prompt": "mono showing hands: the same character Mono as in the reference image, same face, colors and proportions, full body, no shadow under feet, isolated on plain white background, Mono holds both open hands out to the front, palms facing the viewer, smiling",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn Mono MN-0006 (assets/mono/xuat-ban)"
+  },
+  {
+   "id": "M050-OB-mono-chi-chan",
+   "slot": "art:mono-chi-chan",
+   "vi": "Mono chỉ vào đôi chân (M050 Legs)",
+   "prompt": "mono pointing at legs: the same character Mono as in the reference image, same face, colors and proportions, full body, no shadow under feet, isolated on plain white background, Mono bends slightly and points at its own legs with both hands, smiling",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn Mono MN-0006 (assets/mono/xuat-ban)"
+  },
+  {
+   "id": "M050-OB-mono-ao-phao",
+   "slot": "art:mono-ao-phao",
+   "vi": "Mono mặc áo phao cam trên bến (M050 an toàn: an toàn)",
+   "prompt": "mono in a life jacket: the same character Mono as in the reference image, same face, colors and proportions, full body, no shadow under feet, isolated on plain white background, Mono wears a bright orange life jacket fastened properly, standing safely on a wooden dock, happy",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn Mono MN-0006 (assets/mono/xuat-ban)"
+  },
+  {
+   "id": "M050-OB-mono-mep-ben",
+   "slot": "art:mono-mep-ben",
+   "vi": "Mono đứng sát mép bến một mình (M050 an toàn: chưa an toàn)",
+   "prompt": "mono at the dock edge alone: the same character Mono as in the reference image, same face, colors and proportions, full body, no shadow under feet, isolated on plain white background, Mono stands alone at the very edge of a wooden dock right above the water, no life jacket, no adult nearby, looking down at the water",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn Mono MN-0006 (assets/mono/xuat-ban)"
+  },
+  {
+   "id": "M050-OB-mono-nam-tay-ba",
+   "slot": "art:mono-nam-tay-ba",
+   "vi": "Mono nắm tay bà đi trên bến (M050 an toàn: an toàn)",
+   "prompt": "mono holding grandma hand: Mono and the grandmother from the reference images walking hand in hand along the middle of a wooden dock, away from the edge, both smiling, full body, no shadow, isolated on plain white background",
+   "tach_nen": true,
+   "tham_chieu": "ảnh chuẩn Mono MN-0006 và ảnh bà (art:mono-nho-ba-lay-mu)"
+  },
+  {
+   "id": "M050-BG-01",
+   "slot": "M050-BG-01",
+   "vi": "Nền: bến thuyền đảo nhỏ (M050 Hội bến thuyền)",
+   "prompt": "children's picture book background, a small island harbor on a sunny day, a wooden dock reaching into calm blue sea, a few small boats tied up, sandy beach, a lighthouse far away, festival bunting flags, wide landscape 16:9, no animal, no people, no text",
+   "tach_nen": false,
+   "kieu": "nen",
+   "kich_thuoc": "1600x900"
   }
  ]
 }

@@ -305,9 +305,30 @@
    "giai_doan_cay": 0,
    "nho": true
   },
-  "cay-dau": {"ten": "cây đậu", "nhom": "thuc-vat", "en": ["bean plant"], "giai_doan_cay": 2},
-  "chuoi": {"ten": "quả chuối", "nhom": "do-an", "en": ["banana"], "an_duoc": true},
-  "cam": {"ten": "quả cam", "nhom": "do-an", "en": ["orange"], "an_duoc": true},
+  "cay-dau": {
+   "ten": "cây đậu",
+   "nhom": "thuc-vat",
+   "en": [
+    "bean plant"
+   ],
+   "giai_doan_cay": 2
+  },
+  "chuoi": {
+   "ten": "quả chuối",
+   "nhom": "do-an",
+   "en": [
+    "banana"
+   ],
+   "an_duoc": true
+  },
+  "cam": {
+   "ten": "quả cam",
+   "nhom": "do-an",
+   "en": [
+    "orange"
+   ],
+   "an_duoc": true
+  },
   "mam-dau": {
    "ten": "mầm đậu",
    "nhom": "thuc-vat",
@@ -972,6 +993,222 @@
     "gift"
    ],
    "an_duoc": false
+  },
+  "cay-la-vang": {
+   "ten": "cây lá vàng đang rụng",
+   "nhom": "thuc-vat",
+   "en": [
+    "tree with yellow leaves"
+   ]
+  },
+  "co-hoi": {
+   "ten": "lá cờ",
+   "nhom": "do-vat",
+   "en": [
+    "flag"
+   ],
+   "an_duoc": false
+  },
+  "coc-nuoc": {
+   "ten": "cốc nước",
+   "nhom": "do-vat",
+   "en": [
+    "cup of water"
+   ],
+   "an_duoc": false
+  },
+  "cua": {
+   "ten": "con cua",
+   "nhom": "con-vat",
+   "en": [
+    "crab"
+   ],
+   "bay": false,
+   "boi": true,
+   "song_o": "nuoc",
+   "an": [
+    "rong",
+    "tôm tép"
+   ],
+   "chan": 8,
+   "an_duoc": false
+  },
+  "dat-rung": {
+   "ten": "bãi đất trống trong rừng",
+   "nhom": "canh",
+   "en": [
+    "forest clearing"
+   ]
+  },
+  "den-long": {
+   "ten": "đèn lồng",
+   "nhom": "do-vat",
+   "en": [
+    "lantern"
+   ],
+   "an_duoc": false
+  },
+  "ga-con-im-lang": {
+   "ten": "gà con ngồi im lặng",
+   "nhom": "nhan-vat",
+   "en": [
+    "quiet chick"
+   ]
+  },
+  "ga-con-ngap": {
+   "ten": "gà con ngáp",
+   "nhom": "nhan-vat",
+   "en": [
+    "yawning chick"
+   ]
+  },
+  "hinh-tam-giac": {
+   "ten": "hình tam giác",
+   "nhom": "do-vat",
+   "en": [
+    "triangle"
+   ],
+   "canh": 3
+  },
+  "hinh-tron": {
+   "ten": "hình tròn",
+   "nhom": "do-vat",
+   "en": [
+    "circle"
+   ],
+   "canh": 0
+  },
+  "hinh-vuong": {
+   "ten": "hình vuông",
+   "nhom": "do-vat",
+   "en": [
+    "square"
+   ],
+   "canh": 4
+  },
+  "la-vang": {
+   "ten": "chiếc lá vàng",
+   "nhom": "thuc-vat",
+   "en": [
+    "yellow leaf"
+   ],
+   "noi": true
+  },
+  "mono-ao-phao": {
+   "ten": "Mono mặc áo phao",
+   "nhom": "hanh-dong",
+   "en": [
+    "mono in a life jacket"
+   ]
+  },
+  "mono-chi-chan": {
+   "ten": "Mono chỉ vào đôi chân",
+   "nhom": "hanh-dong",
+   "en": [
+    "mono pointing at legs"
+   ]
+  },
+  "mono-chi-mat": {
+   "ten": "Mono chỉ vào đôi mắt",
+   "nhom": "hanh-dong",
+   "en": [
+    "mono pointing at eyes"
+   ]
+  },
+  "mono-mep-ben": {
+   "ten": "Mono đứng sát mép bến một mình",
+   "nhom": "hanh-dong",
+   "en": [
+    "mono at the dock edge alone"
+   ]
+  },
+  "mono-nam-tay-ba": {
+   "ten": "Mono nắm tay bà đi trên bến",
+   "nhom": "hanh-dong",
+   "en": [
+    "mono holding grandma hand"
+   ]
+  },
+  "mono-xoe-tay": {
+   "ten": "Mono xòe hai bàn tay",
+   "nhom": "hanh-dong",
+   "en": [
+    "mono showing hands"
+   ]
+  },
+  "phao-hoa": {
+   "ten": "chùm pháo hoa",
+   "nhom": "thien-nhien",
+   "en": [
+    "firework"
+   ]
+  },
+  "rua": {
+   "ten": "con rùa",
+   "nhom": "con-vat",
+   "en": [
+    "turtle",
+    "tortoise"
+   ],
+   "bay": false,
+   "boi": true,
+   "song_o": "can",
+   "an": [
+    "rau",
+    "cỏ"
+   ],
+   "chan": 4,
+   "an_duoc": false
+  },
+  "thuyen": {
+   "ten": "chiếc thuyền",
+   "nhom": "do-vat",
+   "en": [
+    "boat"
+   ],
+   "noi": true,
+   "an_duoc": false
+  },
+  "thuyen-do": {
+   "ten": "thuyền đỏ",
+   "nhom": "do-vat",
+   "en": [
+    "red boat"
+   ],
+   "noi": true,
+   "an_duoc": false
+  },
+  "thuyen-vang": {
+   "ten": "thuyền vàng",
+   "nhom": "do-vat",
+   "en": [
+    "yellow boat"
+   ],
+   "noi": true,
+   "an_duoc": false
+  },
+  "thuyen-xanh": {
+   "ten": "thuyền xanh",
+   "nhom": "do-vat",
+   "en": [
+    "blue boat"
+   ],
+   "noi": true,
+   "an_duoc": false
+  },
+  "M030-BG-01": {
+   "ten": "rừng cây cổ thụ",
+   "nhom": "canh",
+   "en": [
+    "forest"
+   ]
+  },
+  "M050-BG-01": {
+   "ten": "bến thuyền đảo nhỏ",
+   "nhom": "canh",
+   "en": [
+    "harbor"
+   ]
   }
  }
 }
