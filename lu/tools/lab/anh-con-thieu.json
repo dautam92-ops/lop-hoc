@@ -264,15 +264,17 @@
    "id": "M001-OB-chuoi",
    "slot": "art:chuoi",
    "vi": "Quả chuối (bài tiếng Anh \"Banana\", buổi M001)",
-   "prompt": "one ripe yellow banana, only the object, no animal, no people, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "one ripe yellow banana drawn true to life: realistic banana shape and proportions, thick gently curved body with soft ridges, short green-brown stem at the top, small rounded dark tip at the bottom, natural yellow with soft green near the stem, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 tam: chuối vẽ sai, yêu cầu vẽ giống thật"
   },
   {
    "id": "M001-OB-cam",
    "slot": "art:cam",
    "vi": "Quả cam (bài tiếng Anh \"Orange\", buổi M001)",
-   "prompt": "one round ripe orange fruit with a small green leaf on the stem, only the object, no animal, no people, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "one round ripe orange fruit drawn true to life: realistic orange shape, dimpled peel texture, small stem with one small green leaf, natural orange color, only the object, no face, no animal, no people, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11: soát cùng chuối, vẽ giống thật"
   }
  ]
 }

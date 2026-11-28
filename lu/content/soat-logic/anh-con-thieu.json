@@ -1,10 +1,10 @@
 {
  "doi_tuong": "anh-con-thieu",
  "tep": "tools/lab/anh-con-thieu.json",
- "ma_bam": "450445b6def9e1a69d24423e8a2c7023154d13b2",
+ "ma_bam": "d14e52012bac0239fcc9d8afdd3d04c537a85c38",
  "ngay": "2026-11-28",
  "nguoi_soat": "agent soát logic",
- "lan_soat": 5,
+ "lan_soat": 6,
  "quy_tac_da_soat": [
   "LG01",
   "LG02",
@@ -32,7 +32,7 @@
   "canh_bao": 0
  },
  "canh_bao_da_xet": [],
- "ghi_chu": "Lần 3 (27/11, trước khi vẽ ảnh buổi M001): soát 8 ảnh M001 còn chờ vẽ: gió thổi, hộp quà, mưa, mặt trời, ngôi sao, bánh mì, đôi giày, cái mũ. Sửa: gió thổi giờ vẽ cả hạt đậu bay trong gió (dùng cho \"Cái gì thổi hạt đậu bay đi?\" và \"Vì sao Mono buồn?\", LG05, LG20); thêm \"no animal, no people\" cho gió thổi và hộp quà (LG16). Bỏ \"two green leaves\" để không có số lượng (LG13). Còn lại đạt: một vật một ảnh (LG17), mặt trời và ngôi sao không có mặt, mưa có mây và giọt rơi xuống (LG08). Ghi chú lần 2: Soát lại sau khi sửa theo biên bản lần 1 (mã băm cũ dc225d5b98adbedfe2698dc5527e75ad063f7656). Đã soát cả 40 mục, gồm mục mới L001-OB-luong-dat. Máy soát: 0 lỗi, 0 cảnh báo (máy đã kiểm con vật phải có \"kieu\": \"style\" và đồ vật, thiên nhiên phải có câu 'no animals/no people'). Mục mới art:luong-dat: dùng ở L001-B07 câu 'Bà dặn Lu gieo hạt vào đâu?' (đáp án đúng, cạnh ao nước và cái giỏ) và L001-B09 (chạm nghe 'Đất'). Câu mô tả 'a small mound of soft brown garden soil with two shallow furrows, no plants, no grass' vẽ đúng đất trống để gieo, không có cây hay cỏ nên không lẫn với mat-dat, bui-co hay chau-cay, đất nằm trên nền có điểm tựa (LG08), khớp kho kiến thức (nhóm thiên nhiên, từ 'soil', 'furrow') và lời 'Hạt nằm trong đất' (LG07, LG19 ở bài). 'two shallow furrows' không phải số lượng cần đếm (LG13). Có xét và không ghi lỗi: bàn tay (art:ban-tay) dùng style_do_vat có 'no people' nhưng câu mô tả ghi 'only the hand', vẫn vẽ được một bàn tay, không mâu thuẫn đến mức sai vật; tóc buộc 'no face, no person' khớp style_do_vat. Lưu ý: công cụ vẽ chạy trên máy 24H không nằm trong thư mục này, nên việc đọc trường \"kieu\" dựa vào quy ước ghi ở ghi_chu của tệp câu mô tả; người chạy vẽ cần chọn style cho mục có \"kieu\": \"style\". Lần 4 (28/11): thêm 2 ảnh M001 chuối, cam (kho chưa có). Một vật một ảnh, chỉ vật, không con vật, không người (LG16, LG17); quả cam có lá xanh nhỏ trên cuống là thật (LG07). Không lỗi. Lần 5 (28/11): tam chọn phương án B cho 7 ảnh M001 (quà, mưa, mặt trời, sao, bánh mì, giày, mũ), đã đăng ký DV-0051–0057, bỏ khỏi danh sách chờ. Ảnh gió thổi vẽ lại: nét gió xanh nhạt cuộn tròn kiểu sách tranh, gió thổi từ trái sang phải mang hạt đậu và lá theo đúng hướng nét gió (LG08 vật lý: vật bay theo hướng gió), không mặt, không mây (LG16). Không lỗi mới. Bỏ khỏi danh sách chờ các mục Phòng mẫu trùng ô đã có ảnh mới (PM31-OB-mat-troi, PM31-OB-sao, PM31-OB-mua, PM31-OB-banh-mi, PM31-OB-giay, PM31-OB-mu), dùng lại theo quy tắc 45.",
+ "ghi_chu": "Lần 3 (27/11, trước khi vẽ ảnh buổi M001): soát 8 ảnh M001 còn chờ vẽ: gió thổi, hộp quà, mưa, mặt trời, ngôi sao, bánh mì, đôi giày, cái mũ. Sửa: gió thổi giờ vẽ cả hạt đậu bay trong gió (dùng cho \"Cái gì thổi hạt đậu bay đi?\" và \"Vì sao Mono buồn?\", LG05, LG20); thêm \"no animal, no people\" cho gió thổi và hộp quà (LG16). Bỏ \"two green leaves\" để không có số lượng (LG13). Còn lại đạt: một vật một ảnh (LG17), mặt trời và ngôi sao không có mặt, mưa có mây và giọt rơi xuống (LG08). Ghi chú lần 2: Soát lại sau khi sửa theo biên bản lần 1 (mã băm cũ dc225d5b98adbedfe2698dc5527e75ad063f7656). Đã soát cả 40 mục, gồm mục mới L001-OB-luong-dat. Máy soát: 0 lỗi, 0 cảnh báo (máy đã kiểm con vật phải có \"kieu\": \"style\" và đồ vật, thiên nhiên phải có câu 'no animals/no people'). Mục mới art:luong-dat: dùng ở L001-B07 câu 'Bà dặn Lu gieo hạt vào đâu?' (đáp án đúng, cạnh ao nước và cái giỏ) và L001-B09 (chạm nghe 'Đất'). Câu mô tả 'a small mound of soft brown garden soil with two shallow furrows, no plants, no grass' vẽ đúng đất trống để gieo, không có cây hay cỏ nên không lẫn với mat-dat, bui-co hay chau-cay, đất nằm trên nền có điểm tựa (LG08), khớp kho kiến thức (nhóm thiên nhiên, từ 'soil', 'furrow') và lời 'Hạt nằm trong đất' (LG07, LG19 ở bài). 'two shallow furrows' không phải số lượng cần đếm (LG13). Có xét và không ghi lỗi: bàn tay (art:ban-tay) dùng style_do_vat có 'no people' nhưng câu mô tả ghi 'only the hand', vẫn vẽ được một bàn tay, không mâu thuẫn đến mức sai vật; tóc buộc 'no face, no person' khớp style_do_vat. Lưu ý: công cụ vẽ chạy trên máy 24H không nằm trong thư mục này, nên việc đọc trường \"kieu\" dựa vào quy ước ghi ở ghi_chu của tệp câu mô tả; người chạy vẽ cần chọn style cho mục có \"kieu\": \"style\". Lần 4 (28/11): thêm 2 ảnh M001 chuối, cam (kho chưa có). Một vật một ảnh, chỉ vật, không con vật, không người (LG16, LG17); quả cam có lá xanh nhỏ trên cuống là thật (LG07). Không lỗi. Lần 5 (28/11): tam chọn phương án B cho 7 ảnh M001 (quà, mưa, mặt trời, sao, bánh mì, giày, mũ), đã đăng ký DV-0051–0057, bỏ khỏi danh sách chờ. Ảnh gió thổi vẽ lại: nét gió xanh nhạt cuộn tròn kiểu sách tranh, gió thổi từ trái sang phải mang hạt đậu và lá theo đúng hướng nét gió (LG08 vật lý: vật bay theo hướng gió), không mặt, không mây (LG16). Không lỗi mới. Bỏ khỏi danh sách chờ các mục Phòng mẫu trùng ô đã có ảnh mới (PM31-OB-mat-troi, PM31-OB-sao, PM31-OB-mua, PM31-OB-banh-mi, PM31-OB-giay, PM31-OB-mu), dùng lại theo quy tắc 45. Lần 6 (28/11): tam báo chuối vẽ sai; câu mô tả chuối và cam đổi sang vẽ giống thật (hình dáng, tỷ lệ, cuống, đầu chuối thâm, vỏ cam rỗ), không mặt (LG07 hình dạng thật).",
  "loi": [
   {
    "ma": "LG15",
@@ -92,6 +92,14 @@
    "cau": "soft swirling wind lines ...",
    "mo_ta": "tam 28/11: hai bản vẽ đầu ra dải vàng mờ, nhìn không ra gió.",
    "sua": "Câu mô tả mới: nét gió xanh nhạt cuộn tròn đầu xoắn, hướng trái sang phải, hạt và lá bay theo nét gió.",
+   "trang_thai": "da_sua"
+  },
+  {
+   "ma": "LG07",
+   "o": "M001-OB-chuoi",
+   "cau": "one ripe yellow banana ...",
+   "mo_ta": "tam 28/11: chuối vẽ sai, không giống thật.",
+   "sua": "Câu mô tả mới mô tả rõ hình dáng thật của quả chuối.",
    "trang_thai": "da_sua"
   }
  ]
