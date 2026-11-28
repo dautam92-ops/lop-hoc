@@ -1,0 +1,37 @@
+{
+ "doi_tuong": "M020",
+ "tep": "content/drafts/M020.json",
+ "ma_bam": "91d198228af3d57de33f2f1a8ddef3575690d110",
+ "ngay": "2026-11-28",
+ "nguoi_soat": "agent soát logic",
+ "lan_soat": 1,
+ "quy_tac_da_soat": [
+  "LG01",
+  "LG02",
+  "LG03",
+  "LG04",
+  "LG05",
+  "LG06",
+  "LG07",
+  "LG08",
+  "LG09",
+  "LG10",
+  "LG11",
+  "LG12",
+  "LG13",
+  "LG14",
+  "LG15",
+  "LG16",
+  "LG17",
+  "LG18",
+  "LG19",
+  "LG20"
+ ],
+ "may_soat": {
+  "loi": 0,
+  "canh_bao": 0
+ },
+ "canh_bao_da_xet": [],
+ "ghi_chu": "Soát cả 15 hoạt động (buổi 20 ôn vùng 1). Đã xét, không ghi lỗi: pháo hoa vẽ trong khung trời đêm tròn nên nền sân ban ngày không vô lý (LG08); số chùm pháo hoa do mã dựng, ảnh chỉ có một chùm (LG13); dãy số 1–5 đúng thứ tự, ô trống có một đáp án (LG03); bài nghe chạm dùng 4 từ đã học ở vùng 1, ảnh rõ, khác nhau (LG01); bài hai bạn cùng muốn đèn: đáp án đúng là lời nói lịch sự, đáp án sai là lời giành, đuổi bạn, rõ ràng (LG03, LG10); kể lại hành trình đúng mạch truyện buổi 1–20 (gió thổi hạt, Mono đi tìm, gà con lạc, lễ hội) (LG20); hạt đậu lớn lên: hạt → mầm (có nước) → cây (có nắng) → quả, khớp sửa khoa học ở M001 (LG07); dọn dẹp theo bóng mỗi bóng một vật (LG05); rổ tráo và lật thẻ không có đáp án mơ hồ. Lời kết buổi “cây cầu vồng mọc lên tới mây” là truyện thần tiên của giáo trình, không dạy điều sai (LG08).",
+ "loi": []
+}

@@ -57,6 +57,7 @@ for (const [vp, w, h] of [['ipad', 1180, 820], ['phone', 390, 844]]) {
     }
     { const g = await kiemGio(page); if (g && !g.ok && shots.length) { const L = shots[shots.length - 1]; L.loiCu = [...new Set([...(L.loiCu || []), ...g.errs])]; } }
     await page.evaluate(() => { if (document.querySelector("[data-busy]")) return; const T = window.__luTest; const c = (T.current || []).slice(); T.current = [];
+      /* màn không có ô chọn, vật kéo hay nút bấm được (mê cung): chạy đường đi đúng của engine */ if (T.right && c.length && c.every(el => !el.classList.contains('opt') && !el.classList.contains('piece') && !el.closest('.piece') && !(el.tagName === 'BUTTON' && !el.disabled) && !el.classList.contains('shadow') && !el.dataset.g)) { const f = T.right; T.right = null; f(); return; }
       c.forEach(el => { if (!el.isConnected) return; if (el.classList.contains('piece')) { const r = el.getBoundingClientRect(); el.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, clientX: r.x + 5, clientY: r.y + 5 })); dispatchEvent(new PointerEvent('pointerup', { clientX: r.x + 5, clientY: r.y + 5 })); } else el.click(); }); });
   }
   const done = await page.evaluate(() => !!window.__luTest?.done);

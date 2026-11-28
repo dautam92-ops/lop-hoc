@@ -1,0 +1,1004 @@
+{
+ "format": "lu-lesson",
+ "format_version": 2,
+ "lesson_id": "M030",
+ "vi_tri": "M030",
+ "age": "4–6 tuổi",
+ "content_version": "M030-kichban-1",
+ "review_status": "nhap",
+ "layout": "hub",
+ "title": "Hội mê cung cây cổ thụ",
+ "minutes": 20,
+ "skills": [
+  {
+   "skill_id": "TO.DEM.02",
+   "cls": "G"
+  },
+  {
+   "skill_id": "TD.KG.02",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TO.DO.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "EN.EN.10",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KP.VD.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TV.TU.02",
+   "cls": "T"
+  },
+  {
+   "skill_id": "EQ.XH.04",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KP.KH.02",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KS.VS.02",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KP.ST.01",
+   "cls": "T"
+  }
+ ],
+ "backdrop": {
+  "id": "M030-BG-01",
+  "kind": "vuon"
+ },
+ "hub": {
+  "q": "Bé chọn bài để học nhé.",
+  "again": "Bé chọn bài tiếp theo nhé.",
+  "backdrop": {
+   "id": "M030-BG-01",
+   "kind": "vuon"
+  }
+ },
+ "stages": [
+  {
+   "title": "Chỉ đếm lá xanh",
+   "kind": "dinh",
+   "hiep": 1,
+   "icon": "art:la",
+   "nhom": [
+    "TO",
+    "CY",
+    "GN"
+   ],
+   "way": "nhin-nhanh",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Lá xanh và lá vàng rơi xuống. Chỉ đếm lá xanh thôi nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B01",
+     "engine": "E01",
+     "skill_id": "TO.DEM.02",
+     "title": "Chỉ đếm lá xanh",
+     "mode": "flash",
+     "objs": [
+      "art:la"
+     ],
+     "opts": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "words": [
+      "một",
+      "hai",
+      "ba",
+      "bốn",
+      "năm",
+      "sáu",
+      "bảy",
+      "tám",
+      "chín",
+      "mười"
+     ],
+     "rounds": 4,
+     "q": "Có mấy lá xanh?",
+     "levels": [
+      {
+       "n": 2,
+       "ms": 1500,
+       "look": "Nhìn lá xanh nhé!",
+       "q": "Có mấy lá xanh?",
+       "distract": "art:la-vang"
+      },
+      {
+       "n": 3,
+       "ms": 1500,
+       "look": "Bỏ qua lá vàng nhé!",
+       "q": "Có mấy lá xanh?",
+       "distract": "art:la-vang"
+      },
+      {
+       "n": 3,
+       "ms": 1500,
+       "look": "Lá rơi lung tung rồi!",
+       "q": "Mấy lá xanh?",
+       "distract": "art:la-vang",
+       "scatter": true
+      },
+      {
+       "n": 4,
+       "ms": 1500,
+       "look": "Lượt cuối thật nhanh!",
+       "q": "Mấy lá xanh?",
+       "distract": "art:la-vang",
+       "scatter": true
+      }
+     ],
+     "ok": "Đúng rồi! Có {word} lá xanh. Bé tinh mắt quá!",
+     "no": "Không sao đâu! Mình xem lại nhé, bé bấm Xem lại.",
+     "nang_luc": [
+      "NL02",
+      "NL07",
+      "NL04"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Mê cung rễ cây",
+   "hiep": 1,
+   "icon": "art:cay",
+   "nhom": [
+    "TD",
+    "CY"
+   ],
+   "way": "me-cung",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Rễ cây cổ thụ tạo thành mê cung!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B02",
+     "engine": "E07",
+     "skill_id": "TD.KG.02",
+     "title": "Mê cung nhỏ",
+     "cols": 3,
+     "rows": 3,
+     "goal": "art:la",
+     "hint": "Ngõ này cụt rồi, mình quay lại nhé.",
+     "bump": "Ở đây có rễ cây chắn rồi.",
+     "done": "Giỏi quá! Mono tới chiếc lá rồi.",
+     "nang_luc": [
+      "NL06",
+      "NL18",
+      "NL16"
+     ]
+    },
+    {
+     "activity_id": "M030-B03",
+     "engine": "E07",
+     "skill_id": "TD.KG.02",
+     "title": "Mê cung vừa",
+     "cols": 4,
+     "rows": 3,
+     "goal": "art:la",
+     "hint": "Ngõ này cụt rồi, mình quay lại nhé.",
+     "bump": "Ở đây có rễ cây chắn rồi.",
+     "done": "Tuyệt vời! Bé tìm đường giỏi lắm!",
+     "nang_luc": [
+      "NL06",
+      "NL18"
+     ]
+    },
+    {
+     "activity_id": "M030-B04",
+     "engine": "E07",
+     "skill_id": "TD.KG.02",
+     "title": "Mê cung lớn",
+     "cols": 4,
+     "rows": 4,
+     "goal": "art:la",
+     "hint": "Ngõ này cụt rồi, mình quay lại nhé.",
+     "bump": "Ở đây có rễ cây chắn rồi.",
+     "done": "Xuất sắc! Bé vượt mê cung lớn rồi!",
+     "nang_luc": [
+      "NL06",
+      "NL18",
+      "NL05"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cao, thấp, tam giác",
+   "hiep": 1,
+   "icon": "art:cay",
+   "nhom": [
+    "TO",
+    "QS"
+   ],
+   "way": "on-tap",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Mình ôn cây cao, cây thấp và hình tam giác nhé."
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B05",
+     "engine": "E01",
+     "skill_id": "TO.DO.01",
+     "title": "Cao, thấp, tam giác",
+     "on_tap": "hinh:tam-giac",
+     "mode": "items",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Cây nào cao nhất?",
+       "opts": [
+        {
+         "e": "co:35:art:cay"
+        },
+        {
+         "e": "co:100:art:cay"
+        },
+        {
+         "e": "co:65:art:cay"
+        }
+       ],
+       "a": 1,
+       "ok": "Đúng rồi! Cây này cao nhất.",
+       "no": "Bé thử lại nào! Bé tìm cây cao vút nhé."
+      },
+      {
+       "q": "Cây nào thấp nhất?",
+       "opts": [
+        {
+         "e": "co:65:art:cay"
+        },
+        {
+         "e": "co:100:art:cay"
+        },
+        {
+         "e": "co:35:art:cay"
+        }
+       ],
+       "a": 2,
+       "ok": "Giỏi quá! Cây này thấp nhất.",
+       "no": "Bé thử lại nào! Bé tìm cây bé xíu nhé."
+      },
+      {
+       "q": "Hình nào là hình tam giác?",
+       "opts": [
+        {
+         "e": "art:hinh-tron"
+        },
+        {
+         "e": "art:hinh-vuong"
+        },
+        {
+         "e": "art:hinh-tam-giac"
+        }
+       ],
+       "a": 2,
+       "ok": "Chính xác! Tam giác có ba cạnh.",
+       "no": "Gần đúng rồi! Hình tam giác có ba cạnh nhé."
+      }
+     ],
+     "nang_luc": [
+      "NL02",
+      "NL04",
+      "NL13"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "In the forest",
+   "hiep": 1,
+   "icon": "art:cay",
+   "nhom": [
+    "EN",
+    "CY"
+   ],
+   "way": "hoc-tu",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Mình học tên ba thứ trong rừng nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B06",
+     "engine": "E01",
+     "skill_id": "EN.EN.10",
+     "title": "In the forest",
+     "mode": "items",
+     "order": "fixed",
+     "rounds": 3,
+     "items": [
+      {
+       "q": [
+        "Cái cây, tiếng Anh là",
+        "Tree!",
+        "__sang",
+        "Tree",
+        "Bé nói theo nào!",
+        "__cho3"
+       ],
+       "opts": [
+        {
+         "e": "art:cay"
+        }
+       ],
+       "a": 0,
+       "ok": [
+        "Tree!",
+        "Bé nói hay quá!"
+       ],
+       "no": "",
+       "word": "Tree",
+       "word_times": 0
+      },
+      {
+       "q": [
+        "Chiếc lá, tiếng Anh là",
+        "Leaf!",
+        "__sang",
+        "Leaf",
+        "Bé nói theo nào!",
+        "__cho3"
+       ],
+       "opts": [
+        {
+         "e": "art:la"
+        }
+       ],
+       "a": 0,
+       "ok": [
+        "Leaf!",
+        "Giỏi quá! Bé nhớ chiếc lá rồi."
+       ],
+       "no": "",
+       "word": "Leaf",
+       "word_times": 0
+      },
+      {
+       "q": [
+        "Bông hoa, tiếng Anh là",
+        "Flower!",
+        "__sang",
+        "Flower",
+        "Bé nói theo nào!",
+        "__cho3"
+       ],
+       "opts": [
+        {
+         "e": "art:hoa"
+        }
+       ],
+       "a": 0,
+       "ok": [
+        "Flower!",
+        "Tuyệt vời! Bé nhớ cả ba từ rồi."
+       ],
+       "no": "",
+       "word": "Flower",
+       "word_times": 0
+      }
+     ],
+     "nang_luc": [
+      "NL03",
+      "NL08",
+      "NL10"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Múa cùng cây cổ thụ",
+   "kind": "nghi",
+   "icon": "lu:nhay",
+   "nhom": [
+    "KT"
+   ],
+   "way": "van-dong",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Mình đứng dậy làm cây trong gió nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B07",
+     "engine": "E17",
+     "skill_id": "KP.VD.01",
+     "title": "Gió thổi, đứng im",
+     "mode": "freeze",
+     "stops": 2,
+     "dance": "Gió thổi, cây đung đưa nào!",
+     "freeze": "Đứng im như cây cổ thụ!",
+     "button": "Bé đứng im rồi",
+     "ok": "Giỏi quá! Bé đứng vững như cây.",
+     "done": "Bé múa đẹp quá! Cây cổ thụ vui lắm.",
+     "nang_luc": [
+      "NL17",
+      "NL09"
+     ]
+    },
+    {
+     "activity_id": "M030-B08",
+     "engine": "E15",
+     "skill_id": "KP.VD.01",
+     "title": "Cây vươn cao",
+     "mode": "do",
+     "lu": "dang-tay",
+     "task": "Bé làm cây non, vươn tay thật cao nào!",
+     "button": "Bé làm xong rồi",
+     "seconds": 30,
+     "evidence": "tiep-xuc",
+     "nang_luc": [
+      "NL17",
+      "NL11"
+     ]
+    },
+    {
+     "activity_id": "M030-B09",
+     "engine": "E15",
+     "skill_id": "KP.VD.01",
+     "title": "Chim bay qua rừng",
+     "mode": "do",
+     "lu": "vui-mung",
+     "task": "Dang tay bay như chim qua rừng nào!",
+     "button": "Bé làm xong rồi",
+     "seconds": 30,
+     "evidence": "tiep-xuc",
+     "nang_luc": [
+      "NL17",
+      "NL11"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đoán con vật rừng",
+   "hiep": 2,
+   "icon": "art:chim",
+   "nhom": [
+    "TV",
+    "TD",
+    "NT"
+   ],
+   "way": "doan",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Mono tả, bé đoán con vật nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B10",
+     "engine": "E01",
+     "skill_id": "TV.TU.02",
+     "title": "Đoán con vật rừng",
+     "mode": "items",
+     "rounds": 3,
+     "items": [
+      {
+       "q": [
+        "Con này có mai cứng, bò chậm.",
+        "Đố bé con gì?"
+       ],
+       "opts": [
+        {
+         "e": "art:rua"
+        },
+        {
+         "e": "art:chim"
+        },
+        {
+         "e": "art:ech"
+        }
+       ],
+       "a": 0,
+       "ok": "Đúng rồi! Đó là con rùa.",
+       "no": "Bé thử lại nào! Con nào có mai cứng nhỉ?"
+      },
+      {
+       "q": [
+        "Con này có cánh, hót líu lo.",
+        "Đố bé con gì?"
+       ],
+       "opts": [
+        {
+         "e": "art:oc"
+        },
+        {
+         "e": "art:chim"
+        },
+        {
+         "e": "art:rua"
+        }
+       ],
+       "a": 1,
+       "ok": "Giỏi quá! Đó là chú chim.",
+       "no": "Bé thử lại nào! Con nào biết bay nhỉ?"
+      },
+      {
+       "q": [
+        "Con này tai dài, nhảy rất nhanh.",
+        "Đố bé con gì?"
+       ],
+       "opts": [
+        {
+         "e": "art:oc"
+        },
+        {
+         "e": "art:rua"
+        },
+        {
+         "e": "art:tho"
+        }
+       ],
+       "a": 2,
+       "ok": "Chính xác! Đó là bạn thỏ.",
+       "no": "Gần đúng rồi! Con nào có đôi tai dài nhỉ?"
+      }
+     ],
+     "nang_luc": [
+      "NL03",
+      "NL04",
+      "NL10"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hai bạn cùng muốn đi trước",
+   "hiep": 2,
+   "icon": "face:vui",
+   "nhom": [
+    "EQ",
+    "NT",
+    "TD"
+   ],
+   "way": "chon-cach",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Mono và gà con cùng muốn vào mê cung trước."
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B11",
+     "engine": "E01",
+     "skill_id": "EQ.XH.04",
+     "title": "Hai bạn cùng muốn đi trước",
+     "mode": "items",
+     "order": "fixed",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Hai bạn cùng muốn đi trước. Mono nói gì?",
+       "opts": [
+        {
+         "t": "Mình oẳn tù tì nhé!",
+         "e": "face:vui"
+        },
+        {
+         "t": "Tránh ra, mình đi trước!",
+         "e": "face:gian"
+        },
+        {
+         "t": "Thôi, mình không chơi nữa!",
+         "e": "face:buon"
+        }
+       ],
+       "a": 0,
+       "ok": "Hay quá! Oẳn tù tì thì công bằng.",
+       "no": "Bé thử lại nào! Câu nào công bằng cho hai bạn?",
+       "style": "wide",
+       "show": [
+        "lu:suy-nghi",
+        "art:ga-con"
+       ]
+      },
+      {
+       "q": "Gà con phải đi sau. Gà con thấy thế nào?",
+       "opts": [
+        {
+         "e": "face:vui"
+        },
+        {
+         "e": "face:buon"
+        }
+       ],
+       "a": 1,
+       "ok": "Tinh ý quá! Gà con hơi buồn.",
+       "no": "Mình cùng xem lại nào! Gà con muốn đi trước mà.",
+       "style": "face",
+       "show": "art:ga-con"
+      },
+      {
+       "q": "Mono nói gì với gà con?",
+       "opts": [
+        {
+         "t": "Mình đi trước, bạn ở lại!",
+         "e": "face:gian"
+        },
+        {
+         "t": "Mình không chơi nữa.",
+         "e": "face:buon"
+        },
+        {
+         "t": "Lần sau bạn đi trước nhé!",
+         "e": "face:vui"
+        }
+       ],
+       "a": 2,
+       "ok": "Bé tốt bụng quá! Gà con vui lại rồi.",
+       "no": "Gần đúng rồi! Câu nào làm gà con vui?",
+       "style": "wide",
+       "show": [
+        "lu:vui",
+        "art:ga-con"
+       ]
+      }
+     ],
+     "nang_luc": [
+      "NL18",
+      "NL03"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cây nào đang rụng lá?",
+   "hiep": 2,
+   "icon": "art:la-vang",
+   "nhom": [
+    "KT",
+    "NT"
+   ],
+   "way": "quan-sat",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Trong rừng có cây lá xanh, có cây lá vàng."
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B12",
+     "engine": "E01",
+     "skill_id": "KP.KH.02",
+     "title": "Cây nào đang rụng lá?",
+     "mode": "items",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Cây nào đang rụng lá?",
+       "opts": [
+        {
+         "e": "art:cay"
+        },
+        {
+         "e": "art:cay-la-vang"
+        }
+       ],
+       "a": 1,
+       "ok": "Đúng rồi! Lá vàng đang rơi xuống.",
+       "no": "Bé thử lại nào! Bé tìm cây có lá rơi nhé."
+      },
+      {
+       "q": "Lá già có màu gì?",
+       "opts": [
+        {
+         "e": "art:la"
+        },
+        {
+         "e": "art:la-vang"
+        }
+       ],
+       "a": 1,
+       "ok": "Giỏi quá! Lá già thì vàng và rụng.",
+       "no": "Bé thử lại nào! Lá trên mặt đất màu gì nhỉ?",
+       "show": "art:cay-la-vang"
+      },
+      {
+       "q": "Lá vàng rụng rồi. Lá nào mọc ra?",
+       "opts": [
+        {
+         "e": "art:la-vang"
+        },
+        {
+         "e": "art:la"
+        }
+       ],
+       "a": 1,
+       "ok": "Chính xác! Lá non xanh mọc ra.",
+       "no": "Gần đúng rồi! Lá non có màu xanh đó."
+      }
+     ],
+     "nang_luc": [
+      "NL04",
+      "NL10",
+      "NL13"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đánh răng buổi tối",
+   "hiep": 2,
+   "icon": "art:ban-chai",
+   "nhom": [
+    "KS",
+    "GN",
+    "TD"
+   ],
+   "way": "sap-xep",
+   "backdrop": {
+    "id": "hien",
+    "kind": "hien"
+   },
+   "intro": [
+    "Tối rồi, mình đánh răng nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B13",
+     "engine": "E04",
+     "skill_id": "KS.VS.02",
+     "title": "Đánh răng buổi tối",
+     "mode": "cards",
+     "label": "Bé chạm tranh theo thứ tự",
+     "rounds": 3,
+     "sets": [
+      {
+       "q": "Việc nào làm trước?",
+       "items": [
+        {
+         "e": "art:ban-chai",
+         "say": "Chải răng thật kỹ."
+        },
+        {
+         "e": "art:coc-nuoc",
+         "say": "Súc miệng bằng nước sạch."
+        },
+        {
+         "e": "art:khan",
+         "say": "Lau miệng bằng khăn."
+        }
+       ],
+       "ok": "Đúng rồi! Chải răng xong mới súc miệng."
+      },
+      {
+       "q": "Bé xếp ba tranh nhé.",
+       "items": [
+        {
+         "e": "art:ban-chai",
+         "say": "Chải răng thật kỹ."
+        },
+        {
+         "e": "art:coc-nuoc",
+         "say": "Súc miệng bằng nước sạch."
+        },
+        {
+         "e": "lu:ngu",
+         "say": "Mono đi ngủ."
+        }
+       ],
+       "ok": "Giỏi quá! Răng sạch rồi mới đi ngủ."
+      },
+      {
+       "q": "Bé xếp cả bốn tranh nhé.",
+       "items": [
+        {
+         "e": "art:ban-chai",
+         "say": "Chải răng thật kỹ."
+        },
+        {
+         "e": "art:coc-nuoc",
+         "say": "Súc miệng bằng nước sạch."
+        },
+        {
+         "e": "art:khan",
+         "say": "Lau miệng bằng khăn."
+        },
+        {
+         "e": "lu:ngu",
+         "say": "Mono đi ngủ."
+        }
+       ],
+       "ok": "Tuyệt vời! Mono đi ngủ với hàm răng sạch."
+      }
+     ],
+     "done": "Giỏi quá! Bé nhớ các bước đánh răng rồi.",
+     "nang_luc": [
+      "NL05",
+      "NL07"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Khu rừng của bé",
+   "kind": "vang",
+   "hiep": 2,
+   "icon": "art:sao",
+   "nhom": [
+    "ST",
+    "TTg",
+    "TO"
+   ],
+   "way": "sang-tao",
+   "backdrop": {
+    "id": "M030-BG-01",
+    "kind": "vuon"
+   },
+   "intro": [
+    "Thử thách vàng! Bé tạo khu rừng của riêng mình nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M030-B14",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Trồng cây cho rừng",
+     "mode": "sticker",
+     "bg": "art:dat-rung",
+     "stickers": [
+      "art:cay",
+      "art:hoa",
+      "art:la"
+     ],
+     "min": 3,
+     "intro": [
+      "Bé trồng cây, trồng hoa nhé!"
+     ],
+     "done": "Khu rừng xanh mát rồi! Đẹp quá!",
+     "nang_luc": [
+      "NL11",
+      "NL12",
+      "NL15"
+     ]
+    },
+    {
+     "activity_id": "M030-B15",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Mời các bạn thú",
+     "mode": "sticker",
+     "bg": "art:dat-rung",
+     "keep": true,
+     "stickers": [
+      "art:tho",
+      "art:chim",
+      "art:buom"
+     ],
+     "min": 2,
+     "intro": [
+      "Mời các bạn thú vào rừng nào!"
+     ],
+     "done": "Bé giỏi quá! Rừng có các bạn thú rồi.",
+     "nang_luc": [
+      "NL11",
+      "NL12",
+      "NL16"
+     ]
+    },
+    {
+     "activity_id": "M030-B16",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Thêm điều bé thích",
+     "mode": "sticker",
+     "bg": "art:dat-rung",
+     "keep": true,
+     "stickers": [
+      "art:hoa",
+      "art:buom",
+      "art:chim"
+     ],
+     "min": 1,
+     "intro": [
+      "Bé thêm điều bé thích nhất nhé!"
+     ],
+     "done": "Tuyệt vời! Khu rừng của bé thật đẹp.",
+     "nang_luc": [
+      "NL11",
+      "NL12"
+     ]
+    },
+    {
+     "activity_id": "M030-B17",
+     "engine": "E01",
+     "skill_id": "KP.ST.01",
+     "title": "Bé thích bạn nào?",
+     "mode": "items",
+     "rounds": 1,
+     "items": [
+      {
+       "q": "Bé thích bạn nào nhất?",
+       "opts": [
+        {
+         "e": "art:tho",
+         "say": "Bạn thỏ.",
+         "reply": "Bạn thỏ đáng yêu quá! Mono cũng thích."
+        },
+        {
+         "e": "art:chim",
+         "say": "Chú chim.",
+         "reply": "Chú chim hót hay quá! Mono cũng thích."
+        },
+        {
+         "e": "art:buom",
+         "say": "Bạn bướm.",
+         "reply": "Bạn bướm xinh quá! Mono cũng thích."
+        }
+       ],
+       "a": 0,
+       "ok": "",
+       "no": "",
+       "any": true
+      }
+     ],
+     "nang_luc": [
+      "NL03",
+      "NL11"
+     ]
+    }
+   ]
+  }
+ ],
+ "note": "Giáo trình Mono 200 buổi, buổi 30 (ôn tuần 2 vùng 2). Không hỏi cảm xúc đầu buổi, không dạy mẫu. Bé dưới 4,5 tuổi học 2 hiệp, nghỉ sau bài 5.",
+ "intro": [
+  "Cây cổ thụ mở hội mê cung!",
+  "Ai giỏi được chiếc lá phát sáng thứ mười!"
+ ],
+ "end": [
+  "Bé vượt mê cung rồi!",
+  "Chiếc lá phát sáng thứ mười đây. Cây cổ thụ sáng một nửa!",
+  "Ơ kìa, có tiếng hát lạ trong rừng đêm..."
+ ],
+ "reward": {
+  "title": "Huy hiệu: Nhà thám hiểm mê cung",
+  "e": [
+   "art:la"
+  ]
+ },
+ "parent": {
+  "goal": "Con chỉ đếm đúng màu được hỏi, tìm đường trong mê cung, ôn cao thấp và hình tam giác, học tree, leaf, flower.",
+  "why": "Hỏi con: “Vì sao lá cây chuyển vàng?” Nghe con giải thích, bố mẹ không chấm đúng sai.",
+  "tonight": [
+   "Cùng con nhặt lá rụng, xếp từ lá to đến lá nhỏ."
+  ]
+ }
+}

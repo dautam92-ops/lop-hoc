@@ -159,6 +159,9 @@ export function vis(x) {
   if (x.startsWith('lu:')) return luFn ? luFn(x.slice(3)) : '';
   // peek:<mức>:<vật> – chỉ thấy qua vài lỗ nhỏ (Nhận diện toàn cảnh). Mức 1: 3 lỗ to, mức 2: 2 lỗ nhỏ hơn. Ví dụ peek:2:art:meo
   if (x.startsWith('peek:')) { const [, lv, ...rest] = x.split(':'); return `<span class="peek p${String(lv).replace(/[^a-z0-9]/gi, '')}"><span class="pk-in">${vis(rest.join(':'))}</span><i class="pk-cov" aria-hidden="true"></i></span>`; }
+  // so:<số> – lá số to (dãy số, ô trống là "?"); co:<phần trăm>:<vật> – vẽ vật nhỏ hơn để so cao thấp, to nhỏ (cùng một ảnh thật)
+  if (x.startsWith('so:')) { const v = x.slice(3); return `<span class="so-o${v === '?' ? ' trong' : ''}">${v.replace(/[^0-9?]/g, '')}</span>`; }
+  if (x.startsWith('co:')) { const [, p, ...rest] = x.split(':'); return `<span class="co-anh" style="--co:${Math.max(20, Math.min(100, +p || 100))}%">${vis(rest.join(':'))}</span>`; }
   if (x.startsWith('asset:')) { const k = x.slice(6), src = assetSrc[k]; return src ? `<img class="lu-art asset" src="${src}" alt="">` : ''; }
   const g = x.match(/^((?:art|face):[^*]+)\*(\d+)$/); if (g) return groupHTML(g[1], Math.min(+g[2], 10));
   if (x.startsWith('art:')) { const [, k, arg] = x.split(':');

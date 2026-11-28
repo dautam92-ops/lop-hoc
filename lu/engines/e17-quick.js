@@ -127,7 +127,7 @@ function freeze(ctx, act, R, first) {
     for (let s = 0; s < R.waits.length; s++) {
       el.classList.add('dance'); mono.innerHTML = luArt('nhay'); say.textContent = ''; btn.disabled = true;
       const end = Date.now() + (ctx.fast ? 0 : R.waits[s]); let n = 0; while (Date.now() < end) { playSound('note:' + TUNE[n++ % TUNE.length], { vol: .5 }); await sleep(ctx, 260); }
-      el.classList.remove('dance'); mono.innerHTML = luArt('dung'); say.textContent = act.freeze; btn.disabled = false;
+      el.classList.remove('dance'); mono.innerHTML = luArt('dung'); say.textContent = act.freeze; btn.disabled = false; ctx.test.mark(btn);
       await voice.say(['__boing', act.freeze]);
       await new Promise(r => { btn.onclick = () => { if (voice.busy) return; btn.onclick = null; r(); }; setAuto(ctx, () => btn.click(), () => btn.click()); });
       if (s < R.waits.length - 1) await voice.say([act.ok || 'Giỏi quá! Nhạc lại vang lên rồi.']);

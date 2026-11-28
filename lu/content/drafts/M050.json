@@ -1,0 +1,1152 @@
+{
+ "format": "lu-lesson",
+ "format_version": 2,
+ "lesson_id": "M050",
+ "vi_tri": "M050",
+ "age": "4–6 tuổi",
+ "content_version": "M050-kichban-1",
+ "review_status": "nhap",
+ "layout": "hub",
+ "title": "Hội bến thuyền",
+ "minutes": 20,
+ "skills": [
+  {
+   "skill_id": "EQ.CX.01",
+   "cls": "G"
+  },
+  {
+   "skill_id": "TD.KG.04",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TO.TG.02",
+   "cls": "T"
+  },
+  {
+   "skill_id": "EQ.AT.D01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KP.VD.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "EN.EN.14",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TV.TU.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "EQ.AT.06",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KP.ST.D01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TO.SS.02",
+   "cls": "T"
+  }
+ ],
+ "backdrop": {
+  "id": "M050-BG-01",
+  "kind": "bo-ao"
+ },
+ "hub": {
+  "q": "Bé chọn bài để học nhé.",
+  "again": "Bé chọn bài tiếp theo nhé.",
+  "backdrop": {
+   "id": "M050-BG-01",
+   "kind": "bo-ao"
+  }
+ },
+ "stages": [
+  {
+   "title": "Gà muốn gì nhỉ?",
+   "kind": "dinh",
+   "hiep": 1,
+   "icon": "art:ga-con",
+   "nhom": [
+    "EQ",
+    "NT",
+    "QS"
+   ],
+   "way": "doan-cam-xuc",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Gà con theo thuyền ra đảo chơi. Bé nhìn gà con nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B01",
+     "engine": "E01",
+     "skill_id": "EQ.CX.01",
+     "title": "Gà muốn gì nhỉ?",
+     "mode": "items",
+     "order": "fixed",
+     "rounds": 4,
+     "items": [
+      {
+       "q": "Gà con cười tươi. Gà con thấy thế nào?",
+       "opts": [
+        {
+         "e": "face:buon"
+        },
+        {
+         "e": "face:vui"
+        }
+       ],
+       "a": 1,
+       "ok": "Tinh ý quá! Gà con đang vui.",
+       "no": "Mình cùng xem lại nào! Gà con đang cười mà.",
+       "style": "face",
+       "show": "art:ga-con"
+      },
+      {
+       "q": "Gà con ngáp dài. Gà con muốn gì?",
+       "opts": [
+        {
+         "t": "Chạy nhảy tiếp.",
+         "e": "art:ga-con-chay"
+        },
+        {
+         "t": "Đi ngủ một chút.",
+         "e": "art:ga-con-ngu"
+        },
+        {
+         "t": "Uống nước.",
+         "e": "art:ga-con-uong-nuoc"
+        }
+       ],
+       "a": 1,
+       "ok": "Đúng rồi! Gà con buồn ngủ rồi.",
+       "no": "Bé thử lại nào! Ngáp dài là buồn ngủ đó.",
+       "style": "wide",
+       "show": "art:ga-con-ngap"
+      },
+      {
+       "q": "Gà con im lặng. Bé nói gì với gà?",
+       "opts": [
+        {
+         "t": "Gà chán ghê!",
+         "e": "face:gian"
+        },
+        {
+         "t": "Đi chỗ khác đi!",
+         "e": "face:buon"
+        },
+        {
+         "t": "Gà ngồi cùng mình không?",
+         "e": "face:vui"
+        }
+       ],
+       "a": 2,
+       "ok": "Bé tốt bụng quá! Gà con muốn ngồi cùng.",
+       "no": "Bé thử lại nào! Mình hỏi ý gà con nhé.",
+       "style": "wide",
+       "show": "art:ga-con-im-lang"
+      },
+      {
+       "q": "Bạn cua vẫy càng chào. Bé nói gì?",
+       "opts": [
+        {
+         "t": "Chào bạn cua!",
+         "e": "face:vui"
+        },
+        {
+         "t": "Mình không chơi đâu.",
+         "e": "face:binh-tinh"
+        },
+        {
+         "t": "Cua đi đi!",
+         "e": "face:gian"
+        }
+       ],
+       "a": 0,
+       "ok": "Xuất sắc! Bạn cua vui lắm.",
+       "no": "Gần đúng rồi! Bạn chào thì mình chào lại.",
+       "style": "wide",
+       "show": "art:cua"
+      }
+     ],
+     "nang_luc": [
+      "NL03",
+      "NL13",
+      "NL18"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Xếp thuyền vào bến",
+   "hiep": 1,
+   "icon": "art:thuyen",
+   "nhom": [
+    "TD",
+    "QS"
+   ],
+   "way": "phan-loai",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Thuyền to vào bến to, thuyền nhỏ vào bến nhỏ."
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B02",
+     "engine": "E03",
+     "skill_id": "TD.KG.04",
+     "title": "Xếp thuyền vào bến",
+     "groups": [
+      {
+       "id": "to",
+       "label": "Bến to",
+       "e": "co:100:art:thuyen",
+       "say": "Bến thuyền to."
+      },
+      {
+       "id": "nho",
+       "label": "Bến nhỏ",
+       "e": "co:50:art:thuyen",
+       "say": "Bến thuyền nhỏ."
+      }
+     ],
+     "items": [
+      {
+       "e": "co:100:art:thuyen",
+       "g": "to"
+      },
+      {
+       "e": "co:100:art:thuyen",
+       "g": "to"
+      },
+      {
+       "e": "co:50:art:thuyen",
+       "g": "nho"
+      },
+      {
+       "e": "co:50:art:thuyen",
+       "g": "nho"
+      }
+     ],
+     "per_round": 4,
+     "rounds": 1,
+     "no": "Bé thử lại nào! Bé so độ to của thuyền nhé.",
+     "done": "Giỏi quá! Thuyền nào cũng vào đúng bến.",
+     "nang_luc": [
+      "NL06",
+      "NL04",
+      "NL16"
+     ]
+    },
+    {
+     "activity_id": "M050-B03",
+     "engine": "E03",
+     "skill_id": "TD.KG.04",
+     "title": "Thêm nhiều thuyền",
+     "groups": [
+      {
+       "id": "to",
+       "label": "Bến to",
+       "e": "co:100:art:thuyen",
+       "say": "Bến thuyền to."
+      },
+      {
+       "id": "nho",
+       "label": "Bến nhỏ",
+       "e": "co:50:art:thuyen",
+       "say": "Bến thuyền nhỏ."
+      }
+     ],
+     "items": [
+      {
+       "e": "co:100:art:thuyen",
+       "g": "to"
+      },
+      {
+       "e": "co:100:art:thuyen",
+       "g": "to"
+      },
+      {
+       "e": "co:100:art:thuyen",
+       "g": "to"
+      },
+      {
+       "e": "co:50:art:thuyen",
+       "g": "nho"
+      },
+      {
+       "e": "co:50:art:thuyen",
+       "g": "nho"
+      },
+      {
+       "e": "co:50:art:thuyen",
+       "g": "nho"
+      }
+     ],
+     "per_round": 6,
+     "rounds": 1,
+     "intro": [
+      "Thêm thuyền về bến rồi! Bé xếp tiếp nhé!"
+     ],
+     "no": "Bé thử lại nào! Thuyền nhỏ vào bến nhỏ nhé.",
+     "done": "Tuyệt vời! Sáu thuyền về đúng bến.",
+     "nang_luc": [
+      "NL06",
+      "NL04"
+     ]
+    },
+    {
+     "activity_id": "M050-B04",
+     "engine": "E03",
+     "skill_id": "TD.KG.04",
+     "title": "Có cả bến vừa",
+     "groups": [
+      {
+       "id": "to",
+       "label": "Bến to",
+       "e": "co:100:art:thuyen",
+       "say": "Bến thuyền to."
+      },
+      {
+       "id": "vua",
+       "label": "Bến vừa",
+       "e": "co:75:art:thuyen",
+       "say": "Bến thuyền vừa."
+      },
+      {
+       "id": "nho",
+       "label": "Bến nhỏ",
+       "e": "co:50:art:thuyen",
+       "say": "Bến thuyền nhỏ."
+      }
+     ],
+     "items": [
+      {
+       "e": "co:100:art:thuyen",
+       "g": "to"
+      },
+      {
+       "e": "co:100:art:thuyen",
+       "g": "to"
+      },
+      {
+       "e": "co:75:art:thuyen",
+       "g": "vua"
+      },
+      {
+       "e": "co:75:art:thuyen",
+       "g": "vua"
+      },
+      {
+       "e": "co:50:art:thuyen",
+       "g": "nho"
+      },
+      {
+       "e": "co:50:art:thuyen",
+       "g": "nho"
+      }
+     ],
+     "per_round": 6,
+     "rounds": 1,
+     "intro": [
+      "Có thêm bến vừa rồi! Bé xếp nhé!"
+     ],
+     "no": "Bé thử lại nào! Bé so ba cỡ thuyền nhé.",
+     "done": "Còi tàu vang lên rồi! Bé xếp giỏi quá!",
+     "nang_luc": [
+      "NL06",
+      "NL04",
+      "NL05"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cua bò đi mấy con?",
+   "hiep": 1,
+   "icon": "art:cua",
+   "nhom": [
+    "TO",
+    "TD"
+   ],
+   "way": "tinh",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Trên bến có các chú cua. Vài chú bò xuống biển."
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B05",
+     "engine": "E11",
+     "skill_id": "TO.TG.02",
+     "title": "Một chú cua bò đi",
+     "on_tap": "so:5",
+     "mode": "tray",
+     "obj": "art:cua",
+     "max": 5,
+     "label": "Bé chọn số",
+     "tasks": [
+      {
+       "type": "bot",
+       "start": 5,
+       "take": 1,
+       "say": [
+        "Trên bến có năm chú cua."
+       ],
+       "act": "Bé chạm một chú cua bò đi nhé.",
+       "q": "Còn lại mấy chú cua?",
+       "ok": "Đúng rồi! Năm bớt một còn {n}."
+      }
+     ],
+     "no": "Bé thử lại nào! Bé đếm số cua còn lại nhé.",
+     "nang_luc": [
+      "NL02",
+      "NL01"
+     ]
+    },
+    {
+     "activity_id": "M050-B06",
+     "engine": "E11",
+     "skill_id": "TO.TG.02",
+     "title": "Hai chú cua bò đi",
+     "mode": "tray",
+     "obj": "art:cua",
+     "max": 5,
+     "label": "Bé chọn số",
+     "tasks": [
+      {
+       "type": "bot",
+       "start": 5,
+       "take": 2,
+       "say": [
+        "Lại có năm chú cua."
+       ],
+       "act": "Bé chạm hai chú cua bò đi nhé.",
+       "q": "Còn lại mấy chú cua?",
+       "ok": "Giỏi quá! Năm bớt hai còn {n}."
+      }
+     ],
+     "no": "Bé thử lại nào! Bé đếm số cua còn lại nhé.",
+     "nang_luc": [
+      "NL02",
+      "NL01"
+     ]
+    },
+    {
+     "activity_id": "M050-B07",
+     "engine": "E11",
+     "skill_id": "TO.TG.02",
+     "title": "Bốn chú cua",
+     "mode": "tray",
+     "obj": "art:cua",
+     "max": 5,
+     "label": "Bé chọn số",
+     "tasks": [
+      {
+       "type": "bot",
+       "start": 4,
+       "take": 2,
+       "say": [
+        "Giờ có bốn chú cua."
+       ],
+       "act": "Bé chạm hai chú cua bò đi nhé.",
+       "q": "Còn lại mấy chú cua?",
+       "ok": "Chính xác! Bốn bớt hai còn {n}."
+      }
+     ],
+     "no": "Bé thử lại nào! Bé đếm số cua còn lại nhé.",
+     "nang_luc": [
+      "NL02",
+      "NL18"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tự phục vụ ở hội",
+   "hiep": 1,
+   "icon": "art:coc-nuoc",
+   "nhom": [
+    "KS",
+    "NT"
+   ],
+   "way": "chon-cach",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Ở hội, Mono tự làm nhiều việc lắm!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B08",
+     "engine": "E01",
+     "skill_id": "EQ.AT.D01",
+     "title": "Tự phục vụ ở hội",
+     "mode": "items",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Mono khát nước. Mono tự lấy gì?",
+       "opts": [
+        {
+         "e": "art:coc-nuoc"
+        },
+        {
+         "e": "art:giay"
+        },
+        {
+         "e": "art:mu"
+        }
+       ],
+       "a": 0,
+       "ok": "Giỏi quá! Mono tự rót nước uống.",
+       "no": "Bé thử lại nào! Khát nước thì cần gì nhỉ?",
+       "show": "lu:suy-nghi"
+      },
+      {
+       "q": "Mono ra bến chơi. Mono tự đi gì?",
+       "opts": [
+        {
+         "e": "art:mu"
+        },
+        {
+         "e": "art:giay"
+        },
+        {
+         "e": "art:coc-nuoc"
+        }
+       ],
+       "a": 1,
+       "ok": "Đúng rồi! Mono tự đi giày.",
+       "no": "Bé thử lại nào! Đi gì vào chân nhỉ?",
+       "show": "lu:di-bo"
+      },
+      {
+       "q": "Nắng to quá! Mono tự đội gì?",
+       "opts": [
+        {
+         "e": "art:giay"
+        },
+        {
+         "e": "art:coc-nuoc"
+        },
+        {
+         "e": "art:mu"
+        }
+       ],
+       "a": 2,
+       "ok": "Tuyệt vời! Mono tự đội mũ rồi.",
+       "no": "Gần đúng rồi! Đội gì lên đầu nhỉ?",
+       "show": "art:mat-troi"
+      }
+     ],
+     "nang_luc": [
+      "NL04",
+      "NL18",
+      "NL03"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Kéo co bên bến",
+   "kind": "nghi",
+   "icon": "lu:nhay",
+   "nhom": [
+    "KT"
+   ],
+   "way": "van-dong",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Mình đứng dậy chơi kéo co nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B09",
+     "engine": "E15",
+     "skill_id": "KP.VD.01",
+     "title": "Cầm dây thật chắc",
+     "mode": "do",
+     "lu": "dang-tay",
+     "task": "Hai tay cầm dây thật chắc nào!",
+     "button": "Bé làm xong rồi",
+     "seconds": 15,
+     "evidence": "tiep-xuc",
+     "nang_luc": [
+      "NL17",
+      "NL16"
+     ]
+    },
+    {
+     "activity_id": "M050-B10",
+     "engine": "E15",
+     "skill_id": "KP.VD.01",
+     "title": "Kéo thật mạnh",
+     "mode": "do",
+     "lu": "vui-mung",
+     "task": "Ngả người kéo mạnh! Một, hai, ba, kéo!",
+     "button": "Bé làm xong rồi",
+     "seconds": 20,
+     "evidence": "tiep-xuc",
+     "nang_luc": [
+      "NL17"
+     ]
+    },
+    {
+     "activity_id": "M050-B11",
+     "engine": "E15",
+     "skill_id": "KP.VD.01",
+     "title": "Reo hò chiến thắng",
+     "mode": "do",
+     "lu": "an-mung",
+     "task": "Thắng rồi! Giơ tay reo thật to nào!",
+     "button": "Bé làm xong rồi",
+     "seconds": 15,
+     "evidence": "tiep-xuc",
+     "nang_luc": [
+      "NL17",
+      "NL11"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "My body",
+   "hiep": 2,
+   "icon": "lu:vay-tay",
+   "nhom": [
+    "EN",
+    "CY",
+    "GN"
+   ],
+   "way": "hoc-tu",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Mình học tên ba bộ phận cơ thể nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B12",
+     "engine": "E01",
+     "skill_id": "EN.EN.14",
+     "title": "My body",
+     "mode": "items",
+     "order": "fixed",
+     "rounds": 3,
+     "items": [
+      {
+       "q": [
+        "Đôi mắt, tiếng Anh là",
+        "Eyes!",
+        "__sang",
+        "Eyes",
+        "Bé nói theo nào!",
+        "__cho3"
+       ],
+       "opts": [
+        {
+         "e": "art:mono-chi-mat"
+        }
+       ],
+       "a": 0,
+       "ok": [
+        "Eyes!",
+        "Bé nói hay quá!"
+       ],
+       "no": "",
+       "word": "Eyes",
+       "word_times": 0
+      },
+      {
+       "q": [
+        "Bàn tay, tiếng Anh là",
+        "Hands!",
+        "__sang",
+        "Hands",
+        "Bé nói theo nào!",
+        "__cho3"
+       ],
+       "opts": [
+        {
+         "e": "art:mono-xoe-tay"
+        }
+       ],
+       "a": 0,
+       "ok": [
+        "Hands!",
+        "Giỏi quá! Bé nhớ bàn tay rồi."
+       ],
+       "no": "",
+       "word": "Hands",
+       "word_times": 0
+      },
+      {
+       "q": [
+        "Đôi chân, tiếng Anh là",
+        "Legs!",
+        "__sang",
+        "Legs",
+        "Bé nói theo nào!",
+        "__cho3"
+       ],
+       "opts": [
+        {
+         "e": "art:mono-chi-chan"
+        }
+       ],
+       "a": 0,
+       "ok": [
+        "Legs!",
+        "Tuyệt vời! Bé nhớ cả ba từ rồi."
+       ],
+       "no": "",
+       "word": "Legs",
+       "word_times": 0
+      }
+     ],
+     "nang_luc": [
+      "NL03",
+      "NL08"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bên cạnh, ở giữa",
+   "hiep": 2,
+   "icon": "art:thuyen-do",
+   "nhom": [
+    "TD",
+    "TV",
+    "QS"
+   ],
+   "way": "quan-sat",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Ba chiếc thuyền đậu thành hàng trên bến."
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B13",
+     "engine": "E01",
+     "skill_id": "TV.TU.01",
+     "title": "Bên cạnh, ở giữa",
+     "mode": "items",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Thuyền nào ở giữa?",
+       "opts": [
+        {
+         "e": "art:thuyen-do"
+        },
+        {
+         "e": "art:thuyen-vang"
+        },
+        {
+         "e": "art:thuyen-xanh"
+        }
+       ],
+       "a": 1,
+       "ok": "Đúng rồi! Thuyền vàng ở giữa.",
+       "no": "Bé thử lại nào! Bé nhìn thuyền giữa hàng nhé.",
+       "show": [
+        "art:thuyen-do",
+        "art:thuyen-vang",
+        "art:thuyen-xanh"
+       ]
+      },
+      {
+       "q": "Thuyền nào bên cạnh thuyền vàng?",
+       "opts": [
+        {
+         "e": "art:thuyen-do"
+        },
+        {
+         "e": "art:thuyen-xanh"
+        },
+        {
+         "e": "art:thuyen-vang"
+        }
+       ],
+       "a": 1,
+       "ok": "Giỏi quá! Thuyền xanh bên cạnh thuyền vàng.",
+       "no": "Bé thử lại nào! Thuyền nào đứng sát thuyền vàng?",
+       "show": [
+        "art:thuyen-do",
+        "art:thuyen-xanh",
+        "art:thuyen-vang"
+       ]
+      },
+      {
+       "q": "Thuyền nào bên cạnh thuyền đỏ?",
+       "opts": [
+        {
+         "e": "art:thuyen-vang"
+        },
+        {
+         "e": "art:thuyen-do"
+        },
+        {
+         "e": "art:thuyen-xanh"
+        }
+       ],
+       "a": 0,
+       "ok": "Chính xác! Thuyền vàng bên cạnh thuyền đỏ.",
+       "no": "Gần đúng rồi! Thuyền nào đứng sát thuyền đỏ?",
+       "show": [
+        "art:thuyen-xanh",
+        "art:thuyen-vang",
+        "art:thuyen-do"
+       ]
+      }
+     ],
+     "nang_luc": [
+      "NL06",
+      "NL03",
+      "NL04"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chơi gần nước an toàn",
+   "hiep": 2,
+   "icon": "art:mono-ao-phao",
+   "nhom": [
+    "KT",
+    "KS",
+    "NT"
+   ],
+   "way": "dung-sai",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Chơi gần nước phải thật cẩn thận."
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B14",
+     "engine": "E01",
+     "skill_id": "EQ.AT.06",
+     "title": "Chơi gần nước an toàn",
+     "mode": "items",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Mono mặc áo phao. An toàn chưa?",
+       "opts": [
+        {
+         "e": "face:vui"
+        },
+        {
+         "e": "face:buon"
+        }
+       ],
+       "a": 0,
+       "ok": "Đúng rồi! Có áo phao là an toàn.",
+       "no": "Bé thử lại nào! Áo phao giữ Mono nổi mà.",
+       "style": "face",
+       "show": "art:mono-ao-phao"
+      },
+      {
+       "q": "Mono đứng sát mép bến một mình. An toàn chưa?",
+       "opts": [
+        {
+         "e": "face:vui"
+        },
+        {
+         "e": "face:buon"
+        }
+       ],
+       "a": 1,
+       "ok": "Giỏi quá! Đứng sát mép nước là nguy hiểm.",
+       "no": "Bé thử lại nào! Mép bến dễ trượt ngã lắm.",
+       "style": "face",
+       "show": "art:mono-mep-ben"
+      },
+      {
+       "q": "Mono nắm tay bà đi trên bến. An toàn chưa?",
+       "opts": [
+        {
+         "e": "face:buon"
+        },
+        {
+         "e": "face:vui"
+        }
+       ],
+       "a": 1,
+       "ok": "Chính xác! Nắm tay người lớn là an toàn.",
+       "no": "Gần đúng rồi! Có bà đi cùng mà.",
+       "style": "face",
+       "show": "art:mono-nam-tay-ba"
+      }
+     ],
+     "nang_luc": [
+      "NL18",
+      "NL04"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cờ hội cho thuyền",
+   "hiep": 2,
+   "icon": "art:co-hoi",
+   "nhom": [
+    "ST",
+    "TTg"
+   ],
+   "way": "sang-tao",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Mình làm lá cờ cho thuyền của bé nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B15",
+     "engine": "E14",
+     "skill_id": "KP.ST.D01",
+     "title": "Dán hình lên cờ",
+     "mode": "sticker",
+     "bg": "art:co-hoi",
+     "stickers": [
+      "art:sao",
+      "art:ca",
+      "art:mat-troi"
+     ],
+     "min": 2,
+     "intro": [
+      "Lá cờ của bé có hình gì?"
+     ],
+     "done": "Lá cờ đẹp quá! Bé chọn hình hay lắm.",
+     "nang_luc": [
+      "NL11",
+      "NL12",
+      "NL15"
+     ]
+    },
+    {
+     "activity_id": "M050-B16",
+     "engine": "E14",
+     "skill_id": "KP.ST.D01",
+     "title": "Thêm hình nữa",
+     "mode": "sticker",
+     "bg": "art:co-hoi",
+     "keep": true,
+     "stickers": [
+      "art:hoa",
+      "art:cua",
+      "art:sao"
+     ],
+     "min": 1,
+     "intro": [
+      "Bé dán thêm hình nữa nhé!"
+     ],
+     "done": "Bé trang trí khéo quá!",
+     "nang_luc": [
+      "NL11",
+      "NL12"
+     ]
+    },
+    {
+     "activity_id": "M050-B17",
+     "engine": "E14",
+     "skill_id": "KP.ST.D01",
+     "title": "Cờ tung bay",
+     "mode": "sticker",
+     "bg": "art:co-hoi",
+     "keep": true,
+     "stickers": [
+      "art:ca",
+      "art:mat-troi",
+      "art:hoa"
+     ],
+     "min": 1,
+     "intro": [
+      "Thêm một hình cuối cùng nào!"
+     ],
+     "done": "Giỏi quá! Cờ của bé tung bay trên cột buồm.",
+     "nang_luc": [
+      "NL12",
+      "NL16"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bằng nhau chưa?",
+   "kind": "vang",
+   "hiep": 2,
+   "icon": "art:ca",
+   "nhom": [
+    "TO",
+    "TD",
+    "QS"
+   ],
+   "way": "tinh",
+   "backdrop": {
+    "id": "M050-BG-01",
+    "kind": "bo-ao"
+   },
+   "intro": [
+    "Thử thách vàng! Hai thuyền chở cá.",
+    "Bé làm cho hai bên bằng nhau nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M050-B18",
+     "engine": "E01",
+     "skill_id": "TO.SS.02",
+     "title": "Bằng nhau chưa?",
+     "mode": "items",
+     "order": "fixed",
+     "style": "number",
+     "rounds": 4,
+     "items": [
+      {
+       "q": "Bên trái cần thêm mấy chú cá?",
+       "opts": [
+        {
+         "v": 1
+        },
+        {
+         "v": 2
+        },
+        {
+         "v": 3
+        }
+       ],
+       "a": 0,
+       "ok": "Đúng rồi! Thêm một chú cá là bằng nhau.",
+       "no": "Bé thử lại nào! Bé đếm cá hai thuyền nhé.",
+       "show": [
+        "art:ca*3",
+        "art:ca*4"
+       ]
+      },
+      {
+       "q": "Bên trái cần thêm mấy chú cá?",
+       "opts": [
+        {
+         "v": 1
+        },
+        {
+         "v": 2
+        },
+        {
+         "v": 3
+        }
+       ],
+       "a": 1,
+       "ok": "Giỏi quá! Thêm hai chú cá là bằng nhau.",
+       "no": "Bé thử lại nào! Bé đếm cá hai thuyền nhé.",
+       "show": [
+        "art:ca*4",
+        "art:ca*6"
+       ]
+      },
+      {
+       "q": "Bên trái phải bớt mấy chú cá?",
+       "opts": [
+        {
+         "v": 1
+        },
+        {
+         "v": 2
+        },
+        {
+         "v": 3
+        }
+       ],
+       "a": 1,
+       "ok": "Chính xác! Bớt hai chú cá là bằng nhau.",
+       "no": "Gần đúng rồi! Bé đếm cá bên trái nhé.",
+       "show": [
+        "art:ca*5",
+        "art:ca*3"
+       ]
+      },
+      {
+       "q": "Bên trái cần thêm mấy chú cá?",
+       "opts": [
+        {
+         "v": 2
+        },
+        {
+         "v": 3
+        },
+        {
+         "v": 4
+        }
+       ],
+       "a": 1,
+       "ok": "Xuất sắc! Thêm ba chú cá là bằng nhau.",
+       "no": "Suýt đúng rồi! Bé đếm thật kỹ nhé.",
+       "show": [
+        "art:ca*2",
+        "art:ca*5"
+       ]
+      }
+     ],
+     "nang_luc": [
+      "NL02",
+      "NL01",
+      "NL18"
+     ]
+    }
+   ]
+  }
+ ],
+ "note": "Giáo trình Mono 200 buổi, buổi 50 (ôn tuần: tự phục vụ, xếp thuyền, thêm bớt). Không hỏi cảm xúc đầu buổi, không dạy mẫu. Bé dưới 4,5 tuổi học 2 hiệp, nghỉ sau bài 5.",
+ "intro": [
+  "Đảo nhỏ mở hội bến thuyền!",
+  "Gà con theo thuyền ra đảo chơi với Mono."
+ ],
+ "end": [
+  "Hội vui quá! Bé nhận vỏ sò ánh trăng thứ mười.",
+  "Ngọn hải đăng sáng được một nửa rồi!",
+  "Đêm về, Mono viết nhật ký… mà quên mất từ!"
+ ],
+ "reward": {
+  "title": "Huy hiệu: Thuyền trưởng nhí",
+  "e": [
+   "art:thuyen"
+  ]
+ },
+ "parent": {
+  "goal": "Con nhận ra cảm xúc của bạn, xếp theo kích thước, bớt trong phạm vi 5, làm cho hai nhóm bằng nhau, tự phục vụ.",
+  "why": "Hỏi con: “Làm sao con biết hai thuyền bằng nhau?” Nghe con giải thích, bố mẹ không chấm đúng sai.",
+  "tonight": [
+   "Con tự rót nước vào cốc nhỏ, uống xong tự cất cốc."
+  ]
+ }
+}

@@ -1,0 +1,938 @@
+{
+ "format": "lu-lesson",
+ "format_version": 2,
+ "lesson_id": "M020",
+ "vi_tri": "M020",
+ "age": "4–6 tuổi",
+ "content_version": "M020-kichban-1",
+ "review_status": "nhap",
+ "layout": "hub",
+ "title": "Lễ hội Làng Hạt Đậu",
+ "minutes": 20,
+ "skills": [
+  {
+   "skill_id": "TO.DEM.02",
+   "cls": "G"
+  },
+  {
+   "skill_id": "KP.ST.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TO.SO.02",
+   "cls": "T"
+  },
+  {
+   "skill_id": "EN.EN.05",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KP.VD.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "EQ.XH.03",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TV.NG.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KP.KH.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "KS.SX.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TD.TN.01",
+   "cls": "T"
+  },
+  {
+   "skill_id": "TD.TN.02",
+   "cls": "T"
+  }
+ ],
+ "backdrop": {
+  "id": "L001-BG-02",
+  "kind": "san"
+ },
+ "hub": {
+  "q": "Bé chọn bài để học nhé.",
+  "again": "Bé chọn bài tiếp theo nhé.",
+  "backdrop": {
+   "id": "L001-BG-02",
+   "kind": "san"
+  }
+ },
+ "stages": [
+  {
+   "title": "Pháo hoa lễ hội",
+   "kind": "dinh",
+   "hiep": 1,
+   "icon": "art:phao-hoa",
+   "nhom": [
+    "TO",
+    "CY",
+    "GN"
+   ],
+   "way": "nhin-nhanh",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Pháo hoa nổ rồi tắt rất nhanh. Bé nhìn kỹ nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B01",
+     "engine": "E01",
+     "skill_id": "TO.DEM.02",
+     "title": "Nhìn nhanh đếm pháo hoa",
+     "mode": "flash",
+     "objs": [
+      "art:phao-hoa"
+     ],
+     "opts": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "words": [
+      "một",
+      "hai",
+      "ba",
+      "bốn",
+      "năm",
+      "sáu",
+      "bảy",
+      "tám",
+      "chín",
+      "mười"
+     ],
+     "rounds": 4,
+     "q": "Có mấy chùm pháo hoa?",
+     "levels": [
+      {
+       "n": 3,
+       "ms": 1500,
+       "look": "Pháo hoa nổ rồi!",
+       "q": "Có mấy chùm pháo hoa?"
+      },
+      {
+       "n": 4,
+       "ms": 1500,
+       "look": "Nhìn thật nhanh nhé!",
+       "q": "Có mấy chùm?"
+      },
+      {
+       "n": 4,
+       "ms": 1500,
+       "look": "Pháo hoa bay lung tung!",
+       "q": "Có mấy chùm?",
+       "scatter": true
+      },
+      {
+       "n": 5,
+       "ms": 1500,
+       "look": "Chùm cuối thật nhiều!",
+       "q": "Có mấy chùm?",
+       "scatter": true
+      }
+     ],
+     "ok": "Đúng rồi! Có {word} chùm. Bé tinh mắt quá!",
+     "no": "Không sao đâu! Mình xem lại nhé, bé bấm Xem lại.",
+     "nang_luc": [
+      "NL02",
+      "NL07",
+      "NL13"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đèn lồng của bé",
+   "hiep": 1,
+   "icon": "art:den-long",
+   "nhom": [
+    "ST",
+    "TTg"
+   ],
+   "way": "sang-tao",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Mình làm đèn lồng treo lễ hội nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B02",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Dán sao lên đèn",
+     "mode": "sticker",
+     "bg": "art:den-long",
+     "stickers": [
+      "art:sao",
+      "art:hoa",
+      "art:mat-troi"
+     ],
+     "min": 2,
+     "intro": [
+      "Bé dán sao, dán hoa lên đèn nhé!"
+     ],
+     "done": "Giỏi quá! Đèn lồng sáng lấp lánh rồi.",
+     "nang_luc": [
+      "NL11",
+      "NL12",
+      "NL15"
+     ]
+    },
+    {
+     "activity_id": "M020-B03",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Thêm bướm và lá",
+     "mode": "sticker",
+     "bg": "art:den-long",
+     "keep": true,
+     "stickers": [
+      "art:buom",
+      "art:la",
+      "art:hoa"
+     ],
+     "min": 2,
+     "intro": [
+      "Thêm bướm, thêm lá nào!"
+     ],
+     "done": "Bé trang trí khéo quá! Đèn có cả bướm rồi.",
+     "nang_luc": [
+      "NL11",
+      "NL12",
+      "NL16"
+     ]
+    },
+    {
+     "activity_id": "M020-B04",
+     "engine": "E14",
+     "skill_id": "KP.ST.01",
+     "title": "Chiếc đèn của riêng bé",
+     "mode": "sticker",
+     "bg": "art:den-long",
+     "keep": true,
+     "stickers": [
+      "art:sao",
+      "art:buom",
+      "art:hoa"
+     ],
+     "min": 1,
+     "intro": [
+      "Bé dán thêm món bé thích nhất nhé!"
+     ],
+     "done": "Đèn lồng của bé đẹp quá! Mono treo giữa sân hội.",
+     "nang_luc": [
+      "NL11",
+      "NL12"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ếch nhảy dãy số",
+   "hiep": 1,
+   "icon": "art:ech",
+   "nhom": [
+    "TO",
+    "TD"
+   ],
+   "way": "on-tap",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Chú ếch nhảy trên các lá số. Có lá bị mất số!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B05",
+     "engine": "E01",
+     "skill_id": "TO.SO.02",
+     "title": "Ếch nhảy dãy số",
+     "on_tap": "so:5",
+     "mode": "items",
+     "order": "fixed",
+     "style": "number",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Số nào còn thiếu nhỉ?",
+       "opts": [
+        {
+         "v": 1
+        },
+        {
+         "v": 2
+        },
+        {
+         "v": 3
+        }
+       ],
+       "a": 1,
+       "ok": "Đúng rồi! Một, hai, ba. Ếch nhảy tiếp!",
+       "no": "Bé thử lại nào! Bé đếm từ số một nhé.",
+       "show": [
+        "so:1",
+        "so:?",
+        "so:3"
+       ]
+      },
+      {
+       "q": "Số nào còn thiếu nhỉ?",
+       "opts": [
+        {
+         "v": 3
+        },
+        {
+         "v": 4
+        },
+        {
+         "v": 5
+        }
+       ],
+       "a": 1,
+       "ok": "Giỏi quá! Ba, bốn, năm. Ếch nhảy xa ghê!",
+       "no": "Bé thử lại nào! Sau số ba là số mấy?",
+       "show": [
+        "so:1",
+        "so:2",
+        "so:3",
+        "so:?",
+        "so:5"
+       ]
+      },
+      {
+       "q": "Lá đầu tiên mất số nào?",
+       "opts": [
+        {
+         "v": 1
+        },
+        {
+         "v": 2
+        },
+        {
+         "v": 3
+        }
+       ],
+       "a": 0,
+       "ok": "Bé đếm giỏi lắm! Số một đứng đầu tiên.",
+       "no": "Gần đúng rồi! Bé đếm ngược từ số năm nhé.",
+       "show": [
+        "so:?",
+        "so:2",
+        "so:3",
+        "so:4",
+        "so:5"
+       ]
+      }
+     ],
+     "nang_luc": [
+      "NL02",
+      "NL05",
+      "NL01"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nghe và chạm nhanh",
+   "hiep": 1,
+   "icon": "art:tao",
+   "nhom": [
+    "EN",
+    "CY",
+    "GN"
+   ],
+   "way": "nghe-cham",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Nghe thật kỹ, chạm thật nhanh!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B06",
+     "engine": "E17",
+     "skill_id": "EN.EN.05",
+     "title": "Nghe và chạm nhanh",
+     "mode": "tap",
+     "en": true,
+     "words": [
+      {
+       "w": "Apple",
+       "e": "art:tao",
+       "ok": "Đúng rồi! Bé nhớ quả táo."
+      },
+      {
+       "w": "Banana",
+       "e": "art:chuoi",
+       "ok": "Giỏi quá! Đúng quả chuối rồi."
+      },
+      {
+       "w": "Orange",
+       "e": "art:cam",
+       "ok": "Tuyệt vời! Đúng quả cam rồi."
+      },
+      {
+       "w": "Hello",
+       "e": "lu:vay-tay",
+       "ok": "Chính xác! Mono đang chào bé đó."
+      }
+     ],
+     "levels": [
+      {
+       "opts": 2,
+       "time_ms": 8000
+      },
+      {
+       "opts": 3,
+       "time_ms": 7000
+      },
+      {
+       "opts": 3,
+       "time_ms": 6000
+      }
+     ],
+     "no": "Bé thử lại nào! Bé nghe lại nhé.",
+     "done": "Bé nghe giỏi quá! Nhớ hết các từ rồi.",
+     "nang_luc": [
+      "NL03",
+      "NL08",
+      "NL10"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Múa lễ hội",
+   "kind": "nghi",
+   "icon": "lu:nhay",
+   "nhom": [
+    "KT"
+   ],
+   "way": "van-dong",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Mình đứng dậy múa cùng cả làng nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B07",
+     "engine": "E17",
+     "skill_id": "KP.VD.01",
+     "title": "Nhạc tắt đứng im",
+     "mode": "freeze",
+     "stops": 2,
+     "dance": "Nhạc lễ hội vang lên rồi! Bé múa nào!",
+     "freeze": "Đứng im như tượng!",
+     "button": "Bé đứng im rồi",
+     "ok": "Giỏi quá! Bé đứng im như tượng đá.",
+     "done": "Bé múa giỏi quá! Cả làng vỗ tay.",
+     "nang_luc": [
+      "NL17",
+      "NL09"
+     ]
+    },
+    {
+     "activity_id": "M020-B08",
+     "engine": "E15",
+     "skill_id": "KP.VD.01",
+     "title": "Vỗ tay theo nhạc",
+     "mode": "do",
+     "lu": "vui-mung",
+     "task": "Vỗ tay theo nhạc lễ hội nào! Một, hai, ba!",
+     "button": "Bé làm xong rồi",
+     "seconds": 20,
+     "evidence": "tiep-xuc",
+     "nang_luc": [
+      "NL17",
+      "NL14"
+     ]
+    },
+    {
+     "activity_id": "M020-B09",
+     "engine": "E15",
+     "skill_id": "KP.VD.01",
+     "title": "Rước đèn vòng tròn",
+     "mode": "do",
+     "lu": "di-bo",
+     "task": "Giơ tay cao như cầm đèn, đi một vòng tròn!",
+     "button": "Bé làm xong rồi",
+     "seconds": 20,
+     "evidence": "tiep-xuc",
+     "nang_luc": [
+      "NL17",
+      "NL06"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hai bạn cùng muốn đèn",
+   "hiep": 2,
+   "icon": "art:den-long",
+   "nhom": [
+    "EQ",
+    "NT",
+    "TD"
+   ],
+   "way": "doan-cam-xuc",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Mono và gà con cùng muốn một chiếc đèn lồng."
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B10",
+     "engine": "E01",
+     "skill_id": "EQ.XH.03",
+     "title": "Hai bạn cùng muốn đèn",
+     "mode": "items",
+     "order": "fixed",
+     "rounds": 3,
+     "items": [
+      {
+       "q": "Gà con không có đèn. Gà con thấy thế nào?",
+       "opts": [
+        {
+         "e": "face:buon"
+        },
+        {
+         "e": "face:vui"
+        }
+       ],
+       "a": 0,
+       "ok": "Tinh ý quá! Gà con đang buồn.",
+       "no": "Mình cùng xem lại nào! Gà con không có đèn mà.",
+       "style": "face",
+       "show": [
+        "art:ga-con",
+        "art:den-long"
+       ]
+      },
+      {
+       "q": "Mono nói gì với gà con?",
+       "opts": [
+        {
+         "t": "Mình thay phiên cầm nhé!",
+         "e": "face:vui"
+        },
+        {
+         "t": "Của mình, không cho!",
+         "e": "face:gian"
+        },
+        {
+         "t": "Bạn đi chỗ khác đi!",
+         "e": "face:buon"
+        }
+       ],
+       "a": 0,
+       "ok": "Bé hiểu bạn quá! Thay phiên thì ai cũng vui.",
+       "no": "Bé thử lại nào! Câu nào làm hai bạn cùng vui?",
+       "style": "wide",
+       "show": [
+        "lu:suy-nghi",
+        "art:ga-con"
+       ]
+      },
+      {
+       "q": "Gà con xin đèn thế nào cho lịch sự?",
+       "opts": [
+        {
+         "t": "Đưa đây ngay!",
+         "e": "face:gian"
+        },
+        {
+         "t": "Cho mình mượn đèn nhé?",
+         "e": "face:vui"
+        },
+        {
+         "t": "Không cho thì mình khóc!",
+         "e": "face:buon"
+        }
+       ],
+       "a": 1,
+       "ok": "Hay quá! Xin lịch sự thì bạn vui lòng cho.",
+       "no": "Gần đúng rồi! Câu nào nghe dễ thương nhỉ?",
+       "style": "wide",
+       "show": [
+        "art:ga-con",
+        "art:den-long"
+       ]
+      }
+     ],
+     "nang_luc": [
+      "NL03",
+      "NL18",
+      "NL10"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Kể lại hành trình",
+   "hiep": 2,
+   "icon": "art:gio-thoi",
+   "nhom": [
+    "TV",
+    "GN",
+    "TD"
+   ],
+   "way": "ke-chuyen",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Mình nhớ lại chuyến đi tìm hạt giống nhé."
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B11",
+     "engine": "E04",
+     "skill_id": "TV.NG.01",
+     "title": "Kể lại hành trình",
+     "mode": "cards",
+     "label": "Bé chạm tranh theo thứ tự",
+     "rounds": 3,
+     "sets": [
+      {
+       "q": "Chuyện gì xảy ra trước tiên?",
+       "items": [
+        {
+         "e": "art:gio-thoi",
+         "say": "Gió thổi bay hạt giống của bà."
+        },
+        {
+         "e": "lu:kham-pha",
+         "say": "Mono đi tìm hạt giống."
+        },
+        {
+         "e": "art:phao-hoa",
+         "say": "Cả làng mở hội vui."
+        }
+       ],
+       "ok": "Bé nhớ giỏi lắm! Bé kể đúng thứ tự rồi."
+      },
+      {
+       "q": "Bé xếp ba tranh nhé.",
+       "items": [
+        {
+         "e": "lu:kham-pha",
+         "say": "Mono đi tìm khắp vườn."
+        },
+        {
+         "e": "art:ga-con-chay",
+         "say": "Gà con chạy lạc mẹ."
+        },
+        {
+         "e": "art:phao-hoa",
+         "say": "Cả làng mở hội vui."
+        }
+       ],
+       "ok": "Đúng rồi! Bé kể theo thứ tự rất hay."
+      },
+      {
+       "q": "Bé xếp cả bốn tranh nhé.",
+       "items": [
+        {
+         "e": "art:gio-thoi",
+         "say": "Gió thổi bay hạt giống."
+        },
+        {
+         "e": "lu:kham-pha",
+         "say": "Mono đi tìm khắp vườn."
+        },
+        {
+         "e": "art:ga-con-chay",
+         "say": "Gà con chạy lạc mẹ."
+        },
+        {
+         "e": "art:phao-hoa",
+         "say": "Cả làng mở hội vui."
+        }
+       ],
+       "ok": "Tuyệt vời! Cuốn truyện của bé mở ra rồi."
+      }
+     ],
+     "done": "Bé kể chuyện giỏi lắm!",
+     "nang_luc": [
+      "NL03",
+      "NL05",
+      "NL07"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hạt đậu lớn lên",
+   "hiep": 2,
+   "icon": "art:cay-dau",
+   "nhom": [
+    "KT",
+    "TD",
+    "NT"
+   ],
+   "way": "sap-xep",
+   "backdrop": {
+    "id": "L001-BG-04",
+    "kind": "luong"
+   },
+   "intro": [
+    "Hạt đậu lớn lên thế nào nhỉ?"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B12",
+     "engine": "E04",
+     "skill_id": "KP.KH.01",
+     "title": "Hạt đậu lớn lên",
+     "mode": "cards",
+     "label": "Bé chạm tranh theo thứ tự",
+     "rounds": 3,
+     "sets": [
+      {
+       "q": "Cái gì có trước nhỉ?",
+       "items": [
+        {
+         "e": "art:hat-dau",
+         "say": "Hạt đậu nằm trong đất."
+        },
+        {
+         "e": "art:mam-dau",
+         "say": "Có nước, hạt nảy mầm."
+        },
+        {
+         "e": "art:cay-dau",
+         "say": "Có nắng, mầm thành cây."
+        }
+       ],
+       "ok": "Đúng rồi! Hạt nảy mầm rồi thành cây."
+      },
+      {
+       "q": "Bé xếp ba tranh nhé.",
+       "items": [
+        {
+         "e": "art:mam-dau",
+         "say": "Hạt nảy mầm."
+        },
+        {
+         "e": "art:cay-dau",
+         "say": "Mầm thành cây đậu."
+        },
+        {
+         "e": "art:qua-dau",
+         "say": "Cây ra quả đậu."
+        }
+       ],
+       "ok": "Giỏi quá! Cây đậu ra quả rồi."
+      },
+      {
+       "q": "Bé xếp cả bốn tranh nhé.",
+       "items": [
+        {
+         "e": "art:hat-dau",
+         "say": "Hạt đậu nằm trong đất."
+        },
+        {
+         "e": "art:mam-dau",
+         "say": "Hạt nảy mầm."
+        },
+        {
+         "e": "art:cay-dau",
+         "say": "Mầm thành cây đậu."
+        },
+        {
+         "e": "art:qua-dau",
+         "say": "Cây ra quả đậu."
+        }
+       ],
+       "ok": "Xuất sắc! Bé xếp đủ bốn tranh rồi."
+      }
+     ],
+     "done": "Tuyệt vời! Bé biết cây lớn lên thế nào rồi.",
+     "nang_luc": [
+      "NL05",
+      "NL01",
+      "NL04"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dọn dẹp sau lễ hội",
+   "hiep": 2,
+   "icon": "art:ro-tre",
+   "nhom": [
+    "KS",
+    "QS"
+   ],
+   "way": "keo-tha",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Lễ hội xong, mình cùng dọn dẹp nhé!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B13",
+     "engine": "E02",
+     "skill_id": "KS.SX.01",
+     "title": "Dọn dẹp sau lễ hội",
+     "target_style": "shadow",
+     "label": "Kéo đồ vào đúng bóng",
+     "rounds": 3,
+     "sets": [
+      [
+       "art:den-long",
+       "art:mu"
+      ],
+      [
+       "art:ro-tre",
+       "art:chao"
+      ],
+      [
+       "art:khan",
+       "art:giay",
+       "art:binh-tuoi"
+      ]
+     ],
+     "again": "Còn đồ nữa, bé cất tiếp nhé!",
+     "no": "Bé thử lại nào! Bé nhìn hình cái bóng nhé.",
+     "done": "Giỏi quá! Làng sạch đẹp nhờ bé đó!",
+     "nang_luc": [
+      "NL06",
+      "NL16",
+      "NL04"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đại thử thách vàng",
+   "kind": "vang",
+   "hiep": 2,
+   "icon": "art:sao",
+   "nhom": [
+    "TD",
+    "GN",
+    "CY"
+   ],
+   "way": "nhin-nhanh",
+   "backdrop": {
+    "id": "L001-BG-02",
+    "kind": "san"
+   },
+   "intro": [
+    "Đại thử thách vàng! Hạt cuối cùng đây!"
+   ],
+   "activities": [
+    {
+     "activity_id": "M020-B14",
+     "engine": "E17",
+     "skill_id": "TD.TN.01",
+     "title": "Hạt nấp dưới rổ nào?",
+     "mode": "cups",
+     "obj": "art:hat-dau",
+     "q": "Hạt nấp dưới rổ nào?",
+     "levels": [
+      {
+       "cups": 3,
+       "swaps": 2,
+       "speed_ms": 900
+      },
+      {
+       "cups": 3,
+       "swaps": 3,
+       "speed_ms": 750
+      },
+      {
+       "cups": 3,
+       "swaps": 4,
+       "speed_ms": 600
+      }
+     ],
+     "ok": "Đúng rồi! Bé theo dõi giỏi quá!",
+     "no": "Suýt đúng rồi! Mình mở rổ xem nhé.",
+     "done": "Giỏi quá! Tìm thấy rổ rồi, giờ mở hộp nào.",
+     "nang_luc": [
+      "NL09",
+      "NL07",
+      "NL06"
+     ]
+    },
+    {
+     "activity_id": "M020-B15",
+     "engine": "E05",
+     "skill_id": "TD.TN.02",
+     "title": "Lật thẻ mở hộp",
+     "pool": [
+      "art:hat-dau",
+      "art:den-long",
+      "art:phao-hoa",
+      "art:hoa"
+     ],
+     "pairs": 3,
+     "intro": [
+      "Bé lật hai thẻ giống nhau để mở hộp nhé!"
+     ],
+     "done": "Xuất sắc! Hộp mở ra, hạt giống cuối cùng đây rồi!",
+     "nang_luc": [
+      "NL07",
+      "NL09"
+     ]
+    }
+   ]
+  }
+ ],
+ "note": "Giáo trình Mono 200 buổi, buổi 20 (ôn cả vùng 1). Không hỏi cảm xúc đầu buổi, không dạy mẫu. Bé dưới 4,5 tuổi học 2 hiệp, nghỉ sau bài 5.",
+ "intro": [
+  "Lễ hội Làng Hạt Đậu đây rồi!",
+  "Hạt giống cuối cùng nấp trên đỉnh đồi."
+ ],
+ "end": [
+  "Đủ hai mươi hạt giống rồi!",
+  "Bà gieo hạt, cây cầu vồng mọc lên tới mây.",
+  "Ơ kìa, chiếc lá phát sáng bay về phía rừng!"
+ ],
+ "reward": {
+  "title": "Huy hiệu: Người giữ hạt giống",
+  "e": [
+   "art:hat-dau"
+  ]
+ },
+ "parent": {
+  "goal": "Con ôn cả vùng 1: đếm nhanh đến 5, dãy số 1 đến 5, từ tiếng Anh, kể chuyện theo thứ tự.",
+  "why": "Hỏi con: “Hạt đậu lớn lên thế nào?” Để con kể theo cách của con, bố mẹ không chấm đúng sai.",
+  "tonight": [
+   "Cùng con gieo một hạt đậu thật vào cốc đất, mỗi ngày tưới nước."
+  ]
+ }
+}

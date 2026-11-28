@@ -78,7 +78,7 @@ export async function runLesson(root, pkg, opts = {}) {
   const play = async (resume) => {
     const seed = resume?.seed ?? opts.seed ?? newSeed(); T.seed = seed;
     const session = { session_id: resume?.session_id || uid(), lesson_id: pkg.lesson_id, content_version: pkg.content_version, seed, mode, core_version: CORE_VERSION, start: Date.now(), mood: null, events: [] };
-    const ctx = { ui, voice, fast, test: { mark: el => { T.current = [].concat(el).filter(Boolean); } } };
+    const ctx = { ui, voice, fast, test: { mark: el => { T.current = [].concat(el).filter(Boolean); }, setAuto: (r, w) => { T.right = r || null; T.wrong = w || null; } } };
     if (!resume) { ui.setStep(0); setBd(pkg.backdrop || pkg.stages?.[0]?.backdrop); ui.scene('Xin chào!', luArt('vay-tay')); await voice.say(pkg.intro || []);
     if (pkg.checkin) session.mood = await checkin(ui, voice, pkg.checkin, T); }
     const runAct = async k => {
@@ -255,7 +255,7 @@ export async function runActivity(root, act, opts = {}) {
   const E = ENGINES[act.engine]; const seed = opts.seed ?? newSeed();
   const variant = E.generate(act, makeRng(seed));
   const T = window.__luTest = { current: [], events: [], done: false, seed };
-  const ctx = { ui, voice, fast: !!opts.fast, test: { mark: el => { T.current = [].concat(el).filter(Boolean); } },
+  const ctx = { ui, voice, fast: !!opts.fast, test: { mark: el => { T.current = [].concat(el).filter(Boolean); }, setAuto: (r, w) => { T.right = r || null; T.wrong = w || null; } },
     record: r => { const evt = { event_id: uid(), ts: Date.now(), activity_id: act.activity_id, engine: act.engine, seed, mode: opts.mode || 'preview', kind: 'answer', ...r }; T.events.push(evt); opts.onEvent && opts.onEvent(evt); } };
   await E.mount(ctx, act, variant);
   T.done = true; ui.scene('Xong!', luArt('an-mung'));

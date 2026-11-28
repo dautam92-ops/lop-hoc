@@ -1,0 +1,37 @@
+{
+ "doi_tuong": "M050",
+ "tep": "content/drafts/M050.json",
+ "ma_bam": "a60617dfe81fcb1b555993fd4d6d8e844eff6b64",
+ "ngay": "2026-11-28",
+ "nguoi_soat": "agent soát logic",
+ "lan_soat": 1,
+ "quy_tac_da_soat": [
+  "LG01",
+  "LG02",
+  "LG03",
+  "LG04",
+  "LG05",
+  "LG06",
+  "LG07",
+  "LG08",
+  "LG09",
+  "LG10",
+  "LG11",
+  "LG12",
+  "LG13",
+  "LG14",
+  "LG15",
+  "LG16",
+  "LG17",
+  "LG18",
+  "LG19",
+  "LG20"
+ ],
+ "may_soat": {
+  "loi": 0,
+  "canh_bao": 0
+ },
+ "canh_bao_da_xet": [],
+ "ghi_chu": "Soát cả 18 hoạt động (buổi 50 ôn tuần). Đã xét, không ghi lỗi: gà con cười là vui; ngáp dài là buồn ngủ (đáp án ngủ, chạy và uống nước là đáp án sai rõ) (LG03); câu gà im lặng và cua vẫy càng hỏi “bé nói gì”, đáp án là lời nói, không cần ảnh hành động (quy tắc 42); xếp thuyền theo ba cỡ của cùng một ảnh (LG03); cua bớt: 5−1=4, 5−2=3, 4−2=2 (LG14); tự phục vụ: khát nước lấy cốc nước, ra bến đi giày, nắng to đội mũ, mỗi câu một đáp án (LG03); kéo co giả vờ, không nguy hiểm (LG11); Eyes, Hands, Legs có ảnh Mono chỉ đúng bộ phận (LG12); bên cạnh, ở giữa: hàng ba thuyền, mỗi câu chỉ một thuyền đúng (thuyền ở đầu hàng chỉ có một bên cạnh) (LG03); an toàn gần nước: áo phao và nắm tay bà là an toàn, đứng sát mép bến một mình là chưa an toàn, không dạy điều nguy hiểm (LG11); bằng nhau: 3 và 4 thêm 1, 4 và 6 thêm 2, 5 và 3 bớt 2 bên trái, 2 và 5 thêm 3; câu hỏi nói rõ bên trái để chỉ có một đáp án (LG03, LG14); “chú cá” thay “con” để không lẫn với cách gọi trẻ.",
+ "loi": []
+}

@@ -1,0 +1,34 @@
+{
+  "lesson_id": "M030",
+  "ghi_chu": "Học cùng con buổi 30 giáo trình Mono (quy tắc Q4). Lời cho bố mẹ gọi trẻ là con; lời Mono gọi trẻ là bé.",
+  "dan_bo_me": {
+    "hom_nay": "Con chỉ đếm đúng màu được hỏi, đi mê cung, ôn cao thấp, học tree, leaf, flower.",
+    "chuan_bi": "Ra sân hoặc công viên cùng con sau buổi học để nhặt lá rụng.",
+    "ngoi_canh": "Ngồi cạnh con lúc Mono mời bố mẹ là đủ. Bận thì con vẫn tự học được."
+  },
+  "moi_bo_me": [
+    {
+      "sau_bai": 0,
+      "loai": "do-bo-me",
+      "loi": "Bé đố bố mẹ: trong nhà có mấy cái cây?",
+      "goi_y": "Cùng con đi quanh nhà đếm chậu cây. Con chỉ, bố mẹ đếm theo."
+    },
+    {
+      "sau_bai": 3,
+      "loai": "lam-cung",
+      "loi": "Bé nói tên tiếng Anh cây, lá, hoa cho bố mẹ!",
+      "goi_y": "Bố mẹ chỉ vào cây, lá, hoa thật, con nói tên tiếng Anh. Khen con dù con nói chưa tròn."
+    },
+    {
+      "sau_bai": 8,
+      "loai": "hoi",
+      "loi": "Bé hỏi bố mẹ: bố mẹ đánh răng mấy lần một ngày?",
+      "goi_y": "Kể con nghe bố mẹ đánh răng sáng và tối. Tối nay cùng con đánh răng."
+    }
+  ],
+  "cuoi_buoi": {
+    "loi": "Mình tắt máy nhé! Bé cùng bố mẹ nhặt lá rụng!",
+    "ten": "Nhặt lá cùng bố mẹ",
+    "phut": 5
+  }
+}

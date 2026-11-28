@@ -1,0 +1,42 @@
+{
+ "doi_tuong": "M030",
+ "tep": "content/drafts/M030.json",
+ "ma_bam": "b3347867a7bc226c694b01e9aae12afcd7896791",
+ "ngay": "2026-11-28",
+ "nguoi_soat": "agent soát logic",
+ "lan_soat": 1,
+ "quy_tac_da_soat": [
+  "LG01",
+  "LG02",
+  "LG03",
+  "LG04",
+  "LG05",
+  "LG06",
+  "LG07",
+  "LG08",
+  "LG09",
+  "LG10",
+  "LG11",
+  "LG12",
+  "LG13",
+  "LG14",
+  "LG15",
+  "LG16",
+  "LG17",
+  "LG18",
+  "LG19",
+  "LG20"
+ ],
+ "may_soat": {
+  "loi": 0,
+  "canh_bao": 1
+ },
+ "canh_bao_da_xet": [
+  {
+   "canh_bao": "CẢNH BÁO M030-B12: \"Cây nào đang rụng lá?\": lời khen \"Đúng rồi! Lá vàng đang rơi xuống.\" không nhắc cây lá vàng đang rụng; agent xem lời khen có đúng sự thật không (LG19)",
+   "ket_luan": "Không phải lỗi LG19: lời khen “Lá vàng đang rơi xuống” tả đúng cây lá vàng đang rụng là đáp án đúng."
+  }
+ ],
+ "ghi_chu": "Soát cả 17 hoạt động (buổi 30 ôn tuần 2 vùng 2). Đã xét, không ghi lỗi: đếm lá xanh, lá vàng là vật gây nhiễu không đếm (LG13); mê cung có đường tới lá (máy dựng, kiểm 100 biến thể); cao thấp dùng cùng một ảnh cây vẽ ba cỡ nên chỉ khác chiều cao (LG03); tam giác ba cạnh đúng (LG07); tree, leaf, flower đúng nghĩa, mỗi màn một từ, giọng bản xứ (LG12); đoán con vật: mai cứng bò chậm chỉ có rùa trong ba đáp án (ốc không có mặt ở câu này), có cánh hót líu lo là chim, tai dài nhảy nhanh là thỏ (LG03, LG07); hai bạn cùng muốn đi trước: oẳn tù tì công bằng, không dùng từ “thua” (lint); cây rụng lá: lá già vàng rồi rụng, lá non xanh mọc ra (LG07); đánh răng: chải → súc miệng → lau miệng → đi ngủ, đúng thứ tự vệ sinh (LG11); thử thách vàng sáng tạo không chấm đúng sai, câu chọn bạn thú là câu tự do có lời đáp cho từng lựa chọn.",
+ "loi": []
+}

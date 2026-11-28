@@ -1,62 +1,1318 @@
 {
  "format": "lu-voice-todo",
- "lesson": "M001",
- "at": "2026-11-27T23:57:28.582Z",
+ "lesson": "M020+M030+M050",
+ "at": "2026-11-28T11:41:45.665Z",
  "lines": [
   {
-   "text": "Mình học tên ba loại quả nhé!",
+   "text": "Bé kể bố mẹ nghe chuyến đi tìm hạt giống nhé!",
    "lang": "vi"
   },
   {
-   "text": "Apple",
-   "lang": "en-cham"
-  },
-  {
-   "text": "Quả táo, tiếng Anh là",
+   "text": "Bé hỏi bố mẹ: cây cần gì để lớn?",
    "lang": "vi"
   },
   {
-   "text": "Apple!",
+   "text": "Mình tắt máy nhé! Bé cùng bố mẹ gieo hạt đậu!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lễ hội Làng Hạt Đậu đây rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt giống cuối cùng nấp trên đỉnh đồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đủ hai mươi hạt giống rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bà gieo hạt, cây cầu vồng mọc lên tới mây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ơ kìa, chiếc lá phát sáng bay về phía rừng!",
+   "lang": "vi"
+  },
+  {
+   "text": "Pháo hoa nổ rồi tắt rất nhanh. Bé nhìn kỹ nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình làm đèn lồng treo lễ hội nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú ếch nhảy trên các lá số. Có lá bị mất số!",
+   "lang": "vi"
+  },
+  {
+   "text": "Nghe thật kỹ, chạm thật nhanh!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình đứng dậy múa cùng cả làng nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono và gà con cùng muốn một chiếc đèn lồng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình nhớ lại chuyến đi tìm hạt giống nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt đậu lớn lên thế nào nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lễ hội xong, mình cùng dọn dẹp nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đại thử thách vàng! Hạt cuối cùng đây!",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy chùm pháo hoa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Không sao đâu! Mình xem lại nhé, bé bấm Xem lại.",
+   "lang": "vi"
+  },
+  {
+   "text": "Pháo hoa nổ rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy chùm?",
+   "lang": "vi"
+  },
+  {
+   "text": "Pháo hoa bay lung tung!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chùm cuối thật nhiều!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba chùm. Bé tinh mắt quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn chùm. Bé tinh mắt quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có năm chùm. Bé tinh mắt quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé dán sao, dán hoa lên đèn nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Đèn lồng sáng lấp lánh rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Thêm bướm, thêm lá nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé trang trí khéo quá! Đèn có cả bướm rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé dán thêm món bé thích nhất nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đèn lồng của bé đẹp quá! Mono treo giữa sân hội.",
+   "lang": "vi"
+  },
+  {
+   "text": "Số nào còn thiếu nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Một, hai, ba. Ếch nhảy tiếp!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé đếm từ số một nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Ba, bốn, năm. Ếch nhảy xa ghê!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Sau số ba là số mấy?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lá đầu tiên mất số nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đếm giỏi lắm! Số một đứng đầu tiên.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Bé đếm ngược từ số năm nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé nghe lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nghe giỏi quá! Nhớ hết các từ rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Bé nhớ quả táo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Đúng quả chuối rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Đúng quả cam rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hello",
    "lang": "en"
   },
   {
-   "text": "Bé nói theo nào!",
+   "text": "Chính xác! Mono đang chào bé đó.",
    "lang": "vi"
   },
   {
-   "text": "Bé nói hay quá!",
+   "text": "Giỏi quá! Bé đứng im như tượng đá.",
    "lang": "vi"
   },
   {
-   "text": "Banana",
+   "text": "Bé múa giỏi quá! Cả làng vỗ tay.",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhạc lễ hội vang lên rồi! Bé múa nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đứng im như tượng!",
+   "lang": "vi"
+  },
+  {
+   "text": "Vỗ tay theo nhạc lễ hội nào! Một, hai, ba!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giơ tay cao như cầm đèn, đi một vòng tròn!",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con không có đèn. Gà con thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tinh ý quá! Gà con đang buồn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng xem lại nào! Gà con không có đèn mà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono nói gì với gà con?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hiểu bạn quá! Thay phiên thì ai cũng vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Câu nào làm hai bạn cùng vui?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình thay phiên cầm nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Của mình, không cho!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn đi chỗ khác đi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con xin đèn thế nào cho lịch sự?",
+   "lang": "vi"
+  },
+  {
+   "text": "Hay quá! Xin lịch sự thì bạn vui lòng cho.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Câu nào nghe dễ thương nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đưa đây ngay!",
+   "lang": "vi"
+  },
+  {
+   "text": "Cho mình mượn đèn nhé?",
+   "lang": "vi"
+  },
+  {
+   "text": "Không cho thì mình khóc!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé kể chuyện giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nhớ giỏi lắm! Bé kể đúng thứ tự rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gió thổi bay hạt giống của bà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono đi tìm hạt giống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cả làng mở hội vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé xếp ba tranh nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Bé kể theo thứ tự rất hay.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono đi tìm khắp vườn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con chạy lạc mẹ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé xếp cả bốn tranh nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Cuốn truyện của bé mở ra rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gió thổi bay hạt giống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Bé biết cây lớn lên thế nào rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cái gì có trước nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Hạt nảy mầm rồi thành cây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt đậu nằm trong đất.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có nước, hạt nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có nắng, mầm thành cây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Cây đậu ra quả rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt nảy mầm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mầm thành cây đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây ra quả đậu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Xuất sắc! Bé xếp đủ bốn tranh rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Còn đồ nữa, bé cất tiếp nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Làng sạch đẹp nhờ bé đó!",
+   "lang": "vi"
+  },
+  {
+   "text": "Hạt nấp dưới rổ nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Bé theo dõi giỏi quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Suýt đúng rồi! Mình mở rổ xem nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Tìm thấy rổ rồi, giờ mở hộp nào.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé lật hai thẻ giống nhau để mở hộp nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Xuất sắc! Hộp mở ra, hạt giống cuối cùng đây rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé đố bố mẹ: trong nhà có mấy cái cây?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé nói tên tiếng Anh cây, lá, hoa cho bố mẹ!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hỏi bố mẹ: bố mẹ đánh răng mấy lần một ngày?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình tắt máy nhé! Bé cùng bố mẹ nhặt lá rụng!",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây cổ thụ mở hội mê cung!",
+   "lang": "vi"
+  },
+  {
+   "text": "Ai giỏi được chiếc lá phát sáng thứ mười!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé vượt mê cung rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Chiếc lá phát sáng thứ mười đây. Cây cổ thụ sáng một nửa!",
+   "lang": "vi"
+  },
+  {
+   "text": "Ơ kìa, có tiếng hát lạ trong rừng đêm...",
+   "lang": "vi"
+  },
+  {
+   "text": "Lá xanh và lá vàng rơi xuống. Chỉ đếm lá xanh thôi nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Rễ cây cổ thụ tạo thành mê cung!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình ôn cây cao, cây thấp và hình tam giác nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình học tên ba thứ trong rừng nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình đứng dậy làm cây trong gió nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono tả, bé đoán con vật nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono và gà con cùng muốn vào mê cung trước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trong rừng có cây lá xanh, có cây lá vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tối rồi, mình đánh răng nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Thử thách vàng! Bé tạo khu rừng của riêng mình nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Có mấy lá xanh?",
+   "lang": "vi"
+  },
+  {
+   "text": "Nhìn lá xanh nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bỏ qua lá vàng nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Lá rơi lung tung rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mấy lá xanh?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lượt cuối thật nhanh!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có hai lá xanh. Bé tinh mắt quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có ba lá xanh. Bé tinh mắt quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có bốn lá xanh. Bé tinh mắt quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Ngõ này cụt rồi, mình quay lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ở đây có rễ cây chắn rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Mono tới chiếc lá rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Bé tìm đường giỏi lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Xuất sắc! Bé vượt mê cung lớn rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây nào cao nhất?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Cây này cao nhất.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé tìm cây cao vút nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây nào thấp nhất?",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Cây này thấp nhất.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé tìm cây bé xíu nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hình nào là hình tam giác?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Tam giác có ba cạnh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Hình tam giác có ba cạnh nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tree",
    "lang": "en-cham"
   },
   {
-   "text": "Quả chuối, tiếng Anh là",
+   "text": "Cái cây, tiếng Anh là",
    "lang": "vi"
   },
   {
-   "text": "Banana!",
+   "text": "Tree!",
    "lang": "en"
   },
   {
-   "text": "Giỏi quá! Bé nhớ cả quả chuối rồi.",
-   "lang": "vi"
-  },
-  {
-   "text": "Orange",
+   "text": "Leaf",
    "lang": "en-cham"
   },
   {
-   "text": "Quả cam, tiếng Anh là",
+   "text": "Chiếc lá, tiếng Anh là",
    "lang": "vi"
   },
   {
-   "text": "Orange!",
+   "text": "Leaf!",
    "lang": "en"
   },
   {
-   "text": "Tuyệt vời! Ba quả vào giỏ của bà rồi.",
+   "text": "Giỏi quá! Bé nhớ chiếc lá rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Flower",
+   "lang": "en-cham"
+  },
+  {
+   "text": "Bông hoa, tiếng Anh là",
+   "lang": "vi"
+  },
+  {
+   "text": "Flower!",
+   "lang": "en"
+  },
+  {
+   "text": "Tuyệt vời! Bé nhớ cả ba từ rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Bé đứng vững như cây.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé múa đẹp quá! Cây cổ thụ vui lắm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gió thổi, cây đung đưa nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đứng im như cây cổ thụ!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm cây non, vươn tay thật cao nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Dang tay bay như chim qua rừng nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Con này có mai cứng, bò chậm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đố bé con gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Đó là con rùa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Con nào có mai cứng nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Con này có cánh, hót líu lo.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Đó là chú chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Con nào biết bay nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Con này tai dài, nhảy rất nhanh.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Đó là bạn thỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Con nào có đôi tai dài nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Hai bạn cùng muốn đi trước. Mono nói gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Hay quá! Oẳn tù tì thì công bằng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Câu nào công bằng cho hai bạn?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình oẳn tù tì nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Tránh ra, mình đi trước!",
+   "lang": "vi"
+  },
+  {
+   "text": "Thôi, mình không chơi nữa!",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con phải đi sau. Gà con thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tinh ý quá! Gà con hơi buồn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng xem lại nào! Gà con muốn đi trước mà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tốt bụng quá! Gà con vui lại rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Câu nào làm gà con vui?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình đi trước, bạn ở lại!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình không chơi nữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lần sau bạn đi trước nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Cây nào đang rụng lá?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Lá vàng đang rơi xuống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé tìm cây có lá rơi nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lá già có màu gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Lá già thì vàng và rụng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Lá trên mặt đất màu gì nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lá vàng rụng rồi. Lá nào mọc ra?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Lá non xanh mọc ra.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Lá non có màu xanh đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Bé nhớ các bước đánh răng rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Việc nào làm trước?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Chải răng xong mới súc miệng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chải răng thật kỹ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Súc miệng bằng nước sạch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lau miệng bằng khăn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Răng sạch rồi mới đi ngủ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono đi ngủ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Mono đi ngủ với hàm răng sạch.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé trồng cây, trồng hoa nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Khu rừng xanh mát rồi! Đẹp quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mời các bạn thú vào rừng nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé giỏi quá! Rừng có các bạn thú rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thêm điều bé thích nhất nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Khu rừng của bé thật đẹp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thích bạn nào nhất?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn thỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn thỏ đáng yêu quá! Mono cũng thích.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú chim.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chú chim hót hay quá! Mono cũng thích.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn bướm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn bướm xinh quá! Mono cũng thích.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm mặt vui, mặt buồn, đố bố mẹ đoán!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chỉ mắt, tay, chân của bố mẹ nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé hỏi bố mẹ: đi chơi gần nước cần nhớ gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình tắt máy nhé! Bé tự rót nước, tự cất cốc!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đảo nhỏ mở hội bến thuyền!",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con theo thuyền ra đảo chơi với Mono.",
+   "lang": "vi"
+  },
+  {
+   "text": "Hội vui quá! Bé nhận vỏ sò ánh trăng thứ mười.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ngọn hải đăng sáng được một nửa rồi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đêm về, Mono viết nhật ký… mà quên mất từ!",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con theo thuyền ra đảo chơi. Bé nhìn gà con nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Thuyền to vào bến to, thuyền nhỏ vào bến nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên bến có các chú cua. Vài chú bò xuống biển.",
+   "lang": "vi"
+  },
+  {
+   "text": "Ở hội, Mono tự làm nhiều việc lắm!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình đứng dậy chơi kéo co nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình học tên ba bộ phận cơ thể nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Ba chiếc thuyền đậu thành hàng trên bến.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chơi gần nước phải thật cẩn thận.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình làm lá cờ cho thuyền của bé nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Thử thách vàng! Hai thuyền chở cá.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé làm cho hai bên bằng nhau nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con cười tươi. Gà con thấy thế nào?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tinh ý quá! Gà con đang vui.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình cùng xem lại nào! Gà con đang cười mà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con ngáp dài. Gà con muốn gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Gà con buồn ngủ rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Ngáp dài là buồn ngủ đó.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chạy nhảy tiếp.",
+   "lang": "vi"
+  },
+  {
+   "text": "Đi ngủ một chút.",
+   "lang": "vi"
+  },
+  {
+   "text": "Uống nước.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà con im lặng. Bé nói gì với gà?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé tốt bụng quá! Gà con muốn ngồi cùng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Mình hỏi ý gà con nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà chán ghê!",
+   "lang": "vi"
+  },
+  {
+   "text": "Đi chỗ khác đi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Gà ngồi cùng mình không?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bạn cua vẫy càng chào. Bé nói gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Xuất sắc! Bạn cua vui lắm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Bạn chào thì mình chào lại.",
+   "lang": "vi"
+  },
+  {
+   "text": "Chào bạn cua!",
+   "lang": "vi"
+  },
+  {
+   "text": "Mình không chơi đâu.",
+   "lang": "vi"
+  },
+  {
+   "text": "Cua đi đi!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé so độ to của thuyền nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Thuyền nào cũng vào đúng bến.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bến thuyền to.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bến thuyền nhỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Thêm thuyền về bến rồi! Bé xếp tiếp nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Thuyền nhỏ vào bến nhỏ nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Sáu thuyền về đúng bến.",
+   "lang": "vi"
+  },
+  {
+   "text": "Có thêm bến vừa rồi! Bé xếp nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé so ba cỡ thuyền nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Còi tàu vang lên rồi! Bé xếp giỏi quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bến thuyền vừa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé đếm số cua còn lại nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Trên bến có năm chú cua.",
+   "lang": "vi"
+  },
+  {
+   "text": "Còn lại mấy chú cua?",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm một chú cua bò đi nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lại có năm chú cua.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé chạm hai chú cua bò đi nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giờ có bốn chú cua.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono khát nước. Mono tự lấy gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Mono tự rót nước uống.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Khát nước thì cần gì nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono ra bến chơi. Mono tự đi gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Mono tự đi giày.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Đi gì vào chân nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Nắng to quá! Mono tự đội gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Tuyệt vời! Mono tự đội mũ rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Đội gì lên đầu nhỉ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Hai tay cầm dây thật chắc nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Ngả người kéo mạnh! Một, hai, ba, kéo!",
+   "lang": "vi"
+  },
+  {
+   "text": "Thắng rồi! Giơ tay reo thật to nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Eyes",
+   "lang": "en-cham"
+  },
+  {
+   "text": "Đôi mắt, tiếng Anh là",
+   "lang": "vi"
+  },
+  {
+   "text": "Eyes!",
+   "lang": "en"
+  },
+  {
+   "text": "Hands",
+   "lang": "en-cham"
+  },
+  {
+   "text": "Bàn tay, tiếng Anh là",
+   "lang": "vi"
+  },
+  {
+   "text": "Hands!",
+   "lang": "en"
+  },
+  {
+   "text": "Giỏi quá! Bé nhớ bàn tay rồi.",
+   "lang": "vi"
+  },
+  {
+   "text": "Legs",
+   "lang": "en-cham"
+  },
+  {
+   "text": "Đôi chân, tiếng Anh là",
+   "lang": "vi"
+  },
+  {
+   "text": "Legs!",
+   "lang": "en"
+  },
+  {
+   "text": "Thuyền nào ở giữa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Thuyền vàng ở giữa.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé nhìn thuyền giữa hàng nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Thuyền nào bên cạnh thuyền vàng?",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Thuyền xanh bên cạnh thuyền vàng.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Thuyền nào đứng sát thuyền vàng?",
+   "lang": "vi"
+  },
+  {
+   "text": "Thuyền nào bên cạnh thuyền đỏ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Thuyền vàng bên cạnh thuyền đỏ.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Thuyền nào đứng sát thuyền đỏ?",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono mặc áo phao. An toàn chưa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Có áo phao là an toàn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Áo phao giữ Mono nổi mà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono đứng sát mép bến một mình. An toàn chưa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Đứng sát mép nước là nguy hiểm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Mép bến dễ trượt ngã lắm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Mono nắm tay bà đi trên bến. An toàn chưa?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Nắm tay người lớn là an toàn.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Có bà đi cùng mà.",
+   "lang": "vi"
+  },
+  {
+   "text": "Lá cờ của bé có hình gì?",
+   "lang": "vi"
+  },
+  {
+   "text": "Lá cờ đẹp quá! Bé chọn hình hay lắm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé dán thêm hình nữa nhé!",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé trang trí khéo quá!",
+   "lang": "vi"
+  },
+  {
+   "text": "Thêm một hình cuối cùng nào!",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Cờ của bé tung bay trên cột buồm.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bên trái cần thêm mấy chú cá?",
+   "lang": "vi"
+  },
+  {
+   "text": "Đúng rồi! Thêm một chú cá là bằng nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bé thử lại nào! Bé đếm cá hai thuyền nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Giỏi quá! Thêm hai chú cá là bằng nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Bên trái phải bớt mấy chú cá?",
+   "lang": "vi"
+  },
+  {
+   "text": "Chính xác! Bớt hai chú cá là bằng nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Gần đúng rồi! Bé đếm cá bên trái nhé.",
+   "lang": "vi"
+  },
+  {
+   "text": "Xuất sắc! Thêm ba chú cá là bằng nhau.",
+   "lang": "vi"
+  },
+  {
+   "text": "Suýt đúng rồi! Bé đếm thật kỹ nhé.",
    "lang": "vi"
   }
  ]

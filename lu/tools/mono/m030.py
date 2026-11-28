@@ -1,0 +1,83 @@
+# Dựng buổi M030 "Hội mê cung cây cổ thụ" (buổi 30, ôn tuần 2 vùng 2) theo kịch bản 200 buổi:
+# /mnt/project-files/san-pham-500-bai/giao-trinh-moi/kich-ban-200-buoi.md (## Buổi 30). Chạy: python3 tools/mono/m030.py
+from chung import mk, it, F, tu, wide, ghi, W
+A = mk("M030")
+RUNG = {"id": "M030-BG-01", "kind": "vuon"}
+stages = [
+ dict(title="Chỉ đếm lá xanh", kind="dinh", hiep=1, icon="art:la", nhom=["TO", "CY", "GN"], way="nhin-nhanh", backdrop=RUNG,
+  intro=["Lá xanh và lá vàng rơi xuống. Chỉ đếm lá xanh thôi nhé!"],
+  activities=[A(1, "E01", "TO.DEM.02", "Chỉ đếm lá xanh", nl="02 07 04", mode="flash", objs=["art:la"], opts=[1, 2, 3, 4, 5], words=W, rounds=4, q="Có mấy lá xanh?",
+   levels=[F(2, 1500, "Nhìn lá xanh nhé!", "Có mấy lá xanh?", distract="art:la-vang"), F(3, 1500, "Bỏ qua lá vàng nhé!", "Có mấy lá xanh?", distract="art:la-vang"),
+           F(3, 1500, "Lá rơi lung tung rồi!", "Mấy lá xanh?", distract="art:la-vang", scatter=True), F(4, 1500, "Lượt cuối thật nhanh!", "Mấy lá xanh?", distract="art:la-vang", scatter=True)],
+   ok="Đúng rồi! Có {word} lá xanh. Bé tinh mắt quá!", no="Không sao đâu! Mình xem lại nhé, bé bấm Xem lại.")]),
+ dict(title="Mê cung rễ cây", hiep=1, icon="art:cay", nhom=["TD", "CY"], way="me-cung", backdrop=RUNG,
+  intro=["Rễ cây cổ thụ tạo thành mê cung!"],
+  activities=[A(2, "E07", "TD.KG.02", "Mê cung nhỏ", nl="06 18 16", cols=3, rows=3, goal="art:la", hint="Ngõ này cụt rồi, mình quay lại nhé.", bump="Ở đây có rễ cây chắn rồi.", done="Giỏi quá! Mono tới chiếc lá rồi."),
+   A(3, "E07", "TD.KG.02", "Mê cung vừa", nl="06 18", cols=4, rows=3, goal="art:la", hint="Ngõ này cụt rồi, mình quay lại nhé.", bump="Ở đây có rễ cây chắn rồi.", done="Tuyệt vời! Bé tìm đường giỏi lắm!"),
+   A(4, "E07", "TD.KG.02", "Mê cung lớn", nl="06 18 05", cols=4, rows=4, goal="art:la", hint="Ngõ này cụt rồi, mình quay lại nhé.", bump="Ở đây có rễ cây chắn rồi.", done="Xuất sắc! Bé vượt mê cung lớn rồi!")]),
+ dict(title="Cao, thấp, tam giác", hiep=1, icon="art:cay", nhom=["TO", "QS"], way="on-tap", backdrop=RUNG,
+  intro=["Mình ôn cây cao, cây thấp và hình tam giác nhé."],
+  activities=[A(5, "E01", "TO.DO.01", "Cao, thấp, tam giác", nl="02 04 13", on_tap="hinh:tam-giac", mode="items", rounds=3, items=[
+   it("Cây nào cao nhất?", ["co:35:art:cay", "co:100:art:cay", "co:65:art:cay"], 1, "Đúng rồi! Cây này cao nhất.", "Bé thử lại nào! Bé tìm cây cao vút nhé."),
+   it("Cây nào thấp nhất?", ["co:65:art:cay", "co:100:art:cay", "co:35:art:cay"], 2, "Giỏi quá! Cây này thấp nhất.", "Bé thử lại nào! Bé tìm cây bé xíu nhé."),
+   it("Hình nào là hình tam giác?", ["art:hinh-tron", "art:hinh-vuong", "art:hinh-tam-giac"], 2, "Chính xác! Tam giác có ba cạnh.", "Gần đúng rồi! Hình tam giác có ba cạnh nhé.")])]),
+ dict(title="In the forest", hiep=1, icon="art:cay", nhom=["EN", "CY"], way="hoc-tu", backdrop=RUNG,
+  intro=["Mình học tên ba thứ trong rừng nhé!"],
+  activities=[A(6, "E01", "EN.EN.10", "In the forest", nl="03 08 10", mode="items", order="fixed", rounds=3, items=[
+   tu("Cái cây, tiếng Anh là", "Tree", "art:cay", "Bé nói hay quá!"),
+   tu("Chiếc lá, tiếng Anh là", "Leaf", "art:la", "Giỏi quá! Bé nhớ chiếc lá rồi."),
+   tu("Bông hoa, tiếng Anh là", "Flower", "art:hoa", "Tuyệt vời! Bé nhớ cả ba từ rồi.")])]),
+ dict(title="Múa cùng cây cổ thụ", kind="nghi", icon="lu:nhay", nhom=["KT"], way="van-dong", backdrop=RUNG,
+  intro=["Mình đứng dậy làm cây trong gió nhé!"],
+  activities=[A(7, "E17", "KP.VD.01", "Gió thổi, đứng im", nl="17 09", mode="freeze", stops=2, dance="Gió thổi, cây đung đưa nào!", freeze="Đứng im như cây cổ thụ!",
+   button="Bé đứng im rồi", ok="Giỏi quá! Bé đứng vững như cây.", done="Bé múa đẹp quá! Cây cổ thụ vui lắm."),
+   A(8, "E15", "KP.VD.01", "Cây vươn cao", nl="17 11", mode="do", lu="dang-tay", task="Bé làm cây non, vươn tay thật cao nào!", button="Bé làm xong rồi", seconds=30, evidence="tiep-xuc"),
+   A(9, "E15", "KP.VD.01", "Chim bay qua rừng", nl="17 11", mode="do", lu="vui-mung", task="Dang tay bay như chim qua rừng nào!", button="Bé làm xong rồi", seconds=30, evidence="tiep-xuc")]),
+ dict(title="Đoán con vật rừng", hiep=2, icon="art:chim", nhom=["TV", "TD", "NT"], way="doan", backdrop=RUNG,
+  intro=["Mono tả, bé đoán con vật nhé!"],
+  activities=[A(10, "E01", "TV.TU.02", "Đoán con vật rừng", nl="03 04 10", mode="items", rounds=3, items=[
+   it(["Con này có mai cứng, bò chậm.", "Đố bé con gì?"], ["art:rua", "art:chim", "art:ech"], 0, "Đúng rồi! Đó là con rùa.", "Bé thử lại nào! Con nào có mai cứng nhỉ?"),
+   it(["Con này có cánh, hót líu lo.", "Đố bé con gì?"], ["art:oc", "art:chim", "art:rua"], 1, "Giỏi quá! Đó là chú chim.", "Bé thử lại nào! Con nào biết bay nhỉ?"),
+   it(["Con này tai dài, nhảy rất nhanh.", "Đố bé con gì?"], ["art:oc", "art:rua", "art:tho"], 2, "Chính xác! Đó là bạn thỏ.", "Gần đúng rồi! Con nào có đôi tai dài nhỉ?")])]),
+ dict(title="Hai bạn cùng muốn đi trước", hiep=2, icon="face:vui", nhom=["EQ", "NT", "TD"], way="chon-cach", backdrop=RUNG,
+  intro=["Mono và gà con cùng muốn vào mê cung trước."],
+  activities=[A(11, "E01", "EQ.XH.04", "Hai bạn cùng muốn đi trước", nl="18 03", mode="items", order="fixed", rounds=3, items=[
+   it("Hai bạn cùng muốn đi trước. Mono nói gì?", [wide("Mình oẳn tù tì nhé!", "face:vui"), wide("Tránh ra, mình đi trước!", "face:gian"), wide("Thôi, mình không chơi nữa!", "face:buon")], 0,
+      "Hay quá! Oẳn tù tì thì công bằng.", "Bé thử lại nào! Câu nào công bằng cho hai bạn?", style="wide", show=["lu:suy-nghi", "art:ga-con"]),
+   it("Gà con phải đi sau. Gà con thấy thế nào?", ["face:vui", "face:buon"], 1, "Tinh ý quá! Gà con hơi buồn.", "Mình cùng xem lại nào! Gà con muốn đi trước mà.", style="face", show="art:ga-con"),
+   it("Mono nói gì với gà con?", [wide("Mình đi trước, bạn ở lại!", "face:gian"), wide("Mình không chơi nữa.", "face:buon"), wide("Lần sau bạn đi trước nhé!", "face:vui")], 2,
+      "Bé tốt bụng quá! Gà con vui lại rồi.", "Gần đúng rồi! Câu nào làm gà con vui?", style="wide", show=["lu:vui", "art:ga-con"])])]),
+ dict(title="Cây nào đang rụng lá?", hiep=2, icon="art:la-vang", nhom=["KT", "NT"], way="quan-sat", backdrop=RUNG,
+  intro=["Trong rừng có cây lá xanh, có cây lá vàng."],
+  activities=[A(12, "E01", "KP.KH.02", "Cây nào đang rụng lá?", nl="04 10 13", mode="items", rounds=3, items=[
+   it("Cây nào đang rụng lá?", ["art:cay", "art:cay-la-vang"], 1, "Đúng rồi! Lá vàng đang rơi xuống.", "Bé thử lại nào! Bé tìm cây có lá rơi nhé."),
+   it("Lá già có màu gì?", ["art:la", "art:la-vang"], 1, "Giỏi quá! Lá già thì vàng và rụng.", "Bé thử lại nào! Lá trên mặt đất màu gì nhỉ?", show="art:cay-la-vang"),
+   it("Lá vàng rụng rồi. Lá nào mọc ra?", ["art:la-vang", "art:la"], 1, "Chính xác! Lá non xanh mọc ra.", "Gần đúng rồi! Lá non có màu xanh đó.")])]),
+ dict(title="Đánh răng buổi tối", hiep=2, icon="art:ban-chai", nhom=["KS", "GN", "TD"], way="sap-xep", backdrop={"id": "hien", "kind": "hien"},
+  intro=["Tối rồi, mình đánh răng nhé!"],
+  activities=[A(13, "E04", "KS.VS.02", "Đánh răng buổi tối", nl="05 07", mode="cards", label="Bé chạm tranh theo thứ tự", rounds=3, sets=[
+   {"q": "Việc nào làm trước?", "items": [{"e": "art:ban-chai", "say": "Chải răng thật kỹ."}, {"e": "art:coc-nuoc", "say": "Súc miệng bằng nước sạch."}, {"e": "art:khan", "say": "Lau miệng bằng khăn."}], "ok": "Đúng rồi! Chải răng xong mới súc miệng."},
+   {"q": "Bé xếp ba tranh nhé.", "items": [{"e": "art:ban-chai", "say": "Chải răng thật kỹ."}, {"e": "art:coc-nuoc", "say": "Súc miệng bằng nước sạch."}, {"e": "lu:ngu", "say": "Mono đi ngủ."}], "ok": "Giỏi quá! Răng sạch rồi mới đi ngủ."},
+   {"q": "Bé xếp cả bốn tranh nhé.", "items": [{"e": "art:ban-chai", "say": "Chải răng thật kỹ."}, {"e": "art:coc-nuoc", "say": "Súc miệng bằng nước sạch."}, {"e": "art:khan", "say": "Lau miệng bằng khăn."}, {"e": "lu:ngu", "say": "Mono đi ngủ."}], "ok": "Tuyệt vời! Mono đi ngủ với hàm răng sạch."}],
+   done="Giỏi quá! Bé nhớ các bước đánh răng rồi.")]),
+ dict(title="Khu rừng của bé", kind="vang", hiep=2, icon="art:sao", nhom=["ST", "TTg", "TO"], way="sang-tao", backdrop=RUNG,
+  intro=["Thử thách vàng! Bé tạo khu rừng của riêng mình nhé!"],
+  activities=[A(14, "E14", "KP.ST.01", "Trồng cây cho rừng", nl="11 12 15", mode="sticker", bg="art:dat-rung", stickers=["art:cay", "art:hoa", "art:la"], min=3,
+   intro=["Bé trồng cây, trồng hoa nhé!"], done="Khu rừng xanh mát rồi! Đẹp quá!"),
+   A(15, "E14", "KP.ST.01", "Mời các bạn thú", nl="11 12 16", mode="sticker", bg="art:dat-rung", keep=True, stickers=["art:tho", "art:chim", "art:buom"], min=2,
+   intro=["Mời các bạn thú vào rừng nào!"], done="Bé giỏi quá! Rừng có các bạn thú rồi."),
+   A(16, "E14", "KP.ST.01", "Thêm điều bé thích", nl="11 12", mode="sticker", bg="art:dat-rung", keep=True, stickers=["art:hoa", "art:buom", "art:chim"], min=1,
+   intro=["Bé thêm điều bé thích nhất nhé!"], done="Tuyệt vời! Khu rừng của bé thật đẹp."),
+   A(17, "E01", "KP.ST.01", "Bé thích bạn nào?", nl="03 11", mode="items", rounds=1, items=[
+   it("Bé thích bạn nào nhất?", [{"e": "art:tho", "say": "Bạn thỏ.", "reply": "Bạn thỏ đáng yêu quá! Mono cũng thích."},
+                                 {"e": "art:chim", "say": "Chú chim.", "reply": "Chú chim hót hay quá! Mono cũng thích."},
+                                 {"e": "art:buom", "say": "Bạn bướm.", "reply": "Bạn bướm xinh quá! Mono cũng thích."}], 0, "", "", any=True)])]),
+]
+ghi("M030", "Hội mê cung cây cổ thụ", stages, backdrop=RUNG,
+  note="Giáo trình Mono 200 buổi, buổi 30 (ôn tuần 2 vùng 2). Không hỏi cảm xúc đầu buổi, không dạy mẫu. Bé dưới 4,5 tuổi học 2 hiệp, nghỉ sau bài 5.",
+  intro=["Cây cổ thụ mở hội mê cung!", "Ai giỏi được chiếc lá phát sáng thứ mười!"],
+  end=["Bé vượt mê cung rồi!", "Chiếc lá phát sáng thứ mười đây. Cây cổ thụ sáng một nửa!", "Ơ kìa, có tiếng hát lạ trong rừng đêm..."],
+  reward={"title": "Huy hiệu: Nhà thám hiểm mê cung", "e": ["art:la"]},
+  parent={"goal": "Con chỉ đếm đúng màu được hỏi, tìm đường trong mê cung, ôn cao thấp và hình tam giác, học tree, leaf, flower.",
+          "why": "Hỏi con: “Vì sao lá cây chuyển vàng?” Nghe con giải thích, bố mẹ không chấm đúng sai.",
+          "tonight": ["Cùng con nhặt lá rụng, xếp từ lá to đến lá nhỏ."]})
