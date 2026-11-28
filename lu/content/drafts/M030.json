@@ -755,7 +755,7 @@
    ]
   },
   {
-   "title": "Đánh răng buổi tối",
+   "title": "Sạch sẽ buổi tối",
    "hiep": 2,
    "icon": "art:ban-chai",
    "nhom": [
@@ -769,20 +769,20 @@
     "kind": "hien"
    },
    "intro": [
-    "Tối rồi, mình đánh răng nhé!"
+    "Tối rồi, mình giữ sạch người nhé!"
    ],
    "activities": [
     {
      "activity_id": "M030-B13",
      "engine": "E04",
      "skill_id": "KS.VS.02",
-     "title": "Đánh răng buổi tối",
+     "title": "Sạch sẽ buổi tối",
      "mode": "cards",
      "label": "Bé chạm tranh theo thứ tự",
      "rounds": 3,
      "sets": [
       {
-       "q": "Việc nào làm trước?",
+       "q": "Đánh răng: bé dùng gì trước?",
        "items": [
         {
          "e": "art:ban-chai",
@@ -800,47 +800,47 @@
        "ok": "Đúng rồi! Chải răng xong mới súc miệng."
       },
       {
-       "q": "Bé xếp ba tranh nhé.",
+       "q": "Rửa tay: bé dùng gì trước?",
        "items": [
         {
-         "e": "art:ban-chai",
-         "say": "Chải răng thật kỹ."
+         "e": "art:voi-nuoc",
+         "say": "Làm ướt tay dưới vòi nước."
         },
         {
-         "e": "art:coc-nuoc",
-         "say": "Súc miệng bằng nước sạch."
-        },
-        {
-         "e": "lu:ngu",
-         "say": "Mono đi ngủ."
-        }
-       ],
-       "ok": "Giỏi quá! Răng sạch rồi mới đi ngủ."
-      },
-      {
-       "q": "Bé xếp cả bốn tranh nhé.",
-       "items": [
-        {
-         "e": "art:ban-chai",
-         "say": "Chải răng thật kỹ."
-        },
-        {
-         "e": "art:coc-nuoc",
-         "say": "Súc miệng bằng nước sạch."
+         "e": "art:xa-phong",
+         "say": "Xoa xà phòng thật kỹ."
         },
         {
          "e": "art:khan",
-         "say": "Lau miệng bằng khăn."
+         "say": "Lau khô tay bằng khăn."
+        }
+       ],
+       "ok": "Giỏi quá! Tay sạch thơm rồi."
+      },
+      {
+       "q": "Buổi tối của Mono.",
+       "items": [
+        {
+         "e": "art:ban-chai",
+         "say": "Mono đánh răng."
+        },
+        {
+         "e": "lu:doc-sach",
+         "say": "Mono nghe kể chuyện."
         },
         {
          "e": "lu:ngu",
-         "say": "Mono đi ngủ."
+         "say": "Mono ngủ say."
+        },
+        {
+         "e": "art:mat-troi",
+         "say": "Sáng ra, Mono thức dậy."
         }
        ],
-       "ok": "Tuyệt vời! Mono đi ngủ với hàm răng sạch."
+       "ok": "Tuyệt vời! Ngủ ngon, sáng ra thật khỏe."
       }
      ],
-     "done": "Giỏi quá! Bé nhớ các bước đánh răng rồi.",
+     "done": "Giỏi quá! Bé biết giữ sạch người rồi.",
      "nang_luc": [
       "NL05",
       "NL07"

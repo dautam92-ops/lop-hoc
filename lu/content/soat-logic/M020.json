@@ -1,10 +1,10 @@
 {
  "doi_tuong": "M020",
  "tep": "content/drafts/M020.json",
- "ma_bam": "91d198228af3d57de33f2f1a8ddef3575690d110",
+ "ma_bam": "8775f36faa15ec93cdaf39a322f53f520b172e1c",
  "ngay": "2026-11-28",
  "nguoi_soat": "agent soát logic",
- "lan_soat": 1,
+ "lan_soat": 2,
  "quy_tac_da_soat": [
   "LG01",
   "LG02",
@@ -32,6 +32,6 @@
   "canh_bao": 0
  },
  "canh_bao_da_xet": [],
- "ghi_chu": "Soát cả 15 hoạt động (buổi 20 ôn vùng 1). Đã xét, không ghi lỗi: pháo hoa vẽ trong khung trời đêm tròn nên nền sân ban ngày không vô lý (LG08); số chùm pháo hoa do mã dựng, ảnh chỉ có một chùm (LG13); dãy số 1–5 đúng thứ tự, ô trống có một đáp án (LG03); bài nghe chạm dùng 4 từ đã học ở vùng 1, ảnh rõ, khác nhau (LG01); bài hai bạn cùng muốn đèn: đáp án đúng là lời nói lịch sự, đáp án sai là lời giành, đuổi bạn, rõ ràng (LG03, LG10); kể lại hành trình đúng mạch truyện buổi 1–20 (gió thổi hạt, Mono đi tìm, gà con lạc, lễ hội) (LG20); hạt đậu lớn lên: hạt → mầm (có nước) → cây (có nắng) → quả, khớp sửa khoa học ở M001 (LG07); dọn dẹp theo bóng mỗi bóng một vật (LG05); rổ tráo và lật thẻ không có đáp án mơ hồ. Lời kết buổi “cây cầu vồng mọc lên tới mây” là truyện thần tiên của giáo trình, không dạy điều sai (LG08).",
+ "ghi_chu": "Soát cả 15 hoạt động (buổi 20 ôn vùng 1). Đã xét, không ghi lỗi: pháo hoa vẽ trong khung trời đêm tròn nên nền sân ban ngày không vô lý (LG08); số chùm pháo hoa do mã dựng, ảnh chỉ có một chùm (LG13); dãy số 1–5 đúng thứ tự, ô trống có một đáp án (LG03); bài nghe chạm dùng 4 từ đã học ở vùng 1, ảnh rõ, khác nhau (LG01); bài hai bạn cùng muốn đèn: đáp án đúng là lời nói lịch sự, đáp án sai là lời giành, đuổi bạn, rõ ràng (LG03, LG10); kể lại hành trình: ba lượt là ba chuyện khác nhau của vùng 1 (hạt giống bay đi: túi hạt → gió thổi → Mono đi tìm; gà con lạc mẹ: chạy lạc → Mono nhìn xa tìm → gặp gà mẹ; đêm lễ hội: treo đèn → pháo hoa → buồn ngủ → ngủ say) (LG20, quy tắc 49); cái gì đến trước: ba quá trình khác nhau, mỗi lượt một thứ tự duy nhất: hạt → mầm (có nước) → cây (có nắng), khớp sửa khoa học M001; trứng → gà con → gà mái; mây → mưa → nắng lên → cầu vồng (cầu vồng hiện khi có nắng sau mưa) (LG07, quy tắc 49); dọn dẹp theo bóng mỗi bóng một vật (LG05); rổ tráo và lật thẻ không có đáp án mơ hồ. Lời kết buổi “cây cầu vồng mọc lên tới mây” là truyện thần tiên của giáo trình, không dạy điều sai (LG08).",
  "loi": []
 }

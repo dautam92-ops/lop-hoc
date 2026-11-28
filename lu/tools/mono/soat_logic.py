@@ -7,13 +7,13 @@ GHI = {
  "M020": ("Soát cả 15 hoạt động (buổi 20 ôn vùng 1). Đã xét, không ghi lỗi: pháo hoa vẽ trong khung trời đêm tròn nên nền sân ban ngày không vô lý (LG08); "
           "số chùm pháo hoa do mã dựng, ảnh chỉ có một chùm (LG13); dãy số 1–5 đúng thứ tự, ô trống có một đáp án (LG03); bài nghe chạm dùng 4 từ đã học ở vùng 1, ảnh rõ, khác nhau (LG01); "
           "bài hai bạn cùng muốn đèn: đáp án đúng là lời nói lịch sự, đáp án sai là lời giành, đuổi bạn, rõ ràng (LG03, LG10); "
-          "kể lại hành trình đúng mạch truyện buổi 1–20 (gió thổi hạt, Mono đi tìm, gà con lạc, lễ hội) (LG20); hạt đậu lớn lên: hạt → mầm (có nước) → cây (có nắng) → quả, khớp sửa khoa học ở M001 (LG07); "
+          "kể lại hành trình: ba lượt là ba chuyện khác nhau của vùng 1 (hạt giống bay đi: túi hạt → gió thổi → Mono đi tìm; gà con lạc mẹ: chạy lạc → Mono nhìn xa tìm → gặp gà mẹ; đêm lễ hội: treo đèn → pháo hoa → buồn ngủ → ngủ say) (LG20, quy tắc 49); cái gì đến trước: ba quá trình khác nhau, mỗi lượt một thứ tự duy nhất: hạt → mầm (có nước) → cây (có nắng), khớp sửa khoa học M001; trứng → gà con → gà mái; mây → mưa → nắng lên → cầu vồng (cầu vồng hiện khi có nắng sau mưa) (LG07, quy tắc 49); "
           "dọn dẹp theo bóng mỗi bóng một vật (LG05); rổ tráo và lật thẻ không có đáp án mơ hồ. Lời kết buổi “cây cầu vồng mọc lên tới mây” là truyện thần tiên của giáo trình, không dạy điều sai (LG08)."),
  "M030": ("Soát cả 17 hoạt động (buổi 30 ôn tuần 2 vùng 2). Đã xét, không ghi lỗi: đếm lá xanh, lá vàng là vật gây nhiễu không đếm (LG13); mê cung có đường tới lá (máy dựng, kiểm 100 biến thể); "
           "cao thấp dùng cùng một ảnh cây vẽ ba cỡ nên chỉ khác chiều cao (LG03); tam giác ba cạnh đúng (LG07); tree, leaf, flower đúng nghĩa, mỗi màn một từ, giọng bản xứ (LG12); "
           "đoán con vật: mai cứng bò chậm chỉ có rùa trong ba đáp án (ốc không có mặt ở câu này), có cánh hót líu lo là chim, tai dài nhảy nhanh là thỏ (LG03, LG07); "
           "hai bạn cùng muốn đi trước: oẳn tù tì công bằng, không dùng từ “thua” (lint); cây rụng lá: lá già vàng rồi rụng, lá non xanh mọc ra (LG07); "
-          "đánh răng: chải → súc miệng → lau miệng → đi ngủ, đúng thứ tự vệ sinh (LG11); thử thách vàng sáng tạo không chấm đúng sai, câu chọn bạn thú là câu tự do có lời đáp cho từng lựa chọn."),
+          "sạch sẽ buổi tối: ba lượt ba việc khác nhau (quy tắc 49), hỏi “bé dùng gì trước” nên đáp án là đồ dùng, không phải ảnh hành động (quy tắc 42): đánh răng bàn chải → cốc nước súc miệng → khăn lau; rửa tay vòi nước làm ướt → xà phòng → khăn lau khô; buổi tối đánh răng → nghe kể chuyện → ngủ → sáng thức dậy (LG11); thử thách vàng sáng tạo không chấm đúng sai, câu chọn bạn thú là câu tự do có lời đáp cho từng lựa chọn."),
  "M050": ("Soát cả 18 hoạt động (buổi 50 ôn tuần). Đã xét, không ghi lỗi: gà con cười là vui; ngáp dài là buồn ngủ (đáp án ngủ, chạy và uống nước là đáp án sai rõ) (LG03); "
           "câu gà im lặng và cua vẫy càng hỏi “bé nói gì”, đáp án là lời nói, không cần ảnh hành động (quy tắc 42); xếp thuyền theo ba cỡ của cùng một ảnh (LG03); "
           "cua bớt: 5−1=4, 5−2=3, 4−2=2 (LG14); tự phục vụ: khát nước lấy cốc nước, ra bến đi giày, nắng to đội mũ, mỗi câu một đáp án (LG03); "
@@ -27,7 +27,7 @@ for mid, ghi in GHI.items():
     canh = [l.strip() for l in out.splitlines() if l.startswith("CẢNH BÁO")]
     xet = [{"canh_bao": c, "ket_luan": "Không phải lỗi LG19: lời khen “Lá vàng đang rơi xuống” tả đúng cây lá vàng đang rụng là đáp án đúng."} for c in canh]
     rec = {"doi_tuong": mid, "tep": tep, "ma_bam": hashlib.sha1((ROOT / tep).read_bytes()).hexdigest(), "ngay": "2026-11-28",
-           "nguoi_soat": "agent soát logic", "lan_soat": 1, "quy_tac_da_soat": LG, "may_soat": {"loi": 0, "canh_bao": len(canh)},
+           "nguoi_soat": "agent soát logic", "lan_soat": 2, "quy_tac_da_soat": LG, "may_soat": {"loi": 0, "canh_bao": len(canh)},
            "canh_bao_da_xet": xet, "ghi_chu": ghi, "loi": []}
     (ROOT / f"content/soat-logic/{mid}.json").write_text(json.dumps(rec, ensure_ascii=False, indent=1) + "\n")
     print(mid, "cảnh báo", len(canh))

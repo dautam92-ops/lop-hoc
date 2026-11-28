@@ -622,62 +622,62 @@
      "rounds": 3,
      "sets": [
       {
-       "q": "Chuyện gì xảy ra trước tiên?",
+       "q": "Chuyện hạt giống bay đi.",
        "items": [
         {
-         "e": "art:gio-thoi",
-         "say": "Gió thổi bay hạt giống của bà."
+         "e": "art:tui",
+         "say": "Bà cất hạt giống trong túi."
         },
-        {
-         "e": "lu:kham-pha",
-         "say": "Mono đi tìm hạt giống."
-        },
-        {
-         "e": "art:phao-hoa",
-         "say": "Cả làng mở hội vui."
-        }
-       ],
-       "ok": "Bé nhớ giỏi lắm! Bé kể đúng thứ tự rồi."
-      },
-      {
-       "q": "Bé xếp ba tranh nhé.",
-       "items": [
-        {
-         "e": "lu:kham-pha",
-         "say": "Mono đi tìm khắp vườn."
-        },
-        {
-         "e": "art:ga-con-chay",
-         "say": "Gà con chạy lạc mẹ."
-        },
-        {
-         "e": "art:phao-hoa",
-         "say": "Cả làng mở hội vui."
-        }
-       ],
-       "ok": "Đúng rồi! Bé kể theo thứ tự rất hay."
-      },
-      {
-       "q": "Bé xếp cả bốn tranh nhé.",
-       "items": [
         {
          "e": "art:gio-thoi",
          "say": "Gió thổi bay hạt giống."
         },
         {
          "e": "lu:kham-pha",
-         "say": "Mono đi tìm khắp vườn."
-        },
+         "say": "Mono đi tìm hạt giống."
+        }
+       ],
+       "ok": "Bé nhớ giỏi lắm! Bé kể đúng thứ tự rồi."
+      },
+      {
+       "q": "Chuyện gà con lạc mẹ.",
+       "items": [
         {
          "e": "art:ga-con-chay",
          "say": "Gà con chạy lạc mẹ."
         },
         {
-         "e": "art:phao-hoa",
-         "say": "Cả làng mở hội vui."
+         "e": "lu:nhin-xa",
+         "say": "Mono nhìn xa tìm gà con."
+        },
+        {
+         "e": "art:ga",
+         "say": "Gà con gặp lại gà mẹ."
         }
        ],
-       "ok": "Tuyệt vời! Cuốn truyện của bé mở ra rồi."
+       "ok": "Đúng rồi! Gà con về với mẹ rồi."
+      },
+      {
+       "q": "Chuyện đêm lễ hội.",
+       "items": [
+        {
+         "e": "art:den-long",
+         "say": "Mono treo đèn lồng."
+        },
+        {
+         "e": "art:phao-hoa",
+         "say": "Pháo hoa nở trên trời."
+        },
+        {
+         "e": "lu:buon-ngu",
+         "say": "Mono buồn ngủ rồi."
+        },
+        {
+         "e": "lu:ngu",
+         "say": "Mono ngủ say."
+        }
+       ],
+       "ok": "Tuyệt vời! Bé kể đủ bốn tranh rồi."
       }
      ],
      "done": "Bé kể chuyện giỏi lắm!",
@@ -690,7 +690,7 @@
    ]
   },
   {
-   "title": "Hạt đậu lớn lên",
+   "title": "Lớn lên, đổi thay",
    "hiep": 2,
    "icon": "art:cay-dau",
    "nhom": [
@@ -704,20 +704,20 @@
     "kind": "luong"
    },
    "intro": [
-    "Hạt đậu lớn lên thế nào nhỉ?"
+    "Mọi thứ lớn lên, đổi thay thế nào nhỉ?"
    ],
    "activities": [
     {
      "activity_id": "M020-B12",
      "engine": "E04",
      "skill_id": "KP.KH.01",
-     "title": "Hạt đậu lớn lên",
+     "title": "Cái gì đến trước?",
      "mode": "cards",
      "label": "Bé chạm tranh theo thứ tự",
      "rounds": 3,
      "sets": [
       {
-       "q": "Cái gì có trước nhỉ?",
+       "q": "Hạt đậu lớn lên.",
        "items": [
         {
          "e": "art:hat-dau",
@@ -735,47 +735,47 @@
        "ok": "Đúng rồi! Hạt nảy mầm rồi thành cây."
       },
       {
-       "q": "Bé xếp ba tranh nhé.",
+       "q": "Gà con lớn lên.",
        "items": [
         {
-         "e": "art:mam-dau",
-         "say": "Hạt nảy mầm."
+         "e": "art:trung",
+         "say": "Gà mẹ ấp quả trứng."
         },
         {
-         "e": "art:cay-dau",
-         "say": "Mầm thành cây đậu."
+         "e": "art:ga-con",
+         "say": "Trứng nở ra gà con."
         },
         {
-         "e": "art:qua-dau",
-         "say": "Cây ra quả đậu."
+         "e": "art:ga",
+         "say": "Gà con lớn thành gà mái."
         }
        ],
-       "ok": "Giỏi quá! Cây đậu ra quả rồi."
+       "ok": "Giỏi quá! Gà con lớn lên từ quả trứng."
       },
       {
-       "q": "Bé xếp cả bốn tranh nhé.",
+       "q": "Trời mưa rồi nắng.",
        "items": [
         {
-         "e": "art:hat-dau",
-         "say": "Hạt đậu nằm trong đất."
+         "e": "art:may",
+         "say": "Mây kéo đến."
         },
         {
-         "e": "art:mam-dau",
-         "say": "Hạt nảy mầm."
+         "e": "art:mua",
+         "say": "Trời đổ mưa."
         },
         {
-         "e": "art:cay-dau",
-         "say": "Mầm thành cây đậu."
+         "e": "art:mat-troi",
+         "say": "Mưa tạnh, nắng lên."
         },
         {
-         "e": "art:qua-dau",
-         "say": "Cây ra quả đậu."
+         "e": "art:cau-vong",
+         "say": "Cầu vồng hiện ra."
         }
        ],
-       "ok": "Xuất sắc! Bé xếp đủ bốn tranh rồi."
+       "ok": "Xuất sắc! Có nắng sau mưa là có cầu vồng."
       }
      ],
-     "done": "Tuyệt vời! Bé biết cây lớn lên thế nào rồi.",
+     "done": "Tuyệt vời! Bé biết mọi thứ lớn lên, đổi thay thế nào rồi.",
      "nang_luc": [
       "NL05",
       "NL01",
