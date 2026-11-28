@@ -50,24 +50,10 @@
    "tach_nen": true
   },
   {
-   "id": "PM31-OB-mat-troi",
-   "slot": "art:mat-troi",
-   "vi": "Mặt trời",
-   "prompt": "a warm yellow sun with soft rounded rays, no face, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
    "id": "PM31-OB-cau-vong",
    "slot": "art:cau-vong",
    "vi": "Cầu vồng",
    "prompt": "a soft pastel rainbow arc with small white clouds at both ends, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-sao",
-   "slot": "art:sao",
-   "vi": "Ngôi sao",
-   "prompt": "a single golden five-pointed star with rounded tips, no face, isolated on plain white background",
    "tach_nen": true
   },
   {
@@ -110,13 +96,6 @@
    "slot": "art:o",
    "vi": "Cái ô",
    "prompt": "an open yellow child umbrella, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-mua",
-   "slot": "art:mua",
-   "vi": "Mưa",
-   "prompt": "a small grey rain cloud with blue raindrops falling, isolated on plain white background",
    "tach_nen": true
   },
   {
@@ -197,24 +176,10 @@
    "tach_nen": true
   },
   {
-   "id": "PM31-OB-banh-mi",
-   "slot": "art:banh-mi",
-   "vi": "Ổ bánh mì",
-   "prompt": "a golden Vietnamese baguette bread loaf, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
    "id": "PM31-OB-hop",
    "slot": "art:hop",
    "vi": "Cái hộp",
    "prompt": "a small closed cardboard box, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-giay",
-   "slot": "art:giay",
-   "vi": "Đôi giày",
-   "prompt": "a pair of small child sneakers, isolated on plain white background",
    "tach_nen": true
   },
   {
@@ -229,13 +194,6 @@
    "slot": "art:ly",
    "vi": "Cái cốc",
    "prompt": "a light blue plastic child cup with a little water inside, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "PM31-OB-mu",
-   "slot": "art:mu",
-   "vi": "Cái mũ",
-   "prompt": "a small child sun hat, isolated on plain white background",
    "tach_nen": true
   },
   {
