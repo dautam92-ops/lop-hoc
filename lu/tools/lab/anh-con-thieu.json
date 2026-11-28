@@ -187,6 +187,14 @@
    "vi": "Cái xắc xô",
    "prompt": "a small wooden tambourine with little metal jingles, isolated on plain white background",
    "tach_nen": true
+  },
+  {
+   "id": "M030-OB-khan",
+   "slot": "art:khan",
+   "vi": "Cái khăn mặt (M030 lau miệng sau đánh răng; L001, L002, M001, M020 dùng chung)",
+   "prompt": "one small folded cotton face towel, soft light blue terry cloth with two thin white stripes near the edge, fluffy looped fabric texture, neatly folded in half, clearly a towel for wiping face, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 21:46 tam gửi ảnh màn Đánh răng buổi tối M030: khăn DV-0026 trông như miếng bánh, vẽ lại giống khăn thật"
   }
  ]
 }
