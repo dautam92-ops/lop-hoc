@@ -590,3 +590,5 @@
 .co-anh > img, .co-anh > svg { height: var(--co) !important; width: auto !important; max-width: 100%; object-fit: contain; }
 /* Nghe và chạm nhanh trên điện thoại: hai cột, ô to (quy tắc 33) */
 @media (max-width: 600px) { .lu-lesson .tap-grid { grid-template-columns: repeat(2, 1fr); } .lu-lesson .tap-grid .opt { min-width: 41vw; min-height: 41vw; } }
+/* Điện thoại dọc: hàng 3 ảnh minh họa (vd ba thuyền "bên cạnh, ở giữa") giữ trên một hàng, không xếp chồng đẩy ô đáp án ra ngoài màn (M050 28/11) */
+@media (orientation: portrait) and (max-width: 600px) { .lu-lesson .story:has(> .sv:nth-of-type(3)) { display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 2vw; } .lu-lesson .story:has(> .sv:nth-of-type(3)) > .sv { padding: 4px; } .lu-lesson .story:has(> .sv:nth-of-type(3)) > .sv .lu-art { width: 28vw; height: 28vw; } }
