@@ -6298,6 +6298,167 @@
    "dung_o": [],
    "slot": "art:mono-nho-ba-lay-mu",
    "ngay_duyet": "2026-11-27"
+  },
+  {
+   "asset_id": "DV-0051",
+   "version": 1,
+   "path": "assets/do-vat/DV-0051_hop-qua-co-no_v01.webp",
+   "mo_ta": "hop qua co no",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 684,
+    "h": 735
+   },
+   "bytes": 87292,
+   "sha256": "cbf947126864b4fd0f100f3bb4adbdadbc834e1e74a60da12a5e60b4e4cc9c62",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "qua-tang.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-28",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "M001-OB-qua-tang phuong an B; Qwen Image Edit co anh tham chieu (ComfyUI may 24H); tam chon B 28/11",
+   "dung_o": [],
+   "slot": "art:qua-tang",
+   "ngay_duyet": "2026-11-28"
+  },
+  {
+   "asset_id": "DV-0052",
+   "version": 1,
+   "path": "assets/do-vat/DV-0052_mua-roi_v01.webp",
+   "mo_ta": "mua roi",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 668,
+    "h": 871
+   },
+   "bytes": 82834,
+   "sha256": "fb076c78c2dd0b17c41be84d40b73e4d2d3a25b8703642bfe048043b49732be3",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "mua.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-28",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "M001-OB-mua phuong an B; Qwen Image Edit co anh tham chieu (ComfyUI may 24H); tam chon B 28/11",
+   "dung_o": [],
+   "slot": "art:mua",
+   "ngay_duyet": "2026-11-28"
+  },
+  {
+   "asset_id": "DV-0053",
+   "version": 1,
+   "path": "assets/do-vat/DV-0053_mat-troi_v01.webp",
+   "mo_ta": "mat troi",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 705,
+    "h": 704
+   },
+   "bytes": 43578,
+   "sha256": "9bc9b66d9b232eb463960c4d23a03f3299152ab1a688350c5b667e76c9526d22",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "mat-troi.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-28",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "M001-OB-mat-troi phuong an B; Qwen Image Edit co anh tham chieu (ComfyUI may 24H); tam chon B 28/11",
+   "dung_o": [],
+   "slot": "art:mat-troi",
+   "ngay_duyet": "2026-11-28"
+  },
+  {
+   "asset_id": "DV-0054",
+   "version": 1,
+   "path": "assets/do-vat/DV-0054_ngoi-sao_v01.webp",
+   "mo_ta": "ngoi sao",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 766,
+    "h": 720
+   },
+   "bytes": 39168,
+   "sha256": "42838f03c369be4d3db4a07e057a133266efed6c9f4a44b41c505a56c707f3aa",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "sao.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-28",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "M001-OB-sao phuong an B; Qwen Image Edit co anh tham chieu (ComfyUI may 24H); tam chon B 28/11",
+   "dung_o": [],
+   "slot": "art:sao",
+   "ngay_duyet": "2026-11-28"
+  },
+  {
+   "asset_id": "DV-0055",
+   "version": 1,
+   "path": "assets/do-vat/DV-0055_banh-mi_v01.webp",
+   "mo_ta": "banh mi",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 725,
+    "h": 427
+   },
+   "bytes": 56956,
+   "sha256": "38e046a40574124402c3d985c811160a75d4322da5147dfd3ec0bd3da6d2c42c",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "banh-mi.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-28",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "M001-OB-banh-mi phuong an B; Qwen Image Edit co anh tham chieu (ComfyUI may 24H); tam chon B 28/11",
+   "dung_o": [],
+   "slot": "art:banh-mi",
+   "ngay_duyet": "2026-11-28"
+  },
+  {
+   "asset_id": "DV-0056",
+   "version": 1,
+   "path": "assets/do-vat/DV-0056_doi-giay_v01.webp",
+   "mo_ta": "doi giay",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 704,
+    "h": 448
+   },
+   "bytes": 60026,
+   "sha256": "eb6961e8959e106358a04e973b2861bb17fc91407619a25d1aeff572f7fe1377",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "giay.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-28",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "M001-OB-giay phuong an B; Qwen Image Edit co anh tham chieu (ComfyUI may 24H); tam chon B 28/11",
+   "dung_o": [],
+   "slot": "art:giay",
+   "ngay_duyet": "2026-11-28"
+  },
+  {
+   "asset_id": "DV-0057",
+   "version": 1,
+   "path": "assets/do-vat/DV-0057_cai-mu_v01.webp",
+   "mo_ta": "cai mu",
+   "loai": "webp",
+   "kich_thuoc": {
+    "w": 802,
+    "h": 518
+   },
+   "bytes": 46004,
+   "sha256": "b21afb4b39f759a0c097ef8cf40b60eee2e42e23b65629910c651071792d6a86",
+   "nguon": "comfyui",
+   "giay_phep": "ComfyUI trên máy – ghi rõ mô hình và giấy phép mô hình",
+   "tep_goc": "mu.webp",
+   "nguoi_tao": "tam",
+   "ngay": "2026-11-28",
+   "trang_thai": "da_duyet",
+   "ghi_chu": "M001-OB-mu phuong an B; Qwen Image Edit co anh tham chieu (ComfyUI may 24H); tam chon B 28/11",
+   "dung_o": [],
+   "slot": "art:mu",
+   "ngay_duyet": "2026-11-28"
   }
  ]
 }

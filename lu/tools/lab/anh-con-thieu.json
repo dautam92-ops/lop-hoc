@@ -298,15 +298,9 @@
    "id": "M001-OB-gio-thoi",
    "slot": "art:gio-thoi",
    "vi": "Gió thổi bay hạt đậu (đáp án \"Cái gì thổi hạt đậu bay đi?\" và \"Vì sao Mono buồn?\", buổi M001)",
-   "prompt": "soft swirling wind lines blowing a few small brown beans and green leaves through the air, only wind, beans and leaves, no animal, no people, vignette shape, isolated on plain white background",
-   "tach_nen": true
-  },
-  {
-   "id": "M001-OB-qua-tang",
-   "slot": "art:qua-tang",
-   "vi": "Hộp quà có nơ (đáp án sai \"Mono được quà\", buổi M001)",
-   "prompt": "a small gift box wrapped in yellow paper with a red ribbon bow, only the object, no animal, no people, isolated on plain white background",
-   "tach_nen": true
+   "prompt": "children's picture-book wind: three thick light-blue curly wind swirls with round spiral ends, flowing clearly from left to right, carrying three small brown beans and two green leaves along the swirls, only wind swirls, beans and leaves, no face, no cloud, no animal, no people, vignette shape, isolated on plain white background",
+   "tach_nen": true,
+   "ve_lai": "28/11 tam: gió vẽ chưa ra gió (dải vàng mờ). Vẽ lại: nét gió xanh nhạt cuộn tròn kiểu sách tranh, nhìn là biết gió."
   },
   {
    "id": "M001-OB-chuoi",
