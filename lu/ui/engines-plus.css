@@ -500,3 +500,6 @@
 .lu-lesson .stage:has([data-vung-ve]) .color-pic { width: min(100%, 620px, var(--vis-h)); }
 .lu-lesson .stage:has([data-vung-ve]) .draw-pad { width: min(100%, 900px, calc(var(--vis-h) * 4 / 3)); }
 @media (max-width: 600px) { .lu-lesson .stage:has([data-vung-ve]) { --vis-h: max(220px, calc(100dvh - 420px)); } }
+/* Ảnh vẽ tay dáng cao (bóng bay có dây, 28/11) không được kéo giãn ô khay "Vật nào biến mất?": ô giữ vuông, ảnh co trọn trong ô */
+.lu-lesson .vn-it { min-width: 0; min-height: 0; overflow: hidden; }
+.lu-lesson .vn-it img.lu-art { object-fit: contain; min-height: 0; max-height: 100%; }

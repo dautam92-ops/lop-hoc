@@ -3,6 +3,7 @@
 // Mỗi lỗi đã gặp phải có ít nhất một mục ở đây (xem SO-LOI.md).
 import { danhGia } from './do-to-giua.mjs';
 import { kiemCauTruc, kiemOn, kiemNangLuc } from './kiem-cau-truc.mjs';
+import { kiemLapLuot } from './kiem-lap-luot.mjs';
 import { readdir } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import { readFile, access } from 'node:fs/promises';
@@ -31,6 +32,8 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
   const pkg = all.find(p => p.lesson_id === id); const so = x => +String(x).replace(/\D/g, '');
   const ct = pkg ? kiemCauTruc(pkg) : [`không thấy ${id}`];
   check('Cấu trúc như L001: 10–12 bài nhỏ, 3–4 bài tập mỗi bài, đủ 6 nhóm kỹ năng', !ct.length, ct.slice(0, 3).join('; '));
+  // Quy tắc 49 (tam 28/11 21:47 "Đánh răng buổi tối" lặp một quy trình cả 3 lượt): mỗi lượt một nội dung khác
+  { const ll = pkg ? kiemLapLuot(pkg) : []; check('Mỗi lượt trong bài con là một nội dung khác (không lặp quy trình, không lượt giống hệt)', !ll.length, ll.slice(0, 3).join('; ')); }
   const ot = pkg ? kiemOn(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
   check('Ôn chữ/số: mỗi lượt ôn một cách học mới, từ L004 có thẻ ôn', !ot.length, ot.slice(0, 3).join('; '));
   const nl = pkg ? kiemNangLuc(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
@@ -89,7 +92,10 @@ check('Ảnh đã duyệt có đủ tệp', aMiss.length === 0, aMiss.join(', ')
   // Hình đang chờ vẽ trong danh sách theo dõi chung (tools/lab/anh-con-thieu.json) được tạm dùng hình vẽ mã như Phòng mẫu;
   // hình mới cho bài (vd ảnh hành động) phải vẽ và duyệt xong mới lên mạng.
   let cho = new Set(); try { cho = new Set(JSON.parse(await readFile(path.join(ROOT, 'tools/lab/anh-con-thieu.json'), 'utf8')).items.map(i => i.slot)); } catch {}
-  const chua = [...dung].filter(x => !duyet.has(x) && !cho.has(x));
+  // tam 28/11 09:00 ("quả chuối vẽ sai" ở M001): danh sách chờ vẽ chỉ miễn cho Phòng mẫu. Buổi học gửi sếp xem hay lên mạng
+  // KHÔNG được còn hình vẽ mã tạm: mọi đồ vật, con vật trong buổi phải là ảnh vẽ tay đã duyệt (quy tắc 48).
+  const chua = [...dung].filter(x => !duyet.has(x));
+  if (chua.some(x => cho.has(x))) console.log('   Hình còn chờ vẽ tay (đang là hình vẽ mã tạm): ' + chua.filter(x => cho.has(x)).join(', '));
   check('Mọi hình trong bài là ảnh vẽ tay đã duyệt', chua.length === 0, chua.length ? 'chờ vẽ/duyệt: ' + chua.join(', ') : `${dung.size} hình`); }
 
 // 3b. Quy tắc lật thẻ (tam 26/11): sai chỉ úp lại, im lặng; đúng một đôi chỉ âm báo; xong cả bài mới khen.

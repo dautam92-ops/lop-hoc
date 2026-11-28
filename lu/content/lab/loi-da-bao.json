@@ -193,6 +193,22 @@
    "age": "4-5",
    "dev": "ipad",
    "sua": "Chỉ nhận một ngón đang vẽ, bỏ qua tay tì trong và ngoài vùng vẽ; lòng bàn tay không vẽ, không tô, không bấm nút; vùng vẽ to hơn; quy tắc 47; phép thử kiem-tay-ti"
+  },
+  {
+   "ngay": "28/11",
+   "loi": "M001 Apple, banana, orange: quả chuối vẽ sai, không giống thật",
+   "s": "M001",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Đồ vật vẽ giống thật bằng Qwen có tham chiếu; buổi học không được còn hình vẽ mã tạm (cổng chặn); quy tắc 48"
+  },
+  {
+   "ngay": "28/11",
+   "loi": "Đánh răng buổi tối (M030): cả 3 lượt lặp lại quy trình đánh răng",
+   "s": "M030",
+   "age": "4-5",
+   "dev": "phone",
+   "sua": "Mỗi lượt một quy trình khác; phép thử kiem-lap-luot trong cổng; quy tắc 49"
   }
  ]
 }
