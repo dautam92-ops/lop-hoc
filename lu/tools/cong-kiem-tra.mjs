@@ -3,7 +3,7 @@
 // Mỗi lỗi đã gặp phải có ít nhất một mục ở đây (xem SO-LOI.md).
 import { danhGia } from './do-to-giua.mjs';
 import { kiemCauTruc, kiemOn, kiemNangLuc } from './kiem-cau-truc.mjs';
-import { kiemLapLuot } from './kiem-lap-luot.mjs';
+import { kiemLapLuot, kiemLoDapAn, kiemNhamChan, kiemTrungBuoi, kiemChiThi } from './kiem-lap-luot.mjs';
 import { readdir } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import { readFile, access } from 'node:fs/promises';
@@ -34,6 +34,15 @@ check('Buổi học đủ 20 phút trở lên', phut >= 20, `${phut} phút`);
   check('Cấu trúc như L001: 10–12 bài nhỏ, 3–4 bài tập mỗi bài, đủ 6 nhóm kỹ năng', !ct.length, ct.slice(0, 3).join('; '));
   // Quy tắc 49 (tam 28/11 21:47 "Đánh răng buổi tối" lặp một quy trình cả 3 lượt): mỗi lượt một nội dung khác
   { const ll = pkg ? kiemLapLuot(pkg) : []; check('Mỗi lượt trong bài con là một nội dung khác (không lặp quy trình, không lượt giống hệt)', !ll.length, ll.slice(0, 3).join('; ')); }
+  // Soát sâu (tam 28/11 21:53 "việc soát lỗi chưa triệt để"): quy tắc 50–53
+  if (pkg) {
+    const moi = []; for (const f of (await readdir(dir)).filter(f => /^[LM]\d+\.json$/.test(f))) { const o = JSON.parse(await readFile(path.join(dir, f), 'utf8')); if (o.lesson_id !== id) moi.push(o); }
+    const c50 = kiemLoDapAn(pkg), c51 = kiemNhamChan(pkg), c52 = kiemTrungBuoi(pkg, moi), c53 = kiemChiThi(pkg);
+    check('Đáp án không lộ qua hình phụ (chỉ đáp án đúng có mặt cười)', !c50.length, c50.slice(0, 3).join('; '));
+    check('Buổi không lặp một kiểu chơi (≤ 2 bài liền nhau cùng kiểu, chọn tranh ≤ một nửa, không lặp câu hỏi)', !c51.length, c51.slice(0, 3).join('; '));
+    check('Không chép nguyên lượt của buổi khác', !c52.length, c52.slice(0, 3).join('; '));
+    check('Theo chỉ thị 200 buổi: không hỏi cảm xúc đầu buổi, không bước Mono dạy mẫu', !c53.length, c53.slice(0, 3).join('; '));
+  }
   const ot = pkg ? kiemOn(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
   check('Ôn chữ/số: mỗi lượt ôn một cách học mới, từ L004 có thẻ ôn', !ot.length, ot.slice(0, 3).join('; '));
   const nl = pkg ? kiemNangLuc(pkg, all.filter(p => so(p.lesson_id) < so(id))) : [];
