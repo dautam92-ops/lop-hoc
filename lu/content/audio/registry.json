@@ -1045,7 +1045,45 @@
   "Bé thử lại nào! Thuyền nhỏ vào bến nhỏ nhé.": "34724142f867.mp3",
   "Lại có năm chú cua.": "1d33577000f7.mp3",
   "Thêm một hình cuối cùng nào!": "de3a82f98765.mp3",
-  "Lá cờ của bé có hình gì?": "41c3898afe73.mp3"
+  "Lá cờ của bé có hình gì?": "41c3898afe73.mp3",
+  "Mọi thứ lớn lên, đổi thay thế nào nhỉ?": "a556acb85af2.mp3",
+  "Chuyện hạt giống bay đi.": "e2070b7e0bb3.mp3",
+  "Bà cất hạt giống trong túi.": "7c653c427f3b.mp3",
+  "Chuyện gà con lạc mẹ.": "3c773ebdcf13.mp3",
+  "Đúng rồi! Gà con về với mẹ rồi.": "bfd24696196a.mp3",
+  "Mono nhìn xa tìm gà con.": "75a8f3672d7c.mp3",
+  "Gà con gặp lại gà mẹ.": "780c5aa5e25e.mp3",
+  "Chuyện đêm lễ hội.": "4efcc9d446c6.mp3",
+  "Tuyệt vời! Bé kể đủ bốn tranh rồi.": "c2f99a6ee26b.mp3",
+  "Mono treo đèn lồng.": "432e799f82e9.mp3",
+  "Pháo hoa nở trên trời.": "553aa23a579f.mp3",
+  "Mono buồn ngủ rồi.": "9d45ee131f86.mp3",
+  "Mono ngủ say.": "98b708da4bdd.mp3",
+  "Tuyệt vời! Bé biết mọi thứ lớn lên, đổi thay thế nào rồi.": "1fe67f38d2b8.mp3",
+  "Hạt đậu lớn lên.": "86a50265facf.mp3",
+  "Gà con lớn lên.": "1de239ea0d7f.mp3",
+  "Giỏi quá! Gà con lớn lên từ quả trứng.": "631add435b20.mp3",
+  "Gà mẹ ấp quả trứng.": "932d1b1f015c.mp3",
+  "Gà con lớn thành gà mái.": "5e688dc80fdc.mp3",
+  "Trời mưa rồi nắng.": "ea6b5b775aec.mp3",
+  "Xuất sắc! Có nắng sau mưa là có cầu vồng.": "3eedfe75fb91.mp3",
+  "Mây kéo đến.": "1ea9b3c60f53.mp3",
+  "Trời đổ mưa.": "accef52b088d.mp3",
+  "Mưa tạnh, nắng lên.": "716e51de9dea.mp3",
+  "Cầu vồng hiện ra.": "3bea146069e5.mp3",
+  "Tối rồi, mình giữ sạch người nhé!": "7ee30ffe68c5.mp3",
+  "Giỏi quá! Bé biết giữ sạch người rồi.": "dd1f0806ac82.mp3",
+  "Đánh răng: bé dùng gì trước?": "c47b460f59d6.mp3",
+  "Rửa tay: bé dùng gì trước?": "cb4fcc0cd41c.mp3",
+  "Giỏi quá! Tay sạch thơm rồi.": "497950d0bcc5.mp3",
+  "Làm ướt tay dưới vòi nước.": "e39da8040b8e.mp3",
+  "Xoa xà phòng thật kỹ.": "a3da905887d4.mp3",
+  "Lau khô tay bằng khăn.": "a296518ead3a.mp3",
+  "Buổi tối của Mono.": "0f85f11da683.mp3",
+  "Tuyệt vời! Ngủ ngon, sáng ra thật khỏe.": "018ffe6d7a6e.mp3",
+  "Mono đánh răng.": "6c9915736e89.mp3",
+  "Mono nghe kể chuyện.": "20e112b0eac5.mp3",
+  "Sáng ra, Mono thức dậy.": "e78d2d7098c9.mp3"
  },
  "entries": [
   {
@@ -10440,6 +10478,348 @@
    "file": "41c3898afe73.mp3",
    "lang": "vi",
    "bytes": 16704,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mọi thứ lớn lên, đổi thay thế nào nhỉ?",
+   "file": "a556acb85af2.mp3",
+   "lang": "vi",
+   "bytes": 22320,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Chuyện hạt giống bay đi.",
+   "file": "e2070b7e0bb3.mp3",
+   "lang": "vi",
+   "bytes": 13968,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Bà cất hạt giống trong túi.",
+   "file": "7c653c427f3b.mp3",
+   "lang": "vi",
+   "bytes": 15408,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Chuyện gà con lạc mẹ.",
+   "file": "3c773ebdcf13.mp3",
+   "lang": "vi",
+   "bytes": 14544,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đúng rồi! Gà con về với mẹ rồi.",
+   "file": "bfd24696196a.mp3",
+   "lang": "vi",
+   "bytes": 25056,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mono nhìn xa tìm gà con.",
+   "file": "75a8f3672d7c.mp3",
+   "lang": "vi",
+   "bytes": 17568,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Gà con gặp lại gà mẹ.",
+   "file": "780c5aa5e25e.mp3",
+   "lang": "vi",
+   "bytes": 15696,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Chuyện đêm lễ hội.",
+   "file": "4efcc9d446c6.mp3",
+   "lang": "vi",
+   "bytes": 12960,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tuyệt vời! Bé kể đủ bốn tranh rồi.",
+   "file": "c2f99a6ee26b.mp3",
+   "lang": "vi",
+   "bytes": 24768,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mono treo đèn lồng.",
+   "file": "432e799f82e9.mp3",
+   "lang": "vi",
+   "bytes": 14688,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Pháo hoa nở trên trời.",
+   "file": "553aa23a579f.mp3",
+   "lang": "vi",
+   "bytes": 14688,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mono buồn ngủ rồi.",
+   "file": "9d45ee131f86.mp3",
+   "lang": "vi",
+   "bytes": 14544,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mono ngủ say.",
+   "file": "98b708da4bdd.mp3",
+   "lang": "vi",
+   "bytes": 12960,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tuyệt vời! Bé biết mọi thứ lớn lên, đổi thay thế nào rồi.",
+   "file": "1fe67f38d2b8.mp3",
+   "lang": "vi",
+   "bytes": 33984,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Hạt đậu lớn lên.",
+   "file": "86a50265facf.mp3",
+   "lang": "vi",
+   "bytes": 12960,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Gà con lớn lên.",
+   "file": "1de239ea0d7f.mp3",
+   "lang": "vi",
+   "bytes": 13248,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giỏi quá! Gà con lớn lên từ quả trứng.",
+   "file": "631add435b20.mp3",
+   "lang": "vi",
+   "bytes": 26352,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Gà mẹ ấp quả trứng.",
+   "file": "932d1b1f015c.mp3",
+   "lang": "vi",
+   "bytes": 13968,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Gà con lớn thành gà mái.",
+   "file": "5e688dc80fdc.mp3",
+   "lang": "vi",
+   "bytes": 16128,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Trời mưa rồi nắng.",
+   "file": "ea6b5b775aec.mp3",
+   "lang": "vi",
+   "bytes": 12816,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Xuất sắc! Có nắng sau mưa là có cầu vồng.",
+   "file": "3eedfe75fb91.mp3",
+   "lang": "vi",
+   "bytes": 26928,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mây kéo đến.",
+   "file": "1ea9b3c60f53.mp3",
+   "lang": "vi",
+   "bytes": 11520,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Trời đổ mưa.",
+   "file": "accef52b088d.mp3",
+   "lang": "vi",
+   "bytes": 11520,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mưa tạnh, nắng lên.",
+   "file": "716e51de9dea.mp3",
+   "lang": "vi",
+   "bytes": 15264,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Cầu vồng hiện ra.",
+   "file": "3bea146069e5.mp3",
+   "lang": "vi",
+   "bytes": 13104,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tối rồi, mình giữ sạch người nhé!",
+   "file": "7ee30ffe68c5.mp3",
+   "lang": "vi",
+   "bytes": 18720,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giỏi quá! Bé biết giữ sạch người rồi.",
+   "file": "dd1f0806ac82.mp3",
+   "lang": "vi",
+   "bytes": 24768,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Đánh răng: bé dùng gì trước?",
+   "file": "c47b460f59d6.mp3",
+   "lang": "vi",
+   "bytes": 17280,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Rửa tay: bé dùng gì trước?",
+   "file": "cb4fcc0cd41c.mp3",
+   "lang": "vi",
+   "bytes": 17568,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Giỏi quá! Tay sạch thơm rồi.",
+   "file": "497950d0bcc5.mp3",
+   "lang": "vi",
+   "bytes": 21744,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Làm ướt tay dưới vòi nước.",
+   "file": "e39da8040b8e.mp3",
+   "lang": "vi",
+   "bytes": 15696,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Xoa xà phòng thật kỹ.",
+   "file": "a3da905887d4.mp3",
+   "lang": "vi",
+   "bytes": 14544,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Lau khô tay bằng khăn.",
+   "file": "a296518ead3a.mp3",
+   "lang": "vi",
+   "bytes": 14400,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Buổi tối của Mono.",
+   "file": "0f85f11da683.mp3",
+   "lang": "vi",
+   "bytes": 14544,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Tuyệt vời! Ngủ ngon, sáng ra thật khỏe.",
+   "file": "018ffe6d7a6e.mp3",
+   "lang": "vi",
+   "bytes": 27936,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mono đánh răng.",
+   "file": "6c9915736e89.mp3",
+   "lang": "vi",
+   "bytes": 12960,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Mono nghe kể chuyện.",
+   "file": "20e112b0eac5.mp3",
+   "lang": "vi",
+   "bytes": 14256,
+   "voice": "vi-VN-HoaiMyNeural",
+   "provider": "edge-tts",
+   "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
+  },
+  {
+   "key": "Sáng ra, Mono thức dậy.",
+   "file": "e78d2d7098c9.mp3",
+   "lang": "vi",
+   "bytes": 18288,
    "voice": "vi-VN-HoaiMyNeural",
    "provider": "edge-tts",
    "license": "CHỈ DÙNG THỬ NỘI BỘ – thay bằng giọng có giấy phép thương mại trước khi bán (S06-R02)"
